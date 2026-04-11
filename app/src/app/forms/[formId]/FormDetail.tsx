@@ -98,12 +98,91 @@ export default function FormDetail({ form }: { form: FormData }) {
     return `${m}:${String(s).padStart(2, "0")}`;
   }
 
+  /* Shared technique detail panel — rendered in two places (mobile vs desktop) */
+  const techniqueDetail = currentTech ? (
+    <div className="p-3 md:p-4 bg-white rounded-lg border border-gray-200">
+      <div className="flex items-center gap-2 mb-2 flex-wrap">
+        {activeStep && (
+          <span className="text-xs font-mono text-gray-400">
+            Step {activeStep.step}
+          </span>
+        )}
+        <h2 className="font-semibold">{currentTech.name.en}</h2>
+        <span className="text-xs text-gray-400">
+          {currentTech.name.ko}
+        </span>
+        {activeStep?.kihap && (
+          <span className="text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium">
+            KIHAP
+          </span>
+        )}
+      </div>
+
+      {activeStep &&
+        activeStep.direction &&
+        activeStep.direction !== "forward" && (
+          <p className="text-sm text-gray-600 mb-2">
+            Direction: {activeStep.direction}
+          </p>
+        )}
+
+      {/* Action buttons when a sequence step is selected */}
+      {activeStep && (
+        <div className="flex gap-2 mb-3">
+          <button
+            onClick={handleWatchPerformance}
+            className="text-xs px-2.5 py-1.5 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors"
+          >
+            Watch this move
+          </button>
+          <button
+            onClick={handleWatchBreakdown}
+            className="text-xs px-2.5 py-1.5 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+          >
+            See technique breakdown
+          </button>
+        </div>
+      )}
+
+      {currentTech.tips.length > 0 && (
+        <div className="mt-3 space-y-1.5">
+          <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
+            Tips
+          </p>
+          {currentTech.tips.map((tip, i) => {
+            const text = typeof tip === "string" ? tip : tip.text;
+            const ts = typeof tip === "string" ? null : tip.timestamp;
+            // End = next tip's start, or technique's end
+            const nextTip = currentTech.tips[i + 1];
+            const nextTs = nextTip && typeof nextTip !== "string" ? nextTip.timestamp : null;
+            const endTs = nextTs ?? (activeStep ? activeStep.timestamp_end : undefined);
+            return (
+              <button
+                key={i}
+                onClick={() => {
+                  if (ts) {
+                    setVideoStart(ts);
+                    setVideoEnd(endTs ?? undefined);
+                  }
+                }}
+                className={`block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200 ${ts ? "hover:text-blue-600 hover:border-blue-400 cursor-pointer" : ""}`}
+              >
+                {text}
+                {ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
+              </button>
+            );
+          })}
+        </div>
+      )}
+    </div>
+  ) : null;
+
   return (
-    <div className="h-screen flex flex-col overflow-hidden max-w-6xl mx-auto px-4 py-4">
+    <div className="h-[100dvh] flex flex-col overflow-hidden max-w-6xl mx-auto px-3 md:px-4 py-2 md:py-4">
       {/* Header */}
-      <div className="mb-4 flex-none">
-        <h1 className="text-2xl font-bold">{form.name.en}</h1>
-        <div className="flex items-center gap-3 mt-1 text-sm text-gray-500">
+      <div className="mb-2 md:mb-4 flex-none">
+        <h1 className="text-lg md:text-2xl font-bold">{form.name.en}</h1>
+        <div className="flex items-center gap-2 md:gap-3 mt-0.5 md:mt-1 text-xs md:text-sm text-gray-500 flex-wrap">
           <span>{form.name.ko}</span>
           {form.meaning && <span>&middot; {form.meaning.en}</span>}
           {form.belt && <span>&middot; {form.belt}</span>}
@@ -114,10 +193,11 @@ export default function FormDetail({ form }: { form: FormData }) {
         </div>
       </div>
 
-      {/* Main content: list + video */}
-      <div className="grid grid-cols-1 md:grid-cols-10 gap-6 flex-1 min-h-0">
-        {/* Video (7/10 width on desktop, appears second in DOM but visually right) */}
-        <div className="md:col-span-7 md:order-2 overflow-y-auto">
+      {/* Main content — mobile: flex col; desktop: grid sidebar-left video-right */}
+      <div className="flex flex-col md:grid md:grid-cols-10 md:gap-6 flex-1 min-h-0 gap-2">
+
+        {/* Video — mobile: capped height; desktop: scrollable column */}
+        <div className="flex-none md:flex-1 md:col-span-7 md:order-2 md:overflow-y-auto max-h-[35vh] md:max-h-none">
           <VideoPlayer
             videoId={form.video_id}
             startTime={videoStart}
@@ -126,88 +206,21 @@ export default function FormDetail({ form }: { form: FormData }) {
             onTimeUpdate={handleTimeUpdate}
           />
 
-          {/* Active item details */}
-          {currentTech && (
-            <div className="mt-4 p-4 bg-white rounded-lg border border-gray-200">
-              <div className="flex items-center gap-2 mb-2">
-                {activeStep && (
-                  <span className="text-xs font-mono text-gray-400">
-                    Step {activeStep.step}
-                  </span>
-                )}
-                <h2 className="font-semibold">{currentTech.name.en}</h2>
-                <span className="text-xs text-gray-400">
-                  {currentTech.name.ko}
-                </span>
-                {activeStep?.kihap && (
-                  <span className="text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium">
-                    KIHAP
-                  </span>
-                )}
-              </div>
-
-              {activeStep &&
-                activeStep.direction &&
-                activeStep.direction !== "forward" && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    Direction: {activeStep.direction}
-                  </p>
-                )}
-
-              {/* Action buttons when a sequence step is selected */}
-              {activeStep && (
-                <div className="flex gap-2 mb-3">
-                  <button
-                    onClick={handleWatchPerformance}
-                    className="text-xs px-2.5 py-1.5 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors"
-                  >
-                    Watch this move
-                  </button>
-                  <button
-                    onClick={handleWatchBreakdown}
-                    className="text-xs px-2.5 py-1.5 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-                  >
-                    See technique breakdown
-                  </button>
-                </div>
-              )}
-
-              {currentTech.tips.length > 0 && (
-                <div className="mt-3 space-y-1.5">
-                  <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
-                    Tips
-                  </p>
-                  {currentTech.tips.map((tip, i) => {
-                    const text = typeof tip === "string" ? tip : tip.text;
-                    const ts = typeof tip === "string" ? null : tip.timestamp;
-                    // End = next tip's start, or technique's end
-                    const nextTip = currentTech.tips[i + 1];
-                    const nextTs = nextTip && typeof nextTip !== "string" ? nextTip.timestamp : null;
-                    const endTs = nextTs ?? (activeStep ? activeStep.timestamp_end : undefined);
-                    return (
-                      <button
-                        key={i}
-                        onClick={() => {
-                          if (ts) {
-                            setVideoStart(ts);
-                            setVideoEnd(endTs ?? undefined);
-                          }
-                        }}
-                        className={`block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200 ${ts ? "hover:text-blue-600 hover:border-blue-400 cursor-pointer" : ""}`}
-                      >
-                        {text}
-                        {ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
-                      </button>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-          )}
+          {/* Technique detail: desktop only (inside video column) */}
+          <div className="hidden md:block mt-4">
+            {techniqueDetail}
+          </div>
         </div>
 
-        {/* Sidebar (3/10 width on desktop, scrollable, appears first/left) */}
-        <div className="md:col-span-3 md:order-1 flex flex-col min-h-0">
+        {/* Technique detail: mobile only (between video and sidebar) */}
+        {techniqueDetail && (
+          <div className="flex-none md:hidden">
+            {techniqueDetail}
+          </div>
+        )}
+
+        {/* Sidebar — mobile: fills remaining space; desktop: 3/10 left column */}
+        <div className="flex-1 md:col-span-3 md:order-1 flex flex-col min-h-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden flex flex-col min-h-0 flex-1">
             {/* Tabs + autopause toggle */}
             <div className="flex border-b border-gray-200">
@@ -265,7 +278,7 @@ export default function FormDetail({ form }: { form: FormData }) {
 
           {/* Quick links to video sections */}
           {form.sections?.repeat && (
-            <div className="mt-3 text-sm">
+            <div className="mt-2 md:mt-3 text-sm flex-none">
               <span className="text-gray-400">Jump to: </span>
               <button
                 onClick={() => {

@@ -139,13 +139,13 @@ export default function VideoPlayer({
       </div>
 
       {/* Controls */}
-      <div className="flex items-center gap-2 text-sm">
-        <span className="text-gray-500 text-xs">Speed:</span>
+      <div className="flex items-center gap-1 md:gap-2 text-sm">
+        <span className="text-gray-500 text-[10px] md:text-xs">Speed:</span>
         {SPEEDS.map((s) => (
           <button
             key={s}
             onClick={() => handleSpeedChange(s)}
-            className={`px-2 py-0.5 rounded text-xs font-mono ${
+            className={`px-1.5 md:px-2 py-0.5 rounded text-[10px] md:text-xs font-mono ${
               speed === s
                 ? "bg-blue-600 text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"

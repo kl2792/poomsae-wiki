@@ -62,7 +62,7 @@ TECHNIQUES:
 - Include ALL techniques used in the sequence, not just the KEY MOVES from the video
 - The KEY MOVES section shows ~5-14 featured techniques. But the sequence uses many more basic techniques (momtong jireugi, arae makgi, ap chagi, etc.) that are NOT in KEY MOVES. You MUST include these too.
 - Every technique referenced by ANY sequence step MUST exist in the techniques array
-- Every technique MUST have: key (slug), id (same as key), name.en (English ONLY, no romanized), name.ko (hangul), romanized (KKW standard), category (block/kick/strike/stance/ready/combination), video_timestamp (from KEY MOVES section, or 0 if not featured), tips (array of {{text, timestamp}} from OCR'd ✓ tips, or empty [])
+- Every technique MUST have: key (slug), name.en (English ONLY, no romanized), name.ko (hangul), name.romanized (KKW standard), category (block/kick/strike/stance/ready/combination), video_timestamp (from KEY MOVES section, or 0 if not featured), video_timestamp_end (optional, when the technique segment ends), tips (array of {{text, timestamp}} from OCR'd ✓ tips, or empty [])
 
 SEQUENCE:
 - The full ordered sequence from EXPLANATION OF PART sections
@@ -76,7 +76,7 @@ SEQUENCE:
 
 NAMING CONSISTENCY:
 - name.en: English translation ONLY (e.g., "Low Block", "Middle Punch", "Front Kick + Middle Punch")
-- romanized: KKW romanization (e.g., "Arae Makgi", "Momtong Jireugi", "Ap Chagi + Momtong Jireugi")
+- name.romanized: KKW romanization (e.g., "Arae Makgi", "Momtong Jireugi", "Ap Chagi + Momtong Jireugi")
 - name.ko: Hangul (e.g., "아래막기", "몸통지르기")
 - For combinations: join with " + " in all three fields
 
@@ -105,11 +105,10 @@ SECTIONS:
   "techniques": [
     {{
       "key": "technique-slug",
-      "id": "technique-slug",
-      "name": {{ "en": "English Name", "ko": "한국어" }},
-      "romanized": "Romanized Korean",
+      "name": {{ "en": "English Name", "ko": "한국어", "romanized": "Romanized Korean" }},
       "category": "block",
       "video_timestamp": 186,
+      "video_timestamp_end": 210,
       "tips": [{{ "text": "tip from video", "timestamp": 209 }}]
     }}
   ],
