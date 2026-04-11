@@ -1,0 +1,332 @@
+{
+  "id": "hansu",
+  "name": { "en": "Hansu", "ko": "한수" },
+  "meaning": { "en": "Water / the source of life that nurtures the will and spirit to embrace all", "ko": "한수 (물)" },
+  "belt": null,
+  "dan": 8,
+  "total_moves": 27,
+  "diagram": "water-drop shape",
+  "video_id": "lRp1JE7f-a8",
+  "video_duration_seconds": 966,
+  "sections": {
+    "intro": { "start": 0, "end": 145 },
+    "breakdown": { "start": 145, "end": 312 },
+    "repeat": { "start": 830, "end": 930 },
+    "outro": { "start": 930, "end": 966 }
+  },
+  "competition_divisions": [],
+  "source": "KKW YouTube / WT Rules",
+  "techniques": [
+    {
+      "key": "01",
+      "id": "sonaldeung-hecheomakgi",
+      "name": { "en": "Sonaldeung Hecheomakgi", "ko": "손날등 헤쳐막기" },
+      "category": "block",
+      "video_timestamp": 119,
+      "tips": [
+        { "text": "The tip of the hand must not rise above the shoulder", "timestamp": 163 },
+        { "text": "Attach your armpits to your body to make them firm", "timestamp": 167 },
+        { "text": "The tip of your hand and elbow must be placed in the same line", "timestamp": 172 },
+        { "text": "Cross the arm of the forward foot from the outside", "timestamp": 176 }
+      ]
+    },
+    {
+      "key": "02",
+      "id": "mejumeok-yangyeopguri-anchigi",
+      "name": { "en": "Mejumeok Yangyeopguri Anchigi", "ko": "메주먹 양옆구리 안치기" },
+      "category": "strike",
+      "video_timestamp": 122,
+      "tips": [
+        { "text": "Attach the armpit firmly to the body to concentrate force", "timestamp": 197 },
+        { "text": "The fists should be placed slightly over the elbow", "timestamp": 201 },
+        { "text": "Be careful not to let the fists rise excessively", "timestamp": 209 }
+      ]
+    },
+    {
+      "key": "03",
+      "id": "geodeureo-khaljaebi",
+      "name": { "en": "Geodeureo Khaljaebi", "ko": "거들어 칼재비" },
+      "category": "strike",
+      "video_timestamp": 126,
+      "tips": []
+    },
+    {
+      "key": "04",
+      "id": "anpalmok-arae-naeryeo-pyojeokmakgi",
+      "name": { "en": "Anpalmok Arae (Naeryeo) Pyojeokmakgi", "ko": "안팔목 아래 내려 표적막기" },
+      "category": "block",
+      "video_timestamp": 129,
+      "tips": []
+    },
+    {
+      "key": "05",
+      "id": "sonal-geumgangmakgi",
+      "name": { "en": "Sonal Geumgangmakgi", "ko": "손날 금강막기" },
+      "category": "block",
+      "video_timestamp": 133,
+      "tips": []
+    },
+    {
+      "key": "06",
+      "id": "gyeotdariseogi",
+      "name": { "en": "Gyeotdariseogi", "ko": "곁다리서기" },
+      "category": "stance",
+      "video_timestamp": 137,
+      "tips": []
+    }
+  ],
+  "sequence": [
+    {
+      "step": 0,
+      "technique": "junbi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 322,
+      "timestamp_end": 327
+    },
+    {
+      "step": 1,
+      "technique": "sonaldeung-hecheomakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 330,
+      "timestamp_end": 333
+    },
+    {
+      "step": 2,
+      "technique": "mejumeok-anchigi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 332,
+      "timestamp_end": 335
+    },
+    {
+      "step": 3,
+      "technique": "mulleodidyeo-oesanteulmakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 334,
+      "timestamp_end": 338
+    },
+    {
+      "step": 4,
+      "technique": "momtong-jireugi",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 337,
+      "timestamp_end": 340
+    },
+    {
+      "step": 5,
+      "technique": "mulleodidyeo-oesanteulmakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 339,
+      "timestamp_end": 342
+    },
+    {
+      "step": 6,
+      "technique": "momtong-jireugi",
+      "side": "left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 342,
+      "timestamp_end": 345
+    },
+    {
+      "step": 7,
+      "technique": "mulleodidyeo-oesanteulmakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 344,
+      "timestamp_end": 347
+    },
+    {
+      "step": 8,
+      "technique": "momtong-jireugi",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 347,
+      "timestamp_end": 350
+    },
+    {
+      "step": 9,
+      "technique": "sonaldeung-hecheomakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 348,
+      "timestamp_end": 351
+    },
+    {
+      "step": 10,
+      "technique": "geodeureo-agumson-apchigi-khaljaebi",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 453,
+      "timestamp_end": 457
+    },
+    {
+      "step": 11,
+      "technique": "dujumeok-jeocheojireugi",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 456,
+      "timestamp_end": 459
+    },
+    {
+      "step": 12,
+      "technique": "agumson-pyojeok-arae-naeryeo-makgi",
+      "side": "left",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 458,
+      "timestamp_end": 461
+    },
+    {
+      "step": 13,
+      "technique": "sonal-geumgangmakgi",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 460,
+      "timestamp_end": 463
+    },
+    {
+      "step": 14,
+      "technique": "hakdariseogi-jageun-doljjeogwi",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 462,
+      "timestamp_end": 468
+    },
+    {
+      "step": 15,
+      "technique": "yeopchagi+jebipum-anchigi",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 465,
+      "timestamp_end": 470
+    },
+    {
+      "step": 16,
+      "technique": "apchagi+deungjumeok-apchigi",
+      "side": "right",
+      "direction": "left",
+      "kihap": true,
+      "timestamp": 468,
+      "timestamp_end": 472
+    },
+    {
+      "step": 17,
+      "technique": "geodeureo-agumson-apchigi-khaljaebi",
+      "side": null,
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 475,
+      "timestamp_end": 480
+    },
+    {
+      "step": 18,
+      "technique": "dujumeok-jeocheojireugi",
+      "side": null,
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 480,
+      "timestamp_end": 484
+    },
+    {
+      "step": 19,
+      "technique": "agumson-pyojeok-arae-naeryeo-makgi",
+      "side": "right",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 484,
+      "timestamp_end": 488
+    },
+    {
+      "step": 20,
+      "technique": "sonal-geumgangmakgi",
+      "side": null,
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 488,
+      "timestamp_end": 492
+    },
+    {
+      "step": 21,
+      "technique": "hakdariseogi-jageun-doljjeogwi",
+      "side": null,
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 492,
+      "timestamp_end": 498
+    },
+    {
+      "step": 22,
+      "technique": "yeopchagi+jebipum-anchigi",
+      "side": null,
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 498,
+      "timestamp_end": 504
+    },
+    {
+      "step": 23,
+      "technique": "apchagi+deungjumeok-apchigi",
+      "side": "left",
+      "direction": "right",
+      "kihap": true,
+      "timestamp": 504,
+      "timestamp_end": 510
+    },
+    {
+      "step": 24,
+      "technique": "anpalmok-arae-naeryeo-pyojeokmakgi",
+      "side": "left",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 600,
+      "timestamp_end": 610
+    },
+    {
+      "step": 25,
+      "technique": "anpalmok-arae-naeryeo-pyojeokmakgi",
+      "side": "right",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 610,
+      "timestamp_end": 620
+    },
+    {
+      "step": 26,
+      "technique": "gyeotdariseogi",
+      "side": null,
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 620,
+      "timestamp_end": 630
+    },
+    {
+      "step": 27,
+      "technique": "sonaldeung-hecheomakgi",
+      "side": null,
+      "direction": "backward",
+      "kihap": true,
+      "timestamp": 630,
+      "timestamp_end": 640
+    }
+  ]
+}

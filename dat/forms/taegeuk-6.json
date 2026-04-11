@@ -1,0 +1,105 @@
+{
+  "id": "taegeuk-6",
+  "name": { "en": "Taegeuk Yuk Jang", "ko": "태극 6장" },
+  "meaning": { "en": "Water (Gam ☵)", "ko": "감/☵" },
+  "belt": "3rd Geup",
+  "dan": null,
+  "total_moves": 23,
+  "diagram": "I-shape",
+  "video_id": "jcBwWo4wN7c",
+  "video_duration_seconds": 835,
+  "sections": {
+    "intro": { "start": 0, "end": 136 },
+    "breakdown": { "start": 136, "end": 331 },
+    "repeat": { "start": 700, "end": 810 },
+    "outro": { "start": 810, "end": 835 }
+  },
+  "competition_divisions": ["cadet", "junior", "under30", "under40"],
+  "source": "KKW YouTube / WT Rules Art. 8",
+  "techniques": [
+    {
+      "key": "junbi",
+      "id": "junbi",
+      "name": { "en": "Ready Stance", "ko": "준비" },
+      "category": "stance",
+      "video_timestamp": 136.0,
+      "tips": []
+    },
+    {
+      "key": "sonal-ulgul-biteureomakgi",
+      "id": "sonal-ulgul-biteureomakgi",
+      "name": { "en": "Knifehand High Twisting Block", "ko": "손날얼굴비틀어막기" },
+      "category": "block",
+      "video_timestamp": 147.0,
+      "tips": [
+        { "text": "Twist your torso about 45 degrees from the Apgubi posture", "timestamp": 157 },
+        { "text": "Your arms should cross and pass in front of your face", "timestamp": 164 },
+        { "text": "Bakkanmakgi performed with the tip of your hands facing upward", "timestamp": 167 },
+        { "text": "Your blocking arm should cross outside your assisting arm", "timestamp": 172 },
+        { "text": "Be careful not to let your hand blade move outside the end of the line from your shoulder", "timestamp": 177 },
+        { "text": "The knee of your hind leg should not bend, and your sole must not leave the ground", "timestamp": 183 }
+      ]
+    },
+    {
+      "key": "dollyeochagi",
+      "id": "dollyeochagi",
+      "name": { "en": "Roundhouse Kick", "ko": "돌려차기" },
+      "category": "kick",
+      "video_timestamp": 191.0,
+      "tips": [
+        { "text": "Use the top of your foot and ball to strike the target", "timestamp": 199 },
+        { "text": "After kicking a target, perform a spinning kick by twisting your torso as if you are spinning your shoulder on the same side backwards", "timestamp": 204 }
+      ]
+    },
+    {
+      "key": "ulgul-bakkat-makki",
+      "id": "ulgul-bakkat-makki",
+      "name": { "en": "High Outward Block", "ko": "얼굴바깥막기" },
+      "category": "block",
+      "video_timestamp": 219.0,
+      "tips": []
+    },
+    {
+      "key": "arae-hecheomakgi",
+      "id": "arae-hecheomakgi",
+      "name": { "en": "Low Spreading Block", "ko": "아래헤쳐막기" },
+      "category": "block",
+      "video_timestamp": 253.0,
+      "tips": []
+    },
+    {
+      "key": "batangson-momtong-an-makki",
+      "id": "batangson-momtong-an-makki",
+      "name": { "en": "Palm Inward Middle Block", "ko": "바탕손몸통안막기" },
+      "category": "block",
+      "video_timestamp": 289.0,
+      "tips": []
+    }
+  ],
+  "sequence": [
+    { "step": 0, "technique": "junbi", "side": null, "direction": "forward", "kihap": false, "timestamp": 340.0, "timestamp_end": 343.0 },
+
+    { "step": 1, "technique": "arae-naeryeo-makki", "side": "left", "direction": "left-90", "kihap": false, "timestamp": 343.0, "timestamp_end": 347.0 },
+    { "step": 2, "technique": "ap-chagi+momtong-bakkat-makki", "side": "right+left", "direction": "forward", "kihap": false, "timestamp": 347.0, "timestamp_end": 350.0 },
+    { "step": 3, "technique": "arae-naeryeo-makki", "side": "right", "direction": "right-180", "kihap": false, "timestamp": 350.0, "timestamp_end": 352.0 },
+    { "step": 4, "technique": "ap-chagi+momtong-bakkat-makki", "side": "left+right", "direction": "forward", "kihap": false, "timestamp": 352.0, "timestamp_end": 410.0 },
+
+    { "step": 5, "technique": "biteureo-ulgul-makki", "side": "right", "direction": "left-90", "kihap": false, "timestamp": 411.0, "timestamp_end": 414.0 },
+    { "step": 6, "technique": "ulgul-dollyeochagi+ulgul-bakkat-makki+momtong-jireugi", "side": "right+left+right", "direction": "forward", "kihap": false, "timestamp": 414.0, "timestamp_end": 419.0 },
+    { "step": 7, "technique": "ap-chagi+momtong-jireugi", "side": "right+left", "direction": "forward", "kihap": false, "timestamp": 419.0, "timestamp_end": 422.0 },
+    { "step": 8, "technique": "ulgul-bakkat-makki+momtong-jireugi", "side": "right+left", "direction": "forward", "kihap": false, "timestamp": 422.0, "timestamp_end": 424.0 },
+    { "step": 9, "technique": "ap-chagi+momtong-jireugi", "side": "left+right", "direction": "forward", "kihap": false, "timestamp": 424.0, "timestamp_end": 427.0 },
+    { "step": 10, "technique": "arae-hecheomakgi", "side": null, "direction": "forward", "kihap": false, "timestamp": 427.0, "timestamp_end": 516.0 },
+
+    { "step": 11, "technique": "biteureo-makki", "side": "left", "direction": "right-90", "kihap": false, "timestamp": 522.0, "timestamp_end": 524.0 },
+    { "step": 12, "technique": "ulgul-dollyeochagi+arae-naeryeo-makki", "side": "left+right", "direction": "forward", "kihap": false, "timestamp": 524.0, "timestamp_end": 528.0 },
+    { "step": 13, "technique": "ap-chagi+momtong-bakkat-makki", "side": "left+right", "direction": "forward", "kihap": false, "timestamp": 528.0, "timestamp_end": 531.0 },
+    { "step": 14, "technique": "arae-naeryeo-makki", "side": "left", "direction": "forward", "kihap": false, "timestamp": 531.0, "timestamp_end": 534.0 },
+    { "step": 15, "technique": "ap-chagi+momtong-bakkat-makki", "side": "right+left", "direction": "forward", "kihap": false, "timestamp": 534.0, "timestamp_end": 617.0 },
+
+    { "step": 16, "technique": "sonal-geodeureo-makki", "side": "left", "direction": "left-90", "kihap": false, "timestamp": 621.0, "timestamp_end": 624.0 },
+    { "step": 17, "technique": "sonal-geodeureo-makki", "side": "right", "direction": "right-180", "kihap": false, "timestamp": 624.0, "timestamp_end": 626.0 },
+    { "step": 18, "technique": "batangson-momtong-an-makki+momtong-jireugi", "side": "left+right", "direction": "left-90", "kihap": false, "timestamp": 626.0, "timestamp_end": 630.0 },
+    { "step": 19, "technique": "batangson-momtong-an-makki+momtong-jireugi", "side": "right+left", "direction": "forward", "kihap": true, "timestamp": 630.0, "timestamp_end": 634.0 }
+  ]
+}
