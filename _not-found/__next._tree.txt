@@ -1,2 +1,2 @@
-:HL["/poomsae-wiki/_next/static/chunks/181791rnuiu10.css","style"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"zHXwc1x4vag-AxXHceupw"}
+:HL["/poomsae-wiki/_next/static/chunks/04lj6hbezvotq.css","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"/_not-found","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"RrJj-83OPZ3KmTJAYJnRE"}
