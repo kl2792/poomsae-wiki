@@ -20,7 +20,8 @@
     {
       "key": "01",
       "id": "bamjumeok-chijireugi",
-      "name": { "en": "Bamjumeok Chijireugi", "ko": "밤주먹 치지르기" },
+      "name": { "en": "Chestnut Fist Uppercut", "ko": "밤주먹 치지르기" },
+      "romanized": "Bamjumeok Chi Jireugi",
       "category": "strike",
       "video_timestamp": 151,
       "tips": [
@@ -31,7 +32,8 @@
     {
       "key": "02",
       "id": "nalgaepyeogi",
-      "name": { "en": "Nalgaepyeogi", "ko": "날개펴기" },
+      "name": { "en": "Wing Spreading", "ko": "날개펴기" },
+      "romanized": "Nalgae Pyeogi",
       "category": "block",
       "video_timestamp": 156,
       "tips": []
@@ -39,7 +41,8 @@
     {
       "key": "03",
       "id": "hwidulleomakgi",
-      "name": { "en": "Hwidulleomakgi", "ko": "휘둘려막기" },
+      "name": { "en": "Sweeping Block", "ko": "휘둘려막기" },
+      "romanized": "Hwidulleo Makgi",
       "category": "block",
       "video_timestamp": 162,
       "tips": []
@@ -47,7 +50,8 @@
     {
       "key": "04",
       "id": "hwidulleo-jabadanggigi",
-      "name": { "en": "Hwidulleo Jabadanggigi", "ko": "휘둘려 잡아당기기" },
+      "name": { "en": "Sweeping Grab and Pull", "ko": "휘둘려 잡아당기기" },
+      "romanized": "Hwidulleo Jabadanggigi",
       "category": "strike",
       "video_timestamp": 168,
       "tips": []
@@ -55,7 +59,8 @@
     {
       "key": "05",
       "id": "geumgang-yeopjireugi",
-      "name": { "en": "Geumgang Yeopjireugi", "ko": "금강 옆지르기" },
+      "name": { "en": "Diamond Side Punch", "ko": "금강 옆지르기" },
+      "romanized": "Geumgang Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 172,
       "tips": []
@@ -63,7 +68,8 @@
     {
       "key": "06",
       "id": "taesanmilgi",
-      "name": { "en": "Taesanmilgi", "ko": "태산밀기" },
+      "name": { "en": "Mountain Pushing", "ko": "태산밀기" },
+      "romanized": "Taesan Milgi",
       "category": "strike",
       "video_timestamp": 183,
       "tips": []
@@ -71,7 +77,8 @@
     {
       "key": "07",
       "id": "jajeunbal",
-      "name": { "en": "Jajeunbal", "ko": "자전발" },
+      "name": { "en": "Shuffling Step", "ko": "자전발" },
+      "romanized": "Jajeunbal",
       "category": "stance",
       "video_timestamp": 184,
       "tips": [

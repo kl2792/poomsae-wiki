@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 130.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "01",
       "id": "sonal-geodeureo-makki",
       "name": { "en": "Knifehand Double Block", "ko": "손날거들어막기" },
+      "romanized": "Sonnal Geodeureo Makgi",
       "category": "block",
       "video_timestamp": 147.0,
       "tips": [
@@ -44,6 +46,7 @@
       "key": "02",
       "id": "pyeonsonkeut-sewo-jireugi",
       "name": { "en": "Spearhand Thrust", "ko": "편손끝세워지르기" },
+      "romanized": "Pyeonsonkeut Sewo Jireugi",
       "category": "strike",
       "video_timestamp": 223.0,
       "tips": [
@@ -57,6 +60,7 @@
       "key": "03",
       "id": "jebipum-anchigi",
       "name": { "en": "Swallow Form Strike", "ko": "제비품안치기" },
+      "romanized": "Jebipum Anchigi",
       "category": "strike",
       "video_timestamp": 258.0,
       "tips": [
@@ -73,6 +77,7 @@
       "key": "04",
       "id": "yeopchagi",
       "name": { "en": "Side Kick", "ko": "옆차기" },
+      "romanized": "Yeop Chagi",
       "category": "kick",
       "video_timestamp": 157.0,
       "tips": [
@@ -86,6 +91,7 @@
       "key": "05",
       "id": "deungjumok-apchigi",
       "name": { "en": "Backfist Front Strike", "ko": "등주먹앞치기" },
+      "romanized": "Deungjumeok Apchigi",
       "category": "strike",
       "video_timestamp": 375.0,
       "tips": [

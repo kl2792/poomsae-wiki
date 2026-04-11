@@ -21,6 +21,7 @@
       "key": "01",
       "id": "beomseogi-sonal-arae-naeryeo-hecheomakgi",
       "name": { "en": "Tiger Stance Knife-hand Low Spreading Block", "ko": "범서기 손날 아래(내려)헤쳐막기" },
+      "romanized": "Beomseogi Sonnal Arae Naeryeo Hecheo Makgi",
       "category": "block",
       "video_timestamp": 145,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "02",
       "id": "sonal-eopeojapgi",
       "name": { "en": "Knife-hand Neck Grasp", "ko": "손날 엎어잡기" },
+      "romanized": "Sonnal Eopeojapgi",
       "category": "strike",
       "video_timestamp": 178,
       "tips": []
@@ -37,6 +39,7 @@
       "key": "03",
       "id": "geumgang-anpalmok-bakkanmakgi",
       "name": { "en": "Diamond Inner-wrist Outward Block", "ko": "금강 안팔목바깥막기" },
+      "romanized": "Geumgang Anpalmok Bakkat Makgi",
       "category": "block",
       "video_timestamp": 213,
       "tips": []
@@ -45,6 +48,7 @@
       "key": "04",
       "id": "meteuro-teureoppaegi",
       "name": { "en": "Pulling/Sweeping Block", "ko": "메뚜러빼기" },
+      "romanized": "Metteureo Ppaegi",
       "category": "block",
       "video_timestamp": 230,
       "tips": []
@@ -53,6 +57,7 @@
       "key": "05",
       "id": "deungjumeok-ulgul-bakkanchigi",
       "name": { "en": "Back-fist High Outward Strike", "ko": "등주먹 얼굴바깥치기" },
+      "romanized": "Deungjumeok Ulgul Bakkat Chigi",
       "category": "strike",
       "video_timestamp": 241,
       "tips": []

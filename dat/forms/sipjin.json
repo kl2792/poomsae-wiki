@@ -21,6 +21,7 @@
       "key": "01",
       "id": "hwangsomakgi",
       "name": { "en": "Bull Block", "ko": "황소막기" },
+      "romanized": "Hwangso Makgi",
       "category": "block",
       "video_timestamp": 242,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "02",
       "id": "sonbadak-geodeureo-bakkanmakgi",
       "name": { "en": "Palm Assisted Outward Block", "ko": "손바닥 거들어 바깥막기" },
+      "romanized": "Sonbadak Geodeureo Bakkat Makgi",
       "category": "block",
       "video_timestamp": 297,
       "tips": []
@@ -37,6 +39,7 @@
       "key": "03",
       "id": "pyeonsonkeut-eopeojjireugi",
       "name": { "en": "Flat Fingertip Thrust", "ko": "편손끝 엎어찌르기" },
+      "romanized": "Pyeonsonkeut Eopeo Jjireugi",
       "category": "strike",
       "video_timestamp": 338,
       "tips": []
@@ -45,6 +48,7 @@
       "key": "04",
       "id": "bawimilgi",
       "name": { "en": "Rock Pushing", "ko": "바위밀기" },
+      "romanized": "Bawi Milgi",
       "category": "strike",
       "video_timestamp": 388,
       "tips": []
@@ -53,6 +57,7 @@
       "key": "05",
       "id": "sonaldeung-hecheomakgi",
       "name": { "en": "Reverse Knife-hand Spreading Block", "ko": "손날등 헤쳐막기" },
+      "romanized": "Sonnaldeung Hecheo Makgi",
       "category": "block",
       "video_timestamp": 460,
       "tips": []
@@ -61,6 +66,7 @@
       "key": "06",
       "id": "meongyechigi",
       "name": { "en": "Collar Strike", "ko": "명에치기" },
+      "romanized": "Meongyechigi",
       "category": "strike",
       "video_timestamp": null,
       "tips": []
@@ -69,6 +75,7 @@
       "key": "07",
       "id": "chetdarijireugi",
       "name": { "en": "Uppercut Punch", "ko": "첫다리찌르기" },
+      "romanized": "Chetdari Jjireugi",
       "category": "strike",
       "video_timestamp": null,
       "tips": []
@@ -77,6 +84,7 @@
       "key": "08",
       "id": "pyeonson-eotgeureo-araemakgi",
       "name": { "en": "Flat-hand Cross Low Block", "ko": "편손 엇걸어 아래막기" },
+      "romanized": "Pyeonson Eotgeoreo Arae Makgi",
       "category": "block",
       "video_timestamp": null,
       "tips": []
@@ -85,6 +93,7 @@
       "key": "09",
       "id": "sonaldeung-geodeureomakgi",
       "name": { "en": "Reverse Knife-hand Assisted Block", "ko": "손날등 거들어막기" },
+      "romanized": "Sonnaldeung Geodeureo Makgi",
       "category": "block",
       "video_timestamp": null,
       "tips": []
@@ -93,6 +102,7 @@
       "key": "10",
       "id": "geodeureo-deungjumeok-apchigi",
       "name": { "en": "Assisted Back-fist Front Strike", "ko": "거들어 등주먹 앞치기" },
+      "romanized": "Geodeureo Deungjumeok Apchigi",
       "category": "strike",
       "video_timestamp": null,
       "tips": []

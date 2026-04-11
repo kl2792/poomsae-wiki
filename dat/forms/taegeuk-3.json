@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 124.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "01",
       "id": "sonal-anchigi",
       "name": { "en": "Knifehand Strike", "ko": "손날안치기" },
+      "romanized": "Sonnal Anchigi",
       "category": "strike",
       "video_timestamp": 127.0,
       "tips": [
@@ -47,6 +49,7 @@
       "key": "02",
       "id": "sonal-momtong-bakkan-makki",
       "name": { "en": "Knifehand Outward Middle Block", "ko": "손날몸통바깥막기" },
+      "romanized": "Sonnal Momtong Bakkat Makgi",
       "category": "block",
       "video_timestamp": 227.0,
       "tips": [
@@ -62,6 +65,7 @@
       "key": "03",
       "id": "dwitgubi",
       "name": { "en": "Back Stance", "ko": "뒷굽이" },
+      "romanized": "Dwit Gubi",
       "category": "stance",
       "video_timestamp": 276.0,
       "tips": [
@@ -76,6 +80,7 @@
       "key": "04",
       "id": "dubeon-jireugi",
       "name": { "en": "Double Punch", "ko": "두번지르기" },
+      "romanized": "Dubeon Jireugi",
       "category": "strike",
       "video_timestamp": 308.0,
       "tips": [

@@ -20,7 +20,8 @@
     {
       "key": "01",
       "id": "sonaldeung-hecheomakgi",
-      "name": { "en": "Sonaldeung Hecheomakgi", "ko": "손날등 헤쳐막기" },
+      "name": { "en": "Reverse Knifehand Spreading Block", "ko": "손날등 헤쳐막기" },
+      "romanized": "Sonnaldeung Hecheo Makgi",
       "category": "block",
       "video_timestamp": 119,
       "tips": [
@@ -33,7 +34,8 @@
     {
       "key": "02",
       "id": "mejumeok-yangyeopguri-anchigi",
-      "name": { "en": "Mejumeok Yangyeopguri Anchigi", "ko": "메주먹 양옆구리 안치기" },
+      "name": { "en": "Hammer Fist Double Side Inward Strike", "ko": "메주먹 양옆구리 안치기" },
+      "romanized": "Mejumeok Yangyeopguri Anchigi",
       "category": "strike",
       "video_timestamp": 122,
       "tips": [
@@ -45,7 +47,8 @@
     {
       "key": "03",
       "id": "geodeureo-khaljaebi",
-      "name": { "en": "Geodeureo Khaljaebi", "ko": "거들어 칼재비" },
+      "name": { "en": "Assisted Knife Slice", "ko": "거들어 칼재비" },
+      "romanized": "Geodeureo Khaljaebi",
       "category": "strike",
       "video_timestamp": 126,
       "tips": []
@@ -53,7 +56,8 @@
     {
       "key": "04",
       "id": "anpalmok-arae-naeryeo-pyojeokmakgi",
-      "name": { "en": "Anpalmok Arae (Naeryeo) Pyojeokmakgi", "ko": "안팔목 아래 내려 표적막기" },
+      "name": { "en": "Inner Forearm Low Target Block", "ko": "안팔목 아래 내려 표적막기" },
+      "romanized": "Anpalmok Arae Naeryeo Pyojeok Makgi",
       "category": "block",
       "video_timestamp": 129,
       "tips": []
@@ -61,7 +65,8 @@
     {
       "key": "05",
       "id": "sonal-geumgangmakgi",
-      "name": { "en": "Sonal Geumgangmakgi", "ko": "손날 금강막기" },
+      "name": { "en": "Knifehand Diamond Block", "ko": "손날 금강막기" },
+      "romanized": "Sonnal Geumgang Makgi",
       "category": "block",
       "video_timestamp": 133,
       "tips": []
@@ -69,7 +74,8 @@
     {
       "key": "06",
       "id": "gyeotdariseogi",
-      "name": { "en": "Gyeotdariseogi", "ko": "곁다리서기" },
+      "name": { "en": "Side Step Stance", "ko": "곁다리서기" },
+      "romanized": "Gyeotdari Seogi",
       "category": "stance",
       "video_timestamp": 137,
       "tips": []

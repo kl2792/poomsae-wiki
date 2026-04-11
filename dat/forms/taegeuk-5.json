@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 146.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "mejumeok-naeryeochigi",
       "id": "mejumeok-naeryeochigi",
       "name": { "en": "Hammer Fist Downward Strike", "ko": "메주먹내려치기" },
+      "romanized": "Mejumeok Naeryeo Chigi",
       "category": "strike",
       "video_timestamp": 155.0,
       "tips": [
@@ -43,6 +45,7 @@
       "key": "palggumchi-dollyeochigi",
       "id": "palggumchi-dollyeochigi",
       "name": { "en": "Elbow Spinning Strike", "ko": "팔꿈치돌려치기" },
+      "romanized": "Palkkumchi Dollyeo Chigi",
       "category": "strike",
       "video_timestamp": 197.0,
       "tips": [
@@ -59,6 +62,7 @@
       "key": "palggumchi-pyojeokchigi",
       "id": "palggumchi-pyojeokchigi",
       "name": { "en": "Elbow Target Strike", "ko": "팔꿈치표적치기" },
+      "romanized": "Palkkumchi Pyojeok Chigi",
       "category": "strike",
       "video_timestamp": 246.0,
       "tips": [
@@ -70,6 +74,7 @@
       "key": "kkoaseogi",
       "id": "kkoaseogi",
       "name": { "en": "Cross Stance", "ko": "꼬아서기" },
+      "romanized": "Kkoa Seogi",
       "category": "stance",
       "video_timestamp": 280.0,
       "tips": [
@@ -83,6 +88,7 @@
       "key": "yeopseogi",
       "id": "yeopseogi",
       "name": { "en": "Side Stance", "ko": "옆서기" },
+      "romanized": "Yeop Seogi",
       "category": "stance",
       "video_timestamp": 315.0,
       "tips": [

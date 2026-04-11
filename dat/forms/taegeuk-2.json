@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 115.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "01",
       "id": "ulgul-jireugi",
       "name": { "en": "Face Punch", "ko": "얼굴지르기" },
+      "romanized": "Ulgul Jireugi",
       "category": "strike",
       "video_timestamp": 123.0,
       "tips": [

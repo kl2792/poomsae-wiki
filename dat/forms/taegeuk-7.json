@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 167.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "sonal-geodeureo-arae-makki",
       "id": "sonal-geodeureo-arae-makki",
       "name": { "en": "Knifehand Assisted Low Block", "ko": "손날거들어아래막기" },
+      "romanized": "Sonnal Geodeureo Arae Makgi",
       "category": "block",
       "video_timestamp": 177.0,
       "tips": [
@@ -41,6 +43,7 @@
       "key": "geodeureo-batangson-momtong-an-makki",
       "id": "geodeureo-batangson-momtong-an-makki",
       "name": { "en": "Assisted Palm Inward Middle Block", "ko": "거들어바탕손몸통안막기" },
+      "romanized": "Geodeureo Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 234.0,
       "tips": [
@@ -52,6 +55,7 @@
       "key": "bojumeok",
       "id": "bojumeok",
       "name": { "en": "Covered Fist", "ko": "보주먹" },
+      "romanized": "Bojumeok",
       "category": "strike",
       "video_timestamp": 288.0,
       "tips": []
@@ -60,6 +64,7 @@
       "key": "gawimakgi",
       "id": "gawimakgi",
       "name": { "en": "Scissors Block", "ko": "가위막기" },
+      "romanized": "Gawi Makgi",
       "category": "block",
       "video_timestamp": 328.0,
       "tips": [
@@ -71,6 +76,7 @@
       "key": "mureupchigi",
       "id": "mureupchigi",
       "name": { "en": "Knee Strike", "ko": "무릎치기" },
+      "romanized": "Mureup Chigi",
       "category": "strike",
       "video_timestamp": 360.0,
       "tips": [
@@ -82,6 +88,7 @@
       "key": "momtong-hecheomakgi",
       "id": "momtong-hecheomakgi",
       "name": { "en": "Middle Spreading Block", "ko": "몸통헤쳐막기" },
+      "romanized": "Momtong Hecheo Makgi",
       "category": "block",
       "video_timestamp": 375.0,
       "tips": []
@@ -90,6 +97,7 @@
       "key": "dujumeok-jeocheojireugi",
       "id": "dujumeok-jeocheojireugi",
       "name": { "en": "Double Fist Uppercut Punch", "ko": "두주먹제쳐지르기" },
+      "romanized": "Dujumeok Jeocheo Jireugi",
       "category": "strike",
       "video_timestamp": 397.0,
       "tips": []
@@ -98,6 +106,7 @@
       "key": "utgeoreo-arae-makki",
       "id": "utgeoreo-arae-makki",
       "name": { "en": "Cross Low Block", "ko": "엇걸어아래막기" },
+      "romanized": "Eotgeoreo Arae Makgi",
       "category": "block",
       "video_timestamp": 452.0,
       "tips": []
@@ -106,6 +115,7 @@
       "key": "deungjumeok-bakkanchigi",
       "id": "deungjumeok-bakkanchigi",
       "name": { "en": "Backfist Outward Strike", "ko": "등주먹바깥치기" },
+      "romanized": "Deungjumeok Bakkat Chigi",
       "category": "strike",
       "video_timestamp": 486.0,
       "tips": []
@@ -114,6 +124,7 @@
       "key": "pyojeokchagi",
       "id": "pyojeokchagi",
       "name": { "en": "Target Kick", "ko": "표적차기" },
+      "romanized": "Pyojeok Chagi",
       "category": "kick",
       "video_timestamp": 510.0,
       "tips": []
@@ -122,6 +133,7 @@
       "key": "yeopjireugi",
       "id": "yeopjireugi",
       "name": { "en": "Side Punch", "ko": "옆지르기" },
+      "romanized": "Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 540.0,
       "tips": []
@@ -130,6 +142,7 @@
       "key": "beomseogi",
       "id": "beomseogi",
       "name": { "en": "Tiger Stance", "ko": "범서기" },
+      "romanized": "Beom Seogi",
       "category": "stance",
       "video_timestamp": 570.0,
       "tips": []
@@ -138,6 +151,7 @@
       "key": "juchumseogi",
       "id": "juchumseogi",
       "name": { "en": "Horseback Stance", "ko": "주춤서기" },
+      "romanized": "Juchum Seogi",
       "category": "stance",
       "video_timestamp": 600.0,
       "tips": []

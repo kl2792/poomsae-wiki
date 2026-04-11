@@ -1,13 +1,19 @@
 import fs from "fs";
 import path from "path";
 
+export interface Tip {
+  text: string;
+  timestamp: number;
+}
+
 export interface Technique {
   key: string;
   id: string;
   name: { en: string; ko: string };
+  romanized: string;
   category: string;
   video_timestamp: number;
-  tips: string[];
+  tips: (Tip | string)[];
 }
 
 export interface SequenceStep {
@@ -79,10 +85,14 @@ export function getAllForms(): FormData[] {
     .sort((a, b) => {
       const aNum = a.id.match(/taegeuk-(\d)/)?.[1];
       const bNum = b.id.match(/taegeuk-(\d)/)?.[1];
+      // Taegeuk forms first, sorted by number
       if (aNum && bNum) return parseInt(aNum) - parseInt(bNum);
       if (aNum) return -1;
       if (bNum) return 1;
-      return 0;
+      // Dan forms sorted by dan rank
+      const aDan = a.dan ?? 99;
+      const bDan = b.dan ?? 99;
+      return aDan - bDan;
     });
 }
 

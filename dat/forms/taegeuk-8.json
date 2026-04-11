@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 167.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "dubaldangseongchagi",
       "id": "dubaldangseongchagi",
       "name": { "en": "Double Jumping Front Kick", "ko": "두발당성차기" },
+      "romanized": "Dubal Dangseong Chagi",
       "category": "kick",
       "video_timestamp": 177.0,
       "tips": []
@@ -37,6 +39,7 @@
       "key": "geodeureo-bakkat-makki",
       "id": "geodeureo-bakkat-makki",
       "name": { "en": "Assisted Outward Block", "ko": "거들어바깥막기" },
+      "romanized": "Geodeureo Bakkat Makgi",
       "category": "block",
       "video_timestamp": 199.0,
       "tips": [
@@ -48,6 +51,7 @@
       "key": "oesanteulmakgi",
       "id": "oesanteulmakgi",
       "name": { "en": "Single Mountain Block", "ko": "외산틀막기" },
+      "romanized": "Oesanteul Makgi",
       "category": "block",
       "video_timestamp": 235.0,
       "tips": [
@@ -59,6 +63,7 @@
       "key": "danggyeojireugi",
       "id": "danggyeojireugi",
       "name": { "en": "Pulling Punch", "ko": "당겨지르기" },
+      "romanized": "Danggyeo Jireugi",
       "category": "strike",
       "video_timestamp": 275.0,
       "tips": [
@@ -70,6 +75,7 @@
       "key": "geodeureo-arae-makki",
       "id": "geodeureo-arae-makki",
       "name": { "en": "Assisted Low Block", "ko": "거들어아래막기" },
+      "romanized": "Geodeureo Arae Makgi",
       "category": "block",
       "video_timestamp": 319.0,
       "tips": [
@@ -81,6 +87,7 @@
       "key": "ttwieoapchagi",
       "id": "ttwieoapchagi",
       "name": { "en": "Jumping Front Kick", "ko": "뛰어앞차기" },
+      "romanized": "Ttwieo Ap Chagi",
       "category": "kick",
       "video_timestamp": 337.0,
       "tips": []

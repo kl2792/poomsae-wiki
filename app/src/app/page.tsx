@@ -2,14 +2,14 @@ import Link from "next/link";
 import { getAllForms } from "@/lib/data";
 
 const BELT_COLORS: Record<string, string> = {
-  "8th Geup": "bg-yellow-100 text-yellow-800",
-  "7th Geup": "bg-yellow-200 text-yellow-900",
-  "6th Geup": "bg-green-100 text-green-800",
-  "5th Geup": "bg-green-200 text-green-900",
-  "4th Geup": "bg-blue-100 text-blue-800",
-  "3rd Geup": "bg-blue-200 text-blue-900",
-  "2nd Geup": "bg-red-100 text-red-800",
-  "1st Geup": "bg-red-200 text-red-900",
+  "8th Geup": "bg-white text-gray-700 border border-gray-300",              // white
+  "7th Geup": "bg-gradient-to-r from-yellow-300 to-green-400 text-green-900", // yellow-green
+  "6th Geup": "bg-green-500 text-white",                                  // green
+  "5th Geup": "bg-gradient-to-r from-green-500 to-blue-500 text-white",   // green-blue
+  "4th Geup": "bg-blue-600 text-white",                                   // blue
+  "3rd Geup": "bg-gradient-to-r from-blue-600 to-red-600 text-white",     // blue-red
+  "2nd Geup": "bg-red-600 text-white",                                    // red
+  "1st Geup": "bg-gradient-to-r from-red-600 to-gray-900 text-white",     // red-black
 };
 
 export default function Home() {
@@ -21,12 +21,12 @@ export default function Home() {
   );
 
   return (
-    <div className="max-w-5xl mx-auto px-4 py-8">
+    <div className="max-w-7xl mx-auto px-4 py-8">
       <div className="mb-8">
         <h1 className="text-3xl font-bold">Poomsae Wiki</h1>
         <p className="text-gray-500 mt-1">
           Interactive reference for all official WT/KKW poomsae forms. Click any
-          move to see the exact video segment.
+          form to start learning.
         </p>
       </div>
 
@@ -39,31 +39,35 @@ export default function Home() {
         </div>
       ) : (
         <>
-          {taegeuk.length > 0 && (
-            <section className="mb-10">
-              <h2 className="text-lg font-semibold mb-4 text-gray-700">
-                Taegeuk Forms
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                {taegeuk.map((form) => (
-                  <FormCard key={form.id} form={form} />
-                ))}
-              </div>
-            </section>
-          )}
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+            {/* Taegeuk: 4 rows × 2 cols (2/5 width) */}
+            {taegeuk.length > 0 && (
+              <section className="md:col-span-2">
+                <h2 className="text-lg font-semibold mb-3 text-gray-700">
+                  Taegeuk Forms
+                </h2>
+                <div className="grid grid-cols-2 gap-2">
+                  {taegeuk.map((form) => (
+                    <FormCard key={form.id} form={form} />
+                  ))}
+                </div>
+              </section>
+            )}
 
-          {danForms.length > 0 && (
-            <section>
-              <h2 className="text-lg font-semibold mb-4 text-gray-700">
-                Dan Forms
-              </h2>
-              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
-                {danForms.map((form) => (
-                  <FormCard key={form.id} form={form} />
-                ))}
-              </div>
+            {/* Dan: 3 rows × 3 cols (3/5 width) */}
+            {danForms.length > 0 && (
+              <section className="md:col-span-3">
+                <h2 className="text-lg font-semibold mb-3 text-gray-700">
+                  Dan Forms
+                </h2>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
+                  {danForms.map((form) => (
+                    <FormCard key={form.id} form={form} />
+                  ))}
+                </div>
             </section>
           )}
+          </div>
         </>
       )}
     </div>
@@ -101,7 +105,7 @@ function FormCard({
       <h3 className="font-medium text-sm">{form.name.en}</h3>
       <p className="text-xs text-gray-400 mt-0.5">{form.name.ko}</p>
       <div className="flex items-center gap-2 mt-2">
-        <span className={`text-[10px] px-1.5 py-0.5 rounded ${beltColor}`}>
+        <span className={`text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap ${beltColor}`}>
           {form.dan ? `${form.dan}${form.dan === 1 ? "st" : form.dan === 2 ? "nd" : form.dan === 3 ? "rd" : "th"} Dan` : form.belt}
         </span>
         <span className="text-[10px] text-gray-400">

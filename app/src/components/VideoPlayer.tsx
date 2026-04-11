@@ -52,6 +52,8 @@ export default function VideoPlayer({
     }
 
     playerRef.current = new window.YT.Player(containerRef.current, {
+      width: "100%",
+      height: "100%",
       videoId,
       playerVars: {
         modestbranding: 1,
@@ -70,25 +72,45 @@ export default function VideoPlayer({
     };
   }, [ready, videoId]);
 
-  // Seek when startTime changes
+  // Seek when startTime changes — but only if video isn't already near the target
   useEffect(() => {
-    if (playerRef.current && startTime !== undefined) {
+    if (!playerRef.current || startTime === undefined) return;
+    const current = playerRef.current.getCurrentTime?.() ?? 0;
+    const diff = Math.abs(current - startTime);
+    if (diff > 2) {
       playerRef.current.seekTo(startTime, true);
-      playerRef.current.playVideo();
     }
+    playerRef.current.playVideo();
   }, [startTime]);
 
-  // Monitor playback to auto-pause at endTime
+  // Resume playback when endTime changes (for sequential step clicking)
+  useEffect(() => {
+    if (!playerRef.current || endTime === undefined) return;
+    playerRef.current.playVideo();
+  }, [endTime]);
+
+  // Track whether user explicitly clicked a step (vs just hitting play)
+  const shouldPauseRef = useRef(false);
+
+  // When endTime changes from a step click, enable auto-pause
+  useEffect(() => {
+    if (endTime !== undefined) {
+      shouldPauseRef.current = true;
+    }
+  }, [endTime]);
+
+  // Monitor playback: always report current time, pause at endTime only if step was clicked
   useEffect(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
-    if (!playing || endTime === undefined) return;
+    if (!playing) return;
 
     intervalRef.current = setInterval(() => {
       if (!playerRef.current) return;
       const current = playerRef.current.getCurrentTime();
       onTimeUpdate?.(current);
-      if (current >= endTime) {
+      if (shouldPauseRef.current && endTime !== undefined && current >= endTime) {
         playerRef.current.pauseVideo();
+        shouldPauseRef.current = false;
       }
     }, 200);
 

@@ -24,7 +24,8 @@
     {
       "key": "01",
       "id": "gibon-junbi",
-      "name": { "en": "Basic Ready Stance (Gibon Junbijase)", "ko": "기본 준비자세" },
+      "name": { "en": "Basic Ready Stance", "ko": "기본 준비자세" },
+      "romanized": "Gibon Junbi Jase",
       "category": "stance",
       "video_timestamp": 161,
       "tips": [
@@ -42,7 +43,8 @@
     {
       "key": "02",
       "id": "arae-makki",
-      "name": { "en": "Low Block (Arae Makgi)", "ko": "아래(내려)막기" },
+      "name": { "en": "Low Block", "ko": "아래(내려)막기" },
+      "romanized": "Arae Makgi",
       "category": "block",
       "video_timestamp": 216,
       "tips": [
@@ -55,7 +57,8 @@
     {
       "key": "03",
       "id": "momtong-jireugi",
-      "name": { "en": "Middle Punch (Momtong Jireugi)", "ko": "(몸통)지르기" },
+      "name": { "en": "Middle Punch", "ko": "(몸통)지르기" },
+      "romanized": "Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 252,
       "tips": [
@@ -69,7 +72,8 @@
     {
       "key": "04",
       "id": "momtong-an-makki",
-      "name": { "en": "Inward Middle Block (Momtong An Makgi)", "ko": "(몸통)안막기" },
+      "name": { "en": "Inward Middle Block", "ko": "(몸통)안막기" },
+      "romanized": "Momtong An Makgi",
       "category": "block",
       "video_timestamp": 302,
       "tips": [
@@ -84,7 +88,8 @@
     {
       "key": "05",
       "id": "ollyeo-makki",
-      "name": { "en": "Upper Block (Ollyeo Makgi)", "ko": "올려(얼굴)막기" },
+      "name": { "en": "Upper Block", "ko": "올려(얼굴)막기" },
+      "romanized": "Ollyeo Makgi",
       "category": "block",
       "video_timestamp": 344,
       "tips": [
@@ -97,7 +102,8 @@
     {
       "key": "06",
       "id": "ap-chagi",
-      "name": { "en": "Front Kick (Ap Chagi)", "ko": "앞차기" },
+      "name": { "en": "Front Kick", "ko": "앞차기" },
+      "romanized": "Ap Chagi",
       "category": "kick",
       "video_timestamp": 376,
       "tips": [
@@ -109,7 +115,8 @@
     {
       "key": "07",
       "id": "naranhi-seogi",
-      "name": { "en": "Parallel Stance (Naranhi Seogi)", "ko": "나란히서기" },
+      "name": { "en": "Parallel Stance", "ko": "나란히서기" },
+      "romanized": "Naranhi Seogi",
       "category": "stance",
       "video_timestamp": 409,
       "tips": [
@@ -119,7 +126,8 @@
     {
       "key": "08",
       "id": "ap-seogi",
-      "name": { "en": "Walking Stance (Ap Seogi)", "ko": "앞서기" },
+      "name": { "en": "Walking Stance", "ko": "앞서기" },
+      "romanized": "Ap Seogi",
       "category": "stance",
       "video_timestamp": 425,
       "tips": [
@@ -132,7 +140,8 @@
     {
       "key": "09",
       "id": "ap-gubi",
-      "name": { "en": "Forward Stance (Ap Gubi)", "ko": "앞굽이" },
+      "name": { "en": "Forward Stance", "ko": "앞굽이" },
+      "romanized": "Ap Gubi",
       "category": "stance",
       "video_timestamp": 449,
       "tips": [

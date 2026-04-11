@@ -20,7 +20,8 @@
     {
       "key": "01",
       "id": "oesanteul-yeopchagi",
-      "name": { "en": "Oesanteul Yeopchagi", "ko": "외산틀 옆차기" },
+      "name": { "en": "Single Mountain Side Kick", "ko": "외산틀 옆차기" },
+      "romanized": "Oesanteul Yeop Chagi",
       "category": "kick",
       "video_timestamp": 131,
       "tips": [
@@ -36,7 +37,8 @@
     {
       "key": "02",
       "id": "otgoreo-ulgulmakgi+dusonpyeo-biteureo-jabadanggigi",
-      "name": { "en": "Otgoreo Ulgulmakgi + Dusonpyeo Biteureo Jabadanggigi", "ko": "엇걸어 얼굴막기 + 두손펴 비틀어 잡아당기기" },
+      "name": { "en": "Cross High Block + Double Hand Twisting Pull", "ko": "엇걸어 얼굴막기 + 두손펴 비틀어 잡아당기기" },
+      "romanized": "Eotgeoreo Ulgul Makgi + Dusonpyeo Biteureo Jabadanggigi",
       "category": "block",
       "video_timestamp": 137,
       "tips": []
@@ -44,7 +46,8 @@
     {
       "key": "03",
       "id": "ttwieo-yeopchagi",
-      "name": { "en": "Ttwieo Yeopchagi", "ko": "뛰어 옆차기" },
+      "name": { "en": "Jumping Side Kick", "ko": "뛰어 옆차기" },
+      "romanized": "Ttwieo Yeop Chagi",
       "category": "kick",
       "video_timestamp": 145,
       "tips": [
@@ -54,7 +57,8 @@
     {
       "key": "04",
       "id": "ogeumseogi",
-      "name": { "en": "Ogeumseogi", "ko": "오금서기" },
+      "name": { "en": "Knee Crook Stance", "ko": "오금서기" },
+      "romanized": "Ogeum Seogi",
       "category": "stance",
       "video_timestamp": 148,
       "tips": []

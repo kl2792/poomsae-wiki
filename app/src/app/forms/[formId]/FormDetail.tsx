@@ -14,6 +14,8 @@ export default function FormDetail({ form }: { form: FormData }) {
   const [activeTechnique, setActiveTechnique] = useState<Technique | null>(null);
   const [videoStart, setVideoStart] = useState<number | undefined>();
   const [videoEnd, setVideoEnd] = useState<number | undefined>();
+  const [currentVideoTime, setCurrentVideoTime] = useState<number>(0);
+  const [userClicked, setUserClicked] = useState(false);
 
   const techMap = useMemo(
     () => new Map(form.techniques.map((t) => [t.key, t])),
@@ -28,14 +30,40 @@ export default function FormDetail({ form }: { form: FormData }) {
     return counts;
   }, [form.sequence]);
 
+  // Auto-highlight: find which step matches current video time
+  const trackedStep = useMemo(() => {
+    if (userClicked) return null; // don't override user selection
+    return form.sequence.find(
+      (s) => currentVideoTime >= s.timestamp && currentVideoTime < s.timestamp_end
+    ) ?? null;
+  }, [currentVideoTime, form.sequence, userClicked]);
+
+  // The displayed active step: user-clicked takes priority, else auto-tracked
+  const displayActiveStep = userClicked ? activeStep : (trackedStep ?? activeStep);
+
+  const handleTimeUpdate = useCallback((time: number) => {
+    setCurrentVideoTime(time);
+    // Clear user click after video moves past the clicked segment
+    if (userClicked && activeStep && time >= activeStep.timestamp_end) {
+      setUserClicked(false);
+    }
+  }, [userClicked, activeStep]);
+
   const handleStepClick = useCallback(
     (step: SequenceStep) => {
+      const prevStep = activeStep;
       setActiveStep(step);
       setActiveTechnique(techMap.get(step.technique) ?? null);
-      setVideoStart(step.timestamp);
       setVideoEnd(step.timestamp_end);
+      setUserClicked(true);
+
+      // If clicking the next sequential step, just resume — don't seek
+      const isNextStep = prevStep && step.step === prevStep.step + 1;
+      if (!isNextStep) {
+        setVideoStart(step.timestamp);
+      }
     },
-    [techMap]
+    [techMap, activeStep]
   );
 
   const handleTechniqueClick = useCallback((tech: Technique) => {
@@ -43,6 +71,7 @@ export default function FormDetail({ form }: { form: FormData }) {
     setActiveStep(null);
     setVideoStart(tech.video_timestamp);
     setVideoEnd(undefined);
+    setUserClicked(true);
   }, []);
 
   const handleWatchBreakdown = useCallback(() => {
@@ -57,13 +86,19 @@ export default function FormDetail({ form }: { form: FormData }) {
     setVideoEnd(activeStep.timestamp_end);
   }, [activeStep]);
 
-  // Resolve the technique for the active step
-  const currentTech = activeStep
-    ? techMap.get(activeStep.technique)
+  // Resolve the technique for the displayed active step
+  const currentTech = displayActiveStep
+    ? techMap.get(displayActiveStep.technique)
     : activeTechnique;
 
+  function formatTime(seconds: number): string {
+    const m = Math.floor(seconds / 60);
+    const s = Math.floor(seconds % 60);
+    return `${m}:${String(s).padStart(2, "0")}`;
+  }
+
   return (
-    <div className="max-w-5xl mx-auto px-4 py-6">
+    <div className="max-w-6xl mx-auto px-4 py-6">
       {/* Header */}
       <div className="mb-6">
         <h1 className="text-2xl font-bold">{form.name.en}</h1>
@@ -78,14 +113,15 @@ export default function FormDetail({ form }: { form: FormData }) {
         </div>
       </div>
 
-      {/* Main content: video + list */}
-      <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-        {/* Video (3/5 width on desktop) */}
-        <div className="md:col-span-3">
+      {/* Main content: list + video */}
+      <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
+        {/* Video (7/10 width on desktop, appears second in DOM but visually right) */}
+        <div className="md:col-span-7 md:order-2">
           <VideoPlayer
             videoId={form.video_id}
             startTime={videoStart}
             endTime={videoEnd}
+            onTimeUpdate={handleTimeUpdate}
           />
 
           {/* Active item details */}
@@ -139,22 +175,37 @@ export default function FormDetail({ form }: { form: FormData }) {
                   <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
                     Tips
                   </p>
-                  {currentTech.tips.map((tip, i) => (
-                    <p
-                      key={i}
-                      className="text-sm text-gray-700 pl-3 border-l-2 border-blue-200"
-                    >
-                      {tip}
-                    </p>
-                  ))}
+                  {currentTech.tips.map((tip, i) => {
+                    const text = typeof tip === "string" ? tip : tip.text;
+                    const ts = typeof tip === "string" ? null : tip.timestamp;
+                    // End = next tip's start, or technique's end
+                    const nextTip = currentTech.tips[i + 1];
+                    const nextTs = nextTip && typeof nextTip !== "string" ? nextTip.timestamp : null;
+                    const endTs = nextTs ?? (activeStep ? activeStep.timestamp_end : undefined);
+                    return (
+                      <button
+                        key={i}
+                        onClick={() => {
+                          if (ts) {
+                            setVideoStart(ts);
+                            setVideoEnd(endTs ?? undefined);
+                          }
+                        }}
+                        className={`block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200 ${ts ? "hover:text-blue-600 hover:border-blue-400 cursor-pointer" : ""}`}
+                      >
+                        {text}
+                        {ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
+                      </button>
+                    );
+                  })}
                 </div>
               )}
             </div>
           )}
         </div>
 
-        {/* Sidebar (2/5 width on desktop, scrollable) */}
-        <div className="md:col-span-2">
+        {/* Sidebar (3/10 width on desktop, scrollable, appears first/left) */}
+        <div className="md:col-span-3 md:order-1">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
             {/* Tabs */}
             <div className="flex border-b border-gray-200">
@@ -185,7 +236,7 @@ export default function FormDetail({ form }: { form: FormData }) {
                 <SequenceList
                   sequence={form.sequence}
                   techniques={form.techniques}
-                  activeStep={activeStep?.step ?? null}
+                  activeStep={displayActiveStep?.step ?? null}
                   onStepClick={handleStepClick}
                 />
               ) : (
@@ -207,7 +258,7 @@ export default function FormDetail({ form }: { form: FormData }) {
                 onClick={() => {
                   setActiveStep(null);
                   setActiveTechnique(null);
-                  setVideoStart(form.sections!.repeat!.start);
+                  setVideoStart(form.sections!.repeat!.start + 5);
                   setVideoEnd(form.sections!.repeat!.end);
                 }}
                 className="text-blue-600 hover:underline"

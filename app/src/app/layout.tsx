@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en" className={`${geist.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col bg-gray-50 text-gray-900">
         <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
-          <nav className="max-w-5xl mx-auto px-4 h-14 flex items-center gap-6">
+          <nav className="max-w-7xl mx-auto px-4 h-14 flex items-center gap-6">
             <Link href="/" className="font-bold text-lg tracking-tight">
               Poomsae Wiki
             </Link>

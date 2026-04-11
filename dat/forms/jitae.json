@@ -20,7 +20,8 @@
     {
       "key": "01",
       "id": "sonal-ulgul-ollyeo-makgi",
-      "name": { "en": "Sonal Ulgul (Ollyeo) Makgi", "ko": "손날 얼굴 올려막기" },
+      "name": { "en": "Knifehand High Rising Block", "ko": "손날 얼굴 올려막기" },
+      "romanized": "Sonnal Ulgul Ollyeo Makgi",
       "category": "block",
       "video_timestamp": 141,
       "tips": [
@@ -37,7 +38,8 @@
     {
       "key": "02",
       "id": "geumgang-momtong-jireugi",
-      "name": { "en": "Geumgang (Momtong) Jireugi", "ko": "금강 몸통지르기" },
+      "name": { "en": "Diamond Middle Punch", "ko": "금강 몸통지르기" },
+      "romanized": "Geumgang Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 145,
       "tips": []
@@ -45,7 +47,8 @@
     {
       "key": "03",
       "id": "mejumeok-yeoppyojeokchigi",
-      "name": { "en": "Mejumeok Yeoppyojeokchigi", "ko": "메주먹 옆표적치기" },
+      "name": { "en": "Hammer Fist Side Target Strike", "ko": "메주먹 옆표적치기" },
+      "romanized": "Mejumeok Yeop Pyojeok Chigi",
       "category": "strike",
       "video_timestamp": 149,
       "tips": []
@@ -53,7 +56,8 @@
     {
       "key": "04",
       "id": "anpalmok-bakkanmakgi",
-      "name": { "en": "Anpalmok Bakkanmakgi", "ko": "안팔목 바깥막기" },
+      "name": { "en": "Inner Forearm Outward Block", "ko": "안팔목 바깥막기" },
+      "romanized": "Anpalmok Bakkat Makgi",
       "category": "block",
       "video_timestamp": 154,
       "tips": []

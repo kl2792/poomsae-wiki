@@ -21,6 +21,7 @@
       "key": "01",
       "id": "gyeopson-junbijase",
       "name": { "en": "Overlapping Hands Ready Stance", "ko": "겹손 준비자세" },
+      "romanized": "Gyeopson Junbi Jase",
       "category": "stance",
       "video_timestamp": 164,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "02",
       "id": "palggumchi-ollyeochigi",
       "name": { "en": "Elbow Upper Strike", "ko": "팔꿈치 올려치기" },
+      "romanized": "Palkkumchi Ollyeo Chigi",
       "category": "strike",
       "video_timestamp": 197,
       "tips": []
@@ -37,6 +39,7 @@
       "key": "03",
       "id": "geodeureo-ulgul-yeopmakgi",
       "name": { "en": "Assisted High Side Block", "ko": "거들어 얼굴엎막기" },
+      "romanized": "Geodeureo Ulgul Yeop Makgi",
       "category": "block",
       "video_timestamp": 238,
       "tips": []
@@ -45,6 +48,7 @@
       "key": "04",
       "id": "danggyeo-deungjumeok-apchigi",
       "name": { "en": "Pulling Back-fist Front Strike", "ko": "당겨 등주먹 앞치기" },
+      "romanized": "Danggyeo Deungjumeok Apchigi",
       "category": "strike",
       "video_timestamp": 276,
       "tips": []
@@ -53,6 +57,7 @@
       "key": "05",
       "id": "meongyechigi",
       "name": { "en": "Collar Strike", "ko": "명에치기" },
+      "romanized": "Meongyechigi",
       "category": "strike",
       "video_timestamp": 306,
       "tips": []
@@ -61,6 +66,7 @@
       "key": "06",
       "id": "hecheo-santeulmakgi",
       "name": { "en": "Spreading Mountain Block", "ko": "헤쳐 산틀막기" },
+      "romanized": "Hecheo Santeul Makgi",
       "category": "block",
       "video_timestamp": 343,
       "tips": []
@@ -69,6 +75,7 @@
       "key": "07",
       "id": "moaseogi",
       "name": { "en": "Close Stance", "ko": "모아서기" },
+      "romanized": "Moa Seogi",
       "category": "stance",
       "video_timestamp": 375,
       "tips": []

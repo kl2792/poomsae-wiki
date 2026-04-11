@@ -53,22 +53,27 @@ export default function SequenceList({
                     isActive ? "text-blue-900" : "text-gray-900"
                   }`}
                 >
-                  {displayName}
+                  {step.side ? `${step.side.charAt(0).toUpperCase() + step.side.slice(1)} ${displayName}` : displayName}
                 </span>
-                {step.side && (
-                  <span className="text-[10px] text-gray-400 uppercase">
-                    {step.side}
-                  </span>
-                )}
                 {step.kihap && (
                   <span className="text-[10px] bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium uppercase">
                     Kihap
                   </span>
                 )}
               </div>
-              {step.direction && step.direction !== "forward" && (
-                <span className="text-xs text-gray-500">{step.direction}</span>
-              )}
+              <div className="flex items-center gap-1.5">
+                {(tech as any)?.romanized && (
+                  <span className="text-[11px] text-gray-400">
+                    {(tech as any).romanized}
+                  </span>
+                )}
+                {tech?.name.ko && (
+                  <span className="text-[11px] text-gray-300">{tech.name.ko}</span>
+                )}
+                {step.direction && step.direction !== "forward" && (
+                  <span className="text-[11px] text-gray-400 ml-auto">{formatDirection(step.direction)}</span>
+                )}
+              </div>
             </div>
 
             <span className="text-[11px] text-gray-400 font-mono shrink-0 pt-0.5">
@@ -85,4 +90,15 @@ function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);
   const s = Math.floor(seconds % 60);
   return `${m}:${String(s).padStart(2, "0")}`;
+}
+
+function formatDirection(dir: string): string {
+  const map: Record<string, string> = {
+    "left-90": "↰ Turn left",
+    "right-90": "↱ Turn right",
+    "left-180": "↰ Turn left 180°",
+    "right-180": "↱ Turn right 180°",
+    "back": "↶ Turn around",
+  };
+  return map[dir] ?? dir;
 }

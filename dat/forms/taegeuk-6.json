@@ -21,6 +21,7 @@
       "key": "junbi",
       "id": "junbi",
       "name": { "en": "Ready Stance", "ko": "준비" },
+      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 136.0,
       "tips": []
@@ -29,6 +30,7 @@
       "key": "sonal-ulgul-biteureomakgi",
       "id": "sonal-ulgul-biteureomakgi",
       "name": { "en": "Knifehand High Twisting Block", "ko": "손날얼굴비틀어막기" },
+      "romanized": "Sonnal Ulgul Biteureo Makgi",
       "category": "block",
       "video_timestamp": 147.0,
       "tips": [
@@ -44,6 +46,7 @@
       "key": "dollyeochagi",
       "id": "dollyeochagi",
       "name": { "en": "Roundhouse Kick", "ko": "돌려차기" },
+      "romanized": "Dollyeo Chagi",
       "category": "kick",
       "video_timestamp": 191.0,
       "tips": [
@@ -55,6 +58,7 @@
       "key": "ulgul-bakkat-makki",
       "id": "ulgul-bakkat-makki",
       "name": { "en": "High Outward Block", "ko": "얼굴바깥막기" },
+      "romanized": "Ulgul Bakkat Makgi",
       "category": "block",
       "video_timestamp": 219.0,
       "tips": []
@@ -63,6 +67,7 @@
       "key": "arae-hecheomakgi",
       "id": "arae-hecheomakgi",
       "name": { "en": "Low Spreading Block", "ko": "아래헤쳐막기" },
+      "romanized": "Arae Hecheo Makgi",
       "category": "block",
       "video_timestamp": 253.0,
       "tips": []
@@ -71,6 +76,7 @@
       "key": "batangson-momtong-an-makki",
       "id": "batangson-momtong-an-makki",
       "name": { "en": "Palm Inward Middle Block", "ko": "바탕손몸통안막기" },
+      "romanized": "Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 289.0,
       "tips": []
