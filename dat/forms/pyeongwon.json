@@ -37,12 +37,11 @@
   "techniques": [
     {
       "key": "01",
-      "id": "gyeopson-junbijase",
       "name": {
         "en": "Overlapping Hands Ready Stance",
-        "ko": "겹손 준비자세"
+        "ko": "겹손 준비자세",
+        "romanized": "Gyeopson Junbi Jase"
       },
-      "romanized": "Gyeopson Junbi Jase",
       "category": "stance",
       "video_timestamp": 164,
       "tips": [
@@ -66,12 +65,11 @@
     },
     {
       "key": "02",
-      "id": "palggumchi-ollyeochigi",
       "name": {
         "en": "Elbow Upper Strike",
-        "ko": "팔꿈치 올려치기"
+        "ko": "팔꿈치 올려치기",
+        "romanized": "Palkkumchi Ollyeo Chigi"
       },
-      "romanized": "Palkkumchi Ollyeo Chigi",
       "category": "strike",
       "video_timestamp": 197,
       "tips": [
@@ -91,12 +89,11 @@
     },
     {
       "key": "03",
-      "id": "geodeureo-ulgul-yeopmakgi",
       "name": {
         "en": "Assisted High Side Block",
-        "ko": "거들어 얼굴엎막기"
+        "ko": "거들어 얼굴엎막기",
+        "romanized": "Geodeureo Ulgul Yeop Makgi"
       },
-      "romanized": "Geodeureo Ulgul Yeop Makgi",
       "category": "block",
       "video_timestamp": 238,
       "tips": [
@@ -128,12 +125,11 @@
     },
     {
       "key": "04",
-      "id": "danggyeo-deungjumeok-apchigi",
       "name": {
         "en": "Pulling Back-fist Front Strike",
-        "ko": "당겨 등주먹 앞치기"
+        "ko": "당겨 등주먹 앞치기",
+        "romanized": "Danggyeo Deungjumeok Apchigi"
       },
-      "romanized": "Danggyeo Deungjumeok Apchigi",
       "category": "strike",
       "video_timestamp": 276,
       "tips": [
@@ -149,12 +145,11 @@
     },
     {
       "key": "05",
-      "id": "meongyechigi",
       "name": {
         "en": "Collar Strike",
-        "ko": "명에치기"
+        "ko": "명에치기",
+        "romanized": "Meongyechigi"
       },
-      "romanized": "Meongyechigi",
       "category": "strike",
       "video_timestamp": 306,
       "tips": [
@@ -178,12 +173,11 @@
     },
     {
       "key": "06",
-      "id": "hecheo-santeulmakgi",
       "name": {
         "en": "Spreading Mountain Block",
-        "ko": "헤쳐 산틀막기"
+        "ko": "헤쳐 산틀막기",
+        "romanized": "Hecheo Santeul Makgi"
       },
-      "romanized": "Hecheo Santeul Makgi",
       "category": "block",
       "video_timestamp": 343,
       "tips": [
@@ -211,12 +205,11 @@
     },
     {
       "key": "07",
-      "id": "moaseogi",
       "name": {
         "en": "Close Stance",
-        "ko": "모아서기"
+        "ko": "모아서기",
+        "romanized": "Moa Seogi"
       },
-      "romanized": "Moa Seogi",
       "category": "stance",
       "video_timestamp": 375,
       "tips": [
@@ -228,192 +221,176 @@
     },
     {
       "key": "anpalmok-geodeureo-ulgul-yeopmakgi",
-      "id": "anpalmok-geodeureo-ulgul-yeopmakgi",
       "name": {
         "en": "Inner Wrist Assisted High Side Block",
-        "ko": "안팔목거들어얼굴옆막기"
+        "ko": "안팔목거들어얼굴옆막기",
+        "romanized": "Anpalmok Geodeureo Ulgul Yeop Makgi"
       },
-      "romanized": "Anpalmok Geodeureo Ulgul Yeop Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "apchagi",
-      "id": "apchagi",
       "name": {
         "en": "Front Kick",
-        "ko": "앞차기"
+        "ko": "앞차기",
+        "romanized": "Ap Chagi"
       },
-      "romanized": "Ap Chagi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "arae-naeryeo-hecheomakgi",
-      "id": "arae-naeryeo-hecheomakgi",
       "name": {
         "en": "Low Downward Spreading Block",
-        "ko": "아래내려헤쳐막기"
+        "ko": "아래내려헤쳐막기",
+        "romanized": "Arae Naeryeo Hecheo Makgi"
       },
-      "romanized": "Arae Naeryeo Hecheo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "geumgangmakgi",
-      "id": "geumgangmakgi",
       "name": {
         "en": "Diamond Block",
-        "ko": "금강막기"
+        "ko": "금강막기",
+        "romanized": "Geumgang Makgi"
       },
-      "romanized": "Geumgang Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "gyeopson-junbijase",
-      "id": "gyeopson-junbijase",
       "name": {
         "en": "Overlapping Hands Ready Stance",
-        "ko": "겹손준비자세"
+        "ko": "겹손준비자세",
+        "romanized": "Gyeopson Junbi Jase"
       },
-      "romanized": "Gyeopson Junbi Jase",
       "category": "stance",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "jageun-doljjeogwi",
-      "id": "jageun-doljjeogwi",
       "name": {
         "en": "Small Hinge",
-        "ko": "작은돌쩌귀"
+        "ko": "작은돌쩌귀",
+        "romanized": "Jageun Doljjeogwi"
       },
-      "romanized": "Jageun Doljjeogwi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "ready",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momdora-yeopchagi",
-      "id": "momdora-yeopchagi",
       "name": {
         "en": "Turning Side Kick",
-        "ko": "몸돌아옆차기"
+        "ko": "몸돌아옆차기",
+        "romanized": "Momdora Yeop Chagi"
       },
-      "romanized": "Momdora Yeop Chagi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "palggumchi-ollyeochigi",
-      "id": "palggumchi-ollyeochigi",
       "name": {
         "en": "Elbow Upper Strike",
-        "ko": "팔꿈치올려치기"
+        "ko": "팔꿈치올려치기",
+        "romanized": "Palkkumchi Ollyeo Chigi"
       },
-      "romanized": "Palkkumchi Ollyeo Chigi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "palggumchi-pyojeokchigi",
-      "id": "palggumchi-pyojeokchigi",
       "name": {
         "en": "Elbow Target Strike",
-        "ko": "팔꿈치표적치기"
+        "ko": "팔꿈치표적치기",
+        "romanized": "Palkkumchi Pyojeok Chigi"
       },
-      "romanized": "Palkkumchi Pyojeok Chigi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-geodeureo-arae-naeryeo-makgi",
-      "id": "sonal-geodeureo-arae-naeryeo-makgi",
       "name": {
         "en": "Knifehand Assisted Low Block",
-        "ko": "손날거들어아래내려막기"
+        "ko": "손날거들어아래내려막기",
+        "romanized": "Sonnal Geodeureo Arae Naeryeo Makgi"
       },
-      "romanized": "Sonnal Geodeureo Arae Naeryeo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-geodeureo-momtong-makgi",
-      "id": "sonal-geodeureo-momtong-makgi",
       "name": {
         "en": "Knifehand Assisted Middle Block",
-        "ko": "손날거들어몸통막기"
+        "ko": "손날거들어몸통막기",
+        "romanized": "Sonnal Geodeureo Momtong Makgi"
       },
-      "romanized": "Sonnal Geodeureo Momtong Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-geodeureomakgi",
-      "id": "sonal-geodeureomakgi",
       "name": {
         "en": "Knifehand Guarding Block",
-        "ko": "손날거들어막기"
+        "ko": "손날거들어막기",
+        "romanized": "Sonnal Geodeureo Makgi"
       },
-      "romanized": "Sonnal Geodeureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-momtong-bakkanmakgi",
-      "id": "sonal-momtong-bakkanmakgi",
       "name": {
         "en": "Knifehand Middle Outward Block",
-        "ko": "손날몸통바깥막기"
+        "ko": "손날몸통바깥막기",
+        "romanized": "Sonnal Momtong Bakkat Makgi"
       },
-      "romanized": "Sonnal Momtong Bakkat Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "tongmilgi",
-      "id": "tongmilgi",
       "name": {
         "en": "Pushing",
-        "ko": "통밀기"
+        "ko": "통밀기",
+        "romanized": "Tongmilgi"
       },
-      "romanized": "Tongmilgi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "yeopchagi",
-      "id": "yeopchagi",
       "name": {
         "en": "Side Kick",
-        "ko": "옆차기"
+        "ko": "옆차기",
+        "romanized": "Yeop Chagi"
       },
-      "romanized": "Yeop Chagi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []

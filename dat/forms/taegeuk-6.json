@@ -42,24 +42,22 @@
   "techniques": [
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 136.0,
       "tips": []
     },
     {
       "key": "sonal-ulgul-biteureomakgi",
-      "id": "sonal-ulgul-biteureomakgi",
       "name": {
         "en": "Knifehand High Twisting Block",
-        "ko": "손날얼굴비틀어막기"
+        "ko": "손날얼굴비틀어막기",
+        "romanized": "Sonnal Ulgul Biteureo Makgi"
       },
-      "romanized": "Sonnal Ulgul Biteureo Makgi",
       "category": "block",
       "video_timestamp": 147.0,
       "tips": [
@@ -91,12 +89,11 @@
     },
     {
       "key": "dollyeochagi",
-      "id": "dollyeochagi",
       "name": {
         "en": "Roundhouse Kick",
-        "ko": "돌려차기"
+        "ko": "돌려차기",
+        "romanized": "Dollyeo Chagi"
       },
-      "romanized": "Dollyeo Chagi",
       "category": "kick",
       "video_timestamp": 191.0,
       "tips": [
@@ -112,156 +109,143 @@
     },
     {
       "key": "ulgul-bakkat-makki",
-      "id": "ulgul-bakkat-makki",
       "name": {
         "en": "High Outward Block",
-        "ko": "얼굴바깥막기"
+        "ko": "얼굴바깥막기",
+        "romanized": "Ulgul Bakkat Makgi"
       },
-      "romanized": "Ulgul Bakkat Makgi",
       "category": "block",
       "video_timestamp": 219.0,
       "tips": []
     },
     {
       "key": "arae-hecheomakgi",
-      "id": "arae-hecheomakgi",
       "name": {
         "en": "Low Spreading Block",
-        "ko": "아래헤쳐막기"
+        "ko": "아래헤쳐막기",
+        "romanized": "Arae Hecheo Makgi"
       },
-      "romanized": "Arae Hecheo Makgi",
       "category": "block",
       "video_timestamp": 253.0,
       "tips": []
     },
     {
       "key": "batangson-momtong-an-makki",
-      "id": "batangson-momtong-an-makki",
       "name": {
         "en": "Palm Inward Middle Block",
-        "ko": "바탕손몸통안막기"
+        "ko": "바탕손몸통안막기",
+        "romanized": "Batangson Momtong An Makgi"
       },
-      "romanized": "Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 289.0,
       "tips": []
     },
     {
       "key": "ap-chagi+momtong-bakkat-makki",
-      "id": "ap-chagi+momtong-bakkat-makki",
       "name": {
         "en": "Front Kick + Middle Outward Block",
-        "ko": "앞차기 + 몸통바깥막기"
+        "ko": "앞차기 + 몸통바깥막기",
+        "romanized": "Ap Chagi + Momtong Bakkat Makki"
       },
-      "romanized": "Ap Chagi + Momtong Bakkat Makki",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ap-chagi+momtong-jireugi",
-      "id": "ap-chagi+momtong-jireugi",
       "name": {
         "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기"
+        "ko": "앞차기 + 몸통지르기",
+        "romanized": "Ap Chagi + Momtong Jireugi"
       },
-      "romanized": "Ap Chagi + Momtong Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "arae-naeryeo-makki",
-      "id": "arae-naeryeo-makki",
       "name": {
         "en": "Low Downward Block",
-        "ko": "아래내려막기"
+        "ko": "아래내려막기",
+        "romanized": "Arae Naeryeo Makgi"
       },
-      "romanized": "Arae Naeryeo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "batangson-momtong-an-makki+momtong-jireugi",
-      "id": "batangson-momtong-an-makki+momtong-jireugi",
       "name": {
         "en": "Palm Inward Middle Block + Middle Punch",
-        "ko": "바탕손몸통안막기 + 몸통지르기"
+        "ko": "바탕손몸통안막기 + 몸통지르기",
+        "romanized": "Batangson Momtong An Makgi + Momtong Jireugi"
       },
-      "romanized": "Batangson Momtong An Makgi + Momtong Jireugi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "biteureo-makki",
-      "id": "biteureo-makki",
       "name": {
         "en": "Twisting Block",
-        "ko": "비틀어막기"
+        "ko": "비틀어막기",
+        "romanized": "Biteureo Makgi"
       },
-      "romanized": "Biteureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "biteureo-ulgul-makki",
-      "id": "biteureo-ulgul-makki",
       "name": {
         "en": "Twisting Face Block",
-        "ko": "비틀어얼굴막기"
+        "ko": "비틀어얼굴막기",
+        "romanized": "Biteureo Ulgul Makgi"
       },
-      "romanized": "Biteureo Ulgul Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-geodeureo-makki",
-      "id": "sonal-geodeureo-makki",
       "name": {
         "en": "Knifehand Guarding Block",
-        "ko": "손날거들어막기"
+        "ko": "손날거들어막기",
+        "romanized": "Sonnal Geodeureo Makgi"
       },
-      "romanized": "Sonnal Geodeureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ulgul-bakkat-makki+momtong-jireugi",
-      "id": "ulgul-bakkat-makki+momtong-jireugi",
       "name": {
         "en": "High Outward Block + Middle Punch",
-        "ko": "얼굴바깥막기 + 몸통지르기"
+        "ko": "얼굴바깥막기 + 몸통지르기",
+        "romanized": "Ulgul Bakkat Makki + Momtong Jireugi"
       },
-      "romanized": "Ulgul Bakkat Makki + Momtong Jireugi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ulgul-dollyeochagi+arae-naeryeo-makki",
-      "id": "ulgul-dollyeochagi+arae-naeryeo-makki",
       "name": {
         "en": "Face Roundhouse Kick + Low Downward Block",
-        "ko": "얼굴돌려차기 + 아래내려막기"
+        "ko": "얼굴돌려차기 + 아래내려막기",
+        "romanized": "Ulgul Dollyeo Chagi + Arae Naeryeo Makgi"
       },
-      "romanized": "Ulgul Dollyeo Chagi + Arae Naeryeo Makgi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ulgul-dollyeochagi+ulgul-bakkat-makki+momtong-jireugi",
-      "id": "ulgul-dollyeochagi+ulgul-bakkat-makki+momtong-jireugi",
       "name": {
         "en": "Face Roundhouse Kick + High Outward Block + Middle Punch",
-        "ko": "얼굴돌려차기 + 얼굴바깥막기 + 몸통지르기"
+        "ko": "얼굴돌려차기 + 얼굴바깥막기 + 몸통지르기",
+        "romanized": "Ulgul Dollyeo Chagi + Ulgul Bakkat Makgi + Momtong Jireugi"
       },
-      "romanized": "Ulgul Dollyeo Chagi + Ulgul Bakkat Makgi + Momtong Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []

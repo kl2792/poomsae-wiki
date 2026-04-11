@@ -151,16 +151,15 @@ def validate_form(path: str) -> list[str]:
     # Check all techniques have required fields
     tech_keys = set()
     for i, t in enumerate(d['techniques']):
-        for field in ['key', 'name', 'romanized', 'category']:
+        for field in ['key', 'name', 'category']:
             if field not in t:
                 errors.append(f"Technique {i}: missing {field}")
         if 'key' in t:
             tech_keys.add(t['key'])
         if 'name' in t:
-            if 'en' not in t['name']:
-                errors.append(f"Technique {t.get('key','?')}: missing name.en")
-            if 'ko' not in t['name']:
-                errors.append(f"Technique {t.get('key','?')}: missing name.ko")
+            for nf in ['en', 'ko', 'romanized']:
+                if nf not in t['name']:
+                    errors.append(f"Technique {t.get('key','?')}: missing name.{nf}")
             # Check no romanized in English name
             if 'en' in t['name'] and '(' in t['name']['en']:
                 errors.append(f"Technique {t.get('key','?')}: name.en contains parentheses (romanized leak?): {t['name']['en']}")

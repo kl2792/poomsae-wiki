@@ -37,12 +37,11 @@
   "techniques": [
     {
       "key": "01",
-      "id": "batangson-apchigi",
       "name": {
         "en": "Palm Strike",
-        "ko": "바탕손앞치기"
+        "ko": "바탕손앞치기",
+        "romanized": "Batangson Apchigi"
       },
-      "romanized": "Batangson Apchigi",
       "category": "strike",
       "video_timestamp": 214,
       "tips": [
@@ -66,12 +65,11 @@
     },
     {
       "key": "02",
-      "id": "sonal-momtong-anmakgi",
       "name": {
         "en": "Knife-hand Middle Inward Block",
-        "ko": "손날몸통안막기"
+        "ko": "손날몸통안막기",
+        "romanized": "Sonnal Momtong An Makgi"
       },
-      "romanized": "Sonnal Momtong An Makgi",
       "category": "block",
       "video_timestamp": 251,
       "tips": [
@@ -91,12 +89,11 @@
     },
     {
       "key": "03",
-      "id": "geumgangmakgi",
       "name": {
         "en": "Diamond Block",
-        "ko": "금강막기"
+        "ko": "금강막기",
+        "romanized": "Geumgang Makgi"
       },
-      "romanized": "Geumgang Makgi",
       "category": "block",
       "video_timestamp": 272,
       "tips": [
@@ -120,36 +117,33 @@
     },
     {
       "key": "04",
-      "id": "keundoljjeogwi",
       "name": {
         "en": "Large Hinge",
-        "ko": "큰돌쩌귀"
+        "ko": "큰돌쩌귀",
+        "romanized": "Keundoljjeogwi"
       },
-      "romanized": "Keundoljjeogwi",
       "category": "block",
       "video_timestamp": 316,
       "tips": []
     },
     {
       "key": "05",
-      "id": "santeulmakgi",
       "name": {
         "en": "Mountain Block",
-        "ko": "산틀막기"
+        "ko": "산틀막기",
+        "romanized": "Santeul Makgi"
       },
-      "romanized": "Santeul Makgi",
       "category": "block",
       "video_timestamp": 198,
       "tips": []
     },
     {
       "key": "06",
-      "id": "hakdariseogi",
       "name": {
         "en": "Crane Stance",
-        "ko": "학다리서기"
+        "ko": "학다리서기",
+        "romanized": "Hakdari Seogi"
       },
-      "romanized": "Hakdari Seogi",
       "category": "stance",
       "video_timestamp": 384,
       "tips": [
@@ -177,96 +171,88 @@
     },
     {
       "key": "anpalmok-momtong-hecheomakgi",
-      "id": "anpalmok-momtong-hecheomakgi",
       "name": {
         "en": "Inner Wrist Middle Spreading Block",
-        "ko": "안팔목몸통헤쳐막기"
+        "ko": "안팔목몸통헤쳐막기",
+        "romanized": "Anpalmok Momtong Hecheo Makgi"
       },
-      "romanized": "Anpalmok Momtong Hecheo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "arae-hecheomakgi",
-      "id": "arae-hecheomakgi",
       "name": {
         "en": "Low Spreading Block",
-        "ko": "아래헤쳐막기"
+        "ko": "아래헤쳐막기",
+        "romanized": "Arae Hecheo Makgi"
       },
-      "romanized": "Arae Hecheo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "batangson-apchigi",
-      "id": "batangson-apchigi",
       "name": {
         "en": "Palm Strike",
-        "ko": "바탕손앞치기"
+        "ko": "바탕손앞치기",
+        "romanized": "Batangson Apchigi"
       },
-      "romanized": "Batangson Apchigi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "geumgangmakgi",
-      "id": "geumgangmakgi",
       "name": {
         "en": "Diamond Block",
-        "ko": "금강막기"
+        "ko": "금강막기",
+        "romanized": "Geumgang Makgi"
       },
-      "romanized": "Geumgang Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "ready",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "keundoljjeogwi",
-      "id": "keundoljjeogwi",
       "name": {
         "en": "Large Hinge",
-        "ko": "큰돌쩌귀"
+        "ko": "큰돌쩌귀",
+        "romanized": "Keun Doljjeogwi"
       },
-      "romanized": "Keun Doljjeogwi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "santeulmakgi",
-      "id": "santeulmakgi",
       "name": {
         "en": "Mountain Block",
-        "ko": "산틀막기"
+        "ko": "산틀막기",
+        "romanized": "Santeul Makgi"
       },
-      "romanized": "Santeul Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-momtong-anmakgi",
-      "id": "sonal-momtong-anmakgi",
       "name": {
         "en": "Knifehand Middle Inward Block",
-        "ko": "손날몸통안막기"
+        "ko": "손날몸통안막기",
+        "romanized": "Sonnal Momtong An Makgi"
       },
-      "romanized": "Sonnal Momtong An Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []

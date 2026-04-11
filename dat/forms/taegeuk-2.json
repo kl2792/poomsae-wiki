@@ -42,24 +42,22 @@
   "techniques": [
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 115.0,
       "tips": []
     },
     {
       "key": "01",
-      "id": "ulgul-jireugi",
       "name": {
         "en": "Face Punch",
-        "ko": "얼굴지르기"
+        "ko": "얼굴지르기",
+        "romanized": "Ulgul Jireugi"
       },
-      "romanized": "Ulgul Jireugi",
       "category": "strike",
       "video_timestamp": 123.0,
       "tips": [
@@ -75,72 +73,66 @@
     },
     {
       "key": "ap-chagi+momtong-jireugi",
-      "id": "ap-chagi+momtong-jireugi",
       "name": {
         "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기"
+        "ko": "앞차기 + 몸통지르기",
+        "romanized": "Ap Chagi + Momtong Jireugi"
       },
-      "romanized": "Ap Chagi + Momtong Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ap-chagi+ulgul-jireugi",
-      "id": "ap-chagi+ulgul-jireugi",
       "name": {
         "en": "Front Kick + Face Punch",
-        "ko": "앞차기 + 얼굴지르기"
+        "ko": "앞차기 + 얼굴지르기",
+        "romanized": "Ap Chagi + Ulgul Jireugi"
       },
-      "romanized": "Ap Chagi + Ulgul Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "arae-makki",
-      "id": "arae-makki",
       "name": {
         "en": "Low Block",
-        "ko": "아래막기"
+        "ko": "아래막기",
+        "romanized": "Arae Makgi"
       },
-      "romanized": "Arae Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-an-makki",
-      "id": "momtong-an-makki",
       "name": {
         "en": "Inward Middle Block",
-        "ko": "몸통안막기"
+        "ko": "몸통안막기",
+        "romanized": "Momtong An Makgi"
       },
-      "romanized": "Momtong An Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-jireugi",
-      "id": "momtong-jireugi",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기"
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
       },
-      "romanized": "Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ulgul-makki",
-      "id": "ulgul-makki",
       "name": {
         "en": "Face Block",
-        "ko": "얼굴막기"
+        "ko": "얼굴막기",
+        "romanized": "Ulgul Makgi"
       },
-      "romanized": "Ulgul Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []

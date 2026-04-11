@@ -59,12 +59,11 @@
   "techniques": [
     {
       "key": "tongmilgi-junbijase",
-      "id": "tongmilgi-junbijase",
       "name": {
         "en": "Pushing Ready Stance",
-        "ko": "통밀기 준비자세"
+        "ko": "통밀기 준비자세",
+        "romanized": "Tongmilgi Junbi Jase"
       },
-      "romanized": "Tongmilgi Junbi Jase",
       "category": "stance",
       "video_timestamp": 186.0,
       "tips": [
@@ -108,12 +107,11 @@
     },
     {
       "key": "geodeupyeopchagi",
-      "id": "geodeupyeopchagi",
       "name": {
         "en": "Double Side Kick",
-        "ko": "거듭옆차기"
+        "ko": "거듭옆차기",
+        "romanized": "Geodeup Yeop Chagi"
       },
-      "romanized": "Geodeup Yeop Chagi",
       "category": "kick",
       "video_timestamp": 243.0,
       "tips": [
@@ -133,12 +131,11 @@
     },
     {
       "key": "jeocheojireugi",
-      "id": "jeocheojireugi",
       "name": {
         "en": "Spear-hand Thrust",
-        "ko": "젖혀지르기"
+        "ko": "젖혀지르기",
+        "romanized": "Jeochyeo Jireugi"
       },
-      "romanized": "Jeochyeo Jireugi",
       "category": "strike",
       "video_timestamp": 286.0,
       "tips": [
@@ -150,12 +147,11 @@
     },
     {
       "key": "nulleokkeokgi",
-      "id": "nulleokkeokgi",
       "name": {
         "en": "Pressing/Twisting",
-        "ko": "눌러꺾기"
+        "ko": "눌러꺾기",
+        "romanized": "Nulleo Kkeokgi"
       },
-      "romanized": "Nulleo Kkeokgi",
       "category": "technique",
       "video_timestamp": 299.0,
       "tips": [
@@ -175,12 +171,11 @@
     },
     {
       "key": "palggumchi-yeopchigi",
-      "id": "palggumchi-yeopchigi",
       "name": {
         "en": "Elbow Side Strike",
-        "ko": "팔꿈치 옆치기"
+        "ko": "팔꿈치 옆치기",
+        "romanized": "Palkkumchi Yeop Chigi"
       },
-      "romanized": "Palkkumchi Yeop Chigi",
       "category": "strike",
       "video_timestamp": 330.0,
       "tips": [
@@ -196,12 +191,11 @@
     },
     {
       "key": "sonnal-bakkatchigi",
-      "id": "sonnal-bakkatchigi",
       "name": {
         "en": "Knifehand Outward Strike",
-        "ko": "손날 바깥치기"
+        "ko": "손날 바깥치기",
+        "romanized": "Sonnal Bakkat Chigi"
       },
-      "romanized": "Sonnal Bakkat Chigi",
       "category": "strike",
       "video_timestamp": 346.0,
       "tips": [
@@ -217,12 +211,11 @@
     },
     {
       "key": "sonnal-araemakgi",
-      "id": "sonnal-araemakgi",
       "name": {
         "en": "Knifehand Low Block",
-        "ko": "손날 아래막기"
+        "ko": "손날 아래막기",
+        "romanized": "Sonnal Arae Makgi"
       },
-      "romanized": "Sonnal Arae Makgi",
       "category": "block",
       "video_timestamp": 364.0,
       "tips": [
@@ -238,12 +231,11 @@
     },
     {
       "key": "ageumson-apchigi",
-      "id": "ageumson-apchigi",
       "name": {
         "en": "Arc-hand Strike",
-        "ko": "아금손 앞치기"
+        "ko": "아금손 앞치기",
+        "romanized": "Agumson Apchigi"
       },
-      "romanized": "Agumson Apchigi",
       "category": "strike",
       "video_timestamp": 380.0,
       "tips": [
@@ -263,12 +255,11 @@
     },
     {
       "key": "batangson-nulleomakgi",
-      "id": "batangson-nulleomakgi",
       "name": {
         "en": "Palm Pressing Block",
-        "ko": "바탕손 눌러막기"
+        "ko": "바탕손 눌러막기",
+        "romanized": "Batangson Nulleo Makgi"
       },
-      "romanized": "Batangson Nulleo Makgi",
       "category": "block",
       "video_timestamp": 406.0,
       "tips": [
@@ -288,12 +279,11 @@
     },
     {
       "key": "mejumeok-pyojeokaraechigi",
-      "id": "mejumeok-pyojeokaraechigi",
       "name": {
         "en": "Hammer Fist Target Strike",
-        "ko": "메주먹 표적아래치기"
+        "ko": "메주먹 표적아래치기",
+        "romanized": "Mejumeok Pyojeok Arae Chigi"
       },
-      "romanized": "Mejumeok Pyojeok Arae Chigi",
       "category": "strike",
       "video_timestamp": 430.0,
       "tips": [
@@ -321,12 +311,11 @@
     },
     {
       "key": "anpalmok-hecheomakgi",
-      "id": "anpalmok-hecheomakgi",
       "name": {
         "en": "Inner Wrist Spreading Block",
-        "ko": "안팔목 헤쳐막기"
+        "ko": "안팔목 헤쳐막기",
+        "romanized": "Anpalmok Hecheo Makgi"
       },
-      "romanized": "Anpalmok Hecheo Makgi",
       "category": "block",
       "video_timestamp": 473.0,
       "tips": [
@@ -350,12 +339,11 @@
     },
     {
       "key": "sonnal-yeopmakgi",
-      "id": "sonnal-yeopmakgi",
       "name": {
         "en": "Knifehand Side Block",
-        "ko": "손날 옆막기"
+        "ko": "손날 옆막기",
+        "romanized": "Sonnal Yeop Makgi"
       },
-      "romanized": "Sonnal Yeop Makgi",
       "category": "block",
       "video_timestamp": 501.0,
       "tips": [
@@ -367,12 +355,11 @@
     },
     {
       "key": "pyojeokjireugi",
-      "id": "pyojeokjireugi",
       "name": {
         "en": "Target Punch",
-        "ko": "표적지르기"
+        "ko": "표적지르기",
+        "romanized": "Pyojeok Jireugi"
       },
-      "romanized": "Pyojeok Jireugi",
       "category": "strike",
       "video_timestamp": 523.0,
       "tips": [
@@ -388,132 +375,121 @@
     },
     {
       "key": "apchagi",
-      "id": "apchagi",
       "name": {
         "en": "Front Kick",
-        "ko": "앞차기"
+        "ko": "앞차기",
+        "romanized": "Ap Chagi"
       },
-      "romanized": "Ap Chagi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "geodeupyeopchagi+sonnal-bakkatchigi",
-      "id": "geodeupyeopchagi+sonnal-bakkatchigi",
       "name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
-        "ko": "거듭옆차기 + 손날바깥치기"
+        "ko": "거듭옆차기 + 손날바깥치기",
+        "romanized": "Geodeup Yeop Chagi + Sonnal Bakkat Chigi"
       },
-      "romanized": "Geodeup Yeop Chagi + Sonnal Bakkat Chigi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-anmakgi",
-      "id": "momtong-anmakgi",
       "name": {
         "en": "Inward Middle Block",
-        "ko": "몸통안막기"
+        "ko": "몸통안막기",
+        "romanized": "Momtong An Makgi"
       },
-      "romanized": "Momtong An Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-jireugi",
-      "id": "momtong-jireugi",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기"
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
       },
-      "romanized": "Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "mureup-nulleokkeokgi",
-      "id": "mureup-nulleokkeokgi",
       "name": {
         "en": "Knee Pressing/Twisting",
-        "ko": "무릎눌러꺾기"
+        "ko": "무릎눌러꺾기",
+        "romanized": "Mureup Nulleo Kkeokgi"
       },
-      "romanized": "Mureup Nulleo Kkeokgi",
       "category": "technique",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "pyeonsonkeut-jeochyeojireugi",
-      "id": "pyeonsonkeut-jeochyeojireugi",
       "name": {
         "en": "Flat Fingertip Thrust",
-        "ko": "편손끝젖혀지르기"
+        "ko": "편손끝젖혀지르기",
+        "romanized": "Pyeonsonkeut Jeochyeo Jireugi"
       },
-      "romanized": "Pyeonsonkeut Jeochyeo Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonnal-anchigi+sonnal-arae-naeryeomakgi",
-      "id": "sonnal-anchigi+sonnal-arae-naeryeomakgi",
       "name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
-        "ko": "손날안치기 + 손날아래내려막기"
+        "ko": "손날안치기 + 손날아래내려막기",
+        "romanized": "Sonnal Anchigi + Sonnal Arae Naeryeo Makgi"
       },
-      "romanized": "Sonnal Anchigi + Sonnal Arae Naeryeo Makgi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonnal-arae-naeryeomakgi",
-      "id": "sonnal-arae-naeryeomakgi",
       "name": {
         "en": "Knifehand Low Block",
-        "ko": "손날아래내려막기"
+        "ko": "손날아래내려막기",
+        "romanized": "Sonnal Arae Naeryeo Makgi"
       },
-      "romanized": "Sonnal Arae Naeryeo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonnal-bakkatchigi+sonnal-arae-naeryeomakgi",
-      "id": "sonnal-bakkatchigi+sonnal-arae-naeryeomakgi",
       "name": {
         "en": "Knifehand Outward Strike + Knifehand Low Block",
-        "ko": "손날바깥치기 + 손날아래내려막기"
+        "ko": "손날바깥치기 + 손날아래내려막기",
+        "romanized": "Sonnal Bakkatchigi + Sonnal Arae Naeryeo Makgi"
       },
-      "romanized": "Sonnal Bakkatchigi + Sonnal Arae Naeryeo Makgi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonnal-geodeureomakgi",
-      "id": "sonnal-geodeureomakgi",
       "name": {
         "en": "Knifehand Guarding Block",
-        "ko": "손날거들어막기"
+        "ko": "손날거들어막기",
+        "romanized": "Sonnal Geodeureo Makgi"
       },
-      "romanized": "Sonnal Geodeureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "yeopchagi",
-      "id": "yeopchagi",
       "name": {
         "en": "Side Kick",
-        "ko": "옆차기"
+        "ko": "옆차기",
+        "romanized": "Yeop Chagi"
       },
-      "romanized": "Yeop Chagi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []

@@ -4,15 +4,15 @@ import path from "path";
 export interface Tip {
   text: string;
   timestamp: number;
+  timestamp_end?: number;
 }
 
 export interface Technique {
   key: string;
-  id: string;
-  name: { en: string; ko: string };
-  romanized: string;
+  name: { en: string; ko: string; romanized: string };
   category: string;
   video_timestamp: number;
+  video_timestamp_end?: number;
   tips: (Tip | string)[];
 }
 

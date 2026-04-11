@@ -53,8 +53,8 @@ export default function TechniqueList({
                 </span>
               </div>
               <div className="flex items-center gap-1.5">
-                {tech.romanized && (
-                  <span className="text-[11px] text-gray-400">{tech.romanized}</span>
+                {tech.name.romanized && (
+                  <span className="text-[11px] text-gray-400">{tech.name.romanized}</span>
                 )}
                 <span className="text-[11px] text-gray-300">{tech.name.ko}</span>
               </div>

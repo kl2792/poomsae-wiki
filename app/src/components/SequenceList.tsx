@@ -62,7 +62,7 @@ export default function SequenceList({
                 )}
               </div>
               <div className="flex items-center gap-1.5">
-                {(tech as any)?.romanized && (
+                {tech?.name.romanized && (
                   <span className="text-[11px] text-gray-400">
                     {(tech as any).romanized}
                   </span>

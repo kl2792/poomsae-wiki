@@ -42,24 +42,22 @@
   "techniques": [
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 167.0,
       "tips": []
     },
     {
       "key": "sonal-geodeureo-arae-makki",
-      "id": "sonal-geodeureo-arae-makki",
       "name": {
         "en": "Knifehand Assisted Low Block",
-        "ko": "손날거들어아래막기"
+        "ko": "손날거들어아래막기",
+        "romanized": "Sonnal Geodeureo Arae Makgi"
       },
-      "romanized": "Sonnal Geodeureo Arae Makgi",
       "category": "block",
       "video_timestamp": 177.0,
       "tips": [
@@ -79,12 +77,11 @@
     },
     {
       "key": "geodeureo-batangson-momtong-an-makki",
-      "id": "geodeureo-batangson-momtong-an-makki",
       "name": {
         "en": "Assisted Palm Inward Middle Block",
-        "ko": "거들어바탕손몸통안막기"
+        "ko": "거들어바탕손몸통안막기",
+        "romanized": "Geodeureo Batangson Momtong An Makgi"
       },
-      "romanized": "Geodeureo Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 234.0,
       "tips": [
@@ -100,24 +97,22 @@
     },
     {
       "key": "bojumeok",
-      "id": "bojumeok",
       "name": {
         "en": "Covered Fist",
-        "ko": "보주먹"
+        "ko": "보주먹",
+        "romanized": "Bojumeok"
       },
-      "romanized": "Bojumeok",
       "category": "strike",
       "video_timestamp": 288.0,
       "tips": []
     },
     {
       "key": "gawimakgi",
-      "id": "gawimakgi",
       "name": {
         "en": "Scissors Block",
-        "ko": "가위막기"
+        "ko": "가위막기",
+        "romanized": "Gawi Makgi"
       },
-      "romanized": "Gawi Makgi",
       "category": "block",
       "video_timestamp": 328.0,
       "tips": [
@@ -133,12 +128,11 @@
     },
     {
       "key": "mureupchigi",
-      "id": "mureupchigi",
       "name": {
         "en": "Knee Strike",
-        "ko": "무릎치기"
+        "ko": "무릎치기",
+        "romanized": "Mureup Chigi"
       },
-      "romanized": "Mureup Chigi",
       "category": "strike",
       "video_timestamp": 360.0,
       "tips": [
@@ -154,180 +148,165 @@
     },
     {
       "key": "momtong-hecheomakgi",
-      "id": "momtong-hecheomakgi",
       "name": {
         "en": "Middle Spreading Block",
-        "ko": "몸통헤쳐막기"
+        "ko": "몸통헤쳐막기",
+        "romanized": "Momtong Hecheo Makgi"
       },
-      "romanized": "Momtong Hecheo Makgi",
       "category": "block",
       "video_timestamp": 375.0,
       "tips": []
     },
     {
       "key": "dujumeok-jeocheojireugi",
-      "id": "dujumeok-jeocheojireugi",
       "name": {
         "en": "Double Fist Uppercut Punch",
-        "ko": "두주먹제쳐지르기"
+        "ko": "두주먹제쳐지르기",
+        "romanized": "Dujumeok Jeocheo Jireugi"
       },
-      "romanized": "Dujumeok Jeocheo Jireugi",
       "category": "strike",
       "video_timestamp": 397.0,
       "tips": []
     },
     {
       "key": "utgeoreo-arae-makki",
-      "id": "utgeoreo-arae-makki",
       "name": {
         "en": "Cross Low Block",
-        "ko": "엇걸어아래막기"
+        "ko": "엇걸어아래막기",
+        "romanized": "Eotgeoreo Arae Makgi"
       },
-      "romanized": "Eotgeoreo Arae Makgi",
       "category": "block",
       "video_timestamp": 452.0,
       "tips": []
     },
     {
       "key": "deungjumeok-bakkanchigi",
-      "id": "deungjumeok-bakkanchigi",
       "name": {
         "en": "Backfist Outward Strike",
-        "ko": "등주먹바깥치기"
+        "ko": "등주먹바깥치기",
+        "romanized": "Deungjumeok Bakkat Chigi"
       },
-      "romanized": "Deungjumeok Bakkat Chigi",
       "category": "strike",
       "video_timestamp": 486.0,
       "tips": []
     },
     {
       "key": "pyojeokchagi",
-      "id": "pyojeokchagi",
       "name": {
         "en": "Target Kick",
-        "ko": "표적차기"
+        "ko": "표적차기",
+        "romanized": "Pyojeok Chagi"
       },
-      "romanized": "Pyojeok Chagi",
       "category": "kick",
       "video_timestamp": 510.0,
       "tips": []
     },
     {
       "key": "yeopjireugi",
-      "id": "yeopjireugi",
       "name": {
         "en": "Side Punch",
-        "ko": "옆지르기"
+        "ko": "옆지르기",
+        "romanized": "Yeop Jireugi"
       },
-      "romanized": "Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 540.0,
       "tips": []
     },
     {
       "key": "beomseogi",
-      "id": "beomseogi",
       "name": {
         "en": "Tiger Stance",
-        "ko": "범서기"
+        "ko": "범서기",
+        "romanized": "Beom Seogi"
       },
-      "romanized": "Beom Seogi",
       "category": "stance",
       "video_timestamp": 570.0,
       "tips": []
     },
     {
       "key": "juchumseogi",
-      "id": "juchumseogi",
       "name": {
         "en": "Horseback Stance",
-        "ko": "주춤서기"
+        "ko": "주춤서기",
+        "romanized": "Juchum Seogi"
       },
-      "romanized": "Juchum Seogi",
       "category": "stance",
       "video_timestamp": 600.0,
       "tips": []
     },
     {
       "key": "ap-chagi+momtong-an-makki",
-      "id": "ap-chagi+momtong-an-makki",
       "name": {
         "en": "Front Kick + Inward Middle Block",
-        "ko": "앞차기 + 몸통안막기"
+        "ko": "앞차기 + 몸통안막기",
+        "romanized": "Ap Chagi + Momtong An Makgi"
       },
-      "romanized": "Ap Chagi + Momtong An Makgi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "batangson-momtong-an-makki",
-      "id": "batangson-momtong-an-makki",
       "name": {
         "en": "Palm Inward Middle Block",
-        "ko": "바탕손몸통안막기"
+        "ko": "바탕손몸통안막기",
+        "romanized": "Batangson Momtong An Makgi"
       },
-      "romanized": "Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "gawimakgi+gawimakgi",
-      "id": "gawimakgi+gawimakgi",
       "name": {
         "en": "Scissors Block + Scissors Block",
-        "ko": "가위막기 + 가위막기"
+        "ko": "가위막기 + 가위막기",
+        "romanized": "Gawi Makgi + Gawi Makgi"
       },
-      "romanized": "Gawi Makgi + Gawi Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
-      "id": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
       "name": {
         "en": "Assisted Palm Inward Middle Block + Assisted Backfist Front Strike",
-        "ko": "거들어바탕손몸통안막기 + 거들어등주먹앞치기"
+        "ko": "거들어바탕손몸통안막기 + 거들어등주먹앞치기",
+        "romanized": "Geodeureo Batangson Momtong An Makgi + Geodeureo Deungjumeok Apchigi"
       },
-      "romanized": "Geodeureo Batangson Momtong An Makgi + Geodeureo Deungjumeok Apchigi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
-      "id": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
       "name": {
         "en": "Knee Raising Strike + Double Fist Uppercut",
-        "ko": "무릎올려치기 + 두주먹제쳐지르기"
+        "ko": "무릎올려치기 + 두주먹제쳐지르기",
+        "romanized": "Mureup Ollyeo Chigi + Dujumeok Jeocheo Jireugi"
       },
-      "romanized": "Mureup Ollyeo Chigi + Dujumeok Jeocheo Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "pyojeokchagi+palggumchi-pyojeokchigi",
-      "id": "pyojeokchagi+palggumchi-pyojeokchigi",
       "name": {
         "en": "Target Kick + Elbow Target Strike",
-        "ko": "표적차기 + 팔꿈치표적치기"
+        "ko": "표적차기 + 팔꿈치표적치기",
+        "romanized": "Pyojeok Chagi + Palkkumchi Pyojeok Chigi"
       },
-      "romanized": "Pyojeok Chagi + Palkkumchi Pyojeok Chigi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "yeom-makki",
-      "id": "yeom-makki",
       "name": {
         "en": "Flame Block",
-        "ko": "염막기"
+        "ko": "염막기",
+        "romanized": "Yeom Makgi"
       },
-      "romanized": "Yeom Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []

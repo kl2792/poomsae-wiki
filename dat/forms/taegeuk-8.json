@@ -42,36 +42,33 @@
   "techniques": [
     {
       "key": "junbi",
-      "id": "junbi",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비"
+        "ko": "준비",
+        "romanized": "Junbi"
       },
-      "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 167.0,
       "tips": []
     },
     {
       "key": "dubaldangseongchagi",
-      "id": "dubaldangseongchagi",
       "name": {
         "en": "Double Jumping Front Kick",
-        "ko": "두발당성차기"
+        "ko": "두발당성차기",
+        "romanized": "Dubal Dangseong Chagi"
       },
-      "romanized": "Dubal Dangseong Chagi",
       "category": "kick",
       "video_timestamp": 177.0,
       "tips": []
     },
     {
       "key": "geodeureo-bakkat-makki",
-      "id": "geodeureo-bakkat-makki",
       "name": {
         "en": "Assisted Outward Block",
-        "ko": "거들어바깥막기"
+        "ko": "거들어바깥막기",
+        "romanized": "Geodeureo Bakkat Makgi"
       },
-      "romanized": "Geodeureo Bakkat Makgi",
       "category": "block",
       "video_timestamp": 199.0,
       "tips": [
@@ -87,12 +84,11 @@
     },
     {
       "key": "oesanteulmakgi",
-      "id": "oesanteulmakgi",
       "name": {
         "en": "Single Mountain Block",
-        "ko": "외산틀막기"
+        "ko": "외산틀막기",
+        "romanized": "Oesanteul Makgi"
       },
-      "romanized": "Oesanteul Makgi",
       "category": "block",
       "video_timestamp": 235.0,
       "tips": [
@@ -108,12 +104,11 @@
     },
     {
       "key": "danggyeojireugi",
-      "id": "danggyeojireugi",
       "name": {
         "en": "Pulling Punch",
-        "ko": "당겨지르기"
+        "ko": "당겨지르기",
+        "romanized": "Danggyeo Jireugi"
       },
-      "romanized": "Danggyeo Jireugi",
       "category": "strike",
       "video_timestamp": 275.0,
       "tips": [
@@ -129,12 +124,11 @@
     },
     {
       "key": "geodeureo-arae-makki",
-      "id": "geodeureo-arae-makki",
       "name": {
         "en": "Assisted Low Block",
-        "ko": "거들어아래막기"
+        "ko": "거들어아래막기",
+        "romanized": "Geodeureo Arae Makgi"
       },
-      "romanized": "Geodeureo Arae Makgi",
       "category": "block",
       "video_timestamp": 319.0,
       "tips": [
@@ -150,132 +144,121 @@
     },
     {
       "key": "ttwieoapchagi",
-      "id": "ttwieoapchagi",
       "name": {
         "en": "Jumping Front Kick",
-        "ko": "뛰어앞차기"
+        "ko": "뛰어앞차기",
+        "romanized": "Ttwieo Ap Chagi"
       },
-      "romanized": "Ttwieo Ap Chagi",
       "category": "kick",
       "video_timestamp": 337.0,
       "tips": []
     },
     {
       "key": "ap-chagi+batangson-an-makki",
-      "id": "ap-chagi+batangson-an-makki",
       "name": {
         "en": "Front Kick + Palm Inward Block",
-        "ko": "앞차기 + 바탕손안막기"
+        "ko": "앞차기 + 바탕손안막기",
+        "romanized": "Ap Chagi + Batangson An Makgi"
       },
-      "romanized": "Ap Chagi + Batangson An Makgi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ap-chagi+momtong-jireugi",
-      "id": "ap-chagi+momtong-jireugi",
       "name": {
         "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기"
+        "ko": "앞차기 + 몸통지르기",
+        "romanized": "Ap Chagi + Momtong Jireugi"
       },
-      "romanized": "Ap Chagi + Momtong Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "ap-chagi+ttwieoapchagi+momtong-an-makki+momtong-double-jireugi",
-      "id": "ap-chagi+ttwieoapchagi+momtong-an-makki+momtong-double-jireugi",
       "name": {
         "en": "Front Kick + Jumping Front Kick + Inward Middle Block + Middle Double Punch",
-        "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기"
+        "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기",
+        "romanized": "Ap Chagi + Ttwieo Ap Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
       },
-      "romanized": "Ap Chagi + Ttwieo Ap Chagi + Momtong An Makgi + Momtong Dubeon Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "batangson-an-makki",
-      "id": "batangson-an-makki",
       "name": {
         "en": "Palm Inward Block",
-        "ko": "바탕손안막기"
+        "ko": "바탕손안막기",
+        "romanized": "Batangson An Makgi"
       },
-      "romanized": "Batangson An Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "dubaldangseongchagi+momtong-an-makki+momtong-double-jireugi",
-      "id": "dubaldangseongchagi+momtong-an-makki+momtong-double-jireugi",
       "name": {
         "en": "Double Jumping Front Kick + Inward Middle Block + Middle Double Punch",
-        "ko": "두발당성차기 + 몸통안막기 + 몸통두번지르기"
+        "ko": "두발당성차기 + 몸통안막기 + 몸통두번지르기",
+        "romanized": "Dubal Dangseong Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
       },
-      "romanized": "Dubal Dangseong Chagi + Momtong An Makgi + Momtong Dubeon Jireugi",
       "category": "kick",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-jireugi",
-      "id": "momtong-jireugi",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기"
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
       },
-      "romanized": "Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "palggumchi-dollyeochigi+deungjumeok-apchigi",
-      "id": "palggumchi-dollyeochigi+deungjumeok-apchigi",
       "name": {
         "en": "Elbow Spinning Strike + Backfist Front Strike",
-        "ko": "팔꿈치돌려치기 + 등주먹앞치기"
+        "ko": "팔꿈치돌려치기 + 등주먹앞치기",
+        "romanized": "Palkkumchi Dollyeo Chigi + Deungjumeok Apchigi"
       },
-      "romanized": "Palkkumchi Dollyeo Chigi + Deungjumeok Apchigi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-bakkat-makki",
-      "id": "sonal-bakkat-makki",
       "name": {
         "en": "Knifehand Outward Block",
-        "ko": "손날바깥막기"
+        "ko": "손날바깥막기",
+        "romanized": "Sonnal Bakkat Makgi"
       },
-      "romanized": "Sonnal Bakkat Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-geodeureo-makki",
-      "id": "sonal-geodeureo-makki",
       "name": {
         "en": "Knifehand Guarding Block",
-        "ko": "손날거들어막기"
+        "ko": "손날거들어막기",
+        "romanized": "Sonnal Geodeureo Makgi"
       },
-      "romanized": "Sonnal Geodeureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-makki",
-      "id": "sonal-makki",
       "name": {
         "en": "Knifehand Block",
-        "ko": "손날막기"
+        "ko": "손날막기",
+        "romanized": "Sonnal Makgi"
       },
-      "romanized": "Sonnal Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []

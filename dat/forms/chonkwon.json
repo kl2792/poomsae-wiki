@@ -37,12 +37,11 @@
   "techniques": [
     {
       "key": "01",
-      "id": "bamjumeok-chijireugi",
       "name": {
         "en": "Chestnut Fist Uppercut",
-        "ko": "밤주먹 치지르기"
+        "ko": "밤주먹 치지르기",
+        "romanized": "Bamjumeok Chi Jireugi"
       },
-      "romanized": "Bamjumeok Chi Jireugi",
       "category": "strike",
       "video_timestamp": 151,
       "tips": [
@@ -58,72 +57,66 @@
     },
     {
       "key": "02",
-      "id": "nalgaepyeogi",
       "name": {
         "en": "Wing Spreading",
-        "ko": "날개펴기"
+        "ko": "날개펴기",
+        "romanized": "Nalgae Pyeogi"
       },
-      "romanized": "Nalgae Pyeogi",
       "category": "block",
       "video_timestamp": 156,
       "tips": []
     },
     {
       "key": "03",
-      "id": "hwidulleomakgi",
       "name": {
         "en": "Sweeping Block",
-        "ko": "휘둘려막기"
+        "ko": "휘둘려막기",
+        "romanized": "Hwidulleo Makgi"
       },
-      "romanized": "Hwidulleo Makgi",
       "category": "block",
       "video_timestamp": 162,
       "tips": []
     },
     {
       "key": "04",
-      "id": "hwidulleo-jabadanggigi",
       "name": {
         "en": "Sweeping Grab and Pull",
-        "ko": "휘둘려 잡아당기기"
+        "ko": "휘둘려 잡아당기기",
+        "romanized": "Hwidulleo Jabadanggigi"
       },
-      "romanized": "Hwidulleo Jabadanggigi",
       "category": "strike",
       "video_timestamp": 168,
       "tips": []
     },
     {
       "key": "05",
-      "id": "geumgang-yeopjireugi",
       "name": {
         "en": "Diamond Side Punch",
-        "ko": "금강 옆지르기"
+        "ko": "금강 옆지르기",
+        "romanized": "Geumgang Yeop Jireugi"
       },
-      "romanized": "Geumgang Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 172,
       "tips": []
     },
     {
       "key": "06",
-      "id": "taesanmilgi",
       "name": {
         "en": "Mountain Pushing",
-        "ko": "태산밀기"
+        "ko": "태산밀기",
+        "romanized": "Taesan Milgi"
       },
-      "romanized": "Taesan Milgi",
       "category": "strike",
       "video_timestamp": 183,
       "tips": []
     },
     {
       "key": "07",
-      "id": "jajeunbal",
       "name": {
         "en": "Shuffling Step",
-        "ko": "자전발"
+        "ko": "자전발",
+        "romanized": "Jajeunbal"
       },
-      "romanized": "Jajeunbal",
       "category": "stance",
       "video_timestamp": 184,
       "tips": [
@@ -135,156 +128,143 @@
     },
     {
       "key": "bamjumeok-chijireugi",
-      "id": "bamjumeok-chijireugi",
       "name": {
         "en": "Chestnut Fist Uppercut",
-        "ko": "밤주먹치지르기"
+        "ko": "밤주먹치지르기",
+        "romanized": "Bamjumeok Chi Jireugi"
       },
-      "romanized": "Bamjumeok Chi Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "dubamjumeok-chi-ollyeo-jireugi",
-      "id": "dubamjumeok-chi-ollyeo-jireugi",
       "name": {
         "en": "Double Chestnut Fist Uppercut",
-        "ko": "두밤주먹치올려지르기"
+        "ko": "두밤주먹치올려지르기",
+        "romanized": "Dubamjumeok Chi Ollyeo Jireugi"
       },
-      "romanized": "Dubamjumeok Chi Ollyeo Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "geumgang-yeopjireugi",
-      "id": "geumgang-yeopjireugi",
       "name": {
         "en": "Diamond Side Punch",
-        "ko": "금강옆지르기"
+        "ko": "금강옆지르기",
+        "romanized": "Geumgang Yeop Jireugi"
       },
-      "romanized": "Geumgang Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "gyeopsonjunbi",
-      "id": "gyeopsonjunbi",
       "name": {
         "en": "Overlapping Hands Ready",
-        "ko": "겹손준비"
+        "ko": "겹손준비",
+        "romanized": "Gyeopson Junbi"
       },
-      "romanized": "Gyeopson Junbi",
       "category": "ready",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "hand-gama-jabaggeulmyeo+yeopchagi+araemakgi",
-      "id": "hand-gama-jabaggeulmyeo+yeopchagi+araemakgi",
       "name": {
         "en": "Hand Grab Pull + Side Kick + Low Block",
-        "ko": "손가마잡아끌며+옆차기+아래막기"
+        "ko": "손가마잡아끌며+옆차기+아래막기",
+        "romanized": "Son Gama Jabaggeulmyeo + Yeop Chagi + Arae Makgi"
       },
-      "romanized": "Son Gama Jabaggeulmyeo + Yeop Chagi + Arae Makgi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "hand-gama-jabaggeulmyeo-momtong-jireugi",
-      "id": "hand-gama-jabaggeulmyeo-momtong-jireugi",
       "name": {
         "en": "Hand Grab and Pull + Middle Punch",
-        "ko": "손가마잡아끌며몸통지르기"
+        "ko": "손가마잡아끌며몸통지르기",
+        "romanized": "Son Gama Jabaggeulmyeo Momtong Jireugi"
       },
-      "romanized": "Son Gama Jabaggeulmyeo Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "hwidulleo-jabadanggigi",
-      "id": "hwidulleo-jabadanggigi",
       "name": {
         "en": "Sweeping Grab and Pull",
-        "ko": "휘둘려잡아당기기"
+        "ko": "휘둘려잡아당기기",
+        "romanized": "Hwidulleo Jabadanggigi"
       },
-      "romanized": "Hwidulleo Jabadanggigi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "hwidulleomakgi",
-      "id": "hwidulleomakgi",
       "name": {
         "en": "Sweeping Block",
-        "ko": "휘둘려막기"
+        "ko": "휘둘려막기",
+        "romanized": "Hwidulleo Makgi"
       },
-      "romanized": "Hwidulleo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "jajeunbal-dwitgubi",
-      "id": "jajeunbal-dwitgubi",
       "name": {
         "en": "Shuffling Step Back Stance",
-        "ko": "자전발뒷굽이"
+        "ko": "자전발뒷굽이",
+        "romanized": "Jajeunbal Dwit Gubi"
       },
-      "romanized": "Jajeunbal Dwit Gubi",
       "category": "stance",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "momtong-jireugi",
-      "id": "momtong-jireugi",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기"
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
       },
-      "romanized": "Momtong Jireugi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "nalgaepyeogi",
-      "id": "nalgaepyeogi",
       "name": {
         "en": "Wing Spreading",
-        "ko": "날개펴기"
+        "ko": "날개펴기",
+        "romanized": "Nalgae Pyeogi"
       },
-      "romanized": "Nalgae Pyeogi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "sonal-momtong-biteureomakgi",
-      "id": "sonal-momtong-biteureomakgi",
       "name": {
         "en": "Knifehand Middle Twisting Block",
-        "ko": "손날몸통비틀어막기"
+        "ko": "손날몸통비틀어막기",
+        "romanized": "Sonnal Momtong Biteureo Makgi"
       },
-      "romanized": "Sonnal Momtong Biteureo Makgi",
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
       "key": "taesanmilgi",
-      "id": "taesanmilgi",
       "name": {
         "en": "Mountain Pushing",
-        "ko": "태산밀기"
+        "ko": "태산밀기",
+        "romanized": "Taesan Milgi"
       },
-      "romanized": "Taesan Milgi",
       "category": "strike",
       "video_timestamp": 0,
       "tips": []
