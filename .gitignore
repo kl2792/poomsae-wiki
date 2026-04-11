@@ -1,0 +1,17 @@
+# Video files (large, downloaded via yt-dlp)
+dat/raw/
+dat/frames/
+dat/ocr/
+dat/transcripts/
+dat/*.pdf
+
+# Keep form JSONs (committed data)
+!dat/forms/
+
+# Node
+app/node_modules/
+app/.next/
+app/out/
+
+# OS
+.DS_Store
