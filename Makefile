@@ -17,6 +17,10 @@ transcripts:
 extract:
 	python3 scripts/extract.py --all
 
+# Step 3b: Validate extracted JSONs
+validate:
+	python3 scripts/extract.py --validate
+
 # Step 4: Build Next.js static export
 build:
 	cd app && npm run build && touch out/.nojekyll

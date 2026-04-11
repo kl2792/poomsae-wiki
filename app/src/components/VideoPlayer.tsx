@@ -14,6 +14,7 @@ interface VideoPlayerProps {
   videoId: string;
   startTime?: number;
   endTime?: number;
+  autoPause?: boolean;
   onTimeUpdate?: (time: number) => void;
 }
 
@@ -23,6 +24,7 @@ export default function VideoPlayer({
   videoId,
   startTime,
   endTime,
+  autoPause = true,
   onTimeUpdate,
 }: VideoPlayerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -108,7 +110,7 @@ export default function VideoPlayer({
       if (!playerRef.current) return;
       const current = playerRef.current.getCurrentTime();
       onTimeUpdate?.(current);
-      if (shouldPauseRef.current && endTime !== undefined && current >= endTime) {
+      if (autoPause && shouldPauseRef.current && endTime !== undefined && current >= endTime) {
         playerRef.current.pauseVideo();
         shouldPauseRef.current = false;
       }
@@ -117,7 +119,7 @@ export default function VideoPlayer({
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [playing, endTime, onTimeUpdate]);
+  }, [playing, endTime, autoPause, onTimeUpdate]);
 
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setSpeed(newSpeed);

@@ -16,6 +16,7 @@ export default function FormDetail({ form }: { form: FormData }) {
   const [videoEnd, setVideoEnd] = useState<number | undefined>();
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(0);
   const [userClicked, setUserClicked] = useState(false);
+  const [autoPause, setAutoPause] = useState(true);
 
   const techMap = useMemo(
     () => new Map(form.techniques.map((t) => [t.key, t])),
@@ -98,9 +99,9 @@ export default function FormDetail({ form }: { form: FormData }) {
   }
 
   return (
-    <div className="max-w-6xl mx-auto px-4 py-6">
+    <div className="h-screen flex flex-col overflow-hidden max-w-6xl mx-auto px-4 py-4">
       {/* Header */}
-      <div className="mb-6">
+      <div className="mb-4 flex-none">
         <h1 className="text-2xl font-bold">{form.name.en}</h1>
         <div className="flex items-center gap-3 mt-1 text-sm text-gray-500">
           <span>{form.name.ko}</span>
@@ -114,13 +115,14 @@ export default function FormDetail({ form }: { form: FormData }) {
       </div>
 
       {/* Main content: list + video */}
-      <div className="grid grid-cols-1 md:grid-cols-10 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-10 gap-6 flex-1 min-h-0">
         {/* Video (7/10 width on desktop, appears second in DOM but visually right) */}
-        <div className="md:col-span-7 md:order-2">
+        <div className="md:col-span-7 md:order-2 overflow-y-auto">
           <VideoPlayer
             videoId={form.video_id}
             startTime={videoStart}
             endTime={videoEnd}
+            autoPause={autoPause}
             onTimeUpdate={handleTimeUpdate}
           />
 
@@ -205,9 +207,9 @@ export default function FormDetail({ form }: { form: FormData }) {
         </div>
 
         {/* Sidebar (3/10 width on desktop, scrollable, appears first/left) */}
-        <div className="md:col-span-3 md:order-1">
-          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
-            {/* Tabs */}
+        <div className="md:col-span-3 md:order-1 flex flex-col min-h-0">
+          <div className="bg-white rounded-lg border border-gray-200 overflow-hidden flex flex-col min-h-0 flex-1">
+            {/* Tabs + autopause toggle */}
             <div className="flex border-b border-gray-200">
               <button
                 onClick={() => setTab("sequence")}
@@ -229,9 +231,20 @@ export default function FormDetail({ form }: { form: FormData }) {
               >
                 Techniques ({form.techniques.length})
               </button>
+              <button
+                onClick={() => setAutoPause((v) => !v)}
+                className={`px-2 py-1 text-[10px] font-medium rounded transition-colors whitespace-nowrap self-center mr-1 ${
+                  autoPause
+                    ? "bg-blue-50 text-blue-600"
+                    : "bg-green-50 text-green-700"
+                }`}
+                title={autoPause ? "Click a step → pauses at end" : "Click a step → plays through"}
+              >
+                {autoPause ? "⏸ Step" : "▶ Flow"}
+              </button>
             </div>
 
-            <div className="max-h-[70vh] overflow-y-auto">
+            <div className="overflow-y-auto flex-1 min-h-0">
               {tab === "sequence" ? (
                 <SequenceList
                   sequence={form.sequence}

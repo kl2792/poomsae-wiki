@@ -1,7 +1,13 @@
 {
   "id": "taegeuk-7",
-  "name": { "en": "Taegeuk Chil Jang", "ko": "태극 7장" },
-  "meaning": { "en": "Mountain (Gan ☶)", "ko": "간/☶" },
+  "name": {
+    "en": "Taegeuk Chil Jang",
+    "ko": "태극 7장"
+  },
+  "meaning": {
+    "en": "Mountain (Gan ☶)",
+    "ko": "간/☶"
+  },
   "belt": "2nd Geup",
   "dan": null,
   "total_moves": 25,
@@ -9,18 +15,38 @@
   "video_id": "6FUM1p6qqhQ",
   "video_duration_seconds": 1362,
   "sections": {
-    "intro": { "start": 0, "end": 167 },
-    "breakdown": { "start": 167, "end": 630 },
-    "repeat": { "start": 1200, "end": 1330 },
-    "outro": { "start": 1330, "end": 1362 }
+    "intro": {
+      "start": 0,
+      "end": 167
+    },
+    "breakdown": {
+      "start": 167,
+      "end": 630
+    },
+    "repeat": {
+      "start": 1200,
+      "end": 1330
+    },
+    "outro": {
+      "start": 1330,
+      "end": 1362
+    }
   },
-  "competition_divisions": ["cadet", "junior", "under30", "under40"],
+  "competition_divisions": [
+    "cadet",
+    "junior",
+    "under30",
+    "under40"
+  ],
   "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
       "key": "junbi",
       "id": "junbi",
-      "name": { "en": "Ready Stance", "ko": "준비" },
+      "name": {
+        "en": "Ready Stance",
+        "ko": "준비"
+      },
       "romanized": "Junbi",
       "category": "stance",
       "video_timestamp": 167.0,
@@ -29,32 +55,56 @@
     {
       "key": "sonal-geodeureo-arae-makki",
       "id": "sonal-geodeureo-arae-makki",
-      "name": { "en": "Knifehand Assisted Low Block", "ko": "손날거들어아래막기" },
+      "name": {
+        "en": "Knifehand Assisted Low Block",
+        "ko": "손날거들어아래막기"
+      },
       "romanized": "Sonnal Geodeureo Arae Makgi",
       "category": "block",
       "video_timestamp": 177.0,
       "tips": [
-        { "text": "The space between the outer wrist and torso should be about one hand blade apart", "timestamp": 211 },
-        { "text": "Be careful not to let your blocking hand move outside the line connecting your leg and body", "timestamp": 223 },
-        { "text": "The assisting armpit should not detach from your body, making the elbow rise up", "timestamp": 227 }
+        {
+          "text": "The space between the outer wrist and torso should be about one hand blade apart",
+          "timestamp": 211
+        },
+        {
+          "text": "Be careful not to let your blocking hand move outside the line connecting your leg and body",
+          "timestamp": 223
+        },
+        {
+          "text": "The assisting armpit should not detach from your body, making the elbow rise up",
+          "timestamp": 227
+        }
       ]
     },
     {
       "key": "geodeureo-batangson-momtong-an-makki",
       "id": "geodeureo-batangson-momtong-an-makki",
-      "name": { "en": "Assisted Palm Inward Middle Block", "ko": "거들어바탕손몸통안막기" },
+      "name": {
+        "en": "Assisted Palm Inward Middle Block",
+        "ko": "거들어바탕손몸통안막기"
+      },
       "romanized": "Geodeureo Batangson Momtong An Makgi",
       "category": "block",
       "video_timestamp": 234.0,
       "tips": [
-        { "text": "Start your blocking hand one hand's length above your shoulder, and block inwards", "timestamp": 251 },
-        { "text": "The back of the assisting hand should point upward", "timestamp": 265 }
+        {
+          "text": "Start your blocking hand one hand's length above your shoulder, and block inwards",
+          "timestamp": 251
+        },
+        {
+          "text": "The back of the assisting hand should point upward",
+          "timestamp": 265
+        }
       ]
     },
     {
       "key": "bojumeok",
       "id": "bojumeok",
-      "name": { "en": "Covered Fist", "ko": "보주먹" },
+      "name": {
+        "en": "Covered Fist",
+        "ko": "보주먹"
+      },
       "romanized": "Bojumeok",
       "category": "strike",
       "video_timestamp": 288.0,
@@ -63,31 +113,52 @@
     {
       "key": "gawimakgi",
       "id": "gawimakgi",
-      "name": { "en": "Scissors Block", "ko": "가위막기" },
+      "name": {
+        "en": "Scissors Block",
+        "ko": "가위막기"
+      },
       "romanized": "Gawi Makgi",
       "category": "block",
       "video_timestamp": 328.0,
       "tips": [
-        { "text": "The space between your fists should be a sheet of paper's width", "timestamp": 308 },
-        { "text": "The internal angle of your arm should be between 90 and 120 degrees", "timestamp": 322 }
+        {
+          "text": "The space between your fists should be a sheet of paper's width",
+          "timestamp": 308
+        },
+        {
+          "text": "The internal angle of your arm should be between 90 and 120 degrees",
+          "timestamp": 322
+        }
       ]
     },
     {
       "key": "mureupchigi",
       "id": "mureupchigi",
-      "name": { "en": "Knee Strike", "ko": "무릎치기" },
+      "name": {
+        "en": "Knee Strike",
+        "ko": "무릎치기"
+      },
       "romanized": "Mureup Chigi",
       "category": "strike",
       "video_timestamp": 360.0,
       "tips": [
-        { "text": "The wrist of the arm performing Anpalmok Bakkanmakgi should be placed at the solar plexus level", "timestamp": 345 },
-        { "text": "Your fist must not rise above your shoulder", "timestamp": 349 }
+        {
+          "text": "The wrist of the arm performing Anpalmok Bakkanmakgi should be placed at the solar plexus level",
+          "timestamp": 345
+        },
+        {
+          "text": "Your fist must not rise above your shoulder",
+          "timestamp": 349
+        }
       ]
     },
     {
       "key": "momtong-hecheomakgi",
       "id": "momtong-hecheomakgi",
-      "name": { "en": "Middle Spreading Block", "ko": "몸통헤쳐막기" },
+      "name": {
+        "en": "Middle Spreading Block",
+        "ko": "몸통헤쳐막기"
+      },
       "romanized": "Momtong Hecheo Makgi",
       "category": "block",
       "video_timestamp": 375.0,
@@ -96,7 +167,10 @@
     {
       "key": "dujumeok-jeocheojireugi",
       "id": "dujumeok-jeocheojireugi",
-      "name": { "en": "Double Fist Uppercut Punch", "ko": "두주먹제쳐지르기" },
+      "name": {
+        "en": "Double Fist Uppercut Punch",
+        "ko": "두주먹제쳐지르기"
+      },
       "romanized": "Dujumeok Jeocheo Jireugi",
       "category": "strike",
       "video_timestamp": 397.0,
@@ -105,7 +179,10 @@
     {
       "key": "utgeoreo-arae-makki",
       "id": "utgeoreo-arae-makki",
-      "name": { "en": "Cross Low Block", "ko": "엇걸어아래막기" },
+      "name": {
+        "en": "Cross Low Block",
+        "ko": "엇걸어아래막기"
+      },
       "romanized": "Eotgeoreo Arae Makgi",
       "category": "block",
       "video_timestamp": 452.0,
@@ -114,7 +191,10 @@
     {
       "key": "deungjumeok-bakkanchigi",
       "id": "deungjumeok-bakkanchigi",
-      "name": { "en": "Backfist Outward Strike", "ko": "등주먹바깥치기" },
+      "name": {
+        "en": "Backfist Outward Strike",
+        "ko": "등주먹바깥치기"
+      },
       "romanized": "Deungjumeok Bakkat Chigi",
       "category": "strike",
       "video_timestamp": 486.0,
@@ -123,7 +203,10 @@
     {
       "key": "pyojeokchagi",
       "id": "pyojeokchagi",
-      "name": { "en": "Target Kick", "ko": "표적차기" },
+      "name": {
+        "en": "Target Kick",
+        "ko": "표적차기"
+      },
       "romanized": "Pyojeok Chagi",
       "category": "kick",
       "video_timestamp": 510.0,
@@ -132,7 +215,10 @@
     {
       "key": "yeopjireugi",
       "id": "yeopjireugi",
-      "name": { "en": "Side Punch", "ko": "옆지르기" },
+      "name": {
+        "en": "Side Punch",
+        "ko": "옆지르기"
+      },
       "romanized": "Yeop Jireugi",
       "category": "strike",
       "video_timestamp": 540.0,
@@ -141,7 +227,10 @@
     {
       "key": "beomseogi",
       "id": "beomseogi",
-      "name": { "en": "Tiger Stance", "ko": "범서기" },
+      "name": {
+        "en": "Tiger Stance",
+        "ko": "범서기"
+      },
       "romanized": "Beom Seogi",
       "category": "stance",
       "video_timestamp": 570.0,
@@ -150,40 +239,307 @@
     {
       "key": "juchumseogi",
       "id": "juchumseogi",
-      "name": { "en": "Horseback Stance", "ko": "주춤서기" },
+      "name": {
+        "en": "Horseback Stance",
+        "ko": "주춤서기"
+      },
       "romanized": "Juchum Seogi",
       "category": "stance",
       "video_timestamp": 600.0,
       "tips": []
+    },
+    {
+      "key": "ap-chagi+momtong-an-makki",
+      "id": "ap-chagi+momtong-an-makki",
+      "name": {
+        "en": "Front Kick + Inward Middle Block",
+        "ko": "앞차기 + 몸통안막기"
+      },
+      "romanized": "Ap Chagi + Momtong An Makgi",
+      "category": "kick",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "batangson-momtong-an-makki",
+      "id": "batangson-momtong-an-makki",
+      "name": {
+        "en": "Palm Inward Middle Block",
+        "ko": "바탕손몸통안막기"
+      },
+      "romanized": "Batangson Momtong An Makgi",
+      "category": "block",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "gawimakgi+gawimakgi",
+      "id": "gawimakgi+gawimakgi",
+      "name": {
+        "en": "Scissors Block + Scissors Block",
+        "ko": "가위막기 + 가위막기"
+      },
+      "romanized": "Gawi Makgi + Gawi Makgi",
+      "category": "block",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
+      "id": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
+      "name": {
+        "en": "Assisted Palm Inward Middle Block + Assisted Backfist Front Strike",
+        "ko": "거들어바탕손몸통안막기 + 거들어등주먹앞치기"
+      },
+      "romanized": "Geodeureo Batangson Momtong An Makgi + Geodeureo Deungjumeok Apchigi",
+      "category": "block",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
+      "id": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
+      "name": {
+        "en": "Knee Raising Strike + Double Fist Uppercut",
+        "ko": "무릎올려치기 + 두주먹제쳐지르기"
+      },
+      "romanized": "Mureup Ollyeo Chigi + Dujumeok Jeocheo Jireugi",
+      "category": "strike",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "pyojeokchagi+palggumchi-pyojeokchigi",
+      "id": "pyojeokchagi+palggumchi-pyojeokchigi",
+      "name": {
+        "en": "Target Kick + Elbow Target Strike",
+        "ko": "표적차기 + 팔꿈치표적치기"
+      },
+      "romanized": "Pyojeok Chagi + Palkkumchi Pyojeok Chigi",
+      "category": "kick",
+      "video_timestamp": 0,
+      "tips": []
+    },
+    {
+      "key": "yeom-makki",
+      "id": "yeom-makki",
+      "name": {
+        "en": "Flame Block",
+        "ko": "염막기"
+      },
+      "romanized": "Yeom Makgi",
+      "category": "block",
+      "video_timestamp": 0,
+      "tips": []
     }
   ],
   "sequence": [
-    { "step": 0, "technique": "junbi", "side": null, "direction": "forward", "kihap": false, "timestamp": 632.0, "timestamp_end": 640.0 },
-
-    { "step": 1, "technique": "batangson-momtong-an-makki", "side": "right", "direction": "left-90", "kihap": false, "timestamp": 640.0, "timestamp_end": 644.0 },
-    { "step": 2, "technique": "ap-chagi+momtong-an-makki", "side": "right+left", "direction": "forward", "kihap": false, "timestamp": 644.0, "timestamp_end": 648.0 },
-    { "step": 3, "technique": "batangson-momtong-an-makki", "side": "left", "direction": "right-180", "kihap": false, "timestamp": 648.0, "timestamp_end": 651.0 },
-    { "step": 4, "technique": "ap-chagi+momtong-an-makki", "side": "left+right", "direction": "forward", "kihap": false, "timestamp": 651.0, "timestamp_end": 654.0 },
-    { "step": 5, "technique": "sonal-geodeureo-arae-makki", "side": "left", "direction": "left-90", "kihap": false, "timestamp": 654.0, "timestamp_end": 657.0 },
-    { "step": 6, "technique": "sonal-geodeureo-arae-makki", "side": "right", "direction": "right-180", "kihap": false, "timestamp": 657.0, "timestamp_end": 773.0 },
-
-    { "step": 7, "technique": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi", "side": "right+right", "direction": "left-90", "kihap": false, "timestamp": 780.0, "timestamp_end": 786.0 },
-    { "step": 8, "technique": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi", "side": "left+left", "direction": "right-180", "kihap": false, "timestamp": 786.0, "timestamp_end": 793.0 },
-    { "step": 9, "technique": "bojumeok", "side": null, "direction": "forward", "kihap": false, "timestamp": 793.0, "timestamp_end": 884.0 },
-
-    { "step": 10, "technique": "gawimakgi+gawimakgi", "side": null, "direction": "left-90", "kihap": false, "timestamp": 890.0, "timestamp_end": 900.0 },
-    { "step": 11, "technique": "momtong-hecheomakgi", "side": null, "direction": "forward", "kihap": false, "timestamp": 900.0, "timestamp_end": 903.0 },
-    { "step": 12, "technique": "mureup-ollyeochigi+dujumeok-jeocheojireugi", "side": "right", "direction": "forward", "kihap": false, "timestamp": 903.0, "timestamp_end": 905.0 },
-    { "step": 13, "technique": "utgeoreo-arae-makki", "side": null, "direction": "forward", "kihap": false, "timestamp": 905.0, "timestamp_end": 908.0 },
-    { "step": 14, "technique": "momtong-hecheomakgi", "side": null, "direction": "right-180", "kihap": false, "timestamp": 908.0, "timestamp_end": 912.0 },
-    { "step": 15, "technique": "mureup-ollyeochigi+dujumeok-jeocheojireugi", "side": "left", "direction": "forward", "kihap": false, "timestamp": 912.0, "timestamp_end": 915.0 },
-    { "step": 16, "technique": "utgeoreo-arae-makki", "side": null, "direction": "forward", "kihap": false, "timestamp": 915.0, "timestamp_end": 1101.0 },
-
-    { "step": 17, "technique": "deungjumeok-bakkanchigi", "side": "left", "direction": "left-90", "kihap": false, "timestamp": 1108.0, "timestamp_end": 1112.0 },
-    { "step": 18, "technique": "pyojeokchagi+palggumchi-pyojeokchigi", "side": "right+right", "direction": "forward", "kihap": false, "timestamp": 1112.0, "timestamp_end": 1118.0 },
-    { "step": 19, "technique": "deungjumeok-bakkanchigi", "side": "right", "direction": "right-180", "kihap": false, "timestamp": 1118.0, "timestamp_end": 1122.0 },
-    { "step": 20, "technique": "pyojeokchagi+palggumchi-pyojeokchigi", "side": "left+left", "direction": "forward", "kihap": false, "timestamp": 1122.0, "timestamp_end": 1126.0 },
-    { "step": 21, "technique": "yeom-makki", "side": "left", "direction": "left-90", "kihap": false, "timestamp": 1126.0, "timestamp_end": 1129.0 },
-    { "step": 22, "technique": "yeopjireugi", "side": "right", "direction": "forward", "kihap": true, "timestamp": 1129.0, "timestamp_end": 1135.0 }
+    {
+      "step": 0,
+      "technique": "junbi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 632.0,
+      "timestamp_end": 640.0
+    },
+    {
+      "step": 1,
+      "technique": "batangson-momtong-an-makki",
+      "side": "right",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 640.0,
+      "timestamp_end": 644.0
+    },
+    {
+      "step": 2,
+      "technique": "ap-chagi+momtong-an-makki",
+      "side": "right+left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 644.0,
+      "timestamp_end": 648.0
+    },
+    {
+      "step": 3,
+      "technique": "batangson-momtong-an-makki",
+      "side": "left",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 648.0,
+      "timestamp_end": 651.0
+    },
+    {
+      "step": 4,
+      "technique": "ap-chagi+momtong-an-makki",
+      "side": "left+right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 651.0,
+      "timestamp_end": 654.0
+    },
+    {
+      "step": 5,
+      "technique": "sonal-geodeureo-arae-makki",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 654.0,
+      "timestamp_end": 657.0
+    },
+    {
+      "step": 6,
+      "technique": "sonal-geodeureo-arae-makki",
+      "side": "right",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 657.0,
+      "timestamp_end": 773.0
+    },
+    {
+      "step": 7,
+      "technique": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
+      "side": "right+right",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 780.0,
+      "timestamp_end": 786.0
+    },
+    {
+      "step": 8,
+      "technique": "geodeureo-batangson-momtong-an-makki+geodeureo-deungjumeok-apchigi",
+      "side": "left+left",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 786.0,
+      "timestamp_end": 793.0
+    },
+    {
+      "step": 9,
+      "technique": "bojumeok",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 793.0,
+      "timestamp_end": 884.0
+    },
+    {
+      "step": 10,
+      "technique": "gawimakgi+gawimakgi",
+      "side": null,
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 890.0,
+      "timestamp_end": 900.0
+    },
+    {
+      "step": 11,
+      "technique": "momtong-hecheomakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 900.0,
+      "timestamp_end": 903.0
+    },
+    {
+      "step": 12,
+      "technique": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 903.0,
+      "timestamp_end": 905.0
+    },
+    {
+      "step": 13,
+      "technique": "utgeoreo-arae-makki",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 905.0,
+      "timestamp_end": 908.0
+    },
+    {
+      "step": 14,
+      "technique": "momtong-hecheomakgi",
+      "side": null,
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 908.0,
+      "timestamp_end": 912.0
+    },
+    {
+      "step": 15,
+      "technique": "mureup-ollyeochigi+dujumeok-jeocheojireugi",
+      "side": "left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 912.0,
+      "timestamp_end": 915.0
+    },
+    {
+      "step": 16,
+      "technique": "utgeoreo-arae-makki",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 915.0,
+      "timestamp_end": 1101.0
+    },
+    {
+      "step": 17,
+      "technique": "deungjumeok-bakkanchigi",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 1108.0,
+      "timestamp_end": 1112.0
+    },
+    {
+      "step": 18,
+      "technique": "pyojeokchagi+palggumchi-pyojeokchigi",
+      "side": "right+right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 1112.0,
+      "timestamp_end": 1118.0
+    },
+    {
+      "step": 19,
+      "technique": "deungjumeok-bakkanchigi",
+      "side": "right",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 1118.0,
+      "timestamp_end": 1122.0
+    },
+    {
+      "step": 20,
+      "technique": "pyojeokchagi+palggumchi-pyojeokchigi",
+      "side": "left+left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 1122.0,
+      "timestamp_end": 1126.0
+    },
+    {
+      "step": 21,
+      "technique": "yeom-makki",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 1126.0,
+      "timestamp_end": 1129.0
+    },
+    {
+      "step": 22,
+      "technique": "yeopjireugi",
+      "side": "right",
+      "direction": "forward",
+      "kihap": true,
+      "timestamp": 1129.0,
+      "timestamp_end": 1135.0
+    }
   ]
 }
