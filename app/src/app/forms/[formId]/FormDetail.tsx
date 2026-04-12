@@ -1,14 +1,25 @@
 "use client";
 
-import { useState, useCallback, useMemo } from "react";
+import { useState, useCallback, useEffect, useMemo } from "react";
 import type { FormData, SequenceStep, Technique } from "@/lib/data";
 import VideoPlayer from "@/components/VideoPlayer";
 import SequenceList from "@/components/SequenceList";
 import TechniqueList from "@/components/TechniqueList";
 
+export interface CrossRef {
+  formId: string;
+  formName: string;
+  timestamp: number;
+}
+
 type Tab = "sequence" | "techniques";
 
-export default function FormDetail({ form }: { form: FormData }) {
+interface FormDetailProps {
+  form: FormData;
+  crossRefs?: Record<string, CrossRef>;
+}
+
+export default function FormDetail({ form, crossRefs = {} }: FormDetailProps) {
   const [tab, setTab] = useState<Tab>("sequence");
   const [activeStep, setActiveStep] = useState<SequenceStep | null>(null);
   const [activeTechnique, setActiveTechnique] = useState<Technique | null>(null);
@@ -17,6 +28,19 @@ export default function FormDetail({ form }: { form: FormData }) {
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(0);
   const [userClicked, setUserClicked] = useState(false);
   const [autoPause, setAutoPause] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  // Handle ?t= query param from cross-reference links
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const t = params.get("t");
+    if (t) {
+      const seconds = parseFloat(t);
+      if (!isNaN(seconds) && seconds > 0) {
+        setVideoStart(seconds);
+      }
+    }
+  }, []);
 
   const techMap = useMemo(
     () => new Map(form.techniques.map((t) => [t.key, t])),
@@ -135,12 +159,21 @@ export default function FormDetail({ form }: { form: FormData }) {
           >
             Watch this move
           </button>
-          <button
-            onClick={handleWatchBreakdown}
-            className="text-xs px-2.5 py-1.5 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
-          >
-            See technique breakdown
-          </button>
+          {currentTech?.video_timestamp ? (
+            <button
+              onClick={handleWatchBreakdown}
+              className="text-xs px-2.5 py-1.5 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors"
+            >
+              See technique breakdown
+            </button>
+          ) : crossRefs[currentTech.key] ? (
+            <a
+              href={`/poomsae-wiki/forms/${crossRefs[currentTech.key].formId}?t=${crossRefs[currentTech.key].timestamp}`}
+              className="text-xs px-2.5 py-1.5 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors inline-block"
+            >
+              See breakdown ({crossRefs[currentTech.key].formName})
+            </a>
+          ) : null}
         </div>
       )}
 
@@ -197,13 +230,14 @@ export default function FormDetail({ form }: { form: FormData }) {
       <div className="flex flex-col md:grid md:grid-cols-10 md:gap-6 flex-1 min-h-0 gap-2">
 
         {/* Video — mobile: capped height; desktop: scrollable column */}
-        <div className="flex-none md:flex-1 md:col-span-7 md:order-2 md:overflow-y-auto max-h-[35vh] md:max-h-none">
+        <div className="flex-none md:flex-1 md:col-span-6 md:order-2 md:overflow-y-auto max-h-[35vh] md:max-h-none">
           <VideoPlayer
             videoId={form.video_id}
             startTime={videoStart}
             endTime={videoEnd}
             autoPause={autoPause}
             onTimeUpdate={handleTimeUpdate}
+            onPlayingChange={setIsPlaying}
           />
 
           {/* Technique detail: desktop only (inside video column) */}
@@ -220,7 +254,7 @@ export default function FormDetail({ form }: { form: FormData }) {
         )}
 
         {/* Sidebar — mobile: fills remaining space; desktop: 3/10 left column */}
-        <div className="flex-1 md:col-span-3 md:order-1 flex flex-col min-h-0">
+        <div className="flex-1 md:col-span-4 md:order-1 flex flex-col min-h-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden flex flex-col min-h-0 flex-1">
             {/* Tabs + autopause toggle */}
             <div className="flex border-b border-gray-200">
@@ -244,17 +278,34 @@ export default function FormDetail({ form }: { form: FormData }) {
               >
                 Techniques ({form.techniques.length})
               </button>
-              <button
-                onClick={() => setAutoPause((v) => !v)}
-                className={`px-2 py-1 text-[10px] font-medium rounded transition-colors whitespace-nowrap self-center mr-1 ${
-                  autoPause
-                    ? "bg-blue-50 text-blue-600"
-                    : "bg-green-50 text-green-700"
-                }`}
-                title={autoPause ? "Click a step → pauses at end" : "Click a step → plays through"}
-              >
-                {autoPause ? "⏸ Step" : "▶ Flow"}
-              </button>
+              <div className="flex items-center gap-1 self-center mr-1">
+                {form.sections?.repeat && (
+                  <button
+                    onClick={() => {
+                      setActiveStep(null);
+                      setActiveTechnique(null);
+                      setVideoStart(form.sections!.repeat!.start + 5);
+                      setVideoEnd(form.sections!.repeat!.end);
+                    }}
+                    className="px-2 py-1.5 text-[11px] font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-md transition-colors whitespace-nowrap"
+                  >
+                    ▶ Full run
+                  </button>
+                )}
+                <button
+                  onClick={() => setAutoPause((v) => !v)}
+                  className={`group relative px-2.5 py-1.5 text-[11px] font-medium rounded-md transition-all whitespace-nowrap border ${
+                    autoPause
+                      ? `border-blue-200 bg-blue-50 text-blue-700 ${isPlaying ? "ring-1 ring-blue-300 animate-pulse" : ""}`
+                      : `border-green-200 bg-green-50 text-green-700 ${isPlaying ? "ring-1 ring-green-300" : ""}`
+                  }`}
+                >
+                  {autoPause ? "⏸ Step" : "▶ Flow"}
+                  <span className="absolute hidden group-hover:block bottom-full left-1/2 -translate-x-1/2 mb-1.5 px-2 py-1 text-[10px] text-white bg-gray-800 rounded whitespace-nowrap z-10">
+                    {autoPause ? "Pauses after each move" : "Plays through, sidebar tracks"}
+                  </span>
+                </button>
+              </div>
             </div>
 
             <div className="overflow-y-auto flex-1 min-h-0">
@@ -276,23 +327,6 @@ export default function FormDetail({ form }: { form: FormData }) {
             </div>
           </div>
 
-          {/* Quick links to video sections */}
-          {form.sections?.repeat && (
-            <div className="mt-2 md:mt-3 text-sm flex-none">
-              <span className="text-gray-400">Jump to: </span>
-              <button
-                onClick={() => {
-                  setActiveStep(null);
-                  setActiveTechnique(null);
-                  setVideoStart(form.sections!.repeat!.start + 5);
-                  setVideoEnd(form.sections!.repeat!.end);
-                }}
-                className="text-blue-600 hover:underline"
-              >
-                Full-speed run
-              </button>
-            </div>
-          )}
         </div>
       </div>
     </div>

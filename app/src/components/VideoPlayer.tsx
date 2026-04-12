@@ -16,6 +16,7 @@ interface VideoPlayerProps {
   endTime?: number;
   autoPause?: boolean;
   onTimeUpdate?: (time: number) => void;
+  onPlayingChange?: (playing: boolean) => void;
 }
 
 const SPEEDS = [0.25, 0.5, 0.75, 1, 1.25, 1.5];
@@ -26,6 +27,7 @@ export default function VideoPlayer({
   endTime,
   autoPause = true,
   onTimeUpdate,
+  onPlayingChange,
 }: VideoPlayerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<any>(null);
@@ -64,7 +66,9 @@ export default function VideoPlayer({
       },
       events: {
         onStateChange: (e: any) => {
-          setPlaying(e.data === window.YT.PlayerState.PLAYING);
+          const isPlaying = e.data === window.YT.PlayerState.PLAYING;
+          setPlaying(isPlaying);
+          onPlayingChange?.(isPlaying);
         },
       },
     });
