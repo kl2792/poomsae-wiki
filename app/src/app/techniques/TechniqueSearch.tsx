@@ -20,6 +20,29 @@ interface Props {
   formShort: Record<string, string>;
 }
 
+function readUrlFilters(): { q: string; categories: Set<string>; forms: Set<string> } {
+  if (typeof window === "undefined") return { q: "", categories: new Set(), forms: new Set() };
+  const params = new URLSearchParams(window.location.search);
+  const q = params.get("q") || "";
+  const cats = params.get("category");
+  const forms = params.get("form");
+  return {
+    q,
+    categories: cats ? new Set(cats.split(",").filter(Boolean)) : new Set(),
+    forms: forms ? new Set(forms.split(",").filter(Boolean)) : new Set(),
+  };
+}
+
+function writeUrlFilters(q: string, categories: Set<string>, forms: Set<string>) {
+  const params = new URLSearchParams();
+  if (q) params.set("q", q);
+  if (categories.size > 0) params.set("category", Array.from(categories).join(","));
+  if (forms.size > 0) params.set("form", Array.from(forms).join(","));
+  const qs = params.toString();
+  const url = window.location.pathname + (qs ? "?" + qs : "");
+  window.history.replaceState(window.history.state, "", url);
+}
+
 export default function TechniqueSearch({
   techniques,
   totalCount,
@@ -28,11 +51,10 @@ export default function TechniqueSearch({
   formIds,
   formShort,
 }: Props) {
-  const [query, setQuery] = useState("");
-  const [activeCategories, setActiveCategories] = useState<Set<string>>(
-    new Set()
-  );
-  const [activeForms, setActiveForms] = useState<Set<string>>(new Set());
+  const initial = readUrlFilters();
+  const [query, setQuery] = useState(initial.q);
+  const [activeCategories, setActiveCategories] = useState<Set<string>>(initial.categories);
+  const [activeForms, setActiveForms] = useState<Set<string>>(initial.forms);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(totalCount);
   const rafRef = useRef<number>(0);
@@ -158,12 +180,22 @@ export default function TechniqueSearch({
     });
   }, [collapsed, categories]);
 
+  // Apply URL-sourced filters on mount
+  useEffect(() => {
+    if (initial.q || initial.categories.size > 0 || initial.forms.size > 0) {
+      applyFilters(initial.q, initial.categories, initial.forms);
+    }
+    // Only run on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   function toggleCategory(cat: string) {
     setActiveCategories((prev) => {
       const next = new Set(prev);
       if (next.has(cat)) next.delete(cat);
       else next.add(cat);
       applyFilters(query, next, activeForms);
+      writeUrlFilters(query, next, activeForms);
       return next;
     });
   }
@@ -174,6 +206,7 @@ export default function TechniqueSearch({
       if (next.has(formId)) next.delete(formId);
       else next.add(formId);
       applyFilters(query, activeCategories, next);
+      writeUrlFilters(query, activeCategories, next);
       return next;
     });
   }
@@ -183,12 +216,14 @@ export default function TechniqueSearch({
     setActiveForms(new Set());
     setQuery("");
     applyFilters("", new Set(), new Set());
+    writeUrlFilters("", new Set(), new Set());
   }
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     const q = e.target.value;
     setQuery(q);
     applyFilters(q, activeCategories, activeForms);
+    writeUrlFilters(q, activeCategories, activeForms);
   }
 
   const hasFilters =
@@ -206,18 +241,18 @@ export default function TechniqueSearch({
       />
 
       {/* Category filter pills */}
-      <div className="flex flex-wrap gap-1.5">
-        <span className="text-xs text-gray-400 self-center mr-1">
+      <div className="flex flex-wrap gap-1.5 items-center">
+        <span className="text-xs font-medium text-gray-500 self-center mr-1">
           Category
         </span>
         {categories.map((cat) => (
           <button
             key={cat}
             onClick={() => toggleCategory(cat)}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors cursor-pointer ${
+            className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
               activeCategories.has(cat)
-                ? "bg-gray-800 text-white border-gray-800"
-                : "bg-white text-gray-600 border-gray-300 hover:border-gray-400"
+                ? "bg-gray-800 text-white border-gray-800 shadow-sm"
+                : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
             }`}
           >
             {categoryLabels[cat] || cat}
@@ -226,16 +261,18 @@ export default function TechniqueSearch({
       </div>
 
       {/* Form filter pills */}
-      <div className="flex flex-wrap gap-1.5">
-        <span className="text-xs text-gray-400 self-center mr-1">Form</span>
+      <div className="flex flex-wrap gap-1.5 items-center">
+        <span className="text-xs font-medium text-gray-500 self-center mr-1">
+          Form
+        </span>
         {formIds.map((formId) => (
           <button
             key={formId}
             onClick={() => toggleForm(formId)}
-            className={`text-xs px-2.5 py-1 rounded-full border transition-colors cursor-pointer ${
+            className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
               activeForms.has(formId)
-                ? "bg-gray-800 text-white border-gray-800"
-                : "bg-white text-gray-600 border-gray-300 hover:border-gray-400"
+                ? "bg-gray-800 text-white border-gray-800 shadow-sm"
+                : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
             }`}
           >
             {formShort[formId] || formId}

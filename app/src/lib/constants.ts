@@ -7,3 +7,23 @@ export const CATEGORY_COLORS: Record<string, string> = {
   ready: "bg-gray-100 text-gray-700",
   technique: "bg-purple-100 text-purple-800",
 };
+
+/** Left-border accent color for category section headers. */
+export const CATEGORY_BORDER_COLORS: Record<string, string> = {
+  block: "border-blue-400",
+  strike: "border-red-400",
+  kick: "border-orange-400",
+  stance: "border-green-400",
+  ready: "border-gray-400",
+  technique: "border-purple-400",
+};
+
+/** Light background strip for category section headers. */
+export const CATEGORY_BG_COLORS: Record<string, string> = {
+  block: "bg-blue-50",
+  strike: "bg-red-50",
+  kick: "bg-orange-50",
+  stance: "bg-green-50",
+  ready: "bg-gray-50",
+  technique: "bg-purple-50",
+};

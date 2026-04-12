@@ -21,7 +21,11 @@ const CATEGORY_LABELS: Record<string, string> = {
   technique: "Other Techniques",
 };
 
-import { CATEGORY_COLORS } from "@/lib/constants";
+import {
+  CATEGORY_COLORS,
+  CATEGORY_BORDER_COLORS,
+  CATEGORY_BG_COLORS,
+} from "@/lib/constants";
 
 /** Short display name for form filter pills and row tags. */
 const FORM_SHORT: Record<string, string> = {
@@ -94,13 +98,13 @@ export default function TechniquesPage() {
         <section
           key={cat}
           data-category={cat}
-          className="mb-6"
+          className="mb-8"
         >
           <button
             data-collapse-trigger={cat}
-            className="w-full flex items-center justify-between py-2 px-1 text-left sticky top-14 bg-gray-50 z-10 cursor-pointer select-none"
+            className={`w-full flex items-center justify-between py-2.5 px-3 text-left sticky top-14 z-10 cursor-pointer select-none border-l-4 rounded-r-sm ${CATEGORY_BORDER_COLORS[cat] || "border-gray-400"} ${CATEGORY_BG_COLORS[cat] || "bg-gray-50"}`}
           >
-            <span className="text-lg font-semibold text-gray-700">
+            <span className="text-lg font-semibold text-gray-800">
               {CATEGORY_LABELS[cat] || cat}{" "}
               <span
                 className="text-sm font-normal text-gray-400"
@@ -111,7 +115,7 @@ export default function TechniquesPage() {
             </span>
             <svg
               data-chevron={cat}
-              className="w-5 h-5 text-gray-400 transition-transform"
+              className="w-5 h-5 text-gray-500 transition-transform"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -124,14 +128,15 @@ export default function TechniquesPage() {
               />
             </svg>
           </button>
-          <div data-collapse-body={cat} className="grid gap-0.5">
-            {grouped[cat].map((t) => (
+          <div data-collapse-body={cat} className="divide-y divide-gray-100">
+            {grouped[cat].map((t, i) => (
               <TechniqueRow
                 key={t.key}
                 technique={t}
                 categoryColor={
                   CATEGORY_COLORS[cat] || "bg-gray-100 text-gray-700"
                 }
+                even={i % 2 === 0}
               />
             ))}
           </div>
@@ -144,20 +149,24 @@ export default function TechniquesPage() {
 function TechniqueRow({
   technique: t,
   categoryColor,
+  even,
 }: {
   technique: WikiTechnique;
   categoryColor: string;
+  even: boolean;
 }) {
+  const tipCount = t.tips.length;
+
   return (
     <Link
       href={`/techniques/${t.key}`}
       data-technique={t.key}
       data-forms={t.used_in.join(",")}
-      className="flex items-center gap-3 px-3 py-2 rounded hover:bg-blue-50 transition-colors group"
+      className={`flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors group ${even ? "bg-white" : "bg-gray-50/50"}`}
     >
       {/* Name block */}
       <div className="flex-1 min-w-0 flex items-baseline gap-2 overflow-hidden">
-        <span className="font-medium text-sm text-gray-900 whitespace-nowrap">
+        <span className="font-semibold text-sm text-gray-900 whitespace-nowrap">
           {t.name.en}
         </span>
         <span className="text-xs text-gray-400 truncate">
@@ -165,9 +174,16 @@ function TechniqueRow({
         </span>
       </div>
 
+      {/* Tip count badge */}
+      {tipCount > 0 && (
+        <span className="text-[11px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 shrink-0">
+          {tipCount} {tipCount === 1 ? "tip" : "tips"}
+        </span>
+      )}
+
       {/* Category pill */}
       <span
-        className={`hidden sm:inline text-[10px] px-1.5 py-0.5 rounded font-medium shrink-0 ${categoryColor}`}
+        className={`hidden sm:inline text-[11px] px-2 py-0.5 rounded-full font-medium shrink-0 ${categoryColor}`}
       >
         {t.category}
       </span>
@@ -177,7 +193,7 @@ function TechniqueRow({
         {t.used_in.map((formId) => (
           <span
             key={formId}
-            className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-500 whitespace-nowrap"
+            className="text-[11px] px-2 py-0.5 rounded-full bg-gray-100 text-gray-600 font-medium whitespace-nowrap"
           >
             {FORM_SHORT[formId] || formId}
           </span>
@@ -186,11 +202,11 @@ function TechniqueRow({
 
       {/* Arrow */}
       <svg
-        className="w-4 h-4 text-gray-300 group-hover:text-blue-400 shrink-0"
+        className="w-4 h-4 text-gray-400 group-hover:text-blue-500 shrink-0 transition-colors"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
-        strokeWidth={2}
+        strokeWidth={2.5}
       >
         <path
           strokeLinecap="round"

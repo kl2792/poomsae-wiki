@@ -47,25 +47,23 @@ export default function SequenceList({
             </span>
 
             <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-1.5">
+              <div className="flex items-start gap-1.5">
                 <span
-                  className={`text-[13px] font-medium truncate ${
+                  className={`text-[12px] font-medium ${
                     isActive ? "text-blue-900" : "text-gray-900"
                   }`}
                 >
-                  {step.side ? `${step.side.charAt(0).toUpperCase() + step.side.slice(1)} ${displayName}` : displayName}
+                  {step.side ? `${abbreviateSide(step.side)} ${displayName}` : displayName}
                 </span>
                 {step.kihap && (
-                  <span className="text-[9px] bg-red-100 text-red-700 px-1 py-0.5 rounded font-medium uppercase">
+                  <span className="text-[9px] bg-red-100 text-red-700 px-1 py-0.5 rounded font-medium uppercase shrink-0">
                     Kihap
                   </span>
-                )}
-                {step.direction && step.direction !== "forward" && (
-                  <span className="text-[10px] text-gray-400">{formatDirection(step.direction)}</span>
                 )}
               </div>
               <span className="text-[10px] text-gray-400">
                 {tech?.name.romanized}{tech?.name.ko ? ` · ${tech.name.ko}` : ""}
+                {step.direction && step.direction !== "forward" && ` · ${formatDirection(step.direction)}`}
               </span>
             </div>
 
@@ -77,6 +75,12 @@ export default function SequenceList({
       })}
     </div>
   );
+}
+
+function abbreviateSide(side: string): string {
+  if (side === "left") return "L";
+  if (side === "right") return "R";
+  return side.charAt(0).toUpperCase() + side.slice(1);
 }
 
 function formatDirection(dir: string): string {

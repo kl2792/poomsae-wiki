@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { getForm, getAllFormIds, getAllTechniques, type WikiTechnique } from "@/lib/data";
 import { notFound } from "next/navigation";
 import FormDetail from "./FormDetail";
@@ -32,5 +33,9 @@ export default async function FormPage({
     }
   }
 
-  return <FormDetail form={form} wikiTechniques={wikiTechniques} />;
+  return (
+    <Suspense>
+      <FormDetail form={form} wikiTechniques={wikiTechniques} />
+    </Suspense>
+  );
 }

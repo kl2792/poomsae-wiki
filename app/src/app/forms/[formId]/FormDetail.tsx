@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useMemo } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { FormData, SequenceStep, Technique, WikiTechnique } from "@/lib/data";
 import { formatTime } from "@/lib/format";
@@ -17,33 +18,66 @@ interface FormDetailProps {
 }
 
 export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProps) {
-  const [tab, setTab] = useState<Tab>("sequence");
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Read initial state from URL params
+  const initialTab = (searchParams.get("tab") === "techniques" ? "techniques" : "sequence") as Tab;
+  const initialStepNum = searchParams.get("step") ? parseInt(searchParams.get("step")!, 10) : null;
+  const initialMode = searchParams.get("mode") === "flow" ? false : true; // flow = autoPause off
+  const initialT = searchParams.get("t") ? parseFloat(searchParams.get("t")!) : undefined;
+
+  const [tab, setTab] = useState<Tab>(initialTab);
   const [activeStep, setActiveStep] = useState<SequenceStep | null>(null);
   const [activeTechnique, setActiveTechnique] = useState<Technique | null>(null);
-  const [videoStart, setVideoStart] = useState<number | undefined>();
+  const [videoStart, setVideoStart] = useState<number | undefined>(
+    initialT && !isNaN(initialT) && initialT > 0 ? initialT : undefined
+  );
   const [videoEnd, setVideoEnd] = useState<number | undefined>();
   const [currentVideoTime, setCurrentVideoTime] = useState<number>(0);
   const [userClicked, setUserClicked] = useState(false);
-  const [autoPause, setAutoPause] = useState(true);
+  const [autoPause, setAutoPause] = useState(initialMode);
   const [isPlaying, setIsPlaying] = useState(false);
   const [sidebarView, setSidebarView] = useState<SidebarView>("list");
 
-  // Handle ?t= query param from cross-reference links
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    const t = params.get("t");
-    if (t) {
-      const seconds = parseFloat(t);
-      if (!isNaN(seconds) && seconds > 0) {
-        setVideoStart(seconds);
+  // Update URL params without navigation
+  const updateUrl = useCallback(
+    (updates: Record<string, string | null>) => {
+      const params = new URLSearchParams(searchParams.toString());
+      for (const [key, value] of Object.entries(updates)) {
+        if (value === null) {
+          params.delete(key);
+        } else {
+          params.set(key, value);
+        }
       }
-    }
-  }, []);
+      const qs = params.toString();
+      router.replace(pathname + (qs ? "?" + qs : ""), { scroll: false });
+    },
+    [searchParams, router, pathname]
+  );
 
   const techMap = useMemo(
     () => new Map(form.techniques.map((t) => [t.key, t])),
     [form.techniques]
   );
+
+  // Initialize step from URL on mount
+  useEffect(() => {
+    if (initialStepNum == null || isNaN(initialStepNum)) return;
+    const step = form.sequence.find((s) => s.step === initialStepNum);
+    if (step) {
+      setActiveStep(step);
+      setActiveTechnique(techMap.get(step.technique) ?? null);
+      setUserClicked(true);
+      setSidebarView("detail");
+      setVideoStart(step.timestamp);
+      setVideoEnd(step.timestamp_end);
+    }
+    // Only run on mount
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const occurrences = useMemo(() => {
     const counts = new Map<string, number>();
@@ -86,8 +120,10 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
       if (!isNextStep) {
         setVideoStart(step.timestamp);
       }
+
+      updateUrl({ step: String(step.step), t: null });
     },
-    [techMap, activeStep]
+    [techMap, activeStep, updateUrl]
   );
 
   const handleTechniqueClick = useCallback((tech: Technique) => {
@@ -119,7 +155,21 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
 
   const handleBackToList = useCallback(() => {
     setSidebarView("list");
-  }, []);
+    updateUrl({ step: null });
+  }, [updateUrl]);
+
+  const handleTabSwitch = useCallback((newTab: Tab) => {
+    setTab(newTab);
+    updateUrl({ tab: newTab === "sequence" ? null : newTab });
+  }, [updateUrl]);
+
+  const handleModeToggle = useCallback(() => {
+    setAutoPause((v) => {
+      const next = !v;
+      updateUrl({ mode: next ? null : "flow" });
+      return next;
+    });
+  }, [updateUrl]);
 
   const handleStepNav = useCallback((direction: -1 | 1) => {
     if (!activeStep) return;
@@ -132,7 +182,8 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
     setVideoStart(target.timestamp);
     setVideoEnd(target.timestamp_end);
     setUserClicked(true);
-  }, [activeStep, form.sequence, techMap]);
+    updateUrl({ step: String(target.step), t: null });
+  }, [activeStep, form.sequence, techMap, updateUrl]);
 
   // Resolve the technique for the displayed active step
   const currentTech = displayActiveStep
@@ -167,7 +218,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
               Step {displayActiveStep.step}
             </span>
           )}
-          <h2 className="text-base font-semibold text-gray-900">{currentTech.name.en}</h2>
+          <h2 className="text-base font-semibold text-gray-900 break-words">{currentTech.name.en}</h2>
           <p className="text-xs text-gray-400 mt-0.5">
             {currentTech.name.romanized}
             {currentTech.name.ko ? ` \u00b7 ${currentTech.name.ko}` : ""}
@@ -323,7 +374,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
       {/* Tabs + autopause toggle */}
       <div className="flex border-b border-gray-200">
         <button
-          onClick={() => setTab("sequence")}
+          onClick={() => handleTabSwitch("sequence")}
           className={`flex-1 px-3 py-2 text-xs font-medium uppercase tracking-wide transition-colors ${
             tab === "sequence"
               ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50/50"
@@ -333,7 +384,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
           Sequence ({form.sequence.length})
         </button>
         <button
-          onClick={() => setTab("techniques")}
+          onClick={() => handleTabSwitch("techniques")}
           className={`flex-1 px-3 py-2 text-xs font-medium uppercase tracking-wide transition-colors ${
             tab === "techniques"
               ? "text-blue-600 border-b-2 border-blue-600 bg-blue-50/50"
@@ -358,7 +409,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
             </button>
           )}
           <button
-            onClick={() => setAutoPause((v) => !v)}
+            onClick={handleModeToggle}
             className={`group relative px-2.5 py-1.5 text-[11px] font-medium rounded-md transition-all whitespace-nowrap border ${
               autoPause
                 ? `border-blue-200 bg-blue-50 text-blue-700 ${isPlaying ? "ring-1 ring-blue-300 animate-pulse" : ""}`

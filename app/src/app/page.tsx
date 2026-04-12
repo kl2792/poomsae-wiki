@@ -91,7 +91,9 @@ function FormCard({
 }) {
   const beltColor = form.belt
     ? (BELT_COLORS[form.belt] || "bg-gray-800 text-white")
-    : "bg-gray-800 text-white";
+    : form.dan
+      ? "bg-gradient-to-r from-gray-800 to-gray-950 text-yellow-300 font-semibold"
+      : "bg-gray-800 text-white";
 
   const moveCount = form.sequence
     ? form.sequence.filter((s) => s.step > 0).length
@@ -106,7 +108,7 @@ function FormCard({
       <h3 className="font-medium text-sm">{form.name.en}</h3>
       <p className="text-xs text-gray-400 mt-0.5">{form.name.ko}</p>
       <div className="flex items-center gap-2 mt-2">
-        <span className={`text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap ${beltColor}`}>
+        <span className={`text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap ${beltColor}${form.dan ? " ring-1 ring-yellow-600/40" : ""}`}>
           {form.dan ? `${form.dan}${ordinal(form.dan)} Dan` : form.belt}
         </span>
         <span className="text-[10px] text-gray-400">
