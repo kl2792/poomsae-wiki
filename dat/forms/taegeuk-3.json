@@ -188,7 +188,7 @@
       ]
     },
     {
-      "key": "front-kick-low-block-middle-punch",
+      "key": "front-kick+low-block+middle-punch",
       "name": {
         "en": "Front Kick + Low Block + Middle Punch",
         "ko": "앞차기 + 아래막기 + 몸통지르기",
@@ -199,7 +199,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-double-punch",
+      "key": "front-kick+double-punch",
       "name": {
         "en": "Front Kick + Double Punch",
         "ko": "앞차기 + 두번지르기",
@@ -221,7 +221,7 @@
       "tips": []
     },
     {
-      "key": "low-block-middle-punch",
+      "key": "low-block+middle-punch",
       "name": {
         "en": "Low Block + Middle Punch",
         "ko": "아래막기 + 몸통지르기",
@@ -286,7 +286,7 @@
     },
     {
       "step": 2,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -304,7 +304,7 @@
     },
     {
       "step": 4,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -394,7 +394,7 @@
     },
     {
       "step": 14,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -412,7 +412,7 @@
     },
     {
       "step": 16,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -421,7 +421,7 @@
     },
     {
       "step": 17,
-      "technique": "low-block-middle-punch",
+      "technique": "low-block+middle-punch",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -430,7 +430,7 @@
     },
     {
       "step": 18,
-      "technique": "low-block-middle-punch",
+      "technique": "low-block+middle-punch",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -439,7 +439,7 @@
     },
     {
       "step": 19,
-      "technique": "front-kick-low-block-middle-punch",
+      "technique": "front-kick+low-block+middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -448,7 +448,7 @@
     },
     {
       "step": 20,
-      "technique": "front-kick-low-block-middle-punch",
+      "technique": "front-kick+low-block+middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": true,

@@ -192,7 +192,7 @@
       ]
     },
     {
-      "key": "front-kick-low-block-inward-middle-block",
+      "key": "front-kick+low-block+inward-middle-block",
       "name": {
         "en": "Front Kick + Low Block + Inward Middle Block",
         "ko": "앞차기 + 아래막기 + 몸통안막기",
@@ -203,7 +203,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-backfist-front-strike",
+      "key": "front-kick+backfist-front-strike",
       "name": {
         "en": "Front Kick + Backfist Front Strike",
         "ko": "앞차기 + 등주먹앞치기",
@@ -214,7 +214,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-backfist-front-strike-inward-middle-block",
+      "key": "front-kick+backfist-front-strike+inward-middle-block",
       "name": {
         "en": "Front Kick + Backfist Front Strike + Inward Middle Block",
         "ko": "앞차기 + 등주먹앞치기 + 몸통안막기",
@@ -236,7 +236,7 @@
       "tips": []
     },
     {
-      "key": "low-block-inward-middle-block",
+      "key": "low-block+inward-middle-block",
       "name": {
         "en": "Low Block + Inward Middle Block",
         "ko": "아래막기 + 몸통안막기",
@@ -258,7 +258,7 @@
       "tips": []
     },
     {
-      "key": "inward-middle-block-inward-middle-block",
+      "key": "inward-middle-block+inward-middle-block",
       "name": {
         "en": "Inward Middle Block + Inward Middle Block",
         "ko": "몸통안막기 + 몸통안막기",
@@ -291,7 +291,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-elbow-target-strike",
+      "key": "side-kick+elbow-target-strike",
       "name": {
         "en": "Side Kick + Elbow Target Strike",
         "ko": "옆차기 + 팔꿈치표적치기",
@@ -350,7 +350,7 @@
     },
     {
       "step": 5,
-      "technique": "inward-middle-block-inward-middle-block",
+      "technique": "inward-middle-block+inward-middle-block",
       "side": "left+right",
       "direction": "left-90",
       "kihap": false,
@@ -359,7 +359,7 @@
     },
     {
       "step": 6,
-      "technique": "front-kick-backfist-front-strike-inward-middle-block",
+      "technique": "front-kick+backfist-front-strike+inward-middle-block",
       "side": "right+right+left",
       "direction": "forward",
       "kihap": false,
@@ -368,7 +368,7 @@
     },
     {
       "step": 7,
-      "technique": "front-kick-backfist-front-strike-inward-middle-block",
+      "technique": "front-kick+backfist-front-strike+inward-middle-block",
       "side": "left+left+right",
       "direction": "forward",
       "kihap": false,
@@ -422,7 +422,7 @@
     },
     {
       "step": 13,
-      "technique": "low-block-inward-middle-block",
+      "technique": "low-block+inward-middle-block",
       "side": "left+right",
       "direction": "left-90",
       "kihap": false,
@@ -431,7 +431,7 @@
     },
     {
       "step": 14,
-      "technique": "front-kick-low-block-inward-middle-block",
+      "technique": "front-kick+low-block+inward-middle-block",
       "side": "right+right+left",
       "direction": "forward",
       "kihap": false,
@@ -449,7 +449,7 @@
     },
     {
       "step": 16,
-      "technique": "side-kick-elbow-target-strike",
+      "technique": "side-kick+elbow-target-strike",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -467,7 +467,7 @@
     },
     {
       "step": 18,
-      "technique": "side-kick-elbow-target-strike",
+      "technique": "side-kick+elbow-target-strike",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -476,7 +476,7 @@
     },
     {
       "step": 19,
-      "technique": "low-block-inward-middle-block",
+      "technique": "low-block+inward-middle-block",
       "side": "left+right",
       "direction": "left-90",
       "kihap": false,
@@ -485,7 +485,7 @@
     },
     {
       "step": 20,
-      "technique": "front-kick-backfist-front-strike",
+      "technique": "front-kick+backfist-front-strike",
       "side": "right+right",
       "direction": "forward",
       "kihap": true,

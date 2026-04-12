@@ -143,7 +143,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-backfist-front-strike",
+      "key": "front-kick+backfist-front-strike",
       "name": {
         "en": "Front Kick + Backfist Front Strike",
         "ko": "앞차기 + 등주먹앞치기",
@@ -231,7 +231,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-swallow-form-strike",
+      "key": "side-kick+swallow-form-strike",
       "name": {
         "en": "Side Kick + Swallow Form Strike",
         "ko": "옆차기 + 제비품안치기",
@@ -380,7 +380,7 @@
     },
     {
       "step": 15,
-      "technique": "side-kick-swallow-form-strike",
+      "technique": "side-kick+swallow-form-strike",
       "side": null,
       "direction": "left",
       "kihap": false,
@@ -389,7 +389,7 @@
     },
     {
       "step": 16,
-      "technique": "front-kick-backfist-front-strike",
+      "technique": "front-kick+backfist-front-strike",
       "side": "right",
       "direction": "left",
       "kihap": true,
@@ -443,7 +443,7 @@
     },
     {
       "step": 22,
-      "technique": "side-kick-swallow-form-strike",
+      "technique": "side-kick+swallow-form-strike",
       "side": null,
       "direction": "right",
       "kihap": false,
@@ -452,7 +452,7 @@
     },
     {
       "step": 23,
-      "technique": "front-kick-backfist-front-strike",
+      "technique": "front-kick+backfist-front-strike",
       "side": "left",
       "direction": "right",
       "kihap": true,

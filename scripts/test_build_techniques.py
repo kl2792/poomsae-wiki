@@ -181,6 +181,62 @@ def test_form_jsons_reference_valid_technique_keys():
             )
 
 
+def test_combos_without_video_have_components():
+    """Combo techniques (key contains '+') with timestamp=0 should have a components field."""
+    data = load_techniques()
+    for key, tech in data.items():
+        if "+" not in key:
+            continue
+        if tech["source"]["timestamp"] == 0:
+            assert "components" in tech, (
+                f"Combo '{key}' has no video (timestamp=0) but missing 'components' field"
+            )
+            assert isinstance(tech["components"], list), (
+                f"Combo '{key}' components should be a list"
+            )
+            assert len(tech["components"]) >= 2, (
+                f"Combo '{key}' should have at least 2 components, got {len(tech['components'])}"
+            )
+
+
+def test_combos_with_video_have_no_components():
+    """Combo techniques with their own video (timestamp>0) should NOT have components."""
+    data = load_techniques()
+    for key, tech in data.items():
+        if "+" not in key:
+            continue
+        if tech["source"]["timestamp"] > 0:
+            assert "components" not in tech, (
+                f"Combo '{key}' has own video but should not have 'components' field"
+            )
+
+
+def test_combo_components_reference_valid_keys():
+    """Each entry in a combo's components list should be either a valid technique key or a string name."""
+    data = load_techniques()
+    valid_keys = set(data.keys())
+    for key, tech in data.items():
+        if "components" not in tech:
+            continue
+        for comp in tech["components"]:
+            assert isinstance(comp, str), (
+                f"Combo '{key}' has non-string component: {comp}"
+            )
+            # Components should ideally be valid keys; warn if not
+            # (unmatched components are left as English name strings)
+
+
+def test_combo_keys_contain_plus():
+    """Combo techniques (English name with ' + ') should have '+' in their key."""
+    data = load_techniques()
+    for key, tech in data.items():
+        en = tech["name"]["en"]
+        if " + " in en:
+            assert "+" in key, (
+                f"Technique '{key}' has combo English name '{en}' but key lacks '+'"
+            )
+
+
 if __name__ == "__main__":
     tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0

@@ -6,7 +6,7 @@ import os
 import tempfile
 from pathlib import Path
 
-from extract import validate_form, FORMS_DIR, FORM_META
+from extract import validate_form, FORMS_DIR, PRE_DIR, FORM_META
 
 
 def test_all_existing_forms_pass_validation():
@@ -16,7 +16,8 @@ def test_all_existing_forms_pass_validation():
     assert len(json_files) > 0, "No JSON files in forms directory"
 
     for path in json_files:
-        errors = validate_form(str(path))
+        warnings = []
+        errors = validate_form(str(path), warnings=warnings)
         assert errors == [], f"{path.name}: {errors}"
 
 
@@ -182,6 +183,119 @@ def test_every_form_technique_appears_in_wiki():
             if name_lower not in wiki_names:
                 missing.append(f"{path.stem}: {tech['name']['en']}")
     assert missing == [], f"Form techniques missing from wiki:\n" + "\n".join(missing)
+
+
+def test_validate_warns_on_technique_not_in_pre_extraction():
+    """Validation should warn when a technique's romanized name doesn't match pre-extraction data."""
+    # Create a form JSON with a technique that won't match any pre-extracted name
+    form_data = {
+        "id": "taegeuk-1",  # Must match a FORM_META entry that has a pre-extraction file
+        "name": {"en": "Taegeuk Il Jang", "ko": "태극 1장"},
+        "total_moves": 1,
+        "video_id": "xxx",
+        "techniques": [
+            {
+                "key": "fake-technique",
+                "name": {
+                    "en": "Fake Technique",
+                    "ko": "가짜",
+                    "romanized": "Zzzzfake Zzzznotreal",
+                },
+                "category": "strike",
+            }
+        ],
+        "sequence": [
+            {
+                "step": 0,
+                "technique": "fake-technique",
+                "side": None,
+                "direction": "forward",
+                "kihap": False,
+                "timestamp": 0,
+                "timestamp_end": 1,
+            }
+        ],
+    }
+    # Only run this test if pre-extraction file exists for taegeuk-1jang
+    pre_path = PRE_DIR / "taegeuk-1jang.json"
+    if not pre_path.exists():
+        return  # Skip if no pre-extraction data available
+
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".json", dir=str(FORMS_DIR.parent), delete=False
+    ) as f:
+        json.dump(form_data, f)
+        tmp_path = f.name
+
+    try:
+        warnings: list[str] = []
+        errors = validate_form(tmp_path, warnings=warnings)
+        hallucination_warnings = [w for w in warnings if "possible hallucination" in w]
+        assert len(hallucination_warnings) > 0, (
+            f"Expected hallucination warning for 'Zzzzfake Zzzznotreal', "
+            f"got errors: {errors}, warnings: {warnings}"
+        )
+    finally:
+        os.unlink(tmp_path)
+
+
+def test_validate_no_warning_for_real_technique():
+    """Validation should NOT warn for techniques that match pre-extraction data."""
+    pre_path = PRE_DIR / "taegeuk-1jang.json"
+    if not pre_path.exists():
+        return  # Skip if no pre-extraction data
+
+    with open(pre_path) as f:
+        pre_data = json.load(f)
+
+    # Use a real technique name from the pre-extraction
+    if not pre_data.get("key_moves"):
+        return
+    real_name = pre_data["key_moves"][0]["name"]
+
+    form_data = {
+        "id": "taegeuk-1",
+        "name": {"en": "Taegeuk Il Jang", "ko": "태극 1장"},
+        "total_moves": 1,
+        "video_id": "xxx",
+        "techniques": [
+            {
+                "key": "real-tech",
+                "name": {
+                    "en": "Real Tech",
+                    "ko": "진짜",
+                    "romanized": real_name,
+                },
+                "category": "block",
+            }
+        ],
+        "sequence": [
+            {
+                "step": 0,
+                "technique": "real-tech",
+                "side": None,
+                "direction": "forward",
+                "kihap": False,
+                "timestamp": 0,
+                "timestamp_end": 1,
+            }
+        ],
+    }
+    with tempfile.NamedTemporaryFile(
+        mode="w", suffix=".json", dir=str(FORMS_DIR.parent), delete=False
+    ) as f:
+        json.dump(form_data, f)
+        tmp_path = f.name
+
+    try:
+        warnings: list[str] = []
+        errors = validate_form(tmp_path, warnings=warnings)
+        hallucination_warnings = [w for w in warnings if "possible hallucination" in w]
+        assert len(hallucination_warnings) == 0, (
+            f"Unexpected hallucination warning for '{real_name}': {hallucination_warnings}"
+        )
+    finally:
+        os.unlink(tmp_path)
 
 
 if __name__ == "__main__":

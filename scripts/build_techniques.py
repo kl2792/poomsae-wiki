@@ -16,13 +16,25 @@ FORMS_DIR = Path(__file__).resolve().parent.parent / "dat" / "forms"
 OUTPUT = Path(__file__).resolve().parent.parent / "dat" / "techniques.json"
 
 
-def slugify(name: str) -> str:
-    """Convert English technique name to a URL-safe slug key."""
+def _slugify_single(name: str) -> str:
+    """Slugify a single (non-combo) technique name."""
     s = name.lower().strip()
     s = re.sub(r"[^a-z0-9\s-]", "", s)
     s = re.sub(r"[\s]+", "-", s)
     s = re.sub(r"-+", "-", s)
     return s.strip("-")
+
+
+def slugify(name: str) -> str:
+    """Convert English technique name to a URL-safe slug key.
+
+    Preserves '+' for combo techniques: "Front Kick + Low Block"
+    becomes "front-kick+low-block".
+    """
+    if " + " in name:
+        parts = name.split(" + ")
+        return "+".join(_slugify_single(p) for p in parts)
+    return _slugify_single(name)
 
 
 def load_forms() -> list[dict]:
@@ -480,6 +492,9 @@ def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
     for key, tech in techniques.items():
         if tech["source"]["timestamp"] > 0:
             continue
+        # Skip combo techniques — they get decomposed into components instead
+        if "+" in key:
+            continue
         rom = normalize_romanized(tech["name"].get("romanized", ""))
         en = tech["name"]["en"]
         if not rom:
@@ -708,6 +723,77 @@ def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
     return updated_count
 
 
+def decompose_combos(techniques: dict) -> int:
+    """Add 'components' field to combo techniques that lack their own video.
+
+    A combo is any technique whose key contains '+'. If it has
+    source.timestamp > 0 it has its own KEY MOVES video segment and is kept
+    as-is. Otherwise, split the English name by ' + ', match each part to an
+    existing technique (case-insensitive), and record the list of component keys.
+
+    Returns count of combos that received a components field.
+    """
+    # Build lookup: lowercase English name -> technique key
+    en_to_key: dict[str, str] = {}
+    for key, tech in techniques.items():
+        en_to_key[tech["name"]["en"].strip().lower()] = key
+
+    count = 0
+    for key, tech in techniques.items():
+        if "+" not in key:
+            continue
+        if tech["source"]["timestamp"] > 0:
+            continue  # Has own video — standalone combo
+        en = tech["name"]["en"]
+        parts = en.split(" + ")
+        components: list[str] = []
+        for part in parts:
+            matched_key = en_to_key.get(part.strip().lower())
+            if matched_key:
+                components.append(matched_key)
+            else:
+                components.append(part.strip())  # Unmatched: leave as string
+        tech["components"] = components
+        count += 1
+    return count
+
+
+def sort_by_curriculum(techniques: dict, forms: list[dict]) -> dict:
+    """Sort techniques by first appearance in curriculum order.
+
+    Ordering:
+    1. First form the technique appears in (taegeuk-1 first, ilyeo last)
+    2. Within the same form, order of first appearance in that form's sequence
+    """
+    form_position = {fid: i for i, fid in enumerate(CURRICULUM_ORDER)}
+
+    # Build index: technique key -> (form_position, sequence_position)
+    # from form JSONs (sequence steps reference technique keys)
+    tech_first_appearance: dict[str, tuple[int, int]] = {}
+    for form in forms:
+        fid = form["id"]
+        fpos = form_position.get(fid, 999)
+        for step_idx, step in enumerate(form.get("sequence", [])):
+            tkey = step.get("technique", "")
+            if tkey and tkey not in tech_first_appearance:
+                tech_first_appearance[tkey] = (fpos, step_idx)
+
+    def sort_key(item: tuple[str, dict]) -> tuple:
+        key, tech = item
+        appearance = tech_first_appearance.get(key)
+        if appearance:
+            return appearance
+        # Fallback: use used_in forms
+        earliest = min(
+            (form_position.get(fid, 999) for fid in tech.get("used_in", [])),
+            default=999,
+        )
+        return (earliest, 999)
+
+    sorted_items = sorted(techniques.items(), key=sort_key)
+    return dict(sorted_items)
+
+
 def main() -> None:
     forms = load_forms()
     print(f"Loaded {len(forms)} forms from {FORMS_DIR}")
@@ -744,6 +830,14 @@ def main() -> None:
     updated = update_form_jsons(rename_map, techniques)
     if updated:
         print(f"  Updated {updated} form JSONs")
+
+    # Decompose combo techniques without own video
+    combo_count = decompose_combos(techniques)
+    combo_total = sum(1 for k in techniques if "+" in k)
+    print(f"Combos: {combo_total} total, {combo_count} decomposed (no own video)")
+
+    # Sort by curriculum order
+    techniques = sort_by_curriculum(techniques, forms)
 
     # Category breakdown
     cats: dict[str, int] = {}

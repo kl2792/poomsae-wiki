@@ -385,7 +385,7 @@
       "tips": []
     },
     {
-      "key": "double-side-kick-knifehand-outward-strike",
+      "key": "double-side-kick+knifehand-outward-strike",
       "name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날바깥치기",
@@ -440,7 +440,7 @@
       "tips": []
     },
     {
-      "key": "knifehand-inward-strike-knifehand-low-block",
+      "key": "knifehand-inward-strike+knifehand-low-block",
       "name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날안치기 + 손날아래내려막기",
@@ -462,7 +462,7 @@
       "tips": []
     },
     {
-      "key": "knifehand-outward-strike-knifehand-low-block",
+      "key": "knifehand-outward-strike+knifehand-low-block",
       "name": {
         "en": "Knifehand Outward Strike + Knifehand Low Block",
         "ko": "손날바깥치기 + 손날아래내려막기",
@@ -522,7 +522,7 @@
     },
     {
       "step": 2,
-      "technique": "double-side-kick-knifehand-outward-strike",
+      "technique": "double-side-kick+knifehand-outward-strike",
       "technique_name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날 바깥치기"
@@ -578,7 +578,7 @@
     },
     {
       "step": 6,
-      "technique": "double-side-kick-knifehand-outward-strike",
+      "technique": "double-side-kick+knifehand-outward-strike",
       "technique_name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날 바깥치기"
@@ -1026,7 +1026,7 @@
     },
     {
       "step": 38,
-      "technique": "knifehand-outward-strike-knifehand-low-block",
+      "technique": "knifehand-outward-strike+knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Outward Strike + Knifehand Low Block",
         "ko": "손날 바깥치기 + 손날 아래내려막기"
@@ -1040,7 +1040,7 @@
     },
     {
       "step": 39,
-      "technique": "knifehand-inward-strike-knifehand-low-block",
+      "technique": "knifehand-inward-strike+knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날 안치기 + 손날 아래내려막기"
@@ -1054,7 +1054,7 @@
     },
     {
       "step": 40,
-      "technique": "knifehand-inward-strike-knifehand-low-block",
+      "technique": "knifehand-inward-strike+knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날 안치기 + 손날 아래내려막기"

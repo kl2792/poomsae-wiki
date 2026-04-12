@@ -135,7 +135,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-double-punch",
+      "key": "front-kick+double-punch",
       "name": {
         "en": "Front Kick + Double Punch",
         "ko": "앞차기 + 두번지르기",
@@ -146,7 +146,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-knifehand-assisted-low-block",
+      "key": "front-kick+knifehand-assisted-low-block",
       "name": {
         "en": "Front Kick + Knifehand Assisted Low Block",
         "ko": "앞차기 + 손날거들어아래내려막기",
@@ -223,7 +223,7 @@
       "tips": []
     },
     {
-      "key": "inward-middle-block-assisted-inward-block",
+      "key": "inward-middle-block+assisted-inward-block",
       "name": {
         "en": "Inward Middle Block + Assisted Inward Block",
         "ko": "몸통안막기 + 거들어안막기",
@@ -311,7 +311,7 @@
       "tips": []
     },
     {
-      "key": "upper-block-middle-punch",
+      "key": "upper-block+middle-punch",
       "name": {
         "en": "Upper Block + Middle Punch",
         "ko": "얼굴올려막기 + 몸통지르기",
@@ -322,7 +322,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-low-side-block",
+      "key": "side-kick+low-side-block",
       "name": {
         "en": "Side Kick + Low Side Block",
         "ko": "옆차기 + 아래내려옆막기",
@@ -333,7 +333,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-middle-punch",
+      "key": "side-kick+middle-punch",
       "name": {
         "en": "Side Kick + Middle Punch",
         "ko": "옆차기 + 몸통지르기",
@@ -365,7 +365,7 @@
     },
     {
       "step": 2,
-      "technique": "upper-block-middle-punch",
+      "technique": "upper-block+middle-punch",
       "side": "right+left",
       "direction": "left",
       "kihap": false,
@@ -383,7 +383,7 @@
     },
     {
       "step": 4,
-      "technique": "upper-block-middle-punch",
+      "technique": "upper-block+middle-punch",
       "side": "left+right",
       "direction": "right",
       "kihap": false,
@@ -428,7 +428,7 @@
     },
     {
       "step": 9,
-      "technique": "upper-block-middle-punch",
+      "technique": "upper-block+middle-punch",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -482,7 +482,7 @@
     },
     {
       "step": 15,
-      "technique": "front-kick-knifehand-assisted-low-block",
+      "technique": "front-kick+knifehand-assisted-low-block",
       "side": "left+left",
       "direction": "right",
       "kihap": false,
@@ -509,7 +509,7 @@
     },
     {
       "step": 18,
-      "technique": "inward-middle-block-assisted-inward-block",
+      "technique": "inward-middle-block+assisted-inward-block",
       "side": "left+right",
       "direction": "right",
       "kihap": false,
@@ -527,7 +527,7 @@
     },
     {
       "step": 20,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "right",
       "kihap": false,
@@ -590,7 +590,7 @@
     },
     {
       "step": 27,
-      "technique": "side-kick-low-side-block",
+      "technique": "side-kick+low-side-block",
       "side": "right+left",
       "direction": "left",
       "kihap": false,
@@ -608,7 +608,7 @@
     },
     {
       "step": 29,
-      "technique": "side-kick-middle-punch",
+      "technique": "side-kick+middle-punch",
       "side": "left+right",
       "direction": "left",
       "kihap": false,

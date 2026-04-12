@@ -334,7 +334,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-uppercut-punch",
+      "key": "front-kick+uppercut-punch",
       "name": {
         "en": "Front Kick + Uppercut Punch",
         "ko": "앞차기+첫다리찌르기",
@@ -345,7 +345,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-assisted-backfist-front-strike",
+      "key": "front-kick+assisted-backfist-front-strike",
       "name": {
         "en": "Front Kick + Assisted Backfist Front Strike",
         "ko": "앞차기+거들어등주먹앞치기",
@@ -356,7 +356,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-middle-punch",
+      "key": "front-kick+middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -600,7 +600,7 @@
     },
     {
       "step": 17,
-      "technique": "front-kick-uppercut-punch",
+      "technique": "front-kick+uppercut-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -609,7 +609,7 @@
     },
     {
       "step": 18,
-      "technique": "front-kick-uppercut-punch",
+      "technique": "front-kick+uppercut-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -618,7 +618,7 @@
     },
     {
       "step": 19,
-      "technique": "front-kick-assisted-backfist-front-strike",
+      "technique": "front-kick+assisted-backfist-front-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -690,7 +690,7 @@
     },
     {
       "step": 27,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": true,
@@ -699,7 +699,7 @@
     },
     {
       "step": 28,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": true,

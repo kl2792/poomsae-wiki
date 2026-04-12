@@ -154,7 +154,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-palm-inward-block",
+      "key": "front-kick+palm-inward-block",
       "name": {
         "en": "Front Kick + Palm Inward Block",
         "ko": "앞차기 + 바탕손안막기",
@@ -165,7 +165,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-middle-punch",
+      "key": "front-kick+middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -176,7 +176,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-jumping-front-kick-inward-middle-block-middle-double-punch",
+      "key": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
       "name": {
         "en": "Front Kick + Jumping Front Kick + Inward Middle Block + Middle Double Punch",
         "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기",
@@ -198,7 +198,7 @@
       "tips": []
     },
     {
-      "key": "double-jumping-front-kick-inward-middle-block-middle-double-punch",
+      "key": "double-jumping-front-kick+inward-middle-block+middle-double-punch",
       "name": {
         "en": "Double Jumping Front Kick + Inward Middle Block + Middle Double Punch",
         "ko": "두발당성차기 + 몸통안막기 + 몸통두번지르기",
@@ -220,7 +220,7 @@
       "tips": []
     },
     {
-      "key": "elbow-spinning-strike-backfist-front-strike",
+      "key": "elbow-spinning-strike+backfist-front-strike",
       "name": {
         "en": "Elbow Spinning Strike + Backfist Front Strike",
         "ko": "팔꿈치돌려치기 + 등주먹앞치기",
@@ -294,7 +294,7 @@
     },
     {
       "step": 3,
-      "technique": "double-jumping-front-kick-inward-middle-block-middle-double-punch",
+      "technique": "double-jumping-front-kick+inward-middle-block+middle-double-punch",
       "side": "left+left+both",
       "direction": "right-180",
       "kihap": false,
@@ -366,7 +366,7 @@
     },
     {
       "step": 11,
-      "technique": "front-kick-palm-inward-block",
+      "technique": "front-kick+palm-inward-block",
       "side": "right+right",
       "direction": "forward",
       "kihap": false,
@@ -384,7 +384,7 @@
     },
     {
       "step": 13,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -411,7 +411,7 @@
     },
     {
       "step": 16,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -438,7 +438,7 @@
     },
     {
       "step": 19,
-      "technique": "front-kick-jumping-front-kick-inward-middle-block-middle-double-punch",
+      "technique": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
       "side": "left+right+right+both",
       "direction": "forward",
       "kihap": false,
@@ -456,7 +456,7 @@
     },
     {
       "step": 21,
-      "technique": "elbow-spinning-strike-backfist-front-strike",
+      "technique": "elbow-spinning-strike+backfist-front-strike",
       "side": "right+right",
       "direction": "forward",
       "kihap": false,
@@ -483,7 +483,7 @@
     },
     {
       "step": 24,
-      "technique": "elbow-spinning-strike-backfist-front-strike",
+      "technique": "elbow-spinning-strike+backfist-front-strike",
       "side": "left+left",
       "direction": "forward",
       "kihap": false,

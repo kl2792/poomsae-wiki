@@ -117,6 +117,7 @@ export interface WikiTechnique {
   source: WikiTechniqueSource;
   tips: WikiTechniqueTip[];
   used_in: string[];
+  components?: string[];
 }
 
 const TECHNIQUES_FILE = path.join(DAT_DIR, "techniques.json");
@@ -131,18 +132,27 @@ function loadTechniquesFile(): Record<string, WikiTechnique> | null {
   return _techniquesCache;
 }
 
-export function getAllTechniques(): WikiTechnique[] {
+export function getAllTechniques(opts?: {
+  includeDecomposedCombos?: boolean;
+}): WikiTechnique[] {
   const data = loadTechniquesFile();
   if (!data) return [];
-  return Object.values(data).sort((a, b) =>
-    a.name.en.localeCompare(b.name.en)
-  );
+  let values = Object.values(data);
+  if (!opts?.includeDecomposedCombos) {
+    values = values.filter((t) => !t.components);
+  }
+  return values.sort((a, b) => a.name.en.localeCompare(b.name.en));
 }
 
-export function getAllTechniqueKeys(): string[] {
+export function getAllTechniqueKeys(opts?: {
+  includeDecomposedCombos?: boolean;
+}): string[] {
   const data = loadTechniquesFile();
   if (!data) return [];
-  return Object.keys(data);
+  if (opts?.includeDecomposedCombos) return Object.keys(data);
+  return Object.entries(data)
+    .filter(([, t]) => !t.components)
+    .map(([k]) => k);
 }
 
 export function getTechniqueByKey(key: string): WikiTechnique | null {

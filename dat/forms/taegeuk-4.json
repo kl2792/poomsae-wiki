@@ -208,7 +208,7 @@
       ]
     },
     {
-      "key": "front-kick-backfist-front-strike",
+      "key": "front-kick+backfist-front-strike",
       "name": {
         "en": "Front Kick + Backfist Front Strike",
         "ko": "앞차기 + 등주먹앞치기",
@@ -219,7 +219,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-inward-middle-block",
+      "key": "front-kick+inward-middle-block",
       "name": {
         "en": "Front Kick + Inward Middle Block",
         "ko": "앞차기 + 몸통안막기",
@@ -230,7 +230,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-middle-punch",
+      "key": "front-kick+middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -263,7 +263,7 @@
       "tips": []
     },
     {
-      "key": "inward-middle-block-double-punch",
+      "key": "inward-middle-block+double-punch",
       "name": {
         "en": "Inward Middle Block + Double Punch",
         "ko": "몸통안막기 + 두번지르기",
@@ -285,7 +285,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-knifehand-guarding-block",
+      "key": "side-kick+knifehand-guarding-block",
       "name": {
         "en": "Side Kick + Knifehand Guarding Block",
         "ko": "옆차기 + 손날거들어막기",
@@ -353,7 +353,7 @@
     },
     {
       "step": 6,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -371,7 +371,7 @@
     },
     {
       "step": 8,
-      "technique": "side-kick-knifehand-guarding-block",
+      "technique": "side-kick+knifehand-guarding-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -389,7 +389,7 @@
     },
     {
       "step": 10,
-      "technique": "front-kick-inward-middle-block",
+      "technique": "front-kick+inward-middle-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -407,7 +407,7 @@
     },
     {
       "step": 12,
-      "technique": "front-kick-inward-middle-block",
+      "technique": "front-kick+inward-middle-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -425,7 +425,7 @@
     },
     {
       "step": 14,
-      "technique": "front-kick-backfist-front-strike",
+      "technique": "front-kick+backfist-front-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -470,7 +470,7 @@
     },
     {
       "step": 19,
-      "technique": "inward-middle-block-double-punch",
+      "technique": "inward-middle-block+double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -479,7 +479,7 @@
     },
     {
       "step": 20,
-      "technique": "inward-middle-block-double-punch",
+      "technique": "inward-middle-block+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": true,

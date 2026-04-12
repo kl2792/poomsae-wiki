@@ -182,8 +182,12 @@ TRANSCRIPT:
 {transcript}"""
 
 
-def validate_form(path: str) -> list[str]:
-    """Validate a form JSON. Returns list of errors."""
+def validate_form(path: str, warnings: list[str] | None = None) -> list[str]:
+    """Validate a form JSON. Returns list of errors.
+
+    If `warnings` list is provided, appends non-blocking warnings (e.g.
+    possible hallucinations) to it instead of to errors.
+    """
     errors = []
     try:
         with open(path) as f:
@@ -233,7 +237,90 @@ def validate_form(path: str) -> list[str]:
     if steps != sorted(steps):
         errors.append("Sequence steps not in order")
 
+    # Cross-check techniques against pre-extraction data
+    form_id = d.get('id', '')
+    # Map form_id back to slug for pre-extraction file lookup
+    slug_for_pre = None
+    for slug_candidate, meta in FORM_META.items():
+        if meta['id'] == form_id:
+            slug_for_pre = slug_candidate
+            break
+    if slug_for_pre:
+        pre_path = PRE_DIR / f"{slug_for_pre}.json"
+        if pre_path.exists():
+            with open(pre_path) as f:
+                pre_data = json.load(f)
+            pre_names = _collect_pre_names(pre_data)
+            for t in d['techniques']:
+                rom = t.get('name', {}).get('romanized', '')
+                if rom and not _matches_pre_names(rom, pre_names):
+                    msg = (
+                        f"WARNING: Technique '{rom}' not found in "
+                        f"transcript — possible hallucination"
+                    )
+                    if warnings is not None:
+                        warnings.append(msg)
+                    else:
+                        errors.append(msg)
+
     return errors
+
+
+# --- Pre-extraction cross-check helpers ---
+
+# Standard techniques that appear in almost every form and don't need
+# transcript anchoring.
+_STANDARD_TECHNIQUES = {
+    "momtong jireugi", "arae makgi", "ap chagi", "olgul jireugi",
+    "junbi", "junbijase", "gibon junbijase",
+}
+
+
+def _normalize_pre_name(name: str) -> str:
+    """Normalize a pre-extracted name for fuzzy comparison."""
+    s = re.sub(r"[^a-z\s]", "", name.lower())
+    return re.sub(r"\s+", " ", s).strip()
+
+
+def _collect_pre_names(pre_data: dict) -> set[str]:
+    """Collect all normalized technique names from pre-extraction data."""
+    names: set[str] = set()
+    for m in pre_data.get("key_moves", []):
+        names.add(_normalize_pre_name(m["name"]))
+    for s in pre_data.get("sequence_steps", []):
+        names.add(_normalize_pre_name(s["name"]))
+    return names
+
+
+def _matches_pre_names(romanized: str, pre_names: set[str]) -> bool:
+    """Check if a romanized technique name matches any pre-extracted name.
+
+    Uses substring matching in both directions: the romanized name is
+    contained in a pre-name, or a pre-name is contained in the romanized.
+    Also allows standard techniques that don't need anchoring.
+    """
+    norm = _normalize_pre_name(romanized)
+    if not norm:
+        return True  # No romanized name to check
+    # Standard techniques are always OK
+    if norm in _STANDARD_TECHNIQUES:
+        return True
+    # Check for combo parts individually
+    parts = norm.split("+") if "+" in romanized else [norm]
+    for part in parts:
+        part = part.strip()
+        if part in _STANDARD_TECHNIQUES:
+            continue
+        matched = False
+        for pre in pre_names:
+            if not pre:
+                continue
+            if part in pre or pre in part:
+                matched = True
+                break
+        if not matched:
+            return False
+    return True
 
 
 def extract_form(slug: str, prompt_only: bool = False):
@@ -297,40 +384,55 @@ def extract_form(slug: str, prompt_only: bool = False):
     with open(out_path, 'w') as f:
         json.dump(data, f, indent=2, ensure_ascii=False)
 
-    errors = validate_form(str(out_path))
+    warnings: list[str] = []
+    errors = validate_form(str(out_path), warnings=warnings)
     techs = len(data.get('techniques', []))
     steps = len(data.get('sequence', []))
     tips = sum(len(t.get('tips', [])) for t in data.get('techniques', []))
 
     if errors:
-        print(f"  WARNINGS ({len(errors)}):")
+        print(f"  ERRORS ({len(errors)}):")
         for e in errors[:10]:
             print(f"    - {e}")
         if len(errors) > 10:
             print(f"    ... and {len(errors) - 10} more")
-    print(f"  Wrote {out_path}: {techs} techniques, {steps} steps, {tips} tips, {len(errors)} warnings")
+    if warnings:
+        print(f"  WARNINGS ({len(warnings)}):")
+        for w in warnings[:10]:
+            print(f"    - {w}")
+        if len(warnings) > 10:
+            print(f"    ... and {len(warnings) - 10} more")
+    print(f"  Wrote {out_path}: {techs} techniques, {steps} steps, {tips} tips, "
+          f"{len(errors)} errors, {len(warnings)} warnings")
     return len(errors) == 0
 
 
 def validate_all():
     """Validate all existing form JSONs."""
     total_errors = 0
+    total_warnings = 0
     for fname in sorted(os.listdir(FORMS_DIR)):
         if not fname.endswith('.json'):
             continue
         path = str(FORMS_DIR / fname)
-        errors = validate_form(path)
+        warnings: list[str] = []
+        errors = validate_form(path, warnings=warnings)
         with open(path) as f:
             d = json.load(f)
         techs = len(d.get('techniques', []))
         steps = len(d.get('sequence', []))
         tips = sum(len(t.get('tips', [])) for t in d.get('techniques', []))
         status = "OK" if not errors else f"{len(errors)} errors"
+        if warnings:
+            status += f", {len(warnings)} warnings"
         print(f"{fname:25s} {techs:3d} tech  {steps:3d} steps  {tips:4d} tips  {status}")
         for e in errors:
             print(f"  - {e}")
+        for w in warnings:
+            print(f"  - {w}")
         total_errors += len(errors)
-    print(f"\nTotal: {total_errors} errors")
+        total_warnings += len(warnings)
+    print(f"\nTotal: {total_errors} errors, {total_warnings} warnings")
     return total_errors == 0
 
 

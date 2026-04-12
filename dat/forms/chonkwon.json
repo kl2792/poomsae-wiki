@@ -149,7 +149,7 @@
       "tips": []
     },
     {
-      "key": "hand-grab-pull-side-kick-low-block",
+      "key": "hand-grab-pull+side-kick+low-block",
       "name": {
         "en": "Hand Grab Pull + Side Kick + Low Block",
         "ko": "손가마잡아끌며+옆차기+아래막기",
@@ -160,7 +160,7 @@
       "tips": []
     },
     {
-      "key": "hand-grab-and-pull-middle-punch",
+      "key": "hand-grab-and-pull+middle-punch",
       "name": {
         "en": "Hand Grab and Pull + Middle Punch",
         "ko": "손가마잡아끌며몸통지르기",
@@ -243,7 +243,7 @@
     },
     {
       "step": 4,
-      "technique": "hand-grab-and-pull-middle-punch",
+      "technique": "hand-grab-and-pull+middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -261,7 +261,7 @@
     },
     {
       "step": 6,
-      "technique": "hand-grab-and-pull-middle-punch",
+      "technique": "hand-grab-and-pull+middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -279,7 +279,7 @@
     },
     {
       "step": 8,
-      "technique": "hand-grab-pull-side-kick-low-block",
+      "technique": "hand-grab-pull+side-kick+low-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -405,7 +405,7 @@
     },
     {
       "step": 22,
-      "technique": "hand-grab-and-pull-middle-punch",
+      "technique": "hand-grab-and-pull+middle-punch",
       "side": "right",
       "direction": "backward",
       "kihap": false,
@@ -423,7 +423,7 @@
     },
     {
       "step": 24,
-      "technique": "hand-grab-pull-side-kick-low-block",
+      "technique": "hand-grab-pull+side-kick+low-block",
       "side": "left",
       "direction": "backward",
       "kihap": false,

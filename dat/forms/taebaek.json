@@ -256,7 +256,7 @@
       ]
     },
     {
-      "key": "front-kick-double-punch",
+      "key": "front-kick+double-punch",
       "name": {
         "en": "Front Kick + Double Punch",
         "ko": "앞차기 + 두번지르기",
@@ -388,7 +388,7 @@
       "tips": []
     },
     {
-      "key": "side-kick-elbow-target-strike",
+      "key": "side-kick+elbow-target-strike",
       "name": {
         "en": "Side Kick + Elbow Target Strike",
         "ko": "옆차기 + 팔꿈치표적치기",
@@ -420,7 +420,7 @@
     },
     {
       "step": 2,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -438,7 +438,7 @@
     },
     {
       "step": 4,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -483,7 +483,7 @@
     },
     {
       "step": 9,
-      "technique": "side-kick-elbow-target-strike",
+      "technique": "side-kick+elbow-target-strike",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -528,7 +528,7 @@
     },
     {
       "step": 14,
-      "technique": "side-kick-elbow-target-strike",
+      "technique": "side-kick+elbow-target-strike",
       "side": "right",
       "direction": "right-90",
       "kihap": false,
@@ -591,7 +591,7 @@
     },
     {
       "step": 21,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -609,7 +609,7 @@
     },
     {
       "step": 23,
-      "technique": "front-kick-double-punch",
+      "technique": "front-kick+double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,

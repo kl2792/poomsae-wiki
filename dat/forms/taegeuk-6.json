@@ -141,7 +141,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-middle-outward-block",
+      "key": "front-kick+middle-outward-block",
       "name": {
         "en": "Front Kick + Middle Outward Block",
         "ko": "앞차기 + 몸통바깥막기",
@@ -152,7 +152,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-middle-punch",
+      "key": "front-kick+middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -174,7 +174,7 @@
       "tips": []
     },
     {
-      "key": "palm-inward-middle-block-middle-punch",
+      "key": "palm-inward-middle-block+middle-punch",
       "name": {
         "en": "Palm Inward Middle Block + Middle Punch",
         "ko": "바탕손몸통안막기 + 몸통지르기",
@@ -218,7 +218,7 @@
       "tips": []
     },
     {
-      "key": "high-outward-block-middle-punch",
+      "key": "high-outward-block+middle-punch",
       "name": {
         "en": "High Outward Block + Middle Punch",
         "ko": "얼굴바깥막기 + 몸통지르기",
@@ -229,7 +229,7 @@
       "tips": []
     },
     {
-      "key": "face-roundhouse-kick-low-downward-block",
+      "key": "face-roundhouse-kick+low-downward-block",
       "name": {
         "en": "Face Roundhouse Kick + Low Downward Block",
         "ko": "얼굴돌려차기 + 아래내려막기",
@@ -240,7 +240,7 @@
       "tips": []
     },
     {
-      "key": "face-roundhouse-kick-high-outward-block-middle-punch",
+      "key": "face-roundhouse-kick+high-outward-block+middle-punch",
       "name": {
         "en": "Face Roundhouse Kick + High Outward Block + Middle Punch",
         "ko": "얼굴돌려차기 + 얼굴바깥막기 + 몸통지르기",
@@ -272,7 +272,7 @@
     },
     {
       "step": 2,
-      "technique": "front-kick-middle-outward-block",
+      "technique": "front-kick+middle-outward-block",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -290,7 +290,7 @@
     },
     {
       "step": 4,
-      "technique": "front-kick-middle-outward-block",
+      "technique": "front-kick+middle-outward-block",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -308,7 +308,7 @@
     },
     {
       "step": 6,
-      "technique": "face-roundhouse-kick-high-outward-block-middle-punch",
+      "technique": "face-roundhouse-kick+high-outward-block+middle-punch",
       "side": "right+left+right",
       "direction": "forward",
       "kihap": false,
@@ -317,7 +317,7 @@
     },
     {
       "step": 7,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -326,7 +326,7 @@
     },
     {
       "step": 8,
-      "technique": "high-outward-block-middle-punch",
+      "technique": "high-outward-block+middle-punch",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -335,7 +335,7 @@
     },
     {
       "step": 9,
-      "technique": "front-kick-middle-punch",
+      "technique": "front-kick+middle-punch",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -362,7 +362,7 @@
     },
     {
       "step": 12,
-      "technique": "face-roundhouse-kick-low-downward-block",
+      "technique": "face-roundhouse-kick+low-downward-block",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -371,7 +371,7 @@
     },
     {
       "step": 13,
-      "technique": "front-kick-middle-outward-block",
+      "technique": "front-kick+middle-outward-block",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -389,7 +389,7 @@
     },
     {
       "step": 15,
-      "technique": "front-kick-middle-outward-block",
+      "technique": "front-kick+middle-outward-block",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -416,7 +416,7 @@
     },
     {
       "step": 18,
-      "technique": "palm-inward-middle-block-middle-punch",
+      "technique": "palm-inward-middle-block+middle-punch",
       "side": "left+right",
       "direction": "left-90",
       "kihap": false,
@@ -425,7 +425,7 @@
     },
     {
       "step": 19,
-      "technique": "palm-inward-middle-block-middle-punch",
+      "technique": "palm-inward-middle-block+middle-punch",
       "side": "right+left",
       "direction": "forward",
       "kihap": true,

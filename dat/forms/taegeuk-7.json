@@ -235,7 +235,7 @@
       "tips": []
     },
     {
-      "key": "front-kick-inward-middle-block",
+      "key": "front-kick+inward-middle-block",
       "name": {
         "en": "Front Kick + Inward Middle Block",
         "ko": "앞차기 + 몸통안막기",
@@ -257,7 +257,7 @@
       "tips": []
     },
     {
-      "key": "scissors-block-scissors-block",
+      "key": "scissors-block+scissors-block",
       "name": {
         "en": "Scissors Block + Scissors Block",
         "ko": "가위막기 + 가위막기",
@@ -268,7 +268,7 @@
       "tips": []
     },
     {
-      "key": "assisted-palm-inward-middle-block-assisted-backfist-front-strike",
+      "key": "assisted-palm-inward-middle-block+assisted-backfist-front-strike",
       "name": {
         "en": "Assisted Palm Inward Middle Block + Assisted Backfist Front Strike",
         "ko": "거들어바탕손몸통안막기 + 거들어등주먹앞치기",
@@ -279,7 +279,7 @@
       "tips": []
     },
     {
-      "key": "knee-raising-strike-double-fist-uppercut",
+      "key": "knee-raising-strike+double-fist-uppercut",
       "name": {
         "en": "Knee Raising Strike + Double Fist Uppercut",
         "ko": "무릎올려치기 + 두주먹제쳐지르기",
@@ -290,7 +290,7 @@
       "tips": []
     },
     {
-      "key": "target-kick-elbow-target-strike",
+      "key": "target-kick+elbow-target-strike",
       "name": {
         "en": "Target Kick + Elbow Target Strike",
         "ko": "표적차기 + 팔꿈치표적치기",
@@ -333,7 +333,7 @@
     },
     {
       "step": 2,
-      "technique": "front-kick-inward-middle-block",
+      "technique": "front-kick+inward-middle-block",
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
@@ -351,7 +351,7 @@
     },
     {
       "step": 4,
-      "technique": "front-kick-inward-middle-block",
+      "technique": "front-kick+inward-middle-block",
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
@@ -378,7 +378,7 @@
     },
     {
       "step": 7,
-      "technique": "assisted-palm-inward-middle-block-assisted-backfist-front-strike",
+      "technique": "assisted-palm-inward-middle-block+assisted-backfist-front-strike",
       "side": "right+right",
       "direction": "left-90",
       "kihap": false,
@@ -387,7 +387,7 @@
     },
     {
       "step": 8,
-      "technique": "assisted-palm-inward-middle-block-assisted-backfist-front-strike",
+      "technique": "assisted-palm-inward-middle-block+assisted-backfist-front-strike",
       "side": "left+left",
       "direction": "right-180",
       "kihap": false,
@@ -405,7 +405,7 @@
     },
     {
       "step": 10,
-      "technique": "scissors-block-scissors-block",
+      "technique": "scissors-block+scissors-block",
       "side": null,
       "direction": "left-90",
       "kihap": false,
@@ -423,7 +423,7 @@
     },
     {
       "step": 12,
-      "technique": "knee-raising-strike-double-fist-uppercut",
+      "technique": "knee-raising-strike+double-fist-uppercut",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -450,7 +450,7 @@
     },
     {
       "step": 15,
-      "technique": "knee-raising-strike-double-fist-uppercut",
+      "technique": "knee-raising-strike+double-fist-uppercut",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -477,7 +477,7 @@
     },
     {
       "step": 18,
-      "technique": "target-kick-elbow-target-strike",
+      "technique": "target-kick+elbow-target-strike",
       "side": "right+right",
       "direction": "forward",
       "kihap": false,
@@ -495,7 +495,7 @@
     },
     {
       "step": 20,
-      "technique": "target-kick-elbow-target-strike",
+      "technique": "target-kick+elbow-target-strike",
       "side": "left+left",
       "direction": "forward",
       "kihap": false,
