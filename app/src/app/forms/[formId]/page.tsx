@@ -34,6 +34,7 @@ export default async function FormPage({
   }
 
   return (
+    // Suspense required: FormDetail uses useSearchParams which needs a Suspense boundary
     <Suspense>
       <FormDetail form={form} wikiTechniques={wikiTechniques} />
     </Suspense>

@@ -1,7 +1,7 @@
 "use client";
 
 import type { Technique } from "@/lib/data";
-import { CATEGORY_COLORS } from "@/lib/constants";
+import { categoryTheme } from "@/lib/constants";
 
 interface TechniqueListProps {
   techniques: Technique[];
@@ -21,7 +21,7 @@ export default function TechniqueList({
       {techniques.map((tech) => {
         const isActive = activeTechnique === tech.key;
         const count = occurrences.get(tech.key) ?? 0;
-        const catColor = CATEGORY_COLORS[tech.category] ?? "bg-gray-100 text-gray-600";
+        const catColor = categoryTheme(tech.category).badge;
 
         return (
           <button
@@ -50,7 +50,7 @@ export default function TechniqueList({
                 {tech.name.romanized && (
                   <span className="text-[11px] text-gray-400">{tech.name.romanized}</span>
                 )}
-                <span className="text-[11px] text-gray-300">{tech.name.ko}</span>
+                <span className="text-[11px] text-gray-400">{tech.name.ko}</span>
               </div>
             </div>
 

@@ -236,6 +236,7 @@ export default function TechniqueSearch({
         type="text"
         value={query}
         onChange={handleSearch}
+        aria-label="Search techniques"
         placeholder="Search techniques..."
         className="w-full max-w-md px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
       />

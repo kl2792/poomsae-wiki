@@ -68,6 +68,7 @@ export function getAllForms(): FormData[] {
       const raw = fs.readFileSync(path.join(FORMS_DIR, f), "utf-8");
       return JSON.parse(raw) as FormData;
     })
+    // SYNC: this sort order must match scripts/build_techniques.py load_forms()
     .sort((a, b) => {
       const aNum = a.id.match(/taegeuk-(\d)/)?.[1];
       const bNum = b.id.match(/taegeuk-(\d)/)?.[1];
@@ -125,25 +126,32 @@ export interface WikiTechnique {
 
 const TECHNIQUES_FILE = path.join(DAT_DIR, "techniques.json");
 
-export function getAllTechniques(): WikiTechnique[] {
-  if (!fs.existsSync(TECHNIQUES_FILE)) return [];
+/** Module-level cache: read and parse techniques.json once. */
+let _techniquesCache: Record<string, WikiTechnique> | null = null;
+function loadTechniquesFile(): Record<string, WikiTechnique> | null {
+  if (_techniquesCache !== null) return _techniquesCache;
+  if (!fs.existsSync(TECHNIQUES_FILE)) return null;
   const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
-  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  _techniquesCache = JSON.parse(raw) as Record<string, WikiTechnique>;
+  return _techniquesCache;
+}
+
+export function getAllTechniques(): WikiTechnique[] {
+  const data = loadTechniquesFile();
+  if (!data) return [];
   return Object.values(data).sort((a, b) =>
     a.name.en.localeCompare(b.name.en)
   );
 }
 
 export function getAllTechniqueKeys(): string[] {
-  if (!fs.existsSync(TECHNIQUES_FILE)) return [];
-  const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
-  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  const data = loadTechniquesFile();
+  if (!data) return [];
   return Object.keys(data);
 }
 
 export function getTechniqueByKey(key: string): WikiTechnique | null {
-  if (!fs.existsSync(TECHNIQUES_FILE)) return null;
-  const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
-  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  const data = loadTechniquesFile();
+  if (!data) return null;
   return data[key] ?? null;
 }

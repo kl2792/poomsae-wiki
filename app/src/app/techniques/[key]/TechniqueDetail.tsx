@@ -3,31 +3,16 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import type { WikiTechnique } from "@/lib/data";
+import { categoryTheme, formDisplayName } from "@/lib/constants";
+import { formatTime } from "@/lib/format";
 import VideoPlayer from "@/components/VideoPlayer";
-
-const CATEGORY_COLORS: Record<string, string> = {
-  block: "bg-blue-100 text-blue-800",
-  strike: "bg-red-100 text-red-800",
-  kick: "bg-orange-100 text-orange-800",
-  stance: "bg-green-100 text-green-800",
-  ready: "bg-gray-100 text-gray-700",
-  technique: "bg-purple-100 text-purple-800",
-};
-
-function formatTime(seconds: number): string {
-  const m = Math.floor(seconds / 60);
-  const s = Math.floor(seconds % 60);
-  return `${m}:${s.toString().padStart(2, "0")}`;
-}
 
 interface TechniqueDetailProps {
   technique: WikiTechnique;
-  formNameMap: Record<string, string>;
 }
 
 export default function TechniqueDetail({
   technique: t,
-  formNameMap,
 }: TechniqueDetailProps) {
   const hasVideo = t.source.timestamp > 0;
   const [videoStart, setVideoStart] = useState<number | undefined>(
@@ -45,8 +30,7 @@ export default function TechniqueDetail({
     []
   );
 
-  const categoryColor =
-    CATEGORY_COLORS[t.category] || "bg-gray-100 text-gray-700";
+  const categoryColor = categoryTheme(t.category).badge;
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-8">
@@ -149,7 +133,7 @@ export default function TechniqueDetail({
                     href={`/forms/${formId}`}
                     className="text-xs px-2.5 py-1 rounded-full bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-blue-700"
                   >
-                    {formNameMap[formId] || formId}
+                    {formDisplayName(formId)}
                   </Link>
                 ))}
               </div>

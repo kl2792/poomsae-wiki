@@ -34,10 +34,16 @@ export default function RootLayout({
             >
               Techniques
             </Link>
+            <Link
+              href="/scoring"
+              className="text-sm text-gray-600 hover:text-gray-900"
+            >
+              Scoring
+            </Link>
           </nav>
         </header>
         <main className="flex-1">{children}</main>
-        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-400">
+        <footer className="border-t border-gray-200 py-6 text-center text-xs text-gray-500">
           Sources:{" "}
           <a
             href="https://www.youtube.com/playlist?list=PLSFr5pEwo7gSwvfg4bjxoF3liyfJkCLAj"

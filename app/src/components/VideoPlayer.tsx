@@ -13,6 +13,7 @@ interface VideoPlayerProps {
   startTime?: number;
   endTime?: number;
   autoPause?: boolean;
+  loop?: boolean;
   onTimeUpdate?: (time: number) => void;
   onPlayingChange?: (playing: boolean) => void;
 }
@@ -24,6 +25,7 @@ export default function VideoPlayer({
   startTime,
   endTime,
   autoPause = true,
+  loop = false,
   onTimeUpdate,
   onPlayingChange,
 }: VideoPlayerProps) {
@@ -32,6 +34,7 @@ export default function VideoPlayer({
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const onPlayingChangeRef = useRef(onPlayingChange);
   const [ready, setReady] = useState(false);
+  const [loadError, setLoadError] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [playing, setPlaying] = useState(false);
 
@@ -48,8 +51,18 @@ export default function VideoPlayer({
     }
     const tag = document.createElement("script");
     tag.src = "https://www.youtube.com/iframe_api";
+    tag.onerror = () => setLoadError(true);
     document.head.appendChild(tag);
     window.onYouTubeIframeAPIReady = () => setReady(true);
+
+    // Timeout: if API hasn't loaded after 10s, show error
+    const timeout = setTimeout(() => {
+      if (typeof YT === "undefined" || !YT.Player) {
+        setLoadError(true);
+      }
+    }, 10_000);
+
+    return () => clearTimeout(timeout);
   }, []);
 
   // Create player
@@ -69,6 +82,9 @@ export default function VideoPlayer({
         start: startTime ? Math.floor(startTime) : undefined,
       },
       events: {
+        onReady: () => {
+          playerRef.current?.getIframe()?.setAttribute("title", "Poomsae demonstration video");
+        },
         onStateChange: (e: YT.OnStateChangeEvent) => {
           const isPlaying = e.data === YT.PlayerState.PLAYING;
           setPlaying(isPlaying);
@@ -109,7 +125,7 @@ export default function VideoPlayer({
     }
   }, [endTime]);
 
-  // Monitor playback: always report current time, pause at endTime only if step was clicked
+  // Monitor playback: always report current time, loop or pause at endTime
   useEffect(() => {
     if (intervalRef.current) clearInterval(intervalRef.current);
     if (!playing) return;
@@ -118,16 +134,20 @@ export default function VideoPlayer({
       if (!playerRef.current) return;
       const current = playerRef.current.getCurrentTime();
       onTimeUpdate?.(current);
-      if (autoPause && shouldPauseRef.current && endTime !== undefined && current >= endTime) {
-        playerRef.current.pauseVideo();
-        shouldPauseRef.current = false;
+      if (endTime !== undefined && current >= endTime) {
+        if (loop && startTime !== undefined) {
+          playerRef.current.seekTo(startTime, true);
+        } else if (autoPause && shouldPauseRef.current) {
+          playerRef.current.pauseVideo();
+          shouldPauseRef.current = false;
+        }
       }
     }, 200);
 
     return () => {
       if (intervalRef.current) clearInterval(intervalRef.current);
     };
-  }, [playing, endTime, autoPause, onTimeUpdate]);
+  }, [playing, endTime, startTime, autoPause, loop, onTimeUpdate]);
 
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setSpeed(newSpeed);
@@ -138,6 +158,15 @@ export default function VideoPlayer({
     <div className="space-y-2">
       {/* Video embed */}
       <div className="relative w-full aspect-video bg-black rounded-lg overflow-hidden">
+        {loadError ? (
+          <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
+            Video unavailable
+          </div>
+        ) : !ready ? (
+          <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-sm">
+            Loading video...
+          </div>
+        ) : null}
         <div ref={containerRef} className="absolute inset-0" />
       </div>
 
@@ -148,7 +177,7 @@ export default function VideoPlayer({
           <button
             key={s}
             onClick={() => handleSpeedChange(s)}
-            className={`px-1.5 md:px-2 py-0.5 rounded text-[10px] md:text-xs font-mono ${
+            className={`min-h-[44px] px-3 py-2 text-sm md:min-h-0 md:px-2 md:py-0.5 md:text-xs rounded font-mono ${
               speed === s
                 ? "bg-blue-600 text-white"
                 : "bg-gray-100 text-gray-600 hover:bg-gray-200"

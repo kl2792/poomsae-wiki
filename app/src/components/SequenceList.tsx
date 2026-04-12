@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import type { SequenceStep, Technique } from "@/lib/data";
 import { formatTime } from "@/lib/format";
 
@@ -16,6 +17,13 @@ export default function SequenceList({
   activeStep,
   onStepClick,
 }: SequenceListProps) {
+  const activeRef = useRef<HTMLButtonElement>(null);
+
+  // Auto-scroll to active step when it changes
+  useEffect(() => {
+    if (activeStep == null || !activeRef.current) return;
+    activeRef.current.scrollIntoView({ block: "nearest", behavior: "smooth" });
+  }, [activeStep]);
 
   return (
     <div className="divide-y divide-gray-100">
@@ -31,8 +39,9 @@ export default function SequenceList({
         return (
           <button
             key={step.step}
+            ref={isActive ? activeRef : undefined}
             onClick={() => onStepClick(step)}
-            className={`w-full text-left px-2 py-1.5 flex items-center gap-2 transition-colors ${
+            className={`w-full text-left px-2 py-2.5 min-h-[44px] flex items-center gap-2 transition-colors ${
               isActive
                 ? "bg-blue-50 border-l-2 border-blue-600"
                 : "hover:bg-gray-50 border-l-2 border-transparent"
@@ -85,11 +94,11 @@ function abbreviateSide(side: string): string {
 
 function formatDirection(dir: string): string {
   const map: Record<string, string> = {
-    "left-90": "↰ Turn left",
-    "right-90": "↱ Turn right",
-    "left-180": "↰ Turn left 180°",
-    "right-180": "↱ Turn right 180°",
-    "back": "↶ Turn around",
+    "left-90": "\u21b0 Turn left",
+    "right-90": "\u21b1 Turn right",
+    "left-180": "\u21b0 Turn left 180\u00b0",
+    "right-180": "\u21b1 Turn right 180\u00b0",
+    "back": "\u21b6 Turn around",
   };
   return map[dir] ?? dir;
 }

@@ -13,9 +13,10 @@ download:
 transcripts:
 	python3 scripts/transcript.py
 
-# Step 3: Extract structured JSON from transcripts via LLM
+# Step 3: Extract structured JSON from transcripts via LLM, then rebuild technique DB
 extract:
 	python3 scripts/extract.py --all
+	$(MAKE) techniques
 
 # Step 3b: Validate extracted JSONs
 validate:

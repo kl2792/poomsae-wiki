@@ -5,6 +5,7 @@ import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { FormData, SequenceStep, Technique, WikiTechnique } from "@/lib/data";
 import { formatTime } from "@/lib/format";
+import { formDisplayName } from "@/lib/constants";
 import VideoPlayer from "@/components/VideoPlayer";
 import SequenceList from "@/components/SequenceList";
 import TechniqueList from "@/components/TechniqueList";
@@ -16,6 +17,219 @@ interface FormDetailProps {
   form: FormData;
   wikiTechniques?: Record<string, WikiTechnique>;
 }
+
+// --- SidebarDetail: extracted from the inline sidebarDetailContent blob ---
+
+interface SidebarDetailProps {
+  currentTech: Technique;
+  displayActiveStep: SequenceStep | null;
+  form: FormData;
+  wikiTechniques: Record<string, WikiTechnique>;
+  hasPrev: boolean;
+  hasNext: boolean;
+  isLooping: boolean;
+  onBack: () => void;
+  onWatchPerformance: () => void;
+  onWatchBreakdown: () => void;
+  onStepNav: (direction: -1 | 1) => void;
+  onToggleLoop: () => void;
+  onSeek: (start: number, end?: number) => void;
+}
+
+function SidebarDetail({
+  currentTech,
+  displayActiveStep,
+  form,
+  wikiTechniques,
+  hasPrev,
+  hasNext,
+  isLooping,
+  onBack,
+  onWatchPerformance,
+  onWatchBreakdown,
+  onStepNav,
+  onToggleLoop,
+  onSeek,
+}: SidebarDetailProps) {
+  const wiki = wikiTechniques[currentTech.key];
+  const wikiSource = wiki?.source;
+  const sourceIsThisForm = wikiSource?.form_id === form.id;
+  const hasLocalBreakdown = currentTech.video_timestamp > 0;
+  const hasBreakdown = hasLocalBreakdown || (wikiSource && wikiSource.timestamp > 0);
+
+  const tips = wiki && wiki.tips.length > 0 ? wiki.tips : currentTech.tips ?? [];
+
+  return (
+    <div className="flex flex-col h-full">
+      {/* Back button */}
+      <button
+        onClick={onBack}
+        className="flex items-center gap-1 px-3 py-2 text-xs text-gray-500 hover:text-gray-700 border-b border-gray-200 transition-colors"
+      >
+        <span>&#8592;</span> Back to list
+      </button>
+
+      {/* Scrollable detail content */}
+      <div className="overflow-y-auto flex-1 min-h-0 p-3">
+        {/* Step number + technique name */}
+        <div className="mb-3">
+          {displayActiveStep && (
+            <span className="text-[11px] font-mono text-gray-400 block mb-0.5">
+              Step {displayActiveStep.step}
+            </span>
+          )}
+          <h2 className="text-base font-semibold text-gray-900 break-words">{currentTech.name.en}</h2>
+          <p className="text-xs text-gray-400 mt-0.5">
+            {currentTech.name.romanized}
+            {currentTech.name.ko ? ` \u00b7 ${currentTech.name.ko}` : ""}
+          </p>
+        </div>
+
+        {/* Direction */}
+        {displayActiveStep &&
+          displayActiveStep.direction &&
+          displayActiveStep.direction !== "forward" && (
+            <p className="text-sm text-gray-600 mb-2">
+              Direction: {displayActiveStep.direction}
+            </p>
+          )}
+
+        {/* Kihap badge */}
+        {displayActiveStep?.kihap && (
+          <span className="inline-block text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium mb-3">
+            KIHAP
+          </span>
+        )}
+
+        {/* Action buttons */}
+        {displayActiveStep && (
+          <div className="flex flex-col gap-2 mb-4">
+            <div className="flex gap-2">
+              <button
+                onClick={onWatchPerformance}
+                className="flex-1 text-xs px-2.5 py-2 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors text-left"
+              >
+                &#9654; Watch this move
+              </button>
+              <button
+                onClick={onToggleLoop}
+                className={`text-xs px-2.5 py-2 rounded transition-colors shrink-0 ${
+                  isLooping
+                    ? "bg-blue-600 text-white"
+                    : "bg-blue-50 text-blue-700 hover:bg-blue-100"
+                }`}
+                title={isLooping ? "Stop looping" : "Loop this move"}
+              >
+                &#128257; Loop
+              </button>
+            </div>
+            {hasBreakdown && (sourceIsThisForm || hasLocalBreakdown) ? (
+              <button
+                onClick={onWatchBreakdown}
+                className="w-full text-xs px-2.5 py-2 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors text-left"
+              >
+                &#128214; See technique breakdown
+              </button>
+            ) : wikiSource && wikiSource.timestamp > 0 ? (
+              <Link
+                href={`/forms/${wikiSource.form_id}?t=${wikiSource.timestamp}`}
+                className="w-full text-xs px-2.5 py-2 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors block text-left"
+              >
+                &#128214; See breakdown ({wikiSource.form_name})
+              </Link>
+            ) : null}
+          </div>
+        )}
+
+        {/* Used in (from wiki) */}
+        {wiki?.used_in && wiki.used_in.length > 1 && (
+          <div className="mb-3">
+            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">
+              Also in
+            </p>
+            <div className="flex flex-wrap gap-1">
+              {wiki.used_in
+                .filter((fid: string) => fid !== form.id)
+                .map((fid: string) => (
+                  <Link
+                    key={fid}
+                    href={`/forms/${fid}`}
+                    className="text-[11px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                  >
+                    {formDisplayName(fid)}
+                  </Link>
+                ))}
+            </div>
+          </div>
+        )}
+
+        {/* Tips — prefer wiki tips (richer, merged from all forms) */}
+        {tips.length > 0 && (
+          <div className="space-y-1.5">
+            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
+              Tips
+            </p>
+            {tips.map((tip: { text: string; timestamp?: number; video_id?: string } | string, i: number) => {
+              const text = typeof tip === "string" ? tip : tip.text;
+              const ts = typeof tip === "string" ? null : (tip as { timestamp?: number }).timestamp ?? null;
+              const nextTip = tips[i + 1];
+              const nextTs = nextTip && typeof nextTip !== "string" ? (nextTip as { timestamp?: number }).timestamp ?? null : null;
+              const endTs = nextTs ?? (displayActiveStep ? displayActiveStep.timestamp_end : undefined);
+              const tipVideoId = typeof tip !== "string" ? (tip as { video_id?: string }).video_id : undefined;
+              const canSeek = ts != null && (!tipVideoId || tipVideoId === form.video_id);
+              const tipClass = "block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200";
+              return canSeek ? (
+                <button
+                  key={i}
+                  onClick={() => { if (ts) onSeek(ts, endTs ?? undefined); }}
+                  className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer`}
+                >
+                  {text}
+                  {ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
+                </button>
+              ) : (
+                <p key={i} className={tipClass}>
+                  {text}
+                </p>
+              );
+            })}
+          </div>
+        )}
+      </div>
+
+      {/* Prev / Next navigation at bottom */}
+      {displayActiveStep && (
+        <div className="flex border-t border-gray-200">
+          <button
+            onClick={() => onStepNav(-1)}
+            disabled={!hasPrev}
+            className={`flex-1 px-3 py-2 text-xs font-medium transition-colors ${
+              hasPrev
+                ? "text-gray-700 hover:bg-gray-50"
+                : "text-gray-300 cursor-not-allowed"
+            }`}
+          >
+            &#9664; Prev
+          </button>
+          <div className="w-px bg-gray-200" />
+          <button
+            onClick={() => onStepNav(1)}
+            disabled={!hasNext}
+            className={`flex-1 px-3 py-2 text-xs font-medium transition-colors ${
+              hasNext
+                ? "text-gray-700 hover:bg-gray-50"
+                : "text-gray-300 cursor-not-allowed"
+            }`}
+          >
+            Next &#9654;
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}
+
+// --- Main FormDetail component ---
 
 export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProps) {
   const searchParams = useSearchParams();
@@ -40,6 +254,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
   const [autoPause, setAutoPause] = useState(initialMode);
   const [isPlaying, setIsPlaying] = useState(false);
   const [sidebarView, setSidebarView] = useState<SidebarView>("list");
+  const [isLooping, setIsLooping] = useState(false);
 
   // Update URL params without navigation
   const updateUrl = useCallback(
@@ -114,6 +329,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
       setVideoEnd(step.timestamp_end);
       setUserClicked(true);
       setSidebarView("detail");
+      setIsLooping(false);
 
       // If clicking the next sequential step, just resume — don't seek
       const isNextStep = prevStep && step.step === prevStep.step + 1;
@@ -176,14 +392,21 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
     const idx = form.sequence.findIndex((s) => s.step === activeStep.step);
     const targetIdx = idx + direction;
     if (targetIdx < 0 || targetIdx >= form.sequence.length) return;
-    const target = form.sequence[targetIdx];
-    setActiveStep(target);
-    setActiveTechnique(techMap.get(target.technique) ?? null);
-    setVideoStart(target.timestamp);
-    setVideoEnd(target.timestamp_end);
-    setUserClicked(true);
-    updateUrl({ step: String(target.step), t: null });
-  }, [activeStep, form.sequence, techMap, updateUrl]);
+    handleStepClick(form.sequence[targetIdx]);
+  }, [activeStep, form.sequence, handleStepClick]);
+
+  const handleToggleLoop = useCallback(() => {
+    setIsLooping((prev) => {
+      const next = !prev;
+      if (next) handleWatchPerformance();
+      return next;
+    });
+  }, [handleWatchPerformance]);
+
+  const handleSeek = useCallback((start: number, end?: number) => {
+    setVideoStart(start);
+    setVideoEnd(end);
+  }, []);
 
   // Resolve the technique for the displayed active step
   const currentTech = displayActiveStep
@@ -196,177 +419,6 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
     : -1;
   const hasPrev = activeIdx > 0;
   const hasNext = activeIdx >= 0 && activeIdx < form.sequence.length - 1;
-
-
-  /* Sidebar detail view — shown when a step/technique is selected */
-  const sidebarDetailContent = currentTech ? (
-    <div className="flex flex-col h-full">
-      {/* Back button */}
-      <button
-        onClick={handleBackToList}
-        className="flex items-center gap-1 px-3 py-2 text-xs text-gray-500 hover:text-gray-700 border-b border-gray-200 transition-colors"
-      >
-        <span>&#8592;</span> Back to list
-      </button>
-
-      {/* Scrollable detail content */}
-      <div className="overflow-y-auto flex-1 min-h-0 p-3">
-        {/* Step number + technique name */}
-        <div className="mb-3">
-          {displayActiveStep && (
-            <span className="text-[11px] font-mono text-gray-400 block mb-0.5">
-              Step {displayActiveStep.step}
-            </span>
-          )}
-          <h2 className="text-base font-semibold text-gray-900 break-words">{currentTech.name.en}</h2>
-          <p className="text-xs text-gray-400 mt-0.5">
-            {currentTech.name.romanized}
-            {currentTech.name.ko ? ` \u00b7 ${currentTech.name.ko}` : ""}
-          </p>
-        </div>
-
-        {/* Direction */}
-        {displayActiveStep &&
-          displayActiveStep.direction &&
-          displayActiveStep.direction !== "forward" && (
-            <p className="text-sm text-gray-600 mb-2">
-              Direction: {displayActiveStep.direction}
-            </p>
-          )}
-
-        {/* Kihap badge */}
-        {displayActiveStep?.kihap && (
-          <span className="inline-block text-xs bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium mb-3">
-            KIHAP
-          </span>
-        )}
-
-        {/* Action buttons */}
-        {displayActiveStep && (() => {
-          const wiki = currentTech ? wikiTechniques[currentTech.key] : undefined;
-          const wikiSource = wiki?.source;
-          const sourceIsThisForm = wikiSource?.form_id === form.id;
-          const hasLocalBreakdown = currentTech?.video_timestamp && currentTech.video_timestamp > 0;
-          const hasBreakdown = hasLocalBreakdown || (wikiSource && wikiSource.timestamp > 0);
-          return (
-            <div className="flex flex-col gap-2 mb-4">
-              <button
-                onClick={handleWatchPerformance}
-                className="w-full text-xs px-2.5 py-2 rounded bg-blue-50 text-blue-700 hover:bg-blue-100 transition-colors text-left"
-              >
-                &#9654; Watch this move
-              </button>
-              {hasBreakdown && (sourceIsThisForm || hasLocalBreakdown) ? (
-                <button
-                  onClick={handleWatchBreakdown}
-                  className="w-full text-xs px-2.5 py-2 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors text-left"
-                >
-                  &#128214; See technique breakdown
-                </button>
-              ) : wikiSource && wikiSource.timestamp > 0 ? (
-                <Link
-                  href={`/forms/${wikiSource.form_id}?t=${wikiSource.timestamp}`}
-                  className="w-full text-xs px-2.5 py-2 rounded bg-gray-100 text-gray-700 hover:bg-gray-200 transition-colors block text-left"
-                >
-                  &#128214; See breakdown ({wikiSource.form_name})
-                </Link>
-              ) : null}
-            </div>
-          );
-        })()}
-
-        {/* Used in (from wiki) */}
-        {currentTech && wikiTechniques[currentTech.key]?.used_in && wikiTechniques[currentTech.key].used_in.length > 1 && (
-          <div className="mb-3">
-            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">
-              Also in
-            </p>
-            <div className="flex flex-wrap gap-1">
-              {wikiTechniques[currentTech.key].used_in
-                .filter((fid: string) => fid !== form.id)
-                .map((fid: string) => (
-                  <Link
-                    key={fid}
-                    href={`/forms/${fid}`}
-                    className="text-[11px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition-colors"
-                  >
-                    {fid.replace(/-/g, " ").replace(/\b\w/g, (c: string) => c.toUpperCase())}
-                  </Link>
-                ))}
-            </div>
-          </div>
-        )}
-
-        {/* Tips — prefer wiki tips (richer, merged from all forms) */}
-        {(() => {
-          const wiki = currentTech ? wikiTechniques[currentTech.key] : undefined;
-          const tips = wiki && wiki.tips.length > 0 ? wiki.tips : currentTech?.tips ?? [];
-          if (tips.length === 0) return null;
-          return (
-            <div className="space-y-1.5">
-              <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
-                Tips
-              </p>
-              {tips.map((tip: { text: string; timestamp?: number; video_id?: string } | string, i: number) => {
-                const text = typeof tip === "string" ? tip : tip.text;
-                const ts = typeof tip === "string" ? null : (tip as { timestamp?: number }).timestamp ?? null;
-                const nextTip = tips[i + 1];
-                const nextTs = nextTip && typeof nextTip !== "string" ? (nextTip as { timestamp?: number }).timestamp ?? null : null;
-                const endTs = nextTs ?? (displayActiveStep ? displayActiveStep.timestamp_end : undefined);
-                // Wiki tips may reference a different video — only allow seeking if same video
-                const tipVideoId = typeof tip !== "string" ? (tip as { video_id?: string }).video_id : undefined;
-                const canSeek = ts != null && (!tipVideoId || tipVideoId === form.video_id);
-                return (
-                  <button
-                    key={i}
-                    onClick={() => {
-                      if (canSeek && ts) {
-                        setVideoStart(ts);
-                        setVideoEnd(endTs ?? undefined);
-                      }
-                    }}
-                    className={`block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200 ${canSeek ? "hover:text-blue-600 hover:border-blue-400 cursor-pointer" : ""}`}
-                  >
-                    {text}
-                    {canSeek && ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
-                  </button>
-                );
-              })}
-            </div>
-          );
-        })()}
-      </div>
-
-      {/* Prev / Next navigation at bottom */}
-      {displayActiveStep && (
-        <div className="flex border-t border-gray-200">
-          <button
-            onClick={() => handleStepNav(-1)}
-            disabled={!hasPrev}
-            className={`flex-1 px-3 py-2 text-xs font-medium transition-colors ${
-              hasPrev
-                ? "text-gray-700 hover:bg-gray-50"
-                : "text-gray-300 cursor-not-allowed"
-            }`}
-          >
-            &#9664; Prev
-          </button>
-          <div className="w-px bg-gray-200" />
-          <button
-            onClick={() => handleStepNav(1)}
-            disabled={!hasNext}
-            className={`flex-1 px-3 py-2 text-xs font-medium transition-colors ${
-              hasNext
-                ? "text-gray-700 hover:bg-gray-50"
-                : "text-gray-300 cursor-not-allowed"
-            }`}
-          >
-            Next &#9654;
-          </button>
-        </div>
-      )}
-    </div>
-  ) : null;
 
   /* Sidebar list view — tabs, controls, scrollable list */
   const sidebarListContent = (
@@ -470,6 +522,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
             startTime={videoStart}
             endTime={videoEnd}
             autoPause={autoPause}
+            loop={isLooping}
             onTimeUpdate={handleTimeUpdate}
             onPlayingChange={setIsPlaying}
           />
@@ -478,9 +531,25 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
         {/* Sidebar — mobile: fills remaining space; desktop: 3/12 left column */}
         <div className="flex-1 md:col-span-3 md:order-1 flex flex-col min-h-0">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden flex flex-col min-h-0 flex-1">
-            {sidebarView === "detail" && sidebarDetailContent
-              ? sidebarDetailContent
-              : sidebarListContent}
+            {sidebarView === "detail" && currentTech ? (
+              <SidebarDetail
+                currentTech={currentTech}
+                displayActiveStep={displayActiveStep}
+                form={form}
+                wikiTechniques={wikiTechniques}
+                hasPrev={hasPrev}
+                hasNext={hasNext}
+                isLooping={isLooping}
+                onBack={handleBackToList}
+                onWatchPerformance={handleWatchPerformance}
+                onWatchBreakdown={handleWatchBreakdown}
+                onStepNav={handleStepNav}
+                onToggleLoop={handleToggleLoop}
+                onSeek={handleSeek}
+              />
+            ) : (
+              sidebarListContent
+            )}
           </div>
         </div>
       </div>

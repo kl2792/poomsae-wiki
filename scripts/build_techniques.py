@@ -32,6 +32,7 @@ def load_forms() -> list[dict]:
         with open(f) as fh:
             forms.append(json.load(fh))
 
+    # SYNC: this sort order must match app/src/lib/data.ts getAllForms()
     def sort_key(form: dict) -> tuple:
         m = re.match(r"taegeuk-(\d+)", form["id"])
         if m:

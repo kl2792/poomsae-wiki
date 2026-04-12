@@ -21,32 +21,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   technique: "Other Techniques",
 };
 
-import {
-  CATEGORY_COLORS,
-  CATEGORY_BORDER_COLORS,
-  CATEGORY_BG_COLORS,
-} from "@/lib/constants";
-
-/** Short display name for form filter pills and row tags. */
-const FORM_SHORT: Record<string, string> = {
-  "taegeuk-1": "TG1",
-  "taegeuk-2": "TG2",
-  "taegeuk-3": "TG3",
-  "taegeuk-4": "TG4",
-  "taegeuk-5": "TG5",
-  "taegeuk-6": "TG6",
-  "taegeuk-7": "TG7",
-  "taegeuk-8": "TG8",
-  koryo: "Koryo",
-  keumgang: "Keumgang",
-  taebaek: "Taebaek",
-  pyeongwon: "Pyeongwon",
-  sipjin: "Sipjin",
-  jitae: "Jitae",
-  chonkwon: "Chonkwon",
-  hansu: "Hansu",
-  ilyeo: "Ilyeo",
-};
+import { categoryTheme, FORM_SHORT } from "@/lib/constants";
 
 export default function TechniquesPage() {
   const techniques = getAllTechniques();
@@ -102,7 +77,7 @@ export default function TechniquesPage() {
         >
           <button
             data-collapse-trigger={cat}
-            className={`w-full flex items-center justify-between py-2.5 px-3 text-left sticky top-14 z-10 cursor-pointer select-none border-l-4 rounded-r-sm ${CATEGORY_BORDER_COLORS[cat] || "border-gray-400"} ${CATEGORY_BG_COLORS[cat] || "bg-gray-50"}`}
+            className={`w-full flex items-center justify-between py-2.5 px-3 text-left sticky top-14 z-10 cursor-pointer select-none border-l-4 rounded-r-sm ${categoryTheme(cat).border} ${categoryTheme(cat).bg}`}
           >
             <span className="text-lg font-semibold text-gray-800">
               {CATEGORY_LABELS[cat] || cat}{" "}
@@ -134,7 +109,7 @@ export default function TechniquesPage() {
                 key={t.key}
                 technique={t}
                 categoryColor={
-                  CATEGORY_COLORS[cat] || "bg-gray-100 text-gray-700"
+                  categoryTheme(cat).badge
                 }
                 even={i % 2 === 0}
               />
