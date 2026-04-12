@@ -91,39 +91,34 @@ But do NOT invent named techniques that appear nowhere in the transcript.
     return "\n".join(parts)
 
 
-def build_prompt(transcript: str, meta: dict, pre_data: dict | None = None) -> str:
-    pre_section = format_pre_extracted(pre_data)
-    return f"""Extract structured poomsae data from this OCR transcript of an official KKW instructional video.
-
-FORM: {meta['name_en']} ({meta['name_ko']})
+def _form_header(meta: dict) -> str:
+    """Common header for both pass prompts."""
+    return f"""FORM: {meta['name_en']} ({meta['name_ko']})
 VIDEO ID: {meta['video_id']}
 DURATION: {meta['duration']}s
 EXPECTED MOVES: ~{meta['expected_moves']}
 
 The transcript is timestamped OCR text: [Ns] text from that video frame.
-The video structure: Intro → KEY MOVES (numbered technique breakdowns with tips) → EXPLANATION OF PART (full sequence with OEN=left, OREUN=right) → REPEAT (full-speed run).
+The video structure: Intro → KEY MOVES (numbered technique breakdowns with tips) → EXPLANATION OF PART (full sequence with OEN=left, OREUN=right) → REPEAT (full-speed run)."""
 
-OUTPUT: A single JSON object. Every field is REQUIRED.
+
+def build_techniques_prompt(transcript: str, meta: dict, pre_data: dict | None = None) -> str:
+    """Pass 1: Extract techniques + sections only."""
+    pre_section = format_pre_extracted(pre_data)
+    return f"""Extract ONLY the techniques and sections from this OCR transcript of an official KKW instructional video.
+
+{_form_header(meta)}
+
+OUTPUT: A single JSON object with ONLY "techniques" and "sections". Do NOT include sequence.
 
 CRITICAL RULES:
 
 TECHNIQUES:
 - Include ALL techniques used in the sequence, not just the KEY MOVES from the video
 - The KEY MOVES section shows ~5-14 featured techniques. But the sequence uses many more basic techniques (momtong jireugi, arae makgi, ap chagi, etc.) that are NOT in KEY MOVES. You MUST include these too.
-- Every technique referenced by ANY sequence step MUST exist in the techniques array
 - Every technique MUST have: key (slug), name.en (English ONLY, no romanized), name.ko (hangul), name.romanized (KKW standard), category (block/kick/strike/stance/combination), video_timestamp (from KEY MOVES section, or 0 if not featured), video_timestamp_end (optional, when the technique segment ends), tips (array of {{text, timestamp}} from OCR'd ✓ tips, or empty [])
 - Ready positions (junbi, tongmilgi junbijase, etc.) use category 'stance'
 - Normalize hyphenation: use 'knifehand' not 'knife-hand', 'backfist' not 'back-fist'
-
-SEQUENCE:
-- The full ordered sequence from EXPLANATION OF PART sections
-- OEN = left, OREUN = right
-- Every step.technique MUST match a key in the techniques array
-- Combination moves (A + B) use a single technique key like "ap-chagi+momtong-jireugi"
-- Include step 0 for ready stance
-- Directions from your knowledge of this form's floor pattern
-- Kihap on the correct moves (usually last move, sometimes mid-form)
-- Timestamps from when each step appears in the EXPLANATION section
 
 NAMING CONSISTENCY:
 - name.en: English translation ONLY (e.g., "Low Block", "Middle Punch", "Front Kick + Middle Punch")
@@ -139,20 +134,6 @@ SECTIONS:
 - Timestamps from when section headers appear in transcript
 
 {{
-  "id": "{meta['id']}",
-  "name": {{ "en": "{meta['name_en']}", "ko": "{meta['name_ko']}" }},
-  "meaning": {{ "en": "{meta['meaning']}" }},
-  "belt": {json.dumps(meta['belt'])},
-  "dan": {json.dumps(meta['dan'])},
-  "total_moves": N,
-  "video_id": "{meta['video_id']}",
-  "video_duration_seconds": {meta['duration']},
-  "sections": {{
-    "intro": {{ "start": N, "end": N }},
-    "breakdown": {{ "start": N, "end": N }},
-    "explanation": {{ "start": N, "end": N }},
-    "repeat": {{ "start": N, "end": N }}
-  }},
   "techniques": [
     {{
       "key": "technique-slug",
@@ -163,6 +144,46 @@ SECTIONS:
       "tips": [{{ "text": "tip from video", "timestamp": 209 }}]
     }}
   ],
+  "sections": {{
+    "intro": {{ "start": N, "end": N }},
+    "breakdown": {{ "start": N, "end": N }},
+    "explanation": {{ "start": N, "end": N }},
+    "repeat": {{ "start": N, "end": N }}
+  }}
+}}
+
+Output ONLY valid JSON, no other text.
+{pre_section}
+TRANSCRIPT:
+{transcript}"""
+
+
+def build_sequence_prompt(transcript: str, meta: dict, pre_data: dict | None, technique_keys: list[str]) -> str:
+    """Pass 2: Extract sequence using known technique keys."""
+    pre_section = format_pre_extracted(pre_data)
+    keys_str = ", ".join(technique_keys)
+    return f"""Extract ONLY the move sequence from this OCR transcript of an official KKW instructional video.
+
+{_form_header(meta)}
+
+OUTPUT: A single JSON object with ONLY "sequence" and "total_moves".
+
+AVAILABLE TECHNIQUE KEYS (from prior extraction):
+{keys_str}
+
+CRITICAL: Use ONLY these technique keys for the sequence. Every step.technique MUST be one of the keys listed above.
+
+SEQUENCE RULES:
+- The full ordered sequence from EXPLANATION OF PART sections
+- OEN = left, OREUN = right
+- Combination moves (A + B) use a single technique key like "ap-chagi+momtong-jireugi"
+- Include step 0 for ready stance
+- Directions from your knowledge of this form's floor pattern
+- Kihap on the correct moves (usually last move, sometimes mid-form)
+- Timestamps from when each step appears in the EXPLANATION section
+
+{{
+  "total_moves": N,
   "sequence": [
     {{
       "step": 0,
@@ -180,6 +201,22 @@ Output ONLY valid JSON, no other text.
 {pre_section}
 TRANSCRIPT:
 {transcript}"""
+
+
+def _parse_llm_json(output: str) -> dict | None:
+    """Parse JSON from LLM output, stripping markdown fences."""
+    output = output.strip()
+    if output.startswith("```"):
+        output = output.split("\n", 1)[1]
+    if output.endswith("```"):
+        output = output.rsplit("```", 1)[0]
+    output = output.strip()
+    try:
+        return json.loads(output)
+    except json.JSONDecodeError as e:
+        print(f"  ERROR: Invalid JSON: {e}")
+        print(f"  Output (first 500 chars): {output[:500]}")
+        return None
 
 
 def validate_form(path: str, warnings: list[str] | None = None) -> list[str]:
@@ -323,6 +360,22 @@ def _matches_pre_names(romanized: str, pre_names: set[str]) -> bool:
     return True
 
 
+def _call_claude(prompt: str, label: str) -> dict | None:
+    """Call claude CLI with a prompt and parse JSON output."""
+    print(f"  [{label}] Calling claude CLI...")
+    result = subprocess.run(
+        ["claude", "-p", prompt, "--output-format", "text"],
+        capture_output=True, text=True, timeout=600
+    )
+    if result.returncode != 0:
+        print(f"  [{label}] ERROR: claude CLI failed: {result.stderr[:200]}")
+        return None
+    data = _parse_llm_json(result.stdout)
+    if data is None:
+        print(f"  [{label}] Failed to parse JSON output")
+    return data
+
+
 def extract_form(slug: str, prompt_only: bool = False):
     transcript_path = TRANSCRIPTS_DIR / f"{slug}.txt"
     if not transcript_path.exists():
@@ -360,36 +413,57 @@ def extract_form(slug: str, prompt_only: bool = False):
     else:
         print(f"  WARNING: No pre-extraction at {pre_path} — running without anchoring")
 
-    prompt = build_prompt(transcript, meta, pre_data)
+    techniques_prompt = build_techniques_prompt(transcript, meta, pre_data)
+    sequence_prompt_fn = lambda tech_keys: build_sequence_prompt(transcript, meta, pre_data, tech_keys)
 
     if prompt_only:
-        print(prompt)
+        print("=== PASS 1: TECHNIQUES PROMPT ===")
+        print(techniques_prompt)
+        print("\n=== PASS 2: SEQUENCE PROMPT (with placeholder keys) ===")
+        print(sequence_prompt_fn(["<technique-key-1>", "<technique-key-2>", "..."]))
         return True
 
-    print(f"  Extracting {slug} via claude CLI...")
-    result = subprocess.run(
-        ["claude", "-p", prompt, "--output-format", "text"],
-        capture_output=True, text=True, timeout=1200
-    )
-
-    if result.returncode != 0:
-        print(f"  ERROR: claude CLI failed: {result.stderr[:200]}")
+    # Pass 1: techniques + sections
+    print(f"  Extracting {slug} — Pass 1: techniques + sections...")
+    pass1 = _call_claude(techniques_prompt, "Pass 1")
+    if pass1 is None:
         return False
 
-    # Parse JSON from output
-    output = result.stdout.strip()
-    if output.startswith("```"):
-        output = output.split("\n", 1)[1]
-    if output.endswith("```"):
-        output = output.rsplit("```", 1)[0]
-    output = output.strip()
-
-    try:
-        data = json.loads(output)
-    except json.JSONDecodeError as e:
-        print(f"  ERROR: Invalid JSON: {e}")
-        print(f"  Output (first 500 chars): {output[:500]}")
+    techniques = pass1.get("techniques", [])
+    sections = pass1.get("sections", {})
+    if not techniques:
+        print("  ERROR: Pass 1 returned no techniques")
         return False
+    technique_keys = [t["key"] for t in techniques if "key" in t]
+    print(f"  Pass 1: {len(techniques)} techniques, {len(technique_keys)} keys")
+
+    # Pass 2: sequence
+    print(f"  Extracting {slug} — Pass 2: sequence...")
+    pass2 = _call_claude(sequence_prompt_fn(technique_keys), "Pass 2")
+    if pass2 is None:
+        return False
+
+    sequence = pass2.get("sequence", [])
+    total_moves = pass2.get("total_moves", len(sequence) - 1)  # -1 for step 0
+    if not sequence:
+        print("  ERROR: Pass 2 returned no sequence")
+        return False
+    print(f"  Pass 2: {len(sequence)} steps, total_moves={total_moves}")
+
+    # Merge into final form JSON
+    data = {
+        "id": meta["id"],
+        "name": {"en": meta["name_en"], "ko": meta["name_ko"]},
+        "meaning": {"en": meta["meaning"]},
+        "belt": meta["belt"],
+        "dan": meta["dan"],
+        "total_moves": total_moves,
+        "video_id": meta["video_id"],
+        "video_duration_seconds": meta["duration"],
+        "sections": sections,
+        "techniques": techniques,
+        "sequence": sequence,
+    }
 
     # Validate
     FORMS_DIR.mkdir(parents=True, exist_ok=True)
