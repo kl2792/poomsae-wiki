@@ -43,8 +43,23 @@
       "video_timestamp_end": 179,
       "tips": [
         {
+          "text": "when performing bombsagi solnar are hechomaki",
+          "timestamp": 149,
+          "source": "caption"
+        },
+        {
+          "text": "both hands should be placed in the center line of the thigh of the front",
+          "timestamp": 151,
+          "source": "caption"
+        },
+        {
           "text": "WM The back of your hands should",
           "timestamp": 155
+        },
+        {
+          "text": "the back of your hands should each face outward and the space between your hand",
+          "timestamp": 155,
+          "source": "caption"
         },
         {
           "text": "should be about one hand's length sideways",
@@ -64,6 +79,16 @@
       "video_timestamp_end": 241,
       "tips": [
         {
+          "text": "outside then open your hand so the palm is seen from",
+          "timestamp": 182,
+          "source": "caption"
+        },
+        {
+          "text": "open your arm inside out and cover the back of the hand of your opponent",
+          "timestamp": 189,
+          "source": "caption"
+        },
+        {
           "text": "and cover the back of the hand of your opponent a",
           "timestamp": 195
         },
@@ -72,8 +97,9 @@
           "timestamp": 202
         },
         {
-          "text": "Whe careful not to let your elbow",
-          "timestamp": 203
+          "text": "hold bend back and pull while bending and twisting",
+          "timestamp": 202,
+          "source": "caption"
         }
       ]
     },
@@ -99,35 +125,26 @@
       "category": "strike",
       "video_timestamp": 241,
       "video_timestamp_end": 141,
-      "tips": [
-        {
-          "text": "the left arm should cross on the outside é",
-          "timestamp": 312
-        },
-        {
-          "text": "YW The Apchagi should be performed i",
-          "timestamp": 318
-        },
-        {
-          "text": "The Apchagi should be performed",
-          "timestamp": 319
-        },
-        {
-          "text": "The Apchagi should be performed a",
-          "timestamp": 321
-        },
-        {
-          "text": "YM the ball should touch the ground first . a",
-          "timestamp": 325
-        }
-      ]
+      "tips": []
     },
     {
-      "key": "apchagi+double-jireugy",
+      "key": "geumgang-anpalmok-mom-bakkanmakgi",
       "name": {
-        "en": "apchagi- + -double-jireugy",
-        "ko": " + ",
-        "romanized": "apchagi- + -double-jireugy"
+        "en": "Geumgang Anpalmok Mom Bakkanmakgi",
+        "ko": "Geumgang Anpalmok Mom Bakkanmakgi",
+        "romanized": "Geumgang Anpalmok Mom Bakkanmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "front-kick+apchagi+double-jireugy",
+      "name": {
+        "en": "Front Kick + apchagi + double-jireugy",
+        "ko": "앞차기 +  + ",
+        "romanized": "Ap Chagi + apchagi + double-jireugy"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -147,11 +164,11 @@
       "tips": []
     },
     {
-      "key": "side-kick+elbow-target-strike",
+      "key": "jumping-side-kick+elbow-target-strike",
       "name": {
-        "en": "Side Kick + Elbow Target Strike",
-        "ko": "옆차기 + 팔꿈치표적치기",
-        "romanized": "Yeopchagi + Palggumchi Pyojeokchigi"
+        "en": "Jumping Side Kick + Elbow Target Strike",
+        "ko": "뛰어옆차기 + 팔꿈치표적치기",
+        "romanized": "Ttwieo Yeopchagi + Palggumchi Pyojeokchigi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -159,22 +176,10 @@
       "tips": []
     },
     {
-      "key": "geumgang-anpalmok-mom-bakkanmakgi",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Geumgang Anpalmok Mom Bakkanmakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
       "key": "geumgang-anpalmok-barranmakgi",
       "name": {
-        "en": "",
-        "ko": "",
+        "en": "Geumgang Anpalmok Barranmakgi",
+        "ko": "Geumgang Anpalmok Barranmakgi",
         "romanized": "Geumgang Anpalmok Barranmakgi"
       },
       "category": "block",
@@ -185,8 +190,8 @@
     {
       "key": "jeocheoteureo-jabaggeulmyeo-jireugi",
       "name": {
-        "en": "",
-        "ko": "",
+        "en": "Jeocheoteureo Jabaggeulmyeo Jireugi",
+        "ko": "Jeocheoteureo Jabaggeulmyeo Jireugi",
         "romanized": "Jeocheoteureo Jabaggeulmyeo Jireugi"
       },
       "category": "strike",
@@ -197,8 +202,8 @@
     {
       "key": "sonal-eopeojapgo-jireugi",
       "name": {
-        "en": "",
-        "ko": "",
+        "en": "Sonal Eopeojapgo Jireugi",
+        "ko": "Sonal Eopeojapgo Jireugi",
         "romanized": "Sonal Eopeojapgo Jireugi"
       },
       "category": "strike",
@@ -209,8 +214,8 @@
     {
       "key": "jageun-dolujeogwi",
       "name": {
-        "en": "",
-        "ko": "",
+        "en": "Jageun Dolujeogwi",
+        "ko": "Jageun Dolujeogwi",
         "romanized": "Jageun Dolujeogwi"
       },
       "category": "strike",
@@ -231,7 +236,7 @@
     },
     {
       "step": 2,
-      "technique": "apchagi+double-jireugy",
+      "technique": "front-kick+apchagi+double-jireugy",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -258,7 +263,7 @@
     },
     {
       "step": 5,
-      "technique": "side-kick+elbow-target-strike",
+      "technique": "jumping-side-kick+elbow-target-strike",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -303,10 +308,10 @@
     },
     {
       "step": 10,
-      "technique": "side-kick+elbow-target-strike",
+      "technique": "jumping-side-kick+elbow-target-strike",
       "side": "right",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 446,
       "timestamp_end": 0
     }

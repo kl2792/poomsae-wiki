@@ -74,7 +74,13 @@
       "category": "strike",
       "video_timestamp": 232,
       "video_timestamp_end": 243,
-      "tips": []
+      "tips": [
+        {
+          "text": "gum gang jiriki is a technique to block and attack simultaneously",
+          "timestamp": 237,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "hammer-fist-side-target-strike",
@@ -86,7 +92,23 @@
       "category": "strike",
       "video_timestamp": 243,
       "video_timestamp_end": 266,
-      "tips": []
+      "tips": [
+        {
+          "text": "mejumok is a technique to strike the target",
+          "timestamp": 248,
+          "source": "caption"
+        },
+        {
+          "text": "while spinning the torso the elbow of the part striking the target must face",
+          "timestamp": 250,
+          "source": "caption"
+        },
+        {
+          "text": "the hammer fist must not spin and strike the target like unmaki",
+          "timestamp": 260,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "inner-forearm-outward-block",
@@ -98,28 +120,7 @@
       "category": "block",
       "video_timestamp": 266,
       "video_timestamp_end": 163,
-      "tips": [
-        {
-          "text": "YM then block by crossing your left wrist i S Cad x",
-          "timestamp": 540
-        },
-        {
-          "text": "The left fist should be placed 8 wc",
-          "timestamp": 577
-        },
-        {
-          "text": "The left fist should be placed ‘e .",
-          "timestamp": 578
-        },
-        {
-          "text": "The left fist should be placed :",
-          "timestamp": 579
-        },
-        {
-          "text": "Myour eyes should point in the direction",
-          "timestamp": 742
-        }
-      ]
+      "tips": []
     },
     {
       "key": "knifehand-assisted-low-block",
@@ -146,11 +147,11 @@
       "tips": []
     },
     {
-      "key": "ulgulmakgi+oreun-jireugi",
+      "key": "rising-block+side-punch",
       "name": {
-        "en": "ulgulmakgi- + -oreun-jireugi",
-        "ko": " + ",
-        "romanized": "ulgulmakgi- + -oreun-jireugi"
+        "en": "Rising Block + Side Punch",
+        "ko": "얼굴(올려)막기 + 옆지르기",
+        "romanized": "Ulgul(Ollyeo)Makgi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -170,11 +171,11 @@
       "tips": []
     },
     {
-      "key": "yeopchagi+oen-arae-yeopmakgr",
+      "key": "jumping-side-kick+yeopchagi+oen-arae-yeopmakgr",
       "name": {
-        "en": "yeopchagi- + -oen-arae-yeopmakgr",
-        "ko": " + ",
-        "romanized": "yeopchagi- + -oen-arae-yeopmakgr"
+        "en": "Jumping Side Kick + yeopchagi + oen-arae-yeopmakgr",
+        "ko": "뛰어옆차기 +  + ",
+        "romanized": "Ttwieo Yeopchagi + yeopchagi + oen-arae-yeopmakgr"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -182,11 +183,11 @@
       "tips": []
     },
     {
-      "key": "yeopchagi+oreun-jireugi",
+      "key": "jumping-side-kick+side-punch",
       "name": {
-        "en": "yeopchagi- + -oreun-jireugi",
-        "ko": " + ",
-        "romanized": "yeopchagi- + -oreun-jireugi"
+        "en": "Jumping Side Kick + Side Punch",
+        "ko": "뛰어옆차기 + 옆지르기",
+        "romanized": "Ttwieo Yeopchagi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -236,7 +237,7 @@
     },
     {
       "step": 4,
-      "technique": "ulgulmakgi+oreun-jireugi",
+      "technique": "rising-block+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -263,7 +264,7 @@
     },
     {
       "step": 7,
-      "technique": "yeopchagi+oen-arae-yeopmakgr",
+      "technique": "jumping-side-kick+yeopchagi+oen-arae-yeopmakgr",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -281,7 +282,7 @@
     },
     {
       "step": 9,
-      "technique": "yeopchagi+oreun-jireugi",
+      "technique": "jumping-side-kick+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -293,7 +294,7 @@
       "technique": "side-punch",
       "side": "right",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 734,
       "timestamp_end": 0
     }

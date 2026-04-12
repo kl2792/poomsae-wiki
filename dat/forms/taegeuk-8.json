@@ -41,7 +41,18 @@
       "category": "kick",
       "video_timestamp": 177,
       "video_timestamp_end": 199,
-      "tips": []
+      "tips": [
+        {
+          "text": "tubar tangsong is a kicking technique where you jump and perform two mid-air",
+          "timestamp": 178,
+          "source": "caption"
+        },
+        {
+          "text": "and the second pachagi kicks a target higher with the other foot",
+          "timestamp": 187,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "palm-assisted-outer-block",
@@ -55,6 +66,11 @@
       "video_timestamp_end": 236,
       "tips": [
         {
+          "text": "koduro pakadmaki is a technique to block with your hands",
+          "timestamp": 205,
+          "source": "caption"
+        },
+        {
           "text": "the fist blocking the torso should be placed aq Ve",
           "timestamp": 213
         },
@@ -63,16 +79,13 @@
           "timestamp": 216
         },
         {
+          "text": "while assisting hand is placed level with the blocking elbow",
+          "timestamp": 219,
+          "source": "caption"
+        },
+        {
           "text": "g . Be careful not to let the blocking hand",
           "timestamp": 223
-        },
-        {
-          "text": "C Be careful not to let the blocking hand",
-          "timestamp": 224
-        },
-        {
-          "text": "Be careful not to let the blocking hand",
-          "timestamp": 225
         }
       ]
     },
@@ -88,6 +101,16 @@
       "video_timestamp_end": 275,
       "tips": [
         {
+          "text": "weishandermaki is a technique where your arms are crossed in front of your chest",
+          "timestamp": 238,
+          "source": "caption"
+        },
+        {
+          "text": "the inner arm blocks the lower body and the outer arm performs",
+          "timestamp": 245,
+          "source": "caption"
+        },
+        {
           "text": "YW The wrist of the arm performing Anpalmok",
           "timestamp": 249
         },
@@ -96,16 +119,9 @@
           "timestamp": 251
         },
         {
-          "text": "A YW the wrist of the arm performing Anpalmok",
-          "timestamp": 252
-        },
-        {
-          "text": "rN YM should be level with the philtrum,",
-          "timestamp": 254
-        },
-        {
-          "text": "should be about two raised fists apart ca",
-          "timestamp": 256
+          "text": "should be level with the philtrum while the arm performing areemaki",
+          "timestamp": 251,
+          "source": "caption"
         }
       ]
     },
@@ -121,16 +137,28 @@
       "video_timestamp_end": 320,
       "tips": [
         {
+          "text": "is a technique used mostly to strike the chin by pulling an opponent's clothing",
+          "timestamp": 283,
+          "source": "caption"
+        },
+        {
+          "text": "the jirigi starts at the chest line with the fist pulled back",
+          "timestamp": 290,
+          "source": "caption"
+        },
+        {
+          "text": "the fist performing judogi passes by the wrist being pulled back",
+          "timestamp": 296,
+          "source": "caption"
+        },
+        {
           "text": "Not to let the hammer fist touch the a ‘ ze",
           "timestamp": 303
         },
         {
-          "text": "WY Be careful not to let the fist start",
-          "timestamp": 311
-        },
-        {
-          "text": "WY Be careful not to let the fist start",
-          "timestamp": 312
+          "text": "be careful not to let the hammer fist touch the front of the shoulder",
+          "timestamp": 305,
+          "source": "caption"
         }
       ]
     },
@@ -150,20 +178,22 @@
           "timestamp": 324
         },
         {
+          "text": "when performing godoro aramaki the blocking hand should maintain a",
+          "timestamp": 324,
+          "source": "caption"
+        },
+        {
+          "text": "the assisting hand should be level with the elbow that performs areemaki",
+          "timestamp": 328,
+          "source": "caption"
+        },
+        {
           "text": "Whe assisting hand should be level",
           "timestamp": 333
         },
         {
           "text": "Bs A WY the assisting hand should be level",
           "timestamp": 334
-        },
-        {
-          "text": "Bs A WM the assisting hand should be level",
-          "timestamp": 335
-        },
-        {
-          "text": "x Ey W the assisting hand should be level",
-          "timestamp": 336
         }
       ]
     },
@@ -177,16 +207,7 @@
       "category": "kick",
       "video_timestamp": 338,
       "video_timestamp_end": 172,
-      "tips": [
-        {
-          "text": "W the pulling arm should be free",
-          "timestamp": 518
-        },
-        {
-          "text": "the pulling arm should be free",
-          "timestamp": 519
-        }
-      ]
+      "tips": []
     },
     {
       "key": "front-kick+jumping-front-kick",
@@ -213,11 +234,11 @@
       "tips": []
     },
     {
-      "key": "palggumchi-dollyeochigi+oreun-deungjumeok-apchigi",
+      "key": "elbow-swing-strike+pulling-backfist-front-strike",
       "name": {
-        "en": "palggumchi-dollyeochigi- + -oreun-deungjumeok-apchigi",
-        "ko": " + ",
-        "romanized": "palggumchi-dollyeochigi- + -oreun-deungjumeok-apchigi"
+        "en": "Elbow Swing Strike + Pulling Backfist Front Strike",
+        "ko": "팔꿈치돌려치기 + 당겨 등주먹 앞치기",
+        "romanized": "Palggumchi Dollyeochigi + Danggyeo Deungjumeok Apchigi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -225,11 +246,11 @@
       "tips": []
     },
     {
-      "key": "apchagi+oen-jireugi",
+      "key": "front-kick+side-punch",
       "name": {
-        "en": "apchagi- + -oen-jireugi",
-        "ko": " + ",
-        "romanized": "apchagi- + -oen-jireugi"
+        "en": "Front Kick + Side Punch",
+        "ko": "앞차기 + 옆지르기",
+        "romanized": "Ap Chagi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -303,7 +324,7 @@
     },
     {
       "step": 4,
-      "technique": "palggumchi-dollyeochigi+oreun-deungjumeok-apchigi",
+      "technique": "elbow-swing-strike+pulling-backfist-front-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -312,7 +333,7 @@
     },
     {
       "step": 5,
-      "technique": "apchagi+oen-jireugi",
+      "technique": "front-kick+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -342,7 +363,7 @@
       "technique": "side-punch",
       "side": "right",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 803,
       "timestamp_end": 0
     }

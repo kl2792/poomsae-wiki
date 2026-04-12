@@ -1,6 +1,6 @@
 # Poomsae Wiki — reproducible pipeline
 
-.PHONY: download transcripts pre-extract extract build deploy clean test techniques
+.PHONY: download download-captions captions transcripts pre-extract extract build deploy clean test techniques
 
 # Full pipeline
 all: download transcripts extract build deploy
@@ -9,12 +9,20 @@ all: download transcripts extract build deploy
 download:
 	bash scripts/download.sh
 
+# Step 1b: Download auto-captions only (no video re-download)
+download-captions:
+	bash scripts/download_captions.sh
+
 # Step 2: Generate OCR transcripts from video frames (1fps, full-frame Tesseract)
 transcripts:
 	python3 scripts/transcript.py
 
+# Step 2b: Parse auto-caption VTT files into structured JSON
+captions:
+	python3 scripts/parse_captions.py --all
+
 # Step 3a: Deterministic pre-extraction (regex only, no LLM) — anchors technique names
-pre-extract:
+pre-extract: captions
 	python3 scripts/pre_extract.py --all
 
 # Step 3: Extract structured JSON from transcripts via LLM, then rebuild technique DB
@@ -49,6 +57,7 @@ techniques:
 # Run all tests
 test:
 	cd app && npx vitest run
+	cd scripts && python3 test_parse_captions.py
 	cd scripts && python3 test_pre_extract.py
 	cd scripts && python3 test_extract.py
 	cd scripts && python3 test_build_techniques.py

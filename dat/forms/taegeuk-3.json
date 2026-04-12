@@ -43,24 +43,28 @@
       "video_timestamp_end": 228,
       "tips": [
         {
+          "text": "used in the move extends from the wrist to the first joint of the little finger",
+          "timestamp": 154,
+          "source": "caption"
+        },
+        {
           "text": "place the four fingers from the index",
           "timestamp": 163
         },
         {
-          "text": "WM place the wrist of the thrusting arm + ‘ = .",
-          "timestamp": 189
+          "text": "first open your hand place the four fingers from the index to the little",
+          "timestamp": 166,
+          "source": "caption"
         },
         {
-          "text": "by pulling both elbows towards your body =",
-          "timestamp": 203
+          "text": "then bend the tip of the thumb and place it on top of the first joint of the",
+          "timestamp": 171,
+          "source": "caption"
         },
         {
-          "text": "WM The wrist of the striking hand",
-          "timestamp": 219
-        },
-        {
-          "text": "WM The wrist of the strikinghand",
-          "timestamp": 221
+          "text": "after making the hand blade as described place the wrist of the thrusting arm at",
+          "timestamp": 185,
+          "source": "caption"
         }
       ]
     },
@@ -76,24 +80,27 @@
       "video_timestamp_end": 277,
       "tips": [
         {
+          "text": "is also a technique that uses the hand blade in the same way",
+          "timestamp": 234,
+          "source": "caption"
+        },
+        {
+          "text": "you protect the body from the inside out and begin with two",
+          "timestamp": 242,
+          "source": "caption"
+        },
+        {
           "text": "should be placed on the outside",
           "timestamp": 246
         },
         {
+          "text": "arms crossed in front of the chest the defending arm and supporting arm",
+          "timestamp": 247,
+          "source": "caption"
+        },
+        {
           "text": "i \\ should be placed on the outside",
           "timestamp": 250
-        },
-        {
-          "text": "a should not be above the shoulder",
-          "timestamp": 258
-        },
-        {
-          "text": "t should not be above the shoulder",
-          "timestamp": 259
-        },
-        {
-          "text": "should not be above the shoulder",
-          "timestamp": 260
         }
       ]
     },
@@ -109,8 +116,28 @@
       "video_timestamp_end": 309,
       "tips": [
         {
+          "text": "when doing the dwikkubi posture your feet should form a 90 degree angle",
+          "timestamp": 281,
+          "source": "caption"
+        },
+        {
+          "text": "and the direction of your knees and feet should be identical",
+          "timestamp": 288,
+          "source": "caption"
+        },
+        {
           "text": "should be 2/3 towards the back",
           "timestamp": 292
+        },
+        {
+          "text": "the center of your body should be two-thirds towards the back",
+          "timestamp": 294,
+          "source": "caption"
+        },
+        {
+          "text": "and stand low like you would for juchumsagi",
+          "timestamp": 305,
+          "source": "caption"
         }
       ]
     },
@@ -124,19 +151,14 @@
       "category": "strike",
       "video_timestamp": 309,
       "video_timestamp_end": 143,
-      "tips": [
-        {
-          "text": "naturally straighten your right arm forward,",
-          "timestamp": 427
-        }
-      ]
+      "tips": []
     },
     {
-      "key": "araemakgi+oreun-jireugi",
+      "key": "low-block+side-punch",
       "name": {
-        "en": "araemakgi- + -oreun-jireugi",
-        "ko": " + ",
-        "romanized": "araemakgi- + -oreun-jireugi"
+        "en": "Low Block + Side Punch",
+        "ko": "아래막기 + 옆지르기",
+        "romanized": "Arae Makgi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -144,11 +166,11 @@
       "tips": []
     },
     {
-      "key": "araemakgi+oen-jireugi",
+      "key": "front-kick+low-block+side-punch",
       "name": {
-        "en": "araemakgi- + -oen-jireugi",
-        "ko": " + ",
-        "romanized": "araemakgi- + -oen-jireugi"
+        "en": "Front Kick + Low Block + Side Punch",
+        "ko": "앞차기 + 아래막기 + 옆지르기",
+        "romanized": "Ap Chagi + Arae Makgi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -156,23 +178,11 @@
       "tips": []
     },
     {
-      "key": "apchagi+oen-araemakgi+oreun-jireugi",
+      "key": "front-kick+inward-block+side-punch",
       "name": {
-        "en": "apchagi- + -oen-araemakgi- + -oreun-jireugi",
-        "ko": " +  + ",
-        "romanized": "apchagi- + -oen-araemakgi- + -oreun-jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "apchagi+oreun-makgi+oen-jireugi",
-      "name": {
-        "en": "apchagi- + -oreun-makgi- + -oen-jireugi",
-        "ko": " +  + ",
-        "romanized": "apchagi- + -oreun-makgi- + -oen-jireugi"
+        "en": "Front Kick + Inward Block + Side Punch",
+        "ko": "앞차기 + 안막기 + 옆지르기",
+        "romanized": "Ap Chagi + Anmakgi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -207,7 +217,7 @@
   "sequence": [
     {
       "step": 1,
-      "technique": "araemakgi+oreun-jireugi",
+      "technique": "low-block+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -216,7 +226,7 @@
     },
     {
       "step": 2,
-      "technique": "araemakgi+oen-jireugi",
+      "technique": "low-block+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -225,7 +235,7 @@
     },
     {
       "step": 3,
-      "technique": "apchagi+oen-araemakgi+oreun-jireugi",
+      "technique": "front-kick+low-block+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -234,7 +244,7 @@
     },
     {
       "step": 4,
-      "technique": "apchagi+oreun-makgi+oen-jireugi",
+      "technique": "front-kick+inward-block+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -264,7 +274,7 @@
       "technique": "low-block",
       "side": "left",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 364,
       "timestamp_end": 0
     }

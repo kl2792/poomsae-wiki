@@ -24,23 +24,23 @@
   },
   "techniques": [
     {
-      "key": "apchagi+oreun-jireugi",
+      "key": "oenaraenaeryeojmakg",
       "name": {
-        "en": "apchagi- + -oreun-jireugi",
-        "ko": " + ",
-        "romanized": "apchagi- + -oreun-jireugi"
+        "en": "Oenaraenaeryeojmakg",
+        "ko": "Oenaraenaeryeojmakg",
+        "romanized": "Oenaraenaeryeojmakg"
       },
-      "category": "combination",
+      "category": "strike",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "apchagi+oen-jireugi",
+      "key": "front-kick+side-punch",
       "name": {
-        "en": "apchagi- + -oen-jireugi",
-        "ko": " + ",
-        "romanized": "apchagi- + -oen-jireugi"
+        "en": "Front Kick + Side Punch",
+        "ko": "앞차기 + 옆지르기",
+        "romanized": "Ap Chagi + Yeop Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -58,18 +58,6 @@
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
-    },
-    {
-      "key": "oenaraenaeryeojmakg",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Oenaraenaeryeojmakg"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
     }
   ],
   "sequence": [
@@ -84,7 +72,7 @@
     },
     {
       "step": 2,
-      "technique": "apchagi+oreun-jireugi",
+      "technique": "front-kick+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -93,7 +81,7 @@
     },
     {
       "step": 3,
-      "technique": "apchagi+oen-jireugi",
+      "technique": "front-kick+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -102,7 +90,7 @@
     },
     {
       "step": 4,
-      "technique": "apchagi+oreun-jireugi",
+      "technique": "front-kick+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -123,7 +111,7 @@
       "technique": "rising-block",
       "side": "right",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 267,
       "timestamp_end": 0
     }

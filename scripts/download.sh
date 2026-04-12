@@ -14,6 +14,7 @@ yt-dlp \
   --merge-output-format mp4 \
   -o "$RAW_DIR/%(title)s.%(ext)s" \
   --write-info-json \
+  --write-auto-sub --sub-lang en --sub-format vtt \
   "$PLAYLIST"
 
 echo "Done. Videos:"

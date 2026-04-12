@@ -28,6 +28,78 @@
   },
   "techniques": [
     {
+      "key": "sonal-ul-biteureomakgi",
+      "name": {
+        "en": "Sonal Ul Biteureomakgi",
+        "ko": "Sonal Ul Biteureomakgi",
+        "romanized": "Sonal Ul Biteureomakgi"
+      },
+      "category": "block",
+      "video_timestamp": 147,
+      "video_timestamp_end": 191,
+      "tips": [
+        {
+          "text": "using the performance thrusting foot and the opposite hand blade",
+          "timestamp": 153,
+          "source": "caption"
+        },
+        {
+          "text": "from the op gooby posture your arms should cross and pass in front",
+          "timestamp": 161,
+          "source": "caption"
+        },
+        {
+          "text": "i Wour arms should cross and pass",
+          "timestamp": 164
+        },
+        {
+          "text": "a Wour arms should cross and pass",
+          "timestamp": 165
+        },
+        {
+          "text": "Wour arms should cross and pass",
+          "timestamp": 166
+        }
+      ]
+    },
+    {
+      "key": "dollyegchagi",
+      "name": {
+        "en": "Dollyegchagi",
+        "ko": "Dollyegchagi",
+        "romanized": "Dollyegchagi"
+      },
+      "category": "kick",
+      "video_timestamp": 191,
+      "video_timestamp_end": 253,
+      "tips": [
+        {
+          "text": "kick a target your kicking foot draws an arc outside",
+          "timestamp": 194,
+          "source": "caption"
+        },
+        {
+          "text": "use the top of your foot and ball to strike the target",
+          "timestamp": 200,
+          "source": "caption"
+        },
+        {
+          "text": "by twisting your torso as if you're spinning your shoulder",
+          "timestamp": 207,
+          "source": "caption"
+        },
+        {
+          "text": "bakanmaki is a technique used to block defend your face inside out using your",
+          "timestamp": 221,
+          "source": "caption"
+        },
+        {
+          "text": "Vv Wour blocking arm should cross past",
+          "timestamp": 226
+        }
+      ]
+    },
+    {
       "key": "high-outward-block",
       "name": {
         "en": "High Outward Block",
@@ -51,6 +123,16 @@
       "video_timestamp_end": 289,
       "tips": [
         {
+          "text": "by crossing your arms in an x formation it begins with your arms crossed in an x",
+          "timestamp": 253,
+          "source": "caption"
+        },
+        {
+          "text": "then block the lower part of your body from both sides when blocking your lower",
+          "timestamp": 265,
+          "source": "caption"
+        },
+        {
           "text": "your arms should straighten naturally",
           "timestamp": 272
         },
@@ -61,14 +143,6 @@
         {
           "text": "mee your arms should straighten naturally",
           "timestamp": 274
-        },
-        {
-          "text": "should be about two raised fists length",
-          "timestamp": 276
-        },
-        {
-          "text": "aN should be about two raised fists length",
-          "timestamp": 279
         }
       ]
     },
@@ -82,28 +156,7 @@
       "category": "block",
       "video_timestamp": 289,
       "video_timestamp_end": 141,
-      "tips": [
-        {
-          "text": "WY the palm of your hand should be placed a -—",
-          "timestamp": 307
-        },
-        {
-          "text": "your armpit should be touching your body ~ \\ H »\"",
-          "timestamp": 312
-        },
-        {
-          "text": "WM yYour elbow should point downward",
-          "timestamp": 315
-        },
-        {
-          "text": "We careful not to let your armpits 7",
-          "timestamp": 669
-        },
-        {
-          "text": "WBe careful not to let your armpits i",
-          "timestamp": 671
-        }
-      ]
+      "tips": []
     },
     {
       "key": "knifehand-high-twisting-block",
@@ -120,9 +173,9 @@
     {
       "key": "dollyeochagi+oen-bakkanmakgi+oreun-jireug",
       "name": {
-        "en": "dollyeochagi- + -oen-bakkanmakgi- + -oreun-jireug",
+        "en": "dollyeochagi + oen-bakkanmakgi + oreun-jireug",
         "ko": " +  + ",
-        "romanized": "dollyeochagi- + -oen-bakkanmakgi- + -oreun-jireug"
+        "romanized": "dollyeochagi + oen-bakkanmakgi + oreun-jireug"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -130,13 +183,25 @@
       "tips": []
     },
     {
-      "key": "side-punch",
+      "key": "palm-inward-block+side-punch",
       "name": {
-        "en": "Side Punch",
-        "ko": "옆지르기",
-        "romanized": "Yeop Jireugi"
+        "en": "Palm Inward Block + Side Punch",
+        "ko": "바탕손안막기 + 옆지르기",
+        "romanized": "Batangson An Makgi + Yeop Jireugi"
       },
-      "category": "strike",
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "outward-block+side-punch",
+      "name": {
+        "en": "Outward Block + Side Punch",
+        "ko": "바깥막기 + 옆지르기",
+        "romanized": "Bakkanmakgi + Yeop Jireugi"
+      },
+      "category": "combination",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
@@ -154,70 +219,16 @@
       "tips": []
     },
     {
-      "key": "",
+      "key": "sonalbiteureomakgi",
       "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Sonal Ul Biteureomakgi"
+        "en": "Sonalbiteureomakgi",
+        "ko": "Sonalbiteureomakgi",
+        "romanized": "Sonalbiteureomakgi"
       },
       "category": "block",
-      "video_timestamp": 147,
-      "video_timestamp_end": 191,
-      "tips": [
-        {
-          "text": "i Wour arms should cross and pass",
-          "timestamp": 164
-        },
-        {
-          "text": "a Wour arms should cross and pass",
-          "timestamp": 165
-        },
-        {
-          "text": "Wour arms should cross and pass",
-          "timestamp": 166
-        },
-        {
-          "text": "Mvour blocking arm should cross outside",
-          "timestamp": 172
-        },
-        {
-          "text": "WM Your blocking arm should cross outside",
-          "timestamp": 175
-        }
-      ]
-    },
-    {
-      "key": "dollyegchagi",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Dollyegchagi"
-      },
-      "category": "kick",
-      "video_timestamp": 191,
-      "video_timestamp_end": 253,
-      "tips": [
-        {
-          "text": "Vv Wour blocking arm should cross past",
-          "timestamp": 226
-        },
-        {
-          "text": "i Wvour blocking arm should cross past",
-          "timestamp": 227
-        },
-        {
-          "text": "Wvour blocking arm should cross past",
-          "timestamp": 230
-        },
-        {
-          "text": "Wyour blocking arm should cross past",
-          "timestamp": 231
-        },
-        {
-          "text": "Wvour blocking arm should cross past",
-          "timestamp": 234
-        }
-      ]
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     }
   ],
   "sequence": [
@@ -241,7 +252,7 @@
     },
     {
       "step": 3,
-      "technique": "palm-inward-block",
+      "technique": "palm-inward-block+side-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -250,7 +261,7 @@
     },
     {
       "step": 4,
-      "technique": "side-punch",
+      "technique": "outward-block+side-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -277,10 +288,10 @@
     },
     {
       "step": 7,
-      "technique": "knifehand-high-twisting-block",
+      "technique": "sonalbiteureomakgi",
       "side": "right",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 417,
       "timestamp_end": 0
     }

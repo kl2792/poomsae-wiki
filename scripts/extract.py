@@ -4,7 +4,8 @@ Extract structured poomsae data from pre-extracted JSON.
 
 Mostly programmatic pipeline: matches techniques from dat/techniques.json,
 assigns tips by timestamp proximity, builds sequence from pre-extracted steps.
-Uses LLM only for directions, kihap, and translating new techniques.
+Kihap positions are static lookups from KKW standard. Uses LLM only for
+directions and translating new techniques.
 
 Requires pre_extract.py to run first (extracts key_moves, sequence_steps,
 tips from raw OCR transcript). This script never reads the transcript directly.
@@ -49,6 +50,28 @@ FORM_META = {
     "ilyeo": {"id": "ilyeo", "name_en": "Ilyeo", "name_ko": "일여", "meaning": "Oneness / unity of mind and body", "belt": None, "dan": 9, "video_id": "jWClKVOrqJ8", "duration": 1020, "expected_moves": 24},
 }
 
+# Kihap (yell) positions per form from KKW standard.
+# -1 means last step in the sequence (excluding step 0 junbi).
+KIHAP_POSITIONS: dict[str, list[int]] = {
+    "taegeuk-1": [-1],
+    "taegeuk-2": [-1],
+    "taegeuk-3": [-1],
+    "taegeuk-4": [-1],
+    "taegeuk-5": [-1],
+    "taegeuk-6": [-1],
+    "taegeuk-7": [-1],
+    "taegeuk-8": [-1],
+    "koryo": [22, -1],
+    "keumgang": [-1],
+    "taebaek": [-1],
+    "pyeongwon": [-1],
+    "sipjin": [11, -1],
+    "jitae": [-1],
+    "chonkwon": [9, 25, -1],
+    "hansu": [16, -1],
+    "ilyeo": [17, -1],
+}
+
 
 # --- Normalization / matching (shared logic with build_techniques.py) ---
 
@@ -64,6 +87,25 @@ def normalize_romanized(name: str) -> str:
     s = re.sub(r"[^A-Za-z\s+]", "", s)
     s = re.sub(r"\s+", " ", s).strip().lower()
     return s
+
+
+# Side indicators to strip from combo parts before matching
+_SIDE_INDICATORS = {"oen", "oreun"}
+
+
+def _strip_side_indicators(name: str) -> str:
+    """Strip side indicators (OEN, OREUN) from a technique name."""
+    words = name.split()
+    return " ".join(w for w in words if w.lower() not in _SIDE_INDICATORS)
+
+
+def _romanized_to_title(name: str) -> str:
+    """Convert a normalized romanized name to title case for display.
+
+    Capitalizes each word. Used as fallback for English and Korean names
+    when a technique is unmatched.
+    """
+    return " ".join(w.capitalize() for w in name.split())
 
 
 def _normalize_for_match(name: str) -> str:
@@ -98,30 +140,43 @@ def match_technique(name: str, tech_db: dict) -> dict | None:
     """Match a romanized technique name against techniques.json.
 
     Returns the matching technique entry or None.
-    Tries: exact normalized match, then fuzzy substring match.
+    Tries: exact normalized match, then with side indicators stripped,
+    then fuzzy substring match.
     """
     norm = _normalize_for_match(name)
     if not norm:
         return None
 
+    # Also try with side indicators stripped
+    stripped = _strip_side_indicators(normalize_romanized(name))
+    norm_stripped = re.sub(r"[\s\-]+", "", stripped) if stripped != normalize_romanized(name) else None
+
     # Exact match on normalized romanized
     for tech in tech_db.values():
+        if not tech.get("key"):
+            continue  # Skip entries with empty key
         tech_norm = _normalize_for_match(tech["name"]["romanized"])
         if tech_norm == norm:
+            return tech
+        if norm_stripped and tech_norm == norm_stripped:
             return tech
 
     # Fuzzy: substring containment (bidirectional)
     best = None
     best_score = 0
     for tech in tech_db.values():
+        if not tech.get("key"):
+            continue  # Skip entries with empty key
         tech_norm = _normalize_for_match(tech["name"]["romanized"])
         if not tech_norm:
             continue
-        if norm in tech_norm or tech_norm in norm:
-            score = min(len(norm), len(tech_norm)) / max(len(norm), len(tech_norm))
-            if score > best_score:
-                best_score = score
-                best = tech
+        # Try both original and side-stripped
+        for candidate in ([norm, norm_stripped] if norm_stripped else [norm]):
+            if candidate in tech_norm or tech_norm in candidate:
+                score = min(len(candidate), len(tech_norm)) / max(len(candidate), len(tech_norm))
+                if score > best_score:
+                    best_score = score
+                    best = tech
     if best and best_score > 0.5:
         return best
     return None
@@ -130,14 +185,22 @@ def match_technique(name: str, tech_db: dict) -> dict | None:
 def match_combo_technique(name: str, tech_db: dict) -> list[dict] | None:
     """Match a combo technique name (contains '+') against techniques.json.
 
-    Returns list of matched technique entries, or None if any part fails.
+    Strips parenthetical annotations and side indicators (OEN, OREUN) from
+    each part before matching. Returns list of matched technique entries,
+    or None if any part fails.
     """
     parts = re.split(r"\s*\+\s*", name)
     if len(parts) < 2:
         return None
     matched = []
     for part in parts:
-        m = match_technique(part.strip(), tech_db)
+        part = part.strip()
+        m = match_technique(part, tech_db)
+        if not m:
+            # Strip side indicators and retry
+            stripped = _strip_side_indicators(normalize_romanized(part))
+            if stripped != normalize_romanized(part):
+                m = match_technique(stripped, tech_db)
         if m:
             matched.append(m)
         else:
@@ -148,18 +211,27 @@ def match_combo_technique(name: str, tech_db: dict) -> list[dict] | None:
 # --- Tip matching ---
 
 def match_tips_to_techniques(tips: list[dict], techniques: list[dict]) -> dict[str, list[dict]]:
-    """Match tips to techniques by timestamp proximity.
+    """Match tips to techniques by video segment containment.
 
-    For each tip, find the technique whose video_timestamp is closest but
-    not after the tip's timestamp. Max 5 tips per technique.
+    A tip is assigned to a technique if:
+        technique.video_timestamp <= tip.timestamp < technique.video_timestamp_end
+
+    Tips that don't fall within any technique's segment are dropped.
+    Max 5 tips per technique.
 
     Returns: {technique_key: [tip, ...]}
     """
-    # Sort techniques by timestamp for binary-search-like matching
-    sorted_techs = sorted(
-        [(t["video_timestamp"], t["key"]) for t in techniques if t.get("video_timestamp", 0) > 0]
-    )
-    if not sorted_techs:
+    # Build segments: (start, end, key)
+    segments = []
+    for t in techniques:
+        start = t.get("video_timestamp", 0)
+        end = t.get("video_timestamp_end", 0)
+        if start > 0 and end > start:
+            segments.append((start, end, t["key"]))
+    # Sort by start timestamp
+    segments.sort()
+
+    if not segments:
         return {}
 
     result: dict[str, list[dict]] = {}
@@ -167,18 +239,14 @@ def match_tips_to_techniques(tips: list[dict], techniques: list[dict]) -> dict[s
         ts = tip.get("timestamp", 0)
         if ts <= 0:
             continue
-        # Find technique with largest timestamp <= tip timestamp
-        best_key = None
-        for tech_ts, tech_key in sorted_techs:
-            if tech_ts <= ts:
-                best_key = tech_key
-            else:
+        # Find the segment containing this tip's timestamp
+        for seg_start, seg_end, seg_key in segments:
+            if seg_start <= ts < seg_end:
+                if seg_key not in result:
+                    result[seg_key] = []
+                if len(result[seg_key]) < 5:
+                    result[seg_key].append(tip)
                 break
-        if best_key:
-            if best_key not in result:
-                result[best_key] = []
-            if len(result[best_key]) < 5:
-                result[best_key].append(tip)
     return result
 
 
@@ -205,16 +273,80 @@ def build_sections(pre_data: dict, meta: dict) -> dict:
     return sections
 
 
-# --- LLM prompt for directions + kihap + new translations ---
+# --- Kihap inference ---
+
+def apply_kihap(sequence: list[dict], form_id: str, tips: list[dict]) -> int:
+    """Apply kihap markers to sequence steps.
+
+    Uses static KIHAP_POSITIONS lookup, then scans tips for "kihap"/"yell"
+    mentions and marks the nearest step by timestamp.
+
+    Args:
+        sequence: List of sequence step dicts (mutated in place).
+        form_id: Form identifier (e.g. "taegeuk-1", "koryo").
+        tips: Pre-extracted tips list.
+
+    Returns:
+        Number of steps marked with kihap.
+    """
+    if not sequence:
+        return 0
+
+    # Static lookup
+    positions = KIHAP_POSITIONS.get(form_id, [])
+    max_step = max(s["step"] for s in sequence)
+    step_set: set[int] = set()
+    for pos in positions:
+        if pos == -1:
+            step_set.add(max_step)
+        else:
+            step_set.add(pos)
+
+    # Transcript evidence: scan tips for kihap/yell keywords
+    kihap_timestamps: list[int] = []
+    for tip in tips:
+        text = tip.get("text", "").lower()
+        if "kihap" in text or "yell" in text or "shout" in text:
+            ts = tip.get("timestamp", 0)
+            if ts > 0:
+                kihap_timestamps.append(ts)
+
+    # For each kihap timestamp, find the nearest sequence step (within 30s)
+    max_tip_dist = 30
+    for ts in kihap_timestamps:
+        best_step = None
+        best_dist = float("inf")
+        for s in sequence:
+            s_ts = s.get("timestamp", 0)
+            if s_ts <= 0:
+                continue
+            dist = abs(s_ts - ts)
+            if dist < best_dist:
+                best_dist = dist
+                best_step = s["step"]
+        if best_step is not None and best_dist <= max_tip_dist:
+            step_set.add(best_step)
+
+    # Apply to sequence
+    count = 0
+    for s in sequence:
+        if s["step"] in step_set:
+            s["kihap"] = True
+            count += 1
+    return count
+
+
+# --- LLM prompt for directions + new translations ---
 
 def build_llm_prompt(
     meta: dict,
     sequence_steps: list[dict],
     new_techniques: list[dict],
 ) -> str:
-    """Build a compact LLM prompt for directions, kihap, and new translations.
+    """Build a compact LLM prompt for directions and new translations.
 
-    This is the only LLM call in the pipeline. Kept small (~200-500 tokens).
+    Kihap is handled programmatically via KIHAP_POSITIONS, so the LLM
+    only needs to provide direction for each step.
     """
     form_name = meta["name_en"]
     expected = meta["expected_moves"]
@@ -227,22 +359,22 @@ def build_llm_prompt(
             lines.append(f"- {t['name']['romanized']}")
         lines.append("")
 
-    lines.append("Sequence (provide direction and kihap for each step):")
+    lines.append("Sequence (provide direction for each step):")
     for s in sequence_steps:
         side_str = f" ({s.get('side', '')})" if s.get("side") else ""
         lines.append(f"{s['step']}. {s['technique_romanized']}{side_str} @{s.get('timestamp', 0)}s")
 
     lines.append("")
-    lines.append("For each step: direction (forward/backward/left-90/right-90/left-180/right-180) and kihap (true/false).")
+    lines.append("For each step: direction (forward/backward/left-90/right-90/left-180/right-180).")
     if new_techniques:
         lines.append("For new techniques: provide English name and Korean hangul.")
     lines.append("")
     lines.append('Output JSON only:')
     if new_techniques:
         lines.append('{"new_techniques": [{"romanized": "...", "en": "...", "ko": "..."}], ')
-        lines.append(' "directions": [{"step": 0, "direction": "forward", "kihap": false}, ...]}')
+        lines.append(' "directions": [{"step": 0, "direction": "forward"}, ...]}')
     else:
-        lines.append('{"directions": [{"step": 0, "direction": "forward", "kihap": false}, ...]}')
+        lines.append('{"directions": [{"step": 0, "direction": "forward"}, ...]}')
 
     return "\n".join(lines)
 
@@ -497,10 +629,11 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
             category = categorize_by_suffix(norm_name)
             temp_key = _slugify(norm_name)
             # Title-case the romanized name
-            rom_title = " ".join(w.capitalize() for w in norm_name.split())
+            rom_title = _romanized_to_title(norm_name)
+            # Use romanized as fallback for en/ko until LLM provides translations
             new_techniques.append({
                 "key": temp_key,
-                "name": {"en": "", "ko": "", "romanized": rom_title},
+                "name": {"en": rom_title, "ko": rom_title, "romanized": rom_title},
                 "category": category,
                 "video_timestamp": ts,
                 "video_timestamp_end": 0,
@@ -600,10 +733,10 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
                 else:
                     # Truly unmatched: add as new technique
                     norm_name = normalize_romanized(raw_name)
-                    rom_title = " ".join(w.capitalize() for w in norm_name.split())
+                    rom_title = _romanized_to_title(norm_name)
                     new_entry = {
                         "key": tech_key,
-                        "name": {"en": "", "ko": "", "romanized": rom_title},
+                        "name": {"en": rom_title, "ko": rom_title, "romanized": rom_title},
                         "category": categorize_by_suffix(norm_name),
                         "video_timestamp": 0,
                         "video_timestamp_end": 0,
@@ -643,7 +776,11 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
 
     print(f"  Built sequence: {len(sequence)} steps")
 
-    # --- Step 5: LLM call for directions + kihap + new translations ---
+    # --- Step 5: Apply kihap markers (static lookup + transcript evidence) ---
+    kihap_count = apply_kihap(sequence, meta["id"], tips)
+    print(f"  Kihap: {kihap_count} steps marked")
+
+    # --- Step 6: LLM call for directions + new translations ---
     prompt = build_llm_prompt(meta, llm_sequence_steps, new_techniques)
 
     if prompt_only:
@@ -653,18 +790,17 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
 
     if no_llm:
         print("  Skipping LLM call (--no-llm mode)")
-        # Leave placeholder directions/kihap
+        # Leave placeholder directions
     else:
-        llm_result = _call_claude(prompt, "directions+kihap")
+        llm_result = _call_claude(prompt, "directions")
         if llm_result:
-            # Apply directions + kihap
+            # Apply directions (kihap already set by apply_kihap)
             directions = llm_result.get("directions", [])
             dir_by_step = {d["step"]: d for d in directions}
             for s in sequence:
                 d = dir_by_step.get(s["step"])
                 if d:
                     s["direction"] = d.get("direction", "forward")
-                    s["kihap"] = d.get("kihap", False)
 
             # Apply new technique translations
             llm_new = llm_result.get("new_techniques", [])
@@ -687,10 +823,10 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
         else:
             print("  WARNING: LLM call failed, using placeholder directions")
 
-    # --- Step 6: Build sections ---
+    # --- Step 7: Build sections ---
     sections = build_sections(pre_data, meta)
 
-    # --- Step 7: Merge into final form JSON ---
+    # --- Step 8: Merge into final form JSON ---
     # Combine matched + new techniques, dedup by key
     final_techniques = []
     seen_keys: set[str] = set()

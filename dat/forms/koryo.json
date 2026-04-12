@@ -43,24 +43,28 @@
       "video_timestamp_end": 243,
       "tips": [
         {
+          "text": "then start in front of the lower abdomen past the chest",
+          "timestamp": 195,
+          "source": "caption"
+        },
+        {
+          "text": "and push forward so your hand blades face forward between the philtrum",
+          "timestamp": 201,
+          "source": "caption"
+        },
+        {
+          "text": "your palms should face each other and maintain a face length between them",
+          "timestamp": 206,
+          "source": "caption"
+        },
+        {
+          "text": "the angle of the arms should be 90 to 120 degrees",
+          "timestamp": 218,
+          "source": "caption"
+        },
+        {
           "text": "Mand your thumbs should be",
           "timestamp": 223
-        },
-        {
-          "text": "i e Do not straighten the thumbs",
-          "timestamp": 227
-        },
-        {
-          "text": "Your elbows should not rise",
-          "timestamp": 235
-        },
-        {
-          "text": "Your elbows should not rise",
-          "timestamp": 236
-        },
-        {
-          "text": "should not be visible when seen y",
-          "timestamp": 238
         }
       ]
     },
@@ -74,7 +78,33 @@
       "category": "kick",
       "video_timestamp": 243,
       "video_timestamp_end": 286,
-      "tips": []
+      "tips": [
+        {
+          "text": "is a technique used to perform kicks with the same leg",
+          "timestamp": 248,
+          "source": "caption"
+        },
+        {
+          "text": "two or more times in succession you usually strike an opponent's lower",
+          "timestamp": 252,
+          "source": "caption"
+        },
+        {
+          "text": "torso or face in succession draw the attention of an opponent with the first",
+          "timestamp": 256,
+          "source": "caption"
+        },
+        {
+          "text": "then dominate them with the second kick or trip and block against an opponent's",
+          "timestamp": 261,
+          "source": "caption"
+        },
+        {
+          "text": "and dominate them with the second kick goruptagi can be applied with various",
+          "timestamp": 269,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "checking-punch",
@@ -86,7 +116,13 @@
       "category": "strike",
       "video_timestamp": 286,
       "video_timestamp_end": 299,
-      "tips": []
+      "tips": [
+        {
+          "text": "opponent's lower abdomen downward after pulling back the tip of the hand",
+          "timestamp": 291,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "press-and-twist",
@@ -98,7 +134,33 @@
       "category": "strike",
       "video_timestamp": 299,
       "video_timestamp_end": 330,
-      "tips": []
+      "tips": [
+        {
+          "text": "in koryo pumse nu lokoki is a technique of using the arc fist agmuson",
+          "timestamp": 302,
+          "source": "caption"
+        },
+        {
+          "text": "downward and holding an opponent's arm or leg",
+          "timestamp": 308,
+          "source": "caption"
+        },
+        {
+          "text": "with the other hand to press and twist you typically press and twist their",
+          "timestamp": 312,
+          "source": "caption"
+        },
+        {
+          "text": "besides pressing down and twisting the joints another goal of koryo pumsei",
+          "timestamp": 316,
+          "source": "caption"
+        },
+        {
+          "text": "is to strike or push an opponent by pressing twisting their kneecap",
+          "timestamp": 324,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "elbow-side-strike",
@@ -110,7 +172,18 @@
       "category": "strike",
       "video_timestamp": 330,
       "video_timestamp_end": 346,
-      "tips": []
+      "tips": [
+        {
+          "text": "is a technique that uses the edge of the elbow with the fist",
+          "timestamp": 336,
+          "source": "caption"
+        },
+        {
+          "text": "and elbow in alignment to attack an opponent in a straight line from the",
+          "timestamp": 341,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "knifehand-outward-strike",
@@ -122,7 +195,18 @@
       "category": "strike",
       "video_timestamp": 346,
       "video_timestamp_end": 365,
-      "tips": []
+      "tips": [
+        {
+          "text": "is a technique that uses a reverse tan blade to attack from the inside out",
+          "timestamp": 352,
+          "source": "caption"
+        },
+        {
+          "text": "the target is an opponent's face and torso",
+          "timestamp": 361,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "knifehand-low-block",
@@ -134,7 +218,18 @@
       "category": "block",
       "video_timestamp": 365,
       "video_timestamp_end": 380,
-      "tips": []
+      "tips": [
+        {
+          "text": "sonar is the same as aremaki but it can also be used to strike and",
+          "timestamp": 369,
+          "source": "caption"
+        },
+        {
+          "text": "block an opponent's attack by opening the hand or used as paramaki",
+          "timestamp": 373,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "arc-hand-front-strike",
@@ -148,24 +243,27 @@
       "video_timestamp_end": 406,
       "tips": [
         {
+          "text": "is a technique typically used to attack an opponent's neck",
+          "timestamp": 385,
+          "source": "caption"
+        },
+        {
+          "text": "with the arch of the arc fist and arm placed in a line",
+          "timestamp": 389,
+          "source": "caption"
+        },
+        {
           "text": "the wrist must be properly straightened Z",
           "timestamp": 391
         },
         {
+          "text": "to achieve a hard strike and prevent injuries the wrist must be properly",
+          "timestamp": 394,
+          "source": "caption"
+        },
+        {
           "text": "WYour four fingers should be a\"",
           "timestamp": 398
-        },
-        {
-          "text": "WYour four fingers should be y",
-          "timestamp": 399
-        },
-        {
-          "text": "Wvour four fingers should be 7",
-          "timestamp": 400
-        },
-        {
-          "text": "Wand your wrist should be straight 7",
-          "timestamp": 403
         }
       ]
     },
@@ -181,6 +279,11 @@
       "video_timestamp_end": 430,
       "tips": [
         {
+          "text": "and the space between your arm and torso should be about one fist",
+          "timestamp": 413,
+          "source": "caption"
+        },
+        {
           "text": "The palm of your hand af",
           "timestamp": 416
         },
@@ -195,10 +298,6 @@
         {
           "text": "Wf the palm of your hand _... spa \\ ¥ . eae",
           "timestamp": 419
-        },
-        {
-          "text": "and torso should be about one fist",
-          "timestamp": 420
         }
       ]
     },
@@ -214,6 +313,16 @@
       "video_timestamp_end": 473,
       "tips": [
         {
+          "text": "medumok pyojok arechigi is a technique used to slowly draw a",
+          "timestamp": 436,
+          "source": "caption"
+        },
+        {
+          "text": "hand in front of the lower abdomen then lightly hit your right palm with a",
+          "timestamp": 440,
+          "source": "caption"
+        },
+        {
           "text": "WS The fist should be made at the shoulder line",
           "timestamp": 451
         },
@@ -222,16 +331,9 @@
           "timestamp": 453
         },
         {
-          "text": "We careful not to straighten your wrists,",
-          "timestamp": 466
-        },
-        {
-          "text": "We careful not to straighten your wrists,",
-          "timestamp": 467
-        },
-        {
-          "text": "a .. Whe careful not to straighten your wrists,",
-          "timestamp": 470
+          "text": "the fist should be made at the shoulder line",
+          "timestamp": 454,
+          "source": "caption"
         }
       ]
     },
@@ -247,16 +349,28 @@
       "video_timestamp_end": 501,
       "tips": [
         {
+          "text": "an parmog is a technique used to block inside out using the inner wrist of your",
+          "timestamp": 478,
+          "source": "caption"
+        },
+        {
+          "text": "the inner wrist should be level with your solar plexus when blocking",
+          "timestamp": 482,
+          "source": "caption"
+        },
+        {
+          "text": "should remain a shoulder's length your elbow should face downward without",
+          "timestamp": 489,
+          "source": "caption"
+        },
+        {
           "text": "WY Be careful the move does not bs > Z",
           "timestamp": 496
         },
         {
-          "text": "be careful the move does not = » y/",
-          "timestamp": 497
-        },
-        {
-          "text": "WY Be careful the move does not v",
-          "timestamp": 498
+          "text": "detaching from the body and be careful the move does not",
+          "timestamp": 496,
+          "source": "caption"
         }
       ]
     },
@@ -270,7 +384,18 @@
       "category": "block",
       "video_timestamp": 501,
       "video_timestamp_end": 523,
-      "tips": []
+      "tips": [
+        {
+          "text": "performing sonna bakanmaki by standing sideways like standing in",
+          "timestamp": 506,
+          "source": "caption"
+        },
+        {
+          "text": "progresses inside out the last of the thirteen key",
+          "timestamp": 519,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "target-punch",
@@ -282,28 +407,7 @@
       "category": "strike",
       "video_timestamp": 523,
       "video_timestamp_end": 181,
-      "tips": [
-        {
-          "text": "ORL © it is important to place the target",
-          "timestamp": 545
-        },
-        {
-          "text": "Mit is important to place the target",
-          "timestamp": 546
-        },
-        {
-          "text": "Wit is important to place the target",
-          "timestamp": 547
-        },
-        {
-          "text": "WN } & <CADEMY Y The hand blade should be slightly",
-          "timestamp": 622
-        },
-        {
-          "text": "should be about two raised fists length",
-          "timestamp": 762
-        }
-      ]
+      "tips": []
     },
     {
       "key": "knifehand-outward-strike+knifehand-low-block",
@@ -522,7 +626,7 @@
       "technique": "pushing",
       "side": null,
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 574,
       "timestamp_end": 0
     }

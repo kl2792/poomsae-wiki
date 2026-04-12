@@ -43,6 +43,11 @@
       "video_timestamp_end": 224,
       "tips": [
         {
+          "text": "using two hands where the supporting hand assists",
+          "timestamp": 177,
+          "source": "caption"
+        },
+        {
           "text": "WThe hand defending the torso should be placed",
           "timestamp": 187
         },
@@ -51,16 +56,13 @@
           "timestamp": 188
         },
         {
+          "text": "the hand defending the torso should be placed at the solar plexus level",
+          "timestamp": 188,
+          "source": "caption"
+        },
+        {
           "text": "WThe hand defending the torso should be placed",
           "timestamp": 189
-        },
-        {
-          "text": "WM tThe hand defending the torso should be placed",
-          "timestamp": 190
-        },
-        {
-          "text": "WM while the supporting hand should be",
-          "timestamp": 191
         }
       ]
     },
@@ -75,6 +77,26 @@
       "video_timestamp": 224,
       "video_timestamp_end": 258,
       "tips": [
+        {
+          "text": "pyeons is a technique to pierce an opponent's pressure points",
+          "timestamp": 227,
+          "source": "caption"
+        },
+        {
+          "text": "force in one place with high pressure as the area of contact with an opponent",
+          "timestamp": 232,
+          "source": "caption"
+        },
+        {
+          "text": "you can prevent injuries and concentrate your force by placing the index",
+          "timestamp": 244,
+          "source": "caption"
+        },
+        {
+          "text": "middle and the ring finger together in a straight line",
+          "timestamp": 251,
+          "source": "caption"
+        },
         {
           "text": "Be careful not to let your wrist bend ! 8",
           "timestamp": 253
@@ -93,24 +115,27 @@
       "video_timestamp_end": 375,
       "tips": [
         {
+          "text": "jepipum anchigi is a technique that uses sunnar",
+          "timestamp": 262,
+          "source": "caption"
+        },
+        {
+          "text": "perform the preparatory move by placing the left hand",
+          "timestamp": 265,
+          "source": "caption"
+        },
+        {
           "text": "i] Mand the wrist of the right hand",
           "timestamp": 275
         },
         {
+          "text": "in front of the torso and the wrist of the right hand",
+          "timestamp": 276,
+          "source": "caption"
+        },
+        {
           "text": "Mand the wrist of the right hand",
           "timestamp": 278
-        },
-        {
-          "text": "if Mand the wrist of the right hand",
-          "timestamp": 279
-        },
-        {
-          "text": "he, YM The right hand should be placed at the neck level",
-          "timestamp": 293
-        },
-        {
-          "text": "NOH CADIY Y the right hand should be placed at the neck level",
-          "timestamp": 295
         }
       ]
     },
@@ -124,35 +149,14 @@
       "category": "strike",
       "video_timestamp": 375,
       "video_timestamp_end": 169,
-      "tips": [
-        {
-          "text": "Mvour arms should cross at the solar plexus level, y,",
-          "timestamp": 386
-        },
-        {
-          "text": "Your arms should cross at the solar plexus level, e) “<q oo ~",
-          "timestamp": 387
-        },
-        {
-          "text": "YM The back of the fist should be .",
-          "timestamp": 394
-        },
-        {
-          "text": "Be careful not to let the elbow NY",
-          "timestamp": 403
-        },
-        {
-          "text": "Be careful not to let the elbow A",
-          "timestamp": 404
-        }
-      ]
+      "tips": []
     },
     {
-      "key": "apchagi+oen-momtongjjierugi",
+      "key": "front-kick+front-kick+apchagi+oen-momtongjjierugi",
       "name": {
-        "en": "apchagi- + -oen-momtongjjierugi",
-        "ko": " + ",
-        "romanized": "apchagi- + -oen-momtongjjierugi"
+        "en": "Front Kick + Front Kick + apchagi + oen-momtongjjierugi",
+        "ko": "앞차기 + 앞차기 +  + ",
+        "romanized": "Ap Chagi + Ap Chagi + apchagi + oen-momtongjjierugi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -160,11 +164,11 @@
       "tips": []
     },
     {
-      "key": "side-kick+knifehand-supported-block",
+      "key": "jumping-side-kick+knifehand-supported-block",
       "name": {
-        "en": "Side Kick + Knifehand Supported Block",
-        "ko": "옆차기 + 손날거들어막기",
-        "romanized": "Yeopchagi + Sonal Geodeureomakgi"
+        "en": "Jumping Side Kick + Knifehand Supported Block",
+        "ko": "뛰어옆차기 + 손날거들어막기",
+        "romanized": "Ttwieo Yeopchagi + Sonal Geodeureomakgi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -220,7 +224,7 @@
     },
     {
       "step": 2,
-      "technique": "apchagi+oen-momtongjjierugi",
+      "technique": "front-kick+front-kick+apchagi+oen-momtongjjierugi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -238,7 +242,7 @@
     },
     {
       "step": 4,
-      "technique": "side-kick+knifehand-supported-block",
+      "technique": "jumping-side-kick+knifehand-supported-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -277,7 +281,7 @@
       "technique": "outward-block",
       "side": "left",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 581,
       "timestamp_end": 0
     }

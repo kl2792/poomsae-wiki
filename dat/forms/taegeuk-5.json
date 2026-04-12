@@ -43,24 +43,27 @@
       "video_timestamp_end": 198,
       "tips": [
         {
+          "text": "opponent by drawing a big descending circle with your hammer",
+          "timestamp": 160,
+          "source": "caption"
+        },
+        {
+          "text": "your assisting arm should face outward the striking hand should pass under the",
+          "timestamp": 166,
+          "source": "caption"
+        },
+        {
+          "text": "draw an arc above your head and stop at the shoulder line with your arm",
+          "timestamp": 178,
+          "source": "caption"
+        },
+        {
           "text": "with your arm naturally straightened &",
           "timestamp": 179
         },
         {
           "text": "YM Your fist should not stop at the head",
           "timestamp": 187
-        },
-        {
-          "text": "f 7 YM our fist should not stop at the head",
-          "timestamp": 188
-        },
-        {
-          "text": "YM our fist should not stop at the head",
-          "timestamp": 189
-        },
-        {
-          "text": "YM our fist should not stop at the head",
-          "timestamp": 190
         }
       ]
     },
@@ -76,6 +79,11 @@
       "video_timestamp_end": 246,
       "tips": [
         {
+          "text": "elbow in a swinging motion bend your elbow so the back of your hand",
+          "timestamp": 201,
+          "source": "caption"
+        },
+        {
           "text": "Bend your elbow so the back of",
           "timestamp": 204
         },
@@ -84,16 +92,14 @@
           "timestamp": 207
         },
         {
-          "text": "A Your elbow should be slightly a .",
-          "timestamp": 215
+          "text": "place the fist in front of the shoulder of your striking arm",
+          "timestamp": 207,
+          "source": "caption"
         },
         {
-          "text": "Your elbow should be slightly ims a",
-          "timestamp": 216
-        },
-        {
-          "text": "Your elbow should be slightly = s",
-          "timestamp": 217
+          "text": "the elbow should be slightly above your shoulder your chest should open up when",
+          "timestamp": 214,
+          "source": "caption"
         }
       ]
     },
@@ -109,24 +115,27 @@
       "video_timestamp_end": 315,
       "tips": [
         {
+          "text": "of the assisting arm pargum is a technique used to create a",
+          "timestamp": 246,
+          "source": "caption"
+        },
+        {
+          "text": "by opening your assisting hand twisting your torso",
+          "timestamp": 250,
+          "source": "caption"
+        },
+        {
+          "text": "the elbow of the arm creating a target should be slightly bent",
+          "timestamp": 257,
+          "source": "caption"
+        },
+        {
           "text": "a target should be slightly bent",
           "timestamp": 259
         },
         {
           "text": "Be careful not to let the palm x \\",
           "timestamp": 267
-        },
-        {
-          "text": "of the assisting hand hit your elbow ev iS",
-          "timestamp": 267
-        },
-        {
-          "text": "We careful not to let the palm >",
-          "timestamp": 268
-        },
-        {
-          "text": "Be careful not to let the palm a",
-          "timestamp": 270
         }
       ]
     },
@@ -152,28 +161,7 @@
       "category": "stance",
       "video_timestamp": 315,
       "video_timestamp_end": 150,
-      "tips": [
-        {
-          "text": "The fist of the blocking arm should start “s y",
-          "timestamp": 621
-        },
-        {
-          "text": "from outside of the assisting arm 4+ - ao al",
-          "timestamp": 621
-        },
-        {
-          "text": "from outside of the assisting arm es. ee",
-          "timestamp": 622
-        },
-        {
-          "text": "Mand straighten while drawing an arc",
-          "timestamp": 637
-        },
-        {
-          "text": "WM Your leg and arm should be",
-          "timestamp": 642
-        }
-      ]
+      "tips": []
     },
     {
       "key": "inward-block+inward-block",
@@ -188,11 +176,11 @@
       "tips": []
     },
     {
-      "key": "apchagi+oreun-deungjumeok-apchigi+oen-janmakgi",
+      "key": "front-kick+pulling-backfist-front-strike+inward-block",
       "name": {
-        "en": "apchagi- + -oreun-deungjumeok-apchigi- + -oen-janmakgi",
-        "ko": " +  + ",
-        "romanized": "apchagi- + -oreun-deungjumeok-apchigi- + -oen-janmakgi"
+        "en": "Front Kick + Pulling Backfist Front Strike + Inward Block",
+        "ko": "앞차기 + 당겨 등주먹 앞치기 + 안막기",
+        "romanized": "Ap Chagi + Danggyeo Deungjumeok Apchigi + Anmakgi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -200,23 +188,11 @@
       "tips": []
     },
     {
-      "key": "apchagi+oen-deungjumeok-apchigi+oreun-anmakgi",
+      "key": "jumping-side-kick+elbow-target-strike",
       "name": {
-        "en": "apchagi- + -oen-deungjumeok-apchigi- + -oreun-anmakgi",
-        "ko": " +  + ",
-        "romanized": "apchagi- + -oen-deungjumeok-apchigi- + -oreun-anmakgi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "side-kick+elbow-target-strike",
-      "name": {
-        "en": "Side Kick + Elbow Target Strike",
-        "ko": "옆차기 + 팔꿈치표적치기",
-        "romanized": "Yeopchagi + Palggumchi Pyojeokchigi"
+        "en": "Jumping Side Kick + Elbow Target Strike",
+        "ko": "뛰어옆차기 + 팔꿈치표적치기",
+        "romanized": "Ttwieo Yeopchagi + Palggumchi Pyojeokchigi"
       },
       "category": "combination",
       "video_timestamp": 0,
@@ -272,7 +248,7 @@
     },
     {
       "step": 2,
-      "technique": "apchagi+oreun-deungjumeok-apchigi+oen-janmakgi",
+      "technique": "front-kick+pulling-backfist-front-strike+inward-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -281,7 +257,7 @@
     },
     {
       "step": 3,
-      "technique": "apchagi+oen-deungjumeok-apchigi+oreun-anmakgi",
+      "technique": "front-kick+pulling-backfist-front-strike+inward-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -290,7 +266,7 @@
     },
     {
       "step": 4,
-      "technique": "side-kick+elbow-target-strike",
+      "technique": "jumping-side-kick+elbow-target-strike",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -320,7 +296,7 @@
       "technique": "low-block",
       "side": "left",
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 353,
       "timestamp_end": 0
     }

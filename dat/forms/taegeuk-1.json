@@ -43,20 +43,28 @@
       "video_timestamp_end": 217,
       "tips": [
         {
+          "text": "where you can stand and move your left foot about a foot's length to your left",
+          "timestamp": 166,
+          "source": "caption"
+        },
+        {
+          "text": "breathe in open your fists and raise them from the lower abdomen",
+          "timestamp": 175,
+          "source": "caption"
+        },
+        {
+          "text": "up to the solar plexus breathe out then lower your fists back",
+          "timestamp": 180,
+          "source": "caption"
+        },
+        {
           "text": "should be balanced along the center line =",
           "timestamp": 185
         },
         {
-          "text": "Moth elbows should be bent s é",
-          "timestamp": 198
-        },
-        {
-          "text": "Wand your fists should be placed apart",
-          "timestamp": 200
-        },
-        {
-          "text": "and be careful not to raise wes",
-          "timestamp": 211
+          "text": "your face torso and lower body should be balanced along the center line",
+          "timestamp": 185,
+          "source": "caption"
         }
       ]
     },
@@ -72,6 +80,11 @@
       "video_timestamp_end": 344,
       "tips": [
         {
+          "text": "towards the lower body with your outer wrist",
+          "timestamp": 222,
+          "source": "caption"
+        },
+        {
           "text": "The blocking arm’s elbow should be ~S “",
           "timestamp": 223
         },
@@ -86,10 +99,6 @@
         {
           "text": "WY the blocking arm’s elbow should be",
           "timestamp": 226
-        },
-        {
-          "text": "should be straightened so that the back of",
-          "timestamp": 231
         }
       ]
     },
@@ -105,16 +114,27 @@
       "video_timestamp_end": 376,
       "tips": [
         {
+          "text": "towards the face by raising your outer wrist cross your arms in front of your",
+          "timestamp": 350,
+          "source": "caption"
+        },
+        {
+          "text": "and protect from an opponent's attack by raising them upwards",
+          "timestamp": 354,
+          "source": "caption"
+        },
+        {
+          "text": "the fist on the defending arm should be above the elbow",
+          "timestamp": 361,
+          "source": "caption"
+        },
+        {
           "text": "the back of the wrist and the forehead",
           "timestamp": 362
         },
         {
           "text": "Wthe arm should be tilted with",
           "timestamp": 363
-        },
-        {
-          "text": "Be careful not to raise your arm excessively \\",
-          "timestamp": 370
         }
       ]
     },
@@ -130,6 +150,11 @@
       "video_timestamp_end": 427,
       "tips": [
         {
+          "text": "so that the kicking leg starts on top of the knee of your supporting leg",
+          "timestamp": 380,
+          "source": "caption"
+        },
+        {
           "text": "WM the kick should be made with your leg bent \\ :",
           "timestamp": 384
         },
@@ -138,8 +163,14 @@
           "timestamp": 392
         },
         {
-          "text": "parallel so that the back of the foot blades —— '",
-          "timestamp": 412
+          "text": "the forward kicking leg should be bent in a way where your front sole touches",
+          "timestamp": 394,
+          "source": "caption"
+        },
+        {
+          "text": "touches the ground train this technique using coordination of the upper and",
+          "timestamp": 397,
+          "source": "caption"
         }
       ]
     },
@@ -153,28 +184,7 @@
       "category": "stance",
       "video_timestamp": 427,
       "video_timestamp_end": 156,
-      "tips": [
-        {
-          "text": "y : Whe center of your body should be",
-          "timestamp": 430
-        },
-        {
-          "text": "y < W the center of your body should be",
-          "timestamp": 432
-        },
-        {
-          "text": "W the center of your body should be",
-          "timestamp": 434
-        },
-        {
-          "text": "Whe center of your body should be",
-          "timestamp": 435
-        },
-        {
-          "text": "the heel on the hind foot should be on",
-          "timestamp": 436
-        }
-      ]
+      "tips": []
     },
     {
       "key": "front-stance",
@@ -291,7 +301,7 @@
       "technique": "front-stance",
       "side": null,
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 485,
       "timestamp_end": 0
     }

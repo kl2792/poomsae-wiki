@@ -43,12 +43,27 @@
       "video_timestamp_end": 251,
       "tips": [
         {
+          "text": "in a straight line using the lower part of the palm of your",
+          "timestamp": 218,
+          "source": "caption"
+        },
+        {
+          "text": "then pull your wrist back as much as possible to concentrate force on the",
+          "timestamp": 226,
+          "source": "caption"
+        },
+        {
           "text": "to concentrate force on the palm of your hand",
           "timestamp": 231
         },
         {
           "text": "WM Vour hand should be level '",
           "timestamp": 238
+        },
+        {
+          "text": "your hand should be level with your chin and aligned with the center line",
+          "timestamp": 241,
+          "source": "caption"
         }
       ]
     },
@@ -64,12 +79,22 @@
       "video_timestamp_end": 272,
       "tips": [
         {
+          "text": "with the hand blade the hand blade should be level with the",
+          "timestamp": 252,
+          "source": "caption"
+        },
+        {
           "text": "The hand blade should be level",
           "timestamp": 259
         },
         {
           "text": "The hand blade should be level Laas",
           "timestamp": 262
+        },
+        {
+          "text": "and aligned with the center line be careful not to let the tip of the",
+          "timestamp": 263,
+          "source": "caption"
         },
         {
           "text": "Vv Be careful not to let the tip",
@@ -89,20 +114,28 @@
       "video_timestamp_end": 316,
       "tips": [
         {
+          "text": "is a combination of orgul or yamaki and aremaki",
+          "timestamp": 280,
+          "source": "caption"
+        },
+        {
+          "text": "performed simultaneously for aramaki the space between your leg",
+          "timestamp": 284,
+          "source": "caption"
+        },
+        {
+          "text": "arm should be about two raised fists the space between the arm blocking the",
+          "timestamp": 287,
+          "source": "caption"
+        },
+        {
           "text": "should be about one raised fist & )",
           "timestamp": 291
         },
         {
-          "text": "Be careful not to let the arm blocking",
-          "timestamp": 305
-        },
-        {
-          "text": "W Be careful not to let the arm blocking",
-          "timestamp": 307
-        },
-        {
-          "text": "rs Be careful not to let the arm blocking",
-          "timestamp": 311
+          "text": "face and forehead should be about one raised fist",
+          "timestamp": 294,
+          "source": "caption"
         }
       ]
     },
@@ -130,8 +163,14 @@
           "timestamp": 325
         },
         {
-          "text": "on top and the torso should be ~",
-          "timestamp": 330
+          "text": "place the wrist of one arm at the lilac crest",
+          "timestamp": 325,
+          "source": "caption"
+        },
+        {
+          "text": "the space between the arm on top and the torso should be about one raised fist",
+          "timestamp": 328,
+          "source": "caption"
         }
       ]
     },
@@ -145,7 +184,33 @@
       "category": "block",
       "video_timestamp": 345,
       "video_timestamp_end": 384,
-      "tips": []
+      "tips": [
+        {
+          "text": "is a move to perform techniques by utilizing the twist of the lower and",
+          "timestamp": 352,
+          "source": "caption"
+        },
+        {
+          "text": "one arm is used to block the face inside out with the inner wrist",
+          "timestamp": 361,
+          "source": "caption"
+        },
+        {
+          "text": "the other arm is used to block the face outside in",
+          "timestamp": 366,
+          "source": "caption"
+        },
+        {
+          "text": "with the outer wrist the wrists should be level with the philtrum",
+          "timestamp": 370,
+          "source": "caption"
+        },
+        {
+          "text": "elbows should face downward and made perpendicular to the ground without",
+          "timestamp": 378,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "crane-stance",
@@ -157,28 +222,7 @@
       "category": "stance",
       "video_timestamp": 384,
       "video_timestamp_end": 210,
-      "tips": [
-        {
-          "text": "of the back of the foot blade inside the supporting leg",
-          "timestamp": 405
-        },
-        {
-          "text": "Mand naturally straighten ‘ +",
-          "timestamp": 418
-        },
-        {
-          "text": "Mand naturally straighten a) ae",
-          "timestamp": 421
-        },
-        {
-          "text": "Mand naturally straighten a” ee",
-          "timestamp": 422
-        },
-        {
-          "text": "your wrist should be level Call",
-          "timestamp": 481
-        }
-      ]
+      "tips": []
     },
     {
       "key": "inner-forearm-wedging-block",
@@ -283,7 +327,7 @@
       "technique": "low-spreading-block",
       "side": null,
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 825,
       "timestamp_end": 0
     }

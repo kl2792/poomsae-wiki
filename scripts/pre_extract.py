@@ -17,6 +17,7 @@ from pathlib import Path
 
 DAT_DIR = Path(__file__).parent.parent / "dat"
 TRANSCRIPTS_DIR = DAT_DIR / "transcripts"
+CAPTIONS_DIR = DAT_DIR / "captions"
 PRE_DIR = DAT_DIR / "pre"
 
 # Import FORM_META from extract.py (same directory)
@@ -384,6 +385,87 @@ def extract_sections(lines: list[str], slug: str) -> dict:
     return {k: v for k, v in sections.items() if v is not None}
 
 
+def load_caption_tips(slug: str) -> list[dict]:
+    """Load instructional tips from parsed auto-captions.
+
+    Reads dat/captions/{slug}.json if it exists, and returns caption entries
+    as tip dicts with 'text' and 'timestamp' keys.
+
+    Args:
+        slug: Form slug like 'taegeuk-1jang'.
+
+    Returns:
+        List of tip dicts from captions, or empty list if no captions file.
+    """
+    caption_path = CAPTIONS_DIR / f"{slug}.json"
+    if not caption_path.exists():
+        return []
+
+    with open(caption_path) as f:
+        data = json.load(f)
+
+    tips = []
+    for cap in data.get("captions", []):
+        text = cap.get("text", "").strip()
+        # Only keep substantive caption lines (instructional content)
+        if len(text) < 20:
+            continue
+        # Skip music/noise markers
+        if re.match(r"^\[.*\]$", text):
+            continue
+        tips.append({
+            "text": text,
+            "timestamp": int(cap.get("start", 0)),
+            "source": "caption",
+        })
+    return tips
+
+
+def merge_tips(ocr_tips: list[dict], caption_tips: list[dict]) -> list[dict]:
+    """Merge OCR tips with caption tips, deduplicating by text similarity.
+
+    Caption tips supplement OCR tips. Dedup uses normalized prefix matching
+    (first 35 chars, lowercased, alpha-only) — same approach as OCR dedup.
+
+    Args:
+        ocr_tips: Tips extracted from OCR transcripts.
+        caption_tips: Tips extracted from auto-captions.
+
+    Returns:
+        Merged, deduplicated list of tips sorted by timestamp.
+    """
+    def normalize_key(text: str) -> str:
+        t = re.sub(r"[^a-zA-Z\s]", "", text)
+        t = re.sub(r"\s+", " ", t.lower().strip())
+        return t[:35]
+
+    # Index OCR tips by normalized key
+    seen_keys: set[str] = set()
+    for tip in ocr_tips:
+        key = normalize_key(tip["text"])
+        if len(key) >= 10:
+            seen_keys.add(key)
+
+    # Add caption tips that don't duplicate OCR tips
+    merged = list(ocr_tips)
+    added = 0
+    for tip in caption_tips:
+        key = normalize_key(tip["text"])
+        if len(key) < 10:
+            continue
+        if key not in seen_keys:
+            seen_keys.add(key)
+            merged.append(tip)
+            added += 1
+
+    if added > 0:
+        print(f"    +{added} caption tips (after dedup)")
+
+    # Sort by timestamp
+    merged.sort(key=lambda t: t.get("timestamp", 0))
+    return merged
+
+
 def pre_extract(slug: str) -> dict | None:
     """Run deterministic pre-extraction for a single form.
 
@@ -400,6 +482,11 @@ def pre_extract(slug: str) -> dict | None:
     sequence_steps = extract_sequence_steps(lines)
     tips = extract_tips(lines)
     sections = extract_sections(lines, slug)
+
+    # Merge caption tips if available
+    caption_tips = load_caption_tips(slug)
+    if caption_tips:
+        tips = merge_tips(tips, caption_tips)
 
     result = {
         "form_slug": slug,

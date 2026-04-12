@@ -3,6 +3,8 @@ dat/raw/
 dat/frames/
 dat/ocr/
 dat/transcripts/
+dat/captions/
+dat/*.vtt
 dat/*.pdf
 
 # Keep form JSONs (committed data)

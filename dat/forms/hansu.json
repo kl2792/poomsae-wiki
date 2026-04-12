@@ -43,12 +43,28 @@
       "video_timestamp_end": 185,
       "tips": [
         {
-          "text": "Cross the arm of the forward foot ge",
-          "timestamp": 176
+          "text": "is a technique to cross the two hands in front of the chest",
+          "timestamp": 154,
+          "source": "caption"
         },
         {
-          "text": "WM Cross the arm of the forward foot",
-          "timestamp": 177
+          "text": "when performing montong hechomaki the tip of the hand must not rise above the",
+          "timestamp": 159,
+          "source": "caption"
+        },
+        {
+          "text": "attach your armpits to your body to make them firm",
+          "timestamp": 170,
+          "source": "caption"
+        },
+        {
+          "text": "and the tip of your hand and elbow must be placed in the same line",
+          "timestamp": 173,
+          "source": "caption"
+        },
+        {
+          "text": "Cross the arm of the forward foot ge",
+          "timestamp": 176
         }
       ]
     },
@@ -64,20 +80,64 @@
       "video_timestamp_end": 214,
       "tips": [
         {
+          "text": "is a technique to strike both sides of the waist outside in",
+          "timestamp": 190,
+          "source": "caption"
+        },
+        {
+          "text": "with both fists elevated to about one fist length",
+          "timestamp": 194,
+          "source": "caption"
+        },
+        {
+          "text": "firmly to the body to concentrate force the fist should be placed slightly over",
+          "timestamp": 198,
+          "source": "caption"
+        },
+        {
           "text": "the fists should be placed",
           "timestamp": 202
         },
         {
-          "text": "ad WBe careful not to let the fists",
-          "timestamp": 210
+          "text": "the elbows should be close to the torso be careful not to let the fists rise",
+          "timestamp": 209,
+          "source": "caption"
+        }
+      ]
+    },
+    {
+      "key": "geodeureo-khaljaebi",
+      "name": {
+        "en": "Geodeureo Khaljaebi",
+        "ko": "Geodeureo Khaljaebi",
+        "romanized": "Geodeureo Khaljaebi"
+      },
+      "category": "strike",
+      "video_timestamp": 214,
+      "video_timestamp_end": 246,
+      "tips": [
+        {
+          "text": "by pressing with the palm of your hand and attack an opponent's neck with an",
+          "timestamp": 214,
+          "source": "caption"
         },
         {
-          "text": "Wbe careful not to let the fists",
-          "timestamp": 211
+          "text": "concentrate and transfer force by making the surface area of the target small",
+          "timestamp": 224,
+          "source": "caption"
         },
         {
-          "text": "We careful not to let the fists",
-          "timestamp": 212
+          "text": "should lightly touch the back of the assisting hand",
+          "timestamp": 237
+        },
+        {
+          "text": "se should lightly touch the back of the assisting hand",
+          "timestamp": 238
+        },
+        {
+          "text": "the elbow of the arm that performed kaijabi should lightly touch the back of",
+          "timestamp": 238,
+          "source": "caption"
         }
       ]
     },
@@ -91,7 +151,18 @@
       "category": "block",
       "video_timestamp": 246,
       "video_timestamp_end": 267,
-      "tips": []
+      "tips": [
+        {
+          "text": "the thumb and index finger to block it is important to fix the hand acting",
+          "timestamp": 254,
+          "source": "caption"
+        },
+        {
+          "text": "abdomen and only move the arm blocking the lower",
+          "timestamp": 263,
+          "source": "caption"
+        }
+      ]
     },
     {
       "key": "knifehand-diamond-block",
@@ -105,8 +176,18 @@
       "video_timestamp_end": 279,
       "tips": [
         {
+          "text": "when performing sonna gungangmaki the hand blade and center line should be",
+          "timestamp": 268,
+          "source": "caption"
+        },
+        {
           "text": "Be careful not to let the elbow",
           "timestamp": 273
+        },
+        {
+          "text": "be careful not to let the elbow of the arm blocking the face",
+          "timestamp": 273,
+          "source": "caption"
         }
       ]
     },
@@ -120,28 +201,7 @@
       "category": "stance",
       "video_timestamp": 279,
       "video_timestamp_end": 145,
-      "tips": [
-        {
-          "text": "YW the knees should not be apart",
-          "timestamp": 301
-        },
-        {
-          "text": "WM the knees should not be apart",
-          "timestamp": 302
-        },
-        {
-          "text": "A The left elbow should touch",
-          "timestamp": 483
-        },
-        {
-          "text": "the top of the back of the right hand",
-          "timestamp": 483
-        },
-        {
-          "text": "WW The left elbow should touch",
-          "timestamp": 484
-        }
-      ]
+      "tips": []
     },
     {
       "key": "assisted-arc-hand-front-strike",
@@ -180,13 +240,25 @@
       "tips": []
     },
     {
-      "key": "side-kick+swallow-form-strike",
+      "key": "jumping-side-kick+swallow-form-strike",
       "name": {
-        "en": "Side Kick + Swallow Form Strike",
-        "ko": "옆차기 + 제비품안치기",
-        "romanized": "Yeopchagi + Jebipum Anchigi"
+        "en": "Jumping Side Kick + Swallow Form Strike",
+        "ko": "뛰어옆차기 + 제비품안치기",
+        "romanized": "Ttwieo Yeopchagi + Jebipum Anchigi"
       },
       "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "hakdariseogi-jageun-doljujeogwi",
+      "name": {
+        "en": "Hakdariseogi Jageun Doljujeogwi",
+        "ko": "Hakdariseogi Jageun Doljujeogwi",
+        "romanized": "Hakdariseogi Jageun Doljujeogwi"
+      },
+      "category": "strike",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
@@ -197,63 +269,6 @@
         "en": "Side Punch",
         "ko": "옆지르기",
         "romanized": "Yeop Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "geodeureo-khaljaebi",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Geodeureo Khaljaebi"
-      },
-      "category": "strike",
-      "video_timestamp": 214,
-      "video_timestamp_end": 246,
-      "tips": [
-        {
-          "text": "should lightly touch the back of the assisting hand",
-          "timestamp": 237
-        },
-        {
-          "text": "se should lightly touch the back of the assisting hand",
-          "timestamp": 238
-        },
-        {
-          "text": "oo . should lightly touch the back of the assisting hand",
-          "timestamp": 239
-        },
-        {
-          "text": "OO A H should lightly touch the back of the assisting hand",
-          "timestamp": 240
-        },
-        {
-          "text": "f should lightly touch the back of the assisting hand",
-          "timestamp": 241
-        }
-      ]
-    },
-    {
-      "key": "geodeureo-oreun-agumson-apchigi",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Geodeureo Oreun Agumson Apchigi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "hakdariseogi-jageun-doljujeogwi",
-      "name": {
-        "en": "",
-        "ko": "",
-        "romanized": "Hakdariseogi Jageun Doljujeogwi"
       },
       "category": "strike",
       "video_timestamp": 0,
@@ -282,7 +297,7 @@
     },
     {
       "step": 3,
-      "technique": "geodeureo-oreun-agumson-apchigi",
+      "technique": "assisted-arc-hand-front-strike",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -309,7 +324,7 @@
     },
     {
       "step": 6,
-      "technique": "side-kick+swallow-form-strike",
+      "technique": "jumping-side-kick+swallow-form-strike",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -339,7 +354,7 @@
       "technique": "knifehand-edge-spreading-block",
       "side": null,
       "direction": "forward",
-      "kihap": false,
+      "kihap": true,
       "timestamp": 348,
       "timestamp_end": 0
     }
