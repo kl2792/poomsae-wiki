@@ -53,12 +53,7 @@ export interface FormData {
 const DAT_DIR = path.join(process.cwd(), "..", "dat");
 const FORMS_DIR = path.join(DAT_DIR, "forms");
 
-export function getTechnique(
-  form: FormData,
-  key: string
-): Technique | undefined {
-  return form.techniques.find((t) => t.key === key);
-}
+
 
 export function getAllForms(): FormData[] {
   if (!fs.existsSync(FORMS_DIR)) return [];

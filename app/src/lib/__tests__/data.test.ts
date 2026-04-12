@@ -3,7 +3,7 @@ import {
   getAllForms,
   getForm,
   getAllFormIds,
-  getTechnique,
+
   getAllTechniques,
   getTechniqueByKey,
 } from "../data";
@@ -109,19 +109,6 @@ describe("form data structure", () => {
   });
 });
 
-describe("getTechnique", () => {
-  it("finds a technique by key", () => {
-    const form = getForm("taegeuk-1")!;
-    const tech = getTechnique(form, form.techniques[0].key);
-    expect(tech).toBeDefined();
-    expect(tech!.key).toBe(form.techniques[0].key);
-  });
-
-  it("returns undefined for nonexistent key", () => {
-    const form = getForm("taegeuk-1")!;
-    expect(getTechnique(form, "nonexistent")).toBeUndefined();
-  });
-});
 
 // --- Wiki technique database tests ---
 

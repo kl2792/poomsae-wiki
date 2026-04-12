@@ -226,6 +226,44 @@ export default function TechniqueSearch({
     writeUrlFilters(q, activeCategories, activeForms);
   }
 
+  // --- Drag-to-select state (refs to avoid stale closures) ---
+  const isDragging = useRef(false);
+  const dragAction = useRef<"select" | "deselect">("select");
+  const dragTarget = useRef<"category" | "form">("category");
+
+  function handlePillPointerDown(
+    kind: "category" | "form",
+    id: string,
+    isActive: boolean,
+  ) {
+    isDragging.current = true;
+    dragTarget.current = kind;
+    dragAction.current = isActive ? "deselect" : "select";
+    // Toggle the clicked pill
+    if (kind === "category") toggleCategory(id);
+    else toggleForm(id);
+  }
+
+  function handlePillPointerEnter(
+    kind: "category" | "form",
+    id: string,
+    isActive: boolean,
+  ) {
+    if (!isDragging.current || dragTarget.current !== kind) return;
+    const shouldBeActive = dragAction.current === "select";
+    if (isActive === shouldBeActive) return; // already in desired state
+    if (kind === "category") toggleCategory(id);
+    else toggleForm(id);
+  }
+
+  useEffect(() => {
+    const onPointerUp = () => {
+      isDragging.current = false;
+    };
+    document.addEventListener("pointerup", onPointerUp);
+    return () => document.removeEventListener("pointerup", onPointerUp);
+  }, []);
+
   const hasFilters =
     activeCategories.size > 0 || activeForms.size > 0 || query.length > 0;
 
@@ -249,8 +287,14 @@ export default function TechniqueSearch({
         {categories.map((cat) => (
           <button
             key={cat}
-            onClick={() => toggleCategory(cat)}
-            className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
+            onPointerDown={(e) => {
+              e.preventDefault();
+              handlePillPointerDown("category", cat, activeCategories.has(cat));
+            }}
+            onPointerEnter={() =>
+              handlePillPointerEnter("category", cat, activeCategories.has(cat))
+            }
+            className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer select-none touch-none ${
               activeCategories.has(cat)
                 ? "bg-gray-800 text-white border-gray-800 shadow-sm"
                 : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
@@ -271,8 +315,14 @@ export default function TechniqueSearch({
             {formIds.filter((id) => id.startsWith("taegeuk-")).map((formId) => (
               <button
                 key={formId}
-                onClick={() => toggleForm(formId)}
-                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
+                onPointerDown={(e) => {
+                  e.preventDefault();
+                  handlePillPointerDown("form", formId, activeForms.has(formId));
+                }}
+                onPointerEnter={() =>
+                  handlePillPointerEnter("form", formId, activeForms.has(formId))
+                }
+                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer select-none touch-none ${
                   activeForms.has(formId)
                     ? "bg-gray-800 text-white border-gray-800 shadow-sm"
                     : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
@@ -286,8 +336,14 @@ export default function TechniqueSearch({
             {formIds.filter((id) => !id.startsWith("taegeuk-")).map((formId) => (
               <button
                 key={formId}
-                onClick={() => toggleForm(formId)}
-                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
+                onPointerDown={(e) => {
+                  e.preventDefault();
+                  handlePillPointerDown("form", formId, activeForms.has(formId));
+                }}
+                onPointerEnter={() =>
+                  handlePillPointerEnter("form", formId, activeForms.has(formId))
+                }
+                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer select-none touch-none ${
                   activeForms.has(formId)
                     ? "bg-gray-800 text-white border-gray-800 shadow-sm"
                     : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
