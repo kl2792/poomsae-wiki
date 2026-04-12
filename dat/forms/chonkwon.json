@@ -9,7 +9,7 @@
   },
   "belt": null,
   "dan": 7,
-  "total_moves": 27,
+  "total_moves": 9,
   "video_id": "FBxCzK5c4bE",
   "video_duration_seconds": 1343,
   "sections": {
@@ -19,10 +19,10 @@
     },
     "breakdown": {
       "start": 188,
-      "end": 370
+      "end": 194
     },
     "explanation": {
-      "start": 370,
+      "start": 194,
       "end": 1211
     },
     "repeat": {
@@ -32,15 +32,37 @@
   },
   "techniques": [
     {
-      "key": "gyeopson-junbi",
+      "key": "chestnut-fist-uppercut-strike",
       "name": {
-        "en": "Overlapping Hands Ready Position",
-        "ko": "겹손준비",
-        "romanized": "Gyeopson Junbi"
+        "en": "Chestnut Fist Uppercut Strike",
+        "ko": "밤주먹 치지르기",
+        "romanized": "Bamjumeok Chijireugi"
       },
-      "category": "stance",
-      "video_timestamp": 0,
-      "tips": []
+      "category": "strike",
+      "video_timestamp": 199,
+      "video_timestamp_end": 220,
+      "tips": [
+        {
+          "text": "and the armpits should touch the body ) V 7",
+          "timestamp": 208
+        },
+        {
+          "text": "careful not to let the elbow open outward,",
+          "timestamp": 213
+        },
+        {
+          "text": "Be careful not to let the elbow open outward,",
+          "timestamp": 214
+        },
+        {
+          "text": "Whe careful not to let the elbow open outward,",
+          "timestamp": 215
+        },
+        {
+          "text": "Whe careful not to let the elbow open outward,",
+          "timestamp": 216
+        }
+      ]
     },
     {
       "key": "wing-spreading",
@@ -51,344 +73,11 @@
       },
       "category": "block",
       "video_timestamp": 220,
-      "video_timestamp_end": 252,
+      "video_timestamp_end": 253,
       "tips": [
         {
-          "text": "Remember that the wrists should not straighten when pushing the hands",
+          "text": "Remember that the wrists should not straighten",
           "timestamp": 245
-        }
-      ]
-    },
-    {
-      "key": "double-chestnut-fist-uppercut-strike",
-      "name": {
-        "en": "Double Chestnut Fist Uppercut Strike",
-        "ko": "두밤주먹 치올려지르기",
-        "romanized": "Dubamjumeok Chi(ollyeo)jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-middle-twisting-block",
-      "name": {
-        "en": "Knifehand Middle Twisting Block",
-        "ko": "손날 몸통 비틀어막기",
-        "romanized": "Sonal Momtong Biteureomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "With the back of the hand facing upward",
-          "timestamp": 438
-        },
-        {
-          "text": "Biteureomakgi is a technique used to block with the hand opposite the foot set forward by slightly twisting the body",
-          "timestamp": 461
-        },
-        {
-          "text": "Pull the hind leg slightly and block by twisting the torso",
-          "timestamp": 468
-        }
-      ]
-    },
-    {
-      "key": "hand-grab-and-pull-middle-punch",
-      "name": {
-        "en": "Hand Grab and Pull Middle Punch",
-        "ko": "손 감아 잡아끌며 몸통지르기",
-        "romanized": "Hand Gama Jabaggeulmyeo Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "When performing Hand Gama Jabaggeulmyeo Jireugi, move the body closer to the arm and pull with a strong force",
-          "timestamp": 481
-        }
-      ]
-    },
-    {
-      "key": "hand-grab-and-pull+side-kick+low-block",
-      "name": {
-        "en": "Hand Grab and Pull + Side Kick + Low Block",
-        "ko": "손 감아 잡아끌며 + 옆차기 + 아래막기",
-        "romanized": "Hand Gama Jabaggeulmyeo + Yeopchagi + Araemakgi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Pull the left arm in the opposite direction and perform Yeopchagi with a shout",
-          "timestamp": 538
-        }
-      ]
-    },
-    {
-      "key": "middle-punch",
-      "name": {
-        "en": "Middle Punch",
-        "ko": "몸통지르기",
-        "romanized": "Momtong Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "inner-forearm-assisted-middle-outward-block",
-      "name": {
-        "en": "Inner Forearm Assisted Middle Outward Block",
-        "ko": "안팔목 거들어 몸통 바깥막기",
-        "romanized": "Anpalmok Geodeureo Momtong Bakkanmakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Elevation of your right arm should be the same as your left elbow, but horizontal",
-          "timestamp": 684
-        },
-        {
-          "text": "Be careful not to let the tip of your left fist rise over your shoulder",
-          "timestamp": 690
-        },
-        {
-          "text": "Turn your left arm over inward during Geodeureo Anpalmok Bakkanmakgi",
-          "timestamp": 701
-        }
-      ]
-    },
-    {
-      "key": "swinging-block+middle-punch",
-      "name": {
-        "en": "Swinging Block + Middle Punch",
-        "ko": "휘둘러막고 몸통지르기",
-        "romanized": "Hwidulleomakgo Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Swing above the head and block like Ulguimakgi",
-          "timestamp": 710
-        },
-        {
-          "text": "Pull to the back left, then connect to Jireugi",
-          "timestamp": 714
-        }
-      ]
-    },
-    {
-      "key": "hand-reach-and-pull-middle-punch",
-      "name": {
-        "en": "Hand Reach and Pull Middle Punch",
-        "ko": "손 저쳐내며 잡아당겨 몸통지르기",
-        "romanized": "Hand Jeocheonaemyeo Jabadanggyeo Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Open your left hand, draw a big circle to swing and block, then pull an opponent's arm",
-          "timestamp": 724
-        },
-        {
-          "text": "This move must be connected smoothly while moving forward with minimal change in head elevation",
-          "timestamp": 730
-        }
-      ]
-    },
-    {
-      "key": "inner-forearm-middle-twisting-block",
-      "name": {
-        "en": "Inner Forearm Middle Twisting Block",
-        "ko": "안팔목 몸통 비틀어막기",
-        "romanized": "Anpalmok Momtong Biteureomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "The upper body should twist 45 degrees",
-          "timestamp": 819
-        }
-      ]
-    },
-    {
-      "key": "front-kick+middle-punch",
-      "name": {
-        "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기",
-        "romanized": "Apchagi + Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-assisted-low-pressing-block",
-      "name": {
-        "en": "Knifehand Assisted Low Pressing Block",
-        "ko": "손날 거들어 아래내려막기",
-        "romanized": "Sonal Geodeureo Arae Naeryeomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "inner-forearm-outward-block+assisted-low-pressing-block",
-      "name": {
-        "en": "Inner Forearm Outward Block + Assisted Low Pressing Block",
-        "ko": "안팔목 바깥막기 + 거들어 아래내려막기",
-        "romanized": "Anpalmok Bakkanmakgi + Geodeureo Arae Naeryeomakgi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Strike the forearm moving upward with a four fingered gathered left palm",
-          "timestamp": 843
-        },
-        {
-          "text": "When taking the second half step, lower the right elbow again and perform Araemakgi",
-          "timestamp": 849
-        },
-        {
-          "text": "Strike the right forearm with the left palm, and clench the fist",
-          "timestamp": 857
-        }
-      ]
-    },
-    {
-      "key": "diamond-side-punch",
-      "name": {
-        "en": "Diamond Side Punch",
-        "ko": "금강 옆지르기",
-        "romanized": "Geumgang Yeopjireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 285,
-      "video_timestamp_end": 302,
-      "tips": [
-        {
-          "text": "Both fists must not start Jireugi from the waist",
-          "timestamp": 296
-        }
-      ]
-    },
-    {
-      "key": "jumping-360-spinning-target-kick+diamond-side-punch",
-      "name": {
-        "en": "Jumping 360 Spinning Target Kick + Diamond Side Punch",
-        "ko": "뛰어 360° 돌아 표적차기 + 금강 옆지르기",
-        "romanized": "Ttwieo 360° Dora Pyokeokchagi + Geumgang Yeopjireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Start with Oreun Jageun Doljjeogwi, block your face, then connect with Jireugi",
-          "timestamp": 961
-        },
-        {
-          "text": "Shift your weight on your right foot for airborne Pyojeokchagi, and jump in the air by kicking the ground",
-          "timestamp": 975
-        },
-        {
-          "text": "The left foot will set on the ground while the body is spinning mid-air",
-          "timestamp": 992
-        },
-        {
-          "text": "Kick the palm of your left hand, the target, with your right foot blade before setting your foot",
-          "timestamp": 996
-        },
-        {
-          "text": "Your left foot must not touch the ground before kicking the target",
-          "timestamp": 1003
-        }
-      ]
-    },
-    {
-      "key": "spread-single-mountain-low-pressing-block",
-      "name": {
-        "en": "Spread Single Mountain Low Pressing Block",
-        "ko": "편본 외산틀 아래내려막기",
-        "romanized": "Pyeombon Oesanteul Arae Naeryeomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "flat-hand-single-mountain-low-pressing-block",
-      "name": {
-        "en": "Flat Hand Single Mountain Low Pressing Block",
-        "ko": "편손 외산틀 아래내려막기",
-        "romanized": "Pyeonson Oesanteul Arae Naeryeomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "mountain-pushing",
-      "name": {
-        "en": "Mountain Pushing",
-        "ko": "태산밀기",
-        "romanized": "Taesanmilgi"
-      },
-      "category": "strike",
-      "video_timestamp": 303,
-      "video_timestamp_end": 343,
-      "tips": [
-        {
-          "text": "Push the palm of your hand forward to lower abdomen elevation on the same side as the front foot",
-          "timestamp": 310
-        },
-        {
-          "text": "Push the palm hand forward to philtrum elevation on the same side as the hind foot",
-          "timestamp": 319
-        },
-        {
-          "text": "Both hands must form a straight line with the center line",
-          "timestamp": 328
-        },
-        {
-          "text": "Be careful not to let your shoulders rise",
-          "timestamp": 338
-        },
-        {
-          "text": "Bend the elbows at torso elevation, place them in front of the solar plexus",
-          "timestamp": 1034
-        },
-        {
-          "text": "Bring the palm of your hands close to your body",
-          "timestamp": 1100
-        }
-      ]
-    },
-    {
-      "key": "chestnut-fist-uppercut-strike",
-      "name": {
-        "en": "Chestnut Fist Uppercut Strike",
-        "ko": "밤주먹 치지르기",
-        "romanized": "Bamjumeok Chijireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 199,
-      "video_timestamp_end": 219,
-      "tips": [
-        {
-          "text": "The elbows should face downward and the armpits should touch the body",
-          "timestamp": 208
-        },
-        {
-          "text": "Be careful not to let the elbow open outward, creating space under the arm",
-          "timestamp": 213
         }
       ]
     },
@@ -401,7 +90,7 @@
       },
       "category": "block",
       "video_timestamp": 253,
-      "video_timestamp_end": 269,
+      "video_timestamp_end": 270,
       "tips": []
     },
     {
@@ -413,11 +102,51 @@
       },
       "category": "combination",
       "video_timestamp": 270,
-      "video_timestamp_end": 284,
+      "video_timestamp_end": 285,
+      "tips": []
+    },
+    {
+      "key": "diamond-side-punch",
+      "name": {
+        "en": "Diamond Side Punch",
+        "ko": "금강 옆지르기",
+        "romanized": "Geumgang Yeopjireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 285,
+      "video_timestamp_end": 303,
+      "tips": []
+    },
+    {
+      "key": "mountain-pushing",
+      "name": {
+        "en": "Mountain Pushing",
+        "ko": "태산밀기",
+        "romanized": "Taesanmilgi"
+      },
+      "category": "strike",
+      "video_timestamp": 303,
+      "video_timestamp_end": 344,
       "tips": [
         {
-          "text": "This move must also be performed smoothly in motion like Hwidulleomakgi",
-          "timestamp": 278
+          "text": "Push the palm of your hand forward to lower abdomen elevation",
+          "timestamp": 310
+        },
+        {
+          "text": "fo ‘ . Push the palm of your hand forward to lower abdomen elevation",
+          "timestamp": 311
+        },
+        {
+          "text": "j . q Push the palm of your hand forward to lower abdomen elevation",
+          "timestamp": 312
+        },
+        {
+          "text": "Ss Push the palm of your hand forward to lower abdomen elevation",
+          "timestamp": 313
+        },
+        {
+          "text": "Be careful not to let your shoulders rise",
+          "timestamp": 338
         }
       ]
     },
@@ -430,275 +159,208 @@
       },
       "category": "stance",
       "video_timestamp": 344,
-      "video_timestamp_end": 364,
+      "video_timestamp_end": 194,
       "tips": [
         {
-          "text": "For Oen Dwitgubi, Jajeunbal is a technique where you move while your center is placed on your left leg",
+          "text": "wf For Oen Dwitgubi, Jajeunbal is a technique",
           "timestamp": 346
         },
         {
-          "text": "Maintain the Dwitgubi posture by pulling your left foot the moment your right foot pushes and sets forward about a half step",
-          "timestamp": 351
+          "text": "For Oen Dwitgubi, Jajeunbal is a technique",
+          "timestamp": 347
         },
         {
-          "text": "Do not set your foot forward after pulling your hind leg",
-          "timestamp": 359
+          "text": "with the back of the hand facing upward",
+          "timestamp": 438
+        },
+        {
+          "text": "NS oy ye with the back of the hand facing upward",
+          "timestamp": 440
+        },
+        {
+          "text": "and block by twisting the torso",
+          "timestamp": 468
         }
       ]
+    },
+    {
+      "key": "en-hand-gama-jabaggeulmyeo+yeopchagi+oen-araemakgi",
+      "name": {
+        "en": "en-hand-gama-jabaggeulmyeo- + -yeopchagi- + -oen-araemakgi",
+        "ko": " +  + ",
+        "romanized": "en-hand-gama-jabaggeulmyeo- + -yeopchagi- + -oen-araemakgi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "anpalmok-geodeureo-bakkanmakgi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Anpalmok Geodeureo Bakkanmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "hwidulleomakgo-jireugi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Hwidulleomakgo Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "pyeombon-oesanteul-araemakgi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Pyeombon Oesanteul Araemakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "hand-jeocheonaemyeo-jabadanggyeo-oen-jireugi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Hand Jeocheonaemyeo Jabadanggyeo Oen Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "hand-jeocheonaemyeo-jabadanggyeo-oreun-jireugi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Hand Jeocheonaemyeo Jabadanggyeo Oreun Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "hand-gama-jabaggeulmyeo-jireugi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Hand Gama Jabaggeulmyeo Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "sonalbiteureomakgi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Sonalbiteureomakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 0,
-      "technique": "gyeopson-junbi",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 381,
-      "timestamp_end": 383
-    },
-    {
       "step": 1,
-      "technique": "wing-spreading",
-      "side": null,
+      "technique": "anpalmok-geodeureo-bakkanmakgi",
+      "side": "left",
       "direction": "forward",
-      "kihap": false,
-      "timestamp": 383,
-      "timestamp_end": 387
-    },
-    {
-      "step": 2,
-      "technique": "chestnut-fist-uppercut-strike",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 387,
-      "timestamp_end": 390
-    },
-    {
-      "step": 3,
-      "technique": "double-chestnut-fist-uppercut-strike",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 390,
-      "timestamp_end": 392
-    },
-    {
-      "step": 4,
-      "technique": "knifehand-middle-twisting-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 392,
-      "timestamp_end": 394
-    },
-    {
-      "step": 5,
-      "technique": "hand-grab-and-pull-middle-punch",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 394,
-      "timestamp_end": 399
-    },
-    {
-      "step": 6,
-      "technique": "knifehand-middle-twisting-block",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 399,
-      "timestamp_end": 402
-    },
-    {
-      "step": 7,
-      "technique": "hand-grab-and-pull-middle-punch",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 402,
-      "timestamp_end": 406
-    },
-    {
-      "step": 8,
-      "technique": "knifehand-middle-twisting-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 406,
-      "timestamp_end": 409
-    },
-    {
-      "step": 9,
-      "technique": "hand-grab-and-pull+side-kick+low-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": true,
-      "timestamp": 409,
-      "timestamp_end": 414
-    },
-    {
-      "step": 10,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 414,
-      "timestamp_end": 556
-    },
-    {
-      "step": 11,
-      "technique": "inner-forearm-assisted-middle-outward-block",
-      "side": "left",
-      "direction": "back-left",
       "kihap": false,
       "timestamp": 661,
-      "timestamp_end": 663
-    },
-    {
-      "step": 12,
-      "technique": "swinging-block+middle-punch",
-      "side": "left",
-      "direction": "back-left",
-      "kihap": false,
-      "timestamp": 663,
       "timestamp_end": 666
     },
     {
-      "step": 13,
-      "technique": "hand-reach-and-pull-middle-punch",
-      "side": "right",
-      "direction": "back-left",
+      "step": 2,
+      "technique": "hwidulleomakgo-jireugi",
+      "side": null,
+      "direction": "forward",
       "kihap": false,
       "timestamp": 666,
-      "timestamp_end": 670
+      "timestamp_end": 936
     },
     {
-      "step": 14,
-      "technique": "inner-forearm-assisted-middle-outward-block",
-      "side": "right",
-      "direction": "back-right",
+      "step": 3,
+      "technique": "pyeombon-oesanteul-araemakgi",
+      "side": null,
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 670,
+      "timestamp": 936,
+      "timestamp_end": 671
+    },
+    {
+      "step": 4,
+      "technique": "anpalmok-geodeureo-bakkanmakgi",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 671,
       "timestamp_end": 672
     },
     {
-      "step": 15,
-      "technique": "hand-reach-and-pull-middle-punch",
-      "side": "left",
-      "direction": "back-right",
+      "step": 5,
+      "technique": "hand-jeocheonaemyeo-jabadanggyeo-oen-jireugi",
+      "side": "right",
+      "direction": "forward",
       "kihap": false,
       "timestamp": 672,
       "timestamp_end": 675
     },
     {
-      "step": 16,
-      "technique": "hand-reach-and-pull-middle-punch",
+      "step": 6,
+      "technique": "hand-jeocheonaemyeo-jabadanggyeo-oreun-jireugi",
       "side": "right",
-      "direction": "back-right",
+      "direction": "forward",
       "kihap": false,
       "timestamp": 675,
-      "timestamp_end": 739
+      "timestamp_end": 402
     },
     {
-      "step": 17,
-      "technique": "inner-forearm-middle-twisting-block",
-      "side": "right",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 796,
-      "timestamp_end": 799
-    },
-    {
-      "step": 18,
-      "technique": "middle-punch",
-      "side": "left",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 799,
-      "timestamp_end": 800
-    },
-    {
-      "step": 19,
-      "technique": "front-kick+middle-punch",
-      "side": "right",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 800,
-      "timestamp_end": 803
-    },
-    {
-      "step": 20,
-      "technique": "knifehand-assisted-low-pressing-block",
-      "side": "right",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 803,
-      "timestamp_end": 806
-    },
-    {
-      "step": 21,
-      "technique": "inner-forearm-outward-block+assisted-low-pressing-block",
-      "side": "right",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 806,
-      "timestamp_end": 868
-    },
-    {
-      "step": 22,
-      "technique": "diamond-side-punch",
-      "side": "right",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 925,
-      "timestamp_end": 928
-    },
-    {
-      "step": 23,
-      "technique": "jumping-360-spinning-target-kick+diamond-side-punch",
-      "side": "right",
-      "direction": "left",
-      "kihap": true,
-      "timestamp": 928,
-      "timestamp_end": 933
-    },
-    {
-      "step": 24,
-      "technique": "spread-single-mountain-low-pressing-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 933,
-      "timestamp_end": 940
-    },
-    {
-      "step": 25,
-      "technique": "flat-hand-single-mountain-low-pressing-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 940,
-      "timestamp_end": 948
-    },
-    {
-      "step": 26,
-      "technique": "mountain-pushing",
+      "step": 7,
+      "technique": "hand-gama-jabaggeulmyeo-jireugi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 948,
-      "timestamp_end": 952
+      "timestamp": 402,
+      "timestamp_end": 410
     },
     {
-      "step": 27,
-      "technique": "mountain-pushing",
+      "step": 8,
+      "technique": "sonalbiteureomakgi",
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 952,
-      "timestamp_end": 1130
+      "timestamp": 410,
+      "timestamp_end": 414
+    },
+    {
+      "step": 9,
+      "technique": "en-hand-gama-jabaggeulmyeo+yeopchagi+oen-araemakgi",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 414,
+      "timestamp_end": 0
     }
   ]
 }

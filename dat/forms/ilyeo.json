@@ -5,11 +5,11 @@
     "ko": "일여"
   },
   "meaning": {
-    "en": "Oneness; the Buddhist concept that body and mind, matter and spirit are one"
+    "en": "Oneness / unity of mind and body"
   },
   "belt": null,
   "dan": 9,
-  "total_moves": 27,
+  "total_moves": 10,
   "video_id": "jWClKVOrqJ8",
   "video_duration_seconds": 1020,
   "sections": {
@@ -19,95 +19,14 @@
     },
     "breakdown": {
       "start": 151,
-      "end": 257
+      "end": 155
     },
     "explanation": {
-      "start": 257,
-      "end": 874
-    },
-    "repeat": {
-      "start": 874,
+      "start": 155,
       "end": 1020
     }
   },
   "techniques": [
-    {
-      "key": "junbi",
-      "name": {
-        "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-supported-block",
-      "name": {
-        "en": "Knifehand Supported Block",
-        "ko": "손날거들어막기",
-        "romanized": "Sonal Geodeureomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Pull the fist of the assisting arm to the back then perform Jireugi",
-          "timestamp": 301
-        },
-        {
-          "text": "Pull the assisting fist to the back during Sonal Geodeureomakgi, then connect to Jireugi",
-          "timestamp": 453
-        }
-      ]
-    },
-    {
-      "key": "middle-punch",
-      "name": {
-        "en": "Middle Punch",
-        "ko": "몸통지르기",
-        "romanized": "Momtong Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "diamond-block",
-      "name": {
-        "en": "Diamond Block",
-        "ko": "금강막기",
-        "romanized": "Geumgangmakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "vertical-spearhand-thrust",
-      "name": {
-        "en": "Vertical Spearhand Thrust",
-        "ko": "편손끝세워찌르기",
-        "romanized": "Pyeonsonkeut Sewojjireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "The right foot should set first and touch the ground",
-          "timestamp": 314
-        },
-        {
-          "text": "Complete Pyeonsonkeut Sewojjireugi the moment the back of the left foot blade touches the crook behind the right knee",
-          "timestamp": 317
-        },
-        {
-          "text": "The back of the hind foot blade stops momentum by touching the crook",
-          "timestamp": 329
-        }
-      ]
-    },
     {
       "key": "single-mountain-side-kick",
       "name": {
@@ -118,35 +37,38 @@
       "category": "combination",
       "video_timestamp": 159,
       "video_timestamp_end": 179,
-      "tips": [
-        {
-          "text": "Both hands and arms must move in unison",
-          "timestamp": 173
-        },
-        {
-          "text": "Start with the arm crossing in front of the chest",
-          "timestamp": 560
-        }
-      ]
+      "tips": []
     },
     {
-      "key": "cross-high-rising-block",
+      "key": "rising-block",
       "name": {
-        "en": "Cross High Rising Block",
-        "ko": "엇걸어얼굴올려막기",
-        "romanized": "Otgoreo Ulgul Ollyeomakgi"
+        "en": "Rising Block",
+        "ko": "얼굴(올려)막기",
+        "romanized": "Ulgul(Ollyeo)Makgi"
       },
       "category": "block",
       "video_timestamp": 179,
-      "video_timestamp_end": 215,
+      "video_timestamp_end": 240,
       "tips": [
         {
-          "text": "Both wrists should cross in front of the forehead",
-          "timestamp": 188
+          "text": "Put the back of the opposite . oe \\ ~",
+          "timestamp": 226
         },
         {
-          "text": "The wrists should be crossed diagonally",
-          "timestamp": 424
+          "text": "Put the back of the opposite ‘ aan \\ ~",
+          "timestamp": 227
+        },
+        {
+          "text": "Put the back of the opposite . wes \\ ~",
+          "timestamp": 228
+        },
+        {
+          "text": "Be careful not to perform the kick d",
+          "timestamp": 233
+        },
+        {
+          "text": "WBe careful not to perform the kick : -",
+          "timestamp": 234
         }
       ]
     },
@@ -158,55 +80,33 @@
         "romanized": "Ttwieo Yeopchagi"
       },
       "category": "kick",
-      "video_timestamp": 215,
-      "video_timestamp_end": 239,
-      "tips": [
-        {
-          "text": "Put the back of the opposite foot blade on the inside of the kicking leg",
-          "timestamp": 226
-        },
-        {
-          "text": "Be careful not to perform the kick after the body has already twisted",
-          "timestamp": 233
-        }
-      ]
-    },
-    {
-      "key": "ogeumseogi",
-      "name": {
-        "en": "Crane Stance",
-        "ko": "오금서기",
-        "romanized": "Ogeumseogi"
-      },
-      "category": "stance",
-      "video_timestamp": 240,
-      "video_timestamp_end": 253,
-      "tips": [
-        {
-          "text": "Place the back of the foot blade in the crook behind the supporting knee",
-          "timestamp": 243
-        },
-        {
-          "text": "The knees should face forward",
-          "timestamp": 247
-        }
-      ]
-    },
-    {
-      "key": "double-fist-waist",
-      "name": {
-        "en": "Double Fist Waist",
-        "ko": "두주먹허리",
-        "romanized": "Dujumeok Heori"
-      },
-      "category": "stance",
       "video_timestamp": 0,
-      "tips": [
-        {
-          "text": "Slowly straighten the body and pull the fists next to the back on both sides",
-          "timestamp": 638
-        }
-      ]
+      "video_timestamp_end": 159,
+      "tips": []
+    },
+    {
+      "key": "knifehand-supported-block",
+      "name": {
+        "en": "Knifehand Supported Block",
+        "ko": "손날거들어막기",
+        "romanized": "Sonal Geodeureomakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "vertical-spearhand-thrust",
+      "name": {
+        "en": "Vertical Spearhand Thrust",
+        "ko": "편손끝세워찌르기",
+        "romanized": "Pyeonsonkeut Sewojjireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     },
     {
       "key": "front-kick",
@@ -217,266 +117,169 @@
       },
       "category": "kick",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "ogeumseogi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Ogeumseogi"
+      },
+      "category": "stance",
+      "video_timestamp": 240,
+      "video_timestamp_end": 155,
       "tips": [
         {
-          "text": "Be careful not to lift the left heel when kicking",
-          "timestamp": 730
+          "text": "by placing the back of the foot blade \\ . i",
+          "timestamp": 243
+        },
+        {
+          "text": "Pull the fist of the assisting arm va Sy",
+          "timestamp": 301
+        },
+        {
+          "text": "Pull the fist of the assisting arm",
+          "timestamp": 302
+        },
+        {
+          "text": "the moment the back of the left foot blade oF",
+          "timestamp": 317
+        },
+        {
+          "text": "i the moment the back of the left foot blade",
+          "timestamp": 321
         }
       ]
+    },
+    {
+      "key": "otgoreo-ulgulmakgi-hasme",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Otgoreo Ulgulmakgi Hasme"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "otgoreo-ulgulmmakgi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Otgoreo Ulgulmmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "pyeonsonkeut-sewoujjireugi",
+      "name": {
+        "en": "",
+        "ko": "",
+        "romanized": "Pyeonsonkeut Sewoujjireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 0,
-      "technique": "junbi",
-      "side": null,
+      "step": 1,
+      "technique": "single-mountain-side-kick",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 262,
-      "timestamp_end": 269
-    },
-    {
-      "step": 1,
-      "technique": "knifehand-supported-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 269,
-      "timestamp_end": 272
+      "timestamp": 543,
+      "timestamp_end": 369
     },
     {
       "step": 2,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "left",
+      "technique": "otgoreo-ulgulmakgi-hasme",
+      "side": null,
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 272,
-      "timestamp_end": 274
+      "timestamp": 369,
+      "timestamp_end": 695
     },
     {
       "step": 3,
-      "technique": "diamond-block",
+      "technique": "otgoreo-ulgulmmakgi",
       "side": null,
-      "direction": "left",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 274,
-      "timestamp_end": 284
+      "timestamp": 695,
+      "timestamp_end": 285
     },
     {
       "step": 4,
       "technique": "knifehand-supported-block",
       "side": "left",
-      "direction": "right",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 284,
-      "timestamp_end": 286
+      "timestamp": 285,
+      "timestamp_end": 378
     },
     {
       "step": 5,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "right",
+      "technique": "knifehand-supported-block",
+      "side": "left",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 286,
+      "timestamp": 378,
       "timestamp_end": 288
     },
     {
       "step": 6,
       "technique": "vertical-spearhand-thrust",
       "side": "left",
-      "direction": "right",
+      "direction": "forward",
       "kihap": false,
       "timestamp": 288,
-      "timestamp_end": 337
+      "timestamp_end": 383
     },
     {
       "step": 7,
-      "technique": "single-mountain-side-kick",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 364,
-      "timestamp_end": 367
-    },
-    {
-      "step": 8,
-      "technique": "cross-high-rising-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 367,
-      "timestamp_end": 369
-    },
-    {
-      "step": 9,
-      "technique": "middle-punch",
+      "technique": "pyeonsonkeut-sewoujjireugi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 369,
-      "timestamp_end": 370
-    },
-    {
-      "step": 10,
-      "technique": "diamond-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 370,
-      "timestamp_end": 378
-    },
-    {
-      "step": 11,
-      "technique": "knifehand-supported-block",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 378,
-      "timestamp_end": 380
-    },
-    {
-      "step": 12,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 380,
-      "timestamp_end": 381
-    },
-    {
-      "step": 13,
-      "technique": "vertical-spearhand-thrust",
-      "side": "right",
-      "direction": "forward",
-      "kihap": true,
-      "timestamp": 381,
-      "timestamp_end": 500
-    },
-    {
-      "step": 14,
-      "technique": "single-mountain-side-kick",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 530,
-      "timestamp_end": 532
-    },
-    {
-      "step": 15,
-      "technique": "cross-high-rising-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 532,
-      "timestamp_end": 534
-    },
-    {
-      "step": 16,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 534,
-      "timestamp_end": 536
-    },
-    {
-      "step": 17,
-      "technique": "diamond-block",
-      "side": null,
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 536,
-      "timestamp_end": 543
-    },
-    {
-      "step": 18,
-      "technique": "double-fist-waist",
-      "side": null,
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 543,
-      "timestamp_end": 663
-    },
-    {
-      "step": 19,
-      "technique": "front-kick",
-      "side": "right",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 691,
-      "timestamp_end": 693
-    },
-    {
-      "step": 20,
-      "technique": "jumping-side-kick",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 693,
-      "timestamp_end": 695
-    },
-    {
-      "step": 21,
-      "technique": "cross-high-rising-block",
-      "side": null,
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 695,
-      "timestamp_end": 697
-    },
-    {
-      "step": 22,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 697,
-      "timestamp_end": 698
-    },
-    {
-      "step": 23,
-      "technique": "diamond-block",
-      "side": null,
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 698,
-      "timestamp_end": 703
-    },
-    {
-      "step": 24,
-      "technique": "double-fist-waist",
-      "side": null,
-      "direction": "back",
-      "kihap": false,
-      "timestamp": 703,
-      "timestamp_end": 706
-    },
-    {
-      "step": 25,
-      "technique": "front-kick",
-      "side": "left",
-      "direction": "back",
-      "kihap": false,
-      "timestamp": 706,
+      "timestamp": 383,
       "timestamp_end": 708
     },
     {
-      "step": 26,
+      "step": 8,
       "technique": "jumping-side-kick",
       "side": "right",
-      "direction": "back",
+      "direction": "forward",
       "kihap": false,
       "timestamp": 708,
       "timestamp_end": 711
     },
     {
-      "step": 27,
-      "technique": "cross-high-rising-block",
+      "step": 9,
+      "technique": "rising-block",
       "side": null,
-      "direction": "back",
-      "kihap": true,
+      "direction": "forward",
+      "kihap": false,
       "timestamp": 711,
-      "timestamp_end": 728
+      "timestamp_end": 695
+    },
+    {
+      "step": 71,
+      "technique": "front-kick",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 695,
+      "timestamp_end": 0
     }
   ]
 }

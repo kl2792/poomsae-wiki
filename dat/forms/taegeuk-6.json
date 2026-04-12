@@ -9,7 +9,7 @@
   },
   "belt": "3rd Geup",
   "dan": null,
-  "total_moves": 23,
+  "total_moves": 7,
   "video_id": "jcBwWo4wN7c",
   "video_duration_seconds": 835,
   "sections": {
@@ -19,81 +19,14 @@
     },
     "breakdown": {
       "start": 136,
-      "end": 337
+      "end": 141
     },
     "explanation": {
-      "start": 337,
-      "end": 730
-    },
-    "repeat": {
-      "start": 730,
+      "start": 141,
       "end": 835
     }
   },
   "techniques": [
-    {
-      "key": "junbi",
-      "name": {
-        "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "low-block",
-      "name": {
-        "en": "Low Block",
-        "ko": "아래막기",
-        "romanized": "Arae Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-high-twisting-block",
-      "name": {
-        "en": "Knifehand High Twisting Block",
-        "ko": "손날얼굴비틀어막기",
-        "romanized": "Sonal Ulgul Biteureomakgi"
-      },
-      "category": "block",
-      "video_timestamp": 147,
-      "video_timestamp_end": 190,
-      "tips": [
-        {
-          "text": "Your arms should cross and pass in front of your face",
-          "timestamp": 164
-        },
-        {
-          "text": "Your blocking arm should cross outside your assisting arm",
-          "timestamp": 172
-        },
-        {
-          "text": "Be careful not to let your hand blade move outside the end of the line from your shoulder",
-          "timestamp": 177
-        },
-        {
-          "text": "The knee of your hind leg should not bend, and your sole must not leave the ground",
-          "timestamp": 183
-        }
-      ]
-    },
-    {
-      "key": "roundhouse-kick",
-      "name": {
-        "en": "Roundhouse Kick",
-        "ko": "돌려차기",
-        "romanized": "Dollyeochagi"
-      },
-      "category": "kick",
-      "video_timestamp": 191,
-      "video_timestamp_end": 218,
-      "tips": []
-    },
     {
       "key": "high-outward-block",
       "name": {
@@ -102,18 +35,9 @@
         "romanized": "Ulgul Bakkanmakgi"
       },
       "category": "block",
-      "video_timestamp": 219,
-      "video_timestamp_end": 252,
-      "tips": [
-        {
-          "text": "Your blocking arm should cross past your face from outside your assisting arm to perform the Bakkanmakgi",
-          "timestamp": 226
-        },
-        {
-          "text": "Your elbow should point downward, your fist upward, and at a philtrum elevation",
-          "timestamp": 235
-        }
-      ]
+      "video_timestamp": 0,
+      "video_timestamp_end": 147,
+      "tips": []
     },
     {
       "key": "low-spreading-block",
@@ -124,313 +48,241 @@
       },
       "category": "block",
       "video_timestamp": 253,
-      "video_timestamp_end": 288,
+      "video_timestamp_end": 289,
       "tips": [
         {
-          "text": "Your arms should straighten naturally",
+          "text": "your arms should straighten naturally",
           "timestamp": 272
         },
         {
-          "text": "The space between your fist and legs should be about two raised fists length",
+          "text": "L q 4 your arms should straighten naturally",
+          "timestamp": 273
+        },
+        {
+          "text": "mee your arms should straighten naturally",
+          "timestamp": 274
+        },
+        {
+          "text": "should be about two raised fists length",
           "timestamp": 276
         },
         {
-          "text": "The back of your hammer fist and your front thigh should be aligned when seen from the front",
-          "timestamp": 281
+          "text": "aN should be about two raised fists length",
+          "timestamp": 279
         }
       ]
     },
     {
-      "key": "palmheel-middle-inward-block",
+      "key": "palm-inward-block",
       "name": {
-        "en": "Palmheel Middle Inward Block",
-        "ko": "바탕손몸통안막기",
-        "romanized": "Batangson Momtong Anmakgi"
+        "en": "Palm Inward Block",
+        "ko": "바탕손안막기",
+        "romanized": "Batangson An Makgi"
       },
       "category": "block",
       "video_timestamp": 289,
-      "video_timestamp_end": 335,
+      "video_timestamp_end": 141,
       "tips": [
         {
-          "text": "The palm of your hand should be placed in front of your solar plexus",
+          "text": "WY the palm of your hand should be placed a -—",
           "timestamp": 307
         },
         {
-          "text": "Your armpit should be touching your body",
+          "text": "your armpit should be touching your body ~ \\ H »\"",
           "timestamp": 312
         },
         {
-          "text": "Your elbow should point downward",
+          "text": "WM yYour elbow should point downward",
           "timestamp": 315
         },
         {
-          "text": "Be careful not to let your armpits move away from your body",
+          "text": "We careful not to let your armpits 7",
           "timestamp": 669
         },
         {
-          "text": "Your elbows should point downward",
-          "timestamp": 673
+          "text": "WBe careful not to let your armpits i",
+          "timestamp": 671
         }
       ]
     },
     {
-      "key": "knifehand-supported-block",
+      "key": "knifehand-high-twisting-block",
       "name": {
-        "en": "Knifehand Supported Block",
-        "ko": "손날거들어막기",
-        "romanized": "Sonal Geodeureomakgi"
+        "en": "Knifehand High Twisting Block",
+        "ko": "손날얼굴비틀어막기",
+        "romanized": "Sonal Ulgul Biteureomakgi"
       },
       "category": "block",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "front-kick+middle-outward-block",
+      "key": "dollyeochagi+oen-bakkanmakgi+oreun-jireug",
       "name": {
-        "en": "Front Kick + Middle Outward Block",
-        "ko": "앞차기 + 몸통바깥막기",
-        "romanized": "Ap Chagi + Momtong Bakkanmakgi"
+        "en": "dollyeochagi- + -oen-bakkanmakgi- + -oreun-jireug",
+        "ko": " +  + ",
+        "romanized": "dollyeochagi- + -oen-bakkanmakgi- + -oreun-jireug"
       },
       "category": "combination",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "high-roundhouse-kick+high-outward-block+middle-punch",
+      "key": "side-punch",
       "name": {
-        "en": "High Roundhouse Kick + High Outward Block + Middle Punch",
-        "ko": "얼굴돌려차기 + 얼굴바깥막기 + 몸통지르기",
-        "romanized": "Ulgul Dollyeochagi + Ulgul Bakkanmakgi + Momtong Jireugi"
+        "en": "Side Punch",
+        "ko": "옆지르기",
+        "romanized": "Yeop Jireugi"
       },
-      "category": "combination",
+      "category": "strike",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "front-kick+middle-punch",
+      "key": "front-kick+outward-block",
       "name": {
-        "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기",
-        "romanized": "Apchagi + Momtong Jireugi"
+        "en": "Front Kick + Outward Block",
+        "ko": "앞차기 + 바깥막기",
+        "romanized": "Ap Chagi + Bakkanmakgi"
       },
       "category": "combination",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "high-outward-block+middle-punch",
+      "key": "",
       "name": {
-        "en": "High Outward Block + Middle Punch",
-        "ko": "얼굴바깥막기 + 몸통지르기",
-        "romanized": "Ulgul Bakkanmakgi + Momtong Jireugi"
+        "en": "",
+        "ko": "",
+        "romanized": "Sonal Ul Biteureomakgi"
       },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": []
+      "category": "block",
+      "video_timestamp": 147,
+      "video_timestamp_end": 191,
+      "tips": [
+        {
+          "text": "i Wour arms should cross and pass",
+          "timestamp": 164
+        },
+        {
+          "text": "a Wour arms should cross and pass",
+          "timestamp": 165
+        },
+        {
+          "text": "Wour arms should cross and pass",
+          "timestamp": 166
+        },
+        {
+          "text": "Mvour blocking arm should cross outside",
+          "timestamp": 172
+        },
+        {
+          "text": "WM Your blocking arm should cross outside",
+          "timestamp": 175
+        }
+      ]
     },
     {
-      "key": "high-roundhouse-kick+low-block",
+      "key": "dollyegchagi",
       "name": {
-        "en": "High Roundhouse Kick + Low Block",
-        "ko": "얼굴돌려차기 + 아래막기",
-        "romanized": "Ulgul Dollyeochagi + Arae Makgi"
+        "en": "",
+        "ko": "",
+        "romanized": "Dollyegchagi"
       },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "palmheel-middle-inward-block+middle-punch",
-      "name": {
-        "en": "Palmheel Middle Inward Block + Middle Punch",
-        "ko": "바탕손몸통안막기 + 몸통지르기",
-        "romanized": "Batangson Momtong Anmakgi + Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "tips": []
+      "category": "kick",
+      "video_timestamp": 191,
+      "video_timestamp_end": 253,
+      "tips": [
+        {
+          "text": "Vv Wour blocking arm should cross past",
+          "timestamp": 226
+        },
+        {
+          "text": "i Wvour blocking arm should cross past",
+          "timestamp": 227
+        },
+        {
+          "text": "Wvour blocking arm should cross past",
+          "timestamp": 230
+        },
+        {
+          "text": "Wyour blocking arm should cross past",
+          "timestamp": 231
+        },
+        {
+          "text": "Wvour blocking arm should cross past",
+          "timestamp": 234
+        }
+      ]
     }
   ],
   "sequence": [
     {
-      "step": 0,
-      "technique": "junbi",
+      "step": 1,
+      "technique": "knifehand-high-twisting-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 340,
-      "timestamp_end": 344
-    },
-    {
-      "step": 1,
-      "technique": "low-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 344,
-      "timestamp_end": 350
-    },
-    {
-      "step": 2,
-      "technique": "front-kick+middle-outward-block",
-      "side": "right",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 350,
-      "timestamp_end": 355
-    },
-    {
-      "step": 3,
-      "technique": "low-block",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 355,
-      "timestamp_end": 360
-    },
-    {
-      "step": 4,
-      "technique": "front-kick+middle-outward-block",
-      "side": "left",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 360,
-      "timestamp_end": 370
-    },
-    {
-      "step": 5,
-      "technique": "knifehand-high-twisting-block",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 411,
+      "timestamp": 148,
       "timestamp_end": 413
     },
     {
-      "step": 6,
-      "technique": "high-roundhouse-kick+high-outward-block+middle-punch",
+      "step": 2,
+      "technique": "dollyeochagi+oen-bakkanmakgi+oreun-jireug",
       "side": "right",
       "direction": "forward",
       "kihap": false,
       "timestamp": 413,
-      "timestamp_end": 420
+      "timestamp_end": 626
     },
     {
-      "step": 7,
-      "technique": "front-kick+middle-punch",
-      "side": "right",
+      "step": 3,
+      "technique": "palm-inward-block",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 420,
+      "timestamp": 626,
       "timestamp_end": 423
     },
     {
-      "step": 8,
-      "technique": "high-outward-block+middle-punch",
+      "step": 4,
+      "technique": "side-punch",
       "side": "right",
-      "direction": "backward",
+      "direction": "forward",
       "kihap": false,
       "timestamp": 423,
-      "timestamp_end": 426
+      "timestamp_end": 532
     },
     {
-      "step": 9,
-      "technique": "front-kick+middle-punch",
-      "side": "left",
-      "direction": "backward",
+      "step": 5,
+      "technique": "front-kick+outward-block",
+      "side": "right",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 426,
+      "timestamp": 532,
       "timestamp_end": 428
     },
     {
-      "step": 10,
+      "step": 6,
       "technique": "low-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
       "timestamp": 428,
-      "timestamp_end": 435
+      "timestamp_end": 417
     },
     {
-      "step": 11,
+      "step": 7,
       "technique": "knifehand-high-twisting-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 522,
-      "timestamp_end": 524
-    },
-    {
-      "step": 12,
-      "technique": "high-roundhouse-kick+low-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 524,
-      "timestamp_end": 527
-    },
-    {
-      "step": 13,
-      "technique": "front-kick+middle-outward-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 527,
-      "timestamp_end": 530
-    },
-    {
-      "step": 14,
-      "technique": "low-block",
-      "side": "left",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 530,
-      "timestamp_end": 532
-    },
-    {
-      "step": 15,
-      "technique": "front-kick+middle-outward-block",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 532,
-      "timestamp_end": 537
-    },
-    {
-      "step": 16,
-      "technique": "knifehand-supported-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 621,
-      "timestamp_end": 624
-    },
-    {
-      "step": 17,
-      "technique": "knifehand-supported-block",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 624,
-      "timestamp_end": 626
-    },
-    {
-      "step": 18,
-      "technique": "palmheel-middle-inward-block+middle-punch",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 626,
-      "timestamp_end": 629
-    },
-    {
-      "step": 19,
-      "technique": "palmheel-middle-inward-block+middle-punch",
       "side": "right",
       "direction": "forward",
-      "kihap": true,
-      "timestamp": 629,
-      "timestamp_end": 634
+      "kihap": false,
+      "timestamp": 417,
+      "timestamp_end": 0
     }
   ]
 }

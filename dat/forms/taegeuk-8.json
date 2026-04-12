@@ -9,7 +9,7 @@
   },
   "belt": "1st Geup",
   "dan": null,
-  "total_moves": 24,
+  "total_moves": 8,
   "video_id": "Gr_Je2ZkgkI",
   "video_duration_seconds": 1025,
   "sections": {
@@ -19,10 +19,10 @@
     },
     "breakdown": {
       "start": 167,
-      "end": 362
+      "end": 172
     },
     "explanation": {
-      "start": 362,
+      "start": 172,
       "end": 916
     },
     "repeat": {
@@ -31,18 +31,6 @@
     }
   },
   "techniques": [
-    {
-      "key": "ready-stance",
-      "name": {
-        "en": "Ready Stance",
-        "ko": "기본 준비자세",
-        "romanized": "Gibon Junbijase"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "video_timestamp_end": null,
-      "tips": []
-    },
     {
       "key": "double-jumping-front-kick",
       "name": {
@@ -53,43 +41,38 @@
       "category": "kick",
       "video_timestamp": 177,
       "video_timestamp_end": 199,
-      "tips": [
-        {
-          "text": "The first Balchagi lightly kicks a target at the torso level",
-          "timestamp": 188
-        },
-        {
-          "text": "The second Balchagi kicks a target higher with the other foot",
-          "timestamp": 191
-        }
-      ]
+      "tips": []
     },
     {
-      "key": "assisted-outward-block",
+      "key": "palm-assisted-outer-block",
       "name": {
-        "en": "Assisted Outward Block",
-        "ko": "거들어바깥막기",
-        "romanized": "Geodeureo Bakkat Makgi"
+        "en": "Palm-Assisted Outer Block",
+        "ko": "손바닥거들어바깥막기",
+        "romanized": "Sonbadak Geodeureo Bakkanmakgi"
       },
       "category": "block",
       "video_timestamp": 199,
       "video_timestamp_end": 236,
       "tips": [
         {
-          "text": "The fist blocking the torso should be placed at the solar plexus level",
+          "text": "the fist blocking the torso should be placed aq Ve",
           "timestamp": 213
         },
         {
-          "text": "The assisting hand is placed level with the blocking elbow",
+          "text": "the assisting hand is placed level au 7} ‘-",
           "timestamp": 216
         },
         {
-          "text": "Be careful not to let the blocking hand move outside the outer line of the body",
+          "text": "g . Be careful not to let the blocking hand",
           "timestamp": 223
         },
         {
-          "text": "Do not let the assisting armpit detach from the body (raising the elbow)",
-          "timestamp": 228
+          "text": "C Be careful not to let the blocking hand",
+          "timestamp": 224
+        },
+        {
+          "text": "Be careful not to let the blocking hand",
+          "timestamp": 225
         }
       ]
     },
@@ -105,11 +88,23 @@
       "video_timestamp_end": 275,
       "tips": [
         {
-          "text": "The wrist of the arm performing Anpalmok Ulgul Bakkanmakgi should be level with the philtrum",
+          "text": "YW The wrist of the arm performing Anpalmok",
           "timestamp": 249
         },
         {
-          "text": "The arm performing Araemakgi should be about two raised fists apart from your adjacent leg",
+          "text": "YW Tthe wrist of the arm performing Anpalmok",
+          "timestamp": 251
+        },
+        {
+          "text": "A YW the wrist of the arm performing Anpalmok",
+          "timestamp": 252
+        },
+        {
+          "text": "rN YM should be level with the philtrum,",
+          "timestamp": 254
+        },
+        {
+          "text": "should be about two raised fists apart ca",
           "timestamp": 256
         }
       ]
@@ -126,24 +121,16 @@
       "video_timestamp_end": 320,
       "tips": [
         {
-          "text": "The Jireugi starts at the chest line with the fist pulled back",
-          "timestamp": 289
-        },
-        {
-          "text": "The fist performing Jireugi passes by the wrist being pulled back and reaches the target",
-          "timestamp": 293
-        },
-        {
-          "text": "Do not let the hammer fist touch the front of the shoulder performing Jireugi",
+          "text": "Not to let the hammer fist touch the a ‘ ze",
           "timestamp": 303
         },
         {
-          "text": "Be careful not to let the fist start at the back and perform Jireugi upward like Chijireugi",
+          "text": "WY Be careful not to let the fist start",
           "timestamp": 311
         },
         {
-          "text": "The pulling arm should be free from unnecessary force",
-          "timestamp": 518
+          "text": "WY Be careful not to let the fist start",
+          "timestamp": 312
         }
       ]
     },
@@ -159,12 +146,24 @@
       "video_timestamp_end": 338,
       "tips": [
         {
-          "text": "The blocking hand should maintain a space of two raised fists above the knee set forward",
+          "text": "YW the blocking hand should maintain a,",
           "timestamp": 324
         },
         {
-          "text": "The assisting hand should be level with the elbow that performs the block",
+          "text": "Whe assisting hand should be level",
           "timestamp": 333
+        },
+        {
+          "text": "Bs A WY the assisting hand should be level",
+          "timestamp": 334
+        },
+        {
+          "text": "Bs A WM the assisting hand should be level",
+          "timestamp": 335
+        },
+        {
+          "text": "x Ey W the assisting hand should be level",
+          "timestamp": 336
         }
       ]
     },
@@ -177,84 +176,64 @@
       },
       "category": "kick",
       "video_timestamp": 338,
-      "video_timestamp_end": 358,
+      "video_timestamp_end": 172,
       "tips": [
         {
-          "text": "The kick must complete at the peak of your jump",
-          "timestamp": 348
+          "text": "W the pulling arm should be free",
+          "timestamp": 518
+        },
+        {
+          "text": "the pulling arm should be free",
+          "timestamp": 519
         }
       ]
     },
     {
-      "key": "middle-punch",
+      "key": "front-kick+jumping-front-kick",
       "name": {
-        "en": "Middle Punch",
-        "ko": "몸통지르기",
-        "romanized": "Momtong Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "video_timestamp_end": null,
-      "tips": []
-    },
-    {
-      "key": "double-jumping-front-kick+inward-middle-block+middle-double-punch",
-      "name": {
-        "en": "Double Jumping Front Kick + Inward Middle Block + Middle Double Punch",
-        "ko": "두발당성차기 + 몸통안막기 + 몸통두번지르기",
-        "romanized": "Dubal Dangseong Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
+        "en": "Front Kick + Jumping Front Kick",
+        "ko": "앞차기 + 뛰어앞차기",
+        "romanized": "Ap Chagi + Ttwieo Ap Chagi"
       },
       "category": "combination",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "knifehand-block",
+      "key": "double-jumping-front-kick+inward-block+double-punch",
       "name": {
-        "en": "Knifehand Block",
-        "ko": "손날막기",
-        "romanized": "Sonnal Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "video_timestamp_end": null,
-      "tips": []
-    },
-    {
-      "key": "front-kick+palm-inward-block",
-      "name": {
-        "en": "Front Kick + Palm Inward Block",
-        "ko": "앞차기 + 바탕손안막기",
-        "romanized": "Ap Chagi + Batangson An Makgi"
+        "en": "Double Jumping Front Kick + Inward Block + Double Punch",
+        "ko": "두발당성차기 + 안막기 + 두번지르기",
+        "romanized": "Dubal Dangseong Chagi + Anmakgi + Double Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "knifehand-assisted-block",
+      "key": "palggumchi-dollyeochigi+oreun-deungjumeok-apchigi",
       "name": {
-        "en": "Knifehand Assisted Block",
-        "ko": "손날거들어막기",
-        "romanized": "Sonnal Geodeureo Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "video_timestamp_end": null,
-      "tips": []
-    },
-    {
-      "key": "front-kick+middle-punch",
-      "name": {
-        "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기",
-        "romanized": "Apchagi + Momtong Jireugi"
+        "en": "palggumchi-dollyeochigi- + -oreun-deungjumeok-apchigi",
+        "ko": " + ",
+        "romanized": "palggumchi-dollyeochigi- + -oreun-deungjumeok-apchigi"
       },
       "category": "combination",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "apchagi+oen-jireugi",
+      "name": {
+        "en": "apchagi- + -oen-jireugi",
+        "ko": " + ",
+        "romanized": "apchagi- + -oen-jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
@@ -266,280 +245,106 @@
       },
       "category": "block",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
+      "key": "elbow-swing-strike",
       "name": {
-        "en": "Front Kick + Jumping Front Kick + Inward Middle Block + Middle Double Punch",
-        "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기",
-        "romanized": "Ap Chagi + Ttwieo Ap Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
+        "en": "Elbow Swing Strike",
+        "ko": "팔꿈치돌려치기",
+        "romanized": "Palggumchi Dollyeochigi"
       },
-      "category": "combination",
+      "category": "strike",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "knifehand-outward-block",
+      "key": "side-punch",
       "name": {
-        "en": "Knifehand Outward Block",
-        "ko": "손날바깥막기",
-        "romanized": "Sonal Bakkanmakgi"
+        "en": "Side Punch",
+        "ko": "옆지르기",
+        "romanized": "Yeop Jireugi"
       },
-      "category": "block",
+      "category": "strike",
       "video_timestamp": 0,
-      "video_timestamp_end": null,
-      "tips": []
-    },
-    {
-      "key": "elbow-spinning-strike+backfist-front-strike",
-      "name": {
-        "en": "Elbow Spinning Strike + Backfist Front Strike",
-        "ko": "팔꿈치돌려치기 + 등주먹앞치기",
-        "romanized": "Palkkumchi Dollyeo Chigi + Deungjumeok Apchigi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": null,
+      "video_timestamp_end": 0,
       "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 0,
-      "technique": "ready-stance",
+      "step": 1,
+      "technique": "assisted-low-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 368,
-      "timestamp_end": 371
-    },
-    {
-      "step": 1,
-      "technique": "assisted-outward-block",
-      "side": "left",
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 371,
-      "timestamp_end": 374
+      "timestamp": 771,
+      "timestamp_end": 775
     },
     {
       "step": 2,
-      "technique": "middle-punch",
-      "side": "right",
+      "technique": "front-kick+jumping-front-kick",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 374,
-      "timestamp_end": 376
+      "timestamp": 775,
+      "timestamp_end": 380
     },
     {
       "step": 3,
-      "technique": "double-jumping-front-kick+inward-middle-block+middle-double-punch",
-      "side": "left+left+both",
-      "direction": "right-180",
+      "technique": "double-jumping-front-kick+inward-block+double-punch",
+      "side": null,
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 376,
-      "timestamp_end": 383
+      "timestamp": 380,
+      "timestamp_end": 787
     },
     {
       "step": 4,
-      "technique": "middle-punch",
+      "technique": "palggumchi-dollyeochigi+oreun-deungjumeok-apchigi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 383,
-      "timestamp_end": 476
+      "timestamp": 787,
+      "timestamp_end": 666
     },
     {
       "step": 5,
-      "technique": "single-mountain-block",
-      "side": null,
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 476,
-      "timestamp_end": 479
-    },
-    {
-      "step": 6,
-      "technique": "pulling-punch",
+      "technique": "apchagi+oen-jireugi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 479,
-      "timestamp_end": 488
-    },
-    {
-      "step": 7,
-      "technique": "single-mountain-block",
-      "side": null,
-      "direction": "right-180",
-      "kihap": false,
-      "timestamp": 488,
-      "timestamp_end": 491
-    },
-    {
-      "step": 8,
-      "technique": "pulling-punch",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 491,
-      "timestamp_end": 500
-    },
-    {
-      "step": 9,
-      "technique": "knifehand-block",
-      "side": "left",
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 500,
-      "timestamp_end": 502
-    },
-    {
-      "step": 10,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 502,
-      "timestamp_end": 505
-    },
-    {
-      "step": 11,
-      "technique": "front-kick+palm-inward-block",
-      "side": "right+right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 505,
-      "timestamp_end": 652
-    },
-    {
-      "step": 12,
-      "technique": "knifehand-assisted-block",
-      "side": "left",
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 652,
-      "timestamp_end": 655
-    },
-    {
-      "step": 13,
-      "technique": "front-kick+middle-punch",
-      "side": "left+right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 655,
-      "timestamp_end": 659
-    },
-    {
-      "step": 14,
-      "technique": "palm-inward-block",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 659,
-      "timestamp_end": 662
-    },
-    {
-      "step": 15,
-      "technique": "knifehand-assisted-block",
-      "side": "right",
-      "direction": "right-180",
-      "kihap": false,
-      "timestamp": 662,
-      "timestamp_end": 664
-    },
-    {
-      "step": 16,
-      "technique": "front-kick+middle-punch",
-      "side": "right+left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 664,
+      "timestamp": 666,
       "timestamp_end": 669
     },
     {
-      "step": 17,
+      "step": 6,
       "technique": "palm-inward-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
       "timestamp": 669,
-      "timestamp_end": 771
+      "timestamp_end": 801
     },
     {
-      "step": 18,
-      "technique": "assisted-low-block",
-      "side": null,
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 771,
-      "timestamp_end": 773
-    },
-    {
-      "step": 19,
-      "technique": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
-      "side": "left+right+right+both",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 773,
-      "timestamp_end": 782
-    },
-    {
-      "step": 20,
-      "technique": "knifehand-outward-block",
-      "side": "left",
-      "direction": "left-90",
-      "kihap": false,
-      "timestamp": 782,
-      "timestamp_end": 786
-    },
-    {
-      "step": 21,
-      "technique": "elbow-spinning-strike+backfist-front-strike",
-      "side": "right+right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 786,
-      "timestamp_end": 792
-    },
-    {
-      "step": 22,
-      "technique": "middle-punch",
+      "step": 7,
+      "technique": "elbow-swing-strike",
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 792,
-      "timestamp_end": 795
-    },
-    {
-      "step": 23,
-      "technique": "knifehand-outward-block",
-      "side": "right",
-      "direction": "right-180",
-      "kihap": false,
-      "timestamp": 795,
-      "timestamp_end": 798
-    },
-    {
-      "step": 24,
-      "technique": "elbow-spinning-strike+backfist-front-strike",
-      "side": "left+left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 798,
+      "timestamp": 801,
       "timestamp_end": 803
     },
     {
-      "step": 25,
-      "technique": "middle-punch",
+      "step": 8,
+      "technique": "side-punch",
       "side": "right",
       "direction": "forward",
-      "kihap": true,
+      "kihap": false,
       "timestamp": 803,
-      "timestamp_end": 810
+      "timestamp_end": 0
     }
   ]
 }

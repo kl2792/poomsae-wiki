@@ -9,7 +9,7 @@
   },
   "belt": "6th Geup",
   "dan": null,
-  "total_moves": 20,
+  "total_moves": 7,
   "video_id": "ksSqKt0UkWo",
   "video_duration_seconds": 836,
   "sections": {
@@ -19,10 +19,10 @@
     },
     "breakdown": {
       "start": 138,
-      "end": 334
+      "end": 143
     },
     "explanation": {
-      "start": 334,
+      "start": 143,
       "end": 748
     },
     "repeat": {
@@ -32,28 +32,6 @@
   },
   "techniques": [
     {
-      "key": "junbi",
-      "name": {
-        "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "low-block",
-      "name": {
-        "en": "Low Block",
-        "ko": "아래막기",
-        "romanized": "Arae Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
       "key": "knifehand-strike",
       "name": {
         "en": "Knifehand Strike",
@@ -62,27 +40,27 @@
       },
       "category": "strike",
       "video_timestamp": 147,
-      "video_timestamp_end": 227,
+      "video_timestamp_end": 228,
       "tips": [
         {
-          "text": "Place the four fingers from the index finger together",
+          "text": "place the four fingers from the index",
           "timestamp": 163
         },
         {
-          "text": "Place the wrist of the thrusting arm at shoulder level, and the supporting arm at the solar plexus level",
+          "text": "WM place the wrist of the thrusting arm + ‘ = .",
           "timestamp": 189
         },
         {
-          "text": "Perform the Sonal Anchigi move by pulling both elbows towards your body",
+          "text": "by pulling both elbows towards your body =",
           "timestamp": 203
         },
         {
-          "text": "The wrist of the striking hand should be straight",
+          "text": "WM The wrist of the striking hand",
           "timestamp": 219
         },
         {
-          "text": "Your hand blade should be raised near your neck level",
-          "timestamp": 224
+          "text": "WM The wrist of the strikinghand",
+          "timestamp": 221
         }
       ]
     },
@@ -95,23 +73,27 @@
       },
       "category": "block",
       "video_timestamp": 228,
-      "video_timestamp_end": 276,
+      "video_timestamp_end": 277,
       "tips": [
         {
-          "text": "The defending arm and supporting arm should be placed on the outside and inside respectively when the arms are crossed",
+          "text": "should be placed on the outside",
           "timestamp": 246
         },
         {
-          "text": "The tip of the hand of the defending arm should not be above the shoulder when defending",
+          "text": "i \\ should be placed on the outside",
+          "timestamp": 250
+        },
+        {
+          "text": "a should not be above the shoulder",
           "timestamp": 258
         },
         {
-          "text": "Be careful not to let the wrist bend",
-          "timestamp": 268
+          "text": "t should not be above the shoulder",
+          "timestamp": 259
         },
         {
-          "text": "The hand blade should not be outside the end of the line extending from the torso",
-          "timestamp": 272
+          "text": "should not be above the shoulder",
+          "timestamp": 260
         }
       ]
     },
@@ -124,18 +106,10 @@
       },
       "category": "stance",
       "video_timestamp": 277,
-      "video_timestamp_end": 308,
+      "video_timestamp_end": 309,
       "tips": [
         {
-          "text": "Your feet should form a 90° angle",
-          "timestamp": 281
-        },
-        {
-          "text": "The direction of your knees and feet should be identical",
-          "timestamp": 288
-        },
-        {
-          "text": "The center of your body should be 2/3 towards the back",
+          "text": "should be 2/3 towards the back",
           "timestamp": 292
         }
       ]
@@ -149,186 +123,127 @@
       },
       "category": "strike",
       "video_timestamp": 309,
-      "video_timestamp_end": 328,
+      "video_timestamp_end": 143,
       "tips": [
         {
-          "text": "Control your breath and quickly perform the Jireugi as if pulling your elbows to your waist",
-          "timestamp": 318
-        },
-        {
-          "text": "The force exerted and speed of your arms must be in balance",
-          "timestamp": 323
+          "text": "naturally straighten your right arm forward,",
+          "timestamp": 427
         }
       ]
     },
     {
-      "key": "front-kick+double-punch",
+      "key": "araemakgi+oreun-jireugi",
       "name": {
-        "en": "Front Kick + Double Punch",
-        "ko": "앞차기 + 두번지르기",
-        "romanized": "Ap Chagi + Double Jireugi"
+        "en": "araemakgi- + -oreun-jireugi",
+        "ko": " + ",
+        "romanized": "araemakgi- + -oreun-jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "middle-punch",
+      "key": "araemakgi+oen-jireugi",
       "name": {
-        "en": "Middle Punch",
-        "ko": "몸통지르기",
-        "romanized": "Momtong Jireugi"
+        "en": "araemakgi- + -oen-jireugi",
+        "ko": " + ",
+        "romanized": "araemakgi- + -oen-jireugi"
       },
-      "category": "strike",
+      "category": "combination",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "middle-inside-block",
+      "key": "apchagi+oen-araemakgi+oreun-jireugi",
       "name": {
-        "en": "Middle Inside Block",
-        "ko": "몸통안막기",
-        "romanized": "Momtong Anmakgi"
+        "en": "apchagi- + -oen-araemakgi- + -oreun-jireugi",
+        "ko": " +  + ",
+        "romanized": "apchagi- + -oen-araemakgi- + -oreun-jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "apchagi+oreun-makgi+oen-jireugi",
+      "name": {
+        "en": "apchagi- + -oreun-makgi- + -oen-jireugi",
+        "ko": " +  + ",
+        "romanized": "apchagi- + -oreun-makgi- + -oen-jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "inward-block",
+      "name": {
+        "en": "Inward Block",
+        "ko": "안막기",
+        "romanized": "Anmakgi"
       },
       "category": "block",
       "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "low-block+middle-punch",
+      "key": "low-block",
       "name": {
-        "en": "Low Block + Middle Punch",
-        "ko": "아래막기 + 몸통지르기",
-        "romanized": "Arae Makgi + Momtong Jireugi"
+        "en": "Low Block",
+        "ko": "아래막기",
+        "romanized": "Arae Makgi"
       },
-      "category": "combination",
+      "category": "block",
       "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "front-kick+low-block+middle-punch",
-      "name": {
-        "en": "Front Kick + Low Block + Middle Punch",
-        "ko": "앞차기 + 아래막기 + 몸통지르기",
-        "romanized": "Ap Chagi + Arae Makgi + Momtong Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
+      "video_timestamp_end": 0,
       "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 0,
-      "technique": "junbi",
-      "side": null,
+      "step": 1,
+      "technique": "araemakgi+oreun-jireugi",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 340,
-      "timestamp_end": 343
-    },
-    {
-      "step": 1,
-      "technique": "low-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 343,
-      "timestamp_end": 345
+      "timestamp": 676,
+      "timestamp_end": 680
     },
     {
       "step": 2,
-      "technique": "front-kick+double-punch",
+      "technique": "araemakgi+oen-jireugi",
       "side": "right",
-      "direction": "left",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 345,
-      "timestamp_end": 350
+      "timestamp": 680,
+      "timestamp_end": 687
     },
     {
       "step": 3,
-      "technique": "low-block",
-      "side": "right",
-      "direction": "right",
+      "technique": "apchagi+oen-araemakgi+oreun-jireugi",
+      "side": "left",
+      "direction": "forward",
       "kihap": false,
-      "timestamp": 350,
-      "timestamp_end": 353
+      "timestamp": 687,
+      "timestamp_end": 689
     },
     {
       "step": 4,
-      "technique": "front-kick+double-punch",
-      "side": "left",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 353,
-      "timestamp_end": 357
-    },
-    {
-      "step": 5,
-      "technique": "knifehand-strike",
+      "technique": "apchagi+oreun-makgi+oen-jireugi",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 357,
-      "timestamp_end": 360
-    },
-    {
-      "step": 6,
-      "technique": "knifehand-strike",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 360,
-      "timestamp_end": 364
-    },
-    {
-      "step": 7,
-      "technique": "low-block",
-      "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 364,
-      "timestamp_end": 370
-    },
-    {
-      "step": 8,
-      "technique": "knifehand-outward-block",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 502,
-      "timestamp_end": 504
-    },
-    {
-      "step": 9,
-      "technique": "middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 504,
-      "timestamp_end": 506
-    },
-    {
-      "step": 10,
-      "technique": "knifehand-outward-block",
-      "side": "right",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 506,
-      "timestamp_end": 509
-    },
-    {
-      "step": 11,
-      "technique": "middle-punch",
-      "side": "left",
-      "direction": "backward",
-      "kihap": false,
-      "timestamp": 509,
+      "timestamp": 689,
       "timestamp_end": 511
     },
     {
-      "step": 12,
-      "technique": "middle-inside-block",
+      "step": 5,
+      "technique": "inward-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -336,76 +251,22 @@
       "timestamp_end": 513
     },
     {
-      "step": 13,
-      "technique": "middle-inside-block",
+      "step": 6,
+      "technique": "inward-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
       "timestamp": 513,
-      "timestamp_end": 519
+      "timestamp_end": 364
     },
     {
-      "step": 14,
+      "step": 71,
       "technique": "low-block",
       "side": "left",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 637,
-      "timestamp_end": 640
-    },
-    {
-      "step": 15,
-      "technique": "front-kick+double-punch",
-      "side": "right",
-      "direction": "left",
-      "kihap": false,
-      "timestamp": 640,
-      "timestamp_end": 644
-    },
-    {
-      "step": 16,
-      "technique": "low-block",
-      "side": "right",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 644,
-      "timestamp_end": 647
-    },
-    {
-      "step": 17,
-      "technique": "front-kick+double-punch",
-      "side": "left",
-      "direction": "right",
-      "kihap": false,
-      "timestamp": 647,
-      "timestamp_end": 652
-    },
-    {
-      "step": 18,
-      "technique": "low-block+middle-punch",
-      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 675,
-      "timestamp_end": 679
-    },
-    {
-      "step": 19,
-      "technique": "low-block+middle-punch",
-      "side": "right",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 679,
-      "timestamp_end": 682
-    },
-    {
-      "step": 20,
-      "technique": "front-kick+low-block+middle-punch",
-      "side": "left",
-      "direction": "forward",
-      "kihap": true,
-      "timestamp": 682,
-      "timestamp_end": 693
+      "timestamp": 364,
+      "timestamp_end": 0
     }
   ]
 }
