@@ -32,14 +32,14 @@ export default function SequenceList({
           <button
             key={step.step}
             onClick={() => onStepClick(step)}
-            className={`w-full text-left px-3 py-2.5 flex items-start gap-3 transition-colors ${
+            className={`w-full text-left px-2 py-1.5 flex items-center gap-2 transition-colors ${
               isActive
                 ? "bg-blue-50 border-l-2 border-blue-600"
                 : "hover:bg-gray-50 border-l-2 border-transparent"
             }`}
           >
             <span
-              className={`text-xs font-mono w-6 pt-0.5 shrink-0 ${
+              className={`text-[11px] font-mono w-5 shrink-0 ${
                 isActive ? "text-blue-600 font-bold" : "text-gray-400"
               }`}
             >
@@ -47,36 +47,29 @@ export default function SequenceList({
             </span>
 
             <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center gap-1.5">
                 <span
-                  className={`text-sm font-medium truncate ${
+                  className={`text-[13px] font-medium truncate ${
                     isActive ? "text-blue-900" : "text-gray-900"
                   }`}
                 >
                   {step.side ? `${step.side.charAt(0).toUpperCase() + step.side.slice(1)} ${displayName}` : displayName}
                 </span>
                 {step.kihap && (
-                  <span className="text-[10px] bg-red-100 text-red-700 px-1.5 py-0.5 rounded font-medium uppercase">
+                  <span className="text-[9px] bg-red-100 text-red-700 px-1 py-0.5 rounded font-medium uppercase">
                     Kihap
                   </span>
                 )}
-              </div>
-              <div className="flex items-center gap-1.5">
-                {tech?.name.romanized && (
-                  <span className="text-[11px] text-gray-400">
-                    {tech.name.romanized}
-                  </span>
-                )}
-                {tech?.name.ko && (
-                  <span className="text-[11px] text-gray-300">{tech.name.ko}</span>
-                )}
                 {step.direction && step.direction !== "forward" && (
-                  <span className="text-[11px] text-gray-400 ml-auto">{formatDirection(step.direction)}</span>
+                  <span className="text-[10px] text-gray-400">{formatDirection(step.direction)}</span>
                 )}
               </div>
+              <span className="text-[10px] text-gray-400">
+                {tech?.name.romanized}{tech?.name.ko ? ` · ${tech.name.ko}` : ""}
+              </span>
             </div>
 
-            <span className="text-[11px] text-gray-400 font-mono shrink-0 pt-0.5">
+            <span className="text-[10px] text-gray-400 font-mono shrink-0">
               {formatTime(step.timestamp)}
             </span>
           </button>
