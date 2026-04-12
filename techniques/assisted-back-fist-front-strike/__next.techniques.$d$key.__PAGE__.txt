@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0sdz__e5667q_.js"],"default"]
-3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"assisted-back-fist-front-strike","name":{"en":"Assisted Back-fist Front Strike","ko":"거들어 등주먹 앞치기","romanized":"Geodeureo Deungjumeok Apchigi"},"category":"strike","source":{"form_id":"sipjin","form_name":"Sipjin","video_id":"hOZB0IESJ38","timestamp":0},"tips":[{"text":"Make a fist with the assisting arm, bend the arm and place it behind the ear level","timestamp":673,"video_id":"hOZB0IESJ38"},{"text":"The fist performing Deungjumeok Apchigi should be placed so the arm is parallel to the opposite side of the chest","timestamp":681,"video_id":"hOZB0IESJ38"}],"used_in":["sipjin"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0sdz__e5667q_.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"C1I6pbxhM5worxlWxPAId"}
-5:null
