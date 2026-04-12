@@ -138,11 +138,11 @@
       "tips": []
     },
     {
-      "key": "overlapping-hands-ready",
+      "key": "overlapping-hands-ready-stance",
       "name": {
-        "en": "Overlapping Hands Ready",
-        "ko": "겹손준비",
-        "romanized": "Gyeopson Junbi"
+        "en": "Overlapping Hands Ready Stance",
+        "ko": "겹손 준비자세",
+        "romanized": "Gyeopson Junbi Jase"
       },
       "category": "stance",
       "video_timestamp": 0,
@@ -207,7 +207,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "overlapping-hands-ready",
+      "technique": "overlapping-hands-ready-stance",
       "side": null,
       "direction": "forward",
       "kihap": false,

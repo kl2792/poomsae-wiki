@@ -256,6 +256,93 @@ def post_process(techniques: dict) -> tuple[dict, dict[str, str]]:
             rename_map[k] = best_key
             del techniques[k]
 
+    # --- 3b. Fuzzy dedup by romanized prefix (stance modifiers only) ---
+    # If one romanized name is a prefix of another (same category, neither is
+    # a combination indicated by '+'), and the suffix is a known stance/posture
+    # modifier, merge them. Keep the longer/more specific name.
+    # Known stance suffixes: "jase" (posture/stance), "seogi" (standing stance)
+    STANCE_SUFFIXES = {"jase", "seogi"}
+    rom_keys = [
+        (k, normalize_romanized(tech["name"].get("romanized", "")), tech)
+        for k, tech in techniques.items()
+    ]
+    merged_fuzzy: set[str] = set()
+    for i, (k1, r1, t1) in enumerate(rom_keys):
+        if not r1 or k1 in merged_fuzzy:
+            continue
+        for j, (k2, r2, t2) in enumerate(rom_keys):
+            if i >= j or not r2 or k2 in merged_fuzzy:
+                continue
+            if t1["category"] != t2["category"]:
+                continue
+            if r1 == r2:
+                continue
+            # Determine shorter/longer
+            if len(r1) < len(r2):
+                shorter_k, shorter_r, shorter_t = k1, r1, t1
+                longer_k, longer_r, longer_t = k2, r2, t2
+            else:
+                shorter_k, shorter_r, shorter_t = k2, r2, t2
+                longer_k, longer_r, longer_t = k1, r1, t1
+            if not longer_r.startswith(shorter_r):
+                continue
+            # Skip if either name is a combination (contains '+')
+            longer_rom_raw = longer_t["name"].get("romanized", "")
+            shorter_rom_raw = shorter_t["name"].get("romanized", "")
+            if "+" in longer_rom_raw or "+" in shorter_rom_raw:
+                continue
+            # Only merge if suffix is a known stance modifier
+            suffix = longer_r[len(shorter_r):]
+            if suffix not in STANCE_SUFFIXES:
+                continue
+            # Merge: keep the longer/more specific name
+            winner = techniques[longer_k]
+            victim = techniques[shorter_k]
+            winner["used_in"] = sorted(set(winner["used_in"]) | set(victim["used_in"]))
+            seen = {tip_key(t) for t in winner["tips"]}
+            for t in victim["tips"]:
+                if tip_key(t) not in seen:
+                    winner["tips"].append(t)
+                    seen.add(tip_key(t))
+            # Prefer source with video timestamp
+            if (victim["source"]["timestamp"] > 0
+                    and winner["source"]["timestamp"] == 0):
+                winner["source"] = victim["source"]
+            rename_map[shorter_k] = longer_k
+            merged_fuzzy.add(shorter_k)
+            del techniques[shorter_k]
+
+    # --- 3c. Fuzzy dedup by English "Stance" suffix ---
+    # "X" and "X Stance" are the same technique — keep "X Stance".
+    en_stance_map: dict[str, str] = {}  # en_lower_without_stance -> key
+    for key, tech in list(techniques.items()):
+        en = tech["name"]["en"].strip().lower()
+        if en.endswith(" stance"):
+            base = en[: -len(" stance")]
+            en_stance_map[base] = key
+
+    for key, tech in list(techniques.items()):
+        if key not in techniques:
+            continue
+        en = tech["name"]["en"].strip().lower()
+        if en in en_stance_map and en_stance_map[en] != key:
+            stance_key = en_stance_map[en]
+            if stance_key not in techniques:
+                continue
+            winner = techniques[stance_key]
+            victim = techniques[key]
+            winner["used_in"] = sorted(set(winner["used_in"]) | set(victim["used_in"]))
+            seen_t = {tip_key(t) for t in winner["tips"]}
+            for t in victim["tips"]:
+                if tip_key(t) not in seen_t:
+                    winner["tips"].append(t)
+                    seen_t.add(tip_key(t))
+            if (victim["source"]["timestamp"] > 0
+                    and winner["source"]["timestamp"] == 0):
+                winner["source"] = victim["source"]
+            rename_map[key] = stance_key
+            del techniques[key]
+
     # --- 4. Dedup by similar English name (word-order normalization) ---
     en_groups: dict[str, list[str]] = {}
     for key, tech in techniques.items():
@@ -283,6 +370,85 @@ def post_process(techniques: dict) -> tuple[dict, dict[str, str]]:
     return techniques, rename_map
 
 
+CURRICULUM_ORDER = [
+    "taegeuk-1", "taegeuk-2", "taegeuk-3", "taegeuk-4",
+    "taegeuk-5", "taegeuk-6", "taegeuk-7", "taegeuk-8",
+    "koryo", "keumgang", "taebaek", "pyeongwon",
+    "sipjin", "jitae", "chonkwon", "hansu", "ilyeo",
+]
+
+
+def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
+    """Inherit video source from earlier forms for techniques with no video.
+
+    For each technique with source.timestamp == 0, search forms in curriculum
+    order for the first form that has a technique with a fuzzy-matching
+    romanized name AND video_timestamp > 0. Copy that source and tips.
+
+    Returns count of techniques that inherited a video source.
+    """
+    # Build form lookup indexed by curriculum order
+    form_by_id: dict[str, dict] = {f["id"]: f for f in forms}
+    ordered_forms = [form_by_id[fid] for fid in CURRICULUM_ORDER if fid in form_by_id]
+
+    # Build index: normalized romanized -> (form, tech_entry) for first
+    # occurrence with video_timestamp > 0
+    rom_video_index: dict[str, tuple[dict, dict]] = {}
+    for form in ordered_forms:
+        for tech in form.get("techniques", []):
+            rom = normalize_romanized(tech["name"].get("romanized", ""))
+            ts = tech.get("video_timestamp") or 0
+            if rom and ts > 0 and rom not in rom_video_index:
+                rom_video_index[rom] = (form, tech)
+
+    inherited = 0
+    for key, tech in techniques.items():
+        if tech["source"]["timestamp"] > 0:
+            continue
+        rom = normalize_romanized(tech["name"].get("romanized", ""))
+        if not rom:
+            continue
+        # Try exact match first, then fuzzy substring match
+        match = rom_video_index.get(rom)
+        if not match:
+            # Find the longest matching romanized name that is a substring
+            best_sub = None
+            best_len = 0
+            for vid_rom, entry in rom_video_index.items():
+                if vid_rom in rom and vid_rom != rom and len(vid_rom) > best_len:
+                    best_sub = entry
+                    best_len = len(vid_rom)
+            match = best_sub
+        if not match:
+            continue
+        src_form, src_tech = match
+        tech["source"] = {
+            "form_id": src_form["id"],
+            "form_name": src_form["name"]["en"],
+            "video_id": src_form["video_id"],
+            "timestamp": src_tech.get("video_timestamp") or 0,
+        }
+        if src_tech.get("video_timestamp_end"):
+            tech["source"]["timestamp_end"] = src_tech["video_timestamp_end"]
+        # Merge tips from the source form technique
+        seen = {tip_key(t) for t in tech["tips"]}
+        for tip in src_tech.get("tips", []):
+            tk = tip_key(tip)
+            if tk and tk not in seen:
+                seen.add(tk)
+                if isinstance(tip, str):
+                    tech["tips"].append({"text": tip})
+                else:
+                    tip_entry: dict = {"text": tip["text"]}
+                    if tip.get("timestamp"):
+                        tip_entry["timestamp"] = tip["timestamp"]
+                        tip_entry["video_id"] = src_form["video_id"]
+                    tech["tips"].append(tip_entry)
+        inherited += 1
+
+    return inherited
+
+
 def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
     """Update technique references in form JSONs after dedup.
 
@@ -291,12 +457,14 @@ def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
 
     Returns count of updated forms.
     """
-    # Build lookup from normalized romanized name to canonical technique
+    # Build lookups for canonical technique matching
     rom_to_canonical: dict[str, dict] = {}
+    key_to_canonical: dict[str, dict] = {}
     for tech in techniques.values():
         rom = normalize_romanized(tech["name"].get("romanized", ""))
         if rom:
             rom_to_canonical[rom] = tech
+        key_to_canonical[tech["key"]] = tech
 
     updated_count = 0
     for form_path in sorted(FORMS_DIR.glob("*.json")):
@@ -321,10 +489,15 @@ def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
                 tech["key"] = new_key
                 changed = True
 
-            # Sync name/key with canonical techniques.json entry via romanized name
+            # Sync name/key with canonical techniques.json entry
+            # Try romanized match first, then key match (for renamed entries)
+            canonical = None
             rom = normalize_romanized(tech["name"].get("romanized", ""))
             if rom and rom in rom_to_canonical:
                 canonical = rom_to_canonical[rom]
+            elif tech["key"] in key_to_canonical:
+                canonical = key_to_canonical[tech["key"]]
+            if canonical:
                 if tech["name"] != canonical["name"]:
                     tech["name"] = dict(canonical["name"])
                     changed = True
@@ -393,6 +566,13 @@ def main() -> None:
         for old, new in sorted(rename_map.items()):
             if old != new:
                 print(f"    {old} -> {new}")
+
+    # Inherit video sources for techniques with no video breakdown
+    zero_before = sum(1 for t in techniques.values() if t["source"]["timestamp"] == 0)
+    inherited = inherit_video_sources(techniques, forms)
+    zero_after = sum(1 for t in techniques.values() if t["source"]["timestamp"] == 0)
+    print(f"Video inheritance: {inherited} techniques inherited sources "
+          f"({zero_before} -> {zero_after} with timestamp=0)")
 
     # Update form JSONs with renamed keys
     updated = update_form_jsons(rename_map, techniques)

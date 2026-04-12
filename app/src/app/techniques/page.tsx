@@ -52,6 +52,7 @@ export default function TechniquesPage() {
     romanized: t.name.romanized,
     category: t.category,
     used_in: t.used_in,
+    hasVideo: t.source.timestamp > 0,
   }));
 
   return (
@@ -153,6 +154,17 @@ function TechniqueRow({
       {tipCount > 0 && (
         <span className="text-[11px] font-medium px-1.5 py-0.5 rounded-full bg-amber-100 text-amber-700 shrink-0">
           {tipCount} {tipCount === 1 ? "tip" : "tips"}
+        </span>
+      )}
+
+      {/* Video status debug badge */}
+      {t.source.timestamp === 0 ? (
+        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-red-50 text-red-400 shrink-0" data-has-video="false">
+          no video
+        </span>
+      ) : (
+        <span className="text-[10px] px-1.5 py-0.5 rounded-full bg-green-50 text-green-400 shrink-0 hidden" data-has-video="true">
+          has video
         </span>
       )}
 

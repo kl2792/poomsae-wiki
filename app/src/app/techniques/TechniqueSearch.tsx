@@ -9,6 +9,7 @@ interface TechniqueSearchItem {
   romanized: string;
   category: string;
   used_in: string[];
+  hasVideo: boolean;
 }
 
 interface Props {
@@ -57,10 +58,11 @@ export default function TechniqueSearch({
   const [activeForms, setActiveForms] = useState<Set<string>>(initial.forms);
   const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
   const [visibleCount, setVisibleCount] = useState(totalCount);
+  const [showNoVideoOnly, setShowNoVideoOnly] = useState(false);
   const rafRef = useRef<number>(0);
 
   const applyFilters = useCallback(
-    (q: string, cats: Set<string>, forms: Set<string>) => {
+    (q: string, cats: Set<string>, forms: Set<string>, noVideoOnly: boolean = false) => {
       cancelAnimationFrame(rafRef.current);
       rafRef.current = requestAnimationFrame(() => {
         const lower = q.toLowerCase().trim();
@@ -70,7 +72,7 @@ export default function TechniqueSearch({
 
         // Build matching keys
         let matchingKeys: Set<string> | null = null;
-        if (hasSearch || hasCatFilter || hasFormFilter) {
+        if (hasSearch || hasCatFilter || hasFormFilter || noVideoOnly) {
           matchingKeys = new Set(
             techniques
               .filter((t) => {
@@ -79,6 +81,7 @@ export default function TechniqueSearch({
                   !cats.has(t.category)
                 )
                   return false;
+                if (noVideoOnly && t.hasVideo) return false;
                 if (
                   hasFormFilter &&
                   !t.used_in.some((f) => forms.has(f))
@@ -183,7 +186,7 @@ export default function TechniqueSearch({
   // Apply URL-sourced filters on mount
   useEffect(() => {
     if (initial.q || initial.categories.size > 0 || initial.forms.size > 0) {
-      applyFilters(initial.q, initial.categories, initial.forms);
+      applyFilters(initial.q, initial.categories, initial.forms, showNoVideoOnly);
     }
     // Only run on mount
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -194,7 +197,7 @@ export default function TechniqueSearch({
       const next = new Set(prev);
       if (next.has(cat)) next.delete(cat);
       else next.add(cat);
-      applyFilters(query, next, activeForms);
+      applyFilters(query, next, activeForms, showNoVideoOnly);
       writeUrlFilters(query, next, activeForms);
       return next;
     });
@@ -205,7 +208,7 @@ export default function TechniqueSearch({
       const next = new Set(prev);
       if (next.has(formId)) next.delete(formId);
       else next.add(formId);
-      applyFilters(query, activeCategories, next);
+      applyFilters(query, activeCategories, next, showNoVideoOnly);
       writeUrlFilters(query, activeCategories, next);
       return next;
     });
@@ -215,14 +218,14 @@ export default function TechniqueSearch({
     setActiveCategories(new Set());
     setActiveForms(new Set());
     setQuery("");
-    applyFilters("", new Set(), new Set());
+    applyFilters("", new Set(), new Set(), false);
     writeUrlFilters("", new Set(), new Set());
   }
 
   function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
     const q = e.target.value;
     setQuery(q);
-    applyFilters(q, activeCategories, activeForms);
+    applyFilters(q, activeCategories, activeForms, showNoVideoOnly);
     writeUrlFilters(q, activeCategories, activeForms);
   }
 
@@ -356,16 +359,30 @@ export default function TechniqueSearch({
         </div>
       </div>
 
-      {/* Count + clear */}
+      {/* Debug: no-video filter + count + clear */}
       <div className="flex items-center gap-3 text-sm text-gray-500">
+        <button
+          onClick={() => {
+            const next = !showNoVideoOnly;
+            setShowNoVideoOnly(next);
+            applyFilters(query, activeCategories, activeForms, next);
+          }}
+          className={`text-xs px-2.5 py-1 rounded-full border font-medium transition-colors ${
+            showNoVideoOnly
+              ? "bg-red-50 border-red-200 text-red-600"
+              : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+          }`}
+        >
+          {showNoVideoOnly ? "Showing: no video only" : "No video"}
+        </button>
         <span>
-          {hasFilters
+          {hasFilters || showNoVideoOnly
             ? `Showing ${visibleCount} of ${totalCount} techniques`
             : `${totalCount} techniques`}
         </span>
-        {hasFilters && (
+        {(hasFilters || showNoVideoOnly) && (
           <button
-            onClick={clearFilters}
+            onClick={() => { setShowNoVideoOnly(false); clearFilters(); }}
             className="text-xs text-blue-600 hover:text-blue-800 cursor-pointer"
           >
             Clear filters
