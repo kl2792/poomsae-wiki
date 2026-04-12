@@ -125,12 +125,239 @@ def build_techniques(forms: list[dict]) -> dict:
     return result
 
 
+def normalize_hyphenation(s: str) -> str:
+    """Normalize compound words: knife-hand→knifehand, back-fist→backfist, spear-hand→spearhand.
+
+    Case-aware: 'Knife-hand' → 'Knifehand', 'knife-hand' → 'knifehand'.
+    """
+    replacements = {
+        "knife-hand": "knifehand",
+        "back-fist": "backfist",
+        "spear-hand": "spearhand",
+    }
+    result = s
+    for old, new in replacements.items():
+        def _replace(m: re.Match) -> str:
+            matched = m.group(0)
+            if matched[0].isupper():
+                return new.capitalize()
+            return new
+        result = re.sub(re.escape(old), _replace, result, flags=re.IGNORECASE)
+    return result
+
+
+def normalize_key(key: str) -> str:
+    """Normalize a technique key: apply hyphenation rules."""
+    return normalize_hyphenation(key)
+
+
+def normalize_en_name(name: str) -> str:
+    """Normalize English name for dedup comparison."""
+    return normalize_hyphenation(name.strip().lower())
+
+
+def normalize_romanized(name: str) -> str:
+    """Normalize romanized name for dedup: lowercase, no spaces/hyphens."""
+    return re.sub(r"[\s\-]+", "", name.strip().lower())
+
+
+def word_set_key(name: str) -> str:
+    """Create a word-set key for matching reordered English names.
+
+    'outward middle block' and 'middle outward block' both produce the same key.
+    """
+    normalized = normalize_en_name(name)
+    return " ".join(sorted(normalized.split()))
+
+
+def post_process(techniques: dict) -> tuple[dict, dict[str, str]]:
+    """Post-process technique dict: normalize categories, keys, and dedup.
+
+    Returns:
+        (cleaned_techniques, rename_map) where rename_map maps old_key -> new_key
+        for all keys that were renamed or merged.
+    """
+    rename_map: dict[str, str] = {}
+
+    # --- 1. Category normalization ---
+    for key, tech in techniques.items():
+        cat = tech["category"]
+        if cat == "ready":
+            tech["category"] = "stance"
+        elif cat == "technique":
+            # Infer from name if possible
+            name_lower = tech["name"]["en"].lower()
+            if any(w in name_lower for w in ["block", "makgi"]):
+                tech["category"] = "block"
+            elif any(w in name_lower for w in ["kick", "chagi"]):
+                tech["category"] = "kick"
+            elif any(w in name_lower for w in ["stance", "seogi", "jase"]):
+                tech["category"] = "stance"
+            else:
+                tech["category"] = "strike"
+
+    # --- 2. Key normalization (hyphenation) ---
+    new_techniques: dict = {}
+    for old_key, tech in techniques.items():
+        new_key = normalize_key(old_key)
+        # Also normalize the English name in the entry
+        tech["name"]["en"] = normalize_hyphenation(tech["name"]["en"])
+        tech["key"] = new_key
+        if new_key != old_key:
+            rename_map[old_key] = new_key
+        if new_key in new_techniques:
+            # Merge: keep the one with more tips, merge used_in
+            existing = new_techniques[new_key]
+            if len(tech.get("tips", [])) > len(existing.get("tips", [])):
+                tech["used_in"] = sorted(set(tech["used_in"]) | set(existing["used_in"]))
+                # Merge tips
+                seen = {tip_key(t) for t in tech["tips"]}
+                for t in existing["tips"]:
+                    if tip_key(t) not in seen:
+                        tech["tips"].append(t)
+                        seen.add(tip_key(t))
+                new_techniques[new_key] = tech
+            else:
+                existing["used_in"] = sorted(set(existing["used_in"]) | set(tech["used_in"]))
+                seen = {tip_key(t) for t in existing["tips"]}
+                for t in tech["tips"]:
+                    if tip_key(t) not in seen:
+                        existing["tips"].append(t)
+                        seen.add(tip_key(t))
+            rename_map[old_key] = new_key
+        else:
+            new_techniques[new_key] = tech
+    techniques = new_techniques
+
+    # --- 3. Dedup by romanized name ---
+    rom_groups: dict[str, list[str]] = {}
+    for key, tech in techniques.items():
+        rom = normalize_romanized(tech["name"].get("romanized", ""))
+        if rom:
+            rom_groups.setdefault(rom, []).append(key)
+
+    for rom, keys in rom_groups.items():
+        if len(keys) <= 1:
+            continue
+        # Pick the one with more tips
+        best_key = max(keys, key=lambda k: len(techniques[k].get("tips", [])))
+        for k in keys:
+            if k == best_key:
+                continue
+            # Merge into best
+            victim = techniques[k]
+            winner = techniques[best_key]
+            winner["used_in"] = sorted(set(winner["used_in"]) | set(victim["used_in"]))
+            seen = {tip_key(t) for t in winner["tips"]}
+            for t in victim["tips"]:
+                if tip_key(t) not in seen:
+                    winner["tips"].append(t)
+                    seen.add(tip_key(t))
+            rename_map[k] = best_key
+            del techniques[k]
+
+    # --- 4. Dedup by similar English name (word-order normalization) ---
+    en_groups: dict[str, list[str]] = {}
+    for key, tech in techniques.items():
+        ws = word_set_key(tech["name"]["en"])
+        en_groups.setdefault(ws, []).append(key)
+
+    for ws, keys in en_groups.items():
+        if len(keys) <= 1:
+            continue
+        best_key = max(keys, key=lambda k: len(techniques[k].get("tips", [])))
+        for k in keys:
+            if k == best_key:
+                continue
+            victim = techniques[k]
+            winner = techniques[best_key]
+            winner["used_in"] = sorted(set(winner["used_in"]) | set(victim["used_in"]))
+            seen = {tip_key(t) for t in winner["tips"]}
+            for t in victim["tips"]:
+                if tip_key(t) not in seen:
+                    winner["tips"].append(t)
+                    seen.add(tip_key(t))
+            rename_map[k] = best_key
+            del techniques[k]
+
+    return techniques, rename_map
+
+
+def update_form_jsons(rename_map: dict[str, str]) -> int:
+    """Update technique references in form JSONs after dedup.
+
+    Returns count of updated forms.
+    """
+    if not rename_map:
+        return 0
+
+    updated_count = 0
+    for form_path in sorted(FORMS_DIR.glob("*.json")):
+        with open(form_path) as f:
+            data = json.load(f)
+
+        changed = False
+        for step in data.get("sequence", []):
+            old_tech = step.get("technique", "")
+            if old_tech in rename_map:
+                step["technique"] = rename_map[old_tech]
+                changed = True
+
+        for tech in data.get("techniques", []):
+            old_key = tech.get("key", "")
+            if old_key in rename_map:
+                tech["key"] = rename_map[old_key]
+                changed = True
+            # Normalize category in source forms too
+            if tech.get("category") == "ready":
+                tech["category"] = "stance"
+                changed = True
+            if tech.get("category") == "technique":
+                name_lower = tech["name"]["en"].lower()
+                if any(w in name_lower for w in ["block", "makgi"]):
+                    tech["category"] = "block"
+                elif any(w in name_lower for w in ["kick", "chagi"]):
+                    tech["category"] = "kick"
+                elif any(w in name_lower for w in ["stance", "seogi", "jase"]):
+                    tech["category"] = "stance"
+                else:
+                    tech["category"] = "strike"
+                changed = True
+            # Normalize English name hyphenation in source forms
+            old_en = tech["name"].get("en", "")
+            new_en = normalize_hyphenation(old_en)
+            if old_en != new_en:
+                tech["name"]["en"] = new_en
+                changed = True
+
+        if changed:
+            with open(form_path, "w") as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            updated_count += 1
+
+    return updated_count
+
+
 def main() -> None:
     forms = load_forms()
     print(f"Loaded {len(forms)} forms from {FORMS_DIR}")
 
     techniques = build_techniques(forms)
-    print(f"Extracted {len(techniques)} unique techniques")
+    raw_count = len(techniques)
+    print(f"Extracted {raw_count} techniques (before dedup)")
+
+    techniques, rename_map = post_process(techniques)
+    print(f"After dedup: {len(techniques)} techniques ({raw_count - len(techniques)} merged)")
+    if rename_map:
+        print(f"  Renames: {len(rename_map)}")
+        for old, new in sorted(rename_map.items()):
+            if old != new:
+                print(f"    {old} -> {new}")
+
+    # Update form JSONs with renamed keys
+    updated = update_form_jsons(rename_map)
+    if updated:
+        print(f"  Updated {updated} form JSONs")
 
     # Category breakdown
     cats: dict[str, int] = {}

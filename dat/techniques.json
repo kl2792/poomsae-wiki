@@ -72,10 +72,10 @@
       "hansu"
     ]
   },
-  "assisted-back-fist-front-strike": {
-    "key": "assisted-back-fist-front-strike",
+  "assisted-backfist-front-strike": {
+    "key": "assisted-backfist-front-strike",
     "name": {
-      "en": "Assisted Back-fist Front Strike",
+      "en": "Assisted Backfist Front Strike",
       "ko": "거들어 등주먹 앞치기",
       "romanized": "Geodeureo Deungjumeok Apchigi"
     },
@@ -98,25 +98,6 @@
         "video_id": "hOZB0IESJ38"
       }
     ],
-    "used_in": [
-      "sipjin"
-    ]
-  },
-  "assisted-backfist-front-strike": {
-    "key": "assisted-backfist-front-strike",
-    "name": {
-      "en": "Assisted Backfist Front Strike",
-      "ko": "거들어등주먹앞치기",
-      "romanized": "Geodeureo Deungjumeok Apchigi"
-    },
-    "category": "strike",
-    "source": {
-      "form_id": "sipjin",
-      "form_name": "Sipjin",
-      "video_id": "hOZB0IESJ38",
-      "timestamp": 0
-    },
-    "tips": [],
     "used_in": [
       "sipjin"
     ]
@@ -344,8 +325,8 @@
       "taegeuk-3"
     ]
   },
-  "back-fist-high-outward-strike": {
-    "key": "back-fist-high-outward-strike",
+  "backfist-high-outward-strike": {
+    "key": "backfist-high-outward-strike",
     "name": {
       "en": "Back-fist High Outward Strike",
       "ko": "등주먹 얼굴바깥치기",
@@ -1074,25 +1055,6 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "hansu",
-      "form_name": "Hansu",
-      "video_id": "lRp1JE7f-a8",
-      "timestamp": 0
-    },
-    "tips": [],
-    "used_in": [
-      "hansu"
-    ]
-  },
-  "double-fist-uppercut-punch": {
-    "key": "double-fist-uppercut-punch",
-    "name": {
-      "en": "Double Fist Uppercut Punch",
-      "ko": "두주먹제쳐지르기",
-      "romanized": "Dujumeok Jeocheo Jireugi"
-    },
-    "category": "strike",
-    "source": {
       "form_id": "taegeuk-7",
       "form_name": "Taegeuk Chil Jang",
       "video_id": "6FUM1p6qqhQ",
@@ -1100,6 +1062,7 @@
     },
     "tips": [],
     "used_in": [
+      "hansu",
       "taegeuk-7"
     ]
   },
@@ -2582,7 +2545,7 @@
       "ko": "무릎눌러꺾기",
       "romanized": "Mureup Nulleo Kkeokgi"
     },
-    "category": "technique",
+    "category": "strike",
     "source": {
       "form_id": "koryo",
       "form_name": "Koryo",
@@ -2643,43 +2606,8 @@
       "taegeuk-7"
     ]
   },
-  "knife-hand-middle-inward-block": {
-    "key": "knife-hand-middle-inward-block",
-    "name": {
-      "en": "Knife-hand Middle Inward Block",
-      "ko": "손날몸통안막기",
-      "romanized": "Sonnal Momtong An Makgi"
-    },
-    "category": "block",
-    "source": {
-      "form_id": "keumgang",
-      "form_name": "Keumgang",
-      "video_id": "CRGVSOmaQaY",
-      "timestamp": 251
-    },
-    "tips": [
-      {
-        "text": "The hand blade should be level with the solar plexus",
-        "timestamp": 259,
-        "video_id": "CRGVSOmaQaY"
-      },
-      {
-        "text": "Hand blade aligned with the center line",
-        "timestamp": 264,
-        "video_id": "CRGVSOmaQaY"
-      },
-      {
-        "text": "Be careful not to let the tip of the hand rise above the shoulder",
-        "timestamp": 268,
-        "video_id": "CRGVSOmaQaY"
-      }
-    ],
-    "used_in": [
-      "keumgang"
-    ]
-  },
-  "knife-hand-neck-grasp": {
-    "key": "knife-hand-neck-grasp",
+  "knifehand-neck-grasp": {
+    "key": "knifehand-neck-grasp",
     "name": {
       "en": "Knife-hand Neck Grasp",
       "ko": "손날 엎어잡기",
@@ -2865,25 +2793,6 @@
         "video_id": "Lt917gacJho"
       }
     ],
-    "used_in": [
-      "taegeuk-4"
-    ]
-  },
-  "knifehand-guarding-block": {
-    "key": "knifehand-guarding-block",
-    "name": {
-      "en": "Knifehand Guarding Block",
-      "ko": "손날거들어막기",
-      "romanized": "Sonnal Geodeureo Makgi"
-    },
-    "category": "block",
-    "source": {
-      "form_id": "taegeuk-4",
-      "form_name": "Taegeuk Sa Jang",
-      "video_id": "Lt917gacJho",
-      "timestamp": 0
-    },
-    "tips": [],
     "used_in": [
       "ilyeo",
       "koryo",
@@ -3103,30 +3012,27 @@
       "form_id": "keumgang",
       "form_name": "Keumgang",
       "video_id": "CRGVSOmaQaY",
-      "timestamp": 0
+      "timestamp": 251
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The hand blade should be level with the solar plexus",
+        "timestamp": 259,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Hand blade aligned with the center line",
+        "timestamp": 264,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Be careful not to let the tip of the hand rise above the shoulder",
+        "timestamp": 268,
+        "video_id": "CRGVSOmaQaY"
+      }
+    ],
     "used_in": [
       "keumgang"
-    ]
-  },
-  "knifehand-middle-outward-block": {
-    "key": "knifehand-middle-outward-block",
-    "name": {
-      "en": "Knifehand Middle Outward Block",
-      "ko": "손날몸통바깥막기",
-      "romanized": "Sonnal Momtong Bakkat Makgi"
-    },
-    "category": "block",
-    "source": {
-      "form_id": "pyeongwon",
-      "form_name": "Pyeongwon",
-      "video_id": "RB-7mBtvtZw",
-      "timestamp": 0
-    },
-    "tips": [],
-    "used_in": [
-      "pyeongwon"
     ]
   },
   "knifehand-middle-side-block": {
@@ -3235,6 +3141,7 @@
       }
     ],
     "used_in": [
+      "pyeongwon",
       "taegeuk-3"
     ]
   },
@@ -3693,7 +3600,7 @@
       "ko": "겹손준비",
       "romanized": "Gyeopson Junbi"
     },
-    "category": "ready",
+    "category": "stance",
     "source": {
       "form_id": "chonkwon",
       "form_name": "Cheonkwon",
@@ -3969,7 +3876,7 @@
       "ko": "눌러꺾기",
       "romanized": "Nulleo Kkeokgi"
     },
-    "category": "technique",
+    "category": "strike",
     "source": {
       "form_id": "koryo",
       "form_name": "Koryo",
@@ -3997,8 +3904,8 @@
       "koryo"
     ]
   },
-  "pulling-back-fist-front-strike": {
-    "key": "pulling-back-fist-front-strike",
+  "pulling-backfist-front-strike": {
+    "key": "pulling-backfist-front-strike",
     "name": {
       "en": "Pulling Back-fist Front Strike",
       "ko": "당겨 등주먹 앞치기",
@@ -4253,10 +4160,10 @@
       "taegeuk-8"
     ]
   },
-  "reverse-knife-hand-assisted-block": {
-    "key": "reverse-knife-hand-assisted-block",
+  "reverse-knifehand-assisted-block": {
+    "key": "reverse-knifehand-assisted-block",
     "name": {
-      "en": "Reverse Knife-hand Assisted Block",
+      "en": "Reverse Knifehand Assisted Block",
       "ko": "손날등 거들어막기",
       "romanized": "Sonnaldeung Geodeureo Makgi"
     },
@@ -4293,10 +4200,10 @@
       "sipjin"
     ]
   },
-  "reverse-knife-hand-spreading-block": {
-    "key": "reverse-knife-hand-spreading-block",
+  "reverse-knifehand-spreading-block": {
+    "key": "reverse-knifehand-spreading-block",
     "name": {
-      "en": "Reverse Knife-hand Spreading Block",
+      "en": "Reverse Knifehand Spreading Block",
       "ko": "손날등 헤쳐막기",
       "romanized": "Sonnaldeung Hecheo Makgi"
     },
@@ -4332,46 +4239,7 @@
         "text": "The back of your hand blade must go outside the shoulder line",
         "timestamp": 498,
         "video_id": "hOZB0IESJ38"
-      }
-    ],
-    "used_in": [
-      "sipjin"
-    ]
-  },
-  "reverse-knifehand-assisted-block": {
-    "key": "reverse-knifehand-assisted-block",
-    "name": {
-      "en": "Reverse Knifehand Assisted Block",
-      "ko": "손날등거들어막기",
-      "romanized": "Sonnaldeung Geodeureo Makgi"
-    },
-    "category": "block",
-    "source": {
-      "form_id": "sipjin",
-      "form_name": "Sipjin",
-      "video_id": "hOZB0IESJ38",
-      "timestamp": 0
-    },
-    "tips": [],
-    "used_in": [
-      "sipjin"
-    ]
-  },
-  "reverse-knifehand-spreading-block": {
-    "key": "reverse-knifehand-spreading-block",
-    "name": {
-      "en": "Reverse Knifehand Spreading Block",
-      "ko": "손날등 헤쳐막기",
-      "romanized": "Sonnaldeung Hecheo Makgi"
-    },
-    "category": "block",
-    "source": {
-      "form_id": "hansu",
-      "form_name": "Hansu",
-      "video_id": "lRp1JE7f-a8",
-      "timestamp": 119
-    },
-    "tips": [
+      },
       {
         "text": "The tip of the hand must not rise above the shoulder",
         "timestamp": 163,
@@ -4890,31 +4758,6 @@
       "taebaek"
     ]
   },
-  "spear-hand-thrust": {
-    "key": "spear-hand-thrust",
-    "name": {
-      "en": "Spear-hand Thrust",
-      "ko": "젖혀지르기",
-      "romanized": "Jeochyeo Jireugi"
-    },
-    "category": "strike",
-    "source": {
-      "form_id": "koryo",
-      "form_name": "Koryo",
-      "video_id": "mGa60JDtWmg",
-      "timestamp": 286.0
-    },
-    "tips": [
-      {
-        "text": "A technique used to strike an opponent's lower abdomen downward after pulling back the tip of the hand",
-        "timestamp": 289,
-        "video_id": "mGa60JDtWmg"
-      }
-    ],
-    "used_in": [
-      "koryo"
-    ]
-  },
   "spearhand-thrust": {
     "key": "spearhand-thrust",
     "name": {
@@ -4949,9 +4792,15 @@
         "text": "Be careful not to let your wrist bend",
         "timestamp": 253,
         "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "A technique used to strike an opponent's lower abdomen downward after pulling back the tip of the hand",
+        "timestamp": 289,
+        "video_id": "mGa60JDtWmg"
       }
     ],
     "used_in": [
+      "koryo",
       "taegeuk-4"
     ]
   },
@@ -5200,8 +5049,8 @@
       "taegeuk-7"
     ]
   },
-  "tiger-stance-knife-hand-low-spreading-block": {
-    "key": "tiger-stance-knife-hand-low-spreading-block",
+  "tiger-stance-knifehand-low-spreading-block": {
+    "key": "tiger-stance-knifehand-low-spreading-block",
     "name": {
       "en": "Tiger Stance Knife-hand Low Spreading Block",
       "ko": "범서기 손날 아래(내려)헤쳐막기",

@@ -62,7 +62,9 @@ TECHNIQUES:
 - Include ALL techniques used in the sequence, not just the KEY MOVES from the video
 - The KEY MOVES section shows ~5-14 featured techniques. But the sequence uses many more basic techniques (momtong jireugi, arae makgi, ap chagi, etc.) that are NOT in KEY MOVES. You MUST include these too.
 - Every technique referenced by ANY sequence step MUST exist in the techniques array
-- Every technique MUST have: key (slug), name.en (English ONLY, no romanized), name.ko (hangul), name.romanized (KKW standard), category (block/kick/strike/stance/ready/combination), video_timestamp (from KEY MOVES section, or 0 if not featured), video_timestamp_end (optional, when the technique segment ends), tips (array of {{text, timestamp}} from OCR'd ✓ tips, or empty [])
+- Every technique MUST have: key (slug), name.en (English ONLY, no romanized), name.ko (hangul), name.romanized (KKW standard), category (block/kick/strike/stance/combination), video_timestamp (from KEY MOVES section, or 0 if not featured), video_timestamp_end (optional, when the technique segment ends), tips (array of {{text, timestamp}} from OCR'd ✓ tips, or empty [])
+- Ready positions (junbi, tongmilgi junbijase, etc.) use category 'stance'
+- Normalize hyphenation: use 'knifehand' not 'knife-hand', 'backfist' not 'back-fist'
 
 SEQUENCE:
 - The full ordered sequence from EXPLANATION OF PART sections
@@ -163,6 +165,14 @@ def validate_form(path: str) -> list[str]:
             # Check no romanized in English name
             if 'en' in t['name'] and '(' in t['name']['en']:
                 errors.append(f"Technique {t.get('key','?')}: name.en contains parentheses (romanized leak?): {t['name']['en']}")
+
+    # Check for deprecated categories
+    for i, t in enumerate(d['techniques']):
+        cat = t.get('category', '')
+        if cat == 'ready':
+            errors.append(f"Technique {t.get('key','?')}: category 'ready' should be 'stance'")
+        if cat == 'technique':
+            errors.append(f"Technique {t.get('key','?')}: category 'technique' is invalid (use strike/block/stance)")
 
     # Check all sequence references resolve
     for s in d['sequence']:

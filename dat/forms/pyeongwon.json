@@ -292,7 +292,7 @@
         "ko": "준비",
         "romanized": "Junbi"
       },
-      "category": "ready",
+      "category": "stance",
       "video_timestamp": 0,
       "tips": []
     },
@@ -365,7 +365,7 @@
     {
       "key": "sonal-momtong-bakkanmakgi",
       "name": {
-        "en": "Knifehand Middle Outward Block",
+        "en": "Knifehand Outward Middle Block",
         "ko": "손날몸통바깥막기",
         "romanized": "Sonnal Momtong Bakkat Makgi"
       },

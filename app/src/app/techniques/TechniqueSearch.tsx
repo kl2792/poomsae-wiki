@@ -261,24 +261,43 @@ export default function TechniqueSearch({
         ))}
       </div>
 
-      {/* Form filter pills */}
-      <div className="flex flex-wrap gap-1.5 items-center">
-        <span className="text-xs font-medium text-gray-500 self-center mr-1">
+      {/* Form filter pills — two rows: Taegeuk (TG1–TG8) then Dan forms */}
+      <div className="flex gap-1.5 items-start">
+        <span className="text-xs font-medium text-gray-500 mr-1 pt-1">
           Form
         </span>
-        {formIds.map((formId) => (
-          <button
-            key={formId}
-            onClick={() => toggleForm(formId)}
-            className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
-              activeForms.has(formId)
-                ? "bg-gray-800 text-white border-gray-800 shadow-sm"
-                : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
-            }`}
-          >
-            {formShort[formId] || formId}
-          </button>
-        ))}
+        <div className="flex flex-col gap-1.5">
+          <div className="flex flex-wrap gap-1.5">
+            {formIds.filter((id) => id.startsWith("taegeuk-")).map((formId) => (
+              <button
+                key={formId}
+                onClick={() => toggleForm(formId)}
+                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
+                  activeForms.has(formId)
+                    ? "bg-gray-800 text-white border-gray-800 shadow-sm"
+                    : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
+                }`}
+              >
+                {formShort[formId] || formId}
+              </button>
+            ))}
+          </div>
+          <div className="flex flex-wrap gap-1.5">
+            {formIds.filter((id) => !id.startsWith("taegeuk-")).map((formId) => (
+              <button
+                key={formId}
+                onClick={() => toggleForm(formId)}
+                className={`text-xs font-medium px-3 py-1 rounded-full border transition-all cursor-pointer ${
+                  activeForms.has(formId)
+                    ? "bg-gray-800 text-white border-gray-800 shadow-sm"
+                    : "bg-white text-gray-600 border-gray-300 hover:border-gray-500 hover:bg-gray-50"
+                }`}
+              >
+                {formShort[formId] || formId}
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Count + clear */}

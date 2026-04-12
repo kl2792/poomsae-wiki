@@ -178,7 +178,7 @@
     {
       "key": "05",
       "name": {
-        "en": "Reverse Knife-hand Spreading Block",
+        "en": "Reverse Knifehand Spreading Block",
         "ko": "손날등 헤쳐막기",
         "romanized": "Sonnaldeung Hecheo Makgi"
       },
@@ -277,7 +277,7 @@
     {
       "key": "09",
       "name": {
-        "en": "Reverse Knife-hand Assisted Block",
+        "en": "Reverse Knifehand Assisted Block",
         "ko": "손날등 거들어막기",
         "romanized": "Sonnaldeung Geodeureo Makgi"
       },
@@ -305,7 +305,7 @@
     {
       "key": "10",
       "name": {
-        "en": "Assisted Back-fist Front Strike",
+        "en": "Assisted Backfist Front Strike",
         "ko": "거들어 등주먹 앞치기",
         "romanized": "Geodeureo Deungjumeok Apchigi"
       },
@@ -417,7 +417,7 @@
         "ko": "준비",
         "romanized": "Junbi"
       },
-      "category": "ready",
+      "category": "stance",
       "video_timestamp": 0,
       "tips": []
     },

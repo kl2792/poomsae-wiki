@@ -11,7 +11,7 @@ ROOT_DIR = SCRIPTS_DIR.parent
 FORMS_DIR = ROOT_DIR / "dat" / "forms"
 TECHNIQUES_FILE = ROOT_DIR / "dat" / "techniques.json"
 
-VALID_CATEGORIES = {"block", "kick", "strike", "stance", "ready", "technique", "combination"}
+VALID_CATEGORIES = {"block", "kick", "strike", "stance", "combination"}
 
 
 def load_techniques() -> dict:
@@ -110,6 +110,74 @@ def test_used_in_references_valid_forms():
         for form_id in tech["used_in"]:
             assert form_id in form_ids, (
                 f"Technique '{key}' used_in references nonexistent form '{form_id}'"
+            )
+
+
+def test_no_ready_or_technique_categories():
+    """No technique should have category 'ready' or 'technique' after post-processing."""
+    data = load_techniques()
+    for key, tech in data.items():
+        assert tech["category"] != "ready", (
+            f"Technique '{key}' still has category 'ready'"
+        )
+        assert tech["category"] != "technique", (
+            f"Technique '{key}' still has category 'technique'"
+        )
+
+
+def test_no_hyphenated_compounds_in_keys():
+    """Keys should use 'knifehand' not 'knife-hand', 'backfist' not 'back-fist'."""
+    data = load_techniques()
+    bad_patterns = ["knife-hand", "back-fist", "spear-hand"]
+    for key in data:
+        for pat in bad_patterns:
+            assert pat not in key, (
+                f"Key '{key}' contains unhyphenated compound '{pat}'"
+            )
+
+
+def test_no_hyphenated_compounds_in_en_names():
+    """English names should use 'Knifehand' not 'Knife-hand', etc."""
+    data = load_techniques()
+    bad_patterns = ["knife-hand", "back-fist", "spear-hand"]
+    for key, tech in data.items():
+        en = tech["name"]["en"].lower()
+        for pat in bad_patterns:
+            assert pat not in en, (
+                f"Technique '{key}' en name contains '{pat}': {tech['name']['en']}"
+            )
+
+
+def test_no_duplicate_romanized_names():
+    """No two techniques should have the same normalized romanized name."""
+    import re as _re
+    data = load_techniques()
+    seen: dict[str, str] = {}
+    for key, tech in data.items():
+        rom = _re.sub(r"[\s\-]+", "", tech["name"].get("romanized", "").strip().lower())
+        if rom and rom in seen:
+            assert False, (
+                f"Duplicate romanized name '{tech['name']['romanized']}': "
+                f"'{key}' and '{seen[rom]}'"
+            )
+        if rom:
+            seen[rom] = key
+
+
+def test_form_jsons_reference_valid_technique_keys():
+    """Every technique key in form JSONs should exist in techniques.json."""
+    data = load_techniques()
+    valid_keys = set(data.keys())
+    for form_path in sorted(FORMS_DIR.glob("*.json")):
+        with open(form_path) as f:
+            form = json.load(f)
+        for step in form.get("sequence", []):
+            tech_key = step.get("technique", "")
+            assert tech_key in valid_keys or tech_key in {
+                t["key"] for t in form.get("techniques", [])
+            }, (
+                f"{form_path.stem} step {step.get('step')}: "
+                f"technique '{tech_key}' not in techniques.json"
             )
 
 
