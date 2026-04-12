@@ -50,7 +50,8 @@ export interface FormData {
   sequence: SequenceStep[];
 }
 
-const FORMS_DIR = path.join(process.cwd(), "..", "dat", "forms");
+const DAT_DIR = path.join(process.cwd(), "..", "dat");
+const FORMS_DIR = path.join(DAT_DIR, "forms");
 
 export function getTechnique(
   form: FormData,
@@ -94,4 +95,47 @@ export function getAllFormIds(): string[] {
     .readdirSync(FORMS_DIR)
     .filter((f) => f.endsWith(".json"))
     .map((f) => f.replace(".json", ""));
+}
+
+// --- Centralized technique database ---
+
+export interface WikiTechniqueTip {
+  text: string;
+  timestamp?: number;
+  video_id?: string;
+}
+
+export interface WikiTechniqueSource {
+  form_id: string;
+  form_name: string;
+  video_id: string;
+  timestamp: number;
+  timestamp_end?: number;
+}
+
+export interface WikiTechnique {
+  key: string;
+  name: { en: string; ko: string; romanized: string };
+  category: string;
+  source: WikiTechniqueSource;
+  tips: WikiTechniqueTip[];
+  used_in: string[];
+}
+
+const TECHNIQUES_FILE = path.join(DAT_DIR, "techniques.json");
+
+export function getAllTechniques(): WikiTechnique[] {
+  if (!fs.existsSync(TECHNIQUES_FILE)) return [];
+  const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
+  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  return Object.values(data).sort((a, b) =>
+    a.name.en.localeCompare(b.name.en)
+  );
+}
+
+export function getTechniqueByKey(key: string): WikiTechnique | null {
+  if (!fs.existsSync(TECHNIQUES_FILE)) return null;
+  const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
+  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  return data[key] ?? null;
 }

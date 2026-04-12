@@ -28,6 +28,12 @@ export default function RootLayout({
             >
               Forms
             </Link>
+            <Link
+              href="/techniques"
+              className="text-sm text-gray-600 hover:text-gray-900"
+            >
+              Techniques
+            </Link>
           </nav>
         </header>
         <main className="flex-1">{children}</main>

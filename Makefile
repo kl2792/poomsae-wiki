@@ -1,6 +1,6 @@
 # Poomsae Wiki — reproducible pipeline
 
-.PHONY: download transcripts extract build deploy clean test
+.PHONY: download transcripts extract build deploy clean test techniques
 
 # Full pipeline
 all: download transcripts extract build deploy
@@ -36,6 +36,10 @@ extract-%:
 # Preview prompt without calling LLM
 prompt-%:
 	python3 scripts/extract.py --prompt-only $*
+
+# Step 6: Build centralized technique database from per-form JSONs
+techniques:
+	python3 scripts/build_techniques.py
 
 # Run all tests
 test:
