@@ -473,6 +473,9 @@ def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
             if rom and ts > 0 and rom not in rom_video_index:
                 rom_video_index[rom] = (form, tech)
 
+    # Map form_id to curriculum position for ordering constraint
+    form_position = {fid: i for i, fid in enumerate(CURRICULUM_ORDER)}
+
     inherited = 0
     for key, tech in techniques.items():
         if tech["source"]["timestamp"] > 0:
@@ -481,14 +484,28 @@ def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
         en = tech["name"]["en"]
         if not rom:
             continue
-        # Try exact romanized match first
+
+        # Determine the earliest form this technique appears in
+        earliest_pos = min(
+            (form_position.get(fid, 999) for fid in tech.get("used_in", [])),
+            default=999,
+        )
+
+        # Try exact romanized match first — but only from same or earlier form
         match = rom_video_index.get(rom)
+        if match:
+            src_pos = form_position.get(match[0]["id"], 999)
+            if src_pos > earliest_pos:
+                match = None  # Video from a later form — skip
+
         if not match:
-            # Bidirectional fuzzy matching: word-set containment (EN) or
-            # substring (romanized). Pick closest by edit distance on EN.
+            # Bidirectional fuzzy matching — only from same or earlier forms
             best_match = None
             best_dist = float("inf")
             for vid_rom, entry in rom_video_index.items():
+                src_pos = form_position.get(entry[0]["id"], 999)
+                if src_pos > earliest_pos:
+                    continue  # Skip videos from later forms
                 vid_en = entry[1]["name"]["en"]
                 if _is_fuzzy_match(en, rom, vid_en, vid_rom):
                     dist = _edit_distance(

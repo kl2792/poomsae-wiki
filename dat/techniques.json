@@ -1544,10 +1544,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "ilyeo",
-      "form_name": "Ilyeo",
-      "video_id": "jWClKVOrqJ8",
-      "timestamp": 137
+      "form_id": "taegeuk-1",
+      "form_name": "Taegeuk Il Jang",
+      "video_id": "WhkjRruCBTo",
+      "timestamp": 216
     },
     "tips": [],
     "used_in": [
@@ -3438,21 +3438,41 @@
     },
     "category": "block",
     "source": {
-      "form_id": "koryo",
-      "form_name": "Koryo",
-      "video_id": "mGa60JDtWmg",
-      "timestamp": 364.0
+      "form_id": "taegeuk-4",
+      "form_name": "Taegeuk Sa Jang",
+      "video_id": "Lt917gacJho",
+      "timestamp": 147.0
     },
     "tips": [
       {
-        "text": "It can also be used to strike and block an opponent's attack by opening the hand",
-        "timestamp": 370,
-        "video_id": "mGa60JDtWmg"
+        "text": "Sonal Geodeureomakgi is a technique of defending using two hands where the supporting hand assists when performing Sonal Bakkanmakgi",
+        "timestamp": 178,
+        "video_id": "Lt917gacJho"
       },
       {
-        "text": "Also used as Badamakgi and Geodeomakgi",
-        "timestamp": 377,
-        "video_id": "mGa60JDtWmg"
+        "text": "The hand defending the torso should be placed at the solar plexus level",
+        "timestamp": 187,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "While the supporting hand should be placed at the elbow level of the defending arm",
+        "timestamp": 191,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "The elbow of the supporting arm should be placed where it crosses the center line",
+        "timestamp": 196,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "The space between the outer wrist of the supporting arm and the torso should be about one hand blade",
+        "timestamp": 204,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "Be careful not to let the elbow rise due to the opening of the armpit of the supporting arm",
+        "timestamp": 216,
+        "video_id": "Lt917gacJho"
       }
     ],
     "used_in": [
@@ -4574,12 +4594,43 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-6",
-      "form_name": "Taegeuk Yuk Jang",
-      "video_id": "jcBwWo4wN7c",
-      "timestamp": 219.0
+      "form_id": "taegeuk-3",
+      "form_name": "Taegeuk Sam Jang",
+      "video_id": "ksSqKt0UkWo",
+      "timestamp": 227.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Begin with two arms crossed in front of the chest",
+        "timestamp": 242,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The defending arm and supporting arm should be placed on the outside and inside respectively when the arms are crossed",
+        "timestamp": 246,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The tip of the hand of the defending arm should not be above the shoulder when defending",
+        "timestamp": 258,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the elbow should face downward",
+        "timestamp": 262,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "Be careful not to let the wrist bend",
+        "timestamp": 268,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the hand blade should not be outside the end of the line extending from the torso",
+        "timestamp": 272,
+        "video_id": "ksSqKt0UkWo"
+      }
+    ],
     "used_in": [
       "taegeuk-4"
     ]
@@ -5058,46 +5109,56 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "sipjin",
-      "form_name": "Sipjin",
-      "video_id": "hOZB0IESJ38",
-      "timestamp": 388
+      "form_id": "koryo",
+      "form_name": "Koryo",
+      "video_id": "mGa60JDtWmg",
+      "timestamp": 186.0
     },
     "tips": [
       {
-        "text": "Bend the wrists naturally and keep your thumb close to your hand",
-        "timestamp": 407,
-        "video_id": "hOZB0IESJ38"
+        "text": "Open your hands so your palms face up, then start in front of the lower abdomen",
+        "timestamp": 192,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "Your left arm is placed obliquely with the space of one hand span between the back of your hand and forehead",
-        "timestamp": 413,
-        "video_id": "hOZB0IESJ38"
+        "text": "Past the chest and push forward so your hand blades face forward, between the philtrum and neck",
+        "timestamp": 198,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "Your right hand is symmetrically placed slightly below your left hand with a one fist space between",
-        "timestamp": 421,
-        "video_id": "hOZB0IESJ38"
+        "text": "The tips of the hands are placed at the philtrum level",
+        "timestamp": 205,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "Opening the elbow weakens the shoulder, so exert force while you tighten the elbows and straighten the body",
-        "timestamp": 429,
-        "video_id": "hOZB0IESJ38"
+        "text": "Your palms should face each other and maintain a face length between them",
+        "timestamp": 209,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "Perform this move slowly, exerting force on the lower abdomen with your eyes forward",
-        "timestamp": 439,
-        "video_id": "hOZB0IESJ38"
+        "text": "The angle of the arms should be 90-120 degrees",
+        "timestamp": 214,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "The elbows should not open backwards, the torso must not tilt to one side",
-        "timestamp": 447,
-        "video_id": "hOZB0IESJ38"
+        "text": "Your thumbs should be touching your hands",
+        "timestamp": 223,
+        "video_id": "mGa60JDtWmg"
       },
       {
-        "text": "The wrist and elbow should not be straight when the move is completed",
-        "timestamp": 454,
-        "video_id": "hOZB0IESJ38"
+        "text": "Do not straighten the thumbs",
+        "timestamp": 227,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "Do not raise the elbows; your elbows should not rise when your hands are raised",
+        "timestamp": 230,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "The palms of your hands should not be visible when seen from the front",
+        "timestamp": 238,
+        "video_id": "mGa60JDtWmg"
       }
     ],
     "used_in": [
