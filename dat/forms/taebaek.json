@@ -114,11 +114,11 @@
       ]
     },
     {
-      "key": "backfist-outward-strike",
+      "key": "backfist-outside-strike",
       "name": {
-        "en": "Backfist Outward Strike",
-        "ko": "등주먹 바깥치기",
-        "romanized": "Deungjumeok Bakkanchigi"
+        "en": "Backfist Outside Strike",
+        "ko": "등주먹바깥치기",
+        "romanized": "Deungjumeok Bakkan Chigi"
       },
       "category": "strike",
       "video_timestamp": 241,
@@ -537,7 +537,7 @@
     },
     {
       "step": 22,
-      "technique": "backfist-outward-strike",
+      "technique": "backfist-outside-strike",
       "side": "left",
       "direction": "backward",
       "kihap": false,

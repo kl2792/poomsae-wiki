@@ -203,9 +203,9 @@
       "tips": []
     },
     {
-      "key": "double-fist-uppercut",
+      "key": "double-fist-upset-punch",
       "name": {
-        "en": "Double Fist Uppercut",
+        "en": "Double Fist Upset Punch",
         "ko": "두주먹제쳐지르기",
         "romanized": "Dujumeok Jeocheo Jireugi"
       },
@@ -390,7 +390,7 @@
     },
     {
       "step": 11,
-      "technique": "double-fist-uppercut",
+      "technique": "double-fist-upset-punch",
       "side": null,
       "direction": "left-back",
       "kihap": false,
@@ -471,7 +471,7 @@
     },
     {
       "step": 20,
-      "technique": "double-fist-uppercut",
+      "technique": "double-fist-upset-punch",
       "side": null,
       "direction": "right-back",
       "kihap": false,

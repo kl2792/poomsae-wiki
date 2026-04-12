@@ -372,7 +372,7 @@
       "name": {
         "en": "Spreading Mountain Block",
         "ko": "헤쳐 산틀막기",
-        "romanized": "Hecheo Santeul Makgi"
+        "romanized": "Hecheo Santeulmakgi"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -401,11 +401,11 @@
       "tips": []
     },
     {
-      "key": "sonal-geodeureo-araemakgi",
+      "key": "knifehand-assisted-low-block",
       "name": {
         "en": "Knifehand Assisted Low Block",
         "ko": "손날거들어아래막기",
-        "romanized": "Sonal Geodeureo Araemakgi"
+        "romanized": "Sonal Geodeureo Arae Makgi"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -607,7 +607,7 @@
     },
     {
       "step": 14,
-      "technique": "sonal-geodeureo-araemakgi",
+      "technique": "knifehand-assisted-low-block",
       "side": "left",
       "direction": "backward",
       "kihap": false,
