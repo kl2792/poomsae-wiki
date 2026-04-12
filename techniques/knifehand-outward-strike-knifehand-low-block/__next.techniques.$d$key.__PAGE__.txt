@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0sdz__e5667q_.js"],"default"]
-3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"knifehand-outward-strike-knifehand-low-block","name":{"en":"Knifehand Outward Strike + Knifehand Low Block","ko":"손날바깥치기 + 손날아래내려막기","romanized":"Sonnal Bakkatchigi + Sonnal Arae Naeryeo Makgi"},"category":"strike","source":{"form_id":"koryo","form_name":"Koryo","video_id":"mGa60JDtWmg","timestamp":346},"tips":[{"text":"A technique that uses a reversed hand blade to attack from the inside out","timestamp":353,"video_id":"mGa60JDtWmg"},{"text":"The target is an opponent's face and torso","timestamp":359,"video_id":"mGa60JDtWmg"}],"used_in":["koryo"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0sdz__e5667q_.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"giBM6jGQ-COQdAUfCRtus"}
-5:null
