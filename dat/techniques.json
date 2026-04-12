@@ -43,12 +43,33 @@
     },
     "category": "block",
     "source": {
-      "form_id": "hansu",
-      "form_name": "Hansu",
-      "video_id": "lRp1JE7f-a8",
-      "timestamp": 0
+      "form_id": "taegeuk-1",
+      "form_name": "Taegeuk Il Jang",
+      "video_id": "WhkjRruCBTo",
+      "timestamp": 216
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The blocking arm's elbow should be straightened in a way that positions your fist above your knees about two fists length",
+        "timestamp": 223,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The wrist on the supporting arm should be straightened so that the back of your hand faces down",
+        "timestamp": 231,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The torso and arm should spin simultaneously",
+        "timestamp": 240,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The blocking arm's elbow should not move in a straight line",
+        "timestamp": 245,
+        "video_id": "WhkjRruCBTo"
+      }
+    ],
     "used_in": [
       "hansu"
     ]
@@ -62,28 +83,12 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "koryo",
-      "form_name": "Koryo",
-      "video_id": "mGa60JDtWmg",
-      "timestamp": 380.0
+      "form_id": "hansu",
+      "form_name": "Hansu",
+      "video_id": "lRp1JE7f-a8",
+      "timestamp": 126
     },
-    "tips": [
-      {
-        "text": "A technique typically used to attack an opponent's neck with the arch of the arc fist and arm placed in a line",
-        "timestamp": 383,
-        "video_id": "mGa60JDtWmg"
-      },
-      {
-        "text": "To achieve a hard strike and prevent injuries, the wrist must be properly straightened",
-        "timestamp": 391,
-        "video_id": "mGa60JDtWmg"
-      },
-      {
-        "text": "Your four fingers should be twisted to face outward rather than forward, and your wrist should be straight",
-        "timestamp": 398,
-        "video_id": "mGa60JDtWmg"
-      }
-    ],
+    "tips": [],
     "used_in": [
       "hansu"
     ]
@@ -793,12 +798,38 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "form_id": "keumgang",
+      "form_name": "Keumgang",
+      "video_id": "CRGVSOmaQaY",
+      "timestamp": 384
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Maintain balance with one leg",
+        "timestamp": 396,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Bend and raise the other knee",
+        "timestamp": 400,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Lightly touch the arch of the back of the foot blade inside the supporting leg",
+        "timestamp": 405,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Face forward so your knees don't open outward",
+        "timestamp": 413,
+        "video_id": "CRGVSOmaQaY"
+      },
+      {
+        "text": "Naturally straighten the ankle of the leg inside the knee of the supporting leg",
+        "timestamp": 418,
+        "video_id": "CRGVSOmaQaY"
+      }
+    ],
     "used_in": [
       "jitae"
     ]
@@ -1017,10 +1048,10 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "form_id": "chonkwon",
+      "form_name": "Cheonkwon",
+      "video_id": "FBxCzK5c4bE",
+      "timestamp": 172
     },
     "tips": [],
     "used_in": [
@@ -1128,9 +1159,20 @@
       "form_id": "chonkwon",
       "form_name": "Cheonkwon",
       "video_id": "FBxCzK5c4bE",
-      "timestamp": 0
+      "timestamp": 151
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The elbows should face downward and the armpits should touch the body",
+        "timestamp": 208,
+        "video_id": "FBxCzK5c4bE"
+      },
+      {
+        "text": "Be careful not to let the elbow open outward, creating space under the arm",
+        "timestamp": 213,
+        "video_id": "FBxCzK5c4bE"
+      }
+    ],
     "used_in": [
       "chonkwon"
     ]
@@ -1167,7 +1209,7 @@
       "form_id": "ilyeo",
       "form_name": "Ilyeo",
       "video_id": "jWClKVOrqJ8",
-      "timestamp": 0
+      "timestamp": 137
     },
     "tips": [],
     "used_in": [
@@ -1401,46 +1443,26 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "taegeuk-5",
-      "form_name": "Taegeuk Oh Jang",
-      "video_id": "VdqNEAHWCBM",
-      "timestamp": 197.0
+      "form_id": "taegeuk-4",
+      "form_name": "Taegeuk Sa Jang",
+      "video_id": "Lt917gacJho",
+      "timestamp": 375.0
     },
     "tips": [
       {
-        "text": "Bend your elbow so the back of your hand faces upward",
-        "timestamp": 204,
-        "video_id": "VdqNEAHWCBM"
+        "text": "Your arms should cross at the solar plexus level, and the striking fist should pass under the supporting arm, making an arc",
+        "timestamp": 386,
+        "video_id": "Lt917gacJho"
       },
       {
-        "text": "Place the fist in front of the shoulder of your striking arm, spin your torso and strike",
-        "timestamp": 207,
-        "video_id": "VdqNEAHWCBM"
+        "text": "The back of the fist should be at the philtrum level along the center line when seen from the front",
+        "timestamp": 394,
+        "video_id": "Lt917gacJho"
       },
       {
-        "text": "Your elbow should be slightly above your shoulder",
-        "timestamp": 215,
-        "video_id": "VdqNEAHWCBM"
-      },
-      {
-        "text": "The elbow and fist should be placed along the same line",
-        "timestamp": 220,
-        "video_id": "VdqNEAHWCBM"
-      },
-      {
-        "text": "Be careful not to let your fist fall below your shoulder",
-        "timestamp": 225,
-        "video_id": "VdqNEAHWCBM"
-      },
-      {
-        "text": "Assist the Palggumchi Dollyeochigi by letting it touch the palm of the hand assisting",
-        "timestamp": 229,
-        "video_id": "VdqNEAHWCBM"
-      },
-      {
-        "text": "Do not hold your fist with the open hand of the assisting arm",
-        "timestamp": 241,
-        "video_id": "VdqNEAHWCBM"
+        "text": "Be careful not to let the elbow of the striking arm point outward",
+        "timestamp": 403,
+        "video_id": "Lt917gacJho"
       }
     ],
     "used_in": [
@@ -1522,10 +1544,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-2",
-      "form_name": "Taegeuk I Jang",
-      "video_id": "tGlrUplKHh8",
-      "timestamp": 0
+      "form_id": "ilyeo",
+      "form_name": "Ilyeo",
+      "video_id": "jWClKVOrqJ8",
+      "timestamp": 137
     },
     "tips": [],
     "used_in": [
@@ -1730,12 +1752,33 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "form_id": "taegeuk-1",
+      "form_name": "Taegeuk Il Jang",
+      "video_id": "WhkjRruCBTo",
+      "timestamp": 216
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The blocking arm's elbow should be straightened in a way that positions your fist above your knees about two fists length",
+        "timestamp": 223,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The wrist on the supporting arm should be straightened so that the back of your hand faces down",
+        "timestamp": 231,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The torso and arm should spin simultaneously",
+        "timestamp": 240,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The blocking arm's elbow should not move in a straight line",
+        "timestamp": 245,
+        "video_id": "WhkjRruCBTo"
+      }
+    ],
     "used_in": [
       "jitae"
     ]
@@ -1971,21 +2014,26 @@
     },
     "category": "kick",
     "source": {
-      "form_id": "taegeuk-2",
-      "form_name": "Taegeuk I Jang",
-      "video_id": "tGlrUplKHh8",
-      "timestamp": 123.0
+      "form_id": "taegeuk-1",
+      "form_name": "Taegeuk Il Jang",
+      "video_id": "WhkjRruCBTo",
+      "timestamp": 376
     },
     "tips": [
       {
-        "text": "Ulguljireugi is a move where you thrust your fist in a straight line toward the opponent's philtrum",
-        "timestamp": 132,
-        "video_id": "tGlrUplKHh8"
+        "text": "The kick should be made with your leg bent so that the kicking leg starts on top of the knee of your supporting leg",
+        "timestamp": 384,
+        "video_id": "WhkjRruCBTo"
       },
       {
-        "text": "Be careful not to let the elbow of your thrusting arm move outward",
-        "timestamp": 138,
-        "video_id": "tGlrUplKHh8"
+        "text": "The forward kicking leg should be bent in a way where your front sole touches the ground first",
+        "timestamp": 392,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "Train this technique using coordination of the upper and lower body",
+        "timestamp": 402,
+        "video_id": "WhkjRruCBTo"
       }
     ],
     "used_in": [
@@ -2469,9 +2517,25 @@
       "form_id": "hansu",
       "form_name": "Hansu",
       "video_id": "lRp1JE7f-a8",
-      "timestamp": 0
+      "timestamp": 122
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Attach the armpit firmly to the body to concentrate force",
+        "timestamp": 197,
+        "video_id": "lRp1JE7f-a8"
+      },
+      {
+        "text": "The fists should be placed slightly over the elbow",
+        "timestamp": 201,
+        "video_id": "lRp1JE7f-a8"
+      },
+      {
+        "text": "Be careful not to let the fists rise excessively",
+        "timestamp": 209,
+        "video_id": "lRp1JE7f-a8"
+      }
+    ],
     "used_in": [
       "hansu"
     ]
@@ -2799,7 +2863,7 @@
       "form_id": "jitae",
       "form_name": "Jitae",
       "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "timestamp": 154
     },
     "tips": [],
     "used_in": [
@@ -2884,12 +2948,33 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-7",
-      "form_name": "Taegeuk Chil Jang",
-      "video_id": "6FUM1p6qqhQ",
-      "timestamp": 375.0
+      "form_id": "koryo",
+      "form_name": "Koryo",
+      "video_id": "mGa60JDtWmg",
+      "timestamp": 473.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The inner wrist should be level with your solar plexus when blocking/defending the torso",
+        "timestamp": 483,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "The distance between the two should remain a shoulder's length",
+        "timestamp": 489,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "Your elbow should face downward without detaching from the body",
+        "timestamp": 493,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "Be careful the move does not resemble Deungjumeok Apchigi",
+        "timestamp": 496,
+        "video_id": "mGa60JDtWmg"
+      }
+    ],
     "used_in": [
       "keumgang",
       "sipjin"
@@ -3333,10 +3418,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taebaek",
-      "form_name": "Taebaek",
-      "video_id": "Q4dYdFRbE4U",
-      "timestamp": 0
+      "form_id": "taegeuk-7",
+      "form_name": "Taegeuk Chil Jang",
+      "video_id": "6FUM1p6qqhQ",
+      "timestamp": 177.0
     },
     "tips": [],
     "used_in": [
@@ -3353,12 +3438,23 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-8",
-      "form_name": "Taegeuk Pal Jang",
-      "video_id": "Gr_Je2ZkgkI",
-      "timestamp": 0
+      "form_id": "koryo",
+      "form_name": "Koryo",
+      "video_id": "mGa60JDtWmg",
+      "timestamp": 364.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "It can also be used to strike and block an opponent's attack by opening the hand",
+        "timestamp": 370,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "Also used as Badamakgi and Geodeomakgi",
+        "timestamp": 377,
+        "video_id": "mGa60JDtWmg"
+      }
+    ],
     "used_in": [
       "taegeuk-8"
     ]
@@ -3655,9 +3751,20 @@
       "form_id": "koryo",
       "form_name": "Koryo",
       "video_id": "mGa60JDtWmg",
-      "timestamp": 0
+      "timestamp": 364.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "It can also be used to strike and block an opponent's attack by opening the hand",
+        "timestamp": 370,
+        "video_id": "mGa60JDtWmg"
+      },
+      {
+        "text": "Also used as Badamakgi and Geodeomakgi",
+        "timestamp": 377,
+        "video_id": "mGa60JDtWmg"
+      }
+    ],
     "used_in": [
       "jitae",
       "koryo"
@@ -3672,10 +3779,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taebaek",
-      "form_name": "Taebaek",
-      "video_id": "Q4dYdFRbE4U",
-      "timestamp": 0
+      "form_id": "taegeuk-6",
+      "form_name": "Taegeuk Yuk Jang",
+      "video_id": "jcBwWo4wN7c",
+      "timestamp": 253.0
     },
     "tips": [],
     "used_in": [
@@ -3726,12 +3833,18 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "form_id": "koryo",
+      "form_name": "Koryo",
+      "video_id": "mGa60JDtWmg",
+      "timestamp": 501.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The direction of the force progresses inside out",
+        "timestamp": 517,
+        "video_id": "mGa60JDtWmg"
+      }
+    ],
     "used_in": [
       "jitae"
     ]
@@ -3745,10 +3858,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "chonkwon",
-      "form_name": "Cheonkwon",
-      "video_id": "FBxCzK5c4bE",
-      "timestamp": 0
+      "form_id": "taegeuk-6",
+      "form_name": "Taegeuk Yuk Jang",
+      "video_id": "jcBwWo4wN7c",
+      "timestamp": 147.0
     },
     "tips": [],
     "used_in": [
@@ -3812,9 +3925,40 @@
       "form_id": "taegeuk-3",
       "form_name": "Taegeuk Sam Jang",
       "video_id": "ksSqKt0UkWo",
-      "timestamp": 0
+      "timestamp": 227.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Begin with two arms crossed in front of the chest",
+        "timestamp": 242,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The defending arm and supporting arm should be placed on the outside and inside respectively when the arms are crossed",
+        "timestamp": 246,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The tip of the hand of the defending arm should not be above the shoulder when defending",
+        "timestamp": 258,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the elbow should face downward",
+        "timestamp": 262,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "Be careful not to let the wrist bend",
+        "timestamp": 268,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the hand blade should not be outside the end of the line extending from the torso",
+        "timestamp": 272,
+        "video_id": "ksSqKt0UkWo"
+      }
+    ],
     "used_in": [
       "taegeuk-3",
       "taegeuk-5",
@@ -4188,12 +4332,33 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-6",
-      "form_name": "Taegeuk Yuk Jang",
-      "video_id": "jcBwWo4wN7c",
-      "timestamp": 0
+      "form_id": "taegeuk-1",
+      "form_name": "Taegeuk Il Jang",
+      "video_id": "WhkjRruCBTo",
+      "timestamp": 216
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The blocking arm's elbow should be straightened in a way that positions your fist above your knees about two fists length",
+        "timestamp": 223,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The wrist on the supporting arm should be straightened so that the back of your hand faces down",
+        "timestamp": 231,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The torso and arm should spin simultaneously",
+        "timestamp": 240,
+        "video_id": "WhkjRruCBTo"
+      },
+      {
+        "text": "The blocking arm's elbow should not move in a straight line",
+        "timestamp": 245,
+        "video_id": "WhkjRruCBTo"
+      }
+    ],
     "used_in": [
       "jitae",
       "taegeuk-6"
@@ -4208,10 +4373,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "pyeongwon",
-      "form_name": "Pyeongwon",
-      "video_id": "RB-7mBtvtZw",
-      "timestamp": 0
+      "form_id": "taegeuk-6",
+      "form_name": "Taegeuk Yuk Jang",
+      "video_id": "jcBwWo4wN7c",
+      "timestamp": 253.0
     },
     "tips": [],
     "used_in": [
@@ -4247,12 +4412,43 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 0
+      "form_id": "taegeuk-3",
+      "form_name": "Taegeuk Sam Jang",
+      "video_id": "ksSqKt0UkWo",
+      "timestamp": 227.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Begin with two arms crossed in front of the chest",
+        "timestamp": 242,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The defending arm and supporting arm should be placed on the outside and inside respectively when the arms are crossed",
+        "timestamp": 246,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "The tip of the hand of the defending arm should not be above the shoulder when defending",
+        "timestamp": 258,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the elbow should face downward",
+        "timestamp": 262,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "Be careful not to let the wrist bend",
+        "timestamp": 268,
+        "video_id": "ksSqKt0UkWo"
+      },
+      {
+        "text": "And the hand blade should not be outside the end of the line extending from the torso",
+        "timestamp": 272,
+        "video_id": "ksSqKt0UkWo"
+      }
+    ],
     "used_in": [
       "jitae"
     ]
@@ -4378,10 +4574,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-4",
-      "form_name": "Taegeuk Sa Jang",
-      "video_id": "Lt917gacJho",
-      "timestamp": 0
+      "form_id": "taegeuk-6",
+      "form_name": "Taegeuk Yuk Jang",
+      "video_id": "jcBwWo4wN7c",
+      "timestamp": 219.0
     },
     "tips": [],
     "used_in": [
@@ -4438,12 +4634,33 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
-      "timestamp": 154
+      "form_id": "sipjin",
+      "form_name": "Sipjin",
+      "video_id": "hOZB0IESJ38",
+      "timestamp": 297
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "The tip of the middle finger of the opposite hand starts at the wrist of the blocking arm",
+        "timestamp": 316,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Gather all your fingers and attach them to the outer wrist",
+        "timestamp": 322,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Both elbows should face downward and the armpits should be touching the body",
+        "timestamp": 326,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "The armpit of the assisting arm should not be away from the body",
+        "timestamp": 333,
+        "video_id": "hOZB0IESJ38"
+      }
+    ],
     "used_in": [
       "sipjin"
     ]
@@ -4497,10 +4714,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taegeuk-8",
-      "form_name": "Taegeuk Pal Jang",
-      "video_id": "Gr_Je2ZkgkI",
-      "timestamp": 0
+      "form_id": "taegeuk-6",
+      "form_name": "Taegeuk Yuk Jang",
+      "video_id": "jcBwWo4wN7c",
+      "timestamp": 289.0
     },
     "tips": [],
     "used_in": [
@@ -4811,12 +5028,23 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "ilyeo",
-      "form_name": "Ilyeo",
-      "video_id": "jWClKVOrqJ8",
-      "timestamp": 0
+      "form_id": "taegeuk-2",
+      "form_name": "Taegeuk I Jang",
+      "video_id": "tGlrUplKHh8",
+      "timestamp": 123.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Ulguljireugi is a move where you thrust your fist in a straight line toward the opponent's philtrum",
+        "timestamp": 132,
+        "video_id": "tGlrUplKHh8"
+      },
+      {
+        "text": "Be careful not to let the elbow of your thrusting arm move outward",
+        "timestamp": 138,
+        "video_id": "tGlrUplKHh8"
+      }
+    ],
     "used_in": [
       "ilyeo"
     ]
@@ -4830,12 +5058,48 @@
     },
     "category": "strike",
     "source": {
-      "form_id": "pyeongwon",
-      "form_name": "Pyeongwon",
-      "video_id": "RB-7mBtvtZw",
-      "timestamp": 0
+      "form_id": "sipjin",
+      "form_name": "Sipjin",
+      "video_id": "hOZB0IESJ38",
+      "timestamp": 388
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Bend the wrists naturally and keep your thumb close to your hand",
+        "timestamp": 407,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Your left arm is placed obliquely with the space of one hand span between the back of your hand and forehead",
+        "timestamp": 413,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Your right hand is symmetrically placed slightly below your left hand with a one fist space between",
+        "timestamp": 421,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Opening the elbow weakens the shoulder, so exert force while you tighten the elbows and straighten the body",
+        "timestamp": 429,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "Perform this move slowly, exerting force on the lower abdomen with your eyes forward",
+        "timestamp": 439,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "The elbows should not open backwards, the torso must not tilt to one side",
+        "timestamp": 447,
+        "video_id": "hOZB0IESJ38"
+      },
+      {
+        "text": "The wrist and elbow should not be straight when the move is completed",
+        "timestamp": 454,
+        "video_id": "hOZB0IESJ38"
+      }
+    ],
     "used_in": [
       "pyeongwon"
     ]
@@ -4949,7 +5213,7 @@
       "form_id": "sipjin",
       "form_name": "Sipjin",
       "video_id": "hOZB0IESJ38",
-      "timestamp": 0
+      "timestamp": 642
     },
     "tips": [
       {
@@ -5665,10 +5929,10 @@
     },
     "category": "block",
     "source": {
-      "form_id": "taebaek",
-      "form_name": "Taebaek",
-      "video_id": "Q4dYdFRbE4U",
-      "timestamp": 0
+      "form_id": "keumgang",
+      "form_name": "Keumgang",
+      "video_id": "CRGVSOmaQaY",
+      "timestamp": 384
     },
     "tips": [],
     "used_in": [
@@ -6112,9 +6376,40 @@
       "form_id": "taegeuk-6",
       "form_name": "Taegeuk Yuk Jang",
       "video_id": "jcBwWo4wN7c",
-      "timestamp": 0
+      "timestamp": 147.0
     },
-    "tips": [],
+    "tips": [
+      {
+        "text": "Twist your torso about 45 degrees from the Apgubi posture",
+        "timestamp": 157,
+        "video_id": "jcBwWo4wN7c"
+      },
+      {
+        "text": "Your arms should cross and pass in front of your face",
+        "timestamp": 164,
+        "video_id": "jcBwWo4wN7c"
+      },
+      {
+        "text": "Bakkanmakgi performed with the tip of your hands facing upward",
+        "timestamp": 167,
+        "video_id": "jcBwWo4wN7c"
+      },
+      {
+        "text": "Your blocking arm should cross outside your assisting arm",
+        "timestamp": 172,
+        "video_id": "jcBwWo4wN7c"
+      },
+      {
+        "text": "Be careful not to let your hand blade move outside the end of the line from your shoulder",
+        "timestamp": 177,
+        "video_id": "jcBwWo4wN7c"
+      },
+      {
+        "text": "The knee of your hind leg should not bend, and your sole must not leave the ground",
+        "timestamp": 183,
+        "video_id": "jcBwWo4wN7c"
+      }
+    ],
     "used_in": [
       "taegeuk-6"
     ]
@@ -6131,7 +6426,7 @@
       "form_id": "taegeuk-6",
       "form_name": "Taegeuk Yuk Jang",
       "video_id": "jcBwWo4wN7c",
-      "timestamp": 0
+      "timestamp": 147.0
     },
     "tips": [],
     "used_in": [
@@ -6237,7 +6532,7 @@
       "form_id": "sipjin",
       "form_name": "Sipjin",
       "video_id": "hOZB0IESJ38",
-      "timestamp": 0
+      "timestamp": 579
     },
     "tips": [
       {

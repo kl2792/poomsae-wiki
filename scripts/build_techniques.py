@@ -378,12 +378,84 @@ CURRICULUM_ORDER = [
 ]
 
 
+def _en_word_set(name: str) -> set[str]:
+    """Normalized word set for English name matching."""
+    return set(normalize_en_name(name).split())
+
+
+def _edit_distance(a: str, b: str) -> int:
+    """Levenshtein edit distance between two strings."""
+    if len(a) < len(b):
+        a, b = b, a
+    prev = list(range(len(b) + 1))
+    for i, ca in enumerate(a):
+        curr = [i + 1]
+        for j, cb in enumerate(b):
+            curr.append(min(prev[j + 1] + 1, curr[j] + 1, prev[j] + (ca != cb)))
+        prev = curr
+    return prev[-1]
+
+
+def _is_fuzzy_match(
+    en_a: str, rom_a: str, en_b: str, rom_b: str
+) -> bool:
+    """Check if two techniques are a fuzzy match for video inheritance.
+
+    For non-combination techniques: matches when the word set of one English
+    name is a strict subset of the other, OR when one romanized name is a
+    substring of the other (bidirectional).
+
+    For combination techniques (containing '+'): matches only when one
+    romanized name is a substring of the other (original behavior).
+    """
+    is_combo = "+" in en_a or "+" in en_b
+    # Romanized substring (bidirectional)
+    rom_match = False
+    if rom_a and rom_b and rom_a != rom_b:
+        rom_match = rom_a in rom_b or rom_b in rom_a
+    if is_combo:
+        return rom_match
+    # Word-set containment on English names (bidirectional)
+    ws_a = _en_word_set(en_a)
+    ws_b = _en_word_set(en_b)
+    en_match = ws_a < ws_b or ws_b < ws_a  # strict subset either direction
+    return en_match or rom_match
+
+
+# Romanized modifier words that can be added/removed without changing the
+# base technique.  Used by level-aware video inheritance.
+_ROMANIZED_MODIFIERS: set[str] = {
+    # Level
+    "ulgul", "momtong", "arae",
+    # Stance
+    "hakdari", "seogi", "dwit", "gubi", "ap", "beom", "jase",
+    # Position
+    "yeop", "an", "bakkat",
+}
+
+
+def _romanized_base(romanized: str) -> str:
+    """Extract the base technique from a romanized name by removing modifier words.
+
+    Returns a space-joined, sorted, lowercased string of non-modifier words.
+    Sorting makes the comparison order-independent.
+    """
+    words = re.sub(r"[\s\-]+", " ", romanized.strip().lower()).split()
+    base_words = [w for w in words if w not in _ROMANIZED_MODIFIERS]
+    return " ".join(sorted(base_words))
+
+
 def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
     """Inherit video source from earlier forms for techniques with no video.
 
     For each technique with source.timestamp == 0, search forms in curriculum
-    order for the first form that has a technique with a fuzzy-matching
-    romanized name AND video_timestamp > 0. Copy that source and tips.
+    order for the first form that has a technique with a fuzzy-matching name
+    AND video_timestamp > 0. Matching uses word-set containment on English
+    names or romanized substring matching, both bidirectional. Among matches,
+    picks the closest by edit distance on English name.
+
+    After inheritance, fixes techniques where tips have timestamps and video_id
+    but source.timestamp == 0 by setting source.timestamp from the first tip.
 
     Returns count of techniques that inherited a video source.
     """
@@ -406,19 +478,26 @@ def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
         if tech["source"]["timestamp"] > 0:
             continue
         rom = normalize_romanized(tech["name"].get("romanized", ""))
+        en = tech["name"]["en"]
         if not rom:
             continue
-        # Try exact match first, then fuzzy substring match
+        # Try exact romanized match first
         match = rom_video_index.get(rom)
         if not match:
-            # Find the longest matching romanized name that is a substring
-            best_sub = None
-            best_len = 0
+            # Bidirectional fuzzy matching: word-set containment (EN) or
+            # substring (romanized). Pick closest by edit distance on EN.
+            best_match = None
+            best_dist = float("inf")
             for vid_rom, entry in rom_video_index.items():
-                if vid_rom in rom and vid_rom != rom and len(vid_rom) > best_len:
-                    best_sub = entry
-                    best_len = len(vid_rom)
-            match = best_sub
+                vid_en = entry[1]["name"]["en"]
+                if _is_fuzzy_match(en, rom, vid_en, vid_rom):
+                    dist = _edit_distance(
+                        normalize_en_name(en), normalize_en_name(vid_en)
+                    )
+                    if dist < best_dist:
+                        best_dist = dist
+                        best_match = entry
+            match = best_match
         if not match:
             continue
         src_form, src_tech = match
@@ -445,6 +524,67 @@ def inherit_video_sources(techniques: dict, forms: list[dict]) -> int:
                         tip_entry["video_id"] = src_form["video_id"]
                     tech["tips"].append(tip_entry)
         inherited += 1
+
+    # --- Level-aware pass ---
+    # For techniques still without video, match against techniques (not forms)
+    # that already have video by comparing romanized base words (ignoring
+    # level/stance/position modifiers).  Pick the closest by edit distance.
+    level_inherited = 0
+    # Build base -> list of (key, tech) for techniques WITH video
+    base_video_index: dict[str, list[tuple[str, dict]]] = {}
+    for k, t in techniques.items():
+        if t["source"]["timestamp"] <= 0:
+            continue
+        rom = t["name"].get("romanized", "")
+        if not rom:
+            continue
+        base = _romanized_base(rom)
+        if base:
+            base_video_index.setdefault(base, []).append((k, t))
+
+    for key, tech in techniques.items():
+        if tech["source"]["timestamp"] > 0:
+            continue
+        rom_raw = tech["name"].get("romanized", "")
+        if not rom_raw:
+            continue
+        base = _romanized_base(rom_raw)
+        if not base or base not in base_video_index:
+            continue
+        # Pick the candidate with shortest edit distance on romanized name
+        rom_norm = normalize_romanized(rom_raw)
+        best_entry = None
+        best_dist = float("inf")
+        for cand_key, cand_tech in base_video_index[base]:
+            cand_rom = normalize_romanized(cand_tech["name"].get("romanized", ""))
+            dist = _edit_distance(rom_norm, cand_rom)
+            if dist < best_dist:
+                best_dist = dist
+                best_entry = cand_tech
+        if best_entry is None:
+            continue
+        tech["source"] = dict(best_entry["source"])
+        level_inherited += 1
+        inherited += 1
+
+    if level_inherited:
+        print(f"  Level-aware inheritance: {level_inherited} techniques")
+
+    # Fix techniques where tips have timestamps but source.timestamp == 0.
+    # Set source.timestamp from the first tip with a timestamp.
+    tip_fixed = 0
+    for key, tech in techniques.items():
+        if tech["source"]["timestamp"] != 0:
+            continue
+        for tip in tech["tips"]:
+            if isinstance(tip, dict) and tip.get("timestamp") and tip.get("video_id"):
+                tech["source"]["timestamp"] = tip["timestamp"]
+                # Ensure source video_id matches the tip's video_id
+                tech["source"]["video_id"] = tip["video_id"]
+                tip_fixed += 1
+                break
+    if tip_fixed:
+        print(f"  Fixed {tip_fixed} techniques with timestamp from tips")
 
     return inherited
 
@@ -573,6 +713,15 @@ def main() -> None:
     zero_after = sum(1 for t in techniques.values() if t["source"]["timestamp"] == 0)
     print(f"Video inheritance: {inherited} techniques inherited sources "
           f"({zero_before} -> {zero_after} with timestamp=0)")
+    if zero_after > 0:
+        no_video = [
+            (k, t["name"]["en"], t["name"].get("romanized", ""))
+            for k, t in sorted(techniques.items())
+            if t["source"]["timestamp"] == 0
+        ]
+        print(f"  Remaining no-video ({len(no_video)}):")
+        for k, en, rom in no_video:
+            print(f"    {k}: {en} ({rom})")
 
     # Update form JSONs with renamed keys
     updated = update_form_jsons(rename_map, techniques)
