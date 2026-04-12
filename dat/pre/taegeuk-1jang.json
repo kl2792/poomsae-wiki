@@ -1,0 +1,343 @@
+{
+  "form_slug": "taegeuk-1jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "GIBON JUNBIJASE",
+      "timestamp": 161
+    },
+    {
+      "number": "02",
+      "name": "ARAE(NAERYEO) MAKGI",
+      "timestamp": 217
+    },
+    {
+      "number": "05",
+      "name": "OLLYEO(ULGUL) MAKGI",
+      "timestamp": 344
+    },
+    {
+      "number": "06",
+      "name": "APCHAGI",
+      "timestamp": 376
+    },
+    {
+      "number": "07",
+      "name": "GIBON JUNBIJASE",
+      "timestamp": 409
+    },
+    {
+      "number": "08",
+      "name": "APSEOGI",
+      "timestamp": 427
+    },
+    {
+      "number": "09",
+      "name": "APGUBI",
+      "timestamp": 0
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 507
+    },
+    {
+      "number": "2",
+      "name": "ARAE(NAERYEO) MAKGI (",
+      "side": null,
+      "timestamp": 217
+    },
+    {
+      "number": "3",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 502
+    },
+    {
+      "number": "4",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 624
+    },
+    {
+      "number": "5",
+      "name": "OLLYEO(ULGUL) MAKGI",
+      "side": null,
+      "timestamp": 346
+    },
+    {
+      "number": "6",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 509
+    },
+    {
+      "number": "7",
+      "name": "NARANHISEOGI",
+      "side": null,
+      "timestamp": 485
+    },
+    {
+      "number": "8",
+      "name": "APSEOGI",
+      "side": null,
+      "timestamp": 427
+    },
+    {
+      "number": "9",
+      "name": "APGUBI",
+      "side": null,
+      "timestamp": 485
+    }
+  ],
+  "tips": [
+    {
+      "text": "should be balanced along the center line =",
+      "timestamp": 185
+    },
+    {
+      "text": "Moth elbows should be bent s é",
+      "timestamp": 198
+    },
+    {
+      "text": "Wand your fists should be placed apart",
+      "timestamp": 200
+    },
+    {
+      "text": "and be careful not to raise wes",
+      "timestamp": 211
+    },
+    {
+      "text": "The blocking arm’s elbow should be ~S “",
+      "timestamp": 223
+    },
+    {
+      "text": "Whe blocking arm’s elbow should be . »",
+      "timestamp": 224
+    },
+    {
+      "text": "straightened in a way that positions your fist ;",
+      "timestamp": 224
+    },
+    {
+      "text": "WY the blocking arm’s elbow should be",
+      "timestamp": 226
+    },
+    {
+      "text": "should be straightened so that the back of",
+      "timestamp": 231
+    },
+    {
+      "text": "Mand the blocking arm’s elbow 7",
+      "timestamp": 245
+    },
+    {
+      "text": "should not move in a straight line-Jireugi =",
+      "timestamp": 245
+    },
+    {
+      "text": "Wand the blocking arm’s elbow a",
+      "timestamp": 249
+    },
+    {
+      "text": "Wand the blocking arm’s elbow i",
+      "timestamp": 250
+    },
+    {
+      "text": "the thrusting arm should be straightened,",
+      "timestamp": 256
+    },
+    {
+      "text": "and your fist should form a straight line with",
+      "timestamp": 256
+    },
+    {
+      "text": "i the thrusting arm should be straightened,",
+      "timestamp": 257
+    },
+    {
+      "text": "Fe and your fist should form a straight line with",
+      "timestamp": 257
+    },
+    {
+      "text": "fh b the thrusting arm should be straightened,",
+      "timestamp": 258
+    },
+    {
+      "text": "Wf the thrusting arm should be straightened,",
+      "timestamp": 263
+    },
+    {
+      "text": "YW the thrusting arm should be straightened,",
+      "timestamp": 264
+    },
+    {
+      "text": "the wrist of your supporting arm should be straightened",
+      "timestamp": 265
+    },
+    {
+      "text": "so that the back of your hand faces down",
+      "timestamp": 265
+    },
+    {
+      "text": "t so that the back of your hand faces down",
+      "timestamp": 271
+    },
+    {
+      "text": "A ‘ Y the wrist of your supporting arm should be straightened",
+      "timestamp": 272
+    },
+    {
+      "text": "MW The thrusting arm should move straight AN",
+      "timestamp": 274
+    },
+    {
+      "text": "The supporting arm should not be pulled",
+      "timestamp": 286
+    },
+    {
+      "text": "ay The supporting arm should not be pulled",
+      "timestamp": 288
+    },
+    {
+      "text": "Bi ' we : the supporting arm should not be pulled",
+      "timestamp": 289
+    },
+    {
+      "text": "Bi ' pe : the supporting arm should not be pulled",
+      "timestamp": 290
+    },
+    {
+      "text": "YW the outer wrist should be level",
+      "timestamp": 309
+    },
+    {
+      "text": "d Wand the location of your fist should coincide",
+      "timestamp": 314
+    },
+    {
+      "text": "Wand the location of your fist should coincide",
+      "timestamp": 315
+    },
+    {
+      "text": "Whe hand of your supporting arm should be",
+      "timestamp": 321
+    },
+    {
+      "text": "p - slightly straightened at the level of the solar plexus,",
+      "timestamp": 321
+    },
+    {
+      "text": "W the hand of your supporting arm should be",
+      "timestamp": 323
+    },
+    {
+      "text": "Mine hand of your supporting arm should be",
+      "timestamp": 324
+    },
+    {
+      "text": "A slightly straightened at the level of the solar plexus,",
+      "timestamp": 324
+    },
+    {
+      "text": "the back of the wrist and the forehead",
+      "timestamp": 362
+    },
+    {
+      "text": "Wthe arm should be tilted with",
+      "timestamp": 363
+    },
+    {
+      "text": "Be careful not to raise your arm excessively \\",
+      "timestamp": 370
+    },
+    {
+      "text": "WM the kick should be made with your leg bent \\ :",
+      "timestamp": 384
+    },
+    {
+      "text": "WY the forward kicking leg should be bent",
+      "timestamp": 392
+    },
+    {
+      "text": "parallel so that the back of the foot blades —— '",
+      "timestamp": 412
+    },
+    {
+      "text": "y : Whe center of your body should be",
+      "timestamp": 430
+    },
+    {
+      "text": "y < W the center of your body should be",
+      "timestamp": 432
+    },
+    {
+      "text": "W the center of your body should be",
+      "timestamp": 434
+    },
+    {
+      "text": "Whe center of your body should be",
+      "timestamp": 435
+    },
+    {
+      "text": "the heel on the hind foot should be on",
+      "timestamp": 436
+    },
+    {
+      "text": "Wf the back of the foot blade on",
+      "timestamp": 440
+    },
+    {
+      "text": "Mand the space between the two feet should be :",
+      "timestamp": 461
+    },
+    {
+      "text": "Mvour breathing should be identical to ;",
+      "timestamp": 527
+    },
+    {
+      "text": "be M Naeditgi should be performed softly,",
+      "timestamp": 534
+    },
+    {
+      "text": "WNaeditgi should be performed softly,",
+      "timestamp": 535
+    },
+    {
+      "text": "Oreun Jireugi should be performed",
+      "timestamp": 544
+    },
+    {
+      "text": "the heel of the right foot should not be",
+      "timestamp": 553
+    },
+    {
+      "text": "our other fist should be pulled to the waist, \\",
+      "timestamp": 762
+    },
+    {
+      "text": "Mvour other fist should be pulled to the waist, \\",
+      "timestamp": 765
+    },
+    {
+      "text": "the wrist of the defending arm",
+      "timestamp": 769
+    },
+    {
+      "text": "and forehead should be about",
+      "timestamp": 769
+    },
+    {
+      "text": "the space between the back of",
+      "timestamp": 770
+    }
+  ],
+  "sections": {
+    "key_moves": 152,
+    "explanation": 156,
+    "repeat": 885
+  }
+}

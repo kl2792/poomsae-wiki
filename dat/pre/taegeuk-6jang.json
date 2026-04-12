@@ -1,0 +1,220 @@
+{
+  "form_slug": "taegeuk-6jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "SONAL UL BITEUREOMAKGI",
+      "timestamp": 147
+    },
+    {
+      "number": "02",
+      "name": "DOLLYEGCHAGI",
+      "timestamp": 191
+    },
+    {
+      "number": "03",
+      "name": "ULGUL BAKKANMAKGI",
+      "timestamp": 0
+    },
+    {
+      "number": "04",
+      "name": "ARAE HECHEOMAKGI",
+      "timestamp": 253
+    },
+    {
+      "number": "05",
+      "name": "BATANGSON ANMAKGI",
+      "timestamp": 289
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "SONAL ULGUL BITEUREOMAKGI",
+      "side": null,
+      "timestamp": 148
+    },
+    {
+      "number": "2",
+      "name": "(ULGUL)DOLLYEOCHAGI + OEN (ULGUL)BAKKANMAKGI + OREUN (MVOMTONG)JIREUG",
+      "side": "right",
+      "timestamp": 413
+    },
+    {
+      "number": "3",
+      "name": "BATANGSON (MOMTONG)ANMAKGI + OREUN (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 626
+    },
+    {
+      "number": "4",
+      "name": "(ULGULJBAKKANMAKGI+OEN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 423
+    },
+    {
+      "number": "5",
+      "name": "APCHAGI + OEN (MOMTONG)BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 532
+    },
+    {
+      "number": "6",
+      "name": "ARAE HECHEOMAKGI",
+      "side": null,
+      "timestamp": 428
+    },
+    {
+      "number": "7",
+      "name": "BITEUREO (ULGUL)MAKGI",
+      "side": "right",
+      "timestamp": 417
+    }
+  ],
+  "tips": [
+    {
+      "text": "i Wour arms should cross and pass",
+      "timestamp": 164
+    },
+    {
+      "text": "a Wour arms should cross and pass",
+      "timestamp": 165
+    },
+    {
+      "text": "Wour arms should cross and pass",
+      "timestamp": 166
+    },
+    {
+      "text": "Mvour blocking arm should cross outside",
+      "timestamp": 172
+    },
+    {
+      "text": "WM Your blocking arm should cross outside",
+      "timestamp": 175
+    },
+    {
+      "text": "WBe careful not to let your hand blade",
+      "timestamp": 177
+    },
+    {
+      "text": "Be careful not to let your hand blade",
+      "timestamp": 178
+    },
+    {
+      "text": "Whe knee of your hind leg should not bend, ~",
+      "timestamp": 183
+    },
+    {
+      "text": "The knee of your hind leg should not bend,",
+      "timestamp": 185
+    },
+    {
+      "text": "Vv Wour blocking arm should cross past",
+      "timestamp": 226
+    },
+    {
+      "text": "i Wvour blocking arm should cross past",
+      "timestamp": 227
+    },
+    {
+      "text": "Wvour blocking arm should cross past",
+      "timestamp": 230
+    },
+    {
+      "text": "Wyour blocking arm should cross past",
+      "timestamp": 231
+    },
+    {
+      "text": "Wvour blocking arm should cross past",
+      "timestamp": 234
+    },
+    {
+      "text": "j \\ Your elbow should point downward,",
+      "timestamp": 235
+    },
+    {
+      "text": "Wvour elbow should point downward,",
+      "timestamp": 236
+    },
+    {
+      "text": "WM Your elbow should point downward",
+      "timestamp": 237
+    },
+    {
+      "text": "P Mour elbow should point downward,",
+      "timestamp": 238
+    },
+    {
+      "text": "Mvour elbow should point downward ~~",
+      "timestamp": 239
+    },
+    {
+      "text": "your arms should straighten naturally",
+      "timestamp": 272
+    },
+    {
+      "text": "L q 4 your arms should straighten naturally",
+      "timestamp": 273
+    },
+    {
+      "text": "mee your arms should straighten naturally",
+      "timestamp": 274
+    },
+    {
+      "text": "should be about two raised fists length",
+      "timestamp": 276
+    },
+    {
+      "text": "aN should be about two raised fists length",
+      "timestamp": 279
+    },
+    {
+      "text": "the back of your hammer fist and",
+      "timestamp": 281
+    },
+    {
+      "text": "your front thigh should be aligned",
+      "timestamp": 281
+    },
+    {
+      "text": "x W the back of your hammer fist and",
+      "timestamp": 283
+    },
+    {
+      "text": "j W the back of your hammer fist and",
+      "timestamp": 284
+    },
+    {
+      "text": "WY the palm of your hand should be placed a -—",
+      "timestamp": 307
+    },
+    {
+      "text": "your armpit should be touching your body ~ \\ H »\"",
+      "timestamp": 312
+    },
+    {
+      "text": "WM yYour elbow should point downward",
+      "timestamp": 315
+    },
+    {
+      "text": "We careful not to let your armpits 7",
+      "timestamp": 669
+    },
+    {
+      "text": "WBe careful not to let your armpits i",
+      "timestamp": 671
+    },
+    {
+      "text": "We careful not to let your armpits i \\",
+      "timestamp": 672
+    },
+    {
+      "text": "Wand your elbows should point downward i t",
+      "timestamp": 673
+    }
+  ],
+  "sections": {
+    "key_moves": 136,
+    "explanation": 141
+  }
+}

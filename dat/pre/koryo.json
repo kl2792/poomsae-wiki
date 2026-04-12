@@ -1,0 +1,353 @@
+{
+  "form_slug": "koryo",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "TONGMILGI JUNBIJASE",
+      "timestamp": 186
+    },
+    {
+      "number": "02",
+      "name": "GEODEUPYEOPCHAGI",
+      "timestamp": 243
+    },
+    {
+      "number": "03",
+      "name": "JEOCHEOJIREUGI",
+      "timestamp": 286
+    },
+    {
+      "number": "04",
+      "name": "NULLEOKKEOKGI",
+      "timestamp": 299
+    },
+    {
+      "number": "05",
+      "name": "PALGGUMCHI YEOPCHIGI",
+      "timestamp": 330
+    },
+    {
+      "number": "06",
+      "name": "SONAL BAKKANCHIGI",
+      "timestamp": 346
+    },
+    {
+      "number": "07",
+      "name": "SONAL ARAEMAKGI",
+      "timestamp": 365
+    },
+    {
+      "number": "08",
+      "name": "AGEUMSON APCHIGI",
+      "timestamp": 380
+    },
+    {
+      "number": "09",
+      "name": "BATANGSON NULLEOMAKGI",
+      "timestamp": 406
+    },
+    {
+      "number": "10",
+      "name": "MEJUMEOK PYOJEOKARAECHIGI",
+      "timestamp": 430
+    },
+    {
+      "number": "11",
+      "name": "ANPALMOK HECHEOMAKGI",
+      "timestamp": 473
+    },
+    {
+      "number": "12",
+      "name": "SONAL YEOPMAKGI",
+      "timestamp": 501
+    },
+    {
+      "number": "13",
+      "name": "PYOJEOKJIREUGI",
+      "timestamp": 523
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "MEJUMEOK PYOJEOKARAE(NAERYEO)CHIGI (",
+      "side": null,
+      "timestamp": 1141
+    },
+    {
+      "number": "2",
+      "name": "SONAL BAKKANCHIGI + OEN SONAL ARAE(NAERYEO)MAKGI (",
+      "side": "left",
+      "timestamp": 1129
+    },
+    {
+      "number": "3",
+      "name": "SONAL ANCHIGI + OREUN SONAL ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 1131
+    },
+    {
+      "number": "4",
+      "name": "SONAL ANCHIGI + OEN SONAL ARAE(NAEBYEQ)MAKGI",
+      "side": "left",
+      "timestamp": 1141
+    },
+    {
+      "number": "5",
+      "name": "PALGGUMCHI YEOPCHIGI",
+      "side": null,
+      "timestamp": 330
+    },
+    {
+      "number": "6",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "right",
+      "timestamp": 592
+    },
+    {
+      "number": "7",
+      "name": "GEODEUPYEOPCHAGI + OEN SONAL BAKKANCHIGI",
+      "side": "left",
+      "timestamp": 604
+    },
+    {
+      "number": "8",
+      "name": "AGEUMSON APCHIGI",
+      "side": null,
+      "timestamp": 380
+    },
+    {
+      "number": "9",
+      "name": "BATANGSON NULLEOMAKGI",
+      "side": null,
+      "timestamp": 406
+    },
+    {
+      "number": "10",
+      "name": "MEJUMEOK PYOJEOKARAECHIGI",
+      "side": null,
+      "timestamp": 432
+    },
+    {
+      "number": "11",
+      "name": "(PYEONSONKEUT) JEOTHYEOJJIREUGI",
+      "side": "right",
+      "timestamp": 940
+    },
+    {
+      "number": "12",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 938
+    },
+    {
+      "number": "13",
+      "name": "BATANGSON (MOMTONG)NULLEOMAKGI",
+      "side": "right",
+      "timestamp": 938
+    },
+    {
+      "number": "14",
+      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
+      "side": null,
+      "timestamp": 739
+    },
+    {
+      "number": "71",
+      "name": "TONGMILG",
+      "side": null,
+      "timestamp": 574
+    }
+  ],
+  "tips": [
+    {
+      "text": "Mand your thumbs should be",
+      "timestamp": 223
+    },
+    {
+      "text": "i e Do not straighten the thumbs",
+      "timestamp": 227
+    },
+    {
+      "text": "Your elbows should not rise",
+      "timestamp": 235
+    },
+    {
+      "text": "Your elbows should not rise",
+      "timestamp": 236
+    },
+    {
+      "text": "should not be visible when seen y",
+      "timestamp": 238
+    },
+    {
+      "text": "should not be visible when seen po",
+      "timestamp": 239
+    },
+    {
+      "text": "should not be visible when seen he ‘4",
+      "timestamp": 240
+    },
+    {
+      "text": "should not be visible when seen ‘",
+      "timestamp": 241
+    },
+    {
+      "text": "the wrist must be properly straightened Z",
+      "timestamp": 391
+    },
+    {
+      "text": "WYour four fingers should be a\"",
+      "timestamp": 398
+    },
+    {
+      "text": "WYour four fingers should be y",
+      "timestamp": 399
+    },
+    {
+      "text": "Wvour four fingers should be 7",
+      "timestamp": 400
+    },
+    {
+      "text": "Wand your wrist should be straight 7",
+      "timestamp": 403
+    },
+    {
+      "text": "The palm of your hand af",
+      "timestamp": 416
+    },
+    {
+      "text": "The palm of your hand “oh _",
+      "timestamp": 417
+    },
+    {
+      "text": "Wf The palm of your hand ——— irae =. =. %",
+      "timestamp": 418
+    },
+    {
+      "text": "Wf the palm of your hand _... spa \\ ¥ . eae",
+      "timestamp": 419
+    },
+    {
+      "text": "and torso should be about one fist",
+      "timestamp": 420
+    },
+    {
+      "text": "YW the blocking arm should be",
+      "timestamp": 426
+    },
+    {
+      "text": "P YW the blocking arm should be",
+      "timestamp": 427
+    },
+    {
+      "text": "WS The fist should be made at the shoulder line",
+      "timestamp": 451
+    },
+    {
+      "text": "WS The fist should be made at the shoulder line",
+      "timestamp": 453
+    },
+    {
+      "text": "We careful not to straighten your wrists,",
+      "timestamp": 466
+    },
+    {
+      "text": "We careful not to straighten your wrists,",
+      "timestamp": 467
+    },
+    {
+      "text": "a .. Whe careful not to straighten your wrists,",
+      "timestamp": 470
+    },
+    {
+      "text": "e We careful not to straighten your wrists,",
+      "timestamp": 471
+    },
+    {
+      "text": "WY Be careful the move does not bs > Z",
+      "timestamp": 496
+    },
+    {
+      "text": "be careful the move does not = » y/",
+      "timestamp": 497
+    },
+    {
+      "text": "WY Be careful the move does not v",
+      "timestamp": 498
+    },
+    {
+      "text": "ORL © it is important to place the target",
+      "timestamp": 545
+    },
+    {
+      "text": "Mit is important to place the target",
+      "timestamp": 546
+    },
+    {
+      "text": "Wit is important to place the target",
+      "timestamp": 547
+    },
+    {
+      "text": "WN } & <CADEMY Y The hand blade should be slightly",
+      "timestamp": 622
+    },
+    {
+      "text": "should be about two raised fists length",
+      "timestamp": 762
+    },
+    {
+      "text": "y * should be about two raised fists length",
+      "timestamp": 763
+    },
+    {
+      "text": "should not rise above your shoulders",
+      "timestamp": 793
+    },
+    {
+      "text": "Wand the palm of the hand acting",
+      "timestamp": 960
+    },
+    {
+      "text": "The thrusting arm should straighten",
+      "timestamp": 965
+    },
+    {
+      "text": "a W The thrusting arm should straighten",
+      "timestamp": 967
+    },
+    {
+      "text": "W The thrusting arm should straighten",
+      "timestamp": 968
+    },
+    {
+      "text": "a WY the target arm should straighten naturally",
+      "timestamp": 969
+    },
+    {
+      "text": "should point in the direction of the kick",
+      "timestamp": 1019
+    },
+    {
+      "text": "rN © The back of the hand should",
+      "timestamp": 1034
+    },
+    {
+      "text": "W The back of the hand should",
+      "timestamp": 1035
+    },
+    {
+      "text": "Yeopchagi should touch the ground",
+      "timestamp": 1047
+    },
+    {
+      "text": "the torso should be flexible through",
+      "timestamp": 1168
+    }
+  ],
+  "sections": {
+    "key_moves": 177,
+    "explanation": 181,
+    "repeat": 1222
+  }
+}

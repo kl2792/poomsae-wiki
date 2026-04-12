@@ -1,0 +1,198 @@
+{
+  "form_slug": "keumgang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "BATANGSON APCHIGI",
+      "timestamp": 213
+    },
+    {
+      "number": "02",
+      "name": "SONAL ANMAKGI",
+      "timestamp": 251
+    },
+    {
+      "number": "03",
+      "name": "GEUMGANGMAKGI",
+      "timestamp": 272
+    },
+    {
+      "number": "04",
+      "name": "KEUNDOLJJEOGWI VWELV AAMV",
+      "timestamp": 316
+    },
+    {
+      "number": "05",
+      "name": "SANTEULMAKGI",
+      "timestamp": 345
+    },
+    {
+      "number": "06",
+      "name": "HAKDARISEOGI",
+      "timestamp": 384
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI)",
+      "side": null,
+      "timestamp": 450
+    },
+    {
+      "number": "2",
+      "name": "SONAL (MOMTONG)A NMA KGI",
+      "side": null,
+      "timestamp": 251
+    },
+    {
+      "number": "3",
+      "name": "BATANGSON APCHIGI",
+      "side": "left",
+      "timestamp": 449
+    },
+    {
+      "number": "4",
+      "name": "BATANGSON APCHIGI",
+      "side": "right",
+      "timestamp": 452
+    },
+    {
+      "number": "5",
+      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
+      "side": null,
+      "timestamp": 611
+    },
+    {
+      "number": "6",
+      "name": "SONAL (MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 458
+    },
+    {
+      "number": "7",
+      "name": "SONAL (MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 460
+    },
+    {
+      "number": "9",
+      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
+      "side": null,
+      "timestamp": 821
+    },
+    {
+      "number": "10",
+      "name": "ARAE HECHEOMAKGI",
+      "side": null,
+      "timestamp": 825
+    }
+  ],
+  "tips": [
+    {
+      "text": "to concentrate force on the palm of your hand",
+      "timestamp": 231
+    },
+    {
+      "text": "WM Vour hand should be level '",
+      "timestamp": 238
+    },
+    {
+      "text": "The hand blade should be level",
+      "timestamp": 259
+    },
+    {
+      "text": "The hand blade should be level Laas",
+      "timestamp": 262
+    },
+    {
+      "text": "Vv Be careful not to let the tip",
+      "timestamp": 271
+    },
+    {
+      "text": "should be about one raised fist & )",
+      "timestamp": 291
+    },
+    {
+      "text": "Be careful not to let the arm blocking",
+      "timestamp": 305
+    },
+    {
+      "text": "W Be careful not to let the arm blocking",
+      "timestamp": 307
+    },
+    {
+      "text": "rs Be careful not to let the arm blocking",
+      "timestamp": 311
+    },
+    {
+      "text": "Place the wrist of one arm 4",
+      "timestamp": 322
+    },
+    {
+      "text": "Place the wrist of one arm wor? eae 7",
+      "timestamp": 324
+    },
+    {
+      "text": "Place the wrist of one arm soe Pe",
+      "timestamp": 325
+    },
+    {
+      "text": "on top and the torso should be ~",
+      "timestamp": 330
+    },
+    {
+      "text": "of the back of the foot blade inside the supporting leg",
+      "timestamp": 405
+    },
+    {
+      "text": "Mand naturally straighten ‘ +",
+      "timestamp": 418
+    },
+    {
+      "text": "Mand naturally straighten a) ae",
+      "timestamp": 421
+    },
+    {
+      "text": "Mand naturally straighten a” ee",
+      "timestamp": 422
+    },
+    {
+      "text": "your wrist should be level Call",
+      "timestamp": 481
+    },
+    {
+      "text": "should be performed firmly and slowly",
+      "timestamp": 641
+    },
+    {
+      "text": "of the back of the foot blade vA",
+      "timestamp": 859
+    },
+    {
+      "text": "of the back of the foot blade SS oC",
+      "timestamp": 860
+    },
+    {
+      "text": "and the ankle should straighten naturally",
+      "timestamp": 862
+    },
+    {
+      "text": "g b and the ankle should straighten naturally",
+      "timestamp": 864
+    },
+    {
+      "text": "b and the ankle should straighten naturally",
+      "timestamp": 865
+    },
+    {
+      "text": "gg b and the ankle should straighten naturally",
+      "timestamp": 866
+    }
+  ],
+  "sections": {
+    "key_moves": 204,
+    "explanation": 210,
+    "repeat": 1032
+  }
+}

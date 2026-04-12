@@ -1,0 +1,64 @@
+{
+  "form_slug": "taegeuk-2jang",
+  "key_moves": [],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "OENARAE(NAERYEOJMAKG",
+      "side": null,
+      "timestamp": 416
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + OREUN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 412
+    },
+    {
+      "number": "3",
+      "name": "APCHAGI + OEN (MVOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 414
+    },
+    {
+      "number": "4",
+      "name": "APCHAGI + OREUN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 417
+    },
+    {
+      "number": "5",
+      "name": "ULGUL(OLLYEO)MAKGI",
+      "side": "left",
+      "timestamp": 264
+    },
+    {
+      "number": "6",
+      "name": "ULGUL(OLLYEO)MAKGI",
+      "side": "right",
+      "timestamp": 267
+    }
+  ],
+  "tips": [
+    {
+      "text": "WBe careful not to let the elbow of",
+      "timestamp": 138
+    },
+    {
+      "text": "We careful not to let the elbow of",
+      "timestamp": 139
+    },
+    {
+      "text": "should be made so the momentum gained ? A",
+      "timestamp": 270
+    },
+    {
+      "text": "should be raised so your arms will be ‘",
+      "timestamp": 290
+    }
+  ],
+  "sections": {
+    "explanation": 125,
+    "repeat": 466
+  }
+}

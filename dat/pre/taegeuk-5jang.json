@@ -1,0 +1,241 @@
+{
+  "form_slug": "taegeuk-5jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "MEJUMEOK NAERYEOCHIGI",
+      "timestamp": 155
+    },
+    {
+      "number": "02",
+      "name": "PALGGUMCHI DOLLYEOCHIGI",
+      "timestamp": 198
+    },
+    {
+      "number": "03",
+      "name": "PALGGUMCHI PYOJEOKCHIGI",
+      "timestamp": 246
+    },
+    {
+      "number": "04",
+      "name": "KKOASEOGI",
+      "timestamp": 0
+    },
+    {
+      "number": "05",
+      "name": "YEOPSEOGI",
+      "timestamp": 315
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "(MOMTONG)JANMAKGI + OREUN (MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 424
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + OREUN DEUNGJUMEOK APCHIGI + OEN (MOMTONG)JANMAKGI",
+      "side": "right",
+      "timestamp": 427
+    },
+    {
+      "number": "3",
+      "name": "APCHAGI + OEN DEUNGJUMEOK APCHIGI + OREUN (MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 430
+    },
+    {
+      "number": "4",
+      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 607
+    },
+    {
+      "number": "5",
+      "name": "ARAE(NAERYEO)MAKGI + OREUN (MOMTONG)JANMAKGI",
+      "side": "left",
+      "timestamp": 611
+    },
+    {
+      "number": "6",
+      "name": "APCHAGI + OREUN ARAE(NAERYEO)MAKGI + OEN (MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 530
+    },
+    {
+      "number": "7",
+      "name": "ARAEMAKGI",
+      "side": "left",
+      "timestamp": 353
+    }
+  ],
+  "tips": [
+    {
+      "text": "with your arm naturally straightened &",
+      "timestamp": 179
+    },
+    {
+      "text": "YM Your fist should not stop at the head",
+      "timestamp": 187
+    },
+    {
+      "text": "f 7 YM our fist should not stop at the head",
+      "timestamp": 188
+    },
+    {
+      "text": "YM our fist should not stop at the head",
+      "timestamp": 189
+    },
+    {
+      "text": "YM our fist should not stop at the head",
+      "timestamp": 190
+    },
+    {
+      "text": "We careful not to let your arm bend 9",
+      "timestamp": 192
+    },
+    {
+      "text": "Whe careful not to let your arm bend a",
+      "timestamp": 193
+    },
+    {
+      "text": "We careful not to let your arm bend ? \\ He",
+      "timestamp": 195
+    },
+    {
+      "text": "Bend your elbow so the back of",
+      "timestamp": 204
+    },
+    {
+      "text": "WM place the fist in front of the shoulder",
+      "timestamp": 207
+    },
+    {
+      "text": "A Your elbow should be slightly a .",
+      "timestamp": 215
+    },
+    {
+      "text": "Your elbow should be slightly ims a",
+      "timestamp": 216
+    },
+    {
+      "text": "Your elbow should be slightly = s",
+      "timestamp": 217
+    },
+    {
+      "text": "The elbow and fist should be placed",
+      "timestamp": 220
+    },
+    {
+      "text": "af YM the elbow and fist should be placed",
+      "timestamp": 221
+    },
+    {
+      "text": "Y the elbow and fist should be placed",
+      "timestamp": 222
+    },
+    {
+      "text": "Be careful not to let your fist \\",
+      "timestamp": 225
+    },
+    {
+      "text": "A ———— by lettingit touch the palm of",
+      "timestamp": 229
+    },
+    {
+      "text": "by letting it touch the palm of",
+      "timestamp": 230
+    },
+    {
+      "text": "x _ by letting it touch the palm of",
+      "timestamp": 232
+    },
+    {
+      "text": "x Zi by letting it touch the palm of",
+      "timestamp": 233
+    },
+    {
+      "text": "a target should be slightly bent",
+      "timestamp": 259
+    },
+    {
+      "text": "Be careful not to let the palm x \\",
+      "timestamp": 267
+    },
+    {
+      "text": "of the assisting hand hit your elbow ev iS",
+      "timestamp": 267
+    },
+    {
+      "text": "We careful not to let the palm >",
+      "timestamp": 268
+    },
+    {
+      "text": "Be careful not to let the palm a",
+      "timestamp": 270
+    },
+    {
+      "text": "Be careful not to let the palm = <j",
+      "timestamp": 271
+    },
+    {
+      "text": "Be careful not to let the palm",
+      "timestamp": 272
+    },
+    {
+      "text": "WBe careful not to let the palm y",
+      "timestamp": 274
+    },
+    {
+      "text": "Be careful not to let the palm at j",
+      "timestamp": 275
+    },
+    {
+      "text": "Se 4 W Be careful not to let your shin and calf part",
+      "timestamp": 311
+    },
+    {
+      "text": "Be careful not to let your shin and calf part",
+      "timestamp": 312
+    },
+    {
+      "text": "SS es Be careful not to let your shin and calf part",
+      "timestamp": 313
+    },
+    {
+      "text": "The fist of the blocking arm should start “s y",
+      "timestamp": 621
+    },
+    {
+      "text": "from outside of the assisting arm 4+ - ao al",
+      "timestamp": 621
+    },
+    {
+      "text": "from outside of the assisting arm es. ee",
+      "timestamp": 622
+    },
+    {
+      "text": "Mand straighten while drawing an arc",
+      "timestamp": 637
+    },
+    {
+      "text": "WM Your leg and arm should be",
+      "timestamp": 642
+    },
+    {
+      "text": "should be performed simultaneously",
+      "timestamp": 646
+    },
+    {
+      "text": "should be performed simultaneously j",
+      "timestamp": 668
+    }
+  ],
+  "sections": {
+    "key_moves": 146,
+    "explanation": 150,
+    "repeat": 722
+  }
+}

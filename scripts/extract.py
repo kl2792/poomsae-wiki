@@ -21,6 +21,7 @@ from pathlib import Path
 DAT_DIR = Path(__file__).parent.parent / "dat"
 TRANSCRIPTS_DIR = DAT_DIR / "transcripts"
 FORMS_DIR = DAT_DIR / "forms"
+PRE_DIR = DAT_DIR / "pre"
 
 FORM_META = {
     "taegeuk-1jang": {"id": "taegeuk-1", "name_en": "Taegeuk Il Jang", "name_ko": "태극 1장", "meaning": "Heaven (Keon ☰)", "belt": "8th Geup", "dan": None, "video_id": "WhkjRruCBTo", "duration": 970, "expected_moves": 18},
@@ -43,7 +44,55 @@ FORM_META = {
 }
 
 
-def build_prompt(transcript: str, meta: dict) -> str:
+def format_pre_extracted(pre_data: dict | None) -> str:
+    """Format pre-extracted data as a prompt section."""
+    if not pre_data:
+        return ""
+
+    parts = []
+    parts.append("""
+PRE-EXTRACTED DATA (from video transcript -- use ONLY these technique names):
+
+CRITICAL: Do NOT add any technique that is not in the lists below.
+If you think a technique is missing, leave a note but do NOT invent it.
+The sequence may use basic techniques (momtong jireugi, arae makgi, ap chagi, etc.)
+that are not in KEY MOVES -- those are fine to include since they are standard TKD techniques.
+But do NOT invent named techniques that appear nowhere in the transcript.
+""")
+
+    if pre_data.get("key_moves"):
+        parts.append("KEY MOVES found in video:")
+        for m in pre_data["key_moves"]:
+            ts = f"@{m['timestamp']}s" if m["timestamp"] > 0 else ""
+            parts.append(f"  {m['number']}. {m['name']} {ts}")
+        parts.append("")
+
+    if pre_data.get("sequence_steps"):
+        parts.append("SEQUENCE STEPS found in EXPLANATION sections:")
+        for s in pre_data["sequence_steps"]:
+            side = f"({s['side']})" if s["side"] else ""
+            parts.append(f"  {s['number']}. {s['name']} {side} @{s['timestamp']}s")
+        parts.append("")
+
+    if pre_data.get("tips"):
+        parts.append("TIPS found:")
+        for t in pre_data["tips"][:50]:  # Cap at 50 to avoid prompt bloat
+            parts.append(f"  [{t['timestamp']}s] {t['text']}")
+        if len(pre_data.get("tips", [])) > 50:
+            parts.append(f"  ... and {len(pre_data['tips']) - 50} more")
+        parts.append("")
+
+    if pre_data.get("sections"):
+        parts.append("SECTIONS detected:")
+        for name, ts in pre_data["sections"].items():
+            parts.append(f"  {name}: {ts}s")
+        parts.append("")
+
+    return "\n".join(parts)
+
+
+def build_prompt(transcript: str, meta: dict, pre_data: dict | None = None) -> str:
+    pre_section = format_pre_extracted(pre_data)
     return f"""Extract structured poomsae data from this OCR transcript of an official KKW instructional video.
 
 FORM: {meta['name_en']} ({meta['name_ko']})
@@ -128,7 +177,7 @@ SECTIONS:
 }}
 
 Output ONLY valid JSON, no other text.
-
+{pre_section}
 TRANSCRIPT:
 {transcript}"""
 
@@ -199,7 +248,19 @@ def extract_form(slug: str, prompt_only: bool = False):
         return False
 
     transcript = transcript_path.read_text()
-    prompt = build_prompt(transcript, meta)
+
+    # Load pre-extracted data if available
+    pre_path = PRE_DIR / f"{slug}.json"
+    pre_data = None
+    if pre_path.exists():
+        with open(pre_path) as f:
+            pre_data = json.load(f)
+        print(f"  Loaded pre-extraction: {len(pre_data.get('key_moves', []))} key moves, "
+              f"{len(pre_data.get('sequence_steps', []))} steps")
+    else:
+        print(f"  WARNING: No pre-extraction at {pre_path} — running without anchoring")
+
+    prompt = build_prompt(transcript, meta, pre_data)
 
     if prompt_only:
         print(prompt)

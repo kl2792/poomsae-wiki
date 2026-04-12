@@ -1,0 +1,176 @@
+{
+  "form_slug": "taegeuk-8jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "DUBALDANGSEONGCHAGI",
+      "timestamp": 177
+    },
+    {
+      "number": "02",
+      "name": "GEODEUREO BAKKANMAKGI",
+      "timestamp": 199
+    },
+    {
+      "number": "03",
+      "name": "OESANTEULMAKGI",
+      "timestamp": 236
+    },
+    {
+      "number": "04",
+      "name": "DANGGYEOJIREUGI",
+      "timestamp": 275
+    },
+    {
+      "number": "05",
+      "name": "GEODEUREO ARAEMAKGI",
+      "timestamp": 320
+    },
+    {
+      "number": "06",
+      "name": "TTWIEOAPCHAGI",
+      "timestamp": 338
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 771
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + OREUN TTWIEOAPCHAGI",
+      "side": "left",
+      "timestamp": 775
+    },
+    {
+      "number": "3",
+      "name": "DUBALDANGSEONGCHAGI + OEN ANMAKGI + DOUBLE JIREUGI",
+      "side": null,
+      "timestamp": 380
+    },
+    {
+      "number": "4",
+      "name": "PALGGUMCHI DOLLYEOCHIGI + OREUN DEUNGJUMEOK APCHIGI",
+      "side": "right",
+      "timestamp": 787
+    },
+    {
+      "number": "5",
+      "name": "APCHAGI + OEN JIREUGI",
+      "side": "right",
+      "timestamp": 666
+    },
+    {
+      "number": "6",
+      "name": "BATANGSON ANMAKGI",
+      "side": "right",
+      "timestamp": 669
+    },
+    {
+      "number": "7",
+      "name": "PALGGUMCHI DOLLYEOCHIGI URNS",
+      "side": "left",
+      "timestamp": 801
+    },
+    {
+      "number": "8",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 803
+    }
+  ],
+  "tips": [
+    {
+      "text": "the fist blocking the torso should be placed aq Ve",
+      "timestamp": 213
+    },
+    {
+      "text": "the assisting hand is placed level au 7} ‘-",
+      "timestamp": 216
+    },
+    {
+      "text": "g . Be careful not to let the blocking hand",
+      "timestamp": 223
+    },
+    {
+      "text": "C Be careful not to let the blocking hand",
+      "timestamp": 224
+    },
+    {
+      "text": "Be careful not to let the blocking hand",
+      "timestamp": 225
+    },
+    {
+      "text": "We careful not to let the blocking hand",
+      "timestamp": 226
+    },
+    {
+      "text": "YW The wrist of the arm performing Anpalmok",
+      "timestamp": 249
+    },
+    {
+      "text": "YW Tthe wrist of the arm performing Anpalmok",
+      "timestamp": 251
+    },
+    {
+      "text": "A YW the wrist of the arm performing Anpalmok",
+      "timestamp": 252
+    },
+    {
+      "text": "rN YM should be level with the philtrum,",
+      "timestamp": 254
+    },
+    {
+      "text": "should be about two raised fists apart ca",
+      "timestamp": 256
+    },
+    {
+      "text": "Not to let the hammer fist touch the a ‘ ze",
+      "timestamp": 303
+    },
+    {
+      "text": "WY Be careful not to let the fist start",
+      "timestamp": 311
+    },
+    {
+      "text": "WY Be careful not to let the fist start",
+      "timestamp": 312
+    },
+    {
+      "text": "YW the blocking hand should maintain a,",
+      "timestamp": 324
+    },
+    {
+      "text": "Whe assisting hand should be level",
+      "timestamp": 333
+    },
+    {
+      "text": "Bs A WY the assisting hand should be level",
+      "timestamp": 334
+    },
+    {
+      "text": "Bs A WM the assisting hand should be level",
+      "timestamp": 335
+    },
+    {
+      "text": "x Ey W the assisting hand should be level",
+      "timestamp": 336
+    },
+    {
+      "text": "W the pulling arm should be free",
+      "timestamp": 518
+    },
+    {
+      "text": "the pulling arm should be free",
+      "timestamp": 519
+    }
+  ],
+  "sections": {
+    "key_moves": 167,
+    "explanation": 172,
+    "repeat": 916
+  }
+}

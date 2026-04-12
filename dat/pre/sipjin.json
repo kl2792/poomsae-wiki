@@ -1,0 +1,493 @@
+{
+  "form_slug": "sipjin",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "HWANGSOMAKGI",
+      "timestamp": 244
+    },
+    {
+      "number": "02",
+      "name": "SONBADAK GEODEUREO BAKKANMAKGI",
+      "timestamp": 298
+    },
+    {
+      "number": "03",
+      "name": "PYEONSONKEUT EOPEOJJIREUGI",
+      "timestamp": 338
+    },
+    {
+      "number": "04",
+      "name": "BAWIMILGI",
+      "timestamp": 388
+    },
+    {
+      "number": "05",
+      "name": "SONALDEUNG HECHEOMAKGI",
+      "timestamp": 460
+    },
+    {
+      "number": "06",
+      "name": "KKEUREOOLIGI",
+      "timestamp": 503
+    },
+    {
+      "number": "07",
+      "name": "CHETDARIJIREUGI",
+      "timestamp": 0
+    },
+    {
+      "number": "08",
+      "name": "PYEONSON EOTGEUREO ARAEMAKGI",
+      "timestamp": 610
+    },
+    {
+      "number": "09",
+      "name": "SONALDEUNG GEODEUREOMAKGI",
+      "timestamp": 632
+    },
+    {
+      "number": "10",
+      "name": "GEODEUREO DEUNGJUMEOK APCHIGI",
+      "timestamp": 669
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "side": null,
+      "timestamp": 1118
+    },
+    {
+      "number": "2",
+      "name": "SONBADAK GEODEUREO BAKKANMAKGI",
+      "side": null,
+      "timestamp": 707
+    },
+    {
+      "number": "3",
+      "name": "PYEONSONKEUT EOPEOJJIREUGI )",
+      "side": "right",
+      "timestamp": 747
+    },
+    {
+      "number": "4",
+      "name": "CHETDARIJIREUGI + CHETDARIJIREUGI",
+      "side": null,
+      "timestamp": 1561
+    },
+    {
+      "number": "5",
+      "name": "SONALDEUNG HECHEOMAKGI",
+      "side": null,
+      "timestamp": 1149
+    },
+    {
+      "number": "6",
+      "name": "SONAL AREAHECHEOMAKGI",
+      "side": null,
+      "timestamp": 1152
+    },
+    {
+      "number": "7",
+      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "side": null,
+      "timestamp": 1122
+    },
+    {
+      "number": "8",
+      "name": "PYEONSON EOTGEUREO ARAEMAKGI",
+      "side": null,
+      "timestamp": 707
+    },
+    {
+      "number": "9",
+      "name": "SONALDEUNG GEODEUREOMAKGI",
+      "side": null,
+      "timestamp": 707
+    },
+    {
+      "number": "10",
+      "name": "GEODEUREO DEUNGJUMEOK APCHIGI",
+      "side": null,
+      "timestamp": 707
+    },
+    {
+      "number": "11",
+      "name": "MEONGYECHIGI",
+      "side": null,
+      "timestamp": 774
+    },
+    {
+      "number": "71",
+      "name": "HWANGSOMAKGI",
+      "side": null,
+      "timestamp": 723
+    }
+  ],
+  "tips": [
+    {
+      "text": "Twist your wrist so that the back of the fist ys",
+      "timestamp": 249
+    },
+    {
+      "text": "The space between the back of the wrist",
+      "timestamp": 267
+    },
+    {
+      "text": "W The space between the back of the wrist",
+      "timestamp": 270
+    },
+    {
+      "text": "ee and forehead should be about",
+      "timestamp": 270
+    },
+    {
+      "text": "and forehead should be about",
+      "timestamp": 271
+    },
+    {
+      "text": "i The space between the back of the wrist",
+      "timestamp": 272
+    },
+    {
+      "text": "starts at the wrist of the blocking arm",
+      "timestamp": 316
+    },
+    {
+      "text": "y @ H starts at the wrist of the blocking arm",
+      "timestamp": 319
+    },
+    {
+      "text": "H starts at the wrist of the blocking arm",
+      "timestamp": 321
+    },
+    {
+      "text": "Both elbows should face downward 4 \\",
+      "timestamp": 326
+    },
+    {
+      "text": "and the armpits should be touching the body iss N",
+      "timestamp": 326
+    },
+    {
+      "text": "Both elbows should face downward e \\",
+      "timestamp": 330
+    },
+    {
+      "text": "Both elbows should face downward a \\",
+      "timestamp": 331
+    },
+    {
+      "text": "VAAL The armpit of the assisting arm",
+      "timestamp": 333
+    },
+    {
+      "text": "mata should not be away from the body",
+      "timestamp": 333
+    },
+    {
+      "text": "The armpit of the assisting arm",
+      "timestamp": 334
+    },
+    {
+      "text": "Els: should not be away from the body",
+      "timestamp": 334
+    },
+    {
+      "text": "should not be away from the body",
+      "timestamp": 335
+    },
+    {
+      "text": "Bid ; The armpit of the assisting arm",
+      "timestamp": 336
+    },
+    {
+      "text": "y should not be away from the body",
+      "timestamp": 336
+    },
+    {
+      "text": "Aad The armpit of the assisting arm",
+      "timestamp": 337
+    },
+    {
+      "text": "po pms / should not be away from the body",
+      "timestamp": 337
+    },
+    {
+      "text": "W be careful to keep the four fingers aligned",
+      "timestamp": 366
+    },
+    {
+      "text": "be careful to keep the four fingers aligned",
+      "timestamp": 367
+    },
+    {
+      "text": "yA ; LS W be careful to keep the four fingers aligned",
+      "timestamp": 372
+    },
+    {
+      "text": "Yn; LX W be careful to keep the four fingers aligned",
+      "timestamp": 373
+    },
+    {
+      "text": "Vs W be careful to keep the four fingers aligned",
+      "timestamp": 374
+    },
+    {
+      "text": "be careful not to let the elbow open outside 5",
+      "timestamp": 381
+    },
+    {
+      "text": "with the space of one hand span",
+      "timestamp": 413
+    },
+    {
+      "text": "with the space of one hand span",
+      "timestamp": 416
+    },
+    {
+      "text": "between the back of your hand",
+      "timestamp": 417
+    },
+    {
+      "text": "WM between the back of your hand",
+      "timestamp": 418
+    },
+    {
+      "text": "Ne A between the back of your hand",
+      "timestamp": 419
+    },
+    {
+      "text": "yO b M between the back of your hand",
+      "timestamp": 420
+    },
+    {
+      "text": "J Be and straighten the body",
+      "timestamp": 433
+    },
+    {
+      "text": "WM The elbows should not open backwards,",
+      "timestamp": 447
+    },
+    {
+      "text": "WM The elbows should not open backwards,",
+      "timestamp": 450
+    },
+    {
+      "text": "the wrist and elbow should not be straight b.",
+      "timestamp": 454
+    },
+    {
+      "text": "You can use the back of the hand blade to strike and block an.",
+      "timestamp": 472
+    },
+    {
+      "text": "You can use the back of the hand blade to strike and block as.",
+      "timestamp": 475
+    },
+    {
+      "text": "Your elbow should face downward",
+      "timestamp": 481
+    },
+    {
+      "text": "iN \\ ri Your elbow should face downward",
+      "timestamp": 483
+    },
+    {
+      "text": "fisN \\ i, Your elbow should face downward",
+      "timestamp": 484
+    },
+    {
+      "text": "J PN Your elbow should face downward",
+      "timestamp": 485
+    },
+    {
+      "text": "pisN \\\\ E PN Your elbow should face downward",
+      "timestamp": 486
+    },
+    {
+      "text": "Your armpit should not open due to your elbow rising",
+      "timestamp": 492
+    },
+    {
+      "text": "Your armpit should not open due to your elbow rising",
+      "timestamp": 495
+    },
+    {
+      "text": "the back of your hand blade must >",
+      "timestamp": 498
+    },
+    {
+      "text": "the back of your hand blade must ~ , § we",
+      "timestamp": 500
+    },
+    {
+      "text": "YM the back of your hand blade must Me \"1 ‘Q ee",
+      "timestamp": 501
+    },
+    {
+      "text": "then the back of it is snapped to block ~ '",
+      "timestamp": 519
+    },
+    {
+      "text": "WThe opposite arm is pulled to the back of",
+      "timestamp": 537
+    },
+    {
+      "text": "The wrist should cross the center line",
+      "timestamp": 546
+    },
+    {
+      "text": "and arm should be about one raised fist's length yy i",
+      "timestamp": 546
+    },
+    {
+      "text": "Be careful not to let the arm performing Kkeureooligi",
+      "timestamp": 559
+    },
+    {
+      "text": "om, a - © Your arms should be parallel",
+      "timestamp": 585
+    },
+    {
+      "text": "om, @ » © Your arms should be parallel",
+      "timestamp": 587
+    },
+    {
+      "text": "bie N Pill Your arms should be parallel",
+      "timestamp": 588
+    },
+    {
+      "text": "The fist in the back should be placed on the wrist j",
+      "timestamp": 589
+    },
+    {
+      "text": "and the fists should not be placed apart too wide or narrow a7",
+      "timestamp": 600
+    },
+    {
+      "text": "with the palm of the blocking hand facing upward ~-..___*_-*—¥ ,",
+      "timestamp": 642
+    },
+    {
+      "text": "make the back of the assisting hand face upward",
+      "timestamp": 649
+    },
+    {
+      "text": "s j/ make the back of the assisting hand face upward",
+      "timestamp": 650
+    },
+    {
+      "text": "g b/ © make the back of the assisting hand face upward",
+      "timestamp": 651
+    },
+    {
+      "text": "g j/ © make the back of the assisting hand face upward",
+      "timestamp": 652
+    },
+    {
+      "text": "Remember that the back of the assisting hand, 4 Fal ;",
+      "timestamp": 656
+    },
+    {
+      "text": "wf Remember that the back of the assisting hand, FN",
+      "timestamp": 658
+    },
+    {
+      "text": "The space between the assisting arm and torso",
+      "timestamp": 663
+    },
+    {
+      "text": "should be about one hand length '",
+      "timestamp": 663
+    },
+    {
+      "text": "Make a fist with the assisting arm, 4",
+      "timestamp": 673
+    },
+    {
+      "text": "Make a fist with the assisting arm, 4 oe i",
+      "timestamp": 675
+    },
+    {
+      "text": "Make a fist with the assisting arm, 4 i a",
+      "timestamp": 676
+    },
+    {
+      "text": "Make a fist with the assisting arm, , a We",
+      "timestamp": 679
+    },
+    {
+      "text": "should be placed so the arm is parallel",
+      "timestamp": 681
+    },
+    {
+      "text": "q / should be placed so the arm is parallel",
+      "timestamp": 684
+    },
+    {
+      "text": "The fist should be at the philtrum level",
+      "timestamp": 695
+    },
+    {
+      "text": "YM the assisting hand should be at the solar plexus level",
+      "timestamp": 700
+    },
+    {
+      "text": "with the back of the fist facing downward",
+      "timestamp": 700
+    },
+    {
+      "text": "the assisting hand should be at the solar plexus level",
+      "timestamp": 701
+    },
+    {
+      "text": "a YM the assisting hand should be at the solar plexus level",
+      "timestamp": 702
+    },
+    {
+      "text": "rf the assisting hand should be at the solar plexus level",
+      "timestamp": 705
+    },
+    {
+      "text": "eI the assisting hand should be at the solar plexus level",
+      "timestamp": 706
+    },
+    {
+      "text": "move it to the back of your hand ~",
+      "timestamp": 832
+    },
+    {
+      "text": "move it to the back of your hand ~ yy",
+      "timestamp": 833
+    },
+    {
+      "text": "move it to the back of your hand I i=.",
+      "timestamp": 834
+    },
+    {
+      "text": "move it to the back of your hand Ay >.",
+      "timestamp": 838
+    },
+    {
+      "text": "Brush the right palm on the back of the left hand",
+      "timestamp": 841
+    },
+    {
+      "text": "WM the moving of the right hand over the back of the left hand p<",
+      "timestamp": 872
+    },
+    {
+      "text": "should be visible between your hand PP",
+      "timestamp": 1242
+    }
+  ],
+  "sections": {
+    "poomsae": 51,
+    "key_moves": 232,
+    "explanation": 236,
+    "repeat": 1627
+  }
+}

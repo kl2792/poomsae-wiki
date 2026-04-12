@@ -1,0 +1,220 @@
+{
+  "form_slug": "taegeuk-4jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "SONAL GEODEUREOMAKGI NYAS",
+      "timestamp": 173
+    },
+    {
+      "number": "02",
+      "name": "PYEONSONKEUT SEWOJJIREUGI",
+      "timestamp": 224
+    },
+    {
+      "number": "03",
+      "name": "JEBIPUM ANCHIGI",
+      "timestamp": 258
+    },
+    {
+      "number": "04",
+      "name": "DEUNGJUMUCK APCHIGI",
+      "timestamp": 375
+    },
+    {
+      "number": "05",
+      "name": "DEUNGJUMUCK APCHIGI",
+      "timestamp": 0
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "SONAL GEODEUREOMAKGI NYAS",
+      "side": null,
+      "timestamp": 173
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + OEN (MOMTONGJJIERUGI",
+      "side": "right",
+      "timestamp": 511
+    },
+    {
+      "number": "3",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "right",
+      "timestamp": 427
+    },
+    {
+      "number": "4",
+      "name": "YEOPCHAGI + OREUN SONAL GEODEUREOMAKGI",
+      "side": "right",
+      "timestamp": 517
+    },
+    {
+      "number": "5",
+      "name": "ANMAKGI + DOUBLE JIREUGI",
+      "side": "left",
+      "timestamp": 651
+    },
+    {
+      "number": "6",
+      "name": "APCHAGI + OREUN DEUNGJUMUCK APCHIGI",
+      "side": "right",
+      "timestamp": 586
+    },
+    {
+      "number": "7",
+      "name": "BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 586
+    },
+    {
+      "number": "71",
+      "name": "BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 581
+    }
+  ],
+  "tips": [
+    {
+      "text": "WThe hand defending the torso should be placed",
+      "timestamp": 187
+    },
+    {
+      "text": "e _ W The hand defending the torso should be placed",
+      "timestamp": 188
+    },
+    {
+      "text": "WThe hand defending the torso should be placed",
+      "timestamp": 189
+    },
+    {
+      "text": "WM tThe hand defending the torso should be placed",
+      "timestamp": 190
+    },
+    {
+      "text": "WM while the supporting hand should be",
+      "timestamp": 191
+    },
+    {
+      "text": "a YM while the supporting hand should be",
+      "timestamp": 192
+    },
+    {
+      "text": "a WM while the supporting hand should be",
+      "timestamp": 193
+    },
+    {
+      "text": "should be placed where it crosses",
+      "timestamp": 196
+    },
+    {
+      "text": "the supporting arm and the torso should be / by 4",
+      "timestamp": 204
+    },
+    {
+      "text": "YW Be careful not to let the elbow rise é \\",
+      "timestamp": 216
+    },
+    {
+      "text": "Be careful not to let your wrist bend ! 8",
+      "timestamp": 253
+    },
+    {
+      "text": "i] Mand the wrist of the right hand",
+      "timestamp": 275
+    },
+    {
+      "text": "Mand the wrist of the right hand",
+      "timestamp": 278
+    },
+    {
+      "text": "if Mand the wrist of the right hand",
+      "timestamp": 279
+    },
+    {
+      "text": "he, YM The right hand should be placed at the neck level",
+      "timestamp": 293
+    },
+    {
+      "text": "NOH CADIY Y the right hand should be placed at the neck level",
+      "timestamp": 295
+    },
+    {
+      "text": "should be placed at the crossing",
+      "timestamp": 301
+    },
+    {
+      "text": "Be careful not to lose balance",
+      "timestamp": 313
+    },
+    {
+      "text": "YM The kicking leg should be raised higher than",
+      "timestamp": 329
+    },
+    {
+      "text": "fo YM The kicking leg should be raised higher than",
+      "timestamp": 330
+    },
+    {
+      "text": "Mf The kicking leg should be raised higher than",
+      "timestamp": 331
+    },
+    {
+      "text": "YM The kicking leg should be raised higher than",
+      "timestamp": 334
+    },
+    {
+      "text": "and straighten your leg to kick",
+      "timestamp": 335
+    },
+    {
+      "text": "YW Be careful not to let the heel of your supporting leg",
+      "timestamp": 353
+    },
+    {
+      "text": "Be careful not to let th ir supporting leg",
+      "timestamp": 360
+    },
+    {
+      "text": "Mvour arms should cross at the solar plexus level, y,",
+      "timestamp": 386
+    },
+    {
+      "text": "Your arms should cross at the solar plexus level, e) “<q oo ~",
+      "timestamp": 387
+    },
+    {
+      "text": "YM The back of the fist should be .",
+      "timestamp": 394
+    },
+    {
+      "text": "Be careful not to let the elbow NY",
+      "timestamp": 403
+    },
+    {
+      "text": "Be careful not to let the elbow A",
+      "timestamp": 404
+    },
+    {
+      "text": "WY Be careful not to let the elbow .¥",
+      "timestamp": 405
+    },
+    {
+      "text": "yo - 7, touch the back of your left hand",
+      "timestamp": 461
+    },
+    {
+      "text": "touch the back of your left hand",
+      "timestamp": 462
+    }
+  ],
+  "sections": {
+    "poomsae": 90,
+    "key_moves": 164,
+    "explanation": 169,
+    "repeat": 724
+  }
+}

@@ -1,6 +1,6 @@
 # Poomsae Wiki — reproducible pipeline
 
-.PHONY: download transcripts extract build deploy clean test techniques
+.PHONY: download transcripts pre-extract extract build deploy clean test techniques
 
 # Full pipeline
 all: download transcripts extract build deploy
@@ -13,8 +13,12 @@ download:
 transcripts:
 	python3 scripts/transcript.py
 
+# Step 3a: Deterministic pre-extraction (regex only, no LLM) — anchors technique names
+pre-extract:
+	python3 scripts/pre_extract.py --all
+
 # Step 3: Extract structured JSON from transcripts via LLM, then rebuild technique DB
-extract:
+extract: pre-extract
 	python3 scripts/extract.py --all
 	$(MAKE) techniques
 
@@ -45,6 +49,7 @@ techniques:
 # Run all tests
 test:
 	cd app && npx vitest run
+	cd scripts && python3 test_pre_extract.py
 	cd scripts && python3 test_extract.py
 	cd scripts && python3 test_build_techniques.py
 

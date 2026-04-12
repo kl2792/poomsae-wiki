@@ -1,0 +1,175 @@
+{
+  "form_slug": "taebaek",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "BEOMSEOGI SONAL ARAEHECHEOMAKGI",
+      "timestamp": 146
+    },
+    {
+      "number": "02",
+      "name": "SONAL EOPEOJAPGI",
+      "timestamp": 179
+    },
+    {
+      "number": "03",
+      "name": "GEUMGANG (ANPALMOK)BAKKANMAKGI",
+      "timestamp": 0
+    },
+    {
+      "number": "05",
+      "name": "DEUNGJUMEOK (ULGUL)BAKKANCHIGI",
+      "timestamp": 241
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "GEUMGANG ANPALMOK (MOM BAKKANMAKGI",
+      "side": null,
+      "timestamp": 433
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + (MOMTONG) DOUBLE JIREUGY",
+      "side": "right",
+      "timestamp": 276
+    },
+    {
+      "number": "3",
+      "name": "SONAL ARAE(NAERYEO)HECHEOMAKGI",
+      "side": null,
+      "timestamp": 278
+    },
+    {
+      "number": "4",
+      "name": "APCHAGI + (MOMTONG) DOUBLE JIREUGI",
+      "side": "left",
+      "timestamp": 281
+    },
+    {
+      "number": "5",
+      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 430
+    },
+    {
+      "number": "6",
+      "name": "GEUMGANG ANPALMOK (MOMTONG)BARRANMAKGI",
+      "side": null,
+      "timestamp": 444
+    },
+    {
+      "number": "7",
+      "name": "JEOCHEOTEUREO JABAGGEULMYEO (MOPPFENG)JIREUGI",
+      "side": null,
+      "timestamp": 294
+    },
+    {
+      "number": "8",
+      "name": "SONAL EOPEOJAPGO (MOMTONG)JIREUGI",
+      "side": null,
+      "timestamp": 296
+    },
+    {
+      "number": "9",
+      "name": "JAGEUN DOLUJEOGWI",
+      "side": null,
+      "timestamp": 442
+    },
+    {
+      "number": "10",
+      "name": "YEOPCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "right",
+      "timestamp": 446
+    }
+  ],
+  "tips": [
+    {
+      "text": "WM The back of your hands should",
+      "timestamp": 155
+    },
+    {
+      "text": "should be about one hand's length sideways",
+      "timestamp": 158
+    },
+    {
+      "text": "and cover the back of the hand of your opponent a",
+      "timestamp": 195
+    },
+    {
+      "text": "Whe careful not to let your elbow",
+      "timestamp": 202
+    },
+    {
+      "text": "Whe careful not to let your elbow",
+      "timestamp": 203
+    },
+    {
+      "text": "the left arm should cross on the outside é",
+      "timestamp": 312
+    },
+    {
+      "text": "YW The Apchagi should be performed i",
+      "timestamp": 318
+    },
+    {
+      "text": "The Apchagi should be performed",
+      "timestamp": 319
+    },
+    {
+      "text": "The Apchagi should be performed a",
+      "timestamp": 321
+    },
+    {
+      "text": "YM the ball should touch the ground first . a",
+      "timestamp": 325
+    },
+    {
+      "text": "Mand the elbow should point downward :",
+      "timestamp": 578
+    },
+    {
+      "text": "the elbow of the blocking arm f",
+      "timestamp": 582
+    },
+    {
+      "text": "the elbow of the blocking arm a",
+      "timestamp": 583
+    },
+    {
+      "text": "the elbow of the blocking arm TT",
+      "timestamp": 584
+    },
+    {
+      "text": "should be level with the right elbow f~",
+      "timestamp": 586
+    },
+    {
+      "text": "and pull the back of your hand —~ f vr,",
+      "timestamp": 636
+    },
+    {
+      "text": "and pull the back of your hand ~ A",
+      "timestamp": 637
+    },
+    {
+      "text": "and pull the back of your hand -",
+      "timestamp": 638
+    },
+    {
+      "text": "and pull the back of your hand ry",
+      "timestamp": 639
+    },
+    {
+      "text": "and pull the back of your hand yy",
+      "timestamp": 640
+    }
+  ],
+  "sections": {
+    "poomsae": 47,
+    "key_moves": 136,
+    "explanation": 141,
+    "repeat": 803
+  }
+}

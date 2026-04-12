@@ -1,0 +1,186 @@
+{
+  "form_slug": "jitae",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "SONAL ULGUL(OLLYEO)MAKGI",
+      "timestamp": 168
+    },
+    {
+      "number": "02",
+      "name": "GEUMGANG(MOMTONG) JIREUGI",
+      "timestamp": 232
+    },
+    {
+      "number": "03",
+      "name": "MEJUMEOK YEOPPYOJEOKCHIGI",
+      "timestamp": 243
+    },
+    {
+      "number": "04",
+      "name": "ANPALMOK BAKKANMAKGI",
+      "timestamp": 266
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 894
+    },
+    {
+      "number": "2",
+      "name": "APCHAGI + OEN SONAL GEODEUREO ARAE(NAERYOE)MAKGI",
+      "side": "left",
+      "timestamp": 508
+    },
+    {
+      "number": "3",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 900
+    },
+    {
+      "number": "4",
+      "name": "ULGUL(OLLYEO)MAKGI + OREUN (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 312
+    },
+    {
+      "number": "5",
+      "name": "HAKDARI ARAE(NAERYEO) YEOPMAKGI",
+      "side": null,
+      "timestamp": 718
+    },
+    {
+      "number": "6",
+      "name": "SONAL ULGUL(OLLYEO)MAKGI",
+      "side": "left",
+      "timestamp": 324
+    },
+    {
+      "number": "7",
+      "name": "YEOPCHAGI + OEN ARAE(NAERYEO) YEOPMAKGR",
+      "side": "right",
+      "timestamp": 723
+    },
+    {
+      "number": "8",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 330
+    },
+    {
+      "number": "9",
+      "name": "YEOPCHAGI + OREUN (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 733
+    },
+    {
+      "number": "10",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 734
+    }
+  ],
+  "tips": [
+    {
+      "text": "xe i ° Wf cross the arms so the blocking arm",
+      "timestamp": 175
+    },
+    {
+      "text": "se ; . Wf cross the arms so the blocking arm",
+      "timestamp": 176
+    },
+    {
+      "text": "cross the arms so the blocking arm",
+      "timestamp": 177
+    },
+    {
+      "text": "othe hand of the blocking arm rises first",
+      "timestamp": 182
+    },
+    {
+      "text": "the hand of the blocking arm rises first",
+      "timestamp": 183
+    },
+    {
+      "text": "WM The space between the blocking arm",
+      "timestamp": 199
+    },
+    {
+      "text": "J and forehead should be about one fist",
+      "timestamp": 199
+    },
+    {
+      "text": "and forehead should be about one fist",
+      "timestamp": 200
+    },
+    {
+      "text": "WY be careful not to let the elbow &.",
+      "timestamp": 212
+    },
+    {
+      "text": "of the blocking arm open backwards i!",
+      "timestamp": 212
+    },
+    {
+      "text": "of the blocking arm open backwards",
+      "timestamp": 213
+    },
+    {
+      "text": "WY be careful not to let the elbow ‘SB.",
+      "timestamp": 214
+    },
+    {
+      "text": "be careful not to let the blocking arm ~ a.",
+      "timestamp": 225
+    },
+    {
+      "text": "Whe careful not to let the blocking arm / < :",
+      "timestamp": 226
+    },
+    {
+      "text": "We careful not to let the blocking arm 4",
+      "timestamp": 229
+    },
+    {
+      "text": "YM then block by crossing your left wrist i S Cad x",
+      "timestamp": 540
+    },
+    {
+      "text": "The left fist should be placed 8 wc",
+      "timestamp": 577
+    },
+    {
+      "text": "The left fist should be placed ‘e .",
+      "timestamp": 578
+    },
+    {
+      "text": "The left fist should be placed :",
+      "timestamp": 579
+    },
+    {
+      "text": "Myour eyes should point in the direction",
+      "timestamp": 742
+    },
+    {
+      "text": "Your eyes should point in the direction",
+      "timestamp": 743
+    },
+    {
+      "text": "YM vour eyes should point in the direction",
+      "timestamp": 744
+    },
+    {
+      "text": "on the palm of your right hand",
+      "timestamp": 768
+    }
+  ],
+  "sections": {
+    "key_moves": 161,
+    "explanation": 163,
+    "repeat": 972
+  }
+}

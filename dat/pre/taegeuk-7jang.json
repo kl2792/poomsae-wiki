@@ -1,0 +1,586 @@
+{
+  "form_slug": "taegeuk-7jang",
+  "key_moves": [
+    {
+      "number": "01",
+      "name": "SONAL GEODEUREO ARAEMAKGI",
+      "timestamp": 177
+    },
+    {
+      "number": "02",
+      "name": "GEODEUREO BATANGSON ANMAKGI",
+      "timestamp": 234
+    },
+    {
+      "number": "03",
+      "name": "BOJUMEOK",
+      "timestamp": 288
+    },
+    {
+      "number": "04",
+      "name": "GAWIMAKGI",
+      "timestamp": 328
+    },
+    {
+      "number": "05",
+      "name": "MUREUPCHIGI",
+      "timestamp": 360
+    },
+    {
+      "number": "06",
+      "name": "HECHEOMAKGI",
+      "timestamp": 0
+    },
+    {
+      "number": "07",
+      "name": "DUJUMEOK JEOCHEQOJIREUGI",
+      "timestamp": 398
+    },
+    {
+      "number": "08",
+      "name": "UTGEOREO ARAE(NAERYEO)MAKGI",
+      "timestamp": 453
+    },
+    {
+      "number": "09",
+      "name": "DEUNGJUMEOK BAKKANCHIGI",
+      "timestamp": 487
+    },
+    {
+      "number": "10",
+      "name": "PYOJEOKCHAGI",
+      "timestamp": 523
+    },
+    {
+      "number": "11",
+      "name": "YEOPJIREUGI",
+      "timestamp": 542
+    },
+    {
+      "number": "12",
+      "name": "BEOMSEOGI",
+      "timestamp": 563
+    },
+    {
+      "number": "13",
+      "name": "JUCHUMSEOGI",
+      "timestamp": 610
+    }
+  ],
+  "sequence_steps": [
+    {
+      "number": "1",
+      "name": "GEODEUREO BATANGSON (MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 788
+    },
+    {
+      "number": "2",
+      "name": "PYOJEOKCHAGI + OREUN PALGGUMEHI PYOJEOKCHIGI",
+      "side": "right",
+      "timestamp": 1120
+    },
+    {
+      "number": "3",
+      "name": "BATANGSON (MOMTONG)ANMAKGI )",
+      "side": "left",
+      "timestamp": 650
+    },
+    {
+      "number": "4",
+      "name": "PYOJEOKCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 1120
+    },
+    {
+      "number": "5",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 654
+    },
+    {
+      "number": "6",
+      "name": "MUREUP OLLYEOCHIGI + DUJUMEOK JEOCHEQJIREUCI",
+      "side": "left",
+      "timestamp": 914
+    },
+    {
+      "number": "7",
+      "name": "GEODEUREO BATANGSON (MOMTONG)ANMAK",
+      "side": "right",
+      "timestamp": 799
+    },
+    {
+      "number": "8",
+      "name": "UTGEOREO ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 453
+    },
+    {
+      "number": "9",
+      "name": "DEUNGJUMEOK BAKKANCHIGI",
+      "side": null,
+      "timestamp": 487
+    },
+    {
+      "number": "10",
+      "name": "PYOJEOKCHAGI",
+      "side": null,
+      "timestamp": 523
+    },
+    {
+      "number": "11",
+      "name": "YEOPJIREUGI",
+      "side": null,
+      "timestamp": 542
+    },
+    {
+      "number": "12",
+      "name": "BEOMSEOGI",
+      "side": null,
+      "timestamp": 563
+    },
+    {
+      "number": "13",
+      "name": "JUCHUMSEOGI",
+      "side": null,
+      "timestamp": 610
+    }
+  ],
+  "tips": [
+    {
+      "text": "w/the blocking hand is placed over",
+      "timestamp": 188
+    },
+    {
+      "text": "the wrist of the assisting arm",
+      "timestamp": 201
+    },
+    {
+      "text": "fh the wrist of the assisting arm",
+      "timestamp": 202
+    },
+    {
+      "text": "SS “Gy YW The wrist of the assisting arm",
+      "timestamp": 203
+    },
+    {
+      "text": "SN “Gy YW The wrist of the assisting arm",
+      "timestamp": 204
+    },
+    {
+      "text": "NS “Gy YW The wrist of the assisting arm",
+      "timestamp": 205
+    },
+    {
+      "text": "and torso should be about one hand blade apart",
+      "timestamp": 211
+    },
+    {
+      "text": "Fe ES and torso should be about one hand blade apart",
+      "timestamp": 213
+    },
+    {
+      "text": "i and torso should be about one hand blade apart",
+      "timestamp": 214
+    },
+    {
+      "text": "Be careful not to let your blocking hand",
+      "timestamp": 223
+    },
+    {
+      "text": "the assisting armpit should not detach",
+      "timestamp": 227
+    },
+    {
+      "text": "a Y the assisting armpit should not detach",
+      "timestamp": 229
+    },
+    {
+      "text": "Y the assisting armpit should not detach",
+      "timestamp": 230
+    },
+    {
+      "text": "i 1 & Y the assisting armpit should not detach",
+      "timestamp": 232
+    },
+    {
+      "text": "straighten the assisting arm slightly",
+      "timestamp": 246
+    },
+    {
+      "text": "a straighten the assisting arm slightly",
+      "timestamp": 247
+    },
+    {
+      "text": "of the blocking arm in front of >",
+      "timestamp": 258
+    },
+    {
+      "text": "Place the palm of your hand \\ ~",
+      "timestamp": 259
+    },
+    {
+      "text": "of the blocking arm in front of f",
+      "timestamp": 259
+    },
+    {
+      "text": "of the blocking arm in front of ms",
+      "timestamp": 260
+    },
+    {
+      "text": "of the blocking arm in front of mY t",
+      "timestamp": 261
+    },
+    {
+      "text": "of the blocking arm in front of mo BS",
+      "timestamp": 262
+    },
+    {
+      "text": "of the blocking arm in front of aS",
+      "timestamp": 263
+    },
+    {
+      "text": "WM the back of the assisting hand ‘ :",
+      "timestamp": 265
+    },
+    {
+      "text": "should point upward H <=] hy A",
+      "timestamp": 266
+    },
+    {
+      "text": "the back of the assisting hand i -",
+      "timestamp": 267
+    },
+    {
+      "text": "the blocking arm lightly rest on it A=] Vp AD",
+      "timestamp": 268
+    },
+    {
+      "text": "Block by pulling the elbow of the blocking arm",
+      "timestamp": 274
+    },
+    {
+      "text": "Or Y Block by pulling the elbow of the blocking arm",
+      "timestamp": 279
+    },
+    {
+      "text": "should be a sheet of paper’s width ida",
+      "timestamp": 308
+    },
+    {
+      "text": "should be a sheet of paper’s width , J",
+      "timestamp": 310
+    },
+    {
+      "text": "should be a sheet of paper’s width = .",
+      "timestamp": 312
+    },
+    {
+      "text": "the assisting fist starts in front of",
+      "timestamp": 315
+    },
+    {
+      "text": "WThe assisting fist starts in front of",
+      "timestamp": 316
+    },
+    {
+      "text": "Lng ' should be between 90° and 120°",
+      "timestamp": 322
+    },
+    {
+      "text": "S should be between 90° and 120°",
+      "timestamp": 323
+    },
+    {
+      "text": "i} should be between 90° and 120°",
+      "timestamp": 324
+    },
+    {
+      "text": "SS : a. should be between 90° and 120°",
+      "timestamp": 325
+    },
+    {
+      "text": "ee 7 es should be between 90° and 120°",
+      "timestamp": 326
+    },
+    {
+      "text": "eS f ls should be between 90° and 120°",
+      "timestamp": 327
+    },
+    {
+      "text": "YW the wrist of the arm performing “4 ry",
+      "timestamp": 345
+    },
+    {
+      "text": "Anpalmok Bakkanmakgi should be placed i",
+      "timestamp": 345
+    },
+    {
+      "text": "YW the wrist of the arm performing y rT",
+      "timestamp": 346
+    },
+    {
+      "text": "YW the wrist of the arm performing y i]",
+      "timestamp": 347
+    },
+    {
+      "text": "PS . “a Myour elbows should point downward,",
+      "timestamp": 391
+    },
+    {
+      "text": "PS . “a your elbows should point downward,",
+      "timestamp": 392
+    },
+    {
+      "text": "Jeocheojireugi should be performed by thrusting",
+      "timestamp": 430
+    },
+    {
+      "text": "S , YW Jeocheojiraugi should be performed by thrusting",
+      "timestamp": 431
+    },
+    {
+      "text": "of Jeocheoirengi should be performed by thrusting",
+      "timestamp": 432
+    },
+    {
+      "text": "Jeocheanrenai should be performed by thrusting",
+      "timestamp": 433
+    },
+    {
+      "text": "WM the elbow should not move away",
+      "timestamp": 439
+    },
+    {
+      "text": "Be careful not to let your fists rise ” ew / \\",
+      "timestamp": 447
+    },
+    {
+      "text": "Whe careful not to let your fists rise “eh ? / \\",
+      "timestamp": 449
+    },
+    {
+      "text": "start with your right arm back aa",
+      "timestamp": 464
+    },
+    {
+      "text": "start with your right arm back ae",
+      "timestamp": 465
+    },
+    {
+      "text": "start with your right arm back —_—",
+      "timestamp": 466
+    },
+    {
+      "text": "Wand cross your right arm upwards",
+      "timestamp": 467
+    },
+    {
+      "text": "P) start with your left arm back",
+      "timestamp": 473
+    },
+    {
+      "text": "start with your left arm back",
+      "timestamp": 474
+    },
+    {
+      "text": "a start with your left arm back",
+      "timestamp": 476
+    },
+    {
+      "text": "Mand cross your left arm upwards",
+      "timestamp": 478
+    },
+    {
+      "text": "YY Both elbows should be touching",
+      "timestamp": 481
+    },
+    {
+      "text": "Both elbows should be touc hing",
+      "timestamp": 485
+    },
+    {
+      "text": "Starts with the fist of the opposite shoulder",
+      "timestamp": 492
+    },
+    {
+      "text": "p © Starts with the fist of the opposite shoulder",
+      "timestamp": 493
+    },
+    {
+      "text": "a a Mstarts with the fist of the opposite shoulder",
+      "timestamp": 494
+    },
+    {
+      "text": "t Ww the assisting arm should cross",
+      "timestamp": 496
+    },
+    {
+      "text": "ee ae below the thrusting arm to initiate",
+      "timestamp": 496
+    },
+    {
+      "text": "the assisting arm should cross",
+      "timestamp": 497
+    },
+    {
+      "text": "a) below the thrusting arm to initiate",
+      "timestamp": 497
+    },
+    {
+      "text": "mh ' W the assisting arm should cross",
+      "timestamp": 499
+    },
+    {
+      "text": "below the thrusting arm to initiate",
+      "timestamp": 499
+    },
+    {
+      "text": "Sone a YW the assisting arm should cross",
+      "timestamp": 500
+    },
+    {
+      "text": "Then strike a target with the back of",
+      "timestamp": 503
+    },
+    {
+      "text": "YM then strike a target with the back of",
+      "timestamp": 509
+    },
+    {
+      "text": "Wvour fist should align with your shoulder line",
+      "timestamp": 510
+    },
+    {
+      "text": "MYour fist should align with your shoulder line ;",
+      "timestamp": 511
+    },
+    {
+      "text": "and your elbow should be naturally straight",
+      "timestamp": 515
+    },
+    {
+      "text": "a. Wand your elbow should be naturally straight",
+      "timestamp": 516
+    },
+    {
+      "text": "AF Mand your elbow should be naturally straight",
+      "timestamp": 517
+    },
+    {
+      "text": "AF Wand your elbow should be naturally straight",
+      "timestamp": 520
+    },
+    {
+      "text": "YW Be careful not to let your upper body",
+      "timestamp": 604
+    },
+    {
+      "text": "The back of the striking hand",
+      "timestamp": 808
+    },
+    {
+      "text": "mane W The back of the striking hand",
+      "timestamp": 810
+    },
+    {
+      "text": "on oS away Tron the back of the hand",
+      "timestamp": 811
+    },
+    {
+      "text": "O7 ne ‘ of the assisting arm",
+      "timestamp": 811
+    },
+    {
+      "text": "Sand your elbow should not move",
+      "timestamp": 812
+    },
+    {
+      "text": "away from the back of the hand",
+      "timestamp": 812
+    },
+    {
+      "text": "Cos Q7 and your elbow should not move",
+      "timestamp": 813
+    },
+    {
+      "text": "aL Sand your elbow should not move",
+      "timestamp": 814
+    },
+    {
+      "text": "as away from the back of the hand",
+      "timestamp": 814
+    },
+    {
+      "text": "AL va Wand your elbow should not move",
+      "timestamp": 815
+    },
+    {
+      "text": "ear / ‘ away from the back of the hand",
+      "timestamp": 815
+    },
+    {
+      "text": "om / ‘ away from the back of the hand",
+      "timestamp": 816
+    },
+    {
+      "text": "Be careful not to lose balance",
+      "timestamp": 825
+    },
+    {
+      "text": "C4 W Be careful not to lose balance",
+      "timestamp": 826
+    },
+    {
+      "text": "WD W Be careful not to lose balance",
+      "timestamp": 827
+    },
+    {
+      "text": "We W Be careful not to lose balance",
+      "timestamp": 828
+    },
+    {
+      "text": "Lio W Be careful not to lose balance",
+      "timestamp": 830
+    },
+    {
+      "text": "When initiating the preparatory moves",
+      "timestamp": 1010
+    },
+    {
+      "text": "When initiating the preparatory moves ; we",
+      "timestamp": 1011
+    },
+    {
+      "text": "When initiating from the left side,",
+      "timestamp": 1022
+    },
+    {
+      "text": "a When initiating from the left side,",
+      "timestamp": 1023
+    },
+    {
+      "text": "Both wrists should be placed {",
+      "timestamp": 1033
+    },
+    {
+      "text": "The elbow should straighten naturally f ;",
+      "timestamp": 1157
+    },
+    {
+      "text": "WY Be careful not to let the back of the fist move . ORD Ti",
+      "timestamp": 1160
+    },
+    {
+      "text": "Raise your posture by straightening the knees",
+      "timestamp": 1188
+    }
+  ],
+  "sections": {
+    "poomsae": 60,
+    "key_moves": 167,
+    "explanation": 172,
+    "repeat": 1259
+  }
+}
