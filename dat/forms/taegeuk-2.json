@@ -41,7 +41,7 @@
   "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
-      "key": "junbi",
+      "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
         "ko": "준비",
@@ -52,7 +52,7 @@
       "tips": []
     },
     {
-      "key": "01",
+      "key": "face-punch",
       "name": {
         "en": "Face Punch",
         "ko": "얼굴지르기",
@@ -72,7 +72,7 @@
       ]
     },
     {
-      "key": "ap-chagi+momtong-jireugi",
+      "key": "front-kick-middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -83,7 +83,7 @@
       "tips": []
     },
     {
-      "key": "ap-chagi+ulgul-jireugi",
+      "key": "front-kick-face-punch",
       "name": {
         "en": "Front Kick + Face Punch",
         "ko": "앞차기 + 얼굴지르기",
@@ -94,10 +94,10 @@
       "tips": []
     },
     {
-      "key": "arae-makki",
+      "key": "low-block",
       "name": {
         "en": "Low Block",
-        "ko": "아래막기",
+        "ko": "아래(내려)막기",
         "romanized": "Arae Makgi"
       },
       "category": "block",
@@ -105,10 +105,10 @@
       "tips": []
     },
     {
-      "key": "momtong-an-makki",
+      "key": "inward-middle-block",
       "name": {
         "en": "Inward Middle Block",
-        "ko": "몸통안막기",
+        "ko": "(몸통)안막기",
         "romanized": "Momtong An Makgi"
       },
       "category": "block",
@@ -116,10 +116,10 @@
       "tips": []
     },
     {
-      "key": "momtong-jireugi",
+      "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기",
+        "ko": "(몸통)지르기",
         "romanized": "Momtong Jireugi"
       },
       "category": "strike",
@@ -127,7 +127,7 @@
       "tips": []
     },
     {
-      "key": "ulgul-makki",
+      "key": "face-block",
       "name": {
         "en": "Face Block",
         "ko": "얼굴막기",
@@ -141,7 +141,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "junbi",
+      "technique": "ready-stance",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -150,7 +150,7 @@
     },
     {
       "step": 1,
-      "technique": "arae-makki",
+      "technique": "low-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -159,7 +159,7 @@
     },
     {
       "step": 2,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -168,7 +168,7 @@
     },
     {
       "step": 3,
-      "technique": "arae-makki",
+      "technique": "low-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -177,7 +177,7 @@
     },
     {
       "step": 4,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -186,7 +186,7 @@
     },
     {
       "step": 5,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -195,7 +195,7 @@
     },
     {
       "step": 6,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -204,7 +204,7 @@
     },
     {
       "step": 7,
-      "technique": "arae-makki",
+      "technique": "low-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -213,7 +213,7 @@
     },
     {
       "step": 8,
-      "technique": "ap-chagi+ulgul-jireugi",
+      "technique": "front-kick-face-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -222,7 +222,7 @@
     },
     {
       "step": 9,
-      "technique": "arae-makki",
+      "technique": "low-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -231,7 +231,7 @@
     },
     {
       "step": 10,
-      "technique": "ap-chagi+ulgul-jireugi",
+      "technique": "front-kick-face-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -240,7 +240,7 @@
     },
     {
       "step": 11,
-      "technique": "ulgul-makki",
+      "technique": "face-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -249,7 +249,7 @@
     },
     {
       "step": 12,
-      "technique": "ulgul-makki",
+      "technique": "face-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -258,7 +258,7 @@
     },
     {
       "step": 13,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "right",
       "direction": "left-90",
       "kihap": false,
@@ -267,7 +267,7 @@
     },
     {
       "step": 14,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "left",
       "direction": "right-180",
       "kihap": false,
@@ -276,7 +276,7 @@
     },
     {
       "step": 15,
-      "technique": "arae-makki",
+      "technique": "low-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -285,7 +285,7 @@
     },
     {
       "step": 16,
-      "technique": "ap-chagi+momtong-jireugi",
+      "technique": "front-kick-middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -294,7 +294,7 @@
     },
     {
       "step": 17,
-      "technique": "ap-chagi+momtong-jireugi",
+      "technique": "front-kick-middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -303,7 +303,7 @@
     },
     {
       "step": 18,
-      "technique": "ap-chagi+momtong-jireugi",
+      "technique": "front-kick-middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": true,

@@ -58,7 +58,7 @@
   },
   "techniques": [
     {
-      "key": "tongmilgi-junbijase",
+      "key": "pushing-ready-stance",
       "name": {
         "en": "Pushing Ready Stance",
         "ko": "통밀기 준비자세",
@@ -106,7 +106,7 @@
       ]
     },
     {
-      "key": "geodeupyeopchagi",
+      "key": "double-side-kick",
       "name": {
         "en": "Double Side Kick",
         "ko": "거듭옆차기",
@@ -132,7 +132,7 @@
     {
       "key": "jeocheojireugi",
       "name": {
-        "en": "Spear-hand Thrust",
+        "en": "Spearhand Thrust",
         "ko": "젖혀지르기",
         "romanized": "Jeochyeo Jireugi"
       },
@@ -146,7 +146,7 @@
       ]
     },
     {
-      "key": "nulleokkeokgi",
+      "key": "pressingtwisting",
       "name": {
         "en": "Pressing/Twisting",
         "ko": "눌러꺾기",
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "key": "palggumchi-yeopchigi",
+      "key": "elbow-side-strike",
       "name": {
         "en": "Elbow Side Strike",
         "ko": "팔꿈치 옆치기",
@@ -190,7 +190,7 @@
       ]
     },
     {
-      "key": "sonnal-bakkatchigi",
+      "key": "knifehand-outward-strike",
       "name": {
         "en": "Knifehand Outward Strike",
         "ko": "손날 바깥치기",
@@ -210,7 +210,7 @@
       ]
     },
     {
-      "key": "sonnal-araemakgi",
+      "key": "knifehand-low-block",
       "name": {
         "en": "Knifehand Low Block",
         "ko": "손날 아래막기",
@@ -230,7 +230,7 @@
       ]
     },
     {
-      "key": "ageumson-apchigi",
+      "key": "arc-hand-strike",
       "name": {
         "en": "Arc-hand Strike",
         "ko": "아금손 앞치기",
@@ -254,7 +254,7 @@
       ]
     },
     {
-      "key": "batangson-nulleomakgi",
+      "key": "palm-pressing-block",
       "name": {
         "en": "Palm Pressing Block",
         "ko": "바탕손 눌러막기",
@@ -278,7 +278,7 @@
       ]
     },
     {
-      "key": "mejumeok-pyojeokaraechigi",
+      "key": "hammer-fist-target-strike",
       "name": {
         "en": "Hammer Fist Target Strike",
         "ko": "메주먹 표적아래치기",
@@ -310,7 +310,7 @@
       ]
     },
     {
-      "key": "anpalmok-hecheomakgi",
+      "key": "inner-wrist-spreading-block",
       "name": {
         "en": "Inner Wrist Spreading Block",
         "ko": "안팔목 헤쳐막기",
@@ -338,7 +338,7 @@
       ]
     },
     {
-      "key": "sonnal-yeopmakgi",
+      "key": "knifehand-side-block",
       "name": {
         "en": "Knifehand Side Block",
         "ko": "손날 옆막기",
@@ -354,7 +354,7 @@
       ]
     },
     {
-      "key": "pyojeokjireugi",
+      "key": "target-punch",
       "name": {
         "en": "Target Punch",
         "ko": "표적지르기",
@@ -374,7 +374,7 @@
       ]
     },
     {
-      "key": "apchagi",
+      "key": "front-kick",
       "name": {
         "en": "Front Kick",
         "ko": "앞차기",
@@ -385,7 +385,7 @@
       "tips": []
     },
     {
-      "key": "geodeupyeopchagi+sonnal-bakkatchigi",
+      "key": "double-side-kick-knifehand-outward-strike",
       "name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날바깥치기",
@@ -396,10 +396,10 @@
       "tips": []
     },
     {
-      "key": "momtong-anmakgi",
+      "key": "inward-middle-block",
       "name": {
         "en": "Inward Middle Block",
-        "ko": "몸통안막기",
+        "ko": "(몸통)안막기",
         "romanized": "Momtong An Makgi"
       },
       "category": "block",
@@ -407,10 +407,10 @@
       "tips": []
     },
     {
-      "key": "momtong-jireugi",
+      "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기",
+        "ko": "(몸통)지르기",
         "romanized": "Momtong Jireugi"
       },
       "category": "strike",
@@ -418,7 +418,7 @@
       "tips": []
     },
     {
-      "key": "mureup-nulleokkeokgi",
+      "key": "knee-pressingtwisting",
       "name": {
         "en": "Knee Pressing/Twisting",
         "ko": "무릎눌러꺾기",
@@ -440,7 +440,7 @@
       "tips": []
     },
     {
-      "key": "sonnal-anchigi+sonnal-arae-naeryeomakgi",
+      "key": "knifehand-inward-strike-knifehand-low-block",
       "name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날안치기 + 손날아래내려막기",
@@ -451,9 +451,9 @@
       "tips": []
     },
     {
-      "key": "sonnal-arae-naeryeomakgi",
+      "key": "knifehand-low-downward-block",
       "name": {
-        "en": "Knifehand Low Block",
+        "en": "Knifehand Low Downward Block",
         "ko": "손날아래내려막기",
         "romanized": "Sonnal Arae Naeryeo Makgi"
       },
@@ -462,7 +462,7 @@
       "tips": []
     },
     {
-      "key": "sonnal-bakkatchigi+sonnal-arae-naeryeomakgi",
+      "key": "knifehand-outward-strike-knifehand-low-block",
       "name": {
         "en": "Knifehand Outward Strike + Knifehand Low Block",
         "ko": "손날바깥치기 + 손날아래내려막기",
@@ -473,9 +473,9 @@
       "tips": []
     },
     {
-      "key": "sonnal-geodeureomakgi",
+      "key": "knifehand-double-block",
       "name": {
-        "en": "Knifehand Guarding Block",
+        "en": "Knifehand Double Block",
         "ko": "손날거들어막기",
         "romanized": "Sonnal Geodeureo Makgi"
       },
@@ -484,7 +484,7 @@
       "tips": []
     },
     {
-      "key": "yeopchagi",
+      "key": "side-kick",
       "name": {
         "en": "Side Kick",
         "ko": "옆차기",
@@ -498,7 +498,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "tongmilgi-junbijase",
+      "technique": "pushing-ready-stance",
       "side": null,
       "direction": "forward",
       "stance": "naranhi-seogi",
@@ -508,7 +508,7 @@
     },
     {
       "step": 1,
-      "technique": "sonnal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "technique_name": {
         "en": "Knifehand Scooping Block",
         "ko": "손날 거들어막기"
@@ -522,7 +522,7 @@
     },
     {
       "step": 2,
-      "technique": "geodeupyeopchagi+sonnal-bakkatchigi",
+      "technique": "double-side-kick-knifehand-outward-strike",
       "technique_name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날 바깥치기"
@@ -536,7 +536,7 @@
     },
     {
       "step": 3,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "technique_name": {
         "en": "Middle Punch",
         "ko": "몸통지르기"
@@ -550,7 +550,7 @@
     },
     {
       "step": 4,
-      "technique": "momtong-anmakgi",
+      "technique": "inward-middle-block",
       "technique_name": {
         "en": "Inward Middle Block",
         "ko": "몸통안막기"
@@ -564,7 +564,7 @@
     },
     {
       "step": 5,
-      "technique": "sonnal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "technique_name": {
         "en": "Knifehand Scooping Block",
         "ko": "손날 거들어막기"
@@ -578,7 +578,7 @@
     },
     {
       "step": 6,
-      "technique": "geodeupyeopchagi+sonnal-bakkatchigi",
+      "technique": "double-side-kick-knifehand-outward-strike",
       "technique_name": {
         "en": "Double Side Kick + Knifehand Outward Strike",
         "ko": "거듭옆차기 + 손날 바깥치기"
@@ -592,7 +592,7 @@
     },
     {
       "step": 7,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "technique_name": {
         "en": "Middle Punch",
         "ko": "몸통지르기"
@@ -606,7 +606,7 @@
     },
     {
       "step": 8,
-      "technique": "momtong-anmakgi",
+      "technique": "inward-middle-block",
       "technique_name": {
         "en": "Inward Middle Block",
         "ko": "몸통안막기"
@@ -620,7 +620,7 @@
     },
     {
       "step": 9,
-      "technique": "sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-low-downward-block",
       "technique_name": {
         "en": "Knifehand Low Pulling Block",
         "ko": "손날 아래내려막기"
@@ -634,7 +634,7 @@
     },
     {
       "step": 10,
-      "technique": "ageumson-apchigi",
+      "technique": "arc-hand-strike",
       "technique_name": {
         "en": "Arc-hand Strike",
         "ko": "아금손 앞치기"
@@ -648,7 +648,7 @@
     },
     {
       "step": 11,
-      "technique": "apchagi",
+      "technique": "front-kick",
       "technique_name": {
         "en": "Front Kick",
         "ko": "앞차기"
@@ -662,7 +662,7 @@
     },
     {
       "step": 12,
-      "technique": "sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-low-downward-block",
       "technique_name": {
         "en": "Knifehand Low Pulling Block",
         "ko": "손날 아래내려막기"
@@ -676,7 +676,7 @@
     },
     {
       "step": 13,
-      "technique": "ageumson-apchigi",
+      "technique": "arc-hand-strike",
       "technique_name": {
         "en": "Arc-hand Strike",
         "ko": "아금손 앞치기"
@@ -690,7 +690,7 @@
     },
     {
       "step": 14,
-      "technique": "apchagi",
+      "technique": "front-kick",
       "technique_name": {
         "en": "Front Kick",
         "ko": "앞차기"
@@ -704,7 +704,7 @@
     },
     {
       "step": 15,
-      "technique": "sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-low-downward-block",
       "technique_name": {
         "en": "Knifehand Low Pulling Block",
         "ko": "손날 아래내려막기"
@@ -718,7 +718,7 @@
     },
     {
       "step": 16,
-      "technique": "ageumson-apchigi",
+      "technique": "arc-hand-strike",
       "technique_name": {
         "en": "Arc-hand Strike",
         "ko": "아금손 앞치기"
@@ -732,7 +732,7 @@
     },
     {
       "step": 17,
-      "technique": "apchagi",
+      "technique": "front-kick",
       "technique_name": {
         "en": "Front Kick",
         "ko": "앞차기"
@@ -746,7 +746,7 @@
     },
     {
       "step": 18,
-      "technique": "mureup-nulleokkeokgi",
+      "technique": "knee-pressingtwisting",
       "technique_name": {
         "en": "Knee Pressing/Twisting",
         "ko": "무릎 눌러꺾기"
@@ -760,7 +760,7 @@
     },
     {
       "step": 19,
-      "technique": "anpalmok-hecheomakgi",
+      "technique": "inner-wrist-spreading-block",
       "technique_name": {
         "en": "Inner Wrist Spreading Block",
         "ko": "안팔목 헤쳐막기"
@@ -774,7 +774,7 @@
     },
     {
       "step": 20,
-      "technique": "apchagi",
+      "technique": "front-kick",
       "technique_name": {
         "en": "Front Kick",
         "ko": "앞차기"
@@ -788,7 +788,7 @@
     },
     {
       "step": 21,
-      "technique": "mureup-nulleokkeokgi",
+      "technique": "knee-pressingtwisting",
       "technique_name": {
         "en": "Knee Pressing/Twisting",
         "ko": "무릎 눌러꺾기"
@@ -802,7 +802,7 @@
     },
     {
       "step": 22,
-      "technique": "anpalmok-hecheomakgi",
+      "technique": "inner-wrist-spreading-block",
       "technique_name": {
         "en": "Inner Wrist Spreading Block",
         "ko": "안팔목 헤쳐막기"
@@ -816,7 +816,7 @@
     },
     {
       "step": 23,
-      "technique": "sonnal-yeopmakgi",
+      "technique": "knifehand-side-block",
       "technique_name": {
         "en": "Knifehand Side Block",
         "ko": "손날 옆막기"
@@ -830,7 +830,7 @@
     },
     {
       "step": 24,
-      "technique": "pyojeokjireugi",
+      "technique": "target-punch",
       "technique_name": {
         "en": "Target Punch",
         "ko": "표적지르기"
@@ -844,7 +844,7 @@
     },
     {
       "step": 25,
-      "technique": "yeopchagi",
+      "technique": "side-kick",
       "technique_name": {
         "en": "Side Kick",
         "ko": "옆차기"
@@ -872,7 +872,7 @@
     },
     {
       "step": 27,
-      "technique": "sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-low-downward-block",
       "technique_name": {
         "en": "Knifehand Low Pulling Block",
         "ko": "손날 아래내려막기"
@@ -886,7 +886,7 @@
     },
     {
       "step": 28,
-      "technique": "batangson-nulleomakgi",
+      "technique": "palm-pressing-block",
       "technique_name": {
         "en": "Palm Pressing Block",
         "ko": "바탕손 눌러막기"
@@ -900,7 +900,7 @@
     },
     {
       "step": 29,
-      "technique": "palggumchi-yeopchigi",
+      "technique": "elbow-side-strike",
       "technique_name": {
         "en": "Elbow Side Strike",
         "ko": "팔꿈치 옆치기"
@@ -914,7 +914,7 @@
     },
     {
       "step": 30,
-      "technique": "sonnal-yeopmakgi",
+      "technique": "knifehand-side-block",
       "technique_name": {
         "en": "Knifehand Side Block",
         "ko": "손날 옆막기"
@@ -928,7 +928,7 @@
     },
     {
       "step": 31,
-      "technique": "pyojeokjireugi",
+      "technique": "target-punch",
       "technique_name": {
         "en": "Target Punch",
         "ko": "표적지르기"
@@ -942,7 +942,7 @@
     },
     {
       "step": 32,
-      "technique": "yeopchagi",
+      "technique": "side-kick",
       "technique_name": {
         "en": "Side Kick",
         "ko": "옆차기"
@@ -970,7 +970,7 @@
     },
     {
       "step": 34,
-      "technique": "sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-low-downward-block",
       "technique_name": {
         "en": "Knifehand Low Pulling Block",
         "ko": "손날 아래내려막기"
@@ -984,7 +984,7 @@
     },
     {
       "step": 35,
-      "technique": "batangson-nulleomakgi",
+      "technique": "palm-pressing-block",
       "technique_name": {
         "en": "Palm Pressing Block",
         "ko": "바탕손 눌러막기"
@@ -998,7 +998,7 @@
     },
     {
       "step": 36,
-      "technique": "palggumchi-yeopchigi",
+      "technique": "elbow-side-strike",
       "technique_name": {
         "en": "Elbow Side Strike",
         "ko": "팔꿈치 옆치기"
@@ -1012,7 +1012,7 @@
     },
     {
       "step": 37,
-      "technique": "mejumeok-pyojeokaraechigi",
+      "technique": "hammer-fist-target-strike",
       "technique_name": {
         "en": "Hammer Fist Target Downward Strike",
         "ko": "메주먹 표적아래치기"
@@ -1026,7 +1026,7 @@
     },
     {
       "step": 38,
-      "technique": "sonnal-bakkatchigi+sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-outward-strike-knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Outward Strike + Knifehand Low Block",
         "ko": "손날 바깥치기 + 손날 아래내려막기"
@@ -1040,7 +1040,7 @@
     },
     {
       "step": 39,
-      "technique": "sonnal-anchigi+sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-inward-strike-knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날 안치기 + 손날 아래내려막기"
@@ -1054,7 +1054,7 @@
     },
     {
       "step": 40,
-      "technique": "sonnal-anchigi+sonnal-arae-naeryeomakgi",
+      "technique": "knifehand-inward-strike-knifehand-low-block",
       "technique_name": {
         "en": "Knifehand Inward Strike + Knifehand Low Block",
         "ko": "손날 안치기 + 손날 아래내려막기"
@@ -1068,7 +1068,7 @@
     },
     {
       "step": 41,
-      "technique": "ageumson-apchigi",
+      "technique": "arc-hand-strike",
       "technique_name": {
         "en": "Arc-hand Strike",
         "ko": "아금손 앞치기"

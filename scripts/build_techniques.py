@@ -283,13 +283,20 @@ def post_process(techniques: dict) -> tuple[dict, dict[str, str]]:
     return techniques, rename_map
 
 
-def update_form_jsons(rename_map: dict[str, str]) -> int:
+def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
     """Update technique references in form JSONs after dedup.
+
+    Updates keys, categories, and English names to match the canonical
+    technique entries.
 
     Returns count of updated forms.
     """
-    if not rename_map:
-        return 0
+    # Build lookup from normalized romanized name to canonical technique
+    rom_to_canonical: dict[str, dict] = {}
+    for tech in techniques.values():
+        rom = normalize_romanized(tech["name"].get("romanized", ""))
+        if rom:
+            rom_to_canonical[rom] = tech
 
     updated_count = 0
     for form_path in sorted(FORMS_DIR.glob("*.json")):
@@ -303,11 +310,32 @@ def update_form_jsons(rename_map: dict[str, str]) -> int:
                 step["technique"] = rename_map[old_tech]
                 changed = True
 
+        # Dedup technique entries within the form (after rename, two entries
+        # may have the same key)
+        seen_keys: set[str] = set()
+        deduped_techniques = []
         for tech in data.get("techniques", []):
             old_key = tech.get("key", "")
             if old_key in rename_map:
-                tech["key"] = rename_map[old_key]
+                new_key = rename_map[old_key]
+                tech["key"] = new_key
                 changed = True
+
+            # Sync name/key with canonical techniques.json entry via romanized name
+            rom = normalize_romanized(tech["name"].get("romanized", ""))
+            if rom and rom in rom_to_canonical:
+                canonical = rom_to_canonical[rom]
+                if tech["name"] != canonical["name"]:
+                    tech["name"] = dict(canonical["name"])
+                    changed = True
+                if tech["key"] != canonical["key"]:
+                    # Also update sequence references
+                    old_form_key = tech["key"]
+                    for step in data.get("sequence", []):
+                        if step.get("technique") == old_form_key:
+                            step["technique"] = canonical["key"]
+                    tech["key"] = canonical["key"]
+                    changed = True
             # Normalize category in source forms too
             if tech.get("category") == "ready":
                 tech["category"] = "stance"
@@ -329,6 +357,18 @@ def update_form_jsons(rename_map: dict[str, str]) -> int:
             if old_en != new_en:
                 tech["name"]["en"] = new_en
                 changed = True
+
+            # Skip duplicate technique entries within the same form
+            current_key = tech.get("key", "")
+            if current_key in seen_keys:
+                changed = True
+                continue
+            seen_keys.add(current_key)
+            deduped_techniques.append(tech)
+
+        if len(deduped_techniques) != len(data.get("techniques", [])):
+            changed = True
+        data["techniques"] = deduped_techniques
 
         if changed:
             with open(form_path, "w") as f:
@@ -355,7 +395,7 @@ def main() -> None:
                 print(f"    {old} -> {new}")
 
     # Update form JSONs with renamed keys
-    updated = update_form_jsons(rename_map)
+    updated = update_form_jsons(rename_map, techniques)
     if updated:
         print(f"  Updated {updated} form JSONs")
 

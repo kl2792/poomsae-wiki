@@ -36,7 +36,7 @@
   "source": "KKW YouTube / WT Rules",
   "techniques": [
     {
-      "key": "01",
+      "key": "single-mountain-side-kick",
       "name": {
         "en": "Single Mountain Side Kick",
         "ko": "외산틀 옆차기",
@@ -76,7 +76,7 @@
       ]
     },
     {
-      "key": "02",
+      "key": "cross-high-block-double-hand-twisting-pull",
       "name": {
         "en": "Cross High Block + Double Hand Twisting Pull",
         "ko": "엇걸어 얼굴막기 + 두손펴 비틀어 잡아당기기",
@@ -87,7 +87,7 @@
       "tips": []
     },
     {
-      "key": "03",
+      "key": "jumping-side-kick",
       "name": {
         "en": "Jumping Side Kick",
         "ko": "뛰어 옆차기",
@@ -103,7 +103,7 @@
       ]
     },
     {
-      "key": "04",
+      "key": "knee-crook-stance",
       "name": {
         "en": "Knee Crook Stance",
         "ko": "오금서기",
@@ -114,7 +114,7 @@
       "tips": []
     },
     {
-      "key": "dusonpyeo-biteureo-jabadanggigi",
+      "key": "double-hand-twisting-pull",
       "name": {
         "en": "Double Hand Twisting Pull",
         "ko": "두손펴비틀어잡아당기기",
@@ -125,7 +125,7 @@
       "tips": []
     },
     {
-      "key": "geumgangmakgi",
+      "key": "diamond-block",
       "name": {
         "en": "Diamond Block",
         "ko": "금강막기",
@@ -136,7 +136,7 @@
       "tips": []
     },
     {
-      "key": "jireugi",
+      "key": "punch",
       "name": {
         "en": "Punch",
         "ko": "지르기",
@@ -147,7 +147,7 @@
       "tips": []
     },
     {
-      "key": "junbi",
+      "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
         "ko": "준비",
@@ -158,10 +158,10 @@
       "tips": []
     },
     {
-      "key": "momtong-jireugi",
+      "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기",
+        "ko": "(몸통)지르기",
         "romanized": "Momtong Jireugi"
       },
       "category": "strike",
@@ -169,29 +169,7 @@
       "tips": []
     },
     {
-      "key": "oesanteul-yeopchagi",
-      "name": {
-        "en": "Single Mountain Side Kick",
-        "ko": "외산틀옆차기",
-        "romanized": "Oesanteul Yeop Chagi"
-      },
-      "category": "kick",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "ogeumseogi",
-      "name": {
-        "en": "Knee Crook Stance",
-        "ko": "오금서기",
-        "romanized": "Ogeum Seogi"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "otgoreo-ulgul-ollyeo-makgi",
+      "key": "cross-high-rising-block",
       "name": {
         "en": "Cross High Rising Block",
         "ko": "엇걸어얼굴올려막기",
@@ -213,24 +191,13 @@
       "tips": []
     },
     {
-      "key": "sonal-geodeureomakgi",
+      "key": "knifehand-double-block",
       "name": {
-        "en": "Knifehand Guarding Block",
+        "en": "Knifehand Double Block",
         "ko": "손날거들어막기",
         "romanized": "Sonnal Geodeureo Makgi"
       },
       "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "ttwieo-yeopchagi",
-      "name": {
-        "en": "Jumping Side Kick",
-        "ko": "뛰어옆차기",
-        "romanized": "Ttwieo Yeop Chagi"
-      },
-      "category": "kick",
       "video_timestamp": 0,
       "tips": []
     }
@@ -238,7 +205,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "junbi",
+      "technique": "ready-stance",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -247,7 +214,7 @@
     },
     {
       "step": 1,
-      "technique": "sonal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "side": "left",
       "direction": "left",
       "kihap": false,
@@ -256,7 +223,7 @@
     },
     {
       "step": 2,
-      "technique": "jireugi",
+      "technique": "punch",
       "side": "right",
       "direction": "left",
       "kihap": false,
@@ -265,7 +232,7 @@
     },
     {
       "step": 3,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "left",
       "kihap": false,
@@ -274,7 +241,7 @@
     },
     {
       "step": 4,
-      "technique": "sonal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "side": "left",
       "direction": "right",
       "kihap": false,
@@ -283,7 +250,7 @@
     },
     {
       "step": 5,
-      "technique": "jireugi",
+      "technique": "punch",
       "side": "right",
       "direction": "right",
       "kihap": false,
@@ -301,7 +268,7 @@
     },
     {
       "step": 7,
-      "technique": "oesanteul-yeopchagi",
+      "technique": "single-mountain-side-kick",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -310,7 +277,7 @@
     },
     {
       "step": 8,
-      "technique": "otgoreo-ulgul-ollyeo-makgi",
+      "technique": "cross-high-rising-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -319,7 +286,7 @@
     },
     {
       "step": 9,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -328,7 +295,7 @@
     },
     {
       "step": 10,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -337,7 +304,7 @@
     },
     {
       "step": 11,
-      "technique": "sonal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -346,7 +313,7 @@
     },
     {
       "step": 12,
-      "technique": "jireugi",
+      "technique": "punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -364,7 +331,7 @@
     },
     {
       "step": 14,
-      "technique": "oesanteul-yeopchagi",
+      "technique": "single-mountain-side-kick",
       "side": "right",
       "direction": "backward",
       "kihap": false,
@@ -373,7 +340,7 @@
     },
     {
       "step": 15,
-      "technique": "otgoreo-ulgul-ollyeo-makgi",
+      "technique": "cross-high-rising-block",
       "side": null,
       "direction": "backward",
       "kihap": false,
@@ -382,7 +349,7 @@
     },
     {
       "step": 16,
-      "technique": "dusonpyeo-biteureo-jabadanggigi",
+      "technique": "double-hand-twisting-pull",
       "side": null,
       "direction": "backward",
       "kihap": false,
@@ -391,7 +358,7 @@
     },
     {
       "step": 17,
-      "technique": "ttwieo-yeopchagi",
+      "technique": "jumping-side-kick",
       "side": null,
       "direction": "backward",
       "kihap": true,
@@ -400,7 +367,7 @@
     },
     {
       "step": 18,
-      "technique": "ogeumseogi",
+      "technique": "knee-crook-stance",
       "side": null,
       "direction": "backward",
       "kihap": false,
@@ -409,7 +376,7 @@
     },
     {
       "step": 19,
-      "technique": "sonal-geodeureomakgi",
+      "technique": "knifehand-double-block",
       "side": "right",
       "direction": "backward",
       "kihap": false,
@@ -418,7 +385,7 @@
     },
     {
       "step": 20,
-      "technique": "jireugi",
+      "technique": "punch",
       "side": "left",
       "direction": "backward",
       "kihap": false,
@@ -427,7 +394,7 @@
     },
     {
       "step": 21,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "backward",
       "kihap": false,
@@ -445,7 +412,7 @@
     },
     {
       "step": 23,
-      "technique": "oesanteul-yeopchagi",
+      "technique": "single-mountain-side-kick",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -454,7 +421,7 @@
     },
     {
       "step": 24,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "forward",
       "kihap": true,

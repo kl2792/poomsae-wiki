@@ -325,10 +325,46 @@
       "taegeuk-3"
     ]
   },
+  "backfist-front-strike": {
+    "key": "backfist-front-strike",
+    "name": {
+      "en": "Backfist Front Strike",
+      "ko": "등주먹앞치기",
+      "romanized": "Deungjumeok Apchigi"
+    },
+    "category": "strike",
+    "source": {
+      "form_id": "taegeuk-4",
+      "form_name": "Taegeuk Sa Jang",
+      "video_id": "Lt917gacJho",
+      "timestamp": 375.0
+    },
+    "tips": [
+      {
+        "text": "Your arms should cross at the solar plexus level, and the striking fist should pass under the supporting arm, making an arc",
+        "timestamp": 386,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "The back of the fist should be at the philtrum level along the center line when seen from the front",
+        "timestamp": 394,
+        "video_id": "Lt917gacJho"
+      },
+      {
+        "text": "Be careful not to let the elbow of the striking arm point outward",
+        "timestamp": 403,
+        "video_id": "Lt917gacJho"
+      }
+    ],
+    "used_in": [
+      "taegeuk-4",
+      "taegeuk-5"
+    ]
+  },
   "backfist-high-outward-strike": {
     "key": "backfist-high-outward-strike",
     "name": {
-      "en": "Back-fist High Outward Strike",
+      "en": "Backfist High Outward Strike",
       "ko": "등주먹 얼굴바깥치기",
       "romanized": "Deungjumeok Ulgul Bakkat Chigi"
     },
@@ -398,42 +434,6 @@
     ],
     "used_in": [
       "taebaek"
-    ]
-  },
-  "backfist-front-strike": {
-    "key": "backfist-front-strike",
-    "name": {
-      "en": "Backfist Front Strike",
-      "ko": "등주먹앞치기",
-      "romanized": "Deungjumeok Apchigi"
-    },
-    "category": "strike",
-    "source": {
-      "form_id": "taegeuk-4",
-      "form_name": "Taegeuk Sa Jang",
-      "video_id": "Lt917gacJho",
-      "timestamp": 375.0
-    },
-    "tips": [
-      {
-        "text": "Your arms should cross at the solar plexus level, and the striking fist should pass under the supporting arm, making an arc",
-        "timestamp": 386,
-        "video_id": "Lt917gacJho"
-      },
-      {
-        "text": "The back of the fist should be at the philtrum level along the center line when seen from the front",
-        "timestamp": 394,
-        "video_id": "Lt917gacJho"
-      },
-      {
-        "text": "Be careful not to let the elbow of the striking arm point outward",
-        "timestamp": 403,
-        "video_id": "Lt917gacJho"
-      }
-    ],
-    "used_in": [
-      "taegeuk-4",
-      "taegeuk-5"
     ]
   },
   "backfist-outward-strike": {
@@ -2606,51 +2606,6 @@
       "taegeuk-7"
     ]
   },
-  "knifehand-neck-grasp": {
-    "key": "knifehand-neck-grasp",
-    "name": {
-      "en": "Knife-hand Neck Grasp",
-      "ko": "손날 엎어잡기",
-      "romanized": "Sonnal Eopeojapgi"
-    },
-    "category": "strike",
-    "source": {
-      "form_id": "taebaek",
-      "form_name": "Taebaek",
-      "video_id": "Q4dYdFRbE4U",
-      "timestamp": 178
-    },
-    "tips": [
-      {
-        "text": "Raise your hand and pull it close to your body to release your wrist",
-        "timestamp": 191,
-        "video_id": "Q4dYdFRbE4U"
-      },
-      {
-        "text": "Open your arm inside out and cover the back of the hand of your opponent",
-        "timestamp": 195,
-        "video_id": "Q4dYdFRbE4U"
-      },
-      {
-        "text": "Be careful not to let your elbow rise excessively or move outward",
-        "timestamp": 202,
-        "video_id": "Q4dYdFRbE4U"
-      },
-      {
-        "text": "You can only exert force effectively when the elbow is close to the torso",
-        "timestamp": 207,
-        "video_id": "Q4dYdFRbE4U"
-      },
-      {
-        "text": "When performing Jeocheonaegi, pull the hand close to the body and release the wrist",
-        "timestamp": 341,
-        "video_id": "Q4dYdFRbE4U"
-      }
-    ],
-    "used_in": [
-      "taebaek"
-    ]
-  },
   "knifehand-assisted-low-block": {
     "key": "knifehand-assisted-low-block",
     "name": {
@@ -2971,14 +2926,15 @@
     },
     "category": "block",
     "source": {
-      "form_id": "jitae",
-      "form_name": "Jitae",
-      "video_id": "nur2WsN7dQw",
+      "form_id": "koryo",
+      "form_name": "Koryo",
+      "video_id": "mGa60JDtWmg",
       "timestamp": 0
     },
     "tips": [],
     "used_in": [
-      "jitae"
+      "jitae",
+      "koryo"
     ]
   },
   "knifehand-low-spreading-block": {
@@ -3071,6 +3027,51 @@
     "tips": [],
     "used_in": [
       "chonkwon"
+    ]
+  },
+  "knifehand-neck-grasp": {
+    "key": "knifehand-neck-grasp",
+    "name": {
+      "en": "Knifehand Neck Grasp",
+      "ko": "손날 엎어잡기",
+      "romanized": "Sonnal Eopeojapgi"
+    },
+    "category": "strike",
+    "source": {
+      "form_id": "taebaek",
+      "form_name": "Taebaek",
+      "video_id": "Q4dYdFRbE4U",
+      "timestamp": 178
+    },
+    "tips": [
+      {
+        "text": "Raise your hand and pull it close to your body to release your wrist",
+        "timestamp": 191,
+        "video_id": "Q4dYdFRbE4U"
+      },
+      {
+        "text": "Open your arm inside out and cover the back of the hand of your opponent",
+        "timestamp": 195,
+        "video_id": "Q4dYdFRbE4U"
+      },
+      {
+        "text": "Be careful not to let your elbow rise excessively or move outward",
+        "timestamp": 202,
+        "video_id": "Q4dYdFRbE4U"
+      },
+      {
+        "text": "You can only exert force effectively when the elbow is close to the torso",
+        "timestamp": 207,
+        "video_id": "Q4dYdFRbE4U"
+      },
+      {
+        "text": "When performing Jeocheonaegi, pull the hand close to the body and release the wrist",
+        "timestamp": 341,
+        "video_id": "Q4dYdFRbE4U"
+      }
+    ],
+    "used_in": [
+      "taebaek"
     ]
   },
   "knifehand-outward-block": {
@@ -3907,7 +3908,7 @@
   "pulling-backfist-front-strike": {
     "key": "pulling-backfist-front-strike",
     "name": {
-      "en": "Pulling Back-fist Front Strike",
+      "en": "Pulling Backfist Front Strike",
       "ko": "당겨 등주먹 앞치기",
       "romanized": "Danggyeo Deungjumeok Apchigi"
     },
@@ -5052,7 +5053,7 @@
   "tiger-stance-knifehand-low-spreading-block": {
     "key": "tiger-stance-knifehand-low-spreading-block",
     "name": {
-      "en": "Tiger Stance Knife-hand Low Spreading Block",
+      "en": "Tiger Stance Knifehand Low Spreading Block",
       "ko": "범서기 손날 아래(내려)헤쳐막기",
       "romanized": "Beomseogi Sonnal Arae Naeryeo Hecheo Makgi"
     },

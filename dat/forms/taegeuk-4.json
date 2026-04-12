@@ -41,7 +41,7 @@
   "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
-      "key": "junbi",
+      "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
         "ko": "준비",
@@ -52,7 +52,7 @@
       "tips": []
     },
     {
-      "key": "01",
+      "key": "knifehand-double-block",
       "name": {
         "en": "Knifehand Double Block",
         "ko": "손날거들어막기",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "key": "02",
+      "key": "spearhand-thrust",
       "name": {
         "en": "Spearhand Thrust",
         "ko": "편손끝세워지르기",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "key": "03",
+      "key": "swallow-form-strike",
       "name": {
         "en": "Swallow Form Strike",
         "ko": "제비품안치기",
@@ -156,7 +156,7 @@
       ]
     },
     {
-      "key": "04",
+      "key": "side-kick",
       "name": {
         "en": "Side Kick",
         "ko": "옆차기",
@@ -184,7 +184,7 @@
       ]
     },
     {
-      "key": "05",
+      "key": "backfist-front-strike",
       "name": {
         "en": "Backfist Front Strike",
         "ko": "등주먹앞치기",
@@ -208,7 +208,7 @@
       ]
     },
     {
-      "key": "ap-chagi+deungjumok-apchigi",
+      "key": "front-kick-backfist-front-strike",
       "name": {
         "en": "Front Kick + Backfist Front Strike",
         "ko": "앞차기 + 등주먹앞치기",
@@ -219,7 +219,7 @@
       "tips": []
     },
     {
-      "key": "ap-chagi+momtong-an-makki",
+      "key": "front-kick-inward-middle-block",
       "name": {
         "en": "Front Kick + Inward Middle Block",
         "ko": "앞차기 + 몸통안막기",
@@ -230,7 +230,7 @@
       "tips": []
     },
     {
-      "key": "ap-chagi+momtong-jireugi",
+      "key": "front-kick-middle-punch",
       "name": {
         "en": "Front Kick + Middle Punch",
         "ko": "앞차기 + 몸통지르기",
@@ -241,7 +241,7 @@
       "tips": []
     },
     {
-      "key": "bakkan-makki",
+      "key": "outward-block",
       "name": {
         "en": "Outward Block",
         "ko": "바깥막기",
@@ -252,21 +252,10 @@
       "tips": []
     },
     {
-      "key": "jebipum-anchigi",
-      "name": {
-        "en": "Swallow Form Strike",
-        "ko": "제비품안치기",
-        "romanized": "Jebipum Anchigi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "momtong-an-makki",
+      "key": "inward-middle-block",
       "name": {
         "en": "Inward Middle Block",
-        "ko": "몸통안막기",
+        "ko": "(몸통)안막기",
         "romanized": "Momtong An Makgi"
       },
       "category": "block",
@@ -274,7 +263,7 @@
       "tips": []
     },
     {
-      "key": "momtong-an-makki+dubeon-jireugi",
+      "key": "inward-middle-block-double-punch",
       "name": {
         "en": "Inward Middle Block + Double Punch",
         "ko": "몸통안막기 + 두번지르기",
@@ -285,10 +274,10 @@
       "tips": []
     },
     {
-      "key": "momtong-jireugi",
+      "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
-        "ko": "몸통지르기",
+        "ko": "(몸통)지르기",
         "romanized": "Momtong Jireugi"
       },
       "category": "strike",
@@ -296,40 +285,7 @@
       "tips": []
     },
     {
-      "key": "pyeonsonkeut-sewo-jireugi",
-      "name": {
-        "en": "Spearhand Thrust",
-        "ko": "편손끝세워지르기",
-        "romanized": "Pyeonsonkeut Sewo Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "sonal-geodeureo-makki",
-      "name": {
-        "en": "Knifehand Guarding Block",
-        "ko": "손날거들어막기",
-        "romanized": "Sonnal Geodeureo Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "yeopchagi",
-      "name": {
-        "en": "Side Kick",
-        "ko": "옆차기",
-        "romanized": "Yeop Chagi"
-      },
-      "category": "kick",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "yeopchagi+sonal-geodeureo-makki",
+      "key": "side-kick-knifehand-guarding-block",
       "name": {
         "en": "Side Kick + Knifehand Guarding Block",
         "ko": "옆차기 + 손날거들어막기",
@@ -343,7 +299,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "junbi",
+      "technique": "ready-stance",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -352,7 +308,7 @@
     },
     {
       "step": 1,
-      "technique": "sonal-geodeureo-makki",
+      "technique": "knifehand-double-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -361,7 +317,7 @@
     },
     {
       "step": 2,
-      "technique": "pyeonsonkeut-sewo-jireugi",
+      "technique": "spearhand-thrust",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -370,7 +326,7 @@
     },
     {
       "step": 3,
-      "technique": "sonal-geodeureo-makki",
+      "technique": "knifehand-double-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -379,7 +335,7 @@
     },
     {
       "step": 4,
-      "technique": "pyeonsonkeut-sewo-jireugi",
+      "technique": "spearhand-thrust",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -388,7 +344,7 @@
     },
     {
       "step": 5,
-      "technique": "jebipum-anchigi",
+      "technique": "swallow-form-strike",
       "side": "right",
       "direction": "left-90",
       "kihap": false,
@@ -397,7 +353,7 @@
     },
     {
       "step": 6,
-      "technique": "ap-chagi+momtong-jireugi",
+      "technique": "front-kick-middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -406,7 +362,7 @@
     },
     {
       "step": 7,
-      "technique": "yeopchagi",
+      "technique": "side-kick",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -415,7 +371,7 @@
     },
     {
       "step": 8,
-      "technique": "yeopchagi+sonal-geodeureo-makki",
+      "technique": "side-kick-knifehand-guarding-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -424,7 +380,7 @@
     },
     {
       "step": 9,
-      "technique": "bakkan-makki",
+      "technique": "outward-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -433,7 +389,7 @@
     },
     {
       "step": 10,
-      "technique": "ap-chagi+momtong-an-makki",
+      "technique": "front-kick-inward-middle-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -442,7 +398,7 @@
     },
     {
       "step": 11,
-      "technique": "bakkan-makki",
+      "technique": "outward-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -451,7 +407,7 @@
     },
     {
       "step": 12,
-      "technique": "ap-chagi+momtong-an-makki",
+      "technique": "front-kick-inward-middle-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -460,7 +416,7 @@
     },
     {
       "step": 13,
-      "technique": "jebipum-anchigi",
+      "technique": "swallow-form-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -469,7 +425,7 @@
     },
     {
       "step": 14,
-      "technique": "ap-chagi+deungjumok-apchigi",
+      "technique": "front-kick-backfist-front-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -478,7 +434,7 @@
     },
     {
       "step": 15,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -487,7 +443,7 @@
     },
     {
       "step": 16,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -496,7 +452,7 @@
     },
     {
       "step": 17,
-      "technique": "momtong-an-makki",
+      "technique": "inward-middle-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -505,7 +461,7 @@
     },
     {
       "step": 18,
-      "technique": "momtong-jireugi",
+      "technique": "middle-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -514,7 +470,7 @@
     },
     {
       "step": 19,
-      "technique": "momtong-an-makki+dubeon-jireugi",
+      "technique": "inward-middle-block-double-punch",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -523,7 +479,7 @@
     },
     {
       "step": 20,
-      "technique": "momtong-an-makki+dubeon-jireugi",
+      "technique": "inward-middle-block-double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": true,

@@ -36,7 +36,7 @@
   "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
-      "key": "01",
+      "key": "palm-strike",
       "name": {
         "en": "Palm Strike",
         "ko": "바탕손앞치기",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "key": "02",
+      "key": "knifehand-middle-inward-block",
       "name": {
         "en": "Knifehand Middle Inward Block",
         "ko": "손날몸통안막기",
@@ -88,7 +88,7 @@
       ]
     },
     {
-      "key": "03",
+      "key": "diamond-block",
       "name": {
         "en": "Diamond Block",
         "ko": "금강막기",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "key": "04",
+      "key": "large-hinge",
       "name": {
         "en": "Large Hinge",
         "ko": "큰돌쩌귀",
@@ -127,7 +127,7 @@
       "tips": []
     },
     {
-      "key": "05",
+      "key": "mountain-block",
       "name": {
         "en": "Mountain Block",
         "ko": "산틀막기",
@@ -138,7 +138,7 @@
       "tips": []
     },
     {
-      "key": "06",
+      "key": "crane-stance",
       "name": {
         "en": "Crane Stance",
         "ko": "학다리서기",
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "key": "anpalmok-momtong-hecheomakgi",
+      "key": "inner-wrist-middle-spreading-block",
       "name": {
         "en": "Inner Wrist Middle Spreading Block",
         "ko": "안팔목몸통헤쳐막기",
@@ -181,7 +181,7 @@
       "tips": []
     },
     {
-      "key": "arae-hecheomakgi",
+      "key": "low-spreading-block",
       "name": {
         "en": "Low Spreading Block",
         "ko": "아래헤쳐막기",
@@ -192,29 +192,7 @@
       "tips": []
     },
     {
-      "key": "batangson-apchigi",
-      "name": {
-        "en": "Palm Strike",
-        "ko": "바탕손앞치기",
-        "romanized": "Batangson Apchigi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "geumgangmakgi",
-      "name": {
-        "en": "Diamond Block",
-        "ko": "금강막기",
-        "romanized": "Geumgang Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "junbi",
+      "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
         "ko": "준비",
@@ -223,45 +201,12 @@
       "category": "stance",
       "video_timestamp": 0,
       "tips": []
-    },
-    {
-      "key": "keundoljjeogwi",
-      "name": {
-        "en": "Large Hinge",
-        "ko": "큰돌쩌귀",
-        "romanized": "Keun Doljjeogwi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "santeulmakgi",
-      "name": {
-        "en": "Mountain Block",
-        "ko": "산틀막기",
-        "romanized": "Santeul Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "sonal-momtong-anmakgi",
-      "name": {
-        "en": "Knifehand Middle Inward Block",
-        "ko": "손날몸통안막기",
-        "romanized": "Sonnal Momtong An Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
     }
   ],
   "sequence": [
     {
       "step": 0,
-      "technique": "junbi",
+      "technique": "ready-stance",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -270,7 +215,7 @@
     },
     {
       "step": 1,
-      "technique": "anpalmok-momtong-hecheomakgi",
+      "technique": "inner-wrist-middle-spreading-block",
       "side": null,
       "direction": "left-90",
       "kihap": false,
@@ -279,7 +224,7 @@
     },
     {
       "step": 2,
-      "technique": "batangson-apchigi",
+      "technique": "palm-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -288,7 +233,7 @@
     },
     {
       "step": 3,
-      "technique": "batangson-apchigi",
+      "technique": "palm-strike",
       "side": "left",
       "direction": "right-180",
       "kihap": false,
@@ -297,7 +242,7 @@
     },
     {
       "step": 4,
-      "technique": "batangson-apchigi",
+      "technique": "palm-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -306,7 +251,7 @@
     },
     {
       "step": 5,
-      "technique": "sonal-momtong-anmakgi",
+      "technique": "knifehand-middle-inward-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
@@ -315,7 +260,7 @@
     },
     {
       "step": 6,
-      "technique": "sonal-momtong-anmakgi",
+      "technique": "knifehand-middle-inward-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
@@ -324,7 +269,7 @@
     },
     {
       "step": 7,
-      "technique": "sonal-momtong-anmakgi",
+      "technique": "knifehand-middle-inward-block",
       "side": "left",
       "direction": "forward",
       "kihap": false,
@@ -333,7 +278,7 @@
     },
     {
       "step": 8,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "left-90",
       "kihap": false,
@@ -342,7 +287,7 @@
     },
     {
       "step": 9,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -351,7 +296,7 @@
     },
     {
       "step": 10,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -360,7 +305,7 @@
     },
     {
       "step": 11,
-      "technique": "santeulmakgi",
+      "technique": "mountain-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -369,7 +314,7 @@
     },
     {
       "step": 12,
-      "technique": "anpalmok-momtong-hecheomakgi",
+      "technique": "inner-wrist-middle-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -378,7 +323,7 @@
     },
     {
       "step": 13,
-      "technique": "arae-hecheomakgi",
+      "technique": "low-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -387,7 +332,7 @@
     },
     {
       "step": 14,
-      "technique": "santeulmakgi",
+      "technique": "mountain-block",
       "side": null,
       "direction": "right-180",
       "kihap": false,
@@ -396,7 +341,7 @@
     },
     {
       "step": 15,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -405,7 +350,7 @@
     },
     {
       "step": 16,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -414,7 +359,7 @@
     },
     {
       "step": 17,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -423,7 +368,7 @@
     },
     {
       "step": 18,
-      "technique": "geumgangmakgi",
+      "technique": "diamond-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -432,7 +377,7 @@
     },
     {
       "step": 19,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -441,7 +386,7 @@
     },
     {
       "step": 20,
-      "technique": "keundoljjeogwi",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -450,7 +395,7 @@
     },
     {
       "step": 21,
-      "technique": "santeulmakgi",
+      "technique": "mountain-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -459,7 +404,7 @@
     },
     {
       "step": 22,
-      "technique": "anpalmok-momtong-hecheomakgi",
+      "technique": "inner-wrist-middle-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": false,
@@ -468,7 +413,7 @@
     },
     {
       "step": 23,
-      "technique": "arae-hecheomakgi",
+      "technique": "low-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": true,

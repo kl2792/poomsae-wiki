@@ -72,7 +72,7 @@
   ],
   "techniques": [
     {
-      "key": "01",
+      "key": "basic-ready-stance",
       "name": {
         "en": "Basic Ready Stance",
         "ko": "기본 준비자세",
@@ -120,7 +120,7 @@
       ]
     },
     {
-      "key": "02",
+      "key": "low-block",
       "name": {
         "en": "Low Block",
         "ko": "아래(내려)막기",
@@ -148,7 +148,7 @@
       ]
     },
     {
-      "key": "03",
+      "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
         "ko": "(몸통)지르기",
@@ -180,7 +180,7 @@
       ]
     },
     {
-      "key": "04",
+      "key": "inward-middle-block",
       "name": {
         "en": "Inward Middle Block",
         "ko": "(몸통)안막기",
@@ -216,7 +216,7 @@
       ]
     },
     {
-      "key": "05",
+      "key": "upper-block",
       "name": {
         "en": "Upper Block",
         "ko": "올려(얼굴)막기",
@@ -244,7 +244,7 @@
       ]
     },
     {
-      "key": "06",
+      "key": "front-kick",
       "name": {
         "en": "Front Kick",
         "ko": "앞차기",
@@ -268,7 +268,7 @@
       ]
     },
     {
-      "key": "07",
+      "key": "parallel-stance",
       "name": {
         "en": "Parallel Stance",
         "ko": "나란히서기",
@@ -284,7 +284,7 @@
       ]
     },
     {
-      "key": "08",
+      "key": "walking-stance",
       "name": {
         "en": "Walking Stance",
         "ko": "앞서기",
@@ -312,7 +312,7 @@
       ]
     },
     {
-      "key": "09",
+      "key": "forward-stance",
       "name": {
         "en": "Forward Stance",
         "ko": "앞굽이",
@@ -347,7 +347,7 @@
   "sequence": [
     {
       "step": 0,
-      "technique": "01",
+      "technique": "basic-ready-stance",
       "side": null,
       "stance": "naranhi-seogi",
       "direction": "forward",
@@ -357,7 +357,7 @@
     },
     {
       "step": 1,
-      "technique": "02",
+      "technique": "low-block",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "left-90",
@@ -367,7 +367,7 @@
     },
     {
       "step": 2,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -377,7 +377,7 @@
     },
     {
       "step": 3,
-      "technique": "02",
+      "technique": "low-block",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "right-180",
@@ -387,7 +387,7 @@
     },
     {
       "step": 4,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -397,7 +397,7 @@
     },
     {
       "step": 5,
-      "technique": "02",
+      "technique": "low-block",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "left-90",
@@ -407,7 +407,7 @@
     },
     {
       "step": 6,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -417,7 +417,7 @@
     },
     {
       "step": 7,
-      "technique": "04",
+      "technique": "inward-middle-block",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "left-90",
@@ -427,7 +427,7 @@
     },
     {
       "step": 8,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -437,7 +437,7 @@
     },
     {
       "step": 9,
-      "technique": "04",
+      "technique": "inward-middle-block",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "right-180",
@@ -447,7 +447,7 @@
     },
     {
       "step": 10,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -457,7 +457,7 @@
     },
     {
       "step": 11,
-      "technique": "02",
+      "technique": "low-block",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "right-90",
@@ -467,7 +467,7 @@
     },
     {
       "step": 12,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "forward",
@@ -477,7 +477,7 @@
     },
     {
       "step": 13,
-      "technique": "05",
+      "technique": "upper-block",
       "side": "left",
       "stance": "ap-seogi",
       "direction": "left-90",
@@ -487,7 +487,7 @@
     },
     {
       "step": 14,
-      "technique": "06",
+      "technique": "front-kick",
       "side": "right",
       "stance": "ap-seogi",
       "combo": "03",
@@ -498,7 +498,7 @@
     },
     {
       "step": 15,
-      "technique": "05",
+      "technique": "upper-block",
       "side": "right",
       "stance": "ap-seogi",
       "direction": "right-180",
@@ -508,7 +508,7 @@
     },
     {
       "step": 16,
-      "technique": "06",
+      "technique": "front-kick",
       "side": "left",
       "stance": "ap-seogi",
       "combo": "03",
@@ -519,7 +519,7 @@
     },
     {
       "step": 17,
-      "technique": "02",
+      "technique": "low-block",
       "side": "left",
       "stance": "ap-gubi",
       "direction": "left-90",
@@ -529,7 +529,7 @@
     },
     {
       "step": 18,
-      "technique": "03",
+      "technique": "middle-punch",
       "side": "right",
       "stance": "ap-gubi",
       "direction": "forward",
