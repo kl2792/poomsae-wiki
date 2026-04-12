@@ -50,21 +50,6 @@ export interface FormData {
   sequence: SequenceStep[];
 }
 
-/** @deprecated Use Technique + SequenceStep instead */
-export interface Move {
-  number: number;
-  technique_id: string;
-  stance_id?: string;
-  side?: string | null;
-  direction: string;
-  timestamp_start: number;
-  timestamp_end: number;
-  kihap: boolean;
-  combination_with_next?: boolean;
-  tips: string[];
-  notes?: string;
-}
-
 const FORMS_DIR = path.join(process.cwd(), "..", "dat", "forms");
 
 export function getTechnique(

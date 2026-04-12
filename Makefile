@@ -1,6 +1,6 @@
 # Poomsae Wiki — reproducible pipeline
 
-.PHONY: download transcripts extract build deploy clean
+.PHONY: download transcripts extract build deploy clean test
 
 # Full pipeline
 all: download transcripts extract build deploy
@@ -36,6 +36,11 @@ extract-%:
 # Preview prompt without calling LLM
 prompt-%:
 	python3 scripts/extract.py --prompt-only $*
+
+# Run all tests
+test:
+	cd app && npx vitest run
+	cd scripts && python3 test_extract.py
 
 # Local dev server
 dev:

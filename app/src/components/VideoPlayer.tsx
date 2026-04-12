@@ -2,10 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 
-/* eslint-disable @typescript-eslint/no-explicit-any */
 declare global {
   interface Window {
-    YT: any;
     onYouTubeIframeAPIReady: () => void;
   }
 }
@@ -30,7 +28,7 @@ export default function VideoPlayer({
   onPlayingChange,
 }: VideoPlayerProps) {
   const containerRef = useRef<HTMLDivElement>(null);
-  const playerRef = useRef<any>(null);
+  const playerRef = useRef<YT.Player | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
   const [ready, setReady] = useState(false);
   const [speed, setSpeed] = useState(1);
@@ -38,7 +36,7 @@ export default function VideoPlayer({
 
   // Load YouTube IFrame API
   useEffect(() => {
-    if (window.YT?.Player) {
+    if (typeof YT !== "undefined" && YT.Player) {
       setReady(true);
       return;
     }
@@ -55,7 +53,7 @@ export default function VideoPlayer({
       playerRef.current.destroy();
     }
 
-    playerRef.current = new window.YT.Player(containerRef.current, {
+    playerRef.current = new YT.Player(containerRef.current, {
       width: "100%",
       height: "100%",
       videoId,
@@ -65,8 +63,8 @@ export default function VideoPlayer({
         start: startTime ? Math.floor(startTime) : undefined,
       },
       events: {
-        onStateChange: (e: any) => {
-          const isPlaying = e.data === window.YT.PlayerState.PLAYING;
+        onStateChange: (e: YT.OnStateChangeEvent) => {
+          const isPlaying = e.data === YT.PlayerState.PLAYING;
           setPlaying(isPlaying);
           onPlayingChange?.(isPlaying);
         },
@@ -128,11 +126,6 @@ export default function VideoPlayer({
   const handleSpeedChange = useCallback((newSpeed: number) => {
     setSpeed(newSpeed);
     playerRef.current?.setPlaybackRate(newSpeed);
-  }, []);
-
-  const seekTo = useCallback((time: number) => {
-    playerRef.current?.seekTo(time, true);
-    playerRef.current?.playVideo();
   }, []);
 
   return (
