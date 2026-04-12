@@ -1,6 +1,13 @@
 import { describe, it, expect } from "vitest";
-import { getAllForms, getForm, getAllFormIds, getTechnique } from "../data";
-import type { FormData } from "../data";
+import {
+  getAllForms,
+  getForm,
+  getAllFormIds,
+  getTechnique,
+  getAllTechniques,
+  getTechniqueByKey,
+} from "../data";
+import type { FormData, WikiTechnique } from "../data";
 
 describe("getAllForms", () => {
   const forms = getAllForms();
@@ -113,6 +120,94 @@ describe("getTechnique", () => {
   it("returns undefined for nonexistent key", () => {
     const form = getForm("taegeuk-1")!;
     expect(getTechnique(form, "nonexistent")).toBeUndefined();
+  });
+});
+
+// --- Wiki technique database tests ---
+
+describe("getAllTechniques", () => {
+  const techniques = getAllTechniques();
+
+  it("returns a non-empty array", () => {
+    expect(techniques.length).toBeGreaterThan(0);
+  });
+
+  it("returns more than 100 techniques", () => {
+    expect(techniques.length).toBeGreaterThan(100);
+  });
+
+  it("returns techniques sorted by English name", () => {
+    const names = techniques.map((t) => t.name.en);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b)));
+  });
+});
+
+describe("getTechniqueByKey", () => {
+  it("returns a valid technique for 'low-block'", () => {
+    const tech = getTechniqueByKey("low-block");
+    expect(tech).not.toBeNull();
+    expect(tech!.key).toBe("low-block");
+    expect(tech!.name.en).toBe("Low Block");
+    expect(tech!.name.ko).toBeTruthy();
+    expect(tech!.name.romanized).toBe("Arae Makgi");
+    expect(tech!.category).toBe("block");
+  });
+
+  it("returns null for nonexistent key", () => {
+    expect(getTechniqueByKey("nonexistent-technique-xyz")).toBeNull();
+  });
+
+  it("returns null for empty string key", () => {
+    expect(getTechniqueByKey("")).toBeNull();
+  });
+});
+
+describe("wiki technique data structure", () => {
+  const techniques = getAllTechniques();
+
+  it("every technique has required fields: key, name.en, name.ko, name.romanized, category, source", () => {
+    for (const tech of techniques) {
+      expect(tech.key, `technique missing key`).toBeTruthy();
+      expect(tech.name.en, `${tech.key} missing name.en`).toBeTruthy();
+      expect(tech.name.ko, `${tech.key} missing name.ko`).toBeTruthy();
+      expect(tech.name.romanized, `${tech.key} missing name.romanized`).toBeTruthy();
+      expect(tech.category, `${tech.key} missing category`).toBeTruthy();
+      expect(tech.source, `${tech.key} missing source`).toBeDefined();
+    }
+  });
+
+  it("every technique source has form_id and video_id", () => {
+    for (const tech of techniques) {
+      expect(tech.source.form_id, `${tech.key} source missing form_id`).toBeTruthy();
+      expect(tech.source.video_id, `${tech.key} source missing video_id`).toBeTruthy();
+      expect(typeof tech.source.timestamp).toBe("number");
+    }
+  });
+
+  it("every technique has non-empty used_in array", () => {
+    for (const tech of techniques) {
+      expect(
+        tech.used_in.length,
+        `${tech.key} has empty used_in`
+      ).toBeGreaterThan(0);
+    }
+  });
+
+  it("no duplicate keys across techniques", () => {
+    const keys = techniques.map((t) => t.key);
+    expect(new Set(keys).size).toBe(keys.length);
+  });
+
+  it("categories are valid values", () => {
+    const validCategories = new Set([
+      "block", "kick", "strike", "stance", "ready", "technique", "combination",
+    ]);
+    for (const tech of techniques) {
+      expect(
+        validCategories.has(tech.category),
+        `${tech.key} has invalid category '${tech.category}'`
+      ).toBe(true);
+    }
   });
 });
 

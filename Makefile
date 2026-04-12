@@ -45,6 +45,7 @@ techniques:
 test:
 	cd app && npx vitest run
 	cd scripts && python3 test_extract.py
+	cd scripts && python3 test_build_techniques.py
 
 # Local dev server
 dev:

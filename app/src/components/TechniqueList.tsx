@@ -1,6 +1,7 @@
 "use client";
 
 import type { Technique } from "@/lib/data";
+import { CATEGORY_COLORS } from "@/lib/constants";
 
 interface TechniqueListProps {
   techniques: Technique[];
@@ -8,13 +9,6 @@ interface TechniqueListProps {
   activeTechnique: string | null;
   onTechniqueClick: (technique: Technique) => void;
 }
-
-const CATEGORY_COLORS: Record<string, string> = {
-  block: "bg-blue-50 text-blue-700",
-  strike: "bg-orange-50 text-orange-700",
-  kick: "bg-green-50 text-green-700",
-  stance: "bg-gray-100 text-gray-600",
-};
 
 export default function TechniqueList({
   techniques,

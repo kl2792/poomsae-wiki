@@ -1,21 +1,21 @@
 "use client";
 
 import type { SequenceStep, Technique } from "@/lib/data";
+import { formatTime } from "@/lib/format";
 
 interface SequenceListProps {
   sequence: SequenceStep[];
-  techniques: Technique[];
+  techMap: Map<string, Technique>;
   activeStep: number | null;
   onStepClick: (step: SequenceStep) => void;
 }
 
 export default function SequenceList({
   sequence,
-  techniques,
+  techMap,
   activeStep,
   onStepClick,
 }: SequenceListProps) {
-  const techMap = new Map(techniques.map((t) => [t.key, t]));
 
   return (
     <div className="divide-y divide-gray-100">
@@ -77,12 +77,6 @@ export default function SequenceList({
       })}
     </div>
   );
-}
-
-function formatTime(seconds: number): string {
-  const m = Math.floor(seconds / 60);
-  const s = Math.floor(seconds % 60);
-  return `${m}:${String(s).padStart(2, "0")}`;
 }
 
 function formatDirection(dir: string): string {

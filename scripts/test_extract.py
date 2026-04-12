@@ -163,10 +163,31 @@ def test_form_meta_covers_all_json_files():
         assert form_id in meta_ids, f"{path.name} has no FORM_META entry"
 
 
+def test_every_form_technique_appears_in_wiki():
+    """Every technique from every form JSON should have an entry in techniques.json."""
+    import json as _json
+    techniques_file = FORMS_DIR.parent / "techniques.json"
+    assert techniques_file.exists(), f"techniques.json not found at {techniques_file}"
+    with open(techniques_file) as f:
+        wiki = _json.load(f)
+    wiki_names = {t["name"]["en"].strip().lower() for t in wiki.values()}
+
+    json_files = sorted(FORMS_DIR.glob("*.json"))
+    missing = []
+    for path in json_files:
+        with open(path) as f:
+            form = _json.load(f)
+        for tech in form.get("techniques", []):
+            name_lower = tech["name"]["en"].strip().lower()
+            if name_lower not in wiki_names:
+                missing.append(f"{path.stem}: {tech['name']['en']}")
+    assert missing == [], f"Form techniques missing from wiki:\n" + "\n".join(missing)
+
+
 if __name__ == "__main__":
     import sys
     # Simple runner if pytest not available
-    tests = [v for k, v in globals().items() if k.startswith("test_")]
+    tests = [v for k, v in sorted(globals().items()) if k.startswith("test_")]
     failed = 0
     for test in tests:
         try:

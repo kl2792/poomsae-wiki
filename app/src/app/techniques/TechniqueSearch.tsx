@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 
 interface TechniqueSearchItem {
   key: string;
@@ -8,68 +8,257 @@ interface TechniqueSearchItem {
   ko: string;
   romanized: string;
   category: string;
+  used_in: string[];
+}
+
+interface Props {
+  techniques: TechniqueSearchItem[];
+  totalCount: number;
+  categories: string[];
+  categoryLabels: Record<string, string>;
+  formIds: string[];
+  formShort: Record<string, string>;
 }
 
 export default function TechniqueSearch({
   techniques,
-}: {
-  techniques: TechniqueSearchItem[];
-}) {
+  totalCount,
+  categories,
+  categoryLabels,
+  formIds,
+  formShort,
+}: Props) {
   const [query, setQuery] = useState("");
+  const [activeCategories, setActiveCategories] = useState<Set<string>>(
+    new Set()
+  );
+  const [activeForms, setActiveForms] = useState<Set<string>>(new Set());
+  const [collapsed, setCollapsed] = useState<Set<string>>(new Set());
+  const [visibleCount, setVisibleCount] = useState(totalCount);
+  const rafRef = useRef<number>(0);
 
-  // When the user types, hide non-matching technique rows via DOM
-  // This avoids re-rendering the entire server-rendered list
-  function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
-    const q = e.target.value;
-    setQuery(q);
+  const applyFilters = useCallback(
+    (q: string, cats: Set<string>, forms: Set<string>) => {
+      cancelAnimationFrame(rafRef.current);
+      rafRef.current = requestAnimationFrame(() => {
+        const lower = q.toLowerCase().trim();
+        const hasCatFilter = cats.size > 0;
+        const hasFormFilter = forms.size > 0;
+        const hasSearch = lower.length > 0;
 
-    const lower = q.toLowerCase().trim();
-    const rows = document.querySelectorAll<HTMLElement>("[data-technique]");
+        // Build matching keys
+        let matchingKeys: Set<string> | null = null;
+        if (hasSearch || hasCatFilter || hasFormFilter) {
+          matchingKeys = new Set(
+            techniques
+              .filter((t) => {
+                if (
+                  hasCatFilter &&
+                  !cats.has(t.category)
+                )
+                  return false;
+                if (
+                  hasFormFilter &&
+                  !t.used_in.some((f) => forms.has(f))
+                )
+                  return false;
+                if (hasSearch) {
+                  return (
+                    t.en.toLowerCase().includes(lower) ||
+                    t.romanized.toLowerCase().includes(lower) ||
+                    t.ko.includes(q)
+                  );
+                }
+                return true;
+              })
+              .map((t) => t.key)
+          );
+        }
 
-    if (!lower) {
-      // Show all
-      rows.forEach((row) => (row.style.display = ""));
-      document
-        .querySelectorAll<HTMLElement>("section[id]")
-        .forEach((s) => (s.style.display = ""));
-      return;
-    }
+        // Show/hide technique rows
+        let count = 0;
+        const rows =
+          document.querySelectorAll<HTMLElement>("[data-technique]");
+        rows.forEach((row) => {
+          const key = row.getAttribute("data-technique") || "";
+          const visible = matchingKeys ? matchingKeys.has(key) : true;
+          row.style.display = visible ? "" : "none";
+          if (visible) count++;
+        });
 
-    const matchingKeys = new Set(
-      techniques
-        .filter(
-          (t) =>
-            t.en.toLowerCase().includes(lower) ||
-            t.romanized.toLowerCase().includes(lower) ||
-            t.ko.includes(q) ||
-            t.category.toLowerCase().includes(lower)
-        )
-        .map((t) => t.key)
-    );
+        // Show/hide category sections
+        document
+          .querySelectorAll<HTMLElement>("[data-category]")
+          .forEach((section) => {
+            const cat = section.getAttribute("data-category") || "";
+            // If category filter is active and this category isn't selected, hide
+            if (hasCatFilter && !cats.has(cat)) {
+              section.style.display = "none";
+              return;
+            }
+            const visibleRows = section.querySelectorAll<HTMLElement>(
+              '[data-technique]:not([style*="display: none"])'
+            );
+            section.style.display = visibleRows.length > 0 ? "" : "none";
+          });
 
-    rows.forEach((row) => {
-      const key = row.getAttribute("data-technique") || "";
-      row.style.display = matchingKeys.has(key) ? "" : "none";
+        setVisibleCount(count);
+      });
+    },
+    [techniques]
+  );
+
+  // Initial render: wire up collapse triggers
+  useEffect(() => {
+    const triggers =
+      document.querySelectorAll<HTMLElement>("[data-collapse-trigger]");
+    const handlers: Array<[HTMLElement, () => void]> = [];
+
+    triggers.forEach((trigger) => {
+      const cat = trigger.getAttribute("data-collapse-trigger") || "";
+      const handler = () => {
+        setCollapsed((prev) => {
+          const next = new Set(prev);
+          if (next.has(cat)) {
+            next.delete(cat);
+          } else {
+            next.add(cat);
+          }
+          return next;
+        });
+      };
+      trigger.addEventListener("click", handler);
+      handlers.push([trigger, handler]);
     });
 
-    // Hide empty category sections
-    document.querySelectorAll<HTMLElement>("section[id]").forEach((section) => {
-      const visibleRows = section.querySelectorAll<HTMLElement>(
-        '[data-technique]:not([style*="display: none"])'
+    return () => {
+      handlers.forEach(([el, handler]) =>
+        el.removeEventListener("click", handler)
       );
-      section.style.display = visibleRows.length > 0 ? "" : "none";
+    };
+  }, []);
+
+  // Sync collapse state to DOM
+  useEffect(() => {
+    categories.forEach((cat) => {
+      const body = document.querySelector<HTMLElement>(
+        `[data-collapse-body="${cat}"]`
+      );
+      const chevron = document.querySelector<HTMLElement>(
+        `[data-chevron="${cat}"]`
+      );
+      if (body) {
+        body.style.display = collapsed.has(cat) ? "none" : "";
+      }
+      if (chevron) {
+        chevron.style.transform = collapsed.has(cat)
+          ? "rotate(-90deg)"
+          : "";
+      }
+    });
+  }, [collapsed, categories]);
+
+  function toggleCategory(cat: string) {
+    setActiveCategories((prev) => {
+      const next = new Set(prev);
+      if (next.has(cat)) next.delete(cat);
+      else next.add(cat);
+      applyFilters(query, next, activeForms);
+      return next;
     });
   }
 
+  function toggleForm(formId: string) {
+    setActiveForms((prev) => {
+      const next = new Set(prev);
+      if (next.has(formId)) next.delete(formId);
+      else next.add(formId);
+      applyFilters(query, activeCategories, next);
+      return next;
+    });
+  }
+
+  function clearFilters() {
+    setActiveCategories(new Set());
+    setActiveForms(new Set());
+    setQuery("");
+    applyFilters("", new Set(), new Set());
+  }
+
+  function handleSearch(e: React.ChangeEvent<HTMLInputElement>) {
+    const q = e.target.value;
+    setQuery(q);
+    applyFilters(q, activeCategories, activeForms);
+  }
+
+  const hasFilters =
+    activeCategories.size > 0 || activeForms.size > 0 || query.length > 0;
+
   return (
-    <div className="mb-6">
+    <div className="mb-6 space-y-3">
+      {/* Search bar */}
       <input
         type="text"
         value={query}
-        onChange={handleChange}
-        placeholder="Search techniques (English, Korean, or romanized)..."
+        onChange={handleSearch}
+        placeholder="Search techniques..."
         className="w-full max-w-md px-3 py-2 border border-gray-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-blue-300 focus:border-blue-300"
       />
+
+      {/* Category filter pills */}
+      <div className="flex flex-wrap gap-1.5">
+        <span className="text-xs text-gray-400 self-center mr-1">
+          Category
+        </span>
+        {categories.map((cat) => (
+          <button
+            key={cat}
+            onClick={() => toggleCategory(cat)}
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors cursor-pointer ${
+              activeCategories.has(cat)
+                ? "bg-gray-800 text-white border-gray-800"
+                : "bg-white text-gray-600 border-gray-300 hover:border-gray-400"
+            }`}
+          >
+            {categoryLabels[cat] || cat}
+          </button>
+        ))}
+      </div>
+
+      {/* Form filter pills */}
+      <div className="flex flex-wrap gap-1.5">
+        <span className="text-xs text-gray-400 self-center mr-1">Form</span>
+        {formIds.map((formId) => (
+          <button
+            key={formId}
+            onClick={() => toggleForm(formId)}
+            className={`text-xs px-2.5 py-1 rounded-full border transition-colors cursor-pointer ${
+              activeForms.has(formId)
+                ? "bg-gray-800 text-white border-gray-800"
+                : "bg-white text-gray-600 border-gray-300 hover:border-gray-400"
+            }`}
+          >
+            {formShort[formId] || formId}
+          </button>
+        ))}
+      </div>
+
+      {/* Count + clear */}
+      <div className="flex items-center gap-3 text-sm text-gray-500">
+        <span>
+          {hasFilters
+            ? `Showing ${visibleCount} of ${totalCount} techniques`
+            : `${totalCount} techniques`}
+        </span>
+        {hasFilters && (
+          <button
+            onClick={clearFilters}
+            className="text-xs text-blue-600 hover:text-blue-800 cursor-pointer"
+          >
+            Clear filters
+          </button>
+        )}
+      </div>
     </div>
   );
 }

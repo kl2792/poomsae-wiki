@@ -83,6 +83,7 @@ export function getAllForms(): FormData[] {
 }
 
 export function getForm(formId: string): FormData | null {
+  if (!/^[a-z0-9-]+$/.test(formId)) return null;
   const filePath = path.join(FORMS_DIR, `${formId}.json`);
   if (!fs.existsSync(filePath)) return null;
   const raw = fs.readFileSync(filePath, "utf-8");
@@ -131,6 +132,13 @@ export function getAllTechniques(): WikiTechnique[] {
   return Object.values(data).sort((a, b) =>
     a.name.en.localeCompare(b.name.en)
   );
+}
+
+export function getAllTechniqueKeys(): string[] {
+  if (!fs.existsSync(TECHNIQUES_FILE)) return [];
+  const raw = fs.readFileSync(TECHNIQUES_FILE, "utf-8");
+  const data = JSON.parse(raw) as Record<string, WikiTechnique>;
+  return Object.keys(data);
 }
 
 export function getTechniqueByKey(key: string): WikiTechnique | null {

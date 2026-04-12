@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { getAllForms } from "@/lib/data";
+import { ordinal } from "@/lib/format";
 
 const BELT_COLORS: Record<string, string> = {
   "8th Geup": "bg-white text-gray-700 border border-gray-300",              // white
@@ -106,7 +107,7 @@ function FormCard({
       <p className="text-xs text-gray-400 mt-0.5">{form.name.ko}</p>
       <div className="flex items-center gap-2 mt-2">
         <span className={`text-[10px] px-1.5 py-0.5 rounded whitespace-nowrap ${beltColor}`}>
-          {form.dan ? `${form.dan}${form.dan === 1 ? "st" : form.dan === 2 ? "nd" : form.dan === 3 ? "rd" : "th"} Dan` : form.belt}
+          {form.dan ? `${form.dan}${ordinal(form.dan)} Dan` : form.belt}
         </span>
         <span className="text-[10px] text-gray-400">
           {moveCount} moves{techCount ? ` / ${techCount} techniques` : ""}

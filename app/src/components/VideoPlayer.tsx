@@ -30,9 +30,15 @@ export default function VideoPlayer({
   const containerRef = useRef<HTMLDivElement>(null);
   const playerRef = useRef<YT.Player | null>(null);
   const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
+  const onPlayingChangeRef = useRef(onPlayingChange);
   const [ready, setReady] = useState(false);
   const [speed, setSpeed] = useState(1);
   const [playing, setPlaying] = useState(false);
+
+  // Keep ref current to avoid stale closures in the YT player callback
+  useEffect(() => {
+    onPlayingChangeRef.current = onPlayingChange;
+  }, [onPlayingChange]);
 
   // Load YouTube IFrame API
   useEffect(() => {
@@ -66,7 +72,7 @@ export default function VideoPlayer({
         onStateChange: (e: YT.OnStateChangeEvent) => {
           const isPlaying = e.data === YT.PlayerState.PLAYING;
           setPlaying(isPlaying);
-          onPlayingChange?.(isPlaying);
+          onPlayingChangeRef.current?.(isPlaying);
         },
       },
     });

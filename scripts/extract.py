@@ -135,7 +135,8 @@ def validate_form(path: str) -> list[str]:
     """Validate a form JSON. Returns list of errors."""
     errors = []
     try:
-        d = json.load(open(path))
+        with open(path) as f:
+            d = json.load(f)
     except Exception as e:
         return [f"Invalid JSON: {e}"]
 
@@ -248,7 +249,8 @@ def validate_all():
             continue
         path = str(FORMS_DIR / fname)
         errors = validate_form(path)
-        d = json.load(open(path))
+        with open(path) as f:
+            d = json.load(f)
         techs = len(d.get('techniques', []))
         steps = len(d.get('sequence', []))
         tips = sum(len(t.get('tips', [])) for t in d.get('techniques', []))

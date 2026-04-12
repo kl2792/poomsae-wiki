@@ -1,6 +1,4 @@
-import { getForm, getAllFormIds } from "@/lib/data";
-import { buildTechniqueIndex } from "@/lib/technique-index";
-import type { CrossRef } from "./FormDetail";
+import { getForm, getAllFormIds, getAllTechniques, type WikiTechnique } from "@/lib/data";
 import { notFound } from "next/navigation";
 import FormDetail from "./FormDetail";
 
@@ -17,21 +15,22 @@ export default async function FormPage({
   const form = getForm(formId);
   if (!form) notFound();
 
-  // Build cross-references for techniques that lack a breakdown in this form's video.
-  const index = buildTechniqueIndex();
-  const crossRefs: Record<string, CrossRef> = {};
+  // Build wiki technique lookup keyed by form technique key.
+  // Forms use mixed key schemes (numbered "01", slugs "arae-makki"), so
+  // match through case-insensitive English name.
+  const allWiki = getAllTechniques();
+  const wikiByName = new Map<string, WikiTechnique>();
+  for (const wt of allWiki) {
+    wikiByName.set(wt.name.en.toLowerCase(), wt);
+  }
+
+  const wikiTechniques: Record<string, WikiTechnique> = {};
   for (const tech of form.techniques) {
-    if (tech.video_timestamp === 0) {
-      const entry = index.get(tech.key);
-      if (entry && entry.formId !== form.id) {
-        crossRefs[tech.key] = {
-          formId: entry.formId,
-          formName: entry.formName,
-          timestamp: entry.timestamp,
-        };
-      }
+    const match = wikiByName.get(tech.name.en.toLowerCase());
+    if (match) {
+      wikiTechniques[tech.key] = match;
     }
   }
 
-  return <FormDetail form={form} crossRefs={crossRefs} />;
+  return <FormDetail form={form} wikiTechniques={wikiTechniques} />;
 }

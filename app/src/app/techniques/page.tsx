@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { getAllTechniques, getAllForms } from "@/lib/data";
+import { getAllTechniques } from "@/lib/data";
 import type { WikiTechnique } from "@/lib/data";
 import TechniqueSearch from "./TechniqueSearch";
 
@@ -21,22 +21,31 @@ const CATEGORY_LABELS: Record<string, string> = {
   technique: "Other Techniques",
 };
 
-const CATEGORY_COLORS: Record<string, string> = {
-  block: "bg-blue-100 text-blue-800",
-  strike: "bg-red-100 text-red-800",
-  kick: "bg-orange-100 text-orange-800",
-  stance: "bg-green-100 text-green-800",
-  ready: "bg-gray-100 text-gray-700",
-  technique: "bg-purple-100 text-purple-800",
+import { CATEGORY_COLORS } from "@/lib/constants";
+
+/** Short display name for form filter pills and row tags. */
+const FORM_SHORT: Record<string, string> = {
+  "taegeuk-1": "TG1",
+  "taegeuk-2": "TG2",
+  "taegeuk-3": "TG3",
+  "taegeuk-4": "TG4",
+  "taegeuk-5": "TG5",
+  "taegeuk-6": "TG6",
+  "taegeuk-7": "TG7",
+  "taegeuk-8": "TG8",
+  koryo: "Koryo",
+  keumgang: "Keumgang",
+  taebaek: "Taebaek",
+  pyeongwon: "Pyeongwon",
+  sipjin: "Sipjin",
+  jitae: "Jitae",
+  chonkwon: "Chonkwon",
+  hansu: "Hansu",
+  ilyeo: "Ilyeo",
 };
 
 export default function TechniquesPage() {
   const techniques = getAllTechniques();
-  const forms = getAllForms();
-  const formNameMap: Record<string, string> = {};
-  for (const f of forms) {
-    formNameMap[f.id] = f.name.en;
-  }
 
   // Group by category
   const grouped: Record<string, WikiTechnique[]> = {};
@@ -48,6 +57,14 @@ export default function TechniquesPage() {
 
   const orderedCategories = CATEGORY_ORDER.filter((c) => grouped[c]);
 
+  // Collect all form IDs that appear in any technique
+  const allFormIds = Array.from(
+    new Set(techniques.flatMap((t) => t.used_in))
+  ).sort((a, b) => {
+    const order = Object.keys(FORM_SHORT);
+    return order.indexOf(a) - order.indexOf(b);
+  });
+
   // Build serializable data for client search component
   const searchData = techniques.map((t) => ({
     key: t.key,
@@ -55,35 +72,66 @@ export default function TechniquesPage() {
     ko: t.name.ko,
     romanized: t.name.romanized,
     category: t.category,
+    used_in: t.used_in,
   }));
 
   return (
-    <div className="max-w-7xl mx-auto px-4 py-8">
-      <div className="mb-6">
+    <div className="max-w-5xl mx-auto px-4 py-8">
+      <div className="mb-4">
         <h1 className="text-3xl font-bold">Techniques</h1>
-        <p className="text-gray-500 mt-1">
-          {techniques.length} unique techniques across {forms.length} forms.
-          Grouped by category.
-        </p>
       </div>
 
-      <TechniqueSearch techniques={searchData} />
+      <TechniqueSearch
+        techniques={searchData}
+        totalCount={techniques.length}
+        categories={orderedCategories}
+        categoryLabels={CATEGORY_LABELS}
+        formIds={allFormIds}
+        formShort={FORM_SHORT}
+      />
 
       {orderedCategories.map((cat) => (
-        <section key={cat} id={cat} className="mb-8">
-          <h2 className="text-xl font-semibold mb-3 text-gray-700 sticky top-14 bg-gray-50 py-2 z-10">
-            {CATEGORY_LABELS[cat] || cat}{" "}
-            <span className="text-sm font-normal text-gray-400">
-              ({grouped[cat].length})
+        <section
+          key={cat}
+          data-category={cat}
+          className="mb-6"
+        >
+          <button
+            data-collapse-trigger={cat}
+            className="w-full flex items-center justify-between py-2 px-1 text-left sticky top-14 bg-gray-50 z-10 cursor-pointer select-none"
+          >
+            <span className="text-lg font-semibold text-gray-700">
+              {CATEGORY_LABELS[cat] || cat}{" "}
+              <span
+                className="text-sm font-normal text-gray-400"
+                data-category-count={cat}
+              >
+                ({grouped[cat].length})
+              </span>
             </span>
-          </h2>
-          <div className="grid gap-2">
+            <svg
+              data-chevron={cat}
+              className="w-5 h-5 text-gray-400 transition-transform"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth={2}
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M19 9l-7 7-7-7"
+              />
+            </svg>
+          </button>
+          <div data-collapse-body={cat} className="grid gap-0.5">
             {grouped[cat].map((t) => (
               <TechniqueRow
                 key={t.key}
                 technique={t}
-                formNameMap={formNameMap}
-                categoryColor={CATEGORY_COLORS[cat] || "bg-gray-100 text-gray-700"}
+                categoryColor={
+                  CATEGORY_COLORS[cat] || "bg-gray-100 text-gray-700"
+                }
               />
             ))}
           </div>
@@ -95,53 +143,61 @@ export default function TechniquesPage() {
 
 function TechniqueRow({
   technique: t,
-  formNameMap,
   categoryColor,
 }: {
   technique: WikiTechnique;
-  formNameMap: Record<string, string>;
   categoryColor: string;
 }) {
-  const hasSource = t.source.timestamp > 0;
-  const sourceUrl = hasSource
-    ? `/forms/${t.source.form_id}?t=${t.source.timestamp}`
-    : `/forms/${t.source.form_id}`;
-
   return (
-    <div
+    <Link
+      href={`/techniques/${t.key}`}
       data-technique={t.key}
-      className="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-4 p-3 bg-white rounded-lg border border-gray-200 hover:border-blue-200 transition-colors"
+      data-forms={t.used_in.join(",")}
+      className="flex items-center gap-3 px-3 py-2 rounded hover:bg-blue-50 transition-colors group"
     >
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2">
-          <Link href={sourceUrl} className="font-medium text-sm hover:text-blue-600">
-            {t.name.en}
-          </Link>
-          <span className={`text-[10px] px-1.5 py-0.5 rounded ${categoryColor}`}>
-            {t.category}
-          </span>
-          {t.tips.length > 0 && (
-            <span className="text-[10px] text-gray-400">
-              {t.tips.length} tip{t.tips.length !== 1 ? "s" : ""}
-            </span>
-          )}
-        </div>
-        <p className="text-xs text-gray-500 mt-0.5">
-          {t.name.romanized}
-          <span className="ml-2 text-gray-400">{t.name.ko}</span>
-        </p>
+      {/* Name block */}
+      <div className="flex-1 min-w-0 flex items-baseline gap-2 overflow-hidden">
+        <span className="font-medium text-sm text-gray-900 whitespace-nowrap">
+          {t.name.en}
+        </span>
+        <span className="text-xs text-gray-400 truncate">
+          {t.name.romanized} · {t.name.ko}
+        </span>
       </div>
-      <div className="flex flex-wrap gap-1">
+
+      {/* Category pill */}
+      <span
+        className={`hidden sm:inline text-[10px] px-1.5 py-0.5 rounded font-medium shrink-0 ${categoryColor}`}
+      >
+        {t.category}
+      </span>
+
+      {/* Form tags */}
+      <div className="hidden md:flex gap-1 shrink-0">
         {t.used_in.map((formId) => (
-          <Link
+          <span
             key={formId}
-            href={`/forms/${formId}`}
-            className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-blue-700 whitespace-nowrap"
+            className="text-[10px] px-1.5 py-0.5 rounded bg-gray-100 text-gray-500 whitespace-nowrap"
           >
-            {formNameMap[formId] || formId}
-          </Link>
+            {FORM_SHORT[formId] || formId}
+          </span>
         ))}
       </div>
-    </div>
+
+      {/* Arrow */}
+      <svg
+        className="w-4 h-4 text-gray-300 group-hover:text-blue-400 shrink-0"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        strokeWidth={2}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </Link>
   );
 }
