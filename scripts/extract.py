@@ -168,16 +168,19 @@ def build_sequence_prompt(transcript: str, meta: dict, pre_data: dict | None, te
 
 OUTPUT: A single JSON object with ONLY "sequence" and "total_moves".
 
-AVAILABLE TECHNIQUE KEYS (from prior extraction):
+EXACT TECHNIQUE KEYS (copy these VERBATIM — do not modify, abbreviate, or re-slugify):
 {keys_str}
 
-CRITICAL: Use ONLY these technique keys for the sequence. Every step.technique MUST be one of the keys listed above.
+CRITICAL RULES:
+- Every step.technique MUST be copied EXACTLY from the list above. Character-for-character match.
+- Do NOT invent new keys. Do NOT add hyphens, remove hyphens, or change spelling.
+- For combinations not in the list: join two existing keys with "+" (e.g., if "ap-chagi" and "momtong-jireugi" are in the list, use "ap-chagi+momtong-jireugi")
+- If a technique doesn't match any key, use the CLOSEST key from the list.
 
 SEQUENCE RULES:
 - The full ordered sequence from EXPLANATION OF PART sections
 - OEN = left, OREUN = right
-- Combination moves (A + B) use a single technique key like "ap-chagi+momtong-jireugi"
-- Include step 0 for ready stance
+- Include step 0 for ready stance (use the first key in the list if it's a stance/junbi)
 - Directions from your knowledge of this form's floor pattern
 - Kihap on the correct moves (usually last move, sometimes mid-form)
 - Timestamps from when each step appears in the EXPLANATION section
@@ -448,6 +451,31 @@ def extract_form(slug: str, prompt_only: bool = False):
     if not sequence:
         print("  ERROR: Pass 2 returned no sequence")
         return False
+
+    # Repair: fix any sequence technique keys that don't match Pass 1 keys
+    key_set = set(technique_keys)
+    repaired = 0
+    for step in sequence:
+        tk = step.get("technique", "")
+        if tk not in key_set and "+" not in tk:
+            # Fuzzy match: find closest key by normalized form
+            norm = tk.lower().replace("-", "").replace(" ", "")
+            best = None
+            best_score = 0
+            for k in technique_keys:
+                knorm = k.lower().replace("-", "").replace(" ", "")
+                # Check substring containment
+                if norm in knorm or knorm in norm:
+                    score = min(len(norm), len(knorm)) / max(len(norm), len(knorm))
+                    if score > best_score:
+                        best_score = score
+                        best = k
+            if best and best_score > 0.5:
+                step["technique"] = best
+                repaired += 1
+    if repaired:
+        print(f"  Repaired {repaired} mismatched technique keys in sequence")
+
     print(f"  Pass 2: {len(sequence)} steps, total_moves={total_moves}")
 
     # Merge into final form JSON
