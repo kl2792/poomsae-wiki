@@ -48,13 +48,8 @@
           "source": "caption"
         },
         {
-          "text": "w/the blocking hand is placed over",
-          "timestamp": 188
-        },
-        {
           "text": "the blocking hand is placed over the knee forward",
-          "timestamp": 190,
-          "source": "caption"
+          "timestamp": 188
         },
         {
           "text": "the assisting hand is raised to the same level as the elbow of the arm blocking",
@@ -62,8 +57,12 @@
           "source": "caption"
         },
         {
-          "text": "the wrist of the assisting arm",
+          "text": "SS “Gy YW The wrist of the assisting arm",
           "timestamp": 201
+        },
+        {
+          "text": "the wrist of the assisting arm is placed where it crosses the center line",
+          "timestamp": 205
         }
       ]
     },
@@ -79,17 +78,8 @@
       "video_timestamp_end": 288,
       "tips": [
         {
-          "text": "straighten the assisting arm slightly",
-          "timestamp": 246
-        },
-        {
-          "text": "a straighten the assisting arm slightly",
-          "timestamp": 247
-        },
-        {
           "text": "when initiating this move straighten the assisting arm slightly at the solar",
-          "timestamp": 247,
-          "source": "caption"
+          "timestamp": 246
         },
         {
           "text": "start your blocking hand one hand's length above your shoulder",
@@ -97,8 +87,16 @@
           "source": "caption"
         },
         {
-          "text": "of the blocking arm in front of >",
+          "text": "place the palm of your hand on the blocking arm in front of the solar",
           "timestamp": 258
+        },
+        {
+          "text": "Place the palm of your hand \\ ~",
+          "timestamp": 259
+        },
+        {
+          "text": "of the blocking arm in front of mo BS",
+          "timestamp": 262
         }
       ]
     },
@@ -124,17 +122,16 @@
           "source": "caption"
         },
         {
-          "text": "should be a sheet of paper’s width ida",
+          "text": "the space between your fists should be a sheet of paper's width",
           "timestamp": 308
         },
         {
-          "text": "should be a sheet of paper’s width , J",
-          "timestamp": 310
+          "text": "should be a sheet of paper’s width = .",
+          "timestamp": 312
         },
         {
-          "text": "the space between your fists should be a sheet of paper's width",
-          "timestamp": 311,
-          "source": "caption"
+          "text": "WThe assisting fist starts in front of",
+          "timestamp": 315
         }
       ]
     },
@@ -155,7 +152,7 @@
           "source": "caption"
         },
         {
-          "text": "YW the wrist of the arm performing “4 ry",
+          "text": "the wrist of the arm performing an aki should be placed at the solar plexus",
           "timestamp": 345
         },
         {
@@ -163,12 +160,8 @@
           "timestamp": 345
         },
         {
-          "text": "YW the wrist of the arm performing y rT",
-          "timestamp": 346
-        },
-        {
-          "text": "the wrist of the arm performing an aki should be placed at the solar plexus",
-          "timestamp": 346,
+          "text": "the fist that performed araemaki should maintain its position",
+          "timestamp": 349,
           "source": "caption"
         }
       ]
@@ -254,7 +247,7 @@
           "source": "caption"
         },
         {
-          "text": "Jeocheojireugi should be performed by thrusting",
+          "text": "jirgi should be performed by thrusting upwards slightly from below",
           "timestamp": 430
         }
       ]
@@ -281,16 +274,16 @@
           "source": "caption"
         },
         {
-          "text": "start with your right arm back aa",
-          "timestamp": 464
-        },
-        {
-          "text": "start with your right arm back ae",
-          "timestamp": 465
-        },
-        {
           "text": "start with your right arm back —_—",
           "timestamp": 466
+        },
+        {
+          "text": "Wand cross your right arm upwards",
+          "timestamp": 467
+        },
+        {
+          "text": "P) start with your left arm back",
+          "timestamp": 473
         }
       ]
     },
@@ -306,7 +299,7 @@
       "video_timestamp_end": 523,
       "tips": [
         {
-          "text": "Starts with the fist of the opposite shoulder",
+          "text": "a a Mstarts with the fist of the opposite shoulder",
           "timestamp": 492
         },
         {
@@ -315,16 +308,16 @@
           "source": "caption"
         },
         {
-          "text": "p © Starts with the fist of the opposite shoulder",
-          "timestamp": 493
-        },
-        {
-          "text": "a a Mstarts with the fist of the opposite shoulder",
-          "timestamp": 494
-        },
-        {
-          "text": "t Ww the assisting arm should cross",
+          "text": "mh ' W the assisting arm should cross",
           "timestamp": 496
+        },
+        {
+          "text": "ee ae below the thrusting arm to initiate",
+          "timestamp": 496
+        },
+        {
+          "text": "Sone a YW the assisting arm should cross",
+          "timestamp": 500
         }
       ]
     },

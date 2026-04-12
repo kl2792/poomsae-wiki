@@ -57,12 +57,12 @@
           "timestamp": 231
         },
         {
-          "text": "WM Vour hand should be level '",
+          "text": "your hand should be level with your chin and aligned with the center line",
           "timestamp": 238
         },
         {
-          "text": "your hand should be level with your chin and aligned with the center line",
-          "timestamp": 241,
+          "text": "you can concentrate the force on the palm of your hand when the wrist",
+          "timestamp": 246,
           "source": "caption"
         }
       ]
@@ -84,12 +84,8 @@
           "source": "caption"
         },
         {
-          "text": "The hand blade should be level",
-          "timestamp": 259
-        },
-        {
           "text": "The hand blade should be level Laas",
-          "timestamp": 262
+          "timestamp": 259
         },
         {
           "text": "and aligned with the center line be careful not to let the tip of the",
@@ -129,12 +125,12 @@
           "source": "caption"
         },
         {
-          "text": "should be about one raised fist & )",
+          "text": "face and forehead should be about one raised fist",
           "timestamp": 291
         },
         {
-          "text": "face and forehead should be about one raised fist",
-          "timestamp": 294,
+          "text": "this move must be performed slowly exerting force on the lower abdomen",
+          "timestamp": 301,
           "source": "caption"
         }
       ]
@@ -151,25 +147,17 @@
       "video_timestamp_end": 345,
       "tips": [
         {
-          "text": "Place the wrist of one arm 4",
-          "timestamp": 322
-        },
-        {
-          "text": "Place the wrist of one arm wor? eae 7",
-          "timestamp": 324
-        },
-        {
-          "text": "Place the wrist of one arm soe Pe",
-          "timestamp": 325
-        },
-        {
           "text": "place the wrist of one arm at the lilac crest",
-          "timestamp": 325,
-          "source": "caption"
+          "timestamp": 322
         },
         {
           "text": "the space between the arm on top and the torso should be about one raised fist",
           "timestamp": 328,
+          "source": "caption"
+        },
+        {
+          "text": "the fist on top must be placed in the same line as the first on the lilac",
+          "timestamp": 338,
           "source": "caption"
         }
       ]

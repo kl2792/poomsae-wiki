@@ -446,6 +446,14 @@ def merge_tips(ocr_tips: list[dict], caption_tips: list[dict]) -> list[dict]:
         if len(key) >= 10:
             seen_keys.add(key)
 
+    def words_overlap(a: str, b: str) -> float:
+        """Fraction of shared words between two texts."""
+        wa = set(a.lower().split())
+        wb = set(b.lower().split())
+        if not wa or not wb:
+            return 0.0
+        return len(wa & wb) / min(len(wa), len(wb))
+
     # Add caption tips that don't duplicate OCR tips
     merged = list(ocr_tips)
     added = 0
@@ -463,7 +471,26 @@ def merge_tips(ocr_tips: list[dict], caption_tips: list[dict]) -> list[dict]:
 
     # Sort by timestamp
     merged.sort(key=lambda t: t.get("timestamp", 0))
-    return merged
+
+    # Second pass: remove near-timestamp duplicates with high word overlap
+    deduped = []
+    for tip in merged:
+        is_dup = False
+        for existing in deduped:
+            ts_diff = abs(tip.get("timestamp", 0) - existing.get("timestamp", 0))
+            if ts_diff <= 3 and words_overlap(tip["text"], existing["text"]) > 0.5:
+                is_dup = True
+                # Keep the longer version
+                if len(tip["text"]) > len(existing["text"]):
+                    existing["text"] = tip["text"]
+                break
+        if not is_dup:
+            deduped.append(tip)
+
+    if len(merged) > len(deduped):
+        print(f"    Deduped {len(merged) - len(deduped)} near-timestamp duplicates")
+
+    return deduped
 
 
 def pre_extract(slug: str) -> dict | None:
