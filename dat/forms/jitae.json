@@ -139,7 +139,7 @@
       "name": {
         "en": "Front Kick + Double Punch",
         "ko": "앞차기 + 두번지르기",
-        "romanized": "Ap Chagi + Dubeon Jireugi"
+        "romanized": "Ap Chagi + Double Jireugi"
       },
       "category": "kick",
       "video_timestamp": 0,
@@ -194,17 +194,17 @@
       "name": {
         "en": "Bull Block",
         "ko": "황소막기",
-        "romanized": "Hwangso Makgi"
+        "romanized": "Hwangsomakgi"
       },
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
-      "key": "small-hinge",
+      "key": "small-hammer-fist",
       "name": {
-        "en": "Small Hinge",
-        "ko": "작은돌쩌귀",
+        "en": "Small Hammer Fist",
+        "ko": "작은 돌쩌귀",
         "romanized": "Jageun Doljjeogwi"
       },
       "category": "block",
@@ -215,8 +215,8 @@
       "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
+        "ko": "기본 준비자세",
+        "romanized": "Gibon Junbijase"
       },
       "category": "stance",
       "video_timestamp": 0,
@@ -248,7 +248,7 @@
       "key": "middle-punch",
       "name": {
         "en": "Middle Punch",
-        "ko": "(몸통)지르기",
+        "ko": "몸통지르기",
         "romanized": "Momtong Jireugi"
       },
       "category": "strike",
@@ -300,9 +300,9 @@
       "tips": []
     },
     {
-      "key": "ulgul-ollyeo-makgi",
+      "key": "high-rising-block",
       "name": {
-        "en": "Upper Block",
+        "en": "High Rising Block",
         "ko": "얼굴올려막기",
         "romanized": "Ulgul Ollyeo Makgi"
       },
@@ -491,7 +491,7 @@
     },
     {
       "step": 16,
-      "technique": "ulgul-ollyeo-makgi",
+      "technique": "high-rising-block",
       "side": "left",
       "direction": "right",
       "kihap": false,
@@ -581,7 +581,7 @@
     },
     {
       "step": 26,
-      "technique": "small-hinge",
+      "technique": "small-hammer-fist",
       "side": null,
       "direction": "left",
       "kihap": false,
@@ -599,7 +599,7 @@
     },
     {
       "step": 28,
-      "technique": "small-hinge",
+      "technique": "small-hammer-fist",
       "side": null,
       "direction": "left",
       "kihap": false,

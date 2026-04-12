@@ -334,7 +334,20 @@ def extract_form(slug: str, prompt_only: bool = False):
         print(f"ERROR: No metadata for {slug}")
         return False
 
-    transcript = transcript_path.read_text()
+    raw_transcript = transcript_path.read_text()
+
+    # Filter transcript to relevant lines only (reduces prompt size ~60%)
+    relevant_re = re.compile(
+        r'(\d+[.,]\s*[A-Z]{3,}|should|must|elbow|fist|arm|leg|foot|knee|'
+        r'stance|block|kick|punch|strike|balance|breath|straight|angle|'
+        r'POOMSAE|REPEAT|EXPLANATION|OEN|OREN|PART|JUNBI|MAKGI|CHAGI|'
+        r'JIREUGI|CHIGI|SEOGI)',
+        re.IGNORECASE
+    )
+    transcript = '\n'.join(
+        l for l in raw_transcript.splitlines() if relevant_re.search(l)
+    )
+    print(f"  Transcript: {len(raw_transcript)} -> {len(transcript)} chars ({len(transcript)*100//max(len(raw_transcript),1)}%)")
 
     # Load pre-extracted data if available
     pre_path = PRE_DIR / f"{slug}.json"
@@ -356,7 +369,7 @@ def extract_form(slug: str, prompt_only: bool = False):
     print(f"  Extracting {slug} via claude CLI...")
     result = subprocess.run(
         ["claude", "-p", prompt, "--output-format", "text"],
-        capture_output=True, text=True, timeout=600
+        capture_output=True, text=True, timeout=1200
     )
 
     if result.returncode != 0:

@@ -257,17 +257,17 @@
       "name": {
         "en": "Diamond Block",
         "ko": "금강막기",
-        "romanized": "Geumgang Makgi"
+        "romanized": "Geumgangmakgi"
       },
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
-      "key": "small-hinge",
+      "key": "small-hammer-fist",
       "name": {
-        "en": "Small Hinge",
-        "ko": "작은돌쩌귀",
+        "en": "Small Hammer Fist",
+        "ko": "작은 돌쩌귀",
         "romanized": "Jageun Doljjeogwi"
       },
       "category": "block",
@@ -278,8 +278,8 @@
       "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
+        "ko": "기본 준비자세",
+        "romanized": "Gibon Junbijase"
       },
       "category": "stance",
       "video_timestamp": 0,
@@ -301,7 +301,7 @@
       "name": {
         "en": "Elbow Target Strike",
         "ko": "팔꿈치표적치기",
-        "romanized": "Palkkumchi Pyojeok Chigi"
+        "romanized": "Palggumchi Pyojeokchigi"
       },
       "category": "strike",
       "video_timestamp": 0,
@@ -322,17 +322,17 @@
       "key": "knifehand-assisted-middle-block",
       "name": {
         "en": "Knifehand Assisted Middle Block",
-        "ko": "손날거들어몸통막기",
-        "romanized": "Sonnal Geodeureo Momtong Makgi"
+        "ko": "손날 거들어 몸통막기",
+        "romanized": "Sonal Geodeureo Momtong Makgi"
       },
       "category": "block",
       "video_timestamp": 0,
       "tips": []
     },
     {
-      "key": "knifehand-double-block",
+      "key": "knifehand-assisted-block",
       "name": {
-        "en": "Knifehand Double Block",
+        "en": "Knifehand Assisted Block",
         "ko": "손날거들어막기",
         "romanized": "Sonnal Geodeureo Makgi"
       },
@@ -367,7 +367,7 @@
       "name": {
         "en": "Side Kick",
         "ko": "옆차기",
-        "romanized": "Yeop Chagi"
+        "romanized": "Yeopchagi"
       },
       "category": "kick",
       "video_timestamp": 0,
@@ -458,7 +458,7 @@
     },
     {
       "step": 9,
-      "technique": "knifehand-double-block",
+      "technique": "knifehand-assisted-block",
       "side": "right",
       "direction": "right-90",
       "kihap": false,
@@ -521,7 +521,7 @@
     },
     {
       "step": 16,
-      "technique": "small-hinge",
+      "technique": "small-hammer-fist",
       "side": "right",
       "direction": "forward",
       "kihap": false,
@@ -548,7 +548,7 @@
     },
     {
       "step": 19,
-      "technique": "small-hinge",
+      "technique": "small-hammer-fist",
       "side": "left",
       "direction": "right-180",
       "kihap": false,

@@ -44,8 +44,8 @@
       "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
+        "ko": "기본 준비자세",
+        "romanized": "Gibon Junbijase"
       },
       "category": "stance",
       "video_timestamp": 167.0,
@@ -183,8 +183,8 @@
       "key": "backfist-outward-strike",
       "name": {
         "en": "Backfist Outward Strike",
-        "ko": "등주먹바깥치기",
-        "romanized": "Deungjumeok Bakkat Chigi"
+        "ko": "등주먹 바깥치기",
+        "romanized": "Deungjumeok Bakkanchigi"
       },
       "category": "strike",
       "video_timestamp": 486.0,
@@ -246,11 +246,11 @@
       "tips": []
     },
     {
-      "key": "palm-inward-middle-block",
+      "key": "palmheel-middle-inward-block",
       "name": {
-        "en": "Palm Inward Middle Block",
+        "en": "Palmheel Middle Inward Block",
         "ko": "바탕손몸통안막기",
-        "romanized": "Batangson Momtong An Makgi"
+        "romanized": "Batangson Momtong Anmakgi"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -324,7 +324,7 @@
     },
     {
       "step": 1,
-      "technique": "palm-inward-middle-block",
+      "technique": "palmheel-middle-inward-block",
       "side": "right",
       "direction": "left-90",
       "kihap": false,
@@ -342,7 +342,7 @@
     },
     {
       "step": 3,
-      "technique": "palm-inward-middle-block",
+      "technique": "palmheel-middle-inward-block",
       "side": "left",
       "direction": "right-180",
       "kihap": false,

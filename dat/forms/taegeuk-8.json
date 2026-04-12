@@ -5,13 +5,11 @@
     "ko": "태극 8장"
   },
   "meaning": {
-    "en": "Earth (Gon ☷)",
-    "ko": "곤/☷"
+    "en": "Earth (Gon ☷)"
   },
   "belt": "1st Geup",
   "dan": null,
   "total_moves": 24,
-  "diagram": "I-shape",
   "video_id": "Gr_Je2ZkgkI",
   "video_duration_seconds": 1025,
   "sections": {
@@ -21,34 +19,28 @@
     },
     "breakdown": {
       "start": 167,
-      "end": 365
+      "end": 362
+    },
+    "explanation": {
+      "start": 362,
+      "end": 916
     },
     "repeat": {
-      "start": 880,
-      "end": 1000
-    },
-    "outro": {
-      "start": 1000,
+      "start": 916,
       "end": 1025
     }
   },
-  "competition_divisions": [
-    "cadet",
-    "junior",
-    "under30",
-    "under40"
-  ],
-  "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
       "key": "ready-stance",
       "name": {
         "en": "Ready Stance",
-        "ko": "준비",
-        "romanized": "Junbi"
+        "ko": "기본 준비자세",
+        "romanized": "Gibon Junbijase"
       },
       "category": "stance",
-      "video_timestamp": 167.0,
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
       "tips": []
     },
     {
@@ -59,8 +51,18 @@
         "romanized": "Dubal Dangseong Chagi"
       },
       "category": "kick",
-      "video_timestamp": 177.0,
-      "tips": []
+      "video_timestamp": 177,
+      "video_timestamp_end": 199,
+      "tips": [
+        {
+          "text": "The first Balchagi lightly kicks a target at the torso level",
+          "timestamp": 188
+        },
+        {
+          "text": "The second Balchagi kicks a target higher with the other foot",
+          "timestamp": 191
+        }
+      ]
     },
     {
       "key": "assisted-outward-block",
@@ -70,15 +72,24 @@
         "romanized": "Geodeureo Bakkat Makgi"
       },
       "category": "block",
-      "video_timestamp": 199.0,
+      "video_timestamp": 199,
+      "video_timestamp_end": 236,
       "tips": [
         {
-          "text": "The fist blocking the torso should be placed correctly",
+          "text": "The fist blocking the torso should be placed at the solar plexus level",
           "timestamp": 213
+        },
+        {
+          "text": "The assisting hand is placed level with the blocking elbow",
+          "timestamp": 216
         },
         {
           "text": "Be careful not to let the blocking hand move outside the outer line of the body",
           "timestamp": 223
+        },
+        {
+          "text": "Do not let the assisting armpit detach from the body (raising the elbow)",
+          "timestamp": 228
         }
       ]
     },
@@ -90,15 +101,16 @@
         "romanized": "Oesanteul Makgi"
       },
       "category": "block",
-      "video_timestamp": 235.0,
+      "video_timestamp": 236,
+      "video_timestamp_end": 275,
       "tips": [
+        {
+          "text": "The wrist of the arm performing Anpalmok Ulgul Bakkanmakgi should be level with the philtrum",
+          "timestamp": 249
+        },
         {
           "text": "The arm performing Araemakgi should be about two raised fists apart from your adjacent leg",
           "timestamp": 256
-        },
-        {
-          "text": "Should be level with the philtrum",
-          "timestamp": 254
         }
       ]
     },
@@ -110,15 +122,28 @@
         "romanized": "Danggyeo Jireugi"
       },
       "category": "strike",
-      "video_timestamp": 275.0,
+      "video_timestamp": 275,
+      "video_timestamp_end": 320,
       "tips": [
         {
-          "text": "Not to let the hammer fist touch the front of the shoulder performing Jireugi",
+          "text": "The Jireugi starts at the chest line with the fist pulled back",
+          "timestamp": 289
+        },
+        {
+          "text": "The fist performing Jireugi passes by the wrist being pulled back and reaches the target",
+          "timestamp": 293
+        },
+        {
+          "text": "Do not let the hammer fist touch the front of the shoulder performing Jireugi",
           "timestamp": 303
         },
         {
           "text": "Be careful not to let the fist start at the back and perform Jireugi upward like Chijireugi",
           "timestamp": 311
+        },
+        {
+          "text": "The pulling arm should be free from unnecessary force",
+          "timestamp": 518
         }
       ]
     },
@@ -130,7 +155,8 @@
         "romanized": "Geodeureo Arae Makgi"
       },
       "category": "block",
-      "video_timestamp": 319.0,
+      "video_timestamp": 320,
+      "video_timestamp_end": 338,
       "tips": [
         {
           "text": "The blocking hand should maintain a space of two raised fists above the knee set forward",
@@ -150,51 +176,25 @@
         "romanized": "Ttwieo Ap Chagi"
       },
       "category": "kick",
-      "video_timestamp": 337.0,
-      "tips": []
+      "video_timestamp": 338,
+      "video_timestamp_end": 358,
+      "tips": [
+        {
+          "text": "The kick must complete at the peak of your jump",
+          "timestamp": 348
+        }
+      ]
     },
     {
-      "key": "front-kick+palm-inward-block",
+      "key": "middle-punch",
       "name": {
-        "en": "Front Kick + Palm Inward Block",
-        "ko": "앞차기 + 바탕손안막기",
-        "romanized": "Ap Chagi + Batangson An Makgi"
+        "en": "Middle Punch",
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
       },
-      "category": "kick",
+      "category": "strike",
       "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "front-kick+middle-punch",
-      "name": {
-        "en": "Front Kick + Middle Punch",
-        "ko": "앞차기 + 몸통지르기",
-        "romanized": "Ap Chagi + Momtong Jireugi"
-      },
-      "category": "kick",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
-      "name": {
-        "en": "Front Kick + Jumping Front Kick + Inward Middle Block + Middle Double Punch",
-        "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기",
-        "romanized": "Ap Chagi + Ttwieo Ap Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
-      },
-      "category": "kick",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "palm-inward-block",
-      "name": {
-        "en": "Palm Inward Block",
-        "ko": "바탕손안막기",
-        "romanized": "Batangson An Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
+      "video_timestamp_end": null,
       "tips": []
     },
     {
@@ -204,52 +204,9 @@
         "ko": "두발당성차기 + 몸통안막기 + 몸통두번지르기",
         "romanized": "Dubal Dangseong Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
       },
-      "category": "kick",
+      "category": "combination",
       "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "middle-punch",
-      "name": {
-        "en": "Middle Punch",
-        "ko": "(몸통)지르기",
-        "romanized": "Momtong Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "elbow-spinning-strike+backfist-front-strike",
-      "name": {
-        "en": "Elbow Spinning Strike + Backfist Front Strike",
-        "ko": "팔꿈치돌려치기 + 등주먹앞치기",
-        "romanized": "Palkkumchi Dollyeo Chigi + Deungjumeok Apchigi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-outward-block",
-      "name": {
-        "en": "Knifehand Outward Block",
-        "ko": "손날바깥막기",
-        "romanized": "Sonnal Bakkat Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "tips": []
-    },
-    {
-      "key": "knifehand-double-block",
-      "name": {
-        "en": "Knifehand Double Block",
-        "ko": "손날거들어막기",
-        "romanized": "Sonnal Geodeureo Makgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
+      "video_timestamp_end": null,
       "tips": []
     },
     {
@@ -261,6 +218,91 @@
       },
       "category": "block",
       "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "front-kick+palm-inward-block",
+      "name": {
+        "en": "Front Kick + Palm Inward Block",
+        "ko": "앞차기 + 바탕손안막기",
+        "romanized": "Ap Chagi + Batangson An Makgi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "knifehand-assisted-block",
+      "name": {
+        "en": "Knifehand Assisted Block",
+        "ko": "손날거들어막기",
+        "romanized": "Sonnal Geodeureo Makgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "front-kick+middle-punch",
+      "name": {
+        "en": "Front Kick + Middle Punch",
+        "ko": "앞차기 + 몸통지르기",
+        "romanized": "Apchagi + Momtong Jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "palm-inward-block",
+      "name": {
+        "en": "Palm Inward Block",
+        "ko": "바탕손안막기",
+        "romanized": "Batangson An Makgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "front-kick+jumping-front-kick+inward-middle-block+middle-double-punch",
+      "name": {
+        "en": "Front Kick + Jumping Front Kick + Inward Middle Block + Middle Double Punch",
+        "ko": "앞차기 + 뛰어앞차기 + 몸통안막기 + 몸통두번지르기",
+        "romanized": "Ap Chagi + Ttwieo Ap Chagi + Momtong An Makgi + Momtong Dubeon Jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "knifehand-outward-block",
+      "name": {
+        "en": "Knifehand Outward Block",
+        "ko": "손날바깥막기",
+        "romanized": "Sonal Bakkanmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
+      "tips": []
+    },
+    {
+      "key": "elbow-spinning-strike+backfist-front-strike",
+      "name": {
+        "en": "Elbow Spinning Strike + Backfist Front Strike",
+        "ko": "팔꿈치돌려치기 + 등주먹앞치기",
+        "romanized": "Palkkumchi Dollyeo Chigi + Deungjumeok Apchigi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": null,
       "tips": []
     }
   ],
@@ -271,8 +313,8 @@
       "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 368.0,
-      "timestamp_end": 371.0
+      "timestamp": 368,
+      "timestamp_end": 371
     },
     {
       "step": 1,
@@ -280,8 +322,8 @@
       "side": "left",
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 371.0,
-      "timestamp_end": 374.0
+      "timestamp": 371,
+      "timestamp_end": 374
     },
     {
       "step": 2,
@@ -289,8 +331,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 374.0,
-      "timestamp_end": 376.0
+      "timestamp": 374,
+      "timestamp_end": 376
     },
     {
       "step": 3,
@@ -298,8 +340,8 @@
       "side": "left+left+both",
       "direction": "right-180",
       "kihap": false,
-      "timestamp": 376.0,
-      "timestamp_end": 383.0
+      "timestamp": 376,
+      "timestamp_end": 383
     },
     {
       "step": 4,
@@ -307,8 +349,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 383.0,
-      "timestamp_end": 470.0
+      "timestamp": 383,
+      "timestamp_end": 476
     },
     {
       "step": 5,
@@ -316,8 +358,8 @@
       "side": null,
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 476.0,
-      "timestamp_end": 480.0
+      "timestamp": 476,
+      "timestamp_end": 479
     },
     {
       "step": 6,
@@ -325,8 +367,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 480.0,
-      "timestamp_end": 488.0
+      "timestamp": 479,
+      "timestamp_end": 488
     },
     {
       "step": 7,
@@ -334,8 +376,8 @@
       "side": null,
       "direction": "right-180",
       "kihap": false,
-      "timestamp": 488.0,
-      "timestamp_end": 492.0
+      "timestamp": 488,
+      "timestamp_end": 491
     },
     {
       "step": 8,
@@ -343,8 +385,8 @@
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 492.0,
-      "timestamp_end": 498.0
+      "timestamp": 491,
+      "timestamp_end": 500
     },
     {
       "step": 9,
@@ -352,8 +394,8 @@
       "side": "left",
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 498.0,
-      "timestamp_end": 502.0
+      "timestamp": 500,
+      "timestamp_end": 502
     },
     {
       "step": 10,
@@ -361,8 +403,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 502.0,
-      "timestamp_end": 505.0
+      "timestamp": 502,
+      "timestamp_end": 505
     },
     {
       "step": 11,
@@ -370,17 +412,17 @@
       "side": "right+right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 505.0,
-      "timestamp_end": 648.0
+      "timestamp": 505,
+      "timestamp_end": 652
     },
     {
       "step": 12,
-      "technique": "knifehand-double-block",
+      "technique": "knifehand-assisted-block",
       "side": "left",
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 652.0,
-      "timestamp_end": 656.0
+      "timestamp": 652,
+      "timestamp_end": 655
     },
     {
       "step": 13,
@@ -388,8 +430,8 @@
       "side": "left+right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 656.0,
-      "timestamp_end": 659.0
+      "timestamp": 655,
+      "timestamp_end": 659
     },
     {
       "step": 14,
@@ -397,17 +439,17 @@
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 659.0,
-      "timestamp_end": 663.0
+      "timestamp": 659,
+      "timestamp_end": 662
     },
     {
       "step": 15,
-      "technique": "knifehand-double-block",
+      "technique": "knifehand-assisted-block",
       "side": "right",
       "direction": "right-180",
       "kihap": false,
-      "timestamp": 663.0,
-      "timestamp_end": 666.0
+      "timestamp": 662,
+      "timestamp_end": 664
     },
     {
       "step": 16,
@@ -415,8 +457,8 @@
       "side": "right+left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 666.0,
-      "timestamp_end": 669.0
+      "timestamp": 664,
+      "timestamp_end": 669
     },
     {
       "step": 17,
@@ -424,8 +466,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 669.0,
-      "timestamp_end": 764.0
+      "timestamp": 669,
+      "timestamp_end": 771
     },
     {
       "step": 18,
@@ -433,8 +475,8 @@
       "side": null,
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 770.0,
-      "timestamp_end": 773.0
+      "timestamp": 771,
+      "timestamp_end": 773
     },
     {
       "step": 19,
@@ -442,8 +484,8 @@
       "side": "left+right+right+both",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 773.0,
-      "timestamp_end": 786.0
+      "timestamp": 773,
+      "timestamp_end": 782
     },
     {
       "step": 20,
@@ -451,8 +493,8 @@
       "side": "left",
       "direction": "left-90",
       "kihap": false,
-      "timestamp": 786.0,
-      "timestamp_end": 789.0
+      "timestamp": 782,
+      "timestamp_end": 786
     },
     {
       "step": 21,
@@ -460,8 +502,8 @@
       "side": "right+right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 789.0,
-      "timestamp_end": 794.0
+      "timestamp": 786,
+      "timestamp_end": 792
     },
     {
       "step": 22,
@@ -469,8 +511,8 @@
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 794.0,
-      "timestamp_end": 797.0
+      "timestamp": 792,
+      "timestamp_end": 795
     },
     {
       "step": 23,
@@ -478,8 +520,8 @@
       "side": "right",
       "direction": "right-180",
       "kihap": false,
-      "timestamp": 797.0,
-      "timestamp_end": 800.0
+      "timestamp": 795,
+      "timestamp_end": 798
     },
     {
       "step": 24,
@@ -487,8 +529,8 @@
       "side": "left+left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 800.0,
-      "timestamp_end": 804.0
+      "timestamp": 798,
+      "timestamp_end": 803
     },
     {
       "step": 25,
@@ -496,8 +538,8 @@
       "side": "right",
       "direction": "forward",
       "kihap": true,
-      "timestamp": 804.0,
-      "timestamp_end": 810.0
+      "timestamp": 803,
+      "timestamp_end": 810
     }
   ]
 }
