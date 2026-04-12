@@ -128,9 +128,13 @@ def categorize_by_suffix(romanized: str) -> str:
 
 
 def _slugify(name: str) -> str:
-    """Convert a name to URL-safe slug."""
+    """Convert a name to URL-safe slug.
+
+    Strips '+' signs — combo keys should be built explicitly from
+    matched parts, not from slugifying raw combo names.
+    """
     s = name.lower().strip()
-    s = re.sub(r"[^a-z0-9\s\-+]", "", s)
+    s = re.sub(r"[^a-z0-9\s\-]", "", s)
     s = re.sub(r"[\s]+", "-", s)
     s = re.sub(r"-+", "-", s)
     return s.strip("-")
@@ -187,7 +191,7 @@ def match_combo_technique(name: str, tech_db: dict) -> list[dict] | None:
 
     Strips parenthetical annotations and side indicators (OEN, OREUN) from
     each part before matching. Returns list of matched technique entries,
-    or None if any part fails.
+    or None if any part fails to match.
     """
     parts = re.split(r"\s*\+\s*", name)
     if len(parts) < 2:
@@ -338,12 +342,36 @@ def apply_kihap(sequence: list[dict], form_id: str, tips: list[dict]) -> int:
 
 # --- LLM prompt for directions + new translations ---
 
+def build_translation_prompt(new_techniques: list[dict]) -> str:
+    """Build a compact LLM prompt to translate unmatched technique names.
+
+    Given romanized OCR text (possibly with typos), asks for:
+    - Corrected romanized name
+    - English translation
+    - Korean hangul
+    - Category (block/kick/strike/stance)
+    """
+    lines = [
+        "Translate these taekwondo technique names from romanized Korean to "
+        "English and Korean hangul. The romanized names come from OCR and may "
+        "contain typos (e.g. BARRANMAKGI should be BAKKANMAKGI, "
+        "JEOCHEQOJIREUGI should be JEOCHEOJIREUGI). Fix OCR errors.",
+        "",
+    ]
+    for i, t in enumerate(new_techniques, 1):
+        lines.append(f"{i}. {t['name']['romanized']}")
+    lines.append("")
+    lines.append("Output JSON array only:")
+    lines.append('[{"romanized": "corrected romanized", "en": "English Name", '
+                  '"ko": "한글이름", "category": "block|kick|strike|stance"}, ...]')
+    return "\n".join(lines)
+
+
 def build_llm_prompt(
     meta: dict,
     sequence_steps: list[dict],
-    new_techniques: list[dict],
 ) -> str:
-    """Build a compact LLM prompt for directions and new translations.
+    """Build a compact LLM prompt for directions only.
 
     Kihap is handled programmatically via KIHAP_POSITIONS, so the LLM
     only needs to provide direction for each step.
@@ -353,12 +381,6 @@ def build_llm_prompt(
 
     lines = [f"Form: {form_name} ({expected} moves)\n"]
 
-    if new_techniques:
-        lines.append("New techniques to translate (romanized -> English + Korean hangul):")
-        for t in new_techniques:
-            lines.append(f"- {t['name']['romanized']}")
-        lines.append("")
-
     lines.append("Sequence (provide direction for each step):")
     for s in sequence_steps:
         side_str = f" ({s.get('side', '')})" if s.get("side") else ""
@@ -366,15 +388,9 @@ def build_llm_prompt(
 
     lines.append("")
     lines.append("For each step: direction (forward/backward/left-90/right-90/left-180/right-180).")
-    if new_techniques:
-        lines.append("For new techniques: provide English name and Korean hangul.")
     lines.append("")
     lines.append('Output JSON only:')
-    if new_techniques:
-        lines.append('{"new_techniques": [{"romanized": "...", "en": "...", "ko": "..."}], ')
-        lines.append(' "directions": [{"step": 0, "direction": "forward"}, ...]}')
-    else:
-        lines.append('{"directions": [{"step": 0, "direction": "forward"}, ...]}')
+    lines.append('{"directions": [{"step": 0, "direction": "forward"}, ...]}')
 
     return "\n".join(lines)
 
@@ -686,21 +702,49 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
             combo_parts = match_combo_technique(raw_name, tech_db)
             if combo_parts:
                 tech_key = "+".join(p["key"] for p in combo_parts)
-        if tech_key is None:
+        if tech_key is None and "+" not in raw_name:
             matched_entry = match_technique(raw_name, tech_db)
             if matched_entry:
                 tech_key = matched_entry["key"]
         if tech_key is None:
-            # Try matching against new_techniques
+            # Try matching against new_techniques (strip side for comparison)
             norm = _normalize_for_match(raw_name)
+            norm_stripped = _normalize_for_match(_strip_side_indicators(normalize_romanized(raw_name)))
             for nt in new_techniques:
-                if _normalize_for_match(nt["name"]["romanized"]) == norm:
+                nt_norm = _normalize_for_match(nt["name"]["romanized"])
+                if nt_norm == norm or nt_norm == norm_stripped:
                     tech_key = nt["key"]
                     break
         if tech_key is None:
-            # Fallback: slugify the raw name
-            tech_key = _slugify(normalize_romanized(raw_name))
-            print(f"  WARNING: Step {step['number']} unmatched: {raw_name} -> {tech_key}")
+            # Fallback for combos: try matching each part individually
+            # with side indicators stripped
+            if "+" in raw_name:
+                parts = re.split(r"\s*\+\s*", raw_name)
+                part_keys = []
+                all_matched = True
+                for part in parts:
+                    part = part.strip()
+                    stripped = _strip_side_indicators(normalize_romanized(part))
+                    m = match_technique(stripped, tech_db) or match_technique(part, tech_db)
+                    if m:
+                        part_keys.append(m["key"])
+                    else:
+                        # Try new_techniques
+                        pn = _normalize_for_match(stripped)
+                        found = False
+                        for nt in new_techniques:
+                            if _normalize_for_match(nt["name"]["romanized"]) == pn:
+                                part_keys.append(nt["key"])
+                                found = True
+                                break
+                        if not found:
+                            all_matched = False
+                            break
+                if all_matched and len(part_keys) >= 2:
+                    tech_key = "+".join(part_keys)
+            if tech_key is None:
+                tech_key = _slugify(normalize_romanized(raw_name))
+                print(f"  WARNING: Step {step['number']} unmatched: {raw_name} -> {tech_key}")
 
         # Ensure the technique exists in our technique list
         if tech_key not in matched_techniques:
@@ -780,48 +824,84 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
     kihap_count = apply_kihap(sequence, meta["id"], tips)
     print(f"  Kihap: {kihap_count} steps marked")
 
-    # --- Step 6: LLM call for directions + new translations ---
-    prompt = build_llm_prompt(meta, llm_sequence_steps, new_techniques)
+    _new_key_renames_early: dict[str, str] = {}  # old_key -> new_key from LLM translations
+
+    # --- Step 6a: LLM call for unmatched technique translations ---
+    if new_techniques and not no_llm:
+        translation_prompt = build_translation_prompt(new_techniques)
+        if prompt_only:
+            print("=== TRANSLATION PROMPT ===")
+            print(translation_prompt)
+            print()
+        else:
+            llm_translations = _call_claude(translation_prompt, "translations")
+            if llm_translations:
+                # LLM returns a JSON array
+                if isinstance(llm_translations, dict):
+                    llm_list = llm_translations.get("translations", [])
+                else:
+                    llm_list = llm_translations  # direct array
+
+                # Match by position (prompt lists techniques in order).
+                # Also try romanized key matching as fallback for reordered output.
+                llm_by_rom: dict[str, dict] = {}
+                for nt in llm_list:
+                    rom_key = _normalize_for_match(nt.get("romanized", ""))
+                    llm_by_rom[rom_key] = nt
+
+                translated_count = 0
+                for i, tech in enumerate(new_techniques):
+                    # Try positional match first, then romanized key
+                    translation = None
+                    if i < len(llm_list):
+                        translation = llm_list[i]
+                    if not translation:
+                        rom_key = _normalize_for_match(tech["name"]["romanized"])
+                        translation = llm_by_rom.get(rom_key)
+                    if translation:
+                        tech["name"]["en"] = translation.get("en", tech["name"]["en"])
+                        tech["name"]["ko"] = translation.get("ko", tech["name"]["ko"])
+                        # Update romanized with corrected version from LLM
+                        if translation.get("romanized"):
+                            tech["name"]["romanized"] = translation["romanized"]
+                        if translation.get("category"):
+                            tech["category"] = translation["category"]
+                        # Update key from English name
+                        if tech["name"]["en"]:
+                            old_key = tech["key"]
+                            tech["key"] = _slugify(tech["name"]["en"])
+                            if old_key != tech["key"]:
+                                _new_key_renames_early[old_key] = tech["key"]
+                        translated_count += 1
+                print(f"  LLM translations: {translated_count}/{len(new_techniques)} techniques")
+            else:
+                print("  WARNING: Translation LLM call failed, using raw OCR names")
+    elif new_techniques and no_llm:
+        print(f"  WARNING: {len(new_techniques)} techniques have raw OCR names "
+              f"(no hangul Korean, romanized English). Run without --no-llm to fix.")
+
+    # --- Step 6b: LLM call for directions ---
+    prompt = build_llm_prompt(meta, llm_sequence_steps)
 
     if prompt_only:
-        print("=== LLM PROMPT ===")
+        print("=== DIRECTIONS PROMPT ===")
         print(prompt)
         return True
 
     if no_llm:
         print("  Skipping LLM call (--no-llm mode)")
-        # Leave placeholder directions
     else:
         llm_result = _call_claude(prompt, "directions")
         if llm_result:
-            # Apply directions (kihap already set by apply_kihap)
             directions = llm_result.get("directions", [])
             dir_by_step = {d["step"]: d for d in directions}
             for s in sequence:
                 d = dir_by_step.get(s["step"])
                 if d:
                     s["direction"] = d.get("direction", "forward")
-
-            # Apply new technique translations
-            llm_new = llm_result.get("new_techniques", [])
-            llm_new_by_rom = {}
-            for nt in llm_new:
-                rom_key = _normalize_for_match(nt.get("romanized", ""))
-                llm_new_by_rom[rom_key] = nt
-
-            for tech in new_techniques:
-                rom_key = _normalize_for_match(tech["name"]["romanized"])
-                if rom_key in llm_new_by_rom:
-                    translation = llm_new_by_rom[rom_key]
-                    tech["name"]["en"] = translation.get("en", tech["name"]["en"])
-                    tech["name"]["ko"] = translation.get("ko", tech["name"]["ko"])
-                    # Update key from English name if we got one
-                    if tech["name"]["en"]:
-                        tech["key"] = _slugify(tech["name"]["en"])
-
-            print(f"  LLM: {len(directions)} directions, {len(llm_new)} translations")
+            print(f"  LLM directions: {len(directions)} steps")
         else:
-            print("  WARNING: LLM call failed, using placeholder directions")
+            print("  WARNING: Directions LLM call failed, using placeholder directions")
 
     # --- Step 7: Build sections ---
     sections = build_sections(pre_data, meta)
@@ -836,7 +916,8 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
             final_techniques.append(tech)
 
     # Update sequence technique keys for any renamed new techniques
-    new_key_renames = {}
+    # Merge early renames (from LLM translation) with romanized-based renames
+    new_key_renames = dict(_new_key_renames_early)
     for tech in new_techniques:
         old_key = _slugify(normalize_romanized(tech["name"]["romanized"]))
         if old_key != tech["key"]:

@@ -40,78 +40,174 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "DANGGYEO (OREUN)DEUNGJUMEOK APCHIGI",
+      "name": "GYEOPSONJUNBI",
       "side": null,
-      "timestamp": 748
+      "timestamp": 431
     },
     {
       "number": "2",
-      "name": "DANGGYEO (OEN)DEUNGJUMEOK APCHIGI",
+      "name": "ARAE (NAERYEO)HECHEOMAKGI",
       "side": null,
-      "timestamp": 746
+      "timestamp": 431
     },
     {
       "number": "3",
-      "name": "GEODEUREO ULGUL YEOPMAKGI",
+      "name": "TONGMILGI",
       "side": null,
-      "timestamp": 238
+      "timestamp": 431
     },
     {
       "number": "4",
+      "name": "SONAL",
+      "side": "right",
+      "timestamp": 431
+    },
+    {
+      "number": "5",
+      "name": "SONAL A ONTONGIEAKKANIAKGAGE",
+      "side": "left",
+      "timestamp": 480
+    },
+    {
+      "number": "6",
+      "name": "PALGGUMCHI OLLYEOCHIGI",
+      "side": "right",
+      "timestamp": 479
+    },
+    {
+      "number": "7",
+      "name": "APCHAGI",
+      "side": "right",
+      "timestamp": 482
+    },
+    {
+      "number": "8",
       "name": "FOOT MOMDORA YEOPCHAGI",
       "side": "left",
       "timestamp": 485
     },
     {
-      "number": "5",
+      "number": "9",
       "name": "SONAL GEODEUREOMAKGI",
       "side": "right",
       "timestamp": 489
     },
     {
-      "number": "6",
+      "number": "10",
       "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
       "side": "right",
       "timestamp": 492
     },
     {
-      "number": "7",
+      "number": "11",
       "name": "ANPALMOK GEODEUREO ULGULYEOPMAKGI",
       "side": "right",
       "timestamp": 495
     },
     {
-      "number": "8",
+      "number": "12",
+      "name": "DANGGYEO (OREUN)DEUNGJUMEOK APCHIGI",
+      "side": null,
+      "timestamp": 748
+    },
+    {
+      "number": "13",
+      "name": "DANGGYEO (OEN)DEUNGJUMEOK APCHIGI",
+      "side": null,
+      "timestamp": 746
+    },
+    {
+      "number": "14",
+      "name": "MEONGYECHIGI (",
+      "side": null,
+      "timestamp": 752
+    },
+    {
+      "number": "15",
+      "name": "HECHEO SANTEULMAKGI",
+      "side": null,
+      "timestamp": 752
+    },
+    {
+      "number": "16",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 755
+    },
+    {
+      "number": "17",
+      "name": "JAGEUN DOLUJEOGWI",
+      "side": "left",
+      "timestamp": 763
+    },
+    {
+      "number": "18",
+      "name": "YEOPCHAGI",
+      "side": "right",
+      "timestamp": 762
+    },
+    {
+      "number": "19",
       "name": "PALGGUMCHI OLLYEOCHIGHY",
       "side": "left",
       "timestamp": 774
     },
     {
-      "number": "9",
+      "number": "20",
       "name": "APCHAGI",
       "side": "left",
       "timestamp": 768
     },
     {
-      "number": "10",
+      "number": "21",
       "name": "FOOT MOMDORA YEOPCHAGI",
       "side": "right",
       "timestamp": 772
     },
     {
-      "number": "11",
+      "number": "22",
       "name": "SONAL GEODEUREO (MOMTONG)MAKGI",
       "side": "left",
       "timestamp": 779
     },
     {
-      "number": "12",
+      "number": "23",
       "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
       "side": "left",
       "timestamp": 782
     },
     {
-      "number": "92",
+      "number": "24",
+      "name": "HECHEO SANTEULMAKGI",
+      "side": null,
+      "timestamp": 1113
+    },
+    {
+      "number": "25",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 1116
+    },
+    {
+      "number": "26",
+      "name": "JAGEUN DOLJJEOGWI",
+      "side": "right",
+      "timestamp": 1119
+    },
+    {
+      "number": "27",
+      "name": "YEOPCHAGI",
+      "side": "left",
+      "timestamp": 1122
+    },
+    {
+      "number": "28",
+      "name": "PALGGUMCHI PYOJEOKCHIG",
+      "side": "right",
+      "timestamp": 1125
+    },
+    {
+      "number": "29",
       "name": "DANGGYEO (OREUN)DEUNGJUMEOK APCHIGI",
       "side": null,
       "timestamp": 1112

@@ -35,15 +35,15 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "GEODEUREO ARAE(NAERYEO)MAKGI",
-      "side": null,
-      "timestamp": 771
+      "name": "GEODEUREO BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 374
     },
     {
       "number": "2",
-      "name": "APCHAGI + OREUN TTWIEOAPCHAGI",
-      "side": "left",
-      "timestamp": 775
+      "name": "JIREUGI",
+      "side": "right",
+      "timestamp": 378
     },
     {
       "number": "3",
@@ -53,30 +53,108 @@
     },
     {
       "number": "4",
-      "name": "PALGGUMCHI DOLLYEOCHIGI + OREUN DEUNGJUMEOK APCHIGI",
-      "side": "right",
-      "timestamp": 787
+      "name": "OESANTEULMAKGI",
+      "side": null,
+      "timestamp": 477
     },
     {
       "number": "5",
+      "name": "DANGGYEQJIREUGI",
+      "side": "right",
+      "timestamp": 487
+    },
+    {
+      "number": "6",
+      "name": "OESANTEULMAKGI",
+      "side": null,
+      "timestamp": 491
+    },
+    {
+      "number": "7",
+      "name": "DANGGYEOJIREUGI",
+      "side": "left",
+      "timestamp": 492
+    },
+    {
+      "number": "8",
+      "name": "SONALMAKGI",
+      "side": "left",
+      "timestamp": 503
+    },
+    {
+      "number": "9",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "left",
+      "timestamp": 653
+    },
+    {
+      "number": "10",
+      "name": "BATANGSON ANMAKGI",
+      "side": "left",
+      "timestamp": 659
+    },
+    {
+      "number": "11",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "right",
+      "timestamp": 664
+    },
+    {
+      "number": "12",
       "name": "APCHAGI + OEN JIREUGI",
       "side": "right",
       "timestamp": 666
     },
     {
-      "number": "6",
+      "number": "13",
       "name": "BATANGSON ANMAKGI",
       "side": "right",
       "timestamp": 669
     },
     {
-      "number": "7",
+      "number": "14",
+      "name": "GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 771
+    },
+    {
+      "number": "15",
+      "name": "APCHAGI + OREUN TTWIEOAPCHAGI",
+      "side": "left",
+      "timestamp": 775
+    },
+    {
+      "number": "16",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 782
+    },
+    {
+      "number": "17",
+      "name": "PALGGUMCHI DOLLYEOCHIGI + OREUN DEUNGJUMEOK APCHIGI",
+      "side": "right",
+      "timestamp": 787
+    },
+    {
+      "number": "18",
+      "name": "(MVOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 806
+    },
+    {
+      "number": "19",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 795
+    },
+    {
+      "number": "20",
       "name": "PALGGUMCHI DOLLYEOCHIGI URNS",
       "side": "left",
       "timestamp": 801
     },
     {
-      "number": "8",
+      "number": "21",
       "name": "(MOMTONG)JIREUGI",
       "side": "right",
       "timestamp": 803

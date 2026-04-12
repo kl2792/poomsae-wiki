@@ -70,81 +70,135 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "GEODEUREO BATANGSON (MOMTONG)ANMAKGI",
+      "name": "BATANGSON (MOMTONG)ANMAKGI",
       "side": "right",
-      "timestamp": 788
+      "timestamp": 657
     },
     {
       "number": "2",
-      "name": "PYOJEOKCHAGI + OREUN PALGGUMEHI PYOJEOKCHIGI",
+      "name": "APCHAGI + OEN (MOMTONG)ANMAKGI",
       "side": "right",
-      "timestamp": 1120
+      "timestamp": 657
     },
     {
       "number": "3",
-      "name": "BATANGSON (MOMTONG)ANMAKGI )",
+      "name": "BATANGSON (MOMTONG)ANMAKGI",
       "side": "left",
-      "timestamp": 650
+      "timestamp": 657
     },
     {
       "number": "4",
-      "name": "PYOJEOKCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "name": "APCHAG",
       "side": "left",
-      "timestamp": 1120
+      "timestamp": 657
     },
     {
       "number": "5",
       "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
       "side": "left",
-      "timestamp": 654
+      "timestamp": 657
     },
     {
       "number": "6",
-      "name": "MUREUP OLLYEOCHIGI + DUJUMEOK JEOCHEQJIREUCI",
-      "side": "left",
-      "timestamp": 914
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 657
     },
     {
       "number": "7",
+      "name": "GEODEUREO BATANGSON (MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 788
+    },
+    {
+      "number": "8",
+      "name": "OFN GEODEUREO BATANGSON (MOMTONG)ANMAKGI",
+      "side": null,
+      "timestamp": 789
+    },
+    {
+      "number": "9",
+      "name": "BOJUMEOK",
+      "side": null,
+      "timestamp": 793
+    },
+    {
+      "number": "10",
       "name": "GEODEUREO BATANGSON (MOMTONG)ANMAK",
       "side": "right",
       "timestamp": 799
     },
     {
-      "number": "8",
-      "name": "UTGEOREO ARAE(NAERYEO)MAKGI",
-      "side": null,
-      "timestamp": 453
-    },
-    {
-      "number": "9",
-      "name": "DEUNGJUMEOK BAKKANCHIGI",
-      "side": null,
-      "timestamp": 487
-    },
-    {
-      "number": "10",
-      "name": "PYOJEOKCHAGI",
-      "side": null,
-      "timestamp": 523
-    },
-    {
       "number": "11",
-      "name": "YEOPJIREUGI",
+      "name": "GAWIMAKGI + GAWIMAKGI",
       "side": null,
-      "timestamp": 542
+      "timestamp": 899
     },
     {
       "number": "12",
-      "name": "BEOMSEOGI",
-      "side": null,
-      "timestamp": 563
+      "name": "MUREUP OLLYEOCHIG",
+      "side": "right",
+      "timestamp": 901
     },
     {
       "number": "13",
-      "name": "JUCHUMSEOGI",
+      "name": "UTGEOREO ARAE(NAERYEO)MAKGI",
       "side": null,
-      "timestamp": 610
+      "timestamp": 905
+    },
+    {
+      "number": "14",
+      "name": "MUREUP OLLYEOCHIGI + DUJUMEOK JEOCHEQJIREUCI",
+      "side": "left",
+      "timestamp": 914
+    },
+    {
+      "number": "15",
+      "name": "UTGEOREO ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 914
+    },
+    {
+      "number": "16",
+      "name": "DEUNGJUMEOK BAKKANCHIGI (",
+      "side": "left",
+      "timestamp": 1120
+    },
+    {
+      "number": "17",
+      "name": "PYOJEOKCHAGI + OREUN PALGGUMEHI PYOJEOKCHIGI",
+      "side": "right",
+      "timestamp": 1120
+    },
+    {
+      "number": "18",
+      "name": "DEUNGJUMEOK BAKKANCHIGI",
+      "side": "right",
+      "timestamp": 1117
+    },
+    {
+      "number": "19",
+      "name": "PYOJEOKCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 1120
+    },
+    {
+      "number": "20",
+      "name": "YEOMMAKGI",
+      "side": "left",
+      "timestamp": 1125
+    },
+    {
+      "number": "21",
+      "name": "YEOPJIREUGI",
+      "side": "right",
+      "timestamp": 1127
+    },
+    {
+      "number": "22",
+      "name": "DEUNGJUMEOK BAKKANCHIGI",
+      "side": "left",
+      "timestamp": 1127
     }
   ],
   "tips": [

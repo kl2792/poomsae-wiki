@@ -296,13 +296,13 @@
       "tips": []
     },
     {
-      "key": "en-hand-gama-jabaggeulmyeo+yeopchagi+oen-araemakgi",
+      "key": "en-hand-gama-jabaggeulmyeo-yeopchagi-oen-araemakgi",
       "name": {
-        "en": "en-hand-gama-jabaggeulmyeo + yeopchagi + oen-araemakgi",
-        "ko": " +  + ",
-        "romanized": "en-hand-gama-jabaggeulmyeo + yeopchagi + oen-araemakgi"
+        "en": "En Hand Gama Jabaggeulmyeo + Yeopchagi + Oen Araemakgi",
+        "ko": "En Hand Gama Jabaggeulmyeo + Yeopchagi + Oen Araemakgi",
+        "romanized": "En Hand Gama Jabaggeulmyeo + Yeopchagi + Oen Araemakgi"
       },
-      "category": "combination",
+      "category": "block",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
@@ -383,7 +383,7 @@
     },
     {
       "step": 9,
-      "technique": "en-hand-gama-jabaggeulmyeo+yeopchagi+oen-araemakgi",
+      "technique": "en-hand-gama-jabaggeulmyeo-yeopchagi-oen-araemakgi",
       "side": null,
       "direction": "forward",
       "kihap": true,

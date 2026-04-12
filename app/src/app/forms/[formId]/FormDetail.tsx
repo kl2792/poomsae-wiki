@@ -169,27 +169,30 @@ function SidebarDetail({
             <p className="text-xs font-medium text-gray-400 uppercase tracking-wide">
               Tips
             </p>
-            {tips.map((tip: { text: string; timestamp?: number; video_id?: string } | string, i: number) => {
+            {tips.map((tip: { text: string; timestamp?: number; video_id?: string; source?: string } | string, i: number) => {
               const text = typeof tip === "string" ? tip : tip.text;
               const ts = typeof tip === "string" ? null : (tip as { timestamp?: number }).timestamp ?? null;
               const nextTip = tips[i + 1];
               const nextTs = nextTip && typeof nextTip !== "string" ? (nextTip as { timestamp?: number }).timestamp ?? null : null;
               const endTs = nextTs ?? (displayActiveStep ? displayActiveStep.timestamp_end : undefined);
               const tipVideoId = typeof tip !== "string" ? (tip as { video_id?: string }).video_id : undefined;
+              const tipSource = typeof tip !== "string" ? (tip as { source?: string }).source : undefined;
+              const isCaption = tipSource === "caption";
               const canSeek = ts != null && (!tipVideoId || tipVideoId === form.video_id);
-              const tipClass = "block w-full text-left text-sm text-gray-700 pl-3 border-l-2 border-blue-200";
+              const tipClass = `block w-full text-left text-sm pl-3 border-l-2 ${isCaption ? "text-gray-400 border-gray-200" : "text-gray-700 border-blue-200"}`;
+              const prefix = isCaption ? "🎤 " : "";
               return canSeek ? (
                 <button
                   key={i}
                   onClick={() => { if (ts) onSeek(ts, endTs ?? undefined); }}
-                  className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer`}
+                  className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer flex items-start gap-2`}
                 >
-                  {text}
-                  {ts && <span className="text-[10px] text-gray-400 ml-2">{formatTime(ts)}</span>}
+                  {ts && <span className="text-[10px] text-gray-400 font-mono whitespace-nowrap mt-0.5 shrink-0 w-8">{formatTime(ts)}</span>}
+                  <span>{prefix}{text}</span>
                 </button>
               ) : (
                 <p key={i} className={tipClass}>
-                  {text}
+                  {prefix}{text}
                 </p>
               );
             })}

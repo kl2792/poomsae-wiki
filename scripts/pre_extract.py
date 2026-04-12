@@ -178,80 +178,196 @@ def extract_key_moves(lines: list[str]) -> list[dict]:
     return result
 
 
-def extract_sequence_steps(lines: list[str]) -> list[dict]:
-    """Extract numbered sequence steps from EXPLANATION OF PART sections.
+def _parse_step_from_segment(seg: str) -> dict | None:
+    """Parse a single numbered step from a pipe-separated segment.
 
-    These lines show the full form sequence with side indicators:
-        1. OREUN BATANGSON (MOMTONG)ANMAKGI
-        2. OREUN APCHAGI + OEN (MOMTONG)ANMAKGI
-
-    Strategy: find the EXPLANATION sections, then extract the highest-numbered
-    step list (which has all steps accumulated).
+    Returns dict with keys {num, name, side} or None if no match.
     """
-    steps = {}  # number -> {name, side, timestamp}
-    in_explanation = False
+    seg = seg.strip()
+
+    # Match: N. (OEN|OREUN) TECHNIQUE
+    m = re.match(
+        r"(\d{1,2})[.,]\s+(OEN|OREUN)\s+([A-Z][A-Z\s()\+]{3,})",
+        seg,
+    )
+    if m:
+        name = clean_technique_name(m.group(3))
+        if is_noise(name):
+            return None
+        return {
+            "num": int(m.group(1)),
+            "name": name,
+            "side": "left" if m.group(2) == "OEN" else "right",
+        }
+
+    # Match: N. TECHNIQUE (no side prefix -- less common)
+    m2 = re.match(r"(\d{1,2})[.,]\s+([A-Z][A-Z\s()\+]{3,})", seg)
+    if m2:
+        name = m2.group(2).strip()
+
+        side = None
+        if name.startswith("OEN "):
+            side = "left"
+            name = name[4:]
+        elif name.startswith("OREUN "):
+            side = "right"
+            name = name[6:]
+
+        name = clean_technique_name(name)
+        if is_noise(name):
+            return None
+        return {"num": int(m2.group(1)), "name": name, "side": side}
+
+    return None
+
+
+def _find_explanation_sections(lines: list[str]) -> list[tuple[int, int]]:
+    """Find timestamp ranges for each EXPLANATION OF PART section.
+
+    Returns list of (start_ts, end_ts) tuples. End timestamp is the start
+    of the next section, or the REPEAT section, or the last line timestamp.
+    """
+    section_starts = []  # timestamps where EXPLANATION sections begin
+    repeat_ts = None
+    last_ts = 0
 
     for line in lines:
         ts = parse_timestamp(line)
         if ts is None:
             continue
+        last_ts = ts
 
-        if "EXPLANATION" in line:
-            in_explanation = True
-        if "REPEAT" in line and in_explanation:
-            break
+        # Detect "EXPLANATION ... PART" or "OF PART N" headers
+        if ("EXPLANATION" in line and "PART" in line) or re.search(r"OF\s*PART\s*\d", line):
+            if not section_starts or ts > section_starts[-1] + 30:
+                section_starts.append(ts)
 
-        if not in_explanation:
+        if "REPEAT" in line and section_starts:
+            if repeat_ts is None:
+                repeat_ts = ts
+
+    if not section_starts:
+        return []
+
+    end_ts = repeat_ts if repeat_ts else last_ts + 1
+
+    ranges = []
+    for i, start in enumerate(section_starts):
+        if i + 1 < len(section_starts):
+            ranges.append((start, section_starts[i + 1]))
+        else:
+            ranges.append((start, end_ts))
+    return ranges
+
+
+def _extract_steps_for_section(
+    lines: list[str], start_ts: int, end_ts: int,
+) -> list[dict]:
+    """Extract step list from one EXPLANATION section by finding the best line.
+
+    The best line is the one with the most numbered step items, since each
+    frame adds one step incrementally and the last frame has the full list.
+
+    Returns list of {name, side, timestamp} dicts in step order.
+    """
+    best_steps: dict[int, dict] = {}  # num -> {name, side, timestamp}
+    best_count = 0
+
+    for line in lines:
+        ts = parse_timestamp(line)
+        if ts is None:
+            continue
+        if ts < start_ts or ts >= end_ts:
+            continue
+
+        # Parse all step items from this line
+        line_steps: dict[int, dict] = {}
+        segments = line.split("|")
+        for seg in segments:
+            parsed = _parse_step_from_segment(seg)
+            if parsed is None:
+                continue
+            num = parsed["num"]
+            # Keep longest name for each step number within this line
+            if num not in line_steps or len(parsed["name"]) > len(line_steps[num]["name"]):
+                line_steps[num] = {
+                    "name": parsed["name"],
+                    "side": parsed["side"],
+                    "timestamp": ts,
+                }
+
+        if len(line_steps) > best_count:
+            best_count = len(line_steps)
+            best_steps = line_steps
+
+    # Also do a second pass: accumulate across all lines in the section,
+    # keeping the longest name per step number. This handles cases where the
+    # step list is split across two screen regions (e.g., steps 1-5 on one
+    # screen, then 6-10 on the next, never all on one line together).
+    accumulated: dict[int, dict] = {}
+    for line in lines:
+        ts = parse_timestamp(line)
+        if ts is None:
+            continue
+        if ts < start_ts or ts >= end_ts:
             continue
 
         segments = line.split("|")
         for seg in segments:
-            seg = seg.strip()
-
-            # Match: N. (OEN|OREUN) TECHNIQUE
-            m = re.match(
-                r"(\d{1,2})[.,]\s+(OEN|OREUN)\s+([A-Z][A-Z\s()\+]{3,})",
-                seg,
-            )
-            if m:
-                num = int(m.group(1))
-                side = "left" if m.group(2) == "OEN" else "right"
-                name = clean_technique_name(m.group(3))
-                if is_noise(name):
-                    continue
-                if num not in steps or len(name) > len(steps[num]["name"]):
-                    steps[num] = {"name": name, "side": side, "timestamp": ts}
+            parsed = _parse_step_from_segment(seg)
+            if parsed is None:
                 continue
+            num = parsed["num"]
+            if num not in accumulated or len(parsed["name"]) > len(accumulated[num]["name"]):
+                accumulated[num] = {
+                    "name": parsed["name"],
+                    "side": parsed["side"],
+                    "timestamp": ts,
+                }
 
-            # Match: N. TECHNIQUE (no side prefix -- less common)
-            m2 = re.match(r"(\d{1,2})[.,]\s+([A-Z][A-Z\s()\+]{3,})", seg)
-            if m2:
-                num = int(m2.group(1))
-                name = m2.group(2).strip()
-
-                # Check if name starts with side indicator
-                side = None
-                if name.startswith("OEN "):
-                    side = "left"
-                    name = name[4:]
-                elif name.startswith("OREUN "):
-                    side = "right"
-                    name = name[6:]
-
-                name = clean_technique_name(name)
-                if is_noise(name):
-                    continue
-
-                if num not in steps or len(name) > len(steps[num]["name"]):
-                    steps[num] = {"name": name, "side": side, "timestamp": ts}
+    # Use accumulated if it found more steps than the best single line
+    if len(accumulated) > len(best_steps):
+        best_steps = accumulated
 
     result = []
-    for num in sorted(steps):
+    for num in sorted(best_steps):
+        result.append(best_steps[num])
+    return result
+
+
+def extract_sequence_steps(lines: list[str]) -> list[dict]:
+    """Extract numbered sequence steps from all EXPLANATION OF PART sections.
+
+    These lines show the full form sequence with side indicators:
+        1. OREUN BATANGSON (MOMTONG)ANMAKGI
+        2. OREUN APCHAGI + OEN (MOMTONG)ANMAKGI
+
+    Strategy:
+    1. Detect EXPLANATION OF PART section boundaries by timestamp.
+    2. For each section, find the line with the most step items (the final
+       build-up frame has the complete list for that part).
+    3. Concatenate parts, renumbering sequentially across all parts.
+    """
+    sections = _find_explanation_sections(lines)
+
+    if not sections:
+        # Fallback: no EXPLANATION sections found, try old approach
+        # with all lines after first EXPLANATION mention
+        return _extract_steps_for_section(lines, 0, 999999)
+
+    all_steps = []
+    for start_ts, end_ts in sections:
+        part_steps = _extract_steps_for_section(lines, start_ts, end_ts)
+        all_steps.extend(part_steps)
+
+    # Renumber sequentially across all parts
+    result = []
+    for i, step in enumerate(all_steps, 1):
         result.append({
-            "number": str(num),
-            "name": steps[num]["name"],
-            "side": steps[num]["side"],
-            "timestamp": steps[num]["timestamp"],
+            "number": str(i),
+            "name": step["name"],
+            "side": step["side"],
+            "timestamp": step["timestamp"],
         })
     return result
 

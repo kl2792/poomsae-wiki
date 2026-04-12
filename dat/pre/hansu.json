@@ -41,27 +41,27 @@
     },
     {
       "number": "2",
-      "name": "MEJUMEOK YANGYEOPGURI ANCHIGI",
+      "name": "DUJUMEOK JEOCHEOJIREUGI",
       "side": null,
-      "timestamp": 308
+      "timestamp": 457
     },
     {
       "number": "3",
-      "name": "GEODEUREO OREUN AGUMSON APCHIGI(KHALJAEB))",
-      "side": null,
-      "timestamp": 629
+      "name": "(AGUMSON) PYOJEOK ARAE(NAERYEO)MAKG",
+      "side": "left",
+      "timestamp": 460
     },
     {
       "number": "4",
-      "name": "DUJUMEOK JEOCHEOJIREUGI",
+      "name": "SONAL GEUMGANGMAKGI",
       "side": null,
-      "timestamp": 633
+      "timestamp": 460
     },
     {
       "number": "5",
-      "name": "(BALNALDEUNG) PYOJEOKCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
-      "side": "left",
-      "timestamp": 763
+      "name": "HAKDARISEOGI JAGEUN DOLJJEOGWI",
+      "side": null,
+      "timestamp": 466
     },
     {
       "number": "6",
@@ -71,21 +71,75 @@
     },
     {
       "number": "7",
-      "name": "HAKDARISEOGI JAGEUN DOLJUJEOGWI",
-      "side": null,
-      "timestamp": 767
+      "name": "APCHAGI + DEUNGJUMEOK APCHIGI",
+      "side": "right",
+      "timestamp": 471
     },
     {
       "number": "8",
-      "name": "(MOMTONG)JIREUGI",
-      "side": "right",
-      "timestamp": 346
+      "name": "SONAL YEOPCHIGI",
+      "side": "left",
+      "timestamp": 622
     },
     {
       "number": "9",
-      "name": "SONALDEUNG HECHEOMAKGI",
+      "name": "BALNALDEUNG PYOJEOKCHIGI",
+      "side": "right",
+      "timestamp": 627
+    },
+    {
+      "number": "10",
+      "name": "GEODEUREO OREUN AGUMSON APCHIGI(KHALJAEB))",
       "side": null,
-      "timestamp": 348
+      "timestamp": 629
+    },
+    {
+      "number": "11",
+      "name": "DUJUMEOK JEOCHEOJIREUGI",
+      "side": null,
+      "timestamp": 633
+    },
+    {
+      "number": "12",
+      "name": "AGUMSON PYOJEOK ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 633
+    },
+    {
+      "number": "13",
+      "name": "HAKDARISEOGI JAGEUN DOLJUJEOGWI",
+      "side": null,
+      "timestamp": 766
+    },
+    {
+      "number": "14",
+      "name": "YEOPCHAGI + JEBIPUM ANCHIGI",
+      "side": "right",
+      "timestamp": 755
+    },
+    {
+      "number": "15",
+      "name": "APCHAGI + OEN DEUNGJUMEOK APCHIGI",
+      "side": "left",
+      "timestamp": 758
+    },
+    {
+      "number": "16",
+      "name": "SONAL YEOPCHIGI",
+      "side": "right",
+      "timestamp": 762
+    },
+    {
+      "number": "17",
+      "name": "(BALNALDEUNG) PYOJEOKCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 763
+    },
+    {
+      "number": "18",
+      "name": "HAKDARISEOGI JAGEUN DOLJUJEOGWI",
+      "side": null,
+      "timestamp": 767
     }
   ],
   "tips": [

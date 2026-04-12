@@ -229,7 +229,7 @@
       "step": 1,
       "technique": "low-block",
       "side": "left",
-      "direction": "forward",
+      "direction": "left-90",
       "kihap": false,
       "timestamp": 507,
       "timestamp_end": 217
@@ -247,7 +247,7 @@
       "step": 3,
       "technique": "low-block",
       "side": "right",
-      "direction": "forward",
+      "direction": "right-90",
       "kihap": false,
       "timestamp": 502,
       "timestamp_end": 624
@@ -265,7 +265,7 @@
       "step": 5,
       "technique": "high-rising-block",
       "side": null,
-      "direction": "forward",
+      "direction": "left-90",
       "kihap": false,
       "timestamp": 346,
       "timestamp_end": 509
@@ -283,7 +283,7 @@
       "step": 7,
       "technique": "parallel-stance",
       "side": null,
-      "direction": "forward",
+      "direction": "left-90",
       "kihap": false,
       "timestamp": 485,
       "timestamp_end": 427

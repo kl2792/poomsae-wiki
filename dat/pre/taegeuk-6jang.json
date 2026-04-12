@@ -30,45 +30,129 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "SONAL ULGUL BITEUREOMAKGI",
-      "side": null,
-      "timestamp": 148
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 349
     },
     {
       "number": "2",
+      "name": "APCHAGI + OEN (MOMTONG)BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 349
+    },
+    {
+      "number": "3",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 349
+    },
+    {
+      "number": "4",
+      "name": "APCHAG",
+      "side": "left",
+      "timestamp": 349
+    },
+    {
+      "number": "5",
+      "name": "BITEUREO (ULGULJMAKGI",
+      "side": "right",
+      "timestamp": 411
+    },
+    {
+      "number": "6",
       "name": "(ULGUL)DOLLYEOCHAGI + OEN (ULGUL)BAKKANMAKGI + OREUN (MVOMTONG)JIREUG",
       "side": "right",
       "timestamp": 413
     },
     {
-      "number": "3",
-      "name": "BATANGSON (MOMTONG)ANMAKGI + OREUN (MOMTONG)JIREUGI",
-      "side": "left",
-      "timestamp": 626
+      "number": "7",
+      "name": "APCHAGI+OEN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 419
     },
     {
-      "number": "4",
+      "number": "8",
       "name": "(ULGULJBAKKANMAKGI+OEN (MOMTONG)JIREUGI",
       "side": "right",
       "timestamp": 423
     },
     {
-      "number": "5",
-      "name": "APCHAGI + OEN (MOMTONG)BAKKANMAKGI",
-      "side": "right",
-      "timestamp": 532
+      "number": "9",
+      "name": "APCHAGI+OREUN (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 425
     },
     {
-      "number": "6",
+      "number": "10",
       "name": "ARAE HECHEOMAKGI",
       "side": null,
       "timestamp": 428
     },
     {
-      "number": "7",
+      "number": "11",
       "name": "BITEUREO (ULGUL)MAKGI",
       "side": "right",
       "timestamp": 417
+    },
+    {
+      "number": "12",
+      "name": "BITEUREOMAKGI",
+      "side": "left",
+      "timestamp": 532
+    },
+    {
+      "number": "13",
+      "name": "(ULGUL)DOLLYEOCHAGI + OREUN ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 532
+    },
+    {
+      "number": "14",
+      "name": "APCHAGI + OREUN (M",
+      "side": "left",
+      "timestamp": 532
+    },
+    {
+      "number": "15",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 532
+    },
+    {
+      "number": "16",
+      "name": "APCHAGI + OEN (MOMTONG)BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 532
+    },
+    {
+      "number": "17",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "left",
+      "timestamp": 622
+    },
+    {
+      "number": "18",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "right",
+      "timestamp": 627
+    },
+    {
+      "number": "19",
+      "name": "BATANGSON (MOMTONG)ANMAKGI + OREUN (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 626
+    },
+    {
+      "number": "20",
+      "name": "BATANGSON (MOMTONG)ANMAKGI + OEN",
+      "side": "right",
+      "timestamp": 631
+    },
+    {
+      "number": "21",
+      "name": "CYDI AAIATINA",
+      "side": null,
+      "timestamp": 667
     }
   ],
   "tips": [

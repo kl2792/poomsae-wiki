@@ -55,15 +55,15 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "name": "HWANGSOMAKGI",
       "side": null,
-      "timestamp": 1118
+      "timestamp": 724
     },
     {
       "number": "2",
-      "name": "SONBADAK GEODEUREO BAKKANMAKGI",
+      "name": "SONBADAK GEODEUREO PWS",
       "side": null,
-      "timestamp": 707
+      "timestamp": 738
     },
     {
       "number": "3",
@@ -73,45 +73,45 @@
     },
     {
       "number": "4",
-      "name": "CHETDARIJIREUGI + CHETDARIJIREUGI",
+      "name": "HECHEO SANTEULMAKGI",
       "side": null,
-      "timestamp": 1561
+      "timestamp": 746
     },
     {
       "number": "5",
-      "name": "SONALDEUNG HECHEOMAKGI",
-      "side": null,
-      "timestamp": 1149
+      "name": "YEOPJIREUGI",
+      "side": "right",
+      "timestamp": 748
     },
     {
       "number": "6",
-      "name": "SONAL AREAHECHEOMAKGI",
+      "name": "MEONGYECHIGI",
       "side": null,
-      "timestamp": 1152
+      "timestamp": 753
     },
     {
       "number": "7",
-      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "name": "SONBADAK GEODEUREO MAVENS",
       "side": null,
-      "timestamp": 1122
+      "timestamp": 767
     },
     {
       "number": "8",
-      "name": "PYEONSON EOTGEUREO ARAEMAKGI",
-      "side": null,
-      "timestamp": 707
+      "name": "PYEONSONKEUT EOPEQUJJIREUGI",
+      "side": "left",
+      "timestamp": 766
     },
     {
       "number": "9",
-      "name": "SONALDEUNG GEODEUREOMAKGI",
+      "name": "HECHEO SANTEULMAKGI",
       "side": null,
-      "timestamp": 707
+      "timestamp": 768
     },
     {
       "number": "10",
-      "name": "GEODEUREO DEUNGJUMEOK APCHIGI",
-      "side": null,
-      "timestamp": 707
+      "name": "YEOPJIREUGI",
+      "side": "left",
+      "timestamp": 770
     },
     {
       "number": "11",
@@ -120,10 +120,112 @@
       "timestamp": 774
     },
     {
-      "number": "71",
+      "number": "12",
       "name": "HWANGSOMAKGI",
       "side": null,
       "timestamp": 723
+    },
+    {
+      "number": "13",
+      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "side": null,
+      "timestamp": 1118
+    },
+    {
+      "number": "14",
+      "name": "PYEONSONKEUT EOPEOJJIREUGI",
+      "side": "left",
+      "timestamp": 1122
+    },
+    {
+      "number": "15",
+      "name": "SONAL GEODEUREO ARAEMAKGI",
+      "side": "left",
+      "timestamp": 1132
+    },
+    {
+      "number": "16",
+      "name": "BAWIMILGI",
+      "side": null,
+      "timestamp": 1137
+    },
+    {
+      "number": "17",
+      "name": "SONALDEUNG HECHEOMAKGI",
+      "side": null,
+      "timestamp": 1149
+    },
+    {
+      "number": "18",
+      "name": "SONAL AREAHECHEOMAKGI",
+      "side": null,
+      "timestamp": 1152
+    },
+    {
+      "number": "19",
+      "name": "SONBADAK GEODEUREO OREUN ANPALMOK BAKKANMAKGI",
+      "side": null,
+      "timestamp": 1122
+    },
+    {
+      "number": "20",
+      "name": "KKEUREOOLIGI",
+      "side": null,
+      "timestamp": 1163
+    },
+    {
+      "number": "21",
+      "name": "BAWIMILGI",
+      "side": null,
+      "timestamp": 1411
+    },
+    {
+      "number": "22",
+      "name": "APCHAGI + CHETDARIJIREUGI",
+      "side": "right",
+      "timestamp": 1416
+    },
+    {
+      "number": "23",
+      "name": "APCHAGI + CHETDARIJIREUGI",
+      "side": "left",
+      "timestamp": 1417
+    },
+    {
+      "number": "24",
+      "name": "APCHAGI",
+      "side": "right",
+      "timestamp": 1419
+    },
+    {
+      "number": "25",
+      "name": "BAWIMILGI",
+      "side": null,
+      "timestamp": 1541
+    },
+    {
+      "number": "26",
+      "name": "PYEONSON EOTGEUREO ARAEMAKGI",
+      "side": null,
+      "timestamp": 1554
+    },
+    {
+      "number": "27",
+      "name": "SONALDEUNG GEODEUREOMAKGI",
+      "side": null,
+      "timestamp": 1557
+    },
+    {
+      "number": "28",
+      "name": "CHETDARIJIREUGI + CHETDARIJIREUGI",
+      "side": null,
+      "timestamp": 1561
+    },
+    {
+      "number": "29",
+      "name": "BAWIMILGI",
+      "side": null,
+      "timestamp": 1555
     }
   ],
   "tips": [

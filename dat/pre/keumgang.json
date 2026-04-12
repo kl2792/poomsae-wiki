@@ -35,57 +35,105 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI)",
+      "name": "GEUMGANGMAKGI",
       "side": null,
-      "timestamp": 450
+      "timestamp": 615
     },
     {
       "number": "2",
-      "name": "SONAL (MOMTONG)A NMA KGI",
+      "name": "KEUN DOLJJEOGWI",
       "side": null,
-      "timestamp": 251
+      "timestamp": 615
     },
     {
       "number": "3",
-      "name": "BATANGSON APCHIGI",
-      "side": "left",
-      "timestamp": 449
+      "name": "KEUN DOLUJEOGWI",
+      "side": null,
+      "timestamp": 615
     },
     {
       "number": "4",
-      "name": "BATANGSON APCHIGI",
-      "side": "right",
-      "timestamp": 452
+      "name": "SANTEULMAKGI",
+      "side": null,
+      "timestamp": 615
     },
     {
       "number": "5",
       "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
       "side": null,
-      "timestamp": 611
+      "timestamp": 615
     },
     {
       "number": "6",
-      "name": "SONAL (MOMTONG)ANMAKGI",
-      "side": "right",
-      "timestamp": 458
+      "name": "ARAE HECHEOMAKGI",
+      "side": null,
+      "timestamp": 615
     },
     {
       "number": "7",
-      "name": "SONAL (MOMTONG)ANMAKGI",
-      "side": "left",
-      "timestamp": 460
+      "name": "SANTEULMAKGI",
+      "side": null,
+      "timestamp": 794
+    },
+    {
+      "number": "8",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 794
     },
     {
       "number": "9",
+      "name": "KEUN DOLJUJEOGWI",
+      "side": null,
+      "timestamp": 799
+    },
+    {
+      "number": "10",
+      "name": "KEUN DOLUJEOGWI",
+      "side": null,
+      "timestamp": 798
+    },
+    {
+      "number": "11",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 800
+    },
+    {
+      "number": "12",
+      "name": "KEUN DOLJJEOGWI",
+      "side": null,
+      "timestamp": 814
+    },
+    {
+      "number": "13",
       "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
       "side": null,
       "timestamp": 821
     },
     {
-      "number": "10",
+      "number": "14",
       "name": "ARAE HECHEOMAKGI",
       "side": null,
       "timestamp": 825
+    },
+    {
+      "number": "15",
+      "name": "SANTEULMAKGI",
+      "side": null,
+      "timestamp": 964
+    },
+    {
+      "number": "16",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 970
+    },
+    {
+      "number": "17",
+      "name": "KEUN DOLUJEOGWI",
+      "side": null,
+      "timestamp": 973
     }
   ],
   "tips": [

@@ -45,39 +45,39 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "ANPALMOK GEODEUREO (MOMTONG)BAKKANMAKGI",
-      "side": "left",
-      "timestamp": 661
+      "name": "GYEOPSONJUNBI (",
+      "side": null,
+      "timestamp": 384
     },
     {
       "number": "2",
-      "name": "HWIDULLEOMAKGO (MOMTONG)JIREUGI",
+      "name": "NALGAEPYEOGI",
       "side": null,
-      "timestamp": 666
+      "timestamp": 383
     },
     {
       "number": "3",
-      "name": "PYEOMBON OESANTEUL ARAE(NAERYEO)MAKGI",
+      "name": "DUBAMJUMEOK CHI(OLLYEO)JIREUGI",
       "side": null,
-      "timestamp": 936
+      "timestamp": 390
     },
     {
       "number": "4",
-      "name": "ANPALMOK GEODEUREO (MVOMTONG)BAKKANMAKGI",
-      "side": "right",
-      "timestamp": 671
+      "name": "SONAL (MOMTONG)BITEUREOMAKGI",
+      "side": "left",
+      "timestamp": 392
     },
     {
       "number": "5",
-      "name": "HAND JEOCHEONAEMYEO JABADANGGYEO OEN (MOMTONG)JIREUGI",
-      "side": "right",
-      "timestamp": 672
+      "name": "HAND GAMA JABAGGEULMYEO (MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 394
     },
     {
       "number": "6",
-      "name": "HAND JEOCHEONAEMYEO JABADANGGYEO OREUN (MOMTONG)JIREUGI",
-      "side": "right",
-      "timestamp": 675
+      "name": "ONUN SONAL (MOMTONG)BITEUREOMAKGI",
+      "side": null,
+      "timestamp": 409
     },
     {
       "number": "7",
@@ -96,6 +96,108 @@
       "name": "EN HAND GAMA JABAGGEULMYEO + YEOPCHAGI + OEN ARAEMAKGI",
       "side": null,
       "timestamp": 414
+    },
+    {
+      "number": "10",
+      "name": "ANPALMOK GEODEUREO (MOMTONG)BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 661
+    },
+    {
+      "number": "11",
+      "name": "HWIDULLEOMAKGO (MOMTONG)JIREUGI",
+      "side": null,
+      "timestamp": 666
+    },
+    {
+      "number": "12",
+      "name": "ANPALMOK GEODEUREO (MVOMTONG)BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 671
+    },
+    {
+      "number": "13",
+      "name": "HAND JEOCHEONAEMYEO JABADANGGYEO OEN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 672
+    },
+    {
+      "number": "14",
+      "name": "HAND JEOCHEONAEMYEO JABADANGGYEO OREUN (MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 675
+    },
+    {
+      "number": "15",
+      "name": "ANPALMOK (MOMTONG)BITEUREOMAKGI",
+      "side": "right",
+      "timestamp": 806
+    },
+    {
+      "number": "16",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 806
+    },
+    {
+      "number": "17",
+      "name": "APCHAGI + OREUN (MOMTON",
+      "side": "right",
+      "timestamp": 806
+    },
+    {
+      "number": "18",
+      "name": "SONAL GEODEUREO ARAE(NAERY",
+      "side": "right",
+      "timestamp": 806
+    },
+    {
+      "number": "19",
+      "name": "ANPALMOK BAKKANMAKGI + GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 806
+    },
+    {
+      "number": "20",
+      "name": "GEUMGANG YEOPJIREUGI",
+      "side": "right",
+      "timestamp": 936
+    },
+    {
+      "number": "21",
+      "name": "TTWIEO",
+      "side": null,
+      "timestamp": 928
+    },
+    {
+      "number": "22",
+      "name": "PYEOMBON OESANTEUL ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 936
+    },
+    {
+      "number": "23",
+      "name": "PYEONSON OESANTEUL ARAE(NAERYEO)MAKGI",
+      "side": null,
+      "timestamp": 940
+    },
+    {
+      "number": "24",
+      "name": "TAESANMILGI",
+      "side": null,
+      "timestamp": 948
+    },
+    {
+      "number": "25",
+      "name": "TAESANMILGI",
+      "side": null,
+      "timestamp": 952
+    },
+    {
+      "number": "26",
+      "name": "GEUMGANG YEOPJIREUGI",
+      "side": "right",
+      "timestamp": 942
     }
   ],
   "tips": [

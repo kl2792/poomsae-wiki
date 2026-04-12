@@ -25,45 +25,129 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "ARAE(NAERYEO)MAKGI + OREUN (MOMTONG)JIREUGI",
+      "name": "ARAE(NAERYEO)MAKGI",
       "side": "left",
-      "timestamp": 676
+      "timestamp": 343
     },
     {
       "number": "2",
-      "name": "ARAE(NAERYEO)MAKGI + OEN (MOMTONG)JIREUGI",
+      "name": "APCHAGI+DOUBLE JIREUGI",
       "side": "right",
-      "timestamp": 680
+      "timestamp": 345
     },
     {
       "number": "3",
-      "name": "APCHAGI + OEN ARAE(NAERYOE)MAKGI + OREUN (MOMTONG)JIREUGI",
-      "side": "left",
-      "timestamp": 687
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 350
     },
     {
       "number": "4",
-      "name": "APCHAGI + OREUN (NAERYEO)MAKGI + OEN (MOMTONG)JIREUGI",
-      "side": "right",
-      "timestamp": 689
+      "name": "APCHAGI+DOUBLE JIREUGI",
+      "side": "left",
+      "timestamp": 353
     },
     {
       "number": "5",
-      "name": "(MOMTONG)ANMAKGI",
+      "name": "SONAL ANCHIGI",
       "side": "right",
-      "timestamp": 511
+      "timestamp": 357
     },
     {
       "number": "6",
+      "name": "SONAL ANCHIGI",
+      "side": "left",
+      "timestamp": 360
+    },
+    {
+      "number": "7",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 364
+    },
+    {
+      "number": "8",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 513
+    },
+    {
+      "number": "9",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 513
+    },
+    {
+      "number": "10",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 513
+    },
+    {
+      "number": "11",
+      "name": "(MOMTONG)JIREUG",
+      "side": "left",
+      "timestamp": 513
+    },
+    {
+      "number": "12",
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 513
+    },
+    {
+      "number": "13",
       "name": "(MOMTONG)ANMAKGI",
       "side": "left",
       "timestamp": 513
     },
     {
-      "number": "71",
+      "number": "14",
       "name": "ARAE(NAERYEO)MAKGI",
       "side": "left",
-      "timestamp": 364
+      "timestamp": 647
+    },
+    {
+      "number": "15",
+      "name": "APCHAG",
+      "side": "right",
+      "timestamp": 647
+    },
+    {
+      "number": "16",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 647
+    },
+    {
+      "number": "17",
+      "name": "APCHAG",
+      "side": "left",
+      "timestamp": 647
+    },
+    {
+      "number": "18",
+      "name": "ARAE(NAERYEO)MAKG",
+      "side": "left",
+      "timestamp": 688
+    },
+    {
+      "number": "19",
+      "name": "ARAE(NAERYEO)MAKG",
+      "side": "right",
+      "timestamp": 688
+    },
+    {
+      "number": "20",
+      "name": "APCHAGI + OEN ARAE(NAERYOE)MAKG",
+      "side": "left",
+      "timestamp": 688
+    },
+    {
+      "number": "21",
+      "name": "APCHAGI + OREUN (NAERYEO)MAKG",
+      "side": "right",
+      "timestamp": 688
     }
   ],
   "tips": [

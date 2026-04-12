@@ -30,51 +30,135 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "SONAL GEODEUREOMAKGI NYAS",
-      "side": null,
-      "timestamp": 173
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "left",
+      "timestamp": 431
     },
     {
       "number": "2",
-      "name": "APCHAGI + OEN (MOMTONGJJIERUGI",
+      "name": "PYEONSONKEUT SEWOJJIREUGI",
       "side": "right",
-      "timestamp": 511
+      "timestamp": 431
     },
     {
       "number": "3",
       "name": "SONAL GEODEUREOMAKGI",
       "side": "right",
-      "timestamp": 427
+      "timestamp": 431
     },
     {
       "number": "4",
+      "name": "PYEONSONKEUT SEWOJUJIREUGI",
+      "side": "left",
+      "timestamp": 431
+    },
+    {
+      "number": "5",
+      "name": "JEBIPUM ANCHIGI",
+      "side": "right",
+      "timestamp": 517
+    },
+    {
+      "number": "6",
+      "name": "APCHAGI + OEN (MOMTONG)JIERUGI",
+      "side": "right",
+      "timestamp": 517
+    },
+    {
+      "number": "7",
+      "name": "YEOPCHAGI",
+      "side": "left",
+      "timestamp": 517
+    },
+    {
+      "number": "8",
       "name": "YEOPCHAGI + OREUN SONAL GEODEUREOMAKGI",
       "side": "right",
       "timestamp": 517
     },
     {
-      "number": "5",
-      "name": "ANMAKGI + DOUBLE JIREUGI",
+      "number": "9",
+      "name": "BAKKANMAKGI HSE",
       "side": "left",
-      "timestamp": 651
+      "timestamp": 572
     },
     {
-      "number": "6",
+      "number": "10",
+      "name": "APCHAGI + OREUN ANMAKGI",
+      "side": "right",
+      "timestamp": 574
+    },
+    {
+      "number": "11",
+      "name": "BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 578
+    },
+    {
+      "number": "12",
+      "name": "APCHAGI + OEN ANMAKGI",
+      "side": "left",
+      "timestamp": 581
+    },
+    {
+      "number": "13",
+      "name": "JEBIPUM ANCHIGI",
+      "side": "right",
+      "timestamp": 583
+    },
+    {
+      "number": "14",
       "name": "APCHAGI + OREUN DEUNGJUMUCK APCHIGI",
       "side": "right",
       "timestamp": 586
     },
     {
-      "number": "7",
+      "number": "15",
       "name": "BAKKANMAKGI",
       "side": "left",
       "timestamp": 586
     },
     {
-      "number": "71",
+      "number": "16",
       "name": "BAKKANMAKGI",
       "side": "left",
       "timestamp": 581
+    },
+    {
+      "number": "17",
+      "name": "ANMAKGI",
+      "side": "left",
+      "timestamp": 654
+    },
+    {
+      "number": "18",
+      "name": "JIREUGI",
+      "side": "right",
+      "timestamp": 654
+    },
+    {
+      "number": "19",
+      "name": "ANMAKGI",
+      "side": "right",
+      "timestamp": 654
+    },
+    {
+      "number": "20",
+      "name": "JIREUGI",
+      "side": "left",
+      "timestamp": 654
+    },
+    {
+      "number": "21",
+      "name": "ANMAKGI + DOUBLE JIREUGI",
+      "side": "left",
+      "timestamp": 654
+    },
+    {
+      "number": "22",
+      "name": "ANMAKGI + DOUBLE JIREUG",
+      "side": "right",
+      "timestamp": 654
     }
   ],
   "tips": [

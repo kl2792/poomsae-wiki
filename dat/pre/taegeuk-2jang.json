@@ -4,39 +4,105 @@
   "sequence_steps": [
     {
       "number": "1",
+      "name": "ARAEMAKGI",
+      "side": "left",
+      "timestamp": 163
+    },
+    {
+      "number": "2",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 166
+    },
+    {
+      "number": "3",
+      "name": "ARAEMAKGI",
+      "side": "right",
+      "timestamp": 164
+    },
+    {
+      "number": "4",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 169
+    },
+    {
+      "number": "5",
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 170
+    },
+    {
+      "number": "6",
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 169
+    },
+    {
+      "number": "7",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 267
+    },
+    {
+      "number": "8",
+      "name": "APCHAGI+OREUN (ULGULJJIR",
+      "side": "right",
+      "timestamp": 267
+    },
+    {
+      "number": "9",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 267
+    },
+    {
+      "number": "10",
+      "name": "APCHAGI+OEN (ULGUL)JJIREUGI",
+      "side": "left",
+      "timestamp": 267
+    },
+    {
+      "number": "11",
+      "name": "ULGUL(OLLYEO)MAKGI",
+      "side": "left",
+      "timestamp": 267
+    },
+    {
+      "number": "12",
+      "name": "ULGUL(OLLYEO)MAKGI",
+      "side": "right",
+      "timestamp": 267
+    },
+    {
+      "number": "13",
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 349
+    },
+    {
+      "number": "14",
       "name": "OENARAE(NAERYEOJMAKG",
       "side": null,
       "timestamp": 416
     },
     {
-      "number": "2",
-      "name": "APCHAGI + OREUN (MOMTONG)JIREUGI",
+      "number": "15",
+      "name": "APCHAGI + OREUN (MOMTONG)JIREUG",
       "side": "right",
-      "timestamp": 412
+      "timestamp": 416
     },
     {
-      "number": "3",
-      "name": "APCHAGI + OEN (MVOMTONG)JIREUGI",
+      "number": "16",
+      "name": "APCHAG",
       "side": "left",
-      "timestamp": 414
+      "timestamp": 416
     },
     {
-      "number": "4",
-      "name": "APCHAGI + OREUN (MOMTONG)JIREUGI",
+      "number": "17",
+      "name": "APCHAG",
       "side": "right",
-      "timestamp": 417
-    },
-    {
-      "number": "5",
-      "name": "ULGUL(OLLYEO)MAKGI",
-      "side": "left",
-      "timestamp": 264
-    },
-    {
-      "number": "6",
-      "name": "ULGUL(OLLYEO)MAKGI",
-      "side": "right",
-      "timestamp": 267
+      "timestamp": 416
     }
   ],
   "tips": [

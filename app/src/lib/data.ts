@@ -100,6 +100,7 @@ export interface WikiTechniqueTip {
   text: string;
   timestamp?: number;
   video_id?: string;
+  source?: "ocr" | "caption";
 }
 
 export interface WikiTechniqueSource {
@@ -141,7 +142,8 @@ export function getAllTechniques(opts?: {
   if (!opts?.includeDecomposedCombos) {
     values = values.filter((t) => !t.components);
   }
-  return values.sort((a, b) => a.name.en.localeCompare(b.name.en));
+  // Preserve insertion order from techniques.json (curriculum order: TG1→TG8→Koryo→…)
+  return values;
 }
 
 export function getAllTechniqueKeys(opts?: {

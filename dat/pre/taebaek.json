@@ -25,9 +25,9 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "GEUMGANG ANPALMOK (MOM BAKKANMAKGI",
+      "name": "SONAL ARAE(NAERYEO)HECHEOMAKGAE",
       "side": null,
-      "timestamp": 433
+      "timestamp": 274
     },
     {
       "number": "2",
@@ -49,15 +49,15 @@
     },
     {
       "number": "5",
-      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
-      "side": "left",
-      "timestamp": 430
+      "name": "JEBIPUM ANCHIGI",
+      "side": null,
+      "timestamp": 289
     },
     {
       "number": "6",
-      "name": "GEUMGANG ANPALMOK (MOMTONG)BARRANMAKGI",
+      "name": "JEOCHEONAEMYEO OEN (MOMTONG) JIE EUG",
       "side": null,
-      "timestamp": 444
+      "timestamp": 292
     },
     {
       "number": "7",
@@ -73,15 +73,123 @@
     },
     {
       "number": "9",
+      "name": "GEUMGANG ANPALMOK (MOM BAKKANMAKGI",
+      "side": null,
+      "timestamp": 433
+    },
+    {
+      "number": "10",
+      "name": "DANGGYEOUJIREUGI MTIAE",
+      "side": "right",
+      "timestamp": 428
+    },
+    {
+      "number": "11",
+      "name": "(MVOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 434
+    },
+    {
+      "number": "12",
+      "name": "JAGEUN DOLJUJEOGWI",
+      "side": null,
+      "timestamp": 428
+    },
+    {
+      "number": "13",
+      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 430
+    },
+    {
+      "number": "14",
+      "name": "GEUMGANG ANPALMOK (MOMTONG)BARRANMAKGI",
+      "side": null,
+      "timestamp": 444
+    },
+    {
+      "number": "15",
+      "name": "DANGGYEOJIREUGI FRE",
+      "side": "left",
+      "timestamp": 438
+    },
+    {
+      "number": "16",
+      "name": "(MOMTONG)WJIREUG",
+      "side": "right",
+      "timestamp": 440
+    },
+    {
+      "number": "17",
       "name": "JAGEUN DOLUJEOGWI",
       "side": null,
       "timestamp": 442
     },
     {
-      "number": "10",
+      "number": "18",
       "name": "YEOPCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
       "side": "right",
       "timestamp": 446
+    },
+    {
+      "number": "19",
+      "name": "SONAL GEODEUREO (MOMTONG)MAK",
+      "side": "left",
+      "timestamp": 569
+    },
+    {
+      "number": "20",
+      "name": "SONKEUT SEWOJJIREUGI",
+      "side": "right",
+      "timestamp": 569
+    },
+    {
+      "number": "21",
+      "name": "HAND METEURO PPAEGI",
+      "side": "right",
+      "timestamp": 569
+    },
+    {
+      "number": "22",
+      "name": "DEUNGJUMEOK BAKKANCHIGI",
+      "side": null,
+      "timestamp": 569
+    },
+    {
+      "number": "23",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 569
+    },
+    {
+      "number": "24",
+      "name": "GAWIMAKGI",
+      "side": "right",
+      "timestamp": 736
+    },
+    {
+      "number": "25",
+      "name": "APCHAGI + (MOMTONG) DOUBLE JIREUGI",
+      "side": "right",
+      "timestamp": 739
+    },
+    {
+      "number": "26",
+      "name": "GAWIMAKGI",
+      "side": "left",
+      "timestamp": 742
+    },
+    {
+      "number": "27",
+      "name": "APCHAGI + (MOMTONG) DOUBLE JIREUGI",
+      "side": "left",
+      "timestamp": 746
+    },
+    {
+      "number": "28",
+      "name": "GAWIMAKGI",
+      "side": "right",
+      "timestamp": 739
     }
   ],
   "tips": [

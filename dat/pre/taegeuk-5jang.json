@@ -30,45 +30,129 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "(MOMTONG)JANMAKGI + OREUN (MOMTONG)ANMAKGI",
+      "name": "ARAEMAKGI",
       "side": "left",
-      "timestamp": 424
+      "timestamp": 347
     },
     {
       "number": "2",
-      "name": "APCHAGI + OREUN DEUNGJUMEOK APCHIGI + OEN (MOMTONG)JANMAKGI",
-      "side": "right",
-      "timestamp": 427
+      "name": "MEJUMEOK NAERYEOCHIGI",
+      "side": "left",
+      "timestamp": 347
     },
     {
       "number": "3",
-      "name": "APCHAGI + OEN DEUNGJUMEOK APCHIGI + OREUN (MOMTONG)ANMAKGI",
-      "side": "left",
-      "timestamp": 430
+      "name": "ARAEMAKGI",
+      "side": "right",
+      "timestamp": 349
     },
     {
       "number": "4",
-      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
-      "side": "left",
-      "timestamp": 607
+      "name": "MEJUMEOK NAERYEOCHIGI",
+      "side": "right",
+      "timestamp": 351
     },
     {
       "number": "5",
-      "name": "ARAE(NAERYEO)MAKGI + OREUN (MOMTONG)JANMAKGI",
+      "name": "ARAEMAKGI",
       "side": "left",
-      "timestamp": 611
+      "timestamp": 353
     },
     {
       "number": "6",
+      "name": "(MOMTONG)ANMAKGI + OREUNRMOMTONG)JANMAKGI",
+      "side": "left",
+      "timestamp": 435
+    },
+    {
+      "number": "7",
+      "name": "APCHAGI + OREUN DEUN",
+      "side": "right",
+      "timestamp": 435
+    },
+    {
+      "number": "8",
+      "name": "APCHAGI + OEN DEUN IMEOK APCHIGI + OREUN (MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 435
+    },
+    {
+      "number": "9",
+      "name": "DEUNGJUMEOK APCHIGI",
+      "side": "right",
+      "timestamp": 435
+    },
+    {
+      "number": "10",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 526
+    },
+    {
+      "number": "11",
+      "name": "PALGGUMCHI DOLLYEOCHIGI",
+      "side": "right",
+      "timestamp": 517
+    },
+    {
+      "number": "12",
+      "name": "SONAL BAKKANMAKGI",
+      "side": "right",
+      "timestamp": 526
+    },
+    {
+      "number": "13",
+      "name": "PALGGUMCHI DOLLYEOCHIGI",
+      "side": "left",
+      "timestamp": 526
+    },
+    {
+      "number": "14",
+      "name": "ARAE(NAERYEO)MAKGI + OREUN (MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 526
+    },
+    {
+      "number": "15",
       "name": "APCHAGI + OREUN ARAE(NAERYEO)MAKGI + OEN (MOMTONG)ANMAKGI",
       "side": "right",
       "timestamp": 530
     },
     {
-      "number": "7",
-      "name": "ARAEMAKGI",
+      "number": "16",
+      "name": "ULGUL(OLLYEO)MAKGI",
       "side": "left",
-      "timestamp": 353
+      "timestamp": 610
+    },
+    {
+      "number": "17",
+      "name": "YEOPCHAGI + OEN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "right",
+      "timestamp": 604
+    },
+    {
+      "number": "18",
+      "name": "ULGUL(OLLYEO)MAKGI",
+      "side": "right",
+      "timestamp": 605
+    },
+    {
+      "number": "19",
+      "name": "YEOPCHAGI + OREUN PALGGUMCHI PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 607
+    },
+    {
+      "number": "20",
+      "name": "ARAE(NAERYEO)MAKGI + OREUN (MOMTONG)JANMAKGI",
+      "side": "left",
+      "timestamp": 611
+    },
+    {
+      "number": "21",
+      "name": "APCHAGI + OREUN DEUNGJUMEOK APCHIGI",
+      "side": "right",
+      "timestamp": 613
     }
   ],
   "tips": [

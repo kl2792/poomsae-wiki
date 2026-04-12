@@ -98,21 +98,23 @@ export default function TechniqueDetail({
                 {t.tips.map((tip, i) => {
                   const hasTimestamp =
                     tip.timestamp !== undefined && tip.timestamp > 0;
+                  const isCaption = (tip as { source?: string }).source === "caption";
+                  const prefix = isCaption ? "🎤 " : "";
                   return (
                     <li key={i} className="flex gap-2 text-sm">
                       {hasTimestamp ? (
                         <button
                           onClick={() => handleTipClick(tip.timestamp!)}
-                          className="text-blue-600 hover:text-blue-800 font-mono text-xs whitespace-nowrap mt-0.5"
+                          className="text-blue-600 hover:text-blue-800 font-mono text-xs whitespace-nowrap mt-0.5 w-8 text-left shrink-0"
                         >
                           {formatTime(tip.timestamp!)}
                         </button>
                       ) : (
-                        <span className="text-gray-300 font-mono text-xs whitespace-nowrap mt-0.5">
+                        <span className="text-gray-300 font-mono text-xs whitespace-nowrap mt-0.5 w-8 shrink-0">
                           --:--
                         </span>
                       )}
-                      <span className="text-gray-700">{tip.text}</span>
+                      <span className={isCaption ? "text-gray-400" : "text-gray-700"}>{prefix}{tip.text}</span>
                     </li>
                   );
                 })}

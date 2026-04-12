@@ -46,51 +46,69 @@
     },
     {
       "number": "2",
-      "name": "ARAE(NAERYEO) MAKGI (",
-      "side": null,
-      "timestamp": 217
+      "name": "(MOMTONG)JIREUG",
+      "side": "right",
+      "timestamp": 507
     },
     {
       "number": "3",
       "name": "ARAE(NAERYEO)MAKGI",
       "side": "right",
-      "timestamp": 502
+      "timestamp": 507
     },
     {
       "number": "4",
-      "name": "(MOMTONG)JIREUGI",
+      "name": "(MOMTONG)JIREUG",
       "side": "left",
-      "timestamp": 624
+      "timestamp": 507
     },
     {
       "number": "5",
-      "name": "OLLYEO(ULGUL) MAKGI",
-      "side": null,
-      "timestamp": 346
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 507
     },
     {
       "number": "6",
-      "name": "(MOMTONG)JIREUGI",
+      "name": "(MOMTONG)JIREUG",
       "side": "right",
-      "timestamp": 509
+      "timestamp": 507
     },
     {
       "number": "7",
-      "name": "NARANHISEOGI",
-      "side": null,
-      "timestamp": 485
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 627
     },
     {
       "number": "8",
-      "name": "APSEOGI",
-      "side": null,
-      "timestamp": 427
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 627
     },
     {
       "number": "9",
-      "name": "APGUBI",
-      "side": null,
-      "timestamp": 485
+      "name": "(MOMTONG)ANMAKG",
+      "side": "right",
+      "timestamp": 627
+    },
+    {
+      "number": "10",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 627
+    },
+    {
+      "number": "11",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 627
+    },
+    {
+      "number": "12",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "left",
+      "timestamp": 627
     }
   ],
   "tips": [

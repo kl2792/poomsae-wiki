@@ -25,9 +25,9 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "name": "ANPALMOK (MOMTONG)BAKKANMAKGI",
       "side": "left",
-      "timestamp": 894
+      "timestamp": 295
     },
     {
       "number": "2",
@@ -37,9 +37,9 @@
     },
     {
       "number": "3",
-      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "name": "ANPALMOK (MOMTONG)BAKKANMAKGI",
       "side": "right",
-      "timestamp": 900
+      "timestamp": 307
     },
     {
       "number": "4",
@@ -49,9 +49,9 @@
     },
     {
       "number": "5",
-      "name": "HAKDARI ARAE(NAERYEO) YEOPMAKGI",
-      "side": null,
-      "timestamp": 718
+      "name": "ARAE(NERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 321
     },
     {
       "number": "6",
@@ -61,9 +61,9 @@
     },
     {
       "number": "7",
-      "name": "YEOPCHAGI + OEN ARAE(NAERYEO) YEOPMAKGR",
-      "side": "right",
-      "timestamp": 723
+      "name": "ANPALMOK (MOMTONG)BAKKANMAKGI",
+      "side": "left",
+      "timestamp": 300
     },
     {
       "number": "8",
@@ -73,15 +73,87 @@
     },
     {
       "number": "9",
+      "name": "HWANGSOMAKGI",
+      "side": null,
+      "timestamp": 703
+    },
+    {
+      "number": "10",
+      "name": "PALMOK ARAE(NAERYEO) YEOPMAKGI",
+      "side": "left",
+      "timestamp": 707
+    },
+    {
+      "number": "11",
+      "name": "SONAL(MOMTONG) YEOPMAKGI",
+      "side": "right",
+      "timestamp": 710
+    },
+    {
+      "number": "12",
+      "name": "MEJUMEOK (YEOP)PYOJEOKCHIGI",
+      "side": "left",
+      "timestamp": 713
+    },
+    {
+      "number": "13",
+      "name": "HAKDARI ARAE(NAERYEO) YEOPMAKGI",
+      "side": null,
+      "timestamp": 718
+    },
+    {
+      "number": "14",
+      "name": "JAGEUN DOLJUJEOGWI",
+      "side": null,
+      "timestamp": 728
+    },
+    {
+      "number": "15",
+      "name": "YEOPCHAGI + OEN ARAE(NAERYEO) YEOPMAKGR",
+      "side": "right",
+      "timestamp": 723
+    },
+    {
+      "number": "16",
+      "name": "JAGEUN DOLJJEOGWI",
+      "side": null,
+      "timestamp": 727
+    },
+    {
+      "number": "17",
       "name": "YEOPCHAGI + OREUN (MOMTONG)JIREUGI",
       "side": "left",
       "timestamp": 733
     },
     {
-      "number": "10",
+      "number": "18",
       "name": "(MOMTONG)JIREUGI",
       "side": "right",
       "timestamp": 734
+    },
+    {
+      "number": "19",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 904
+    },
+    {
+      "number": "20",
+      "name": "SONAL GEODEUREO (MOMTONG)MAKGI",
+      "side": "right",
+      "timestamp": 904
+    },
+    {
+      "number": "21",
+      "name": "SONAL GEODEUREO ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 904
+    },
+    {
+      "number": "22",
+      "name": "SONAL GEODEUREO (MOMTONG)MAKGI",
+      "side": "left",
+      "timestamp": 904
     }
   ],
   "tips": [

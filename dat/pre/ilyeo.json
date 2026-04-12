@@ -25,60 +25,162 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "OESANTEUL YEOPCHAGI E )",
+      "name": "SONAL GEODEUREOMAKGI",
       "side": "left",
-      "timestamp": 543
+      "timestamp": 283
     },
     {
       "number": "2",
-      "name": "OTGOREO ULGUL(OLLYEO)MAKGI HASME",
-      "side": null,
-      "timestamp": 369
+      "name": "JIREUGI",
+      "side": "right",
+      "timestamp": 272
     },
     {
       "number": "3",
-      "name": "OTGOREO ULGUL(OLLYEO)MMAKGI",
-      "side": null,
-      "timestamp": 695
-    },
-    {
-      "number": "4",
       "name": "SONAL GEODEUREOMAKGI",
       "side": "left",
       "timestamp": 285
     },
     {
-      "number": "5",
-      "name": "SONAL GEODEUREOMAKGI",
-      "side": "left",
-      "timestamp": 378
+      "number": "4",
+      "name": "JIREUG",
+      "side": "right",
+      "timestamp": 286
     },
     {
-      "number": "6",
+      "number": "5",
       "name": "PYEONSONKEUT SEWOJJIREUGI",
       "side": "left",
       "timestamp": 288
     },
     {
+      "number": "6",
+      "name": "OESANTEUL YEOPCHAGI",
+      "side": "left",
+      "timestamp": 365
+    },
+    {
       "number": "7",
+      "name": "OTGOREO ULGUL(OLLYEO)MAKGI HASME",
+      "side": null,
+      "timestamp": 369
+    },
+    {
+      "number": "8",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 369
+    },
+    {
+      "number": "9",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 370
+    },
+    {
+      "number": "10",
+      "name": "SONAL GEODEUREOMAKGI",
+      "side": "left",
+      "timestamp": 378
+    },
+    {
+      "number": "11",
+      "name": "JIREUGI",
+      "side": "right",
+      "timestamp": 380
+    },
+    {
+      "number": "12",
       "name": "PYEONSONKEUT SEWOUJJIREUGI",
       "side": "right",
       "timestamp": 383
     },
     {
-      "number": "8",
+      "number": "13",
+      "name": "OESANTEUL YEOPCHAGI E )",
+      "side": "left",
+      "timestamp": 543
+    },
+    {
+      "number": "14",
+      "name": "OTGOREO ULGUL(OLLYEO)MAKGI",
+      "side": null,
+      "timestamp": 543
+    },
+    {
+      "number": "15",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 543
+    },
+    {
+      "number": "16",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 543
+    },
+    {
+      "number": "17",
+      "name": "DUJUMEOK HEORI",
+      "side": null,
+      "timestamp": 543
+    },
+    {
+      "number": "18",
+      "name": "APCHAGI",
+      "side": "right",
+      "timestamp": 691
+    },
+    {
+      "number": "19",
+      "name": "TTWIEO YEOPCHAGI",
+      "side": "left",
+      "timestamp": 693
+    },
+    {
+      "number": "20",
+      "name": "OTGOREO ULGUL(OLLYEO)MMAKGI",
+      "side": null,
+      "timestamp": 695
+    },
+    {
+      "number": "21",
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 697
+    },
+    {
+      "number": "22",
+      "name": "GEUMGANGMAKGI",
+      "side": null,
+      "timestamp": 702
+    },
+    {
+      "number": "23",
+      "name": "DUJUMEOK HEORI",
+      "side": null,
+      "timestamp": 705
+    },
+    {
+      "number": "24",
+      "name": "APCHAGI",
+      "side": "left",
+      "timestamp": 708
+    },
+    {
+      "number": "25",
       "name": "TTWIEO YEOPCHAGI",
       "side": "right",
       "timestamp": 708
     },
     {
-      "number": "9",
+      "number": "26",
       "name": "OTGOREO ULGUL(OLLYEO)MAKGI",
       "side": null,
       "timestamp": 711
     },
     {
-      "number": "71",
+      "number": "27",
       "name": "APCHAGI AME",
       "side": "right",
       "timestamp": 695

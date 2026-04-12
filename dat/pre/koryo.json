@@ -70,33 +70,33 @@
   "sequence_steps": [
     {
       "number": "1",
-      "name": "MEJUMEOK PYOJEOKARAE(NAERYEO)CHIGI (",
+      "name": "TONGMILGI JUNBIJASE",
       "side": null,
-      "timestamp": 1141
+      "timestamp": 567
     },
     {
       "number": "2",
-      "name": "SONAL BAKKANCHIGI + OEN SONAL ARAE(NAERYEO)MAKGI (",
+      "name": "SONAL GEODEUREOMAKGI (A",
       "side": "left",
-      "timestamp": 1129
+      "timestamp": 582
     },
     {
       "number": "3",
-      "name": "SONAL ANCHIGI + OREUN SONAL ARAE(NAERYEO)MAKGI",
+      "name": "GEODEUPYEOPCHAGI + OREUN SONAL BAKKANCHIGI",
       "side": "right",
-      "timestamp": 1131
+      "timestamp": 582
     },
     {
       "number": "4",
-      "name": "SONAL ANCHIGI + OEN SONAL ARAE(NAEBYEQ)MAKGI",
+      "name": "(MOMTONG)JIREUGI",
       "side": "left",
-      "timestamp": 1141
+      "timestamp": 585
     },
     {
       "number": "5",
-      "name": "PALGGUMCHI YEOPCHIGI",
-      "side": null,
-      "timestamp": 330
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "right",
+      "timestamp": 588
     },
     {
       "number": "6",
@@ -112,51 +112,207 @@
     },
     {
       "number": "8",
-      "name": "AGEUMSON APCHIGI",
-      "side": null,
-      "timestamp": 380
+      "name": "(MOMTONG)JIREUGI",
+      "side": "right",
+      "timestamp": 601
     },
     {
       "number": "9",
-      "name": "BATANGSON NULLEOMAKGI",
-      "side": null,
-      "timestamp": 406
+      "name": "(MOMTONG)ANMAKGI",
+      "side": "left",
+      "timestamp": 604
     },
     {
       "number": "10",
-      "name": "MEJUMEOK PYOJEOKARAECHIGI",
+      "name": "TONGMILG",
       "side": null,
-      "timestamp": 432
+      "timestamp": 574
     },
     {
       "number": "11",
-      "name": "(PYEONSONKEUT) JEOTHYEOJJIREUGI",
-      "side": "right",
-      "timestamp": 940
+      "name": "SONAL ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 702
     },
     {
       "number": "12",
-      "name": "ARAE(NAERYEO)MAKGI",
-      "side": "left",
-      "timestamp": 938
+      "name": "AGUMSON APCHIGI (",
+      "side": "right",
+      "timestamp": 712
     },
     {
       "number": "13",
-      "name": "BATANGSON (MOMTONG)NULLEOMAKGI",
+      "name": "APCHAGI",
       "side": "right",
-      "timestamp": 938
+      "timestamp": 707
     },
     {
       "number": "14",
+      "name": "SONAL ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 709
+    },
+    {
+      "number": "15",
+      "name": "AGUMSON APCHIGI",
+      "side": "left",
+      "timestamp": 712
+    },
+    {
+      "number": "16",
+      "name": "APCHAGI",
+      "side": "left",
+      "timestamp": 715
+    },
+    {
+      "number": "17",
+      "name": "SONAL ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 721
+    },
+    {
+      "number": "18",
+      "name": "AGUMSON APCHIGI",
+      "side": "right",
+      "timestamp": 721
+    },
+    {
+      "number": "19",
+      "name": "APCHAGI",
+      "side": "right",
+      "timestamp": 724
+    },
+    {
+      "number": "20",
+      "name": "(MUREUP)NULLEOKKEOKG",
+      "side": "left",
+      "timestamp": 727
+    },
+    {
+      "number": "21",
+      "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
+      "side": null,
+      "timestamp": 732
+    },
+    {
+      "number": "22",
+      "name": "APCHAGI",
+      "side": "left",
+      "timestamp": 734
+    },
+    {
+      "number": "23",
+      "name": "(MUREUP)NULLEOKKEOKGI",
+      "side": "right",
+      "timestamp": 739
+    },
+    {
+      "number": "24",
       "name": "ANPALMOK (MOMTONG)HECHEOMAKGI",
       "side": null,
       "timestamp": 739
     },
     {
-      "number": "71",
-      "name": "TONGMILG",
+      "number": "25",
+      "name": "SONAL YEOPMAKGI",
+      "side": "left",
+      "timestamp": 899
+    },
+    {
+      "number": "26",
+      "name": "YEOPCHAGI",
+      "side": "left",
+      "timestamp": 905
+    },
+    {
+      "number": "27",
+      "name": "(PYEONSONKEUT) JEOTHYEOJJIREUGI",
+      "side": "left",
+      "timestamp": 911
+    },
+    {
+      "number": "28",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 911
+    },
+    {
+      "number": "29",
+      "name": "SONAL YEOPMAKGI",
+      "side": "right",
+      "timestamp": 927
+    },
+    {
+      "number": "30",
+      "name": "PYOJEOKJIREUGI",
+      "side": "left",
+      "timestamp": 929
+    },
+    {
+      "number": "31",
+      "name": "YEOPCHAGI",
+      "side": "right",
+      "timestamp": 926
+    },
+    {
+      "number": "32",
+      "name": "(PYEONSONKEUT) JEOTHYEOJJIREUGI",
+      "side": "right",
+      "timestamp": 940
+    },
+    {
+      "number": "33",
+      "name": "ARAE(NAERYEO)MAKGI",
+      "side": "left",
+      "timestamp": 938
+    },
+    {
+      "number": "34",
+      "name": "BATANGSON (MOMTONG)NULLEOMAKGI",
+      "side": "right",
+      "timestamp": 938
+    },
+    {
+      "number": "35",
+      "name": "MEJUMEOK PYOJEOKARAE(NAERYEO)CHIGI (",
       "side": null,
-      "timestamp": 574
+      "timestamp": 1141
+    },
+    {
+      "number": "36",
+      "name": "SONAL BAKKANCHIGI + OEN SONAL ARAE(NAERYEO)MAKGI (",
+      "side": "left",
+      "timestamp": 1129
+    },
+    {
+      "number": "37",
+      "name": "SONAL ANCHIGI + OREUN SONAL ARAE(NAERYEO)MAKGI",
+      "side": "right",
+      "timestamp": 1131
+    },
+    {
+      "number": "38",
+      "name": "SONAL ANCHIGI + OEN SONAL ARAE(NAEBYEQ)MAKGI",
+      "side": "left",
+      "timestamp": 1141
+    },
+    {
+      "number": "39",
+      "name": "AGUMSON APCHIGI",
+      "side": "right",
+      "timestamp": 1145
+    },
+    {
+      "number": "40",
+      "name": "MEJUMEOK PYOJEGKSRAE(NAERYEO)CHIGI",
+      "side": null,
+      "timestamp": 1126
+    },
+    {
+      "number": "41",
+      "name": "MEJUMEOK",
+      "side": null,
+      "timestamp": 1124
     }
   ],
   "tips": [
