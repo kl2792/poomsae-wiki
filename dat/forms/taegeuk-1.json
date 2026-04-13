@@ -1,227 +1,147 @@
 {
   "id": "taegeuk-1",
-  "name": {
-    "en": "Taegeuk Il Jang",
-    "ko": "태극 1장"
-  },
-  "meaning": {
-    "en": "Heaven (Keon ☰)"
-  },
+  "name": {"en": "Taegeuk Il Jang", "ko": "태극 1장"},
+  "meaning": {"en": "Heaven (Keon ☰)"},
   "belt": "8th Geup",
   "dan": null,
-  "total_moves": 9,
+  "total_moves": 18,
   "video_id": "WhkjRruCBTo",
   "video_duration_seconds": 970,
   "sections": {
-    "intro": {
-      "start": 0,
-      "end": 152
-    },
-    "breakdown": {
-      "start": 152,
-      "end": 156
-    },
-    "explanation": {
-      "start": 156,
-      "end": 885
-    },
-    "repeat": {
-      "start": 885,
-      "end": 970
-    }
+    "intro": {"start": 0, "end": 126},
+    "breakdown": {"start": 126, "end": 487},
+    "explanation": {"start": 490, "end": 885},
+    "repeat": {"start": 885, "end": 940}
   },
   "techniques": [
     {
       "key": "ready-stance",
-      "name": {
-        "en": "Ready Stance",
-        "ko": "기본 준비자세",
-        "romanized": "Gibon Junbijase"
-      },
+      "name": {"en": "Ready Stance", "ko": "기본 준비자세", "romanized": "Gibon Junbi Jase"},
       "category": "stance",
       "video_timestamp": 161,
-      "video_timestamp_end": 217,
+      "video_timestamp_end": 216,
       "tips": [
-        {
-          "text": "where you can stand and move your left foot about a foot's length to your left",
-          "timestamp": 166,
-          "source": "caption"
-        },
-        {
-          "text": "breathe in open your fists and raise them from the lower abdomen",
-          "timestamp": 175,
-          "source": "caption"
-        },
-        {
-          "text": "up to the solar plexus breathe out then lower your fists back",
-          "timestamp": 180,
-          "source": "caption"
-        },
-        {
-          "text": "your face torso and lower body should be balanced along the center line",
-          "timestamp": 185
-        },
-        {
-          "text": "and your weight should be placed evenly on both feet",
-          "timestamp": 193,
-          "source": "caption"
-        }
+        {"text": "Begin with Moaseogi: stand and move your left foot about a foot's length to your left", "timestamp": 166},
+        {"text": "Breathe in, open your fists and raise them from the lower abdomen up to the solar plexus", "timestamp": 175},
+        {"text": "Breathe out, then lower your fists back to the lower abdomen", "timestamp": 180},
+        {"text": "Your face, torso, and lower body should be balanced along the center line", "timestamp": 185},
+        {"text": "Your weight should be placed evenly on both feet", "timestamp": 193},
+        {"text": "Both elbows should be bent like the internal angles of a hexagram", "timestamp": 196},
+        {"text": "Your fists should be placed apart about a fist's length", "timestamp": 200},
+        {"text": "Retain 30% of your breath in the lower abdomen once the preparatory move is complete", "timestamp": 206},
+        {"text": "Be careful not to raise or tense your shoulders", "timestamp": 211}
       ]
     },
     {
       "key": "low-block",
-      "name": {
-        "en": "Low Block",
-        "ko": "아래막기",
-        "romanized": "Arae Makgi"
-      },
+      "name": {"en": "Low Block", "ko": "아래막기", "romanized": "Arae Makgi"},
       "category": "block",
-      "video_timestamp": 217,
-      "video_timestamp_end": 344,
+      "video_timestamp": 216,
+      "video_timestamp_end": 253,
       "tips": [
-        {
-          "text": "towards the lower body with your outer wrist",
-          "timestamp": 222,
-          "source": "caption"
-        },
-        {
-          "text": "The blocking arm’s elbow should be ~S “",
-          "timestamp": 223
-        },
-        {
-          "text": "straightened in a way that positions your fist ;",
-          "timestamp": 224
-        },
-        {
-          "text": "above your knees about two fists length and the wrist on the supporting arm",
-          "timestamp": 227,
-          "source": "caption"
-        },
-        {
-          "text": "should be straightened so that the back of",
-          "timestamp": 231
-        }
+        {"text": "Block an opponent's attack towards the lower body with your outer wrist", "timestamp": 216},
+        {"text": "The blocking arm's elbow should position your fist above your knees about two fists' length", "timestamp": 227},
+        {"text": "The wrist on the supporting arm should be straightened so the back of your hand faces down", "timestamp": 235},
+        {"text": "The wrist touches above the waist; the torso and arm should spin simultaneously", "timestamp": 241},
+        {"text": "The blocking arm's elbow should not move in a straight line", "timestamp": 244}
       ]
     },
     {
-      "key": "high-rising-block",
-      "name": {
-        "en": "High Rising Block",
-        "ko": "얼굴올려막기",
-        "romanized": "Ulgul Ollyeo Makgi"
-      },
+      "key": "middle-punch",
+      "name": {"en": "Middle Punch", "ko": "몸통지르기", "romanized": "Momtong Jireugi"},
+      "category": "strike",
+      "video_timestamp": 253,
+      "video_timestamp_end": 305,
+      "tips": [
+        {"text": "Thrust with the fist to attack an opponent's torso", "timestamp": 253},
+        {"text": "The thrusting arm should be straightened and your fist should form a straight line", "timestamp": 260},
+        {"text": "The supporting arm wrist should be straightened with the back of your hand facing down", "timestamp": 265},
+        {"text": "The thrusting arm should move straight forward", "timestamp": 278},
+        {"text": "The supporting arm should be pulled back slightly, brushing your waist", "timestamp": 288},
+        {"text": "Do not pull the supporting arm back excessively, pulling the shoulder along", "timestamp": 291},
+        {"text": "The spin of the thrusting wrist should complete once your fist makes contact", "timestamp": 297},
+        {"text": "Keep a straight line when punching a target with your fist", "timestamp": 305}
+      ]
+    },
+    {
+      "key": "inward-middle-block",
+      "name": {"en": "Inward Middle Block", "ko": "몸통안막기", "romanized": "Momtong An Makgi"},
+      "category": "block",
+      "video_timestamp": 305,
+      "video_timestamp_end": 344,
+      "tips": [
+        {"text": "Defend from an opponent's outside attack using the outer wrist", "timestamp": 305},
+        {"text": "The outer wrist should be level with the solar plexus", "timestamp": 311},
+        {"text": "The location of your fist should coincide with the center line", "timestamp": 315},
+        {"text": "The beginning position is about a fist's length above the shoulder", "timestamp": 328},
+        {"text": "The elbow of your defending arm should pull towards the torso", "timestamp": 334},
+        {"text": "The elbow of the supporting arm should be pulled slightly", "timestamp": 339}
+      ]
+    },
+    {
+      "key": "upper-block",
+      "name": {"en": "Upper Block", "ko": "올려막기", "romanized": "Ollyeo Makgi"},
       "category": "block",
       "video_timestamp": 344,
       "video_timestamp_end": 376,
       "tips": [
-        {
-          "text": "towards the face by raising your outer wrist cross your arms in front of your",
-          "timestamp": 350,
-          "source": "caption"
-        },
-        {
-          "text": "and protect from an opponent's attack by raising them upwards",
-          "timestamp": 354,
-          "source": "caption"
-        },
-        {
-          "text": "the arm should be tilted with a space about the size of a fist",
-          "timestamp": 361,
-          "source": "caption"
-        },
-        {
-          "text": "the back of the wrist and the forehead",
-          "timestamp": 362
-        },
-        {
-          "text": "Wthe arm should be tilted with",
-          "timestamp": 363
-        }
+        {"text": "Protect from an opponent's attack towards the face by raising your outer wrist", "timestamp": 344},
+        {"text": "Cross your arms in front and protect by raising them upwards", "timestamp": 354},
+        {"text": "The fist on the defending arm should be above the elbow", "timestamp": 361},
+        {"text": "Space about the size of a fist between the back of the wrist and the forehead", "timestamp": 364},
+        {"text": "Leave space between the head and arms when seen from the front", "timestamp": 371},
+        {"text": "Be careful not to raise your arm excessively", "timestamp": 370}
       ]
     },
     {
       "key": "front-kick",
-      "name": {
-        "en": "Front Kick",
-        "ko": "앞차기",
-        "romanized": "Ap Chagi"
-      },
+      "name": {"en": "Front Kick", "ko": "앞차기", "romanized": "Ap Chagi"},
       "category": "kick",
       "video_timestamp": 376,
+      "video_timestamp_end": 409,
+      "tips": [
+        {"text": "The kicking leg starts on top of the knee of your supporting leg", "timestamp": 380},
+        {"text": "The forward kicking leg should be bent so your front sole touches the ground", "timestamp": 394},
+        {"text": "Train this technique using coordination of the upper and lower body", "timestamp": 397}
+      ]
+    },
+    {
+      "key": "parallel-stance",
+      "name": {"en": "Parallel Stance", "ko": "나란히서기", "romanized": "Naranhi Seogi"},
+      "category": "stance",
+      "video_timestamp": 409,
       "video_timestamp_end": 427,
       "tips": [
-        {
-          "text": "so that the kicking leg starts on top of the knee of your supporting leg",
-          "timestamp": 380,
-          "source": "caption"
-        },
-        {
-          "text": "WM the kick should be made with your leg bent \\ :",
-          "timestamp": 384
-        },
-        {
-          "text": "the forward kicking leg should be bent in a way where your front sole touches",
-          "timestamp": 392
-        },
-        {
-          "text": "touches the ground train this technique using coordination of the upper and",
-          "timestamp": 397,
-          "source": "caption"
-        },
-        {
-          "text": "naranjisoki consists of keeping your feet parallel so that the back of the",
-          "timestamp": 409,
-          "source": "caption"
-        }
+        {"text": "Keep your feet parallel so that the back of the feet align naturally as if stopping after walking", "timestamp": 409},
+        {"text": "The center of your body should be placed in between your feet, chest relaxed", "timestamp": 424}
       ]
     },
     {
       "key": "walking-stance",
-      "name": {
-        "en": "Walking Stance",
-        "ko": "앞서기",
-        "romanized": "Ap Seogi"
-      },
+      "name": {"en": "Walking Stance", "ko": "앞서기", "romanized": "Ap Seogi"},
       "category": "stance",
       "video_timestamp": 427,
-      "video_timestamp_end": 156,
-      "tips": []
+      "video_timestamp_end": 449,
+      "tips": [
+        {"text": "The distance between feet is about one step; center of body placed between feet", "timestamp": 428},
+        {"text": "Body should stand straight; back of the foot blade on the front foot and inner heel on hind foot on the same line", "timestamp": 434},
+        {"text": "The sole of the hind foot should face outwards with a tilt of around 30 degrees", "timestamp": 444}
+      ]
     },
     {
       "key": "front-stance",
-      "name": {
-        "en": "Front Stance",
-        "ko": "앞굽이",
-        "romanized": "Ap Gubi"
-      },
+      "name": {"en": "Front Stance", "ko": "앞굽이", "romanized": "Ap Gubi"},
       "category": "stance",
-      "video_timestamp": 0,
-      "video_timestamp_end": 161,
-      "tips": []
-    },
-    {
-      "key": "side-punch",
-      "name": {
-        "en": "Side Punch",
-        "ko": "옆지르기",
-        "romanized": "Yeop Jireugi"
-      },
-      "category": "strike",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "parallel-stance",
-      "name": {
-        "en": "Parallel Stance",
-        "ko": "나란히서기",
-        "romanized": "Naranhi Seogi"
-      },
-      "category": "stance",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
+      "video_timestamp": 449,
+      "video_timestamp_end": 487,
+      "tips": [
+        {"text": "The knee on the front leg is bent and the two legs are spread apart", "timestamp": 456},
+        {"text": "The distance between front and hind foot should be about one and a half steps", "timestamp": 461},
+        {"text": "The space between the two feet should be about the length of a fist", "timestamp": 467},
+        {"text": "The sole of the hind foot should face outwards with a tilt of around 30 degrees", "timestamp": 474},
+        {"text": "The knee of your front leg should not bend excessively nor stick out in front of the tip of the foot", "timestamp": 480},
+        {"text": "Your hind leg should straighten in a straight line", "timestamp": 484}
+      ]
     }
   ],
   "sequence": [
@@ -230,81 +150,180 @@
       "technique": "low-block",
       "side": "left",
       "direction": "left-90",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 507,
-      "timestamp_end": 217
+      "timestamp": 499,
+      "timestamp_end": 502
     },
     {
       "step": 2,
-      "technique": "low-block",
-      "side": null,
+      "technique": "middle-punch",
+      "side": "right",
       "direction": "forward",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 217,
-      "timestamp_end": 502
+      "timestamp": 502,
+      "timestamp_end": 504
     },
     {
       "step": 3,
       "technique": "low-block",
       "side": "right",
-      "direction": "right-90",
+      "direction": "right-180",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 502,
-      "timestamp_end": 624
+      "timestamp": 504,
+      "timestamp_end": 505
     },
     {
       "step": 4,
-      "technique": "side-punch",
+      "technique": "middle-punch",
       "side": "left",
       "direction": "forward",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 624,
-      "timestamp_end": 346
+      "timestamp": 505,
+      "timestamp_end": 506
     },
     {
       "step": 5,
-      "technique": "high-rising-block",
-      "side": null,
+      "technique": "low-block",
+      "side": "left",
       "direction": "left-90",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 346,
-      "timestamp_end": 509
+      "timestamp": 506,
+      "timestamp_end": 508
     },
     {
       "step": 6,
-      "technique": "side-punch",
+      "technique": "middle-punch",
       "side": "right",
       "direction": "forward",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 509,
-      "timestamp_end": 485
+      "timestamp": 508,
+      "timestamp_end": 509
     },
     {
       "step": 7,
-      "technique": "parallel-stance",
-      "side": null,
-      "direction": "left-90",
+      "technique": "inward-middle-block",
+      "side": "left",
+      "direction": "right-90",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 485,
-      "timestamp_end": 427
+      "timestamp": 618,
+      "timestamp_end": 620
     },
     {
       "step": 8,
-      "technique": "walking-stance",
-      "side": null,
+      "technique": "middle-punch",
+      "side": "right",
       "direction": "forward",
+      "stance": "walking-stance",
       "kihap": false,
-      "timestamp": 427,
-      "timestamp_end": 485
+      "timestamp": 620,
+      "timestamp_end": 622
     },
     {
       "step": 9,
-      "technique": "front-stance",
-      "side": null,
+      "technique": "inward-middle-block",
+      "side": "right",
+      "direction": "left-180",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 622,
+      "timestamp_end": 624
+    },
+    {
+      "step": 10,
+      "technique": "middle-punch",
+      "side": "left",
       "direction": "forward",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 624,
+      "timestamp_end": 626
+    },
+    {
+      "step": 11,
+      "technique": "low-block",
+      "side": "right",
+      "direction": "left-90",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 626,
+      "timestamp_end": 628
+    },
+    {
+      "step": 12,
+      "technique": "middle-punch",
+      "side": "left",
+      "direction": "forward",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 628,
+      "timestamp_end": 630
+    },
+    {
+      "step": 13,
+      "technique": "upper-block",
+      "side": "left",
+      "direction": "right-90",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 732,
+      "timestamp_end": 735
+    },
+    {
+      "step": 14,
+      "technique": "front-kick+middle-punch",
+      "side": "right",
+      "direction": "forward",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 735,
+      "timestamp_end": 738
+    },
+    {
+      "step": 15,
+      "technique": "upper-block",
+      "side": "right",
+      "direction": "left-180",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 738,
+      "timestamp_end": 740
+    },
+    {
+      "step": 16,
+      "technique": "front-kick+middle-punch",
+      "side": "left",
+      "direction": "forward",
+      "stance": "walking-stance",
       "kihap": true,
-      "timestamp": 485,
-      "timestamp_end": 0
+      "timestamp": 740,
+      "timestamp_end": 742
+    },
+    {
+      "step": 17,
+      "technique": "low-block",
+      "side": "left",
+      "direction": "left-90",
+      "stance": "walking-stance",
+      "kihap": false,
+      "timestamp": 816,
+      "timestamp_end": 838
+    },
+    {
+      "step": 18,
+      "technique": "middle-punch",
+      "side": "right",
+      "direction": "forward",
+      "stance": "front-stance",
+      "kihap": true,
+      "timestamp": 838,
+      "timestamp_end": 852
     }
   ]
 }

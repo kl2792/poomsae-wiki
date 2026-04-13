@@ -191,8 +191,9 @@ def find_vtt_file(slug: str) -> Path | None:
 
     video_id = meta["video_id"]
 
-    # Search patterns: dat/ and dat/raw/ for files containing the video ID
-    search_dirs = [DAT_DIR, RAW_DIR]
+    # Prefer Whisper (higher quality), then YouTube auto-captions
+    WHISPER_DIR = DAT_DIR / "whisper"
+    search_dirs = [WHISPER_DIR, DAT_DIR, RAW_DIR]
     for search_dir in search_dirs:
         if not search_dir.exists():
             continue
