@@ -1,0 +1,6 @@
+1:"$Sreact.fragment"
+2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js"],"default"]
+3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
+4:"$Sreact.suspense"
+0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"anpalmok-arae-naeryeo-pyojeokmakgi","name":{"en":"Anpalmok Arae Naeryeo Pyojeokmakgi","ko":"(몸통)안막기","romanized":"Anpalmok Arae Naeryeo Pyojeokmakgi"},"category":"block","source":{"form_id":"hansu","form_name":"Hansu","video_id":"lRp1JE7f-a8","timestamp":129,"timestamp_end":133},"tips":[],"used_in":["hansu"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BPB2y4hM36jzRoc5u5TZV"}
+5:null
