@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js"],"default"]
-3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"ogeumseogi","name":{"en":"Ogeumseogi","ko":"Ogeumseogi","romanized":"Ogeumseogi"},"category":"stance","source":{"form_id":"ilyeo","form_name":"Ilyeo","video_id":"jWClKVOrqJ8","timestamp":240,"timestamp_end":155},"tips":[],"used_in":["ilyeo"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"3VN75GnysdClR4FcObIZP"}
-5:null

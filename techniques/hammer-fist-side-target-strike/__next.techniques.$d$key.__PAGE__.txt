@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js"],"default"]
-3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"hammer-fist-side-target-strike","name":{"en":"Hammer Fist Side Target Strike","ko":"메주먹 옆표적치기","romanized":"Mejumeok Yeoppyojeokchigi"},"category":"strike","source":{"form_id":"jitae","form_name":"Jitae","video_id":"nur2WsN7dQw","timestamp":243,"timestamp_end":266},"tips":[{"text":"mejumok is a technique to strike the target","timestamp":248,"video_id":"nur2WsN7dQw"},{"text":"while spinning the torso the elbow of the part striking the target must face","timestamp":250,"video_id":"nur2WsN7dQw"},{"text":"the hammer fist must not spin and strike the target like unmaki","timestamp":260,"video_id":"nur2WsN7dQw"}],"used_in":["jitae"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"3VN75GnysdClR4FcObIZP"}
-5:null
