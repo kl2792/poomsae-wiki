@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[886110,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js","/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js"],"default"]
-3:I[671742,["/poomsae-wiki/_next/static/chunks/0v2f~dy~9~ykz.js","/poomsae-wiki/_next/static/chunks/0skzqwqsq3uz~.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"rsc":["$","$1","c",{"children":[["$","$L2",null,{"technique":{"key":"geodeureo-arae-makki","name":{"en":"Geodeureo Arae Makki","ko":"거들어아래막기","romanized":"Geodeureo Arae Makki"},"category":"block","source":{"form_id":"taegeuk-8","form_name":"Taegeuk Pal Jang","video_id":"Gr_Je2ZkgkI","timestamp":319,"timestamp_end":337},"tips":[{"text":"The blocking hand should maintain a space of two raised fists above the knee set forward","timestamp":324,"video_id":"Gr_Je2ZkgkI"},{"text":"The assisting hand should be level with the elbow that performs the block","timestamp":333,"video_id":"Gr_Je2ZkgkI"},{"text":"When performing godoro aremakgi,","timestamp":321.7,"video_id":"Gr_Je2ZkgkI"}],"used_in":["taegeuk-8"]}}],[["$","script","script-0",{"src":"/poomsae-wiki/_next/static/chunks/0hf5hce~gzhzb.js","async":true}]],["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"BPB2y4hM36jzRoc5u5TZV"}
-5:null
