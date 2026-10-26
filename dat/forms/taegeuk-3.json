@@ -5,195 +5,261 @@
     "ko": "태극 3장"
   },
   "meaning": {
-    "en": "Fire (Ri ☲)"
+    "en": "Fire (Ri ☲)",
+    "ko": "리/☲"
   },
   "belt": "6th Geup",
   "dan": null,
-  "total_moves": 7,
+  "total_moves": 20,
+  "diagram": "I-shape",
   "video_id": "ksSqKt0UkWo",
   "video_duration_seconds": 836,
   "sections": {
     "intro": {
       "start": 0,
-      "end": 138
+      "end": 124
     },
     "breakdown": {
-      "start": 138,
-      "end": 143
-    },
-    "explanation": {
-      "start": 143,
+      "start": 124,
       "end": 748
     },
     "repeat": {
       "start": 748,
+      "end": 820
+    },
+    "outro": {
+      "start": 820,
       "end": 836
     }
   },
+  "competition_divisions": [
+    "cadet",
+    "junior",
+    "under30",
+    "under40"
+  ],
+  "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
-      "key": "knifehand-strike",
+      "key": "ready",
       "name": {
-        "en": "Knifehand Strike",
-        "ko": "손날안치기",
+        "en": "Ready",
+        "ko": "준비",
+        "romanized": "Junbi"
+      },
+      "category": "stance",
+      "video_timestamp": 124.0,
+      "tips": [
+        {
+          "text": "Taeguk Samjang consists of four key moves, namely",
+          "timestamp": 124.3,
+          "source": "caption"
+        }
+      ],
+      "video_timestamp_end": 127.0
+    },
+    {
+      "key": "knifehand-inward-strike",
+      "name": {
+        "en": "Knifehand Inward Strike",
+        "ko": "기본 준비자세",
         "romanized": "Sonal Anchigi"
       },
       "category": "strike",
-      "video_timestamp": 147,
-      "video_timestamp_end": 228,
+      "video_timestamp": 127.0,
       "tips": [
         {
-          "text": "used in the move extends from the wrist to the first joint of the little finger",
-          "timestamp": 154,
-          "source": "caption"
+          "text": "The hand blade, used in the move, extends from the wrist to the first joint of the little finger",
+          "timestamp": 156
         },
         {
-          "text": "first open your hand place the four fingers from the index to the little",
+          "text": "First open your hand, place the four fingers from the index to the little finger together",
           "timestamp": 163
         },
         {
-          "text": "then bend the tip of the thumb and place it on top of the first joint of the",
-          "timestamp": 171,
-          "source": "caption"
+          "text": "Then bend the tip of the thumb and place it on top of the first joint of the index finger",
+          "timestamp": 170
         },
         {
-          "text": "after making the hand blade as described place the wrist of the thrusting arm at",
-          "timestamp": 185,
-          "source": "caption"
+          "text": "And bend the tips a little inward",
+          "timestamp": 180
         },
         {
-          "text": "WM place the wrist of the thrusting arm + ‘ = .",
+          "text": "Place the wrist of the thrusting arm at shoulder level, and the supporting arm at the solar plexus level",
           "timestamp": 189
+        },
+        {
+          "text": "Perform the Sonal Anchigi move by pulling both elbows towards your body",
+          "timestamp": 203
+        },
+        {
+          "text": "Place your supporting hand back at the wrist",
+          "timestamp": 213
+        },
+        {
+          "text": "The wrist of the striking hand should be straight",
+          "timestamp": 219
+        },
+        {
+          "text": "And your hand blade should be raised near your neck level",
+          "timestamp": 224
+        },
+        {
+          "text": "These are the four key moves of Taeguk Samjang.",
+          "timestamp": 132.3,
+          "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 227.0
     },
     {
-      "key": "knifehand-outward-block",
+      "key": "knifehand-middle-outward-block",
       "name": {
-        "en": "Knifehand Outward Block",
-        "ko": "손날바깥막기",
-        "romanized": "Sonal Bakkanmakgi"
+        "en": "Knifehand Middle Outward Block",
+        "ko": "손날몸통바깥막기",
+        "romanized": "Sonal Momtong Bakkan Makki"
       },
       "category": "block",
-      "video_timestamp": 228,
-      "video_timestamp_end": 277,
+      "video_timestamp": 227.0,
       "tips": [
         {
-          "text": "is also a technique that uses the hand blade in the same way",
-          "timestamp": 234,
-          "source": "caption"
+          "text": "Begin with two arms crossed in front of the chest",
+          "timestamp": 242
         },
         {
-          "text": "you protect the body from the inside out and begin with two",
-          "timestamp": 242,
-          "source": "caption"
-        },
-        {
-          "text": "should be placed on the outside",
+          "text": "The defending arm and supporting arm should be placed on the outside and inside respectively when the arms are crossed",
           "timestamp": 246
         },
         {
-          "text": "arms crossed in front of the chest the defending arm and supporting arm",
-          "timestamp": 247,
-          "source": "caption"
+          "text": "The tip of the hand of the defending arm should not be above the shoulder when defending",
+          "timestamp": 258
         },
         {
-          "text": "should be placed on the outside and inside respectively when the arms",
-          "timestamp": 250
+          "text": "And the elbow should face downward",
+          "timestamp": 262
+        },
+        {
+          "text": "Be careful not to let the wrist bend",
+          "timestamp": 268
+        },
+        {
+          "text": "And the hand blade should not be outside the end of the line extending from the torso",
+          "timestamp": 272
+        },
+        {
+          "text": "Sonnal Pakkadmakki is also a technique that uses the hand blade in the same way as the previous",
+          "timestamp": 229.7,
+          "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 276.0
     },
     {
       "key": "back-stance",
       "name": {
         "en": "Back Stance",
-        "ko": "뒤굽이",
+        "ko": "제비품안치기",
         "romanized": "Dwitgubi"
       },
       "category": "stance",
-      "video_timestamp": 277,
-      "video_timestamp_end": 309,
+      "video_timestamp": 276.0,
       "tips": [
         {
-          "text": "when doing the dwikkubi posture your feet should form a 90 degree angle",
-          "timestamp": 281,
-          "source": "caption"
+          "text": "Your feet should form a 90 degree angle",
+          "timestamp": 281
         },
         {
-          "text": "and the direction of your knees and feet should be identical",
-          "timestamp": 288,
-          "source": "caption"
+          "text": "The direction of your knees and feet should be identical",
+          "timestamp": 288
         },
         {
-          "text": "the center of your body should be two-thirds towards the back",
+          "text": "The center of your body should be 2/3 towards the back",
           "timestamp": 292
         },
         {
-          "text": "and stand low like you would for juchumsagi",
-          "timestamp": 305,
+          "text": "Move your left foot one step forward",
+          "timestamp": 298
+        },
+        {
+          "text": "Stand low like you would for Juchumseogi",
+          "timestamp": 303
+        },
+        {
+          "text": "direction of your knees and feet should be identical. The center of your body should be",
+          "timestamp": 286.4,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 308.0
     },
     {
       "key": "double-punch",
       "name": {
         "en": "Double Punch",
-        "ko": "두번지르기",
-        "romanized": "Double Jireugi"
+        "ko": "(몸통)안막기",
+        "romanized": "Dubeon Jireugi"
       },
       "category": "strike",
-      "video_timestamp": 309,
-      "video_timestamp_end": 143,
-      "tips": []
+      "video_timestamp": 308.0,
+      "tips": [
+        {
+          "text": "Control your breath and quickly perform the Jireugi as if pulling your elbows to your waist",
+          "timestamp": 318
+        },
+        {
+          "text": "The force exerted and speed of your arms must be in balance",
+          "timestamp": 323
+        },
+        {
+          "text": "in succession. Control your breath and quickly perform the Jirugi as if pulling your elbows",
+          "timestamp": 313.6,
+          "source": "caption"
+        },
+        {
+          "text": "to your waist. The force exerted and speed of your arms must be in balance. These are",
+          "timestamp": 321.1,
+          "source": "caption"
+        },
+        {
+          "text": "the four key moves of Taeguk Samjang. We will now look at the moves in succession connecting",
+          "timestamp": 330.2,
+          "source": "caption"
+        }
+      ],
+      "video_timestamp_end": 368.0
     },
     {
-      "key": "low-block+side-punch",
+      "key": "front-kick+low-block+middle-punch",
       "name": {
-        "en": "Low Block + Side Punch",
-        "ko": "아래막기 + 옆지르기",
-        "romanized": "Arae Makgi + Yeop Jireugi"
+        "en": "Front Kick + Low Block + Middle Punch",
+        "ko": "앞차기+아래막기+몸통지르기",
+        "romanized": "Ap Chagi + Arae Makki + Momtong Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
-      "tips": []
+      "tips": [],
+      "components": [
+        "front-kick",
+        "low-block",
+        "middle-punch"
+      ]
     },
     {
-      "key": "front-kick+low-block+side-punch",
+      "key": "front-kick+double-punch",
       "name": {
-        "en": "Front Kick + Low Block + Side Punch",
-        "ko": "앞차기 + 아래막기 + 옆지르기",
-        "romanized": "Ap Chagi + Arae Makgi + Yeop Jireugi"
+        "en": "Front Kick + Double Punch",
+        "ko": "앞차기+두번지르기",
+        "romanized": "Ap Chagi + Dubeon Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "front-kick+inward-block+side-punch",
-      "name": {
-        "en": "Front Kick + Inward Block + Side Punch",
-        "ko": "앞차기 + 안막기 + 옆지르기",
-        "romanized": "Ap Chagi + Anmakgi + Yeop Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "inward-block",
-      "name": {
-        "en": "Inward Block",
-        "ko": "안막기",
-        "romanized": "Anmakgi"
-      },
-      "category": "block",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
+      "tips": [],
+      "components": [
+        "front-kick",
+        "double-punch"
+      ]
     },
     {
       "key": "low-block",
@@ -206,71 +272,250 @@
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
+    },
+    {
+      "key": "low-block+middle-punch",
+      "name": {
+        "en": "Low Block + Middle Punch",
+        "ko": "아래막기+몸통지르기",
+        "romanized": "Arae Makki + Momtong Jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "low-block",
+        "middle-punch"
+      ]
+    },
+    {
+      "key": "inward-middle-block",
+      "name": {
+        "en": "Inward Middle Block",
+        "ko": "몸통안막기",
+        "romanized": "Momtong An Makgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "middle-punch",
+      "name": {
+        "en": "Middle Punch",
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "knifehand-outward-block",
+      "name": {
+        "en": "Knifehand Outward Block",
+        "ko": "손날바깥막기",
+        "romanized": "Sonal Bakkan Makki"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 1,
-      "technique": "low-block+side-punch",
-      "side": "left",
+      "step": 0,
+      "technique": "ready",
+      "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 676,
-      "timestamp_end": 680
+      "timestamp": 124.0,
+      "timestamp_end": 334.0
+    },
+    {
+      "step": 1,
+      "technique": "low-block",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 343.0,
+      "timestamp_end": 345.0
     },
     {
       "step": 2,
-      "technique": "low-block+side-punch",
+      "technique": "front-kick+double-punch",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 680,
-      "timestamp_end": 687
+      "timestamp": 345.0,
+      "timestamp_end": 350.0
     },
     {
       "step": 3,
-      "technique": "front-kick+low-block+side-punch",
-      "side": "left",
-      "direction": "forward",
+      "technique": "low-block",
+      "side": "right",
+      "direction": "right-180",
       "kihap": false,
-      "timestamp": 687,
-      "timestamp_end": 689
+      "timestamp": 350.0,
+      "timestamp_end": 353.0
     },
     {
       "step": 4,
-      "technique": "front-kick+inward-block+side-punch",
-      "side": "right",
+      "technique": "front-kick+double-punch",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 689,
-      "timestamp_end": 511
+      "timestamp": 353.0,
+      "timestamp_end": 357.0
     },
     {
       "step": 5,
-      "technique": "inward-block",
+      "technique": "knifehand-inward-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 511,
-      "timestamp_end": 513
+      "timestamp": 357.0,
+      "timestamp_end": 360.0
     },
     {
       "step": 6,
-      "technique": "inward-block",
+      "technique": "knifehand-inward-strike",
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 513,
-      "timestamp_end": 364
+      "timestamp": 360.0,
+      "timestamp_end": 365.0
     },
     {
-      "step": 71,
-      "technique": "low-block",
+      "step": 7,
+      "technique": "knifehand-outward-block",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 502.0,
+      "timestamp_end": 504.0
+    },
+    {
+      "step": 8,
+      "technique": "middle-punch",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 504.0,
+      "timestamp_end": 507.0
+    },
+    {
+      "step": 9,
+      "technique": "knifehand-outward-block",
+      "side": "right",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 507.0,
+      "timestamp_end": 509.0
+    },
+    {
+      "step": 10,
+      "technique": "middle-punch",
       "side": "left",
       "direction": "forward",
+      "kihap": false,
+      "timestamp": 509.0,
+      "timestamp_end": 511.0
+    },
+    {
+      "step": 11,
+      "technique": "inward-middle-block",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 511.0,
+      "timestamp_end": 513.0
+    },
+    {
+      "step": 12,
+      "technique": "inward-middle-block",
+      "side": "left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 513.0,
+      "timestamp_end": 517.0
+    },
+    {
+      "step": 13,
+      "technique": "low-block",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 637.0,
+      "timestamp_end": 640.0
+    },
+    {
+      "step": 14,
+      "technique": "front-kick+double-punch",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 640.0,
+      "timestamp_end": 644.0
+    },
+    {
+      "step": 15,
+      "technique": "low-block",
+      "side": "right",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 644.0,
+      "timestamp_end": 647.0
+    },
+    {
+      "step": 16,
+      "technique": "front-kick+double-punch",
+      "side": "left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 647.0,
+      "timestamp_end": 651.0
+    },
+    {
+      "step": 17,
+      "technique": "low-block+middle-punch",
+      "side": "left",
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 675.0,
+      "timestamp_end": 680.0
+    },
+    {
+      "step": 18,
+      "technique": "low-block+middle-punch",
+      "side": "right",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 680.0,
+      "timestamp_end": 685.0
+    },
+    {
+      "step": 19,
+      "technique": "front-kick+low-block+middle-punch",
+      "side": "left",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 685.0,
+      "timestamp_end": 689.0
+    },
+    {
+      "step": 20,
+      "technique": "front-kick+low-block+middle-punch",
+      "side": "right",
+      "direction": "forward",
       "kihap": true,
-      "timestamp": 364,
-      "timestamp_end": 0
+      "timestamp": 689.0,
+      "timestamp_end": 693.0
     }
-  ]
+  ],
+  "verified": true
 }

@@ -21,7 +21,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   technique: "Other Techniques",
 };
 
-import { categoryTheme, FORM_SHORT } from "@/lib/constants";
+import { categoryTheme, FORM_SHORT, techniqueKeyToSlug } from "@/lib/constants";
 
 export default function TechniquesPage() {
   const techniques = getAllTechniques();
@@ -135,7 +135,7 @@ function TechniqueRow({
 
   return (
     <Link
-      href={`/techniques/${t.key}`}
+      href={`/techniques/${techniqueKeyToSlug(t.key)}`}
       data-technique={t.key}
       data-forms={t.used_in.join(",")}
       className={`flex items-center gap-3 px-4 py-3 hover:bg-blue-50 transition-colors group ${even ? "bg-white" : "bg-gray-50/50"}`}

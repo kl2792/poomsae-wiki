@@ -80,6 +80,8 @@ def normalize_romanized(name: str) -> str:
 
     Strips parenthetical alternatives like (NAERYEO), (MOMTONG).
     """
+    if not name:
+        return ""
     s = name.upper()
     # Remove parenthetical alternatives: ARAE(NAERYEO) -> ARAE
     s = re.sub(r"\([^)]*\)", "", s)
@@ -411,6 +413,19 @@ def _parse_llm_json(output: str) -> dict | None:
             output = output[i:]
             break
     output = output.strip()
+    # Strip trailing text after closing bracket (LLM sometimes appends explanation)
+    if output:
+        open_char = output[0]
+        close_char = '}' if open_char == '{' else ']'
+        depth = 0
+        for i, c in enumerate(output):
+            if c == open_char:
+                depth += 1
+            elif c == close_char:
+                depth -= 1
+                if depth == 0:
+                    output = output[:i + 1]
+                    break
     try:
         return json.loads(output)
     except json.JSONDecodeError as e:
@@ -422,10 +437,14 @@ def _parse_llm_json(output: str) -> dict | None:
 def _call_claude(prompt: str, label: str) -> dict | None:
     """Call claude CLI with a prompt and parse JSON output."""
     print(f"  [{label}] Calling claude CLI...")
-    result = subprocess.run(
-        ["claude", "-p", prompt, "--output-format", "text"],
-        capture_output=True, text=True, timeout=300
-    )
+    try:
+        result = subprocess.run(
+            ["claude", "-p", prompt, "--output-format", "text"],
+            capture_output=True, text=True, timeout=600
+        )
+    except subprocess.TimeoutExpired:
+        print(f"  [{label}] ERROR: claude CLI timed out after 600s")
+        return None
     if result.returncode != 0:
         print(f"  [{label}] ERROR: claude CLI failed: {result.stderr[:200]}")
         return None
@@ -575,6 +594,15 @@ def extract_form(slug: str, prompt_only: bool = False, no_llm: bool = False):
     if not meta:
         print(f"ERROR: No metadata for {slug}")
         return False
+
+    # Skip forms marked as verified (hand-reviewed, don't overwrite)
+    form_path = FORMS_DIR / f"{meta['id']}.json"
+    if form_path.exists():
+        with open(form_path) as f:
+            existing = json.load(f)
+        if existing.get("verified"):
+            print(f"  SKIP: {meta['id']} is verified (set verified: false to re-extract)")
+            return True
 
     # --- Step 1: Load pre-extraction + existing techniques ---
     pre_path = PRE_DIR / f"{slug}.json"

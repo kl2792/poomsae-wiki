@@ -1,5 +1,5 @@
 import { Suspense } from "react";
-import { getForm, getAllFormIds, getAllTechniques, type WikiTechnique } from "@/lib/data";
+import { getForm, getAllFormIds, getAllTechniques, getTechniqueByKey, type WikiTechnique } from "@/lib/data";
 import { notFound } from "next/navigation";
 import FormDetail from "./FormDetail";
 
@@ -30,6 +30,13 @@ export default async function FormPage({
     const match = wikiByName.get(tech.name.en.toLowerCase());
     if (match) {
       wikiTechniques[tech.key] = match;
+    }
+    // Also resolve combo component keys so the sidebar can render links
+    for (const compKey of tech.components ?? []) {
+      if (!wikiTechniques[compKey]) {
+        const comp = getTechniqueByKey(compKey);
+        if (comp) wikiTechniques[compKey] = comp;
+      }
     }
   }
 

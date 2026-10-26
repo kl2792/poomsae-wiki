@@ -5,131 +5,155 @@
     "ko": "지태"
   },
   "meaning": {
-    "en": "Earth / all living things"
+    "en": "Earth / the land that nourishes and provides sanctuary for all life",
+    "ko": "지태 (땅)"
   },
   "belt": null,
   "dan": 6,
-  "total_moves": 10,
+  "total_moves": 28,
+  "diagram": "+-shape",
   "video_id": "nur2WsN7dQw",
   "video_duration_seconds": 1106,
   "sections": {
     "intro": {
       "start": 0,
-      "end": 161
-    },
-    "breakdown": {
-      "start": 161,
       "end": 163
     },
-    "explanation": {
+    "breakdown": {
       "start": 163,
-      "end": 972
+      "end": 282
     },
     "repeat": {
-      "start": 972,
+      "start": 920,
+      "end": 1060
+    },
+    "outro": {
+      "start": 1060,
       "end": 1106
     }
   },
+  "competition_divisions": [],
+  "source": "KKW YouTube / WT Rules",
   "techniques": [
     {
       "key": "knifehand-high-rising-block",
       "name": {
         "en": "Knifehand High Rising Block",
-        "ko": "손날 얼굴(올려)막기",
-        "romanized": "Sonal Ulgul(Ollyeo)Makgi"
+        "ko": "기본 준비자세",
+        "romanized": "Sonal Ulgul Ollyeo Makgi"
       },
       "category": "block",
-      "video_timestamp": 168,
-      "video_timestamp_end": 232,
+      "video_timestamp": 141,
       "tips": [
         {
-          "text": "xe i ° Wf cross the arms so the blocking arm",
+          "text": "Cross the arms so the blocking arm is outside to block the face",
           "timestamp": 175
         },
         {
-          "text": "othe hand of the blocking arm rises first",
-          "timestamp": 182
+          "text": "The hand of the blocking arm rises first",
+          "timestamp": 181
         },
         {
-          "text": "and snap the elbow upward to block pull the opposite fist to the back",
-          "timestamp": 190,
-          "source": "caption"
+          "text": "Raise the hand first at face elevation and snap the elbow upward to block",
+          "timestamp": 185
         },
         {
-          "text": "and cross the hand blade with the center line",
-          "timestamp": 197,
-          "source": "caption"
+          "text": "Pull the opposite fist to the back",
+          "timestamp": 189
         },
         {
-          "text": "the space between the blocking arm and forehead should be about one fist",
+          "text": "Cross the hand blade with the center line",
+          "timestamp": 194
+        },
+        {
+          "text": "The space between the blocking arm and forehead should be about one fist",
           "timestamp": 199
+        },
+        {
+          "text": "Tilt the arm so that the fist faces upward and the elbow faces downward",
+          "timestamp": 205
+        },
+        {
+          "text": "Be careful not to let the elbow of the blocking arm open backwards as this will weaken the arm",
+          "timestamp": 212
         }
-      ]
+      ],
+      "video_timestamp_end": 145
     },
     {
-      "key": "geumgang-middle-punch",
+      "key": "diamond-middle-punch",
       "name": {
-        "en": "Geumgang Middle Punch",
-        "ko": "금강(몸통)지르기",
-        "romanized": "Geumgang(Momtong) Jireugi"
+        "en": "Diamond Middle Punch",
+        "ko": "손날몸통바깥막기",
+        "romanized": "Geumgang Momtong Jireugi"
       },
       "category": "strike",
-      "video_timestamp": 232,
-      "video_timestamp_end": 243,
-      "tips": [
-        {
-          "text": "gum gang jiriki is a technique to block and attack simultaneously",
-          "timestamp": 237,
-          "source": "caption"
-        }
-      ]
+      "video_timestamp": 145,
+      "tips": [],
+      "video_timestamp_end": 149
     },
     {
       "key": "hammer-fist-side-target-strike",
       "name": {
         "en": "Hammer Fist Side Target Strike",
-        "ko": "메주먹 옆표적치기",
+        "ko": "제비품안치기",
         "romanized": "Mejumeok Yeoppyojeokchigi"
       },
       "category": "strike",
-      "video_timestamp": 243,
-      "video_timestamp_end": 266,
+      "video_timestamp": 149,
       "tips": [
         {
-          "text": "mejumok is a technique to strike the target",
-          "timestamp": 248,
-          "source": "caption"
-        },
-        {
-          "text": "while spinning the torso the elbow of the part striking the target must face",
-          "timestamp": 250,
-          "source": "caption"
-        },
-        {
-          "text": "the hammer fist must not spin and strike the target like unmaki",
-          "timestamp": 260,
+          "text": "yeop pyojok jigi, anpalmok bakkat maki.",
+          "timestamp": 151.7,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 154
     },
     {
       "key": "inner-forearm-outward-block",
       "name": {
         "en": "Inner Forearm Outward Block",
-        "ko": "안팔목 바깥막기",
+        "ko": "(몸통)안막기",
         "romanized": "Anpalmok Bakkanmakgi"
       },
       "category": "block",
-      "video_timestamp": 266,
-      "video_timestamp_end": 163,
-      "tips": []
+      "video_timestamp": 154,
+      "tips": [
+        {
+          "text": "We will now take a closer look at each of the key moves of jite pumsae.",
+          "timestamp": 163.6,
+          "source": "caption"
+        },
+        {
+          "text": "Sonnal olgul maki is, as the name suggests, a technique to block the face upwards with",
+          "timestamp": 168.7,
+          "source": "caption"
+        },
+        {
+          "text": "both arms.",
+          "timestamp": 174.3,
+          "source": "caption"
+        },
+        {
+          "text": "Cross the arms so the blocking arm is outside to block the face.",
+          "timestamp": 175.9,
+          "source": "caption"
+        },
+        {
+          "text": "The hand of the blocking arm rises first.",
+          "timestamp": 180.9,
+          "source": "caption"
+        }
+      ],
+      "video_timestamp_end": 214
     },
     {
-      "key": "knifehand-assisted-low-block",
+      "key": "inner-forearm-middle-outward-block",
       "name": {
-        "en": "Knifehand Assisted Low Block",
-        "ko": "손날거들어아래막기",
-        "romanized": "Sonal Geodeureo Arae Makgi"
+        "en": "Inner Forearm Middle Outward Block",
+        "ko": "안팔목몸통바깥막기",
+        "romanized": "Anpalmok Momtong Bakkanmakgi"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -137,35 +161,55 @@
       "tips": []
     },
     {
-      "key": "front-kick+knifehand-assisted-low-block",
+      "key": "front-kick",
       "name": {
-        "en": "Front Kick + Knifehand Assisted Low Block",
-        "ko": "앞차기 + 손날거들어아래막기",
-        "romanized": "Ap Chagi + Sonal Geodeureo Arae Makgi"
+        "en": "Front Kick",
+        "ko": "앞차기",
+        "romanized": "Ap Chagi"
       },
-      "category": "combination",
+      "category": "kick",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
     },
     {
-      "key": "rising-block+side-punch",
+      "key": "front-kick+double-punch",
       "name": {
-        "en": "Rising Block + Side Punch",
-        "ko": "얼굴(올려)막기 + 옆지르기",
-        "romanized": "Ulgul(Ollyeo)Makgi + Yeop Jireugi"
+        "en": "Front Kick + Double Punch",
+        "ko": "앞차기+두번지르기",
+        "romanized": "Ap Chagi + Dubeon Jireugi"
       },
       "category": "combination",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
-      "tips": []
+      "tips": [],
+      "components": [
+        "front-kick",
+        "double-punch"
+      ]
     },
     {
-      "key": "crane-stance-low-side-block",
+      "key": "front-kick+knifehand-assisted-low-downward-block",
       "name": {
-        "en": "Crane Stance Low Side Block",
-        "ko": "학다리 아래(내려) 옆막기",
-        "romanized": "Hakdari Arae(Naeryeo) Yeopmakgi"
+        "en": "Front Kick + Knifehand Assisted Low Downward Block",
+        "ko": "앞차기+손날거들어아래내려막기",
+        "romanized": "Apchagi + Sonal Geodeureo Arae Naeryeo Makgi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "front-kick",
+        "knifehand-assisted-low-downward-block"
+      ]
+    },
+    {
+      "key": "low-downward-block",
+      "name": {
+        "en": "Low Downward Block",
+        "ko": "아래내려막기",
+        "romanized": "Arae Naeryeo Makki"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -173,86 +217,267 @@
       "tips": []
     },
     {
-      "key": "jumping-side-kick+yeopchagi+oen-arae-yeopmakgr",
+      "key": "diamond-front-punch",
       "name": {
-        "en": "Jumping Side Kick + yeopchagi + oen-arae-yeopmakgr",
-        "ko": "뛰어옆차기 +  + ",
-        "romanized": "Ttwieo Yeopchagi + yeopchagi + oen-arae-yeopmakgr"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "jumping-side-kick+side-punch",
-      "name": {
-        "en": "Jumping Side Kick + Side Punch",
-        "ko": "뛰어옆차기 + 옆지르기",
-        "romanized": "Ttwieo Yeopchagi + Yeop Jireugi"
-      },
-      "category": "combination",
-      "video_timestamp": 0,
-      "video_timestamp_end": 0,
-      "tips": []
-    },
-    {
-      "key": "side-punch",
-      "name": {
-        "en": "Side Punch",
-        "ko": "옆지르기",
-        "romanized": "Yeop Jireugi"
+        "en": "Diamond Front Punch",
+        "ko": "금강앞지르기",
+        "romanized": "Geumgang Apjireugi"
       },
       "category": "strike",
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
+    },
+    {
+      "key": "crane-stance-low-downward-side-block",
+      "name": {
+        "en": "Crane Stance Low Downward Side Block",
+        "ko": "학다리아래내려옆막기",
+        "romanized": "Hakdari Arae Naeryeo Yeopmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "bull-block",
+      "name": {
+        "en": "Bull Block",
+        "ko": "기본 준비자세",
+        "romanized": "Hwangsomakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "small-hinge",
+      "name": {
+        "en": "Small Hinge",
+        "ko": "작은돌쩌귀",
+        "romanized": "Jageun Doljjeogwi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "ready",
+      "name": {
+        "en": "Ready",
+        "ko": "준비",
+        "romanized": "Junbi"
+      },
+      "category": "stance",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "middle-inward-block+assisted-inward-block",
+      "name": {
+        "en": "Middle Inward Block + Assisted Inward Block",
+        "ko": "몸통안막기+거들어안막기",
+        "romanized": "Momtong Anmakgi + Geodeureo Anmakgi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "inward-middle-block",
+        "assisted-inward-block"
+      ]
+    },
+    {
+      "key": "middle-outward-block",
+      "name": {
+        "en": "Middle Outward Block",
+        "ko": "몸통바깥막기",
+        "romanized": "Momtong Bakkanmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "middle-punch",
+      "name": {
+        "en": "Middle Punch",
+        "ko": "몸통지르기",
+        "romanized": "Momtong Jireugi"
+      },
+      "category": "strike",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "forearm-low-downward-side-block",
+      "name": {
+        "en": "Forearm Low Downward Side Block",
+        "ko": "팔목아래내려옆막기",
+        "romanized": "Palmok Arae Naeryeo Yeopmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "knifehand-low-downward-block",
+      "name": {
+        "en": "Knifehand Low Downward Block",
+        "ko": "손날아래내려막기",
+        "romanized": "Sonnal Arae Naeryeomakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "knifehand-assisted-low-downward-block",
+      "name": {
+        "en": "Knifehand Assisted Low Downward Block",
+        "ko": "손날거들어아래내려막기",
+        "romanized": "Sonal Geodeureo Arae Naeryeo Makgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "knifehand-middle-side-block",
+      "name": {
+        "en": "Knifehand Middle Side Block",
+        "ko": "손날몸통옆막기",
+        "romanized": "Sonal Momtong Yeopmakgi"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "high-rising-block",
+      "name": {
+        "en": "High Rising Block",
+        "ko": "얼굴올려막기",
+        "romanized": "Ulgul Ollyeo Makki"
+      },
+      "category": "block",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
+    },
+    {
+      "key": "high-rising-block+middle-punch",
+      "name": {
+        "en": "High Rising Block + Middle Punch",
+        "ko": "얼굴올려막기+몸통지르기",
+        "romanized": "Ulgul Ollyeo Makgi + Momtong Jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "high-rising-block",
+        "middle-punch"
+      ]
+    },
+    {
+      "key": "side-kick+low-downward-side-block",
+      "name": {
+        "en": "Side Kick + Low Downward Side Block",
+        "ko": "옆차기+아래내려옆막기",
+        "romanized": "Yeopchagi + Arae Naeryeo Yeopmakgi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "side-kick",
+        "low-downward-side-block"
+      ]
+    },
+    {
+      "key": "side-kick+middle-punch",
+      "name": {
+        "en": "Side Kick + Middle Punch",
+        "ko": "옆차기+몸통지르기",
+        "romanized": "Yeopchagi + Momtong Jireugi"
+      },
+      "category": "combination",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": [],
+      "components": [
+        "side-kick",
+        "middle-punch"
+      ]
     }
   ],
   "sequence": [
     {
-      "step": 1,
-      "technique": "knifehand-assisted-low-block",
-      "side": "left",
+      "step": 0,
+      "technique": "ready",
+      "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 894,
-      "timestamp_end": 508
+      "timestamp": 290,
+      "timestamp_end": 295
+    },
+    {
+      "step": 1,
+      "technique": "inner-forearm-middle-outward-block",
+      "side": "left",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 295,
+      "timestamp_end": 300
     },
     {
       "step": 2,
-      "technique": "front-kick+knifehand-assisted-low-block",
-      "side": "left",
-      "direction": "forward",
+      "technique": "high-rising-block+middle-punch",
+      "side": "right+left",
+      "direction": "left",
       "kihap": false,
-      "timestamp": 508,
-      "timestamp_end": 900
+      "timestamp": 300,
+      "timestamp_end": 307
     },
     {
       "step": 3,
-      "technique": "knifehand-assisted-low-block",
+      "technique": "inner-forearm-middle-outward-block",
       "side": "right",
-      "direction": "forward",
+      "direction": "right",
       "kihap": false,
-      "timestamp": 900,
+      "timestamp": 307,
       "timestamp_end": 312
     },
     {
       "step": 4,
-      "technique": "rising-block+side-punch",
-      "side": "left",
-      "direction": "forward",
+      "technique": "high-rising-block+middle-punch",
+      "side": "left+right",
+      "direction": "right",
       "kihap": false,
       "timestamp": 312,
-      "timestamp_end": 718
+      "timestamp_end": 320
     },
     {
       "step": 5,
-      "technique": "crane-stance-low-side-block",
-      "side": null,
+      "technique": "low-downward-block",
+      "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 718,
+      "timestamp": 321,
       "timestamp_end": 324
     },
     {
@@ -262,43 +487,224 @@
       "direction": "forward",
       "kihap": false,
       "timestamp": 324,
-      "timestamp_end": 723
+      "timestamp_end": 327
     },
     {
       "step": 7,
-      "technique": "jumping-side-kick+yeopchagi+oen-arae-yeopmakgr",
+      "technique": "front-kick",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 723,
-      "timestamp_end": 330
+      "timestamp": 327,
+      "timestamp_end": 333
     },
     {
       "step": 8,
-      "technique": "knifehand-assisted-low-block",
+      "technique": "knifehand-assisted-low-downward-block",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 330,
-      "timestamp_end": 733
+      "timestamp": 333,
+      "timestamp_end": 340
     },
     {
       "step": 9,
-      "technique": "jumping-side-kick+side-punch",
-      "side": "left",
+      "technique": "high-rising-block+middle-punch",
+      "side": "right+left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 733,
-      "timestamp_end": 734
+      "timestamp": 340,
+      "timestamp_end": 370
     },
     {
       "step": 10,
-      "technique": "side-punch",
+      "technique": "inner-forearm-outward-block",
+      "side": "left",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 387,
+      "timestamp_end": 394
+    },
+    {
+      "step": 11,
+      "technique": "knifehand-high-rising-block",
+      "side": "left",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 394,
+      "timestamp_end": 403
+    },
+    {
+      "step": 12,
+      "technique": "front-kick",
       "side": "right",
-      "direction": "forward",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 397,
+      "timestamp_end": 403
+    },
+    {
+      "step": 13,
+      "technique": "knifehand-assisted-low-downward-block",
+      "side": "right",
+      "direction": "backward",
+      "kihap": false,
+      "timestamp": 398,
+      "timestamp_end": 403
+    },
+    {
+      "step": 14,
+      "technique": "middle-outward-block",
+      "side": "right",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 497,
+      "timestamp_end": 504
+    },
+    {
+      "step": 15,
+      "technique": "front-kick+knifehand-assisted-low-downward-block",
+      "side": "left+left",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 504,
+      "timestamp_end": 512
+    },
+    {
+      "step": 16,
+      "technique": "high-rising-block",
+      "side": "left",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 510,
+      "timestamp_end": 518
+    },
+    {
+      "step": 17,
+      "technique": "diamond-front-punch",
+      "side": "right",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 517,
+      "timestamp_end": 525
+    },
+    {
+      "step": 18,
+      "technique": "middle-inward-block+assisted-inward-block",
+      "side": "left+right",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 521,
+      "timestamp_end": 530
+    },
+    {
+      "step": 19,
+      "technique": "knifehand-low-downward-block",
+      "side": "left",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 526,
+      "timestamp_end": 532
+    },
+    {
+      "step": 20,
+      "technique": "front-kick+double-punch",
+      "side": "right",
+      "direction": "right",
+      "kihap": false,
+      "timestamp": 529,
+      "timestamp_end": 534
+    },
+    {
+      "step": 21,
+      "technique": "bull-block",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 703,
+      "timestamp_end": 710
+    },
+    {
+      "step": 22,
+      "technique": "forearm-low-downward-side-block",
+      "side": "left",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 708,
+      "timestamp_end": 712
+    },
+    {
+      "step": 23,
+      "technique": "knifehand-middle-side-block",
+      "side": "right",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 711,
+      "timestamp_end": 715
+    },
+    {
+      "step": 24,
+      "technique": "hammer-fist-side-target-strike",
+      "side": "left",
+      "direction": "left",
+      "kihap": true,
+      "timestamp": 714,
+      "timestamp_end": 718
+    },
+    {
+      "step": 25,
+      "technique": "crane-stance-low-downward-side-block",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 717,
+      "timestamp_end": 722
+    },
+    {
+      "step": 26,
+      "technique": "small-hinge",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 720,
+      "timestamp_end": 725
+    },
+    {
+      "step": 27,
+      "technique": "side-kick+low-downward-side-block",
+      "side": "right+left",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 722,
+      "timestamp_end": 729
+    },
+    {
+      "step": 28,
+      "technique": "small-hinge",
+      "side": null,
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 727,
+      "timestamp_end": 731
+    },
+    {
+      "step": 29,
+      "technique": "side-kick+middle-punch",
+      "side": "left+right",
+      "direction": "left",
+      "kihap": false,
+      "timestamp": 729,
+      "timestamp_end": 735
+    },
+    {
+      "step": 30,
+      "technique": "middle-punch",
+      "side": "right",
+      "direction": "left",
       "kihap": true,
       "timestamp": 734,
-      "timestamp_end": 0
+      "timestamp_end": 738
     }
-  ]
+  ],
+  "verified": true
 }

@@ -57,7 +57,17 @@ export const FORM_SHORT: Record<string, string> = {
   ilyeo: "Ilyeo",
 };
 
-/** Title-case a form ID as fallback display name (e.g. "taegeuk-1" → "Taegeuk 1"). */
+/** Title-case a slug as display name (e.g. "taegeuk-1" → "Taegeuk 1"). */
+export function slugToTitle(slug: string): string {
+  return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+/** Convert a technique key to a URL-safe slug (encodes "+" which Next static export mishandles). */
+export function techniqueKeyToSlug(key: string): string {
+  return key.replace(/\+/g, "--plus--");
+}
+
+/** Display name for a form ID, using known names or title-cased fallback. */
 export function formDisplayName(formId: string): string {
-  return FORM_DISPLAY[formId] ?? formId.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
+  return FORM_DISPLAY[formId] ?? slugToTitle(formId);
 }

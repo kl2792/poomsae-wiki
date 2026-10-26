@@ -119,11 +119,13 @@ def test_merge_segments_empty():
 
 
 def test_find_vtt_taegeuk_1jang():
-    """Should find the existing VTT file for taegeuk-1jang."""
+    """Should find the existing VTT file for taegeuk-1jang (Whisper or YouTube)."""
     path = find_vtt_file("taegeuk-1jang")
     if path is not None:
         assert path.suffix == ".vtt"
-        assert "WhkjRruCBTo" in path.name
+        # May be Whisper VTT (by title) or YouTube VTT (by video ID)
+        name_lower = path.stem.lower()
+        assert "taegeuk 1jang" in name_lower or "WhkjRruCBTo" in path.name
     # If no VTT exists, test is informational (not a failure)
 
 
@@ -148,11 +150,12 @@ def test_parse_captions_taegeuk_1jang():
         assert cap["end"] >= cap["start"]
         assert len(cap["text"]) > 0
 
-    # Merged captions should be far fewer than raw VTT segments
+    # For YouTube auto-captions (overlapping segments), merging reduces count.
+    # For Whisper VTTs (clean segments), count may stay the same.
     vtt_text = path.read_text()
     raw_count = len(parse_vtt(vtt_text))
-    assert len(result["captions"]) < raw_count, (
-        f"Merging should reduce segment count: {len(result['captions'])} merged vs {raw_count} raw"
+    assert len(result["captions"]) <= raw_count, (
+        f"Merging should not increase count: {len(result['captions'])} merged vs {raw_count} raw"
     )
 
 

@@ -1,6 +1,6 @@
 # Poomsae Wiki — reproducible pipeline
 
-.PHONY: download download-captions captions transcripts pre-extract extract build deploy clean test techniques
+.PHONY: download download-captions whisper captions transcripts pre-extract extract build deploy clean test techniques
 
 # Full pipeline
 all: download transcripts extract build deploy
@@ -12,6 +12,10 @@ download:
 # Step 1b: Download auto-captions only (no video re-download)
 download-captions:
 	bash scripts/download_captions.sh
+
+# Step 1c: Whisper transcription — faster-whisper medium/int8, ~5GB peak RAM (< 32GB budget)
+whisper:
+	bash scripts/whisper_transcribe.sh
 
 # Step 2: Generate OCR transcripts from video frames (1fps, full-frame Tesseract)
 transcripts:
@@ -61,6 +65,16 @@ test:
 	cd scripts && python3 test_pre_extract.py
 	cd scripts && python3 test_extract.py
 	cd scripts && python3 test_build_techniques.py
+
+# End-to-end browser tests (Playwright) — runs against static build, 2 workers by default
+# Override: PW_WORKERS=1 make e2e (for low-resource machines)
+#          BASE_URL=http://localhost:3000/poomsae-wiki make e2e (test dev server)
+e2e: build
+	cd app && npx playwright test
+
+# Lighter: single worker, headless (for background runs)
+e2e-light:
+	cd app && PW_WORKERS=1 npx playwright test
 
 # Local dev server
 dev:

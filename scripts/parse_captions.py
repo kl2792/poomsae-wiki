@@ -26,18 +26,27 @@ from extract import FORM_META
 
 
 def parse_vtt_timestamp(ts: str) -> float:
-    """Convert VTT timestamp 'HH:MM:SS.mmm' to seconds.
+    """Convert VTT timestamp to seconds.
+
+    Handles both 'HH:MM:SS.mmm' and 'MM:SS.mmm' formats.
 
     Args:
-        ts: Timestamp string like '00:01:23.456'.
+        ts: Timestamp string like '00:01:23.456' or '01:23.456'.
 
     Returns:
         Time in seconds as a float.
     """
     parts = ts.split(":")
-    h, m = int(parts[0]), int(parts[1])
-    s = float(parts[2])
-    return h * 3600 + m * 60 + s
+    if len(parts) == 3:
+        h, m = int(parts[0]), int(parts[1])
+        s = float(parts[2])
+        return h * 3600 + m * 60 + s
+    elif len(parts) == 2:
+        m = int(parts[0])
+        s = float(parts[1])
+        return m * 60 + s
+    else:
+        return float(ts)
 
 
 def strip_vtt_tags(text: str) -> str:
@@ -74,9 +83,9 @@ def parse_vtt(vtt_text: str) -> list[dict]:
     i = 0
 
     while i < len(lines):
-        # Look for timestamp line: HH:MM:SS.mmm --> HH:MM:SS.mmm
+        # Look for timestamp line: HH:MM:SS.mmm --> HH:MM:SS.mmm or MM:SS.mmm --> MM:SS.mmm
         m = re.match(
-            r"(\d{2}:\d{2}:\d{2}\.\d{3})\s+-->\s+(\d{2}:\d{2}:\d{2}\.\d{3})",
+            r"(\d{2}:\d{2}:\d{2}\.\d+|\d{2}:\d{2}\.\d+)\s+-->\s+(\d{2}:\d{2}:\d{2}\.\d+|\d{2}:\d{2}\.\d+)",
             lines[i],
         )
         if not m:
@@ -190,24 +199,23 @@ def find_vtt_file(slug: str) -> Path | None:
         return None
 
     video_id = meta["video_id"]
+    title_patterns = _slug_to_title_patterns(slug)
 
     # Prefer Whisper (higher quality), then YouTube auto-captions
     WHISPER_DIR = DAT_DIR / "whisper"
     search_dirs = [WHISPER_DIR, DAT_DIR, RAW_DIR]
+
+    # Search each dir by video ID or title pattern before moving to the next dir.
+    # This ensures Whisper VTTs (named by title, no video ID) are found before
+    # YouTube auto-captions (named with video ID) in dat/raw/.
     for search_dir in search_dirs:
         if not search_dir.exists():
             continue
         for vtt_path in search_dir.glob("*.vtt"):
+            # Match by video ID in filename
             if video_id in vtt_path.name:
                 return vtt_path
-
-    # Also try matching by title pattern from the info.json files
-    # Video titles in raw/ match patterns like "TAEGEUK 1JANG.mp4"
-    title_patterns = _slug_to_title_patterns(slug)
-    for search_dir in search_dirs:
-        if not search_dir.exists():
-            continue
-        for vtt_path in search_dir.glob("*.vtt"):
+            # Match by title pattern
             name_lower = vtt_path.stem.lower()
             for pattern in title_patterns:
                 if pattern in name_lower:
@@ -231,10 +239,6 @@ def _slug_to_title_patterns(slug: str) -> list[str]:
     m = re.match(r"taegeuk-(\d)jang", slug)
     if m:
         patterns.append(f"taegeuk {m.group(1)}jang")
-
-    # Single-word forms: koryo, keumgang, etc.
-    if "-" not in slug:
-        patterns.append(slug)
 
     return patterns
 

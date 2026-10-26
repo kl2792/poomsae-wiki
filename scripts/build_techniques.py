@@ -629,14 +629,35 @@ def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
 
     Returns count of updated forms.
     """
+    # Explicit romanized-key → canonical wiki key aliases
+    # (different romanizations of the same technique)
+    KEY_ALIASES = {
+        'momtong-an-makki': 'inward-middle-block',
+        'sonal-bakkat-makki': 'knifehand-outward-block',
+        'arae-naeryeo-makgi': 'low-downward-block',
+        'sonal-arae-naeryeo-makgi': 'knifehand-low-downward-block',
+        'ulgul-ollyeo-makgi': 'high-rising-block',
+        'sonal-arae-makgi': 'knifehand-low-block',
+        'ap-chagi+deungjumeok-apchigi': 'front-kick+backfist-front-strike',
+        'apchagi+double-jireugi': 'front-kick+double-punch',
+    }
+    # Merge explicit aliases into rename_map
+    for alias, target in KEY_ALIASES.items():
+        if target in techniques and alias not in rename_map:
+            rename_map[alias] = target
+
     # Build lookups for canonical technique matching
     rom_to_canonical: dict[str, dict] = {}
     key_to_canonical: dict[str, dict] = {}
+    normkey_to_canonical: dict[str, dict] = {}  # stripped key → canonical
     for tech in techniques.values():
         rom = normalize_romanized(tech["name"].get("romanized", ""))
         if rom:
             rom_to_canonical[rom] = tech
         key_to_canonical[tech["key"]] = tech
+        # Normalized key: strip hyphens, collapse for fuzzy matching
+        nk = tech["key"].replace("-", "")
+        normkey_to_canonical[nk] = tech
 
     updated_count = 0
     for form_path in sorted(FORMS_DIR.glob("*.json")):
@@ -669,6 +690,11 @@ def update_form_jsons(rename_map: dict[str, str], techniques: dict) -> int:
                 canonical = rom_to_canonical[rom]
             elif tech["key"] in key_to_canonical:
                 canonical = key_to_canonical[tech["key"]]
+            else:
+                # Fuzzy: strip hyphens from form key and match
+                nk = tech["key"].replace("-", "")
+                if nk in normkey_to_canonical:
+                    canonical = normkey_to_canonical[nk]
             if canonical:
                 if tech["name"] != canonical["name"]:
                     tech["name"] = dict(canonical["name"])

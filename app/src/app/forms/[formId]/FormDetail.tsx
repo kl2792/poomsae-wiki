@@ -4,8 +4,8 @@ import { useState, useCallback, useEffect, useMemo } from "react";
 import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import Link from "next/link";
 import type { FormData, SequenceStep, Technique, WikiTechnique } from "@/lib/data";
-import { formatTime } from "@/lib/format";
-import { formDisplayName } from "@/lib/constants";
+import { formatTime, hasWikiContent } from "@/lib/format";
+import { formDisplayName, slugToTitle, techniqueKeyToSlug } from "@/lib/constants";
 import VideoPlayer from "@/components/VideoPlayer";
 import SequenceList from "@/components/SequenceList";
 import TechniqueList from "@/components/TechniqueList";
@@ -101,6 +101,36 @@ function SidebarDetail({
           </span>
         )}
 
+        {/* Combo components — only show links for components that have wiki pages */}
+        {currentTech.components && currentTech.components.length > 0 && (
+          <div className="mb-3">
+            <p className="text-xs font-medium text-gray-400 uppercase tracking-wide mb-1">
+              Components
+            </p>
+            <div className="flex flex-col gap-1">
+              {currentTech.components.map((compKey: string) => {
+                const compWiki = wikiTechniques[compKey];
+                const compName = compWiki?.name.en ?? slugToTitle(compKey);
+                const hasPage = compWiki && hasWikiContent(compWiki);
+                return hasPage ? (
+                  <Link
+                    key={compKey}
+                    href={`/techniques/${techniqueKeyToSlug(compKey)}`}
+                    className="text-xs px-2 py-1 rounded bg-gray-50 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                  >
+                    {compName}
+                    {compWiki.name.ko ? <span className="text-gray-400 ml-1">{compWiki.name.ko}</span> : null}
+                  </Link>
+                ) : (
+                  <span key={compKey} className="text-xs px-2 py-1 text-gray-500">
+                    {compName}
+                  </span>
+                );
+              })}
+            </div>
+          </div>
+        )}
+
         {/* Action buttons */}
         {displayActiveStep && (
           <div className="flex flex-col gap-2 mb-4">
@@ -178,19 +208,36 @@ function SidebarDetail({
               const tipVideoId = typeof tip !== "string" ? (tip as { video_id?: string }).video_id : undefined;
               const tipSource = typeof tip !== "string" ? (tip as { source?: string }).source : undefined;
               const isCaption = tipSource === "caption";
-              const canSeek = ts != null && (!tipVideoId || tipVideoId === form.video_id);
+              const isLocal = ts != null && (!tipVideoId || tipVideoId === form.video_id);
+              const isCrossForm = ts != null && tipVideoId && tipVideoId !== form.video_id && wikiSource?.form_id;
               const tipClass = `block w-full text-left text-sm pl-3 border-l-2 ${isCaption ? "text-gray-400 border-gray-200" : "text-gray-700 border-blue-200"}`;
               const prefix = isCaption ? "🎤 " : "";
-              return canSeek ? (
-                <button
-                  key={i}
-                  onClick={() => { if (ts) onSeek(ts, endTs ?? undefined); }}
-                  className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer flex items-start gap-2`}
-                >
-                  {ts && <span className="text-[10px] text-gray-400 font-mono whitespace-nowrap mt-0.5 shrink-0 w-8">{formatTime(ts)}</span>}
-                  <span>{prefix}{text}</span>
-                </button>
-              ) : (
+              if (isLocal) {
+                return (
+                  <button
+                    key={i}
+                    onClick={() => { if (ts) onSeek(ts, endTs ?? undefined); }}
+                    className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer flex items-start gap-2`}
+                  >
+                    {ts && <span className="text-[10px] text-gray-400 font-mono whitespace-nowrap mt-0.5 shrink-0 w-8">{formatTime(ts)}</span>}
+                    <span>{prefix}{text}</span>
+                  </button>
+                );
+              }
+              if (isCrossForm) {
+                return (
+                  <Link
+                    key={i}
+                    href={`/forms/${wikiSource.form_id}?t=${ts}`}
+                    className={`${tipClass} hover:text-blue-600 hover:border-blue-400 cursor-pointer flex items-start gap-2`}
+                    title={`Open in ${formDisplayName(wikiSource.form_id)}`}
+                  >
+                    <span className="text-[10px] text-gray-400 font-mono whitespace-nowrap mt-0.5 shrink-0 w-8">{formatTime(ts!)}</span>
+                    <span>{prefix}{text}</span>
+                  </Link>
+                );
+              }
+              return (
                 <p key={i} className={tipClass}>
                   {prefix}{text}
                 </p>
@@ -259,10 +306,13 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
   const [sidebarView, setSidebarView] = useState<SidebarView>("list");
   const [isLooping, setIsLooping] = useState(false);
 
-  // Update URL params without navigation
+  // Update URL params without navigation.
+  // Uses history.replaceState directly — Next.js router.replace in static export
+  // sometimes stales out and uses captured searchParams.
   const updateUrl = useCallback(
     (updates: Record<string, string | null>) => {
-      const params = new URLSearchParams(searchParams.toString());
+      if (typeof window === "undefined") return;
+      const params = new URLSearchParams(window.location.search);
       for (const [key, value] of Object.entries(updates)) {
         if (value === null) {
           params.delete(key);
@@ -271,9 +321,10 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
         }
       }
       const qs = params.toString();
-      router.replace(pathname + (qs ? "?" + qs : ""), { scroll: false });
+      const newUrl = window.location.pathname + (qs ? "?" + qs : "");
+      window.history.replaceState(window.history.state, "", newUrl);
     },
-    [searchParams, router, pathname]
+    []
   );
 
   const techMap = useMemo(
@@ -383,12 +434,10 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
   }, [updateUrl]);
 
   const handleModeToggle = useCallback(() => {
-    setAutoPause((v) => {
-      const next = !v;
-      updateUrl({ mode: next ? null : "flow" });
-      return next;
-    });
-  }, [updateUrl]);
+    const next = !autoPause;
+    setAutoPause(next);
+    updateUrl({ mode: next ? null : "flow" });
+  }, [autoPause, updateUrl]);
 
   const handleStepNav = useCallback((direction: -1 | 1) => {
     if (!activeStep) return;
@@ -455,7 +504,8 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
                 setActiveStep(null);
                 setActiveTechnique(null);
                 setSidebarView("list");
-                setVideoStart(form.sections!.repeat!.start + 5);
+                // Skip past the "REPEAT" title card (~8s) to the actual poomsae start
+                setVideoStart(form.sections!.repeat!.start + 8);
                 setVideoEnd(form.sections!.repeat!.end);
               }}
               className="px-2 py-1.5 text-[11px] font-medium text-blue-600 hover:text-blue-800 hover:bg-blue-50 rounded-md transition-colors whitespace-nowrap"
@@ -516,7 +566,7 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
       </div>
 
       {/* Main content — mobile: flex col; desktop: grid sidebar-left video-right */}
-      <div className="flex flex-col md:grid md:grid-cols-12 md:gap-4 flex-1 min-h-0 gap-2">
+      <div className="flex flex-col md:grid md:grid-cols-12 md:gap-4 flex-1 min-h-0 gap-2 overflow-hidden">
 
         {/* Video — mobile: capped height; desktop: fills right column */}
         <div className="flex-none md:flex-1 md:col-span-9 md:order-2 md:flex md:flex-col max-h-[35vh] md:max-h-none">
@@ -531,8 +581,8 @@ export default function FormDetail({ form, wikiTechniques = {} }: FormDetailProp
           />
         </div>
 
-        {/* Sidebar — mobile: fills remaining space; desktop: 3/12 left column */}
-        <div className="flex-1 md:col-span-3 md:order-1 flex flex-col min-h-0">
+        {/* Sidebar — mobile: fills remaining space; desktop: constrained to grid row */}
+        <div className="flex-1 md:col-span-3 md:order-1 flex flex-col min-h-0 overflow-hidden">
           <div className="bg-white rounded-lg border border-gray-200 overflow-hidden flex flex-col min-h-0 flex-1">
             {sidebarView === "detail" && currentTech ? (
               <SidebarDetail

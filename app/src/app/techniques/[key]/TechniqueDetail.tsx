@@ -3,16 +3,18 @@
 import { useState, useCallback } from "react";
 import Link from "next/link";
 import type { WikiTechnique } from "@/lib/data";
-import { categoryTheme, formDisplayName } from "@/lib/constants";
-import { formatTime } from "@/lib/format";
+import { categoryTheme, formDisplayName, slugToTitle, techniqueKeyToSlug } from "@/lib/constants";
+import { formatTime, hasWikiContent } from "@/lib/format";
 import VideoPlayer from "@/components/VideoPlayer";
 
 interface TechniqueDetailProps {
   technique: WikiTechnique;
+  componentData?: Record<string, WikiTechnique>;
 }
 
 export default function TechniqueDetail({
   technique: t,
+  componentData = {},
 }: TechniqueDetailProps) {
   const hasVideo = t.source.timestamp > 0;
   const [videoStart, setVideoStart] = useState<number | undefined>(
@@ -119,6 +121,36 @@ export default function TechniqueDetail({
                   );
                 })}
               </ul>
+            </div>
+          )}
+
+          {/* Components (for combo techniques) — only link if component has real content */}
+          {t.components && t.components.length > 0 && (
+            <div>
+              <h2 className="text-sm font-semibold text-gray-700 mb-2">
+                Components
+              </h2>
+              <div className="flex flex-col gap-1.5">
+                {t.components.map((compKey) => {
+                  const comp = componentData[compKey];
+                  const name = comp?.name.en ?? slugToTitle(compKey);
+                  const hasContent = comp && hasWikiContent(comp);
+                  return hasContent ? (
+                    <Link
+                      key={compKey}
+                      href={`/techniques/${techniqueKeyToSlug(compKey)}`}
+                      className="text-sm px-3 py-1.5 rounded bg-gray-50 text-gray-700 hover:bg-blue-50 hover:text-blue-700 transition-colors"
+                    >
+                      {name}
+                      {comp.name.ko ? <span className="text-gray-400 ml-1.5 text-xs">{comp.name.ko}</span> : null}
+                    </Link>
+                  ) : (
+                    <span key={compKey} className="text-sm px-3 py-1.5 text-gray-500">
+                      {name}
+                    </span>
+                  );
+                })}
+              </div>
             </div>
           )}
 

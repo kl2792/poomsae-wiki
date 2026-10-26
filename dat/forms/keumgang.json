@@ -5,219 +5,239 @@
     "ko": "금강"
   },
   "meaning": {
-    "en": "Diamond / unbreakable"
+    "en": "Diamond mountain / unbreakable",
+    "ko": "금강산 / 금강역사"
   },
   "belt": null,
   "dan": 2,
-  "total_moves": 9,
+  "total_moves": 27,
+  "diagram": "mountain-shape",
   "video_id": "CRGVSOmaQaY",
   "video_duration_seconds": 1179,
   "sections": {
     "intro": {
       "start": 0,
-      "end": 204
+      "end": 208
     },
     "breakdown": {
-      "start": 204,
-      "end": 210
-    },
-    "explanation": {
-      "start": 210,
-      "end": 1032
+      "start": 208,
+      "end": 430
     },
     "repeat": {
-      "start": 1032,
+      "start": 930,
+      "end": 1100
+    },
+    "outro": {
+      "start": 1100,
       "end": 1179
     }
   },
+  "competition_divisions": [],
+  "source": "KKW YouTube / WT Rules Art. 8",
   "techniques": [
     {
-      "key": "palm-heel-strike",
+      "key": "palm-front-strike",
       "name": {
-        "en": "Palm Heel Strike",
-        "ko": "바탕손 앞치기",
+        "en": "Palm Front Strike",
+        "ko": "기본 준비자세",
         "romanized": "Batangson Apchigi"
       },
       "category": "strike",
-      "video_timestamp": 213,
-      "video_timestamp_end": 251,
+      "video_timestamp": 214,
       "tips": [
         {
-          "text": "in a straight line using the lower part of the palm of your",
-          "timestamp": 218,
-          "source": "caption"
+          "text": "Tilt your hand outward by 45 degrees",
+          "timestamp": 226
         },
         {
-          "text": "then pull your wrist back as much as possible to concentrate force on the",
-          "timestamp": 226,
-          "source": "caption"
-        },
-        {
-          "text": "to concentrate force on the palm of your hand",
+          "text": "Pull your wrist back as much as possible to concentrate force on the palm of your hand",
           "timestamp": 231
         },
         {
-          "text": "your hand should be level with your chin and aligned with the center line",
-          "timestamp": 238
+          "text": "Your hand should be level with your chin and aligned with the center line",
+          "timestamp": 237
         },
         {
-          "text": "you can concentrate the force on the palm of your hand when the wrist",
-          "timestamp": 246,
+          "text": "You can concentrate the force on the palm of your hand when the wrist is tilted 45 degrees outward",
+          "timestamp": 243
+        },
+        {
+          "text": "Batang Son Apchigi",
+          "timestamp": 215.3,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 251
     },
     {
-      "key": "inward-block",
+      "key": "sonal-momtong-anmakgi",
       "name": {
-        "en": "Inward Block",
-        "ko": "안막기",
-        "romanized": "Anmakgi"
+        "en": "Sonal Momtong Anmakgi",
+        "ko": "손날몸통바깥막기",
+        "romanized": "Sonal Momtong Anmakgi"
       },
       "category": "block",
       "video_timestamp": 251,
-      "video_timestamp_end": 272,
       "tips": [
         {
-          "text": "with the hand blade the hand blade should be level with the",
-          "timestamp": 252,
-          "source": "caption"
-        },
-        {
-          "text": "The hand blade should be level Laas",
+          "text": "The hand blade should be level with the solar plexus",
           "timestamp": 259
         },
         {
-          "text": "and aligned with the center line be careful not to let the tip of the",
-          "timestamp": 263,
+          "text": "Hand blade aligned with the center line",
+          "timestamp": 264
+        },
+        {
+          "text": "Be careful not to let the tip of the hand rise above the shoulder",
+          "timestamp": 268
+        },
+        {
+          "text": "Sonnal Anmakgi",
+          "timestamp": 252.1,
           "source": "caption"
         },
         {
-          "text": "Vv Be careful not to let the tip",
-          "timestamp": 271
+          "text": "is a technique used to perform Anmakgi with the hand blade.",
+          "timestamp": 255.3,
+          "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 272
     },
     {
       "key": "diamond-block",
       "name": {
         "en": "Diamond Block",
-        "ko": "금강막기",
+        "ko": "제비품안치기",
         "romanized": "Geumgangmakgi"
       },
-      "category": "combination",
+      "category": "block",
       "video_timestamp": 272,
-      "video_timestamp_end": 316,
       "tips": [
         {
-          "text": "is a combination of orgul or yamaki and aremaki",
-          "timestamp": 280,
-          "source": "caption"
+          "text": "One arm is used to block the face inside out with the inner wrist",
+          "timestamp": 357
         },
         {
-          "text": "performed simultaneously for aramaki the space between your leg",
-          "timestamp": 284,
-          "source": "caption"
+          "text": "The other arm is used to block the face outside in with the outer wrist",
+          "timestamp": 363
         },
         {
-          "text": "arm should be about two raised fists the space between the arm blocking the",
-          "timestamp": 287,
-          "source": "caption"
+          "text": "The wrists should be level with the philtrum",
+          "timestamp": 371
         },
         {
-          "text": "face and forehead should be about one raised fist",
-          "timestamp": 291
+          "text": "Elbows should face downward and made perpendicular to the ground without bending the wrist",
+          "timestamp": 375
         },
         {
-          "text": "this move must be performed slowly exerting force on the lower abdomen",
-          "timestamp": 301,
+          "text": "Geumgang Makgi",
+          "timestamp": 274.1,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 316
     },
     {
       "key": "large-hinge",
       "name": {
         "en": "Large Hinge",
-        "ko": "큰돌쩌귀",
-        "romanized": "Keun Doljjeogwi"
+        "ko": "(몸통)안막기",
+        "romanized": "Keundoljjeogwi"
       },
-      "category": "stance",
+      "category": "block",
       "video_timestamp": 316,
-      "video_timestamp_end": 345,
       "tips": [
         {
-          "text": "place the wrist of one arm at the lilac crest",
-          "timestamp": 322
-        },
-        {
-          "text": "the space between the arm on top and the torso should be about one raised fist",
-          "timestamp": 328,
+          "text": "Geumdol Jogui",
+          "timestamp": 320.0,
           "source": "caption"
         },
         {
-          "text": "the fist on top must be placed in the same line as the first on the lilac",
-          "timestamp": 338,
+          "text": "Place the wrist of one arm at the lilac crest",
+          "timestamp": 323.2,
+          "source": "caption"
+        },
+        {
+          "text": "and the other arm in front of the solar plexus.",
+          "timestamp": 326.2,
+          "source": "caption"
+        },
+        {
+          "text": "The space between the arm on top and the torso",
+          "timestamp": 329.8,
+          "source": "caption"
+        },
+        {
+          "text": "should be about one raised fist.",
+          "timestamp": 332.8,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 384
     },
     {
       "key": "mountain-block",
       "name": {
         "en": "Mountain Block",
-        "ko": "산틀막기",
+        "ko": "올려(얼굴)막기",
         "romanized": "Santeulmakgi"
       },
       "category": "block",
-      "video_timestamp": 345,
-      "video_timestamp_end": 384,
+      "video_timestamp": 198,
       "tips": [
         {
-          "text": "is a move to perform techniques by utilizing the twist of the lower and",
-          "timestamp": 352,
-          "source": "caption"
-        },
-        {
-          "text": "one arm is used to block the face inside out with the inner wrist",
-          "timestamp": 361,
-          "source": "caption"
-        },
-        {
-          "text": "the other arm is used to block the face outside in",
-          "timestamp": 366,
-          "source": "caption"
-        },
-        {
-          "text": "with the outer wrist the wrists should be level with the philtrum",
-          "timestamp": 370,
-          "source": "caption"
-        },
-        {
-          "text": "elbows should face downward and made perpendicular to the ground without",
-          "timestamp": 378,
+          "text": "We will now take a closer look at each of the key moves of Geumgang Pumsae.",
+          "timestamp": 208.5,
           "source": "caption"
         }
-      ]
+      ],
+      "video_timestamp_end": 214
     },
     {
       "key": "crane-stance",
       "name": {
         "en": "Crane Stance",
         "ko": "학다리서기",
-        "romanized": "Hakdari Seogi"
+        "romanized": "Hakdariseogi"
       },
       "category": "stance",
       "video_timestamp": 384,
-      "video_timestamp_end": 210,
-      "tips": []
+      "tips": [
+        {
+          "text": "Maintain balance with one leg",
+          "timestamp": 396
+        },
+        {
+          "text": "Bend and raise the other knee",
+          "timestamp": 400
+        },
+        {
+          "text": "Lightly touch the arch of the back of the foot blade inside the supporting leg",
+          "timestamp": 405
+        },
+        {
+          "text": "Face forward so your knees don't open outward",
+          "timestamp": 413
+        },
+        {
+          "text": "Naturally straighten the ankle of the leg inside the knee of the supporting leg",
+          "timestamp": 418
+        },
+        {
+          "text": "Hakdari Sange",
+          "timestamp": 386.1,
+          "source": "caption"
+        }
+      ],
+      "video_timestamp_end": 444
     },
     {
-      "key": "inner-forearm-wedging-block",
+      "key": "inner-forearm-middle-spreading-block",
       "name": {
-        "en": "Inner Forearm Wedging Block",
-        "ko": "안팔목 헤쳐막기",
-        "romanized": "Anpalmok Hecheomakgi"
+        "en": "Inner Forearm Middle Spreading Block",
+        "ko": "안팔목몸통헤쳐막기",
+        "romanized": "Anpalmok Momtong Hecheomakgi"
       },
       "category": "block",
       "video_timestamp": 0,
@@ -235,89 +255,237 @@
       "video_timestamp": 0,
       "video_timestamp_end": 0,
       "tips": []
+    },
+    {
+      "key": "ready",
+      "name": {
+        "en": "Ready",
+        "ko": "준비",
+        "romanized": "Junbi"
+      },
+      "category": "stance",
+      "video_timestamp": 0,
+      "video_timestamp_end": 0,
+      "tips": []
     }
   ],
   "sequence": [
     {
-      "step": 1,
-      "technique": "inner-forearm-wedging-block",
+      "step": 0,
+      "technique": "ready",
       "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 450,
-      "timestamp_end": 251
+      "timestamp": 208,
+      "timestamp_end": 440
     },
     {
-      "step": 2,
-      "technique": "inward-block",
+      "step": 1,
+      "technique": "inner-forearm-middle-spreading-block",
       "side": null,
-      "direction": "forward",
+      "direction": "left-90",
       "kihap": false,
-      "timestamp": 251,
+      "timestamp": 446,
       "timestamp_end": 449
     },
     {
-      "step": 3,
-      "technique": "palm-heel-strike",
-      "side": "left",
-      "direction": "forward",
-      "kihap": false,
-      "timestamp": 449,
-      "timestamp_end": 452
-    },
-    {
-      "step": 4,
-      "technique": "palm-heel-strike",
+      "step": 2,
+      "technique": "palm-front-strike",
       "side": "right",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 452,
-      "timestamp_end": 611
+      "timestamp": 449,
+      "timestamp_end": 451
+    },
+    {
+      "step": 3,
+      "technique": "palm-front-strike",
+      "side": "left",
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 451,
+      "timestamp_end": 453
+    },
+    {
+      "step": 4,
+      "technique": "palm-front-strike",
+      "side": "right",
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 453,
+      "timestamp_end": 455
     },
     {
       "step": 5,
-      "technique": "inner-forearm-wedging-block",
-      "side": null,
-      "direction": "forward",
+      "technique": "sonal-momtong-anmakgi",
+      "side": "left",
+      "direction": "left-90",
       "kihap": false,
-      "timestamp": 611,
+      "timestamp": 455,
       "timestamp_end": 458
     },
     {
       "step": 6,
-      "technique": "inward-block",
+      "technique": "sonal-momtong-anmakgi",
       "side": "right",
-      "direction": "forward",
+      "direction": "right-180",
       "kihap": false,
       "timestamp": 458,
-      "timestamp_end": 460
+      "timestamp_end": 461
     },
     {
       "step": 7,
-      "technique": "inward-block",
+      "technique": "sonal-momtong-anmakgi",
       "side": "left",
       "direction": "forward",
       "kihap": false,
-      "timestamp": 460,
-      "timestamp_end": 821
+      "timestamp": 461,
+      "timestamp_end": 465
+    },
+    {
+      "step": 8,
+      "technique": "diamond-block",
+      "side": null,
+      "direction": "left-90",
+      "kihap": false,
+      "timestamp": 589,
+      "timestamp_end": 600
     },
     {
       "step": 9,
-      "technique": "inner-forearm-wedging-block",
+      "technique": "large-hinge",
       "side": null,
       "direction": "forward",
       "kihap": false,
-      "timestamp": 821,
-      "timestamp_end": 825
+      "timestamp": 600,
+      "timestamp_end": 605
     },
     {
       "step": 10,
+      "technique": "large-hinge",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 605,
+      "timestamp_end": 609
+    },
+    {
+      "step": 11,
+      "technique": "mountain-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 609,
+      "timestamp_end": 612
+    },
+    {
+      "step": 12,
+      "technique": "inner-forearm-middle-spreading-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 612,
+      "timestamp_end": 615
+    },
+    {
+      "step": 13,
+      "technique": "low-spreading-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 615,
+      "timestamp_end": 625
+    },
+    {
+      "step": 14,
+      "technique": "mountain-block",
+      "side": null,
+      "direction": "right-180",
+      "kihap": false,
+      "timestamp": 781,
+      "timestamp_end": 784
+    },
+    {
+      "step": 15,
+      "technique": "diamond-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 784,
+      "timestamp_end": 794
+    },
+    {
+      "step": 16,
+      "technique": "large-hinge",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 794,
+      "timestamp_end": 798
+    },
+    {
+      "step": 17,
+      "technique": "large-hinge",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 798,
+      "timestamp_end": 801
+    },
+    {
+      "step": 18,
+      "technique": "diamond-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 801,
+      "timestamp_end": 810
+    },
+    {
+      "step": 19,
+      "technique": "large-hinge",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 814,
+      "timestamp_end": 817
+    },
+    {
+      "step": 20,
+      "technique": "large-hinge",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 817,
+      "timestamp_end": 820
+    },
+    {
+      "step": 21,
+      "technique": "mountain-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 820,
+      "timestamp_end": 823
+    },
+    {
+      "step": 22,
+      "technique": "inner-forearm-middle-spreading-block",
+      "side": null,
+      "direction": "forward",
+      "kihap": false,
+      "timestamp": 823,
+      "timestamp_end": 826
+    },
+    {
+      "step": 23,
       "technique": "low-spreading-block",
       "side": null,
       "direction": "forward",
       "kihap": true,
-      "timestamp": 825,
-      "timestamp_end": 0
+      "timestamp": 826,
+      "timestamp_end": 836
     }
-  ]
+  ],
+  "verified": true
 }

@@ -1,3 +1,8 @@
+/** Whether a wiki technique has real content worth linking to. */
+export function hasWikiContent(t: { source: { timestamp: number }; tips: unknown[]; used_in: string[] }): boolean {
+  return t.source.timestamp > 0 || t.tips.length > 0 || t.used_in.length > 0;
+}
+
 /** Format seconds as m:ss. */
 export function formatTime(seconds: number): string {
   const m = Math.floor(seconds / 60);

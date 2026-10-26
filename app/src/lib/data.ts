@@ -14,6 +14,7 @@ export interface Technique {
   video_timestamp: number;
   video_timestamp_end?: number;
   tips: (Tip | string)[];
+  components?: string[];
 }
 
 export interface SequenceStep {
@@ -162,3 +163,4 @@ export function getTechniqueByKey(key: string): WikiTechnique | null {
   if (!data) return null;
   return data[key] ?? null;
 }
+
